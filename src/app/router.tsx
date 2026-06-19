@@ -5,6 +5,7 @@ import { GlossairePage } from '@/features/glossaire/GlossairePage'
 import { QuizPage } from '@/features/quiz/QuizPage'
 import { ProgresPage } from '@/features/progres/ProgresPage'
 import { CarnetsPage } from '@/features/carnets/CarnetsPage'
+import { SourcesPage } from '@/features/sources/SourcesPage'
 import { UnitePage } from '@/features/unite/UnitePage'
 import { TermePage } from '@/features/terme/TermePage'
 import { CoursPage } from '@/features/cours/CoursPage'
@@ -19,6 +20,7 @@ export const router = createBrowserRouter([
       { path: 'quiz', element: <QuizPage /> },
       { path: 'progres', element: <ProgresPage /> },
       { path: 'carnets', element: <CarnetsPage /> },
+      { path: 'sources', element: <SourcesPage /> },
       { path: 'unite/:numero', element: <UnitePage /> },
       { path: 'terme/:id', element: <TermePage /> },
       { path: 'cours/:id', element: <CoursPage /> },

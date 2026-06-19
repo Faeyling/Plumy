@@ -121,6 +121,7 @@ export const termesUnite8: Terme[] = [
     securite: {
       risques: ["Chute sur la tête ou le cou si le grip et le gainage lâchent", "Blessure cervicale"],
       precautions: ["Tapis épais obligatoire", "Supervision par un professeur expérimenté", "Jamais d'inversion en solo avant la maîtrise complète"],
+      referencesIds: ['mitrousias2017', 'polept_review'],
     },
     conseils: [
       "Avant toute inversion : 10 secondes de hollow body hold au sol. Si tu tiens 10 secondes sans que le bas du dos ne décolle, tu as le gainage minimal pour commencer à explorer l'inversion assistée.",
@@ -143,6 +144,11 @@ export const termesUnite8: Terme[] = [
     conseils: [
       "L'Ayesha est un objectif à long terme. Construis les bases : si tu peux tenir un plank latéral 30 secondes de chaque côté, faire 5 dips complets et tenir un hollow body 20 secondes, tu es sur la bonne voie.",
     ],
+    securite: {
+      risques: ["Blessure grave à l'épaule (déchirure de la coiffe des rotateurs) si tentée sans conditioning suffisant", "Chute depuis la hauteur sans tapis approprié"],
+      precautions: ["Minimum 12-24 mois de conditioning préalable", "Toujours sur matelas épais en apprentissage", "Supervision obligatoire par un professeur expérimenté"],
+      referencesIds: ['lee2020', 'naczk_goluchowska2022', 'polept_review'],
+    },
     difficulteInterne: 5,
     termesLies: ['figure-statique', 'inversion-pole', 'conditioning-pole'],
   },
@@ -183,6 +189,7 @@ export const termesUnite8: Terme[] = [
     securite: {
       risques: ["Blessure épaule (impingement, déchirure partielle de la coiffe) si conditioning insuffisant"],
       precautions: ["Jamais de twisted grip avant 6 mois de pratique et de conditioning épaule"],
+      referencesIds: ['lee2020', 'naczk2020'],
     },
     termesLies: ['grip-pole', 'inversion-pole', 'figure-statique'],
   },

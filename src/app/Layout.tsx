@@ -7,6 +7,7 @@ const navItems = [
   { to: '/quiz', label: fr.nav.quiz, icon: StarIcon },
   { to: '/progres', label: fr.nav.progres, icon: ChartIcon },
   { to: '/carnets', label: fr.nav.carnets, icon: PenIcon },
+  { to: '/sources', label: fr.nav.sources, icon: SourcesIcon },
 ]
 
 export function Layout() {
@@ -113,6 +114,20 @@ function PenIcon({ active }: { active: boolean }) {
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
       <path
         d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"
+        stroke={active ? 'var(--color-candy-rose-dark)' : 'currentColor'}
+        strokeWidth={active ? 2.5 : 1.8}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  )
+}
+
+function SourcesIcon({ active }: { active: boolean }) {
+  return (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path
+        d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2M9 12h6M9 16h4"
         stroke={active ? 'var(--color-candy-rose-dark)' : 'currentColor'}
         strokeWidth={active ? 2.5 : 1.8}
         strokeLinecap="round"

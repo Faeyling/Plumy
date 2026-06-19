@@ -19,6 +19,11 @@ export const termesUnite10: Terme[] = [
     conseils: [
       "Règle simple : si la douleur a une localisation précise (un point du corps défini), qu'elle persiste plus de 72h ou qu'elle modifie ta technique, consulte un professionnel de santé spécialisé en danse.",
     ],
+    securite: {
+      risques: ["Aggravation de la lésion si l'activité n'est pas modifiée aux stades 3-4"],
+      precautions: ["Consulter un professionnel de santé spécialisé danse dès le stade 2 de douleur"],
+      referencesIds: ['hincapie2008', 'jacobs2012'],
+    },
     difficulteInterne: 2,
     termesLies: ['facteurs-risque', 'tendinopathie', 'repos-recuperation'],
   },
@@ -55,6 +60,11 @@ export const termesUnite10: Terme[] = [
     conseils: [
       "Fais une liste honnête de tes facteurs de risque personnels. Identifie ceux que tu peux modifier (chaussures, sol, volume d'entraînement) et ceux qui nécessitent un travail long terme (force, proprioception). Agir sur deux ou trois facteurs réduit significativement le risque global.",
     ],
+    securite: {
+      risques: ["Risque de blessure significativement augmenté si facteurs extrinsèques non corrigés"],
+      precautions: ["Bilan de prévention régulier avec un kinésithérapeute spécialisé danse"],
+      referencesIds: ['screening_meta2018', 'evidence_review2025'],
+    },
     difficulteInterne: 2,
     termesLies: ['blessure-surmenage', 'gainage-fonctionnel', 'hygiene-vie'],
   },
@@ -187,6 +197,11 @@ export const termesUnite10: Terme[] = [
     conseils: [
       "Après une entorse (même légère), consulte un kiné avant de reprendre la danse. La rééducation d'une entorse de grade 1 prend 2-3 séances — c'est peu comparé au risque de récidive chronique.",
     ],
+    securite: {
+      risques: ["Récidive chronique (70 % de risque) sans rééducation proprioceptive complète"],
+      precautions: ["Rééducation complète avant reprise de la danse, même pour une entorse de grade 1"],
+      referencesIds: ['hincapie2008', 'cofre2023'],
+    },
     difficulteInterne: 2,
     termesLies: ['renforcement-neuromusculaire', 'blessure-traumatique', 'facteurs-risque'],
   },
@@ -205,6 +220,11 @@ export const termesUnite10: Terme[] = [
     conseils: [
       "La douleur de tendinopathie est souvent 'raide le matin, mieux après l'échauffement, douloureuse après'. Ce pattern est caractéristique. Si tu le reconnais, consulte et commence le travail excentrique sous supervision.",
     ],
+    securite: {
+      risques: ["Aggravation et chronicisation si charge non modifiée malgré la douleur"],
+      precautions: ["Programme excentrique supervisé — ne pas s'appuyer uniquement sur les anti-inflammatoires"],
+      referencesIds: ['evidence_review2025', 'strength_meta2024'],
+    },
     difficulteInterne: 2,
     termesLies: ['blessure-surmenage', 'renforcement-neuromusculaire', 'syndrome-rotulien'],
   },
@@ -223,6 +243,11 @@ export const termesUnite10: Terme[] = [
     conseils: [
       "Debout, fais un demi-squat en regardant ton genou dans un miroir. Va-t-il vers l'intérieur ? Si oui, c'est une compensation à corriger avec du renforcement des fessiers — et la source probable de tes douleurs.",
     ],
+    securite: {
+      risques: ["Chronicisation de la douleur antérieure du genou si valgus dynamique non corrigé"],
+      precautions: ["Correction technique du plié et renforcement du vaste médial oblique (VMO) et des fessiers"],
+      referencesIds: ['prevention_hip_knee', 'cofre2023'],
+    },
     difficulteInterne: 2,
     termesLies: ['entorse-cheville', 'renforcement-neuromusculaire', 'facteurs-risque'],
   },

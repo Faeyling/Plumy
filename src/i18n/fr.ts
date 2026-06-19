@@ -11,6 +11,7 @@ export const fr = {
     quiz: "Quiz",
     progres: "Progrès",
     carnets: "Carnets",
+    sources: "Sources",
   },
 
   accueil: {
@@ -173,6 +174,26 @@ export const fr = {
     copier: "Copier",
     copie: "Copié !",
     installer: "Installer l'application",
+  },
+
+  sources: {
+    titre: "Sources scientifiques",
+    sousTitre: "Bibliographie de référence",
+    avertissement: "Ces références sont fournies à titre informatif et pédagogique. Elles ne constituent pas un avis médical. En cas de blessure ou de douleur, consulte un professionnel de santé.",
+    filtrerDiscipline: "Filtrer par discipline",
+    tous: "Toutes",
+    voirPublication: "Voir la publication",
+    themes: {
+      epidemiologie: "Épidémiologie",
+      psychologie: "Facteurs psychologiques",
+      'hanche-turnout-flexibilite': "Hanche, turn-out & flexibilité",
+      'renforcement-neuromusculaire': "Renforcement neuromusculaire",
+      'pole-dance': "Pole dance",
+      'talons-heels': "Talons & Heels",
+      francophone: "Publications francophones",
+      physiologie: "Physiologie du danseur",
+      'culture-histoire': "Culture & histoire",
+    },
   },
 
   erreurs: {
