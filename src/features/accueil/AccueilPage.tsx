@@ -128,7 +128,7 @@ function UniteCard({ unite, index }: { unite: Unite; index: number }) {
       transition={{ delay: index * 0.04, duration: 0.35, ease: 'easeOut' }}
     >
       <Link
-        to={`/glossaire?unite=${unite.numero}`}
+        to={`/unite/${unite.numero}`}
         className="flex items-center gap-4 p-4 bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-shadow"
         aria-label={`Unité ${index} — ${unite.titre}`}
       >
