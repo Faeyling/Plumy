@@ -176,6 +176,25 @@ export const fr = {
     installer: "Installer l'application",
   },
 
+  flashcards: {
+    titre: "Flashcards",
+    deDeCartes: (n: number) => `${n} carte${n > 1 ? 's' : ''}`,
+    retourner: "Retourner",
+    jeSais: "Je sais",
+    aRevoir: "À revoir",
+    suivant: "Carte suivante",
+    fin: "Session terminée",
+    maitrisees: (n: number) => `${n} terme${n > 1 ? 's' : ''} maîtrisé${n > 1 ? 's' : ''}`,
+    aReviser: (n: number) => `${n} terme${n > 1 ? 's' : ''} à réviser`,
+    nonJuge: (n: number) => `${n} non évalué${n > 1 ? 's' : ''}`,
+    recommencer: "Refaire la session",
+    retourUnite: "Retour à l'unité",
+    ordreExplication: "Ordre de révision : termes à revoir en premier, puis vus, puis nouveaux, puis maîtrisés.",
+    definition: "Définition",
+    description: "Détail",
+    progressLabel: (actuel: number, total: number) => `${actuel} / ${total}`,
+  },
+
   sources: {
     titre: "Sources scientifiques",
     sousTitre: "Bibliographie de référence",

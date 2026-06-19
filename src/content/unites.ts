@@ -12,7 +12,7 @@ export const unites: Unite[] = [
       'tempo', 'mesure-musicale', 'phrase-musicale', 'anacrouse', 'syncope',
       'cote-cour', 'cote-jardin', 'face-lointain', 'diagonale', 'en-croix',
     ],
-    quizDisponibles: ['qcm', 'texte-a-trous'],
+    quizDisponibles: ['qcm', 'association', 'texte-a-trous', 'flashcards'],
     iconeSvgId: 'corps-qui-danse',
   },
   {
@@ -29,7 +29,7 @@ export const unites: Unite[] = [
       'vogue-ballroom', 'heels-dance',
       'mat-chinois', 'pole-contemporain',
     ],
-    quizDisponibles: ['qcm', 'association'],
+    quizDisponibles: ['qcm', 'association', 'flashcards'],
     iconeSvgId: 'histoire-danse',
   },
   {
@@ -46,7 +46,7 @@ export const unites: Unite[] = [
       'pirouette', 'fouette', 'chaines',
       'batterie', 'pas-de-bourree',
     ],
-    quizDisponibles: ['qcm', 'association', 'reconnaissance-visuelle', 'texte-a-trous'],
+    quizDisponibles: ['qcm', 'association', 'reconnaissance-visuelle', 'texte-a-trous', 'flashcards'],
     iconeSvgId: 'classique',
   },
   {
@@ -64,7 +64,7 @@ export const unites: Unite[] = [
       'phrase-mouvement', 'score-improvisation', 'instant-composition',
       'somatique', 'body-mind-centering', 'feldenkrais', 'site-specific',
     ],
-    quizDisponibles: ['qcm', 'association', 'reconnaissance-visuelle', 'texte-a-trous'],
+    quizDisponibles: ['qcm', 'association', 'reconnaissance-visuelle', 'texte-a-trous', 'flashcards'],
     iconeSvgId: 'contemporain',
   },
   {
@@ -79,7 +79,7 @@ export const unites: Unite[] = [
       'technique-horton', 'technique-cunningham', 'technique-limon',
       'canon', 'unisson', 'marche-moderne', 'elevation-moderne',
     ],
-    quizDisponibles: ['qcm', 'association', 'texte-a-trous'],
+    quizDisponibles: ['qcm', 'association', 'texte-a-trous', 'flashcards'],
     iconeSvgId: 'moderne',
   },
   {
@@ -94,7 +94,7 @@ export const unites: Unite[] = [
       'sous-style-jazz-classique', 'sous-style-broadway', 'sous-style-fosse',
       'sous-style-modern-jazz', 'sous-style-lyrical', 'sous-style-street-jazz', 'sous-style-afro-jazz',
     ],
-    quizDisponibles: ['qcm', 'association', 'reconnaissance-visuelle', 'texte-a-trous'],
+    quizDisponibles: ['qcm', 'association', 'reconnaissance-visuelle', 'texte-a-trous', 'flashcards'],
     iconeSvgId: 'jazz',
   },
   {
@@ -106,7 +106,7 @@ export const unites: Unite[] = [
       'posture-heels', 'walk-heels', 'strut', 'body-roll-heels', 'hair-toss',
       'floorwork-heels', 'frame-heels', 'sass', 'cat-walk-heels', 'vogue-ballroom-heels', 'heel-turn',
     ],
-    quizDisponibles: ['qcm', 'association', 'texte-a-trous'],
+    quizDisponibles: ['qcm', 'association', 'texte-a-trous', 'flashcards'],
     iconeSvgId: 'heels',
   },
   {
@@ -119,7 +119,7 @@ export const unites: Unite[] = [
       'port-costume', 'canne-chapeau-cabaret', 'boa-eventail',
       'meneuse-revue', 'presentation-scenique', 'rapport-public',
     ],
-    quizDisponibles: ['qcm', 'association', 'texte-a-trous'],
+    quizDisponibles: ['qcm', 'association', 'texte-a-trous', 'flashcards'],
     iconeSvgId: 'cabaret',
   },
   {
@@ -132,7 +132,7 @@ export const unites: Unite[] = [
       'inversion-pole', 'ayesha', 'floorwork-pole', 'conditioning-pole',
       'pole-sport', 'pole-art', 'exotic-pole', 'origine-pole',
     ],
-    quizDisponibles: ['qcm', 'association', 'reconnaissance-visuelle', 'texte-a-trous'],
+    quizDisponibles: ['qcm', 'association', 'reconnaissance-visuelle', 'texte-a-trous', 'flashcards'],
     iconeSvgId: 'pole-dance',
   },
   {
@@ -144,7 +144,7 @@ export const unites: Unite[] = [
       'effeuillage', 'tease', 'character-burlesque', 'shimmy', 'bump-grind',
       'prop-burlesque', 'timing-burlesque', 'neo-burlesque',
     ],
-    quizDisponibles: ['qcm', 'association', 'texte-a-trous'],
+    quizDisponibles: ['qcm', 'association', 'texte-a-trous', 'flashcards'],
     iconeSvgId: 'burlesque',
   },
   {
@@ -159,7 +159,7 @@ export const unites: Unite[] = [
       'entorse-cheville', 'tendinopathie', 'syndrome-rotulien',
       'equilibre-musculaire', 'hygiene-vie', 'sante-mentale-danse',
     ],
-    quizDisponibles: ['qcm', 'texte-a-trous'],
+    quizDisponibles: ['qcm', 'texte-a-trous', 'flashcards'],
     iconeSvgId: 'sante',
   },
   {
@@ -174,7 +174,7 @@ export const unites: Unite[] = [
       'structure-choregraphique', 'intention-artistique',
       'notation-mouvement', 'labanotation', 'benesh-notation', 'video-comme-notation',
     ],
-    quizDisponibles: ['qcm', 'texte-a-trous'],
+    quizDisponibles: ['qcm', 'association', 'texte-a-trous', 'flashcards'],
     iconeSvgId: 'improvisation',
   },
 ]

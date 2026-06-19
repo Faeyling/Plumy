@@ -54,6 +54,19 @@ export const progressionRepository = {
     return newFavori
   },
 
+  async mettreAJourStatutBatch(mises: { termeId: string; statut: ProgressionTerme['statut'] }[]): Promise<void> {
+    await db.transaction('rw', db.progressions, async () => {
+      for (const { termeId, statut } of mises) {
+        const existing = await db.progressions.get(termeId)
+        if (existing) {
+          await db.progressions.update(termeId, { statut })
+        } else {
+          await db.progressions.put({ termeId, statut, reussitesQuiz: 0, echecsQuiz: 0 })
+        }
+      }
+    })
+  },
+
   async enregistrerResultatQuiz(termeId: string, reussi: boolean): Promise<void> {
     const existing = await db.progressions.get(termeId)
     if (existing) {

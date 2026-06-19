@@ -7,6 +7,7 @@ import { getCoursParUnite } from '@/content/cours/index'
 import { progressionRepository } from '@/data/repositories/progressionRepository'
 import type { ProgressionTerme } from '@/content/schema'
 import { PluмyMascot } from '@/components/mascotte/PluмyMascot'
+import { fr } from '@/i18n/fr'
 
 export function UnitePage() {
   const { numero } = useParams<{ numero: string }>()
@@ -129,6 +130,37 @@ export function UnitePage() {
                 </Link>
               ))}
             </div>
+          </section>
+        )}
+
+        {/* Flashcards */}
+        {unite.quizDisponibles.includes('flashcards') && (
+          <section aria-label="Révision par flashcards">
+            <h2 className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-base mb-3">
+              Révision
+            </h2>
+            <Link
+              to={`/flashcards/${numUnite}`}
+              className="flex items-center gap-3 p-4 bg-[var(--color-candy-lavande-light)] border border-[var(--color-candy-lavande)] rounded-[var(--radius-card)] hover:shadow-md transition-shadow"
+            >
+              <span className="flex-shrink-0 w-10 h-10 rounded-xl bg-[var(--color-candy-lavande)] flex items-center justify-center" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <rect x="2" y="4" width="20" height="16" rx="2" stroke="white" strokeWidth="2" />
+                  <path d="M8 9h8M8 13h5" stroke="white" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </span>
+              <div className="flex-1 min-w-0">
+                <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm">
+                  {fr.flashcards.titre}
+                </p>
+                <p className="text-xs text-[var(--color-gris-texte)] mt-0.5">
+                  {fr.flashcards.deDeCartes(total)} — termes à revoir en priorité
+                </p>
+              </div>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="flex-shrink-0 text-[var(--color-candy-lavande)]">
+                <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </Link>
           </section>
         )}
 

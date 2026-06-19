@@ -94,7 +94,8 @@ export type QuizType =
   | 'qcm'
   | 'association'
   | 'reconnaissance-visuelle'
-  | 'texte-a-trous';
+  | 'texte-a-trous'
+  | 'flashcards';
 
 export interface ProgressionTerme {
   termeId: string;
