@@ -110,6 +110,22 @@ export const fr = {
     score: (correct: number, total: number) => `${correct} / ${total}`,
     recommencer: "Recommencer",
     retourGlossaire: "Retour au glossaire",
+    retourUnite: "Retour à l'unité",
+    finTitre: "Quiz terminé !",
+    typesLabels: {
+      qcm: "QCM",
+      association: "Association",
+      "texte-a-trous": "Texte à trous",
+      flashcards: "Flashcards",
+      "reconnaissance-visuelle": "Reconnaître",
+    },
+    association: {
+      consigne: "Relie chaque terme à sa définition.",
+      pairesRestantes: (n: number) => `${n} paire${n > 1 ? "s" : ""} restante${n > 1 ? "s" : ""}`,
+    },
+    texteATrous: {
+      consigne: "Quel terme complète la phrase ?",
+    },
   },
 
   progres: {
@@ -213,6 +229,11 @@ export const fr = {
       physiologie: "Physiologie du danseur",
       'culture-histoire': "Culture & histoire",
     },
+  },
+
+  badges: {
+    nouveauBadge: "Nouveau badge débloqué !",
+    debloque: (nom: string) => `"${nom}" débloqué`,
   },
 
   erreurs: {

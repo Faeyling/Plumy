@@ -164,6 +164,44 @@ export function UnitePage() {
           </section>
         )}
 
+        {/* Quiz d'entraînement */}
+        {(['qcm', 'association', 'texte-a-trous'] as const).some(t => unite.quizDisponibles.includes(t)) && (
+          <section aria-label="Quiz d'entraînement">
+            <h2 className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-base mb-3">
+              Entraînement
+            </h2>
+            <div className="grid grid-cols-2 gap-2">
+              {unite.quizDisponibles.includes('qcm') && (
+                <Link
+                  to={`/quiz/qcm/${numUnite}`}
+                  className="flex flex-col items-center gap-2 p-4 bg-[#fffde7] border border-[var(--color-candy-jaune)] rounded-[var(--radius-card)] hover:shadow-md transition-shadow"
+                >
+                  <span className="w-10 h-10 rounded-xl bg-[var(--color-candy-jaune)] flex items-center justify-center font-bold text-white text-lg" aria-hidden="true">Q</span>
+                  <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm">QCM</p>
+                </Link>
+              )}
+              {unite.quizDisponibles.includes('association') && (
+                <Link
+                  to={`/quiz/association/${numUnite}`}
+                  className="flex flex-col items-center gap-2 p-4 bg-[#e3f2fd] border border-[var(--color-candy-bleu)] rounded-[var(--radius-card)] hover:shadow-md transition-shadow"
+                >
+                  <span className="w-10 h-10 rounded-xl bg-[var(--color-candy-bleu)] flex items-center justify-center font-bold text-white text-lg" aria-hidden="true">A</span>
+                  <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm">Association</p>
+                </Link>
+              )}
+              {unite.quizDisponibles.includes('texte-a-trous') && (
+                <Link
+                  to={`/quiz/texte-a-trous/${numUnite}`}
+                  className="flex flex-col items-center gap-2 p-4 bg-[#fce4ec] border border-[var(--color-candy-corail)] rounded-[var(--radius-card)] hover:shadow-md transition-shadow"
+                >
+                  <span className="w-10 h-10 rounded-xl bg-[var(--color-candy-corail)] flex items-center justify-center font-bold text-white text-lg" aria-hidden="true">T</span>
+                  <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm">Texte à trous</p>
+                </Link>
+              )}
+            </div>
+          </section>
+        )}
+
         {/* Termes */}
         {termes.length > 0 && (
           <section aria-label="Termes de l'unité">

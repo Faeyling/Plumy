@@ -7,6 +7,9 @@ import { ProgresPage } from '@/features/progres/ProgresPage'
 import { CarnetsPage } from '@/features/carnets/CarnetsPage'
 import { SourcesPage } from '@/features/sources/SourcesPage'
 import { FlashcardSession } from '@/features/quiz/FlashcardSession'
+import { QCMSession } from '@/features/quiz/QCMSession'
+import { AssociationSession } from '@/features/quiz/AssociationSession'
+import { TexteATrousSession } from '@/features/quiz/TexteATrousSession'
 import { UnitePage } from '@/features/unite/UnitePage'
 import { TermePage } from '@/features/terme/TermePage'
 import { CoursPage } from '@/features/cours/CoursPage'
@@ -23,6 +26,9 @@ export const router = createBrowserRouter([
       { path: 'carnets', element: <CarnetsPage /> },
       { path: 'sources', element: <SourcesPage /> },
       { path: 'flashcards/:numero', element: <FlashcardSession /> },
+      { path: 'quiz/qcm/:numero', element: <QCMSession /> },
+      { path: 'quiz/association/:numero', element: <AssociationSession /> },
+      { path: 'quiz/texte-a-trous/:numero', element: <TexteATrousSession /> },
       { path: 'unite/:numero', element: <UnitePage /> },
       { path: 'terme/:id', element: <TermePage /> },
       { path: 'cours/:id', element: <CoursPage /> },
