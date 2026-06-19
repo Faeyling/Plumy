@@ -9,6 +9,7 @@ import { termesUnite7 } from './unite7'
 import { termesUnite8 } from './unite8'
 import { termesUnite9 } from './unite9'
 import { termesUnite10 } from './unite10'
+import { termesUnite11 } from './unite11'
 import type { Terme } from '../schema'
 
 export const tousLesTermes: Terme[] = [
@@ -23,6 +24,7 @@ export const tousLesTermes: Terme[] = [
   ...termesUnite8,
   ...termesUnite9,
   ...termesUnite10,
+  ...termesUnite11,
 ]
 
 export function getTerme(id: string): Terme | undefined {
@@ -46,4 +48,5 @@ export const termesParUnite: Record<number, string[]> = {
   8: termesUnite8.map((t) => t.id),
   9: termesUnite9.map((t) => t.id),
   10: termesUnite10.map((t) => t.id),
+  11: termesUnite11.map((t) => t.id),
 }
