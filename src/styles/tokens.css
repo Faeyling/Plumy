@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  /* Palette pop candy */
+  --color-candy-rose: #f472b6;
+  --color-candy-rose-light: #fce7f3;
+  --color-candy-rose-dark: #db2777;
+  --color-candy-lavande: #a78bfa;
+  --color-candy-lavande-light: #ede9fe;
+  --color-candy-menthe: #34d399;
+  --color-candy-menthe-light: #d1fae5;
+  --color-candy-jaune: #fbbf24;
+  --color-candy-jaune-light: #fef3c7;
+  --color-candy-corail: #fb7185;
+  --color-candy-corail-light: #ffe4e6;
+  --color-candy-bleu: #38bdf8;
+  --color-candy-bleu-light: #e0f2fe;
+
+  /* Plumy brand */
+  --color-plumy-blue: #0ea5e9;
+  --color-plumy-blue-dark: #0369a1;
+  --color-plumy-teal: #14b8a6;
+  --color-plumy-bg: #fdf2f8;
+
+  /* Neutres */
+  --color-encre: #1e1b4b;
+  --color-encre-soft: #312e81;
+  --color-papier: #fdf4ff;
+  --color-papier-alt: #f5f3ff;
+  --color-gris-doux: #e2e8f0;
+  --color-gris-texte: #64748b;
+
+  /* Typographie */
+  --font-titre: 'Nunito', 'Rounded Mplus 1c', ui-rounded, sans-serif;
+  --font-corps: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-manuscrit: 'Caveat', 'Pacifico', cursive;
+
+  /* Rayons */
+  --radius-card: 1.25rem;
+  --radius-btn: 9999px;
+  --radius-badge: 0.625rem;
+
+  /* Ombres */
+  --shadow-card: 0 4px 24px 0 rgb(164 143 255 / 0.12);
+  --shadow-hover: 0 8px 32px 0 rgb(244 114 182 / 0.18);
+}
+
+/* Importation des polices Google via @font-face simulé — fallbacks système */
+html {
+  background-color: var(--color-plumy-bg);
+  color: var(--color-encre);
+  font-family: var(--font-corps);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Focus ring accessible */
+:focus-visible {
+  outline: 3px solid var(--color-candy-lavande);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Réduit les animations si demandé */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Scrollbar douce */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--color-candy-lavande-light); }
+::-webkit-scrollbar-thumb { background: var(--color-candy-lavande); border-radius: 9999px; }
