@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { PluмyMascot } from '@/components/mascotte/PluмyMascot'
 import { useStats } from '@/hooks/useStats'
 import { statsRepository } from '@/data/repositories/statsRepository'
+import { progressionRepository } from '@/data/repositories/progressionRepository'
 import { unites } from '@/content/unites'
 import type { Unite } from '@/content/schema'
 import { fr } from '@/i18n/fr'
@@ -30,6 +31,7 @@ const iconeCouleur: Record<string, string> = {
 export function AccueilPage() {
   const { stats, refresh } = useStats()
   const [premiereFois, setPremiereFois] = useState(false)
+  const [aRevoir, setARevoir] = useState(0)
 
   const message = useMemo(
     () =>
@@ -44,6 +46,7 @@ export function AccueilPage() {
       setPremiereFois(!s.onboardingVu)
     })
     statsRepository.enregistrerVisite().then(refresh)
+    progressionRepository.listARevoir().then(list => setARevoir(list.length))
   }, [refresh])
 
   const serieJours = stats?.serieJours ?? 0
@@ -81,6 +84,14 @@ export function AccueilPage() {
           color="var(--color-candy-menthe)"
           icon="🔥"
         />
+        {aRevoir > 0 && (
+          <>
+            <div className="w-px h-8 bg-[var(--color-gris-doux)]" />
+            <Link to="/revision">
+              <StatPill value={aRevoir} label="à revoir" color="var(--color-candy-corail)" icon="↩" />
+            </Link>
+          </>
+        )}
       </section>
 
       {/* Liste des unités */}

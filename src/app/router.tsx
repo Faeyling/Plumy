@@ -10,6 +10,7 @@ import { FlashcardSession } from '@/features/quiz/FlashcardSession'
 import { QCMSession } from '@/features/quiz/QCMSession'
 import { AssociationSession } from '@/features/quiz/AssociationSession'
 import { TexteATrousSession } from '@/features/quiz/TexteATrousSession'
+import { RevisionPage } from '@/features/revision/RevisionPage'
 import { UnitePage } from '@/features/unite/UnitePage'
 import { TermePage } from '@/features/terme/TermePage'
 import { CoursPage } from '@/features/cours/CoursPage'
@@ -29,6 +30,7 @@ export const router = createBrowserRouter([
       { path: 'quiz/qcm/:numero', element: <QCMSession /> },
       { path: 'quiz/association/:numero', element: <AssociationSession /> },
       { path: 'quiz/texte-a-trous/:numero', element: <TexteATrousSession /> },
+      { path: 'revision', element: <RevisionPage /> },
       { path: 'unite/:numero', element: <UnitePage /> },
       { path: 'terme/:id', element: <TermePage /> },
       { path: 'cours/:id', element: <CoursPage /> },

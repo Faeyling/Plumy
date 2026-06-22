@@ -143,17 +143,26 @@ export const fr = {
 
   carnets: {
     titre: "Mes carnets",
+    ongletFavoris: "Favoris",
+    ongletMesTermes: "Mes termes",
     nouveauTerme: "Nouveau terme perso",
     modifierTerme: "Modifier",
     supprimerTerme: "Supprimer",
     nomLabel: "Nom du terme",
     definitionLabel: "Ma définition",
-    exempleLabel: "Mon exemple",
-    disciplineLabel: "Discipline",
+    noteLabel: "Note libre",
     sauvegarder: "Sauvegarder",
     annuler: "Annuler",
     confirmerSuppression: "Supprimer ce terme ?",
-    aucunTermePerso: "Tu n'as pas encore ajouté de termes personnels.\nC'est l'endroit pour noter tes propres mots-clés !",
+    aucunTermePerso: "Tu n'as pas encore ajouté de termes personnels.",
+    aucunFavori: "Aucun favori pour l'instant. Appuie sur ♡ sur n'importe quel terme pour l'ajouter ici.",
+  },
+
+  revision: {
+    titre: "Termes à revoir",
+    aucun: "Aucun terme à revoir pour l'instant. Bien joué !",
+    compte: (n: number) => `${n} terme${n > 1 ? "s" : ""} à revoir`,
+    flashcardsUnite: "Flashcards de cette unité",
   },
 
   unites: {

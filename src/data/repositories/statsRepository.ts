@@ -66,4 +66,30 @@ export const statsRepository = {
       joursUsageDepuisExport: 0,
     })
   },
+
+  async ajouterTermeVuAujourdhui(): Promise<void> {
+    const today = new Date().toISOString().slice(0, 10)
+    const stats = await this.get()
+    const historique = [...stats.historiqueActivite]
+    const idx = historique.findIndex(a => a.date === today)
+    if (idx >= 0) {
+      historique[idx] = { ...historique[idx], termesVus: historique[idx].termesVus + 1 }
+    } else {
+      historique.push({ date: today, termesVus: 1, quizReussis: 0 })
+    }
+    await this.update({ historiqueActivite: historique.slice(-90) })
+  },
+
+  async ajouterQuizReussiAujourdhui(): Promise<void> {
+    const today = new Date().toISOString().slice(0, 10)
+    const stats = await this.get()
+    const historique = [...stats.historiqueActivite]
+    const idx = historique.findIndex(a => a.date === today)
+    if (idx >= 0) {
+      historique[idx] = { ...historique[idx], quizReussis: historique[idx].quizReussis + 1 }
+    } else {
+      historique.push({ date: today, termesVus: 0, quizReussis: 1 })
+    }
+    await this.update({ historiqueActivite: historique.slice(-90) })
+  },
 }

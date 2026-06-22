@@ -65,6 +65,7 @@ export function AssociationSession() {
     await statsRepository.ajouterPoints(pts)
     const stats = await statsRepository.get()
     await statsRepository.update({ quizJoues: stats.quizJoues + 1 })
+    await statsRepository.ajouterQuizReussiAujourdhui()
     const badges = await checkBadges()
     setPtsGagnes(pts)
     setNewBadges(badges)

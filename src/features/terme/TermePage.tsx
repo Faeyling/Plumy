@@ -34,6 +34,7 @@ export function TermePage() {
     if (!id) return
     await progressionRepository.marquerVu(id)
     await statsRepository.ajouterPoints(5)
+    await statsRepository.ajouterTermeVuAujourdhui()
     chargerProg()
     afficherToast('+5 points — terme marqué comme vu !')
   }
