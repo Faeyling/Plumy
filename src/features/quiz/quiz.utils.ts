@@ -2,6 +2,16 @@ import type { Terme } from '@/content/schema'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
+export interface QuestionReconnaissanceVisuelle {
+  type: 'reconnaissance-visuelle'
+  termeId: string
+  categorie: string
+  disciplines: string[]
+  extrait: string
+  bonneReponse: string
+  choix: string[]
+}
+
 export interface QuestionQCM {
   type: 'qcm'
   termeId: string
@@ -64,6 +74,31 @@ export function genererAssociation(termes: Terme[], nbPaires = 5): PaireAssociat
     nom: t.nom,
     definition: t.definition.length > 110 ? t.definition.slice(0, 107) + '…' : t.definition,
   }))
+}
+
+export function genererReconnaissanceVisuelle(termes: Terme[], nbQuestions = 8): QuestionReconnaissanceVisuelle[] {
+  const eligibles = termes.filter(t => t.description.length > 60)
+  if (eligibles.length < 4) return []
+  const nb = Math.min(nbQuestions, eligibles.length)
+  return shuffle(eligibles).slice(0, nb).map(terme => {
+    const lignes = terme.description
+      .split('\n')
+      .map(l => l.trim())
+      .filter(l => l && !l.startsWith('#') && !l.startsWith('|') && !l.startsWith('-') && !l.startsWith('*') && !l.startsWith('**'))
+    const source = (lignes[0] ?? terme.description).slice(0, 200)
+    const escaped = terme.nom.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+    const extrait = source.replace(new RegExp(escaped, 'gi'), '___')
+    const autres = shuffle(termes.filter(t => t.id !== terme.id)).slice(0, 3)
+    return {
+      type: 'reconnaissance-visuelle' as const,
+      termeId: terme.id,
+      categorie: terme.categories[0] ?? 'concepts',
+      disciplines: terme.disciplines,
+      extrait,
+      bonneReponse: terme.nom,
+      choix: shuffle([terme.nom, ...autres.map(t => t.nom)]),
+    }
+  })
 }
 
 export function genererTexteATrous(termes: Terme[], nbQuestions = 8): QuestionTexteATrous[] {

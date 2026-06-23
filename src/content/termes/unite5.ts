@@ -59,6 +59,7 @@ export const termesUnite5: Terme[] = [
     conseils: [
       "Chaque fois que tu écoutes une chanson pop ou R&B, essaie de trouver les 8 temps. Claque à 1, claque à 5. Tu verras que presque tout est construit en phrases de 8.",
     ],
+    etymologie: "De l'anglais 'eight count' (compte de huit). Spécificité du jazz et des danses commerciales : contrairement au ballet qui pense en mesures de 3 ou 4, le jazz structure ses phrases en blocs de 8 — l'unité naturelle du phrasé jazz-musical.",
     difficulteInterne: 1,
     termesLies: ['accent-jazz', 'preparation-elan'],
   },
@@ -98,6 +99,7 @@ export const termesUnite5: Terme[] = [
     conseils: [
       "Marche normalement. Maintenant, lors de chaque pas, pose la *moitié avant* du pied en premier (demi-pointe), puis complète le pied. Tu as ralenti le transfert de poids. C'est la sensation du ball change.",
     ],
+    etymologie: "De l'anglais 'ball' (la boule — avant du pied, la demi-pointe) et 'change' (changement de poids). Le pied se pose sur sa partie avant (*ball*), puis le poids change (*change*) — deux mots, deux temps.",
     difficulteInterne: 1,
     termesLies: ['jazz-square', 'preparation-elan', 'chasse-jazz'],
   },
@@ -117,6 +119,7 @@ export const termesUnite5: Terme[] = [
     conseils: [
       "Dessine un carré sur le sol avec de la craie. Poses tes 4 pas sur les coins du carré. Répète jusqu'à ce que tu 'voies' le carré sans la craie.",
     ],
+    etymologie: "De l'anglais 'jazz square' (carré de jazz). Les quatre pas décrivent un carré (ou un losange) sur le sol — une image géométrique simple qui nomme parfaitement le pattern. Aussi appelé 'jazz box' aux États-Unis.",
     difficulteInterne: 1,
     termesLies: ['ball-change', 'jazz-walk', 'chasse-jazz'],
   },

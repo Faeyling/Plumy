@@ -23,6 +23,7 @@ export const termesUnite7: Terme[] = [
     conseils: [
       "Le cancan n'est pas seulement une jambe qui monte — c'est aussi un sourire, une jupe qui vole, et une ligne de danseuses synchronisées. Sans ces trois éléments, c'est un grand battement, pas du cancan.",
     ],
+    etymologie: "Du français 'cancan' — terme populaire du XIXe siècle désignant le scandale, le tapage, la chose indécente. La danse portait donc parfaitement son nom à l'époque. Le préfixe 'french' est ajouté à l'étranger pour distinguer la version parisienne de ses imitations.",
     difficulteInterne: 4,
     termesLies: ['chorus-line', 'high-kick', 'grand-battement'],
   },
@@ -83,6 +84,7 @@ export const termesUnite7: Terme[] = [
     conseils: [
       "En chorus line, tu n'es pas une soliste — tu es un instrument dans un orchestre. Ton rôle est de *fondre* dans l'ensemble, pas de te distinguer. La beauté vient de l'unité.",
     ],
+    etymologie: "De l'anglais 'chorus' (chœur, groupe de danseurs/chanteurs de soutien) et 'line' (ligne). La ligne de chœur est la formation iconique de la revue — rangée alignée, synchronisée, uniformément costumée.",
     difficulteInterne: 2,
     termesLies: ['synchronisation-chorus', 'high-kick', 'french-cancan'],
   },
@@ -172,6 +174,7 @@ export const termesUnite7: Terme[] = [
     conseils: [
       "Pour développer la présence de meneuse : répète face à un miroir en imaginant une salle comble. Ton regard, ton maintien, ta façon d'occuper l'espace — tout doit dire 'je suis là pour vous'. C'est ça, mener.",
     ],
+    etymologie: "Du verbe français 'mener' (conduire, diriger, guider). La meneuse de revue est celle qui 'mène' le groupe sur scène — elle est à la fois chef de file et incarnation de l'art de la revue.",
     difficulteInterne: 4,
     termesLies: ['chorus-line', 'presentation-scenique', 'rapport-public'],
   },

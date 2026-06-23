@@ -164,8 +164,44 @@ export function UnitePage() {
           </section>
         )}
 
+        {/* Schéma origines/interactions — unité 1 uniquement */}
+        {numUnite === 1 && (
+          <section aria-label="Schéma interactif">
+            <h2 className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-base mb-3">
+              Schéma des origines
+            </h2>
+            <Link
+              to="/graphe-danses"
+              className="flex items-center gap-3 p-4 bg-[var(--color-candy-lavande-light)] border border-[var(--color-candy-lavande)] rounded-[var(--radius-card)] hover:shadow-md transition-shadow"
+            >
+              <span className="flex-shrink-0 w-10 h-10 rounded-xl bg-[var(--color-candy-lavande)] flex items-center justify-center" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <circle cx="5" cy="12" r="2" fill="white" />
+                  <circle cx="12" cy="5" r="2" fill="white" />
+                  <circle cx="19" cy="12" r="2" fill="white" />
+                  <circle cx="12" cy="19" r="2" fill="white" />
+                  <line x1="7" y1="11" x2="10" y2="6.5" stroke="white" strokeWidth="1.5" />
+                  <line x1="14" y1="6.5" x2="17" y2="11" stroke="white" strokeWidth="1.5" />
+                  <line x1="7" y1="13" x2="10" y2="17.5" stroke="white" strokeWidth="1.5" />
+                </svg>
+              </span>
+              <div className="flex-1 min-w-0">
+                <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm">
+                  Origines et interactions des danses
+                </p>
+                <p className="text-xs text-[var(--color-gris-texte)] mt-0.5">
+                  Schéma interactif — 8 disciplines, de l'origine à aujourd'hui
+                </p>
+              </div>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="flex-shrink-0 text-[var(--color-candy-lavande)]">
+                <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </Link>
+          </section>
+        )}
+
         {/* Quiz d'entraînement */}
-        {(['qcm', 'association', 'texte-a-trous'] as const).some(t => unite.quizDisponibles.includes(t)) && (
+        {(['qcm', 'association', 'texte-a-trous', 'reconnaissance-visuelle'] as const).some(t => unite.quizDisponibles.includes(t)) && (
           <section aria-label="Quiz d'entraînement">
             <h2 className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-base mb-3">
               Entraînement
@@ -196,6 +232,15 @@ export function UnitePage() {
                 >
                   <span className="w-10 h-10 rounded-xl bg-[var(--color-candy-corail)] flex items-center justify-center font-bold text-white text-lg" aria-hidden="true">T</span>
                   <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm">Texte à trous</p>
+                </Link>
+              )}
+              {unite.quizDisponibles.includes('reconnaissance-visuelle') && (
+                <Link
+                  to={`/quiz/reconnaissance-visuelle/${numUnite}`}
+                  className="flex flex-col items-center gap-2 p-4 bg-[#d1fae5] border border-[#059669] rounded-[var(--radius-card)] hover:shadow-md transition-shadow"
+                >
+                  <span className="w-10 h-10 rounded-xl flex items-center justify-center font-bold text-white text-lg" style={{ backgroundColor: '#059669' }} aria-hidden="true">R</span>
+                  <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm">Reconnaître</p>
                 </Link>
               )}
             </div>

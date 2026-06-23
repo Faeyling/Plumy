@@ -22,7 +22,7 @@ export const termesUnite10: Terme[] = [
     securite: {
       risques: ["Aggravation de la lésion si l'activité n'est pas modifiée aux stades 3-4"],
       precautions: ["Consulter un professionnel de santé spécialisé danse dès le stade 2 de douleur"],
-      referencesIds: ['hincapie2008', 'jacobs2012'],
+      referencesIds: ['hincapie2008', 'jacobs2012', 'evidence_review2025'],
     },
     difficulteInterne: 2,
     termesLies: ['facteurs-risque', 'tendinopathie', 'repos-recuperation'],
@@ -42,6 +42,11 @@ export const termesUnite10: Terme[] = [
     conseils: [
       "Après toute blessure traumatique, la reprise de la danse doit être progressive et idéalement guidée par un kiné spécialisé en danse. Une reprise trop rapide est la première cause de rechute.",
     ],
+    securite: {
+      risques: ["Aggravation et récidive si reprise trop rapide sans rééducation complète"],
+      precautions: ["Protocole RICE immédiat, puis avis médical avant reprise de la danse"],
+      referencesIds: ['hincapie2008', 'evidence_review2025'],
+    },
     difficulteInterne: 1,
     termesLies: ['entorse-cheville', 'blessure-surmenage', 'repos-recuperation'],
   },
@@ -86,6 +91,11 @@ export const termesUnite10: Terme[] = [
     conseils: [
       "Règle simple : tu dois légèrement transpirer à la fin de l'échauffement. Si tu es encore 'froid', continue. Si tu es épuisé, c'était trop intense.",
     ],
+    securite: {
+      risques: ["Risque de blessure musculaire et articulaire significativement augmenté sans échauffement adéquat"],
+      precautions: ["15-30 minutes d'échauffement progressif avant toute activité intensive"],
+      referencesIds: ['evidence_review2025', 'cofre2023'],
+    },
     difficulteInterne: 1,
     termesLies: ['retour-au-calme', 'renforcement-neuromusculaire', 'facteurs-risque'],
   },
@@ -104,6 +114,11 @@ export const termesUnite10: Terme[] = [
     conseils: [
       "Si tu n'as que 10 minutes : 2 minutes de marche, puis 8 minutes d'étirements des ischio-jambiers, quadriceps et mollets. Ces trois groupes sont les plus sollicités et les plus importants à étirer.",
     ],
+    securite: {
+      risques: ["Augmentation des courbatures et retard de récupération si le retour au calme est supprimé"],
+      precautions: ["Étirements statiques uniquement après l'effort, jamais avant (risque de blessure)"],
+      referencesIds: ['evidence_review2025'],
+    },
     difficulteInterne: 1,
     termesLies: ['echauffement-danse', 'repos-recuperation', 'souplesse-mobilite'],
   },
@@ -122,6 +137,11 @@ export const termesUnite10: Terme[] = [
     conseils: [
       "Test de base : reste sur une jambe, yeux fermés. Si tu ne peux pas tenir 10 secondes sans te stabiliser avec les bras, ton contrôle neuromusculaire est un facteur de risque à travailler.",
     ],
+    securite: {
+      risques: ["Risque d'entorse de cheville et de blessures articulaires diminué de 30-50% avec un programme de renforcement neuromusculaire régulier"],
+      precautions: ["Programme de 15-20 minutes, 3 fois par semaine — peut s'intégrer dans l'échauffement"],
+      referencesIds: ['cofre2023', 'nmt_ballroom2021', '11plus_dance_physio2025'],
+    },
     difficulteInterne: 2,
     termesLies: ['proprioception', 'gainage-fonctionnel', 'entorse-cheville'],
   },
@@ -141,6 +161,11 @@ export const termesUnite10: Terme[] = [
     conseils: [
       "Essaie ceci : inspire, puis en expirant, crée une légère résistance dans le ventre (comme si tu allais tousser, mais en douceur). Ce léger engagement du transverse, maintenu dans ton mouvement, c'est le gainage fonctionnel.",
     ],
+    securite: {
+      risques: ["Risque lombaire augmenté si le gainage profond est absent lors des grandes amplitudes et portés"],
+      precautions: ["Apprendre l'activation du transverse avant de travailler en amplitude maximale ou en inversion"],
+      referencesIds: ['cofre2023', 'strength_meta2024'],
+    },
     difficulteInterne: 2,
     termesLies: ['renforcement-neuromusculaire', 'conditioning-pole', 'equilibre-musculaire'],
   },
@@ -159,6 +184,11 @@ export const termesUnite10: Terme[] = [
     conseils: [
       "Test : lève ta jambe seul à la hauteur maximale que tu peux contrôler. Maintenant regarde dans un miroir à quelle hauteur tu arrives passivement. L'écart entre les deux, c'est ton 'déficit' — et c'est là que tu dois travailler.",
     ],
+    securite: {
+      risques: ["Hypermobilité sans force de contrôle = facteur de risque de blessure articulaire majeur"],
+      precautions: ["Toujours travailler la mobilité active (avec contrôle musculaire) en parallèle des étirements passifs"],
+      referencesIds: ['yin2019', 'iadms_turnout', 'evidence_review2025'],
+    },
     difficulteInterne: 2,
     termesLies: ['renforcement-neuromusculaire', 'equilibre-musculaire', 'facteurs-risque'],
   },
@@ -177,6 +207,11 @@ export const termesUnite10: Terme[] = [
     conseils: [
       "Planifie tes jours de repos à l'avance comme tu planifie tes cours. Ce ne sont pas des jours 'perdus' — ce sont des jours où le travail de la semaine se consolide.",
     ],
+    securite: {
+      risques: ["Surmenage et blessures de répétition si les jours de repos sont systématiquement supprimés"],
+      precautions: ["Minimum 1-2 jours de récupération par semaine, et une semaine de charge réduite toutes les 4-6 semaines"],
+      referencesIds: ['evidence_review2025', 'modern_contemp_meta2024'],
+    },
     difficulteInterne: 1,
     termesLies: ['hygiene-vie', 'blessure-surmenage', 'facteurs-risque'],
   },
@@ -268,6 +303,11 @@ export const termesUnite10: Terme[] = [
     conseils: [
       "Identifie le muscle que tu ressens le moins travailler dans tes exercices habituels. C'est probablement un muscle sous-développé. Consacre 10 minutes de chaque séance à l'activer spécifiquement.",
     ],
+    securite: {
+      risques: ["Les déséquilibres musculaires chroniques sont un facteur de risque de blessures articulaires (genou, épaule, hanche)"],
+      precautions: ["Bilan de prévention annuel avec un kinésithérapeute spécialisé en danse ou en sport"],
+      referencesIds: ['cofre2023', 'strength_meta2024'],
+    },
     difficulteInterne: 2,
     termesLies: ['renforcement-neuromusculaire', 'gainage-fonctionnel', 'souplesse-mobilite'],
   },
@@ -286,6 +326,11 @@ export const termesUnite10: Terme[] = [
     conseils: [
       "Si tu termines chaque cours épuisé(e) au point de ne pas pouvoir faire autre chose, si tu te blesses souvent, si ton humeur est instable — évalue ta nutrition et ton sommeil avant d'augmenter l'entraînement. La solution est peut-être là.",
     ],
+    securite: {
+      risques: ["Déficit énergétique relatif du sport (RED-S) : fragilité osseuse, troubles hormonaux, risque de blessure accru"],
+      precautions: ["Ne pas restreindre les apports caloriques si l'activité physique est intense — consulter un diététicien spécialisé si besoin"],
+      referencesIds: ['mainwaring2017', 'koutedakis2004'],
+    },
     difficulteInterne: 2,
     termesLies: ['repos-recuperation', 'facteurs-risque', 'sante-mentale-danse'],
   },
@@ -304,6 +349,11 @@ export const termesUnite10: Terme[] = [
     conseils: [
       "Demande-toi régulièrement : 'Est-ce que je danse parce que ça me fait du bien, ou parce que je ne sais pas ne pas danser ?' La réponse change selon les périodes — et elle mérite d'être honnête.",
     ],
+    securite: {
+      risques: ["Le stress psychologique chronique augmente la perception de la douleur et ralentit la récupération"],
+      precautions: ["Chercher un soutien psychologique si nécessaire — idéalement un thérapeute familier des milieux artistiques"],
+      referencesIds: ['mainwaring2017', 'cairn_au_dela_douleur2006'],
+    },
     difficulteInterne: 2,
     termesLies: ['hygiene-vie', 'repos-recuperation', 'facteurs-risque'],
   },

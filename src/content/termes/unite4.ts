@@ -21,7 +21,7 @@ export const termesUnite4: Terme[] = [
       "Pose les deux mains sur tes hanches pour les sentir. Maintenant, déplace uniquement la cage thoracique à droite — les hanches restent sous tes mains, immobiles. Si elles bougent, tu as perdu l'isolation.",
     ],
     difficulteInterne: 2,
-    etymologie: "Du latin 'insulare' → français 'isoler' (mettre à part). En danse : isoler une partie du reste du corps.",
+    etymologie: "Du latin *insula* (île) → *insulare* → français 'isoler'. En danse, isoler une partie du corps c'est en faire une 'île' : un territoire indépendant qui bouge sans entraîner les continents voisins.",
     termesLies: ['polycentrisme', 'travail-bassin', 'succession-corporelle'],
   },
 
@@ -86,6 +86,7 @@ export const termesUnite4: Terme[] = [
     conseils: [
       "Imagine une planche sur ton dos. Elle te force à rester droit. Maintenant penche-toi en avant depuis tes hanches — la planche reste horizontale. Voilà le flat back.",
     ],
+    etymologie: "De l'anglais 'flat' (plat, horizontal) et 'back' (dos). La dénomination anglaise s'est imposée mondialement dans les cours de danse moderne et jazz, même dans les pays francophones.",
     difficulteInterne: 2,
     termesLies: ['hinge', 'undulation', 'table-moderne'],
   },
@@ -131,6 +132,7 @@ export const termesUnite4: Terme[] = [
     conseils: [
       "Allonge-toi sur le dos et fait une 'table' (genoux pliés). Décolle ton bassin du sol, puis le bas du dos, puis le haut du dos, vertèbre par vertèbre. Redescends dans l'ordre. C'est l'ondulation en position couchée — sentir d'abord, puis mettre debout.",
     ],
+    etymologie: "Du latin *undula* (petite vague), de *unda* (onde, vague). L'ondulation reproduit dans le corps la propagation d'une vague — chaque segment s'active après le précédent, comme des rouleaux successifs.",
     difficulteInterne: 2,
     termesLies: ['succession-corporelle', 'flat-back', 'isolation'],
   },
@@ -214,6 +216,7 @@ export const termesUnite4: Terme[] = [
     conseils: [
       "Commence avec deux centres : fais battre tes mains à un rythme régulier. Pendant ce temps, fais bouger ton bassin dans un rythme différent. C'est le début du polycentrisme — deux centres, deux rythmes, un seul corps.",
     ],
+    etymologie: "Du grec *polus* (plusieurs) et *kentron* (centre, point central). Le polycentrisme dansé est l'opposé du monocentrisme ballet : plusieurs centres du corps actifs et indépendants en même temps, héritage direct des danses d'Afrique de l'Ouest.",
     difficulteInterne: 3,
     termesLies: ['isolation', 'travail-bassin', 'succession-corporelle'],
   },
@@ -291,6 +294,7 @@ export const termesUnite4: Terme[] = [
     conseils: [
       "À deux : apprenez la même phrase de 8 temps. Maintenant, B commence quand A est à son temps 5. Vous êtes à 4 temps de décalage. Observez comment la même phrase devient deux choses différentes — c'est la magie du canon.",
     ],
+    etymologie: "Du grec *kanon* (règle, mesure, baguette droite) via le latin. Emprunté à la terminologie musicale : en musique, le canon est une mélodie imitée par une voix en décalage — même principe transposé au mouvement.",
     difficulteInterne: 3,
     termesLies: ['unisson', 'phrase-mouvement'],
   },

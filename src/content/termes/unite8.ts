@@ -23,6 +23,7 @@ export const termesUnite8: Terme[] = [
     conseils: [
       "Au début, chaque séance de pole laissera des marques (redness, légères contusions). C'est normal — la peau s'habitue. Ne pas forcer au travers de la douleur vive, mais les marques normales ne sont pas dangereuses.",
     ],
+    etymologie: "De l'anglais 'grip' (prise ferme, adhérence, serrage). Emprunté au vocabulaire de l'escalade et de la musculation — 'grip strength' désigne la force de saisie.",
     difficulteInterne: 1,
     termesLies: ['prise-basique', 'montee-pole', 'conditioning-pole'],
   },
@@ -126,6 +127,7 @@ export const termesUnite8: Terme[] = [
     conseils: [
       "Avant toute inversion : 10 secondes de hollow body hold au sol. Si tu tiens 10 secondes sans que le bas du dos ne décolle, tu as le gainage minimal pour commencer à explorer l'inversion assistée.",
     ],
+    etymologie: "Du latin *inversio* (renversement), de *invertere* (retourner, renverser). Une inversion est le renversement complet de la verticalité habituelle — la tête passe sous les hanches, le monde se retourne.",
     difficulteInterne: 4,
     termesLies: ['figure-statique', 'conditioning-pole', 'ayesha'],
   },
@@ -243,6 +245,7 @@ export const termesUnite8: Terme[] = [
     conseils: [
       "Pour comprendre l'exotic pole, cherche des vidéos de concours 'Exotic Pole World Championship'. Observe la précision de la technique de floorwork et la maîtrise des niveaux. C'est aussi exigeant que le pole sport.",
     ],
+    etymologie: "Du terme anglais américain 'exotic' (exotique) — mot chargé d'une histoire raciste d''exoticisation' de l'autre. Son usage dans le pole est revendiqué par certaines comme réappropriation, mais reste objet de débat actif dans la communauté.",
     difficulteInterne: 3,
     termesLies: ['pole-art', 'floorwork-pole', 'posture-heels'],
   },

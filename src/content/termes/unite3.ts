@@ -20,6 +20,7 @@ export const termesUnite3: Terme[] = [
     conseils: [
       "Scan ton corps depuis les pieds jusqu'au sommet de la tête. Repère les zones où tu tiens sans raison — mâchoire, épaules, ventre. Relâche-les. Ton mouvement sera immédiatement plus grand et plus libre.",
     ],
+    etymologie: "De l'anglais 'release' (libération, relâchement) — s'opposant à la 'tension' ou au 'hold'. L'ajout de 'technique' souligne que le relâchement est ici travaillé, pas subi.",
     difficulteInterne: 2,
     termesLies: ['poids-abandon', 'gravite-contemporain', 'somatique', 'fluidite-mouvement'],
   },
@@ -40,6 +41,7 @@ export const termesUnite3: Terme[] = [
     conseils: [
       "Commence par laisser tomber ta tête. Vraiment tomber — sens son poids réel. Ensuite laisse ce poids voyager dans la nuque, les épaules, le dos. L'abandon se répand comme une vague.",
     ],
+    etymologie: "Mot hybride de la danse contemporaine francophone : 'poids' du latin *pondus* (ce qui pèse), et 'abandon' du vieux français *a bandon* (mettre à disposition, laisser aller). L'association dit tout : laisser son poids aller librement.",
     difficulteInterne: 2,
     termesLies: ['fall-recovery', 'gravite-contemporain', 'partage-poids', 'contact-improvisation'],
   },
@@ -99,6 +101,7 @@ export const termesUnite3: Terme[] = [
     conseils: [
       "Lance ton bras en avant, laisse-le entraîner ton buste. Sens le moment où tu es 'en chute'. Puis récupère — mais pas pour t'arrêter, pour te relancer vers la prochaine chute. Ce balancement est la vie du mouvement.",
     ],
+    etymologie: "De l'anglais 'fall' (chute) et 'recovery' (rétablissement). Terme forgé par Doris Humphrey pour nommer son principe central : la danse vit dans l'arc entre la chute et le retour à l'équilibre.",
     difficulteInterne: 2,
     termesLies: ['poids-abandon', 'gravite-contemporain', 'suspension', 'rebond-swing'],
   },
@@ -120,6 +123,7 @@ export const termesUnite3: Terme[] = [
     conseils: [
       "Lance une balle en l'air et regarde-la au sommet de sa trajectoire — l'instant où elle s'arrête avant de redescendre. C'est ça, la suspension. Reproduis cette sensation dans ton bras, ton buste, ta jambe.",
     ],
+    etymologie: "Du latin *suspendere* (*sub* + *pendere*, tenir en haut). La suspension dansée est le moment où le corps 'pend' entre montée et descente — comme un pendule au point mort de son oscillation.",
     difficulteInterne: 2,
     termesLies: ['fall-recovery', 'rebond-swing', 'poids-abandon'],
   },
@@ -218,6 +222,7 @@ export const termesUnite3: Terme[] = [
     conseils: [
       "Assieds-toi en tailleur. Place une main sur ton nombril. L'autre main commence à tourner vers la droite — laisse ton nombril la suivre peu à peu, puis ton sternum, tes épaules, ta tête. Chaque partie suit la précédente. C'est la séquentialité de la spirale.",
     ],
+    etymologie: "Du latin *spiralis*, tiré du grec *speira* (enroulement, torsade). La spirale est une des formes fondamentales de la nature — la coquille, la galaxie, l'ADN — que la danse contemporaine ramène dans le corps.",
     difficulteInterne: 2,
     termesLies: ['torsion', 'contraction-release', 'floorwork', 'roulade'],
   },
@@ -282,6 +287,7 @@ export const termesUnite3: Terme[] = [
     conseils: [
       "Le sol est un partenaire, pas un accident. Avant de 'tomber', pense à où tu veux aller après — sur le dos, sur le côté, en roulade ? Le sol te répond si tu lui parles.",
     ],
+    etymologie: "De l'anglais 'floor' (sol, plancher) et 'work' (travail). Le terme anglais s'est imposé en français parce que les pionniers qui l'ont théorisé — Cunningham, Forsythe, la scène new-yorkaise — écrivaient et enseignaient en anglais.",
     difficulteInterne: 2,
     termesLies: ['roulade', 'chute-controlee', 'spirale', 'gravite-contemporain'],
   },

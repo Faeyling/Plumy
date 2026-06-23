@@ -83,6 +83,7 @@ export const termesUnite6: Terme[] = [
     conseils: [
       "En heels, commence le body roll depuis les genoux (pas les pieds que tu ne peux pas vraiment plier). Genoux → bassin → cage → épaules → tête. Cinq stations, une seule vague.",
     ],
+    etymologie: "De l'anglais 'body' (corps) et 'roll' (rouleau, roulement). Le body roll reproduit le passage d'un rouleau dans le corps — chaque segment s'aplatit puis se soulève dans la continuité du précédent.",
     difficulteInterne: 2,
     termesLies: ['undulation', 'posture-heels', 'sass'],
   },
@@ -162,6 +163,7 @@ export const termesUnite6: Terme[] = [
     conseils: [
       "Choisis une chanson qui te donne l'impression d'être la personne la plus puissante de la pièce. Danse uniquement pour toi. Ne juge rien. C'est la source du sass.",
     ],
+    etymologie: "De l'anglais américain 'sass' (impudence, effronterie, culot) — d'abord adjectif (*sassy*, désignant quelqu'un qui répond avec audace). Adopté dans la culture heels et ballroom pour nommer cette présence affirmée qui ne s'excuse pas d'exister.",
     difficulteInterne: 3,
     termesLies: ['frame-heels', 'strut', 'vogue-ballroom-heels'],
   },
@@ -199,6 +201,7 @@ export const termesUnite6: Terme[] = [
     conseils: [
       "Regarde le documentaire *Paris is Burning* (1990) et la série *Pose* (FX). Ce sont les meilleurs passeports vers la culture ballroom — la source de tant de ce que tu pratiques en heels.",
     ],
+    etymologie: "Du magazine américain *Vogue* — les premières figures du voguing imitaient les poses de ses modèles. 'Ballroom' désigne les salles underground noires et LGBTQ+ de Harlem (New York), espaces de liberté et de compétition nés d'un rejet social.",
     difficulteInterne: 2,
     termesLies: ['sass', 'frame-heels', 'strut'],
   },

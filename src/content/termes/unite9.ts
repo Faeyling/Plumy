@@ -19,6 +19,7 @@ export const termesUnite9: Terme[] = [
     conseils: [
       "La règle d'or du burlesque : ce que tu NE montres pas est plus érotique que ce que tu montres. La main qui couvre, l'épaule tournée, le regard qui promet sans tenir — c'est ça, le tease.",
     ],
+    etymologie: "Du verbe français 'effeuiller' (ôter les feuilles, les pétales) — par métaphore poétique, l'effeuillage burlesque désigne l'art d'ôter les vêtements comme on effeuille une fleur : lentement, pétale après pétale.",
     difficulteInterne: 3,
     termesLies: ['tease', 'character-burlesque', 'prop-burlesque'],
   },
@@ -37,6 +38,7 @@ export const termesUnite9: Terme[] = [
     conseils: [
       "Exercice de tease : assieds-toi devant un miroir avec un gant. Essaie de prendre 2 minutes entières pour retirer ce gant en utilisant le hold, le misdirection et le slow reveal. 2 minutes, c'est long — et c'est le temps d'un bon tease.",
     ],
+    etymologie: "De l'anglais 'to tease' (taquiner, agacer, titiller). Le tease burlesque n'est pas la révélation — c'est la promesse maintenue, la taquinerie sans résolution.",
     difficulteInterne: 3,
     termesLies: ['effeuillage', 'rapport-public', 'timing-burlesque'],
   },
@@ -74,6 +76,7 @@ export const termesUnite9: Terme[] = [
     conseils: [
       "Laisse tomber tes épaules. Maintenant, pousse légèrement l'épaule droite vers l'avant, puis la gauche. Alterne lentement. Accélère. Relâche les bras. Laisse la vibration se créer d'elle-même. Tu as un shimmy.",
     ],
+    etymologie: "De l'anglais américain 'shimmy' — déformation phonétique du mot 'chemise' (*chémi*). La danse serait nommée ainsi parce que le tremblement des épaules faisait vibrer la chemise ou la robe. Popularisée dans les années 1910–1920.",
     difficulteInterne: 2,
     termesLies: ['isolation', 'bump-grind', 'effeuillage'],
   },
@@ -92,6 +95,7 @@ export const termesUnite9: Terme[] = [
     conseils: [
       "Pratique le bump en solo : compte 1-2-3-BUMP. Sur chaque BUMP, le bassin fait une impulsion nette dans une direction choisie. Le reste du corps reste relativement immobile. C'est cette isolation qui rend le bump lisible.",
     ],
+    etymologie: "De l'anglais 'bump' (choc, impulsion de hanche) et 'grind' (moudre, frotter — mouvement circulaire). Les deux mots décrivent exactement les deux gestes : l'impulsion ponctuelle et le mouvement rotatif continu.",
     difficulteInterne: 2,
     termesLies: ['shimmy', 'travail-bassin', 'effeuillage'],
   },
@@ -144,6 +148,7 @@ export const termesUnite9: Terme[] = [
     conseils: [
       "Le néo-burlesque n'a pas de 'bon corps' ou de 'bon style'. Sa seule règle est l'intention artistique et la souveraineté de l'artiste sur sa propre présentation. C'est sa force et sa beauté.",
     ],
+    etymologie: "Du grec *neos* (nouveau) + 'burlesque' (de l'italien *burla*, plaisanterie, moquerie). Le néo-burlesque des années 1990 réactive la tradition du vaudeville et du music-hall américain en lui ajoutant une dimension féministe et queer explicite.",
     difficulteInterne: 1,
     termesLies: ['effeuillage', 'character-burlesque', 'burlesque-origines'],
   },
