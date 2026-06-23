@@ -654,6 +654,6 @@ export const termesUnite2: Terme[] = [
     ],
     difficulteInterne: 2,
     etymologie: "Du nom de la danse folklorique 'bourrée' (Auvergne, France) — danse en rythme ternaire à pas rapides. Le pas de bourrée de danse classique s'en inspire structurellement.",
-    termesLies: ['glissade', 'pirouette', 'allegro', 'liaisons'],
+    termesLies: ['glissade', 'pirouette', 'allegro'],
   },
 ]
