@@ -62,6 +62,15 @@ export function RappelSauvegarde() {
                 >
                   {fr.sauvegarde.plusTard}
                 </button>
+                <button
+                  onClick={async () => {
+                    await statsRepository.update({ rappelSauvegardeActif: false })
+                    setVisible(false)
+                  }}
+                  className="px-3 py-1.5 text-[var(--color-gris-texte)] text-xs underline underline-offset-2"
+                >
+                  {fr.sauvegarde.nePlusRappeler}
+                </button>
               </div>
             </div>
           </div>

@@ -256,6 +256,7 @@ export const fr = {
     importSucces: "Données importées avec succès !",
     exporterMaintenant: "Exporter maintenant",
     plusTard: "Plus tard",
+    nePlusRappeler: "Ne plus me rappeler",
   },
 
   onboarding: {

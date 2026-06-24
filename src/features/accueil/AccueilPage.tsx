@@ -2,6 +2,7 @@ import { useEffect, useState, useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { PluмyMascot } from '@/components/mascotte/PluмyMascot'
+import { OnboardingModal } from '@/features/onboarding/OnboardingModal'
 import { useStats } from '@/hooks/useStats'
 import { statsRepository } from '@/data/repositories/statsRepository'
 import { progressionRepository } from '@/data/repositories/progressionRepository'
@@ -32,6 +33,7 @@ export function AccueilPage() {
   const { stats, refresh } = useStats()
   const [premiereFois, setPremiereFois] = useState(false)
   const [aRevoir, setARevoir] = useState(0)
+  const [showOnboarding, setShowOnboarding] = useState(false)
 
   const message = useMemo(
     () =>
@@ -103,6 +105,20 @@ export function AccueilPage() {
           <UniteCard key={unite.numero} unite={unite} index={idx} />
         ))}
       </section>
+
+      {/* Pied de page */}
+      <footer className="px-5 pb-6 pt-2 flex justify-center">
+        <button
+          onClick={() => setShowOnboarding(true)}
+          className="text-xs text-[var(--color-gris-texte)] underline underline-offset-2"
+        >
+          {fr.onboarding.rejouer}
+        </button>
+      </footer>
+
+      {showOnboarding && (
+        <OnboardingModal onTermine={() => setShowOnboarding(false)} />
+      )}
     </div>
   )
 }

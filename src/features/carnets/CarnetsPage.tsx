@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { progressionRepository } from '@/data/repositories/progressionRepository'
 import { termesPersoRepository } from '@/data/repositories/termesPersoRepository'
@@ -12,6 +12,7 @@ type Tab = 'favoris' | 'mes-termes'
 interface FavoriItem { prog: ProgressionTerme; terme: Terme }
 
 export function CarnetsPage() {
+  const navigate = useNavigate()
   const [activeTab, setActiveTab] = useState<Tab>('favoris')
   const [favoris, setFavoris] = useState<FavoriItem[]>([])
   const [termesPerso, setTermesPerso] = useState<TermePersonnel[]>([])
@@ -134,7 +135,18 @@ export function CarnetsPage() {
               transition={{ duration: 0.2 }}
               className="space-y-4"
             >
-              {/* Formulaire d'ajout */}
+              {/* Bouton flashcards si termes disponibles */}
+              {termesPerso.length > 0 && form === null && (
+                <button
+                  onClick={() => navigate('/flashcards/perso')}
+                  className="w-full flex items-center justify-center gap-2 py-2.5 bg-[var(--color-candy-lavande)] text-white rounded-[var(--radius-card)] font-[var(--font-titre)] font-semibold text-sm"
+                >
+                  <span>✦</span>
+                  {fr.flashcards.titre}
+                </button>
+              )}
+
+              {/* Formulaire d'ajout/édition */}
               {form !== null ? (
                 <div className="bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] p-4 space-y-3">
                   <h2 className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-base">
