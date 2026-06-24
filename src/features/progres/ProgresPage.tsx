@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Cell } from 'recharts'
 import { useStats } from '@/hooks/useStats'
@@ -21,18 +21,21 @@ export function ProgresPage() {
     })
   }, [])
 
-  const today = new Date().toISOString().slice(0, 10)
-  const activityData = Array.from({ length: 14 }, (_, i) => {
-    const d = new Date(Date.now() - (13 - i) * 86400000)
-    const date = d.toISOString().slice(0, 10)
-    const entry = stats?.historiqueActivite.find(a => a.date === date)
-    return {
-      label: String(d.getDate()),
-      termesVus: entry?.termesVus ?? 0,
-      quizReussis: entry?.quizReussis ?? 0,
-      isToday: date === today,
-    }
-  })
+  const activityData = useMemo(() => {
+    const now = Date.now() // eslint-disable-line react-hooks/purity
+    const today = new Date(now).toISOString().slice(0, 10)
+    return Array.from({ length: 14 }, (_, i) => {
+      const d = new Date(now - (13 - i) * 86400000)
+      const date = d.toISOString().slice(0, 10)
+      const entry = stats?.historiqueActivite.find(a => a.date === date)
+      return {
+        label: String(d.getDate()),
+        termesVus: entry?.termesVus ?? 0,
+        quizReussis: entry?.quizReussis ?? 0,
+        isToday: date === today,
+      }
+    })
+  }, [stats])
 
   const maxActivite = Math.max(...activityData.map(d => d.termesVus + d.quizReussis), 1)
   const badgesGagnes = (stats?.badges ?? []).length

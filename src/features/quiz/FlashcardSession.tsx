@@ -33,7 +33,6 @@ export function FlashcardSession() {
   const [retourne, setRetourne] = useState(false)
   const [jugements, setJugements] = useState<Map<string, Jugement>>(new Map())
   const [termine, setTermine] = useState(false)
-  const [sauvegarde, setSauvegarde] = useState(false)
   const [exitDir, setExitDir] = useState<1 | -1>(1)
   const [animKey, setAnimKey] = useState(0)
 
@@ -53,43 +52,33 @@ export function FlashcardSession() {
   const carteActuelle = deck[index]
 
   const juger = useCallback(
-    (j: Jugement) => {
+    async (j: Jugement) => {
       if (!carteActuelle) return
       setExitDir(j === 'su' ? 1 : -1)
-      setJugements((prev) => new Map(prev).set(carteActuelle.terme.id, j))
       setRetourne(false)
+      const newJugements = new Map(jugements).set(carteActuelle.terme.id, j)
+      setJugements(newJugements)
 
       if (index + 1 >= deck.length) {
+        const mises = Array.from(newJugements.entries()).map(([termeId, juge]) => ({
+          termeId,
+          statut: (juge === 'su' ? 'maitrise' : 'a-revoir') as Statut,
+        }))
+        await progressionRepository.mettreAJourStatutBatch(mises)
         setTermine(true)
       } else {
         setAnimKey((k) => k + 1)
         setIndex((i) => i + 1)
       }
     },
-    [carteActuelle, index, deck.length],
+    [carteActuelle, index, deck.length, jugements],
   )
-
-  const enregistrerSession = useCallback(async () => {
-    const mises = Array.from(jugements.entries()).map(([termeId, j]) => ({
-      termeId,
-      statut: (j === 'su' ? 'maitrise' : 'a-revoir') as Statut,
-    }))
-    await progressionRepository.mettreAJourStatutBatch(mises)
-    setSauvegarde(true)
-  }, [jugements])
-
-  useEffect(() => {
-    if (termine && !sauvegarde) {
-      enregistrerSession()
-    }
-  }, [termine, sauvegarde, enregistrerSession])
 
   const recommencer = () => {
     setIndex(0)
     setRetourne(false)
     setJugements(new Map())
     setTermine(false)
-    setSauvegarde(false)
     setAnimKey((k) => k + 1)
     const termes = getTermesParUnite(numUnite)
     progressionRepository.list().then((progressions) => {

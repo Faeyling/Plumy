@@ -18,7 +18,6 @@ export async function exporterDonnees(): Promise<void> {
     db.termesPersonnels.toArray(),
   ])
   const raw = statsArr[0] as (StatsGlobales & { id?: string }) | undefined
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { id: _id, ...stats } = raw ?? {}
 
   const data: SauvegardeJSON = {
