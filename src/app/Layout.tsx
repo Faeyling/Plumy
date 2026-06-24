@@ -26,12 +26,20 @@ export function Layout() {
 
   return (
     <div className="flex flex-col min-h-svh bg-[var(--color-plumy-bg)]">
+      {/* Skip link accessibilité */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:px-4 focus:py-2 focus:bg-[var(--color-candy-rose)] focus:text-white focus:rounded-lg focus:text-sm focus:font-bold"
+      >
+        Aller au contenu principal
+      </a>
+
       {/* Bouton sauvegarde permanent */}
       <div className="fixed top-3 right-3 z-40">
         <BoutonSauvegarde />
       </div>
 
-      <main className="flex-1 overflow-y-auto pb-20">
+      <main id="main-content" className="flex-1 overflow-y-auto pb-20">
         <Outlet />
       </main>
 

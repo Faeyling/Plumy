@@ -1,73 +1,81 @@
-# React + TypeScript + Vite
+# Plumy — Les carnets de cours d'un paon passionné de danse
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Application web PWA pour apprendre le vocabulaire de la danse à travers huit disciplines traitées à égalité :
+**classique · contemporain · moderne · jazz · cabaret · pole dance · effeuillage burlesque · heels**
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Lancement local
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+L'application est accessible sur `http://localhost:5173`.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Autres commandes
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| Commande | Description |
+|----------|-------------|
+| `npm run build` | Build de production (TypeScript + Vite) |
+| `npm run preview` | Prévisualise le build de production |
+| `npm run lint` | Lint ESLint |
+| `npm test` | Tests unitaires (Vitest) |
+| `npm run test:watch` | Tests en mode watch |
+
+---
+
+## Stack technique
+
+- **React 19** + **Vite 8** + **TypeScript strict**
+- **Tailwind CSS v4** — design system « pop candy »
+- **Dexie.js** — surcouche IndexedDB pour le stockage 100 % local
+- **Framer Motion** — animations (`prefers-reduced-motion` respecté)
+- **Recharts** — graphiques de progression
+- **vite-plugin-pwa** — service worker + manifest PWA installable
+- **Vitest** + **jsdom** — tests unitaires
+
+---
+
+## Structure des dossiers
+
 ```
+src/
+├── app/          # Bootstrap, routing, layout global
+├── components/   # Mascotte SVG, UI (boutons, modales...)
+├── content/      # CONTENU PÉDAGOGIQUE — termes, cours, unités
+│   ├── schema.ts # Types TypeScript (source de vérité)
+│   ├── termes/   # Un fichier par unité
+│   └── cours/    # Cours rédigés
+├── data/         # Repositories Dexie (IndexedDB)
+├── features/     # Fonctionnalités : glossaire, quiz, carnets...
+├── lib/          # Utilitaires (recherche, gamification)
+├── styles/       # Tokens CSS (couleurs, animations)
+└── i18n/         # Libellés français centralisés
+```
+
+Ajouter un terme ou un cours : éditez uniquement `src/content/` — aucun code applicatif à modifier.
+
+---
+
+## Fonctionnalités
+
+- **Glossaire** (~220 termes) avec recherche instantanée et filtres
+- **Quiz** : QCM, association, texte à trous, flashcards
+- **Carnets** : termes personnels + favoris
+- **Progression** : stats, badges, streak de jours (Recharts)
+- **Sources** : 30 références scientifiques et culturelles
+- **Sauvegarde** : export/import JSON local, rappel après 5 jours sans export
+- **Onboarding** Plumy en 3 écrans, rejouable depuis l'accueil
+- **Schéma origines et interactions** des danses (D3.js)
+- 100 % hors-ligne, aucun compte, aucune donnée envoyée
+
+---
+
+## Documentation
+
+- [Architecture](docs/ARCHITECTURE.md)
+- [Guide contenu](docs/CONTENT-GUIDE.md)
+- [Déploiement](docs/DEPLOY.md)
+- [Format d'export](docs/EXPORT-FORMAT.md)

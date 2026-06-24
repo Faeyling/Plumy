@@ -1,22 +1,36 @@
+import { lazy, Suspense } from 'react'
 import { createBrowserRouter } from 'react-router-dom'
 import { Layout } from './Layout'
 import { AccueilPage } from '@/features/accueil/AccueilPage'
-import { GlossairePage } from '@/features/glossaire/GlossairePage'
-import { QuizPage } from '@/features/quiz/QuizPage'
-import { ProgresPage } from '@/features/progres/ProgresPage'
-import { CarnetsPage } from '@/features/carnets/CarnetsPage'
-import { SourcesPage } from '@/features/sources/SourcesPage'
-import { FlashcardSession } from '@/features/quiz/FlashcardSession'
-import { PersoFlashcardSession } from '@/features/quiz/PersoFlashcardSession'
-import { QCMSession } from '@/features/quiz/QCMSession'
-import { AssociationSession } from '@/features/quiz/AssociationSession'
-import { TexteATrousSession } from '@/features/quiz/TexteATrousSession'
-import { ReconnaissanceVisuelleSession } from '@/features/quiz/ReconnaissanceVisuelleSession'
-import { RevisionPage } from '@/features/revision/RevisionPage'
-import { GrapheDansesPage } from '@/features/graphe-danses/GrapheDansesPage'
-import { UnitePage } from '@/features/unite/UnitePage'
-import { TermePage } from '@/features/terme/TermePage'
-import { CoursPage } from '@/features/cours/CoursPage'
+
+const GlossairePage = lazy(() => import('@/features/glossaire/GlossairePage').then(m => ({ default: m.GlossairePage })))
+const QuizPage = lazy(() => import('@/features/quiz/QuizPage').then(m => ({ default: m.QuizPage })))
+const ProgresPage = lazy(() => import('@/features/progres/ProgresPage').then(m => ({ default: m.ProgresPage })))
+const CarnetsPage = lazy(() => import('@/features/carnets/CarnetsPage').then(m => ({ default: m.CarnetsPage })))
+const SourcesPage = lazy(() => import('@/features/sources/SourcesPage').then(m => ({ default: m.SourcesPage })))
+const FlashcardSession = lazy(() => import('@/features/quiz/FlashcardSession').then(m => ({ default: m.FlashcardSession })))
+const PersoFlashcardSession = lazy(() => import('@/features/quiz/PersoFlashcardSession').then(m => ({ default: m.PersoFlashcardSession })))
+const QCMSession = lazy(() => import('@/features/quiz/QCMSession').then(m => ({ default: m.QCMSession })))
+const AssociationSession = lazy(() => import('@/features/quiz/AssociationSession').then(m => ({ default: m.AssociationSession })))
+const TexteATrousSession = lazy(() => import('@/features/quiz/TexteATrousSession').then(m => ({ default: m.TexteATrousSession })))
+const ReconnaissanceVisuelleSession = lazy(() => import('@/features/quiz/ReconnaissanceVisuelleSession').then(m => ({ default: m.ReconnaissanceVisuelleSession })))
+const RevisionPage = lazy(() => import('@/features/revision/RevisionPage').then(m => ({ default: m.RevisionPage })))
+const GrapheDansesPage = lazy(() => import('@/features/graphe-danses/GrapheDansesPage').then(m => ({ default: m.GrapheDansesPage })))
+const UnitePage = lazy(() => import('@/features/unite/UnitePage').then(m => ({ default: m.UnitePage })))
+const TermePage = lazy(() => import('@/features/terme/TermePage').then(m => ({ default: m.TermePage })))
+const CoursPage = lazy(() => import('@/features/cours/CoursPage').then(m => ({ default: m.CoursPage })))
+
+function PageLoader() {
+  return (
+    <div className="flex items-center justify-center min-h-[60vh]" aria-label="Chargement en cours" role="status">
+      <div className="w-8 h-8 rounded-full border-4 border-[var(--color-candy-rose)] border-t-transparent animate-spin" />
+    </div>
+  )
+}
+
+function withSuspense(element: React.ReactNode) {
+  return <Suspense fallback={<PageLoader />}>{element}</Suspense>
+}
 
 export const router = createBrowserRouter([
   {
@@ -24,22 +38,22 @@ export const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { index: true, element: <AccueilPage /> },
-      { path: 'glossaire', element: <GlossairePage /> },
-      { path: 'quiz', element: <QuizPage /> },
-      { path: 'progres', element: <ProgresPage /> },
-      { path: 'carnets', element: <CarnetsPage /> },
-      { path: 'sources', element: <SourcesPage /> },
-      { path: 'flashcards/perso', element: <PersoFlashcardSession /> },
-      { path: 'flashcards/:numero', element: <FlashcardSession /> },
-      { path: 'quiz/qcm/:numero', element: <QCMSession /> },
-      { path: 'quiz/association/:numero', element: <AssociationSession /> },
-      { path: 'quiz/texte-a-trous/:numero', element: <TexteATrousSession /> },
-      { path: 'quiz/reconnaissance-visuelle/:numero', element: <ReconnaissanceVisuelleSession /> },
-      { path: 'revision', element: <RevisionPage /> },
-      { path: 'graphe-danses', element: <GrapheDansesPage /> },
-      { path: 'unite/:numero', element: <UnitePage /> },
-      { path: 'terme/:id', element: <TermePage /> },
-      { path: 'cours/:id', element: <CoursPage /> },
+      { path: 'glossaire', element: withSuspense(<GlossairePage />) },
+      { path: 'quiz', element: withSuspense(<QuizPage />) },
+      { path: 'progres', element: withSuspense(<ProgresPage />) },
+      { path: 'carnets', element: withSuspense(<CarnetsPage />) },
+      { path: 'sources', element: withSuspense(<SourcesPage />) },
+      { path: 'flashcards/perso', element: withSuspense(<PersoFlashcardSession />) },
+      { path: 'flashcards/:numero', element: withSuspense(<FlashcardSession />) },
+      { path: 'quiz/qcm/:numero', element: withSuspense(<QCMSession />) },
+      { path: 'quiz/association/:numero', element: withSuspense(<AssociationSession />) },
+      { path: 'quiz/texte-a-trous/:numero', element: withSuspense(<TexteATrousSession />) },
+      { path: 'quiz/reconnaissance-visuelle/:numero', element: withSuspense(<ReconnaissanceVisuelleSession />) },
+      { path: 'revision', element: withSuspense(<RevisionPage />) },
+      { path: 'graphe-danses', element: withSuspense(<GrapheDansesPage />) },
+      { path: 'unite/:numero', element: withSuspense(<UnitePage />) },
+      { path: 'terme/:id', element: withSuspense(<TermePage />) },
+      { path: 'cours/:id', element: withSuspense(<CoursPage />) },
     ],
   },
 ])

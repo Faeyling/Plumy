@@ -6,23 +6,9 @@ import { termesPersoRepository } from '@/data/repositories/termesPersoRepository
 import type { Terme, TermePersonnel, Discipline, Categorie } from '@/content/schema'
 import { fr } from '@/i18n/fr'
 
+import { matchTerme } from '@/lib/recherche'
+
 type TermeItem = Terme | TermePersonnel
-
-function normaliser(s: string): string {
-  return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
-}
-
-function matchTerme(terme: TermeItem, query: string): boolean {
-  if (!query) return true
-  const q = normaliser(query)
-  return [
-    terme.nom ?? '',
-    ...(terme.alias ?? []),
-    terme.equivalentAnglais ?? '',
-    terme.etymologie ?? '',
-    terme.definition ?? '',
-  ].some(c => normaliser(c).includes(q))
-}
 
 const DISCIPLINES: Discipline[] = [
   'classique', 'contemporain', 'moderne', 'jazz', 'cabaret',
