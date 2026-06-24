@@ -89,9 +89,9 @@ export function ReconnaissanceVisuelleSession() {
         <div className="flex-1 flex flex-col items-center justify-center px-6 py-10 gap-6 text-center">
           <PluмyMascot etat={pct >= 50 ? 'reussite' : 'echec'} taille={100} />
           <div>
-            <h2 className="font-[var(--font-titre)] font-bold text-2xl text-[var(--color-encre)]">
+            <h1 className="font-[var(--font-titre)] font-bold text-2xl text-[var(--color-encre)]">
               {fr.quiz.finTitre}
-            </h2>
+            </h1>
             <p className="text-4xl font-[var(--font-titre)] font-extrabold mt-2" style={{ color: 'var(--color-candy-menthe)' }}>
               {fr.quiz.score(totalCorrects, total)}
             </p>

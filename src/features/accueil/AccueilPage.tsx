@@ -64,6 +64,7 @@ export function AccueilPage() {
           transition={{ duration: 0.5, ease: 'easeOut' }}
           className="flex flex-col items-center gap-3"
         >
+          <h1 className="sr-only">Plumy — Vocabulaire de la danse</h1>
           <PluмyMascot etat={premiereFois ? 'accueil' : 'retour'} taille={130} />
           <p className="font-[var(--font-manuscrit)] text-[var(--color-encre)] text-lg leading-snug max-w-xs px-2">
             {message}
