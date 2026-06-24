@@ -1,5 +1,10 @@
+import { useEffect, useState } from 'react'
 import { Outlet, NavLink } from 'react-router-dom'
 import { fr } from '@/i18n/fr'
+import { statsRepository } from '@/data/repositories/statsRepository'
+import { BoutonSauvegarde } from '@/features/sauvegarde/BoutonSauvegarde'
+import { RappelSauvegarde } from '@/features/sauvegarde/RappelSauvegarde'
+import { OnboardingModal } from '@/features/onboarding/OnboardingModal'
 
 const navItems = [
   { to: '/', label: fr.nav.accueil, icon: HomeIcon, end: true },
@@ -11,11 +16,31 @@ const navItems = [
 ]
 
 export function Layout() {
+  const [showOnboarding, setShowOnboarding] = useState(false)
+
+  useEffect(() => {
+    statsRepository.get().then(stats => {
+      if (!stats.onboardingVu) setShowOnboarding(true)
+    })
+  }, [])
+
   return (
     <div className="flex flex-col min-h-svh bg-[var(--color-plumy-bg)]">
+      {/* Bouton sauvegarde permanent */}
+      <div className="fixed top-3 right-3 z-40">
+        <BoutonSauvegarde />
+      </div>
+
       <main className="flex-1 overflow-y-auto pb-20">
         <Outlet />
       </main>
+
+      <RappelSauvegarde />
+
+      {showOnboarding && (
+        <OnboardingModal onTermine={() => setShowOnboarding(false)} />
+      )}
+
       <nav
         className="fixed bottom-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-t border-[var(--color-gris-doux)] safe-area-pb"
         aria-label="Navigation principale"

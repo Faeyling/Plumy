@@ -15,7 +15,7 @@ export function CarnetsPage() {
   const [activeTab, setActiveTab] = useState<Tab>('favoris')
   const [favoris, setFavoris] = useState<FavoriItem[]>([])
   const [termesPerso, setTermesPerso] = useState<TermePersonnel[]>([])
-  const [form, setForm] = useState<{ nom: string; definition: string; noteLibre: string } | null>(null)
+  const [form, setForm] = useState<{ id?: string; nom: string; definition: string; noteLibre: string } | null>(null)
   const [suppression, setSuppression] = useState<string | null>(null)
 
   const chargerFavoris = useCallback(() => {
@@ -39,7 +39,7 @@ export function CarnetsPage() {
   async function sauvegarderTerme() {
     if (!form || !form.nom.trim() || !form.definition.trim()) return
     await termesPersoRepository.upsert({
-      id: crypto.randomUUID(),
+      id: form.id ?? crypto.randomUUID(),
       estPersonnel: true,
       nom: form.nom.trim(),
       definition: form.definition.trim(),
@@ -138,7 +138,7 @@ export function CarnetsPage() {
               {form !== null ? (
                 <div className="bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] p-4 space-y-3">
                   <h2 className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-base">
-                    {fr.carnets.nouveauTerme}
+                    {form?.id ? fr.carnets.modifierTerme : fr.carnets.nouveauTerme}
                   </h2>
                   <div className="space-y-2">
                     <label className="block">
@@ -259,13 +259,22 @@ export function CarnetsPage() {
                             </p>
                           )}
                         </div>
-                        <button
-                          onClick={() => setSuppression(terme.id)}
-                          className="flex-shrink-0 text-[var(--color-candy-corail)] text-lg leading-none p-1"
-                          aria-label={fr.carnets.supprimerTerme}
-                        >
-                          ×
-                        </button>
+                        <div className="flex items-center gap-1 flex-shrink-0">
+                          <button
+                            onClick={() => setForm({ id: terme.id, nom: terme.nom ?? '', definition: terme.definition ?? '', noteLibre: terme.noteLibre ?? '' })}
+                            className="text-[var(--color-gris-texte)] text-sm p-1.5 rounded hover:bg-[var(--color-gris-doux)] transition-colors"
+                            aria-label={fr.carnets.modifierTerme}
+                          >
+                            ✏
+                          </button>
+                          <button
+                            onClick={() => setSuppression(terme.id)}
+                            className="text-[var(--color-candy-corail)] text-lg leading-none p-1"
+                            aria-label={fr.carnets.supprimerTerme}
+                          >
+                            ×
+                          </button>
+                        </div>
                       </div>
                     </div>
                   ))}
