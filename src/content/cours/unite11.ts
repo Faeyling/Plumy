@@ -4,7 +4,7 @@ export const coursUnite11: Cours[] = [
   {
     id: 'improvisation',
     titre: "L'improvisation en danse — art, méthode et pratique",
-    resume: "L'improvisation n'est pas l'absence de préparation — c'est une compétence qui s'entraîne. Comprendre l'état de disponibilité, les scores et contraintes, l'écoute du partenaire, et comment l'improvisation alimente la composition.",
+    resume: "L'improvisation n'est pas l'absence de préparation — c'est une compétence qui s'entraîne. Comprendre l'état de disponibilité, les scores et contraintes, l'écoute du partenaire, et comment l'improvisation alimente la composition. C'est un des chapitres de mes carnets que je relis le plus souvent.",
     disciplines: ['contemporain', 'moderne', 'jazz', 'classique', 'burlesque', 'pole-dance'],
     termesAbordes: [
       'improvisation-structuree', 'contrainte-creative', 'donnee-de-depart',
@@ -13,7 +13,7 @@ export const coursUnite11: Cours[] = [
     sections: [
       {
         titre: "Qu'est-ce que l'improvisation en danse ?",
-        contenuMarkdown: `L'improvisation en danse est souvent mal comprise — ni libertinage total, ni performance sans préparation. C'est une discipline à part entière.
+        contenuMarkdown: `L'improvisation en danse est souvent mal comprise — ni libertinage total, ni performance sans préparation. C'est une discipline à part entière, et j'ai envie de réhabiliter ce mot : discipline. L'improvisation, ça s'apprend.
 
 **Définition :**
 L'improvisation est l'art de composer du mouvement en temps réel, en réponse à une situation donnée — espace, musique, partenaire, contrainte, état intérieur.
@@ -32,7 +32,7 @@ L'improvisation est l'art de composer du mouvement en temps réel, en réponse �
 **L'histoire de l'improvisation en danse :**
 
 **Judson Dance Theater (New York, 1960s) :**
-Collectif révolutionnaire qui a radicalement redéfini ce que "danse" pouvait signifier — tâches quotidiennes, gestes ordinaires, structures improvisées. Yvonne Rainer, Trisha Brown, Steve Paxton, Lucinda Childs.
+Collectif révolutionnaire qui a radicalement redéfini ce que "danse" pouvait signifier — tâches quotidiennes, gestes ordinaires, structures improvisées. Yvonne Rainer, Trisha Brown, Steve Paxton, Lucinda Childs. J'ai des notes sur chacun d'eux dans mes carnets.
 
 **Contact Improvisation (Steve Paxton, 1972) :**
 Forme d'improvisation à deux basée sur le partage du poids et le dialogue tactile — devenu une pratique mondiale avec ses propres jams et communautés.
@@ -42,11 +42,11 @@ Le jazz musical est fondamentalement improvisé — la danse jazz hérite de cet
       },
       {
         titre: "L'état de disponibilité — se préparer à l'imprévisible",
-        contenuMarkdown: `Avant d'improviser, il faut un état. Pas n'importe quel état — un état de disponibilité totale.
+        contenuMarkdown: `Avant d'improviser, il faut un état. Pas n'importe quel état — un état de disponibilité totale. Et ça, c'est quelque chose qu'on ne t'explique presque jamais clairement.
 
 **Qu'est-ce que l'état de disponibilité ?**
 
-C'est un état corporel et mental qui n'est ni passif (je n'attends rien) ni hyper-actif (j'anticipe tout). C'est le terrain fertile d'où peut surgir n'importe quoi.
+C'est un état corporel et mental qui n'est ni passif (j'attends) ni hyper-actif (j'anticipe tout). C'est le terrain fertile d'où peut surgir n'importe quoi.
 
 **Les qualités de l'état de disponibilité :**
 
@@ -62,23 +62,23 @@ Le censeur intérieur ("c'est nul", "c'est banal", "qu'est-ce qu'ils vont penser
 **Présence au moment :**
 Ni dans le regret de ce qui vient de se passer, ni dans l'anticipation de ce qui va venir. Ici, maintenant.
 
-**Exercices pour cultiver l'état de disponibilité :**
+**Exercices pour cultiver l'état de disponibilité — mes préférés :**
 
 **Le scan corporel :**
-Debout, immobile, parcourir mentalement le corps de bas en haut — pieds, chevilles, genoux, hanches, ventre, poitrine, épaules, bras, mains, cou, tête. Sentir sans corriger.
+Debout, immobile, parcours mentalement ton corps de bas en haut — pieds, chevilles, genoux, hanches, ventre, poitrine, épaules, bras, mains, cou, tête. Sens sans corriger.
 
 **La marche neutre :**
-Marcher dans l'espace sans destination, sans intention de faire quelque chose. Observer ce qui se passe.
+Marche dans l'espace sans destination, sans intention de faire quelque chose. Observe ce qui se passe.
 
 **Le regard périphérique :**
-Fixer un point au centre du champ visuel tout en élargissant la conscience au maximum de la périphérie. Agrandir.
+Fixe un point au centre du champ visuel tout en élargissant la conscience au maximum de la périphérie. Agrandis.
 
 **La respiration abdominale :**
 5 respirations lentes et profondes avant de commencer. Le système nerveux parasympathique s'active — la tension diminue.`,
       },
       {
         titre: "Scores, contraintes et tâches — les outils de l'improvisation",
-        contenuMarkdown: `L'improvisation sans structure est souvent moins intéressante que l'improvisation avec une bonne contrainte. Le paradoxe créatif : la limite libère.
+        contenuMarkdown: `L'improvisation sans structure est souvent moins intéressante que l'improvisation avec une bonne contrainte. Le paradoxe créatif : la limite libère. Je l'ai vécu des dizaines de fois dans mes carnets.
 
 ---
 
@@ -104,16 +104,16 @@ Le score peut être suivi différemment par chaque personne, dans chaque context
 
 Une tâche est une consigne précise qui génère du mouvement. Différente du score (plus ouvert), la tâche a un objectif défini.
 
-**Exemples :**
-- *'Trouve 5 façons de traverser l'espace en contact avec le sol'*
-- *'Marche comme si le sol était fait de matières différentes'*
-- *'Répète un geste quotidien jusqu'à ce qu'il devienne abstrait'*
+**Exemples que j'utilise souvent :**
+- *"Trouve 5 façons de traverser l'espace en contact avec le sol"*
+- *"Marche comme si le sol était fait de matières différentes"*
+- *"Répète un geste quotidien jusqu'à ce qu'il devienne abstrait"*
 
 ---
 
 ## Les contraintes créatives
 
-La contrainte la plus productive est celle qui empêche le confort habituel.
+La contrainte la plus productive est celle qui empêche le confort habituel. Et c'est souvent inconfortable — c'est exprès.
 
 **Contraintes puissantes :**
 - Travailler sans musique (le silence révèle le rythme interne)
@@ -123,16 +123,16 @@ La contrainte la plus productive est celle qui empêche le confort habituel.
 - Ne jamais regarder dans la direction du mouvement
 
 **L'exercice de la contrainte progressive :**
-Commencer par une impro libre (5 minutes). Puis ajouter une contrainte. Puis une deuxième. Observer comment le mouvement se transforme à chaque ajout.`,
+Commence par une impro libre (5 minutes). Puis ajoute une contrainte. Puis une deuxième. Observe comment ton mouvement se transforme à chaque ajout.`,
       },
       {
         titre: "L'écoute du partenaire — improviser à plusieurs",
-        contenuMarkdown: `Improviser seul est une chose. Improviser avec un ou plusieurs partenaires en est une autre — plus complexe, plus riche, plus vivante.
+        contenuMarkdown: `Improviser seul est une chose. Improviser avec un ou plusieurs partenaires en est une autre — plus complexe, plus riche, plus vivante. Et c'est là que ça devient vraiment fascinant.
 
 **Le principe fondamental :**
 L'improvisation collective n'est pas des solos simultanés. C'est une conversation — où chacun parle, chacun écoute, et quelque chose naît de l'entre-deux.
 
-**Les niveaux de réponse :**
+**Les niveaux de réponse — une progression que j'adore enseigner :**
 
 **1. Miroir :**
 Imiter précisément ce que fait l'autre — qualité, direction, timing. Point de départ pour entrer en relation, mais rarement une fin en soi.
@@ -152,21 +152,21 @@ Continuer son propre fil tout en étant conscient de l'autre. La coexistence.
 **6. Ignorance active :**
 Décider consciemment de ne pas répondre. Choix fort, pas manque d'attention.
 
-**Le piège principal :**
+**Le piège principal — et il est commun :**
 Anticiper la réponse avant d'avoir vraiment reçu la proposition. Préparer sa réponse pendant que l'autre parle — on n'écoute pas, on attend son tour.
 
 **L'improvisation de groupe :**
-À trois ou plus, les rôles peuvent circuler librement — leader, suiveur, témoin, perturbateur. Le groupe a une vie collective qui dépasse la somme de ses parties.`,
+À trois ou plus, les rôles peuvent circuler librement — leader, suiveur, témoin, perturbateur. Le groupe a une vie collective qui dépasse la somme de ses parties. Et quand ça fonctionne, c'est une des plus belles choses que je connaisse en danse.`,
       },
       {
         titre: "De l'improvisation à la composition — le passage",
-        contenuMarkdown: `L'improvisation et la composition ne sont pas opposées. La composition est souvent de l'improvisation sédimentée — du mouvement trouvé, sélectionné, fixé.
+        contenuMarkdown: `L'improvisation et la composition ne sont pas opposées. La composition est souvent de l'improvisation sédimentée — du mouvement trouvé, sélectionné, fixé. C'est une phrase qui m'a ouvert des portes.
 
 **Le processus typique :**
 
 **1. Explorer :** Improvisation libre ou contrainte pour trouver du matériau.
 
-**2. Sélectionner :** Identifier les moments qui 'fonctionnent' — qui ont de l'intérêt, de la qualité, du potentiel.
+**2. Sélectionner :** Identifier les moments qui "fonctionnent" — qui ont de l'intérêt, de la qualité, du potentiel.
 
 **3. Fixer :** Mémoriser le matériau sélectionné — le répéter jusqu'à ce qu'il soit stable.
 
@@ -174,10 +174,10 @@ Anticiper la réponse avant d'avoir vraiment reçu la proposition. Préparer sa 
 
 **5. Raffiner :** Affiner les qualités, les transitions, les intentions.
 
-**Comment identifier les 'bons moments' dans une impro :**
+**Comment identifier les "bons moments" dans une impro :**
 - Quand quelque chose de surprenant se produit
 - Quand le corps fait quelque chose que l'esprit n'avait pas planifié
-- Quand un qualité ou une image s'impose avec force
+- Quand une qualité ou une image s'impose avec force
 - Quand le mouvement semble inévitable
 
 **L'improvisation dans la pièce finale :**
@@ -186,16 +186,14 @@ Certains chorégraphes laissent des espaces d'improvisation dans des pièces par
 **La mémoire du corps :**
 Le corps se souvient de ce qu'il a fait. Revenir à une impro le lendemain — certains moments reviennent naturellement. Ce que le corps aime refaire, c'est souvent le bon matériau.
 
----
-
-> *"L'improvisation n'est pas l'absence de préparation — c'est la préparation à l'absence de préparation."* — Kirstie Simson`,
+> "L'improvisation n'est pas l'absence de préparation — c'est la préparation à l'absence de préparation." — Kirstie Simson`,
       },
     ],
   },
   {
     id: 'composition',
     titre: 'Composition chorégraphique — construire une pièce',
-    resume: "De la première idée à la pièce terminée : motif, phrase, procédés de composition, structure globale, intention artistique et regard extérieur. Un guide pratique pour construire une œuvre chorégraphique.",
+    resume: "De la première idée à la pièce terminée : motif, phrase, procédés de composition, structure globale, intention artistique et regard extérieur. Un guide pratique pour construire une œuvre chorégraphique — et quelque chose que j'aurais voulu avoir quand j'ai commencé à créer.",
     disciplines: ['contemporain', 'moderne', 'jazz', 'classique', 'burlesque', 'cabaret'],
     termesAbordes: [
       'motif-choregraphique', 'phrase-choregraphique', 'procedes-composition',
@@ -204,9 +202,9 @@ Le corps se souvient de ce qu'il a fait. Revenir à une impro le lendemain — c
     sections: [
       {
         titre: "Le point de départ — trouver sa matière",
-        contenuMarkdown: `Toute pièce commence par quelque chose — une image, une question, une sensation, un problème formel. Le point de départ n'est pas le sujet de la pièce — c'est ce qui la met en mouvement.
+        contenuMarkdown: `Toute pièce commence par quelque chose — une image, une question, une sensation, un problème formel. Le point de départ n'est pas le sujet de la pièce — c'est ce qui la met en mouvement. Et c'est souvent la partie la plus difficile.
 
-**Types de points de départ :**
+**Types de points de départ — j'en ai listé huit dans mes carnets :**
 
 **Kinesthésique :** Une qualité de mouvement, une sensation physique.
 *"Je veux explorer ce qu'est la résistance dans le corps."*
@@ -229,16 +227,16 @@ Le corps se souvient de ce qu'il a fait. Revenir à une impro le lendemain — c
 *"Pièce pour un couloir. Le public voit de dos."*
 
 **La question de l'intention :**
-Avant de bouger, essayer de formuler : *"Je veux que le spectateur [ressente / comprenne / découvre / éprouve] [quelque chose]."*
+Avant de bouger, essaie de formuler : *"Je veux que le spectateur [ressente / comprende / découvre / éprouve] [quelque chose]."*
 
 Cette phrase peut changer pendant le processus — c'est normal. Mais l'avoir formulée donne une boussole.
 
 **Le carnet de création :**
-Tenir un journal du processus — croquis, mots, questions, impasses. La création n'est pas linéaire. Le carnet garde la trace de ce qui semblait sans intérêt au moment et révèle son importance plus tard.`,
+Tiens un journal du processus — croquis, mots, questions, impasses. La création n'est pas linéaire. Le carnet garde la trace de ce qui semblait sans intérêt au moment et révèle son importance plus tard. Je te donne ce conseil avec toute l'insistance dont je suis capable.`,
       },
       {
         titre: "Motif, phrase et développement",
-        contenuMarkdown: `La composition chorégraphique commence par le plus petit — le motif — et construit vers le plus grand — la structure de la pièce entière.
+        contenuMarkdown: `La composition chorégraphique commence par le plus petit — le motif — et construit vers le plus grand — la structure de la pièce entière. Ce chemin du grain de sable à la cathédrale, c'est ce qui me fascine dans la composition.
 
 ---
 
@@ -247,10 +245,10 @@ Tenir un journal du processus — croquis, mots, questions, impasses. La créati
 Un motif est une courte séquence reconnaissable qui peut être développée. Comme le motif de la Ve Symphonie de Beethoven (ta-ta-ta-TAAA) — quatre notes qui construisent toute une symphonie.
 
 **Comment trouver un motif :**
-- Improviser librement et identifier le moment qui revient naturellement
-- Réduire une phrase jusqu'à son noyau essentiel
-- Partir d'un geste quotidien et le styliser
-- Matérialiser physiquement une image ou une sensation
+- Improvise librement et identifie le moment qui revient naturellement
+- Réduis une phrase jusqu'à son noyau essentiel
+- Pars d'un geste quotidien et stylise-le
+- Matérialise physiquement une image ou une sensation
 
 **Critères d'un bon motif :**
 - **Mémorable** : On le reconnaît quand il revient
@@ -265,10 +263,10 @@ Un motif est une courte séquence reconnaissable qui peut être développée. Co
 La phrase est une séquence avec un début, un développement et une fin. Elle contient souvent plusieurs motifs.
 
 **Construire une phrase :**
-1. Partir du motif
-2. Lui donner une impulsion initiale
-3. Laisser l'énergie se développer
-4. Trouver la résolution
+1. Pars du motif
+2. Donne-lui une impulsion initiale
+3. Laisse l'énergie se développer
+4. Trouve la résolution
 
 **Types de fins de phrase :**
 - **Résolution** : L'énergie se pose — phrase fermée
@@ -294,7 +292,7 @@ Une fois le motif et la phrase établis, les procédés de composition permetten
       },
       {
         titre: "La structure — architecturer la pièce",
-        contenuMarkdown: `La structure est l'architecture globale de la pièce — comment les sections s'articulent, où est le climax, comment ça commence et comment ça finit.
+        contenuMarkdown: `La structure est l'architecture globale de la pièce — comment les sections s'articulent, où est le climax, comment ça commence et comment ça finit. C'est ce qui fait qu'une pièce tient debout.
 
 **Les formes structurelles principales :**
 
@@ -315,22 +313,22 @@ Développement continu sans retour. La pièce transforme son matériau du début
 **Structure en arch (ABCBA) :**
 Symétrique autour d'un point central. La pièce se déploie puis revient en miroir.
 
-**Questions structurelles fondamentales :**
+**Questions structurelles fondamentales — celles que je pose toujours :**
 
 **Le début :** Comment entre-t-on dans la pièce ? In medias res (en pleine action) ? Installation progressive ? Rupture immédiate ?
 
 **Le climax :** Où est le moment de plus haute intensité ? (Souvent aux 2/3 de la pièce, pas à la fin.)
 
-**La fin :** Résolution, suspension ou effacement ? Comment veut-on que le public reste ?
+**La fin :** Résolution, suspension ou effacement ? Comment veux-tu que le public reste ?
 
 **La durée :** Règle générale — toujours plus court qu'on ne pense. Mieux vaut une pièce de 8 minutes parfaite qu'une de 15 minutes qui en contient 8 de bonnes.
 
 **L'outil de l'arc dramatique :**
-Même sans récit, toute pièce a une courbe d'intensité — elle monte, atteint un sommet, descend. Savoir où on en est dans cette courbe à chaque instant.`,
+Même sans récit, toute pièce a une courbe d'intensité — elle monte, atteint un sommet, descend. Savoir où tu en es dans cette courbe à chaque instant.`,
       },
       {
         titre: "L'espace, le temps et la dynamique",
-        contenuMarkdown: `Les trois paramètres fondamentaux de la composition chorégraphique — au-delà des pas eux-mêmes.
+        contenuMarkdown: `Les trois paramètres fondamentaux de la composition chorégraphique — au-delà des pas eux-mêmes. Ce sont les outils que tu peux moduler infiniment.
 
 ---
 
@@ -364,7 +362,7 @@ Ligne, cercle, dispersion, cluster, symétrie — chaque formation porte une sig
 **Rythme :** Variation de vitesse à l'intérieur du tempo.
 **Durée :** La longueur des phrases et des silences.
 
-**Le silence en danse :**
+**Le silence en danse — quelque chose que j'adore :**
 L'immobilité n'est pas l'absence de danse — c'est de la danse à zéro. Souvent plus puissante que le mouvement.
 
 **Relation à la musique :**
@@ -389,7 +387,7 @@ Une pièce sans contrastes dynamiques est plate. La composition vivante alterne 
       },
       {
         titre: "Le regard extérieur et le processus créatif",
-        contenuMarkdown: `Créer seul a ses limites — on ne peut pas se voir danser. Le regard extérieur est un outil, pas un oracle.
+        contenuMarkdown: `Créer seul a ses limites — on ne peut pas se voir danser. Le regard extérieur est un outil, pas un oracle. Et savoir faire la différence, c'est capital.
 
 **Le regard dramaturgique :**
 Un dramaturge (ou tout observateur de confiance) accompagne le processus créatif sans danser. Son rôle : poser des questions, pas donner des réponses.
@@ -401,9 +399,9 @@ Un dramaturge (ou tout observateur de confiance) accompagne le processus créati
 - "Est-ce que la fin tient sa promesse par rapport au début ?"
 
 **La vidéo comme outil de travail :**
-Filmer les sessions d'improvisation et de répétition. Regarder — pas pour juger, mais pour voir ce qui était réellement dans la salle, pas ce qu'on croyait faire.
+Filme les sessions d'improvisation et de répétition. Regarde — pas pour juger, mais pour voir ce qui était réellement dans la salle, pas ce que tu croyais faire.
 
-**Les étapes du processus créatif :**
+**Les étapes du processus créatif — un itinéraire, pas une recette :**
 
 **1. Recherche :** Explorer sans objectif de résultat. Collecter du matériau brut.
 
@@ -417,22 +415,20 @@ Filmer les sessions d'improvisation et de répétition. Regarder — pas pour ju
 
 **6. Présentation :** Montrer à un public (même petit). Les réactions informent.
 
-**Les doutes du processus :**
-Tout créateur traverse des moments où la pièce semble sans intérêt, sans cohérence, sans sens. Ces moments font partie du processus — pas une indication que la pièce est ratée.
+**Les doutes du processus — et il faut en parler :**
+Tout créateur traverse des moments où la pièce semble sans intérêt, sans cohérence, sans sens. Ces moments font partie du processus — pas une indication que la pièce est ratée. Je t'assure.
 
 **La règle de la première version :**
 La première version est toujours imparfaite — et c'est normal. Son rôle est d'exister pour qu'on puisse l'améliorer.
 
----
-
-> *"La créativité, c'est permettre à ses erreurs de survivre."* — Scott Adams`,
+> "La créativité, c'est permettre à ses erreurs de survivre." — Scott Adams`,
       },
     ],
   },
   {
     id: 'notation-danse',
     titre: 'Systèmes de notation de la danse — une fiche culturelle',
-    resume: "La danse a longtemps été un art de transmission orale. Comment les différents systèmes de notation — Labanotation, Benesh, vidéo — tentent de résoudre l'impossibilité de 'fixer' le mouvement sur papier.",
+    resume: "La danse a longtemps été un art de transmission orale. Comment les différents systèmes de notation — Labanotation, Benesh, vidéo — tentent de résoudre l'impossibilité de 'fixer' le mouvement sur papier. Une question philosophique autant que technique, et une de mes curiosités préférées.",
     disciplines: ['classique', 'contemporain', 'moderne', 'jazz'],
     termesAbordes: [
       'notation-mouvement', 'labanotation', 'benesh-notation', 'video-comme-notation',
@@ -440,7 +436,7 @@ La première version est toujours imparfaite — et c'est normal. Son rôle est 
     sections: [
       {
         titre: "Le problème de la notation — comment écrire le mouvement ?",
-        contenuMarkdown: `La musique a la partition. La littérature a l'écriture. Le théâtre a le texte. La danse a... longtemps eu uniquement la transmission orale et corporelle.
+        contenuMarkdown: `La musique a la partition. La littérature a l'écriture. Le théâtre a le texte. La danse a... longtemps eu uniquement la transmission orale et corporelle. C'est un des paradoxes qui m'ont le plus intrigué.
 
 **Le paradoxe de la danse :**
 La danse existe dans le temps — elle naît et disparaît à chaque performance. Comment la préserver ? Comment la transmettre à ceux qui n'ont pas vu la version originale ? Comment la recréer après la mort du chorégraphe ?
@@ -448,7 +444,7 @@ La danse existe dans le temps — elle naît et disparaît à chaque performance
 **La transmission orale — ses forces et ses limites :**
 
 **Forces :**
-- Fidèle aux qualités de mouvement (un maître transmet aussi comment, pas seulement quoi)
+- Fidèle aux qualités de mouvement (un maître transmet aussi *comment*, pas seulement *quoi*)
 - Vivante — la pièce évolue avec les interprètes
 - Efficace pour des vocabulaires stables (ballet classique, danses traditionnelles)
 
@@ -468,7 +464,7 @@ Aucun système de notation n'a résolu tous ces problèmes. Chaque système fait
       },
       {
         titre: "Les principaux systèmes de notation",
-        contenuMarkdown: `Plusieurs systèmes ont été développés depuis le XIXe siècle. Les deux dominants aujourd'hui sont la Labanotation et la Notation Benesh.
+        contenuMarkdown: `Plusieurs systèmes ont été développés depuis le XIXe siècle. Les deux dominants aujourd'hui sont la Labanotation et la Notation Benesh — et j'ai une tendresse particulière pour la Labanotation, parce que son créateur est aussi l'homme derrière la théorie des efforts que j'ai présentée en Unité 0.
 
 ---
 
@@ -517,7 +513,7 @@ Mocap (motion capture), Laban/Kinetography Laban informatisée — des tentative
       },
       {
         titre: "La vidéo — une notation imparfaite mais universelle",
-        contenuMarkdown: `La démocratisation de la vidéo depuis les années 1980 a transformé la pratique de l'archivage chorégraphique. La vidéo ne remplace pas la notation formelle — elle la complète.
+        contenuMarkdown: `La démocratisation de la vidéo depuis les années 1980 a transformé la pratique de l'archivage chorégraphique. La vidéo ne remplace pas la notation formelle — elle la complète. Et aujourd'hui, c'est l'outil que tout le monde utilise.
 
 **Pourquoi la vidéo a pris le dessus :**
 - Accessible à tous (tout le monde peut filmer)
@@ -550,10 +546,10 @@ Même une vidéo parfaite ne suffit pas pour recréer une pièce. Il faut toujou
       },
       {
         titre: "La transmission — entre fidélité et trahison",
-        contenuMarkdown: `Recréer une pièce chorégraphique pose des questions philosophiques profondes — qui n'ont pas de réponse univoque.
+        contenuMarkdown: `Recréer une pièce chorégraphique pose des questions philosophiques profondes — qui n'ont pas de réponse univoque. Et je trouve ces questions magnifiques, parce qu'elles disent quelque chose d'essentiel sur la danse.
 
 **La question de l'authenticité :**
-Qu'est-ce que la 'vraie' version d'une pièce ? La première représentation ? La version filmée ? La version transmise par le chorégraphe à ses assistants ? La version adaptée à des interprètes différents ?
+Qu'est-ce que la "vraie" version d'une pièce ? La première représentation ? La version filmée ? La version transmise par le chorégraphe à ses assistants ? La version adaptée à des interprètes différents ?
 
 **La pièce vivante vs la pièce archivée :**
 Une pièce de ballet classique recréée au XXIe siècle avec des danseurs d'aujourd'hui est-elle la même pièce qu'en 1890 ? Les corps ont changé, les techniques ont évolué, les sensibilités esthétiques aussi.
@@ -565,14 +561,12 @@ Certaines pièces disparues ont été recréées à partir de vidéos imparfaite
 Les œuvres qui survivent le mieux sont celles dont les interprètes originaux ont pu transmettre directement — corps à corps, en répétition. Pina Bausch, Trisha Brown, Merce Cunningham ont toutes eu des politiques de transmission de leur répertoire.
 
 **La danse comme art de l'éphémère :**
-Peut-être que la nature de la danse est précisément d'être éphémère — et que chercher à la fixer trahit quelque chose de son essence. C'est un débat ouvert, sans résolution.
+Peut-être que la nature de la danse est précisément d'être éphémère — et que chercher à la fixer trahit quelque chose de son essence. C'est un débat ouvert, sans résolution. Et moi, j'aime qu'il reste ouvert.
 
 **Ce que la notation nous apprend sur la danse :**
 Les tentatives de notation révèlent ce qui est central dans une discipline. La notation Benesh reflète l'importance des positions dans le ballet. La Labanotation reflète la conception du mouvement comme direction dans l'espace. Tout système de notation est aussi une théorie du mouvement.
 
----
-
-> *"La danse est l'art des arts — parce qu'elle est le seul qui disparaît au moment même où il s'accomplit."* — Paul Valéry`,
+> "La danse est l'art des arts — parce qu'elle est le seul qui disparaît au moment même où il s'accomplit." — Paul Valéry`,
       },
     ],
   },

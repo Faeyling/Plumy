@@ -4,7 +4,7 @@ export const coursUnite10: Cours[] = [
   {
     id: 'prevention-generale',
     titre: 'Danser sans se blesser — principes fondamentaux',
-    resume: "80% des blessures en danse sont évitables. Comprendre l'épidémiologie des blessures, distinguer douleur normale et signal d'alarme, maîtriser l'échauffement et le retour au calme, intégrer le renforcement neuromusculaire et prendre soin de son corps comme outil de travail.",
+    resume: "80% des blessures en danse sont évitables — et ce chiffre me met en colère à chaque fois que je le lis, parce qu'il signifie qu'on peut faire beaucoup mieux. Comprendre l'épidémiologie des blessures, distinguer douleur normale et signal d'alarme, maîtriser l'échauffement, intégrer le renforcement neuromusculaire et prendre soin de ton corps comme de l'outil précieux qu'il est.",
     disciplines: ['classique', 'contemporain', 'moderne', 'jazz', 'heels', 'cabaret', 'pole-dance', 'burlesque'],
     termesAbordes: [
       'blessure-surmenage', 'blessure-traumatique', 'facteurs-risque',
@@ -15,7 +15,9 @@ export const coursUnite10: Cours[] = [
     sections: [
       {
         titre: "Épidémiologie — ce que la science dit des blessures en danse",
-        contenuMarkdown: `La danse est une activité physique intense. Ses blessures sont réelles — et largement prévisibles.
+        contenuMarkdown: `La danse est une activité physique intense. Ses blessures sont réelles — et largement prévisibles. C'est la raison pour laquelle j'ai consacré une unité entière à ça dans mes carnets.
+
+**⚠️ Avertissement important :** Les informations de cette unité sont éducatives. Elles ne remplacent pas un avis médical individualisé. En cas de blessure, consulte un professionnel de santé.
 
 **Les chiffres clés :**
 - 80–90% des danseurs professionnels se blessent au moins une fois par an
@@ -23,14 +25,14 @@ export const coursUnite10: Cours[] = [
 - Les zones les plus touchées : chevilles et pieds (40%), genoux (20%), dos et hanches (15%)
 - Le risque est plus élevé en période de production intensive (avant spectacle)
 
-**Pourquoi les danseurs se blessent :**
+**Pourquoi les danseurs se blessent — les vraies raisons :**
 1. **Volume élevé** : Cours quotidiens + répétitions + spectacles = charge cumulée
-2. **Culture du "push through"** : La pression à ignorer la douleur est culturellement normalisée
+2. **Culture du "push through"** : La pression à ignorer la douleur est culturellement normalisée — et c'est un problème
 3. **Spécialisation précoce** : Entraînement intensif dès l'enfance sans diversification
 4. **Récupération insuffisante** : Pas assez de repos entre les sessions
 5. **Technique insuffisante** : Mauvaise exécution sur des milliers de répétitions
 
-**Distinguer douleur normale et signal d'alarme :**
+**Distinguer douleur normale et signal d'alarme — une compétence essentielle :**
 
 | Douleur normale | Signal d'alarme |
 |---|---|
@@ -40,22 +42,22 @@ export const coursUnite10: Cours[] = [
 | Diminue à l'échauffement | Augmente pendant l'activité |
 | Pas de gonflement | Gonflement, chaleur, ecchymose |
 
-**La règle d'or :** Si la douleur a une localisation précise, persiste plus de 72h, ou modifie ta façon de danser — consulte un professionnel de santé spécialisé en danse.`,
+**La règle d'or que je te donne gratuitement :** Si la douleur a une localisation précise, persiste plus de 72h, ou modifie ta façon de danser — consulte un professionnel de santé spécialisé en danse. Ne fais pas le/la brave.`,
       },
       {
         titre: "Comprendre la douleur — ne pas la fuir, la décoder",
-        contenuMarkdown: `La douleur est un signal, pas un ennemi. Savoir la lire est une compétence essentielle du danseur.
+        contenuMarkdown: `La douleur est un signal, pas un ennemi. Savoir la lire est une compétence essentielle du danseur — et c'est une compétence que personne n'enseigne assez, à mon goût.
 
 **Le continuum de la blessure de surmenage :**
 
-Les blessures de surmenage ne naissent pas du jour au lendemain. Elles passent par des stades :
+Les blessures de surmenage ne naissent pas du jour au lendemain. Elles passent par des stades — et à chaque stade, l'action appropriée change :
 
 - **Stade 1** : Douleur après l'activité, disparaît au repos → *Surveiller, réduire la charge*
-- **Stade 2** : Douleur pendant l'activité mais le danseur peut continuer → *Consulter maintenant*
-- **Stade 3** : Douleur qui modifie la technique → *Arrêt nécessaire, consultation urgente*
+- **Stade 2** : Douleur pendant l'activité mais tu peux continuer → *Consulte maintenant*
+- **Stade 3** : Douleur qui modifie ta technique → *Arrêt nécessaire, consultation urgente*
 - **Stade 4** : Douleur au repos, activité impossible → *Trop tard — traitement long*
 
-La majorité des danseurs consultent au stade 3–4. Consulter au stade 2 réduit le temps de guérison de 60–80%.
+La majorité des danseurs consultent au stade 3–4. Consulter au stade 2 réduit le temps de guérison de 60–80%. Je ne peux pas être plus clair : consulte tôt.
 
 **Les professionnels de santé à connaître :**
 - **Médecin du sport** : Diagnostic, imagerie, suivi médical global
@@ -63,21 +65,21 @@ La majorité des danseurs consultent au stade 3–4. Consulter au stade 2 rédui
 - **Ostéopathe** : Mobilité, restrictions articulaires
 - **Podologue** : Pied, appui, semelles orthopédiques
 
-**Idéalement** : des professionnels qui connaissent la danse et ses exigences spécifiques.
+**Idéalement** : des professionnels qui connaissent la danse et ses exigences spécifiques. Ça change tout.
 
 **La gestion de la douleur pendant la blessure :**
 
 RICE en phase aiguë :
 - **R**est — repos relatif (pas total pour les blessures de surmenage)
-- **I**ce — glace 15-20 min, 3x/jour les 48 premières heures
+- **I**ce — glace 15–20 min, 3x/jour les 48 premières heures
 - **C**ompression — contention pour limiter l'œdème
 - **E**levation — surélever le membre blessé
 
-**Anti-douleurs et danse :** Les AINS (ibuprofène, etc.) masquent la douleur sans traiter la cause. Danser sous anti-douleurs = risque d'aggraver la blessure sans s'en rendre compte.`,
+**Anti-douleurs et danse — un point qui me tient à cœur :** Les AINS (ibuprofène, etc.) masquent la douleur sans traiter la cause. Danser sous anti-douleurs = risque d'aggraver la blessure sans s'en rendre compte. Ne fais pas ça.`,
       },
       {
         titre: "Échauffement et retour au calme — les deux rituels incontournables",
-        contenuMarkdown: `Un bon échauffement réduit le risque de blessure de 50%. Un bon retour au calme optimise la récupération.
+        contenuMarkdown: `Un bon échauffement réduit le risque de blessure de 50%. Un bon retour au calme optimise la récupération. Si je pouvais t'obliger à faire une seule chose, ce serait ça.
 
 ---
 
@@ -98,12 +100,12 @@ Marche rapide, trot léger, jumping jacks modérés — élever le rythme cardia
 Cercles des chevilles → genoux → hanches → colonne → épaules → cou. *Chaque articulation, dans les deux sens.*
 
 **Phase 3 — Activation musculaire (8–10 min) :**
-Exercices spécifiques à la discipline — pliés progressifs en classique, relevés de fessiers pour le contemporain, isolations progressives en jazz.
+Exercices spécifiques à ta discipline — pliés progressifs en classique, relevés de fessiers pour le contemporain, isolations progressives en jazz.
 
 **Phase 4 — Préparation spécifique (5 min) :**
 Éléments techniques de la session à venir, à intensité réduite.
 
-**Ce que l'échauffement n'est PAS :**
+**Ce que l'échauffement n'est PAS — et j'insiste :**
 - Des étirements statiques (contre-productif avant l'effort — réduit la force et augmente le risque de blessure)
 - 5 minutes en courant pour rattraper le cours
 
@@ -114,7 +116,7 @@ Exercices spécifiques à la discipline — pliés progressifs en classique, rel
 **Objectifs :**
 - Ramener le rythme cardiaque progressivement
 - Évacuer l'acide lactique des muscles
-- Débuter la récupération tissuaire
+- Débuter la récupération tissulaire
 
 **Structure (10–15 min) :**
 
@@ -122,7 +124,7 @@ Exercices spécifiques à la discipline — pliés progressifs en classique, rel
 Marche, mouvements lents, diminution progressive de l'intensité.
 
 **Phase 2 — Étirements statiques (8–10 min) :**
-*Ici* les étirements sont appropriés — tenir chaque position 30–60 secondes. Cibler les zones travaillées.
+*Ici* les étirements sont appropriés — tenir chaque position 30–60 secondes. Cible les zones travaillées.
 
 **Phase 3 — Respiration (2 min) :**
 Respiration profonde pour activer le système nerveux parasympathique (récupération).
@@ -136,14 +138,14 @@ Respiration profonde pour activer le système nerveux parasympathique (récupér
       },
       {
         titre: "Renforcement neuromusculaire — construire un corps résilient",
-        contenuMarkdown: `La flexibilité sans force est dangereuse. La force sans coordination est insuffisante. Le renforcement neuromusculaire combine les deux.
+        contenuMarkdown: `La flexibilité sans force est dangereuse. La force sans coordination est insuffisante. Le renforcement neuromusculaire combine les deux — et c'est le levier préventif le mieux étayé scientifiquement que je connaisse.
 
 **Qu'est-ce que le renforcement neuromusculaire ?**
 
 Au-delà de la force musculaire pure, le renforcement neuromusculaire travaille la capacité du système nerveux à contrôler le mouvement — proprioception, équilibre, stabilité, réaction.
 
 **Pourquoi c'est crucial en danse :**
-Les danseurs ont souvent une hypermobilité développée — amplitude articulaire au-delà de la norme. L'hypermobilité sans force de stabilisation = risque élevé d'entorses, luxations, blessures.
+Les danseurs ont souvent une hypermobilité développée — amplitude articulaire au-delà de la norme. L'hypermobilité sans force de stabilisation = risque élevé d'entorses, luxations, blessures. C'est un piège dans lequel je vois tomber beaucoup de danseurs.
 
 **Les piliers du renforcement en danse :**
 
@@ -164,7 +166,7 @@ Contrôler la descente, pas seulement la montée. Le frein est plus important qu
 Entraîner le système nerveux à corriger instinctivement. Sur une jambe, yeux fermés, surface instable (coussin proprioceptif).
 
 **4. Renforcement des pieds et chevilles :**
-Zone la plus blessée en danse — et la plus négligée dans l'entraînement.
+Zone la plus blessée en danse — et la plus négligée dans l'entraînement. Ça me rend triste de le dire.
 
 *Exercices :*
 - Doming (voûte plantaire) — raccourcir le pied sans recroqueviller les orteils
@@ -177,15 +179,15 @@ Fessiers, ischio-jambiers — souvent faibles chez les danseurs hypermobiles.
       },
       {
         titre: "Hygiène de vie et santé mentale — le corps comme outil de travail",
-        contenuMarkdown: `La prévention des blessures ne s'arrête pas au studio. L'hygiène de vie conditionne la récupération et la résilience.
+        contenuMarkdown: `La prévention des blessures ne s'arrête pas au studio. L'hygiène de vie conditionne la récupération et la résilience — et j'aurais voulu apprendre ça beaucoup plus tôt.
 
 ---
 
 ## Sommeil — le médicament gratuit
 
-**Pendant le sommeil, le corps :**
+**Pendant le sommeil, ton corps :**
 - Synthétise les protéines musculaires (réparation tissulaire)
-- Consolide les apprentissages moteurs (mémorisation des enchainements)
+- Consolide les apprentissages moteurs (mémorisation des enchaînements)
 - Régule les hormones (cortisol, hormone de croissance)
 
 **Recommandations pour les danseurs :**
@@ -197,7 +199,7 @@ Fessiers, ischio-jambiers — souvent faibles chez les danseurs hypermobiles.
 
 ## Nutrition — carburant et construction
 
-Les danseurs ont souvent une relation complexe à la nourriture — pression esthétique, culture de la restriction. La science est claire :
+Les danseurs ont souvent une relation complexe à la nourriture — pression esthétique, culture de la restriction. La science est claire, et j'ai besoin que tu l'entendes :
 
 **Déficit énergétique relatif (RED-S) :**
 Manger insuffisamment par rapport à la dépense énergétique = blessures de stress (fractures, tendinopathies), troubles hormonaux, immunité réduite, apprentissage moteur dégradé.
@@ -230,14 +232,14 @@ Le stress psychologique augmente le risque de blessure physique — c'est prouv�
 
 ---
 
-> *Ton corps n'est pas ton ennemi — c'est ton instrument. Comme tout instrument, il demande entretien, soin et respect pour produire son meilleur son.*`,
+> Ton corps n'est pas ton ennemi — c'est ton instrument. Comme tout instrument, il demande entretien, soin et respect pour produire son meilleur son. Prends-en soin, et il te le rendra.`,
       },
     ],
   },
   {
     id: 'prevention-par-discipline',
     titre: 'Prévention spécifique par discipline',
-    resume: "Chaque discipline danse a ses blessures signature, ses facteurs de risque propres et ses stratégies de prévention adaptées. Classique, contemporain/moderne, jazz, heels, cabaret, pole dance et burlesque — protocoles spécifiques pour chaque pratique.",
+    resume: "Chaque discipline danse a ses blessures signature, ses facteurs de risque propres et ses stratégies de prévention adaptées. Classique, contemporain/moderne, jazz, heels, cabaret, pole dance et burlesque — protocoles spécifiques pour chaque pratique. J'ai compilé tout ça avec soin dans mes carnets.",
     disciplines: ['classique', 'contemporain', 'moderne', 'jazz', 'heels', 'cabaret', 'pole-dance', 'burlesque'],
     termesAbordes: [
       'entorse-cheville', 'tendinopathie', 'syndrome-rotulien', 'equilibre-musculaire',
@@ -246,7 +248,7 @@ Le stress psychologique augmente le risque de blessure physique — c'est prouv�
     sections: [
       {
         titre: "Classique — les risques du vocabulaire académique",
-        contenuMarkdown: `La danse classique a l'un des taux de blessures les plus élevés de toutes les disciplines. L'exigence technique extrême sur des structures anatomiques parfois poussées à leurs limites explique cette réalité.
+        contenuMarkdown: `La danse classique a l'un des taux de blessures les plus élevés de toutes les disciplines. L'exigence technique extrême sur des structures anatomiques parfois poussées à leurs limites explique cette réalité — et je te dis ça sans vouloir te faire peur, juste pour que tu dances en connaissance de cause.
 
 **Blessures caractéristiques du classique :**
 
@@ -266,7 +268,7 @@ Le stress psychologique augmente le risque de blessure physique — c'est prouv�
 - Syndrome d'accrochage de la hanche (snapping hip)
 - Pincement labral
 
-**Le problème du turn-out compensé :**
+**Le problème du turn-out compensé — je reviens là-dessus :**
 Le turn-out idéal vient de la rotation externe de hanche. Quand la mobilité articulaire est insuffisante, les danseurs compensent en tournant les genoux et les pieds vers l'extérieur — hyperpronation, torsion tibiale, syndrome rotulien.
 
 **Stratégies de prévention spécifiques :**
@@ -281,13 +283,13 @@ Règle des 3 ans de classique minimum avant les pointes, technique de relevé so
       },
       {
         titre: "Contemporain et moderne — les risques du sol et des chutes",
-        contenuMarkdown: `Le travail au sol, les chutes contrôlées et le contact improvisation sont des éléments fondamentaux du contemporain — avec des risques spécifiques.
+        contenuMarkdown: `Le travail au sol, les chutes contrôlées et le contact improvisation sont des éléments fondamentaux du contemporain — avec des risques spécifiques que j'ai appris à connaître.
 
 **Blessures caractéristiques du contemporain/moderne :**
 
 **Poignets et mains :**
 - Entorses, fractures (chutes non maîtrisées)
-- Le poignet en contemporain travaille comme une articulation portante — inhabituel
+- Le poignet en contemporain travaille comme une articulation portante — inhabituel, et qui demande une préparation spécifique
 
 **Genoux :**
 - Bursites (travail au sol sur des surfaces dures)
@@ -317,12 +319,12 @@ Règle des 3 ans de classique minimum avant les pointes, technique de relevé so
 - Gainage fonctionnel actif pendant les mouvements extrêmes
 - Ne pas aller jusqu'à l'amplitude maximale de la colonne sans préparation
 
-**La notion de release technique :**
+**La notion de release technique — et un malentendu à corriger :**
 La release ne signifie pas "absence de tonus" — elle signifie tonus approprié, ni trop, ni pas assez. Un corps sans tonus est plus fragile qu'un corps engagé.`,
       },
       {
         titre: "Jazz, heels et cabaret — les risques de l'intensité et des talons",
-        contenuMarkdown: `Jazz, heels et cabaret partagent des caractéristiques communes : rythme intense, répétitions nombreuses, parfois accessoires ou chaussures contraignantes.
+        contenuMarkdown: `Jazz, heels et cabaret partagent des caractéristiques communes : rythme intense, répétitions nombreuses, parfois accessoires ou chaussures contraignantes. Voilà ce que j'ai noté dans mes carnets pour chacun.
 
 ---
 
@@ -336,7 +338,7 @@ La release ne signifie pas "absence de tonus" — elle signifie tonus approprié
 
 **Points d'attention :**
 - L'alignement en jazz est moins codifié qu'en classique — la liberté stylistique peut masquer de mauvaises compensations
-- Les leaps et sauts jazz atterrissent souvent en avant du corps (bad) plutôt que sous le corps (good)
+- Les leaps et sauts jazz atterrissent souvent en avant du corps (mauvais) plutôt que sous le corps (bon)
 
 **Prévention :**
 - Technique d'atterrissage : cheville → genou → hanche en séquence, genou aligné sur le pied
@@ -358,7 +360,7 @@ La release ne signifie pas "absence de tonus" — elle signifie tonus approprié
 - Tendinopathie d'Achille (mollet raccourci)
 - Fasciite plantaire
 
-**Prévention :**
+**Prévention — des gestes simples qui changent tout :**
 - Jamais de session heels sans échauffement complet des pieds et des chevilles
 - Étirements du mollet systématiques après la session
 - Proprioception des chevilles — travailler pieds nus en parallèle
@@ -369,14 +371,14 @@ La release ne signifie pas "absence de tonus" — elle signifie tonus approprié
 
 ## Cabaret — les risques des high kicks
 
-- Ischio-jambiers et adducteurs (solicitation extrême en high kick)
+- Ischio-jambiers et adducteurs (sollicitation extrême en high kick)
 - Dos lombaire (extension extrême)
 
-**Prévention :** Amplitude maximale en douceur, jamais à froid. Renforcement des ischio-jambiers en excentrique avant de travailler les kicks à pleine amplitude.`,
+**Prévention :** Amplitude maximale toujours en douceur, jamais à froid. Renforcement des ischio-jambiers en excentrique avant de travailler les kicks à pleine amplitude.`,
       },
       {
         titre: "Pole dance — les risques du travail aérien",
-        contenuMarkdown: `La pole dance combine force, agilité, inversions et travail aérien — avec des risques spécifiques aux prises, aux points de contact et aux chutes.
+        contenuMarkdown: `La pole dance combine force, agilité, inversions et travail aérien — avec des risques spécifiques aux prises, aux points de contact et aux chutes. Prendre ces risques au sérieux, c'est pratiquer intelligemment.
 
 **Blessures caractéristiques de la pole dance :**
 
@@ -421,11 +423,11 @@ La release ne signifie pas "absence de tonus" — elle signifie tonus approprié
 **Conditioning pole :**
 Exercices de force spécifiques à la barre (pull-ups, shoulder mounts à vide, tuck inversions sans barre) — obligatoires avant de progresser en figures avancées.
 
-**La règle du pole :** Si tu ne peux pas sortir de la figure toi-même (en sécurité), tu n'es pas prêt·e à l'apprendre.`,
+**La règle du pole que je répète à chaque élève :** Si tu ne peux pas sortir de la figure toi-même (en sécurité), tu n'es pas prêt·e à l'apprendre.`,
       },
       {
         titre: "Blessures les plus fréquentes — reconnaissance et premiers soins",
-        contenuMarkdown: `Savoir reconnaître les blessures les plus fréquentes en danse permet d'agir vite et d'éviter l'aggravation.
+        contenuMarkdown: `Savoir reconnaître les blessures les plus fréquentes en danse permet d'agir vite et d'éviter l'aggravation. C'est la page la plus pratique de toute l'Unité 10.
 
 ---
 
@@ -436,11 +438,11 @@ Exercices de force spécifiques à la barre (pull-ups, shoulder mounts à vide, 
 **Signes :** Douleur immédiate sur le bord externe de la cheville, gonflement, ecchymose possible, difficulté à appuyer.
 
 **Premiers soins (RICE) :**
-Repos → Glace (15-20 min toutes les 2h) → Compression → Élévation
+Repos → Glace (15–20 min toutes les 2h) → Compression → Élévation
 
 **La règle d'Ottawa :** Radiographie si douleur à la palpation sur les malléoles ou incapacité à marcher 4 pas → consultation urgente.
 
-**Retour à la danse :** Pas avant rééducation complète — reprendre trop tôt = récidive quasi-certaine.
+**Retour à la danse :** Pas avant rééducation complète — reprendre trop tôt = récidive quasi-certaine. Je t'en supplie.
 
 ---
 
@@ -478,7 +480,7 @@ Repos → Glace (15-20 min toutes les 2h) → Compression → Élévation
 
 ---
 
-> *La meilleure prévention est la connaissance. Un danseur qui comprend son corps prend de meilleures décisions — sur le moment, sous la pression du cours, et sur le long terme.*`,
+> La meilleure prévention est la connaissance. Un danseur qui comprend son corps prend de meilleures décisions — sur le moment, sous la pression du cours, et sur le long terme. Et toi, maintenant, tu as les outils.`,
       },
     ],
   },

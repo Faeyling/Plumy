@@ -4,7 +4,7 @@ export const coursUnite6: Cours[] = [
   {
     id: 'intro-heels',
     titre: 'La danse heels — technique, présence et héritage',
-    resume: "Tout ce qu'il faut savoir pour danser en talons hauts : la biomécanique et la posture adaptée, les marches fondamentales (walk, strut, cat walk), le body roll et le hair toss, le floorwork en sécurité, la notion de frame et de sass, et la dette artistique envers la culture vogue et ballroom.",
+    resume: "Tout ce qu'il faut savoir pour danser en talons hauts : la biomécanique et la posture adaptée, les marches fondamentales (walk, strut, cat walk), le body roll et le hair toss, le floorwork en sécurité, la notion de frame et de sass, et la dette artistique envers la culture vogue et ballroom. Je suis tombé amoureux de cette discipline.",
     disciplines: ['heels'],
     termesAbordes: [
       'posture-heels', 'walk-heels', 'strut', 'body-roll-heels', 'hair-toss',
@@ -13,7 +13,7 @@ export const coursUnite6: Cours[] = [
     sections: [
       {
         titre: "Qu'est-ce que la danse heels ?",
-        contenuMarkdown: `La danse heels est une discipline à part entière — pas du jazz en talons, pas du cabaret avec des escarpins.
+        contenuMarkdown: `La danse heels est une discipline à part entière — pas du jazz en talons, pas du cabaret avec des escarpins. Ça me tient à cœur de commencer par là, parce que la confusion est fréquente.
 
 **Ce qu'est la danse heels :**
 - Un langage chorégraphique né à l'intersection de plusieurs traditions culturelles
@@ -21,29 +21,29 @@ export const coursUnite6: Cours[] = [
 - Une forme d'exploration de la présence, de l'attitude et du sass
 - Une discipline inclusive — pour tous les genres, tous les corps
 
-**Ses origines culturelles :**
-La danse heels ne sort pas de nulle part. Elle porte plusieurs héritages :
+**Ses origines culturelles — et il faut les connaître :**
+La danse heels ne sort pas de nulle part. Elle porte plusieurs héritages que j'ai cartographiés dans mes carnets.
 
 **La culture vogue et ballroom (Harlem, 1980s) :**
-Les compétitions de la scène ballroom incluaient des catégories de défilé en talons, de runway, de femme queen — codifiant la marche en talons comme performance artistique.
+Les compétitions de la scène ballroom incluaient des catégories de défilé en talons, de runway, de femme queen — codifiant la marche en talons comme performance artistique. Ce sont les communautés LGBTQ+ afro-américaines et latinx qui ont créé ce vocabulaire.
 
 **La culture drag :**
-Les drag queens ont développé des techniques de walk, de pose et d'attitude en talons qui ont nourri la danse heels.
+Les drag queens ont développé des techniques de walk, de pose et d'attitude en talons qui ont profondément nourri la danse heels.
 
 **Le jazz et le cabaret :**
 Le jazz a toujours inclus des danses en talons — les danseuses de revue, les chorus girls, les stars de Broadway.
 
-**Le hip-hop et le R&B des années 1990-2000 :**
+**Le hip-hop et le R&B des années 1990–2000 :**
 Les clips vidéo de Janet Jackson, Beyoncé, Ciara — chorégraphiés en talons avec une qualité jazz/urban — ont popularisé le heels dance contemporain.
 
 **Aujourd'hui :**
 La danse heels est enseignée dans des studios du monde entier, avec des compétitions (World of Dance, etc.) et un corpus pédagogique croissant.
 
-> Porter des talons, c'est choisir une contrainte et en faire une qualité. La danse heels transforme la limitation en langage.`,
+> Porter des talons, c'est choisir une contrainte et en faire une qualité. La danse heels transforme la limitation en langage. Moi, je trouve ça magnifique.`,
       },
       {
         titre: "Biomécanique et posture — danser en sécurité",
-        contenuMarkdown: `Avant de danser en talons hauts, comprendre ce qu'ils font au corps.
+        contenuMarkdown: `Avant de danser en talons hauts, il faut comprendre ce qu'ils font au corps. Je ne veux pas te faire peur — juste te donner les outils pour danser intelligemment.
 
 **Ce que le talon haut modifie :**
 
@@ -55,7 +55,7 @@ La danse heels est enseignée dans des studios du monde entier, avec des compét
 | Bassin | Bascule en antéversion (creux lombaire) |
 | Centre de gravité | Déplacé vers l'avant |
 
-**La posture de référence :**
+**La posture de référence — ce que j'appelle la "posture de commandement" :**
 - Pieds : talons au sol, poids réparti sur l'avant-pied
 - Genoux : légèrement souples (jamais verrouillés)
 - Bassin : gainage abdominal léger pour contrer l'antéversion
@@ -63,29 +63,29 @@ La danse heels est enseignée dans des studios du monde entier, avec des compét
 - Épaules : basses et ouvertes
 - Tête : portée haute, regard vers l'horizon
 
-**Choisir ses talons :**
+**Choisir ses talons selon son niveau :**
 - **Débutant :** 5–7 cm, talon large, plateforme
 - **Intermédiaire :** 8–10 cm, talon stiletto ou chunky
 - **Avancé :** 12–20 cm, plateforme (exotic), stiletto
 
-**Conditioning hors cours :**
-Renforcer les chevilles (exercises de résistance, équilibre unipodal) est aussi important que les cours eux-mêmes.
+**Conditioning hors cours — je ne saurais trop insister là-dessus :**
+Renforcer les chevilles (exercices de résistance, équilibre unipodal) est aussi important que les cours eux-mêmes. Les talons ne pardonnent pas la faiblesse des chevilles.
 
 **La progression de sécurité :**
 1. Maîtriser la marche et la posture avant d'ajouter des mouvements
 2. Maîtriser les mouvements debout avant le floorwork
 3. Augmenter la hauteur du talon progressivement
 
-> Il n'y a pas de raccourci : le corps a besoin de temps pour s'adapter aux talons.`,
+> Il n'y a pas de raccourci : le corps a besoin de temps pour s'adapter aux talons. Et ce temps est bien investi.`,
       },
       {
         titre: "Walks fondamentales — marcher avant de danser",
-        contenuMarkdown: `La marche est la compétence première du heels. Tout le reste en découle.
+        contenuMarkdown: `La marche est la compétence première du heels. Tout le reste en découle — et ça m'a pris un moment de vraiment l'accepter, parce qu'on a envie d'aller directement aux mouvements spectaculaires.
 
 **Les qualités de walk à développer :**
 
 **1. Le walk de base :**
-Talon qui se pose, poids qui se transfert vers l'avant, autre pied. Simple et contrôlé.
+Talon qui se pose, poids qui se transfert vers l'avant, autre pied. Simple et contrôlé. C'est la fondation.
 
 **2. Le walk pointe-talon :**
 L'avant du pied pose en premier — plus silencieux, plus élégant. Caractéristique du walk editorial et sexy.
@@ -94,7 +94,7 @@ L'avant du pied pose en premier — plus silencieux, plus élégant. Caractéris
 Les pieds posent légèrement sur une ligne (croisement léger) — crée le balancement naturel des hanches.
 
 **4. Le strut :**
-Walk avec attitude exacerbée : chest out, chin up, regard de propriétaire. Pour les moments d'autorité.
+Walk avec attitude exacerbée : chest out, chin up, regard de propriétaire. Pour les moments d'autorité totale.
 
 **5. Le catwalk :**
 Walk sur une ligne imaginaire, précis, inspiré du défilé de mode. Souvent utilisé en entrée et en sortie.
@@ -103,9 +103,9 @@ Walk sur une ligne imaginaire, précis, inspiré du défilé de mode. Souvent ut
 - **Le regard** : toujours vers l'horizon ou vers quelqu'un — jamais vers le sol
 - **Les épaules** : basses et ouvertes, une légère alternance naturelle
 - **Les bras** : avec styling (jamais qui battent mécaniquement)
-- **Le rythme** : en connexion avec la musique — le walk est musical
+- **Le rythme** : en connexion avec la musique — le walk est musical, toujours
 
-**Exercice de progression :**
+**La progression que j'utilise :**
 1. Walk aller-retour sans musique (focus placement)
 2. Walk sur une musique lente
 3. Walk avec styling des bras
@@ -114,13 +114,13 @@ Walk sur une ligne imaginaire, précis, inspiré du défilé de mode. Souvent ut
       },
       {
         titre: "Body roll, hair toss et éléments de style",
-        contenuMarkdown: `Les éléments de style qui transforment un walk en danse heels.
+        contenuMarkdown: `Les éléments de style qui transforment un walk en véritable danse heels. C'est là que ça devient vraiment fun.
 
 **Le body roll en heels :**
 L'ondulation qui parcourt le corps verticalement — adaptée à la contrainte du talon.
 
-**Comment l'exécuter en heels :**
-- Commencer depuis les genoux (les pieds et chevilles sont contraints)
+**Comment l'exécuter en heels (différent du contemporain) :**
+- Commence depuis les genoux (les pieds et chevilles sont contraints)
 - Genoux → bassin → bas du dos → cage thoracique → épaules → tête
 - Chaque segment répond au précédent avec un léger délai
 - La tête *termine* le voyage — elle ne précède pas
@@ -137,7 +137,7 @@ Mouvement de tête vif qui projette les cheveux — et l'énergie — dans une d
 Le hair toss arrive *sur* un accent — la tête atterrit sur le beat.
 
 **Sans longs cheveux :**
-Le mouvement de tête crée l'effet même avec des cheveux courts — c'est la qualité du mouvement qui compte.
+Le mouvement de tête crée l'effet même avec des cheveux courts — c'est la qualité du mouvement qui compte, pas la longueur des cheveux. Je t'assure.
 
 **Les isolations :**
 Les isolations en heels sont moins percussives qu'en jazz mais très présentes :
@@ -146,23 +146,23 @@ Les isolations en heels sont moins percussives qu'en jazz mais très présentes 
 - Bassin : mouvements de hanche en coordination avec le walk
 
 **Le frame :**
-Même dans le mouvement, le corps maintient une organisation spatiale lisible — les lignes du corps 'forment' une image à chaque moment.`,
+Même dans le mouvement, le corps maintient une organisation spatiale lisible — les lignes du corps "forment" une image à chaque moment. C'est ce qui donne cette qualité de présence permanente dans la danse heels.`,
       },
       {
         titre: "Floorwork, sass et héritage culturel",
-        contenuMarkdown: `Les compétences qui élèvent la danse heels au-delà de la technique.
+        contenuMarkdown: `Les compétences qui élèvent la danse heels au-delà de la technique — et pourquoi l'héritage culturel n'est pas un option, c'est une responsabilité.
 
 **Le floorwork en heels :**
-Travail au sol avec talons hauts — l'une des compétences les plus spectaculaires.
+Travail au sol avec talons hauts — l'une des compétences les plus spectaculaires. Et l'une des plus importantes à aborder avec méthode.
 
-**Progression de sécurité :**
+**Progression de sécurité que je recommande :**
 1. Apprendre le floorwork pieds nus
 2. Talons bas (5 cm)
 3. Talons progressivement plus hauts
 4. Toujours : surface non-glissante, genouillères en apprentissage
 
 **Descente :**
-Depuis un lunge → genou au sol → côté de la cuisse → hanche. Jamais d'effondrement direct sur les genoux.
+Depuis un lunge → genou au sol → côté de la cuisse → hanche. Jamais d'effondrement direct sur les genoux. Jamais.
 
 **Remontée :**
 Utiliser l'élan et l'avant-pied (jamais le talon). Lunge avant pour faciliter.
@@ -170,16 +170,16 @@ Utiliser l'élan et l'avant-pied (jamais le talon). Lunge avant pour faciliter.
 ---
 
 **Le sass :**
-Qualité d'expression qui dépasse la technique — la confiance, l'impudence, la présence qui dit 'je suis là'.
+Qualité d'expression qui dépasse la technique — la confiance, l'impudence, la présence qui dit "je suis là".
 
-Le sass ne s'enseigne pas directement — mais il se cultive :
+Le sass ne s'enseigne pas directement — mais il se cultive, et j'ai mes techniques :
 - Danser seul(e) sans regard à satisfaire
 - Exagérer l'attitude jusqu'au ridicule, puis calibrer
 - Trouver l'émotion juste et la laisser traverser le mouvement
 
 ---
 
-**L'héritage à honorer :**
+**L'héritage à honorer — et c'est important, je t'en supplie de ne pas passer ça en diagonale :**
 
 La danse heels porte l'héritage du **vogue et de la culture ballroom** — né à Harlem dans les années 1950–1980 par et pour la communauté LGBTQ+ afro-américaine et latinx.
 
@@ -190,7 +190,7 @@ Honorer cet héritage, c'est :
 - Reconnaître les artistes ballroom et voguing
 - Ne pas pratiquer sans comprendre d'où ça vient
 
-> *Porte tes talons avec intention. Chaque pas a une histoire.*`,
+> Porte tes talons avec intention. Chaque pas a une histoire. Et cette histoire mérite d'être connue.`,
       },
     ],
   },
