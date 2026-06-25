@@ -11,7 +11,7 @@ export const progressionRepository = {
   },
 
   async listFavoris(): Promise<ProgressionTerme[]> {
-    return db.progressions.filter(p => p.favori === true).toArray()
+    return db.progressions.where('favori').equals(true).toArray()
   },
 
   async listARevoir(): Promise<ProgressionTerme[]> {

@@ -22,9 +22,11 @@ export const statsRepository = {
   },
 
   async update(updates: Partial<StatsGlobales>): Promise<void> {
-    const existing = await db.stats.get(STATS_ID)
-    const base = existing ?? defaultStats
-    await db.stats.put({ ...base, ...updates })
+    await db.transaction('rw', db.stats, async () => {
+      const existing = await db.stats.get(STATS_ID)
+      const base = existing ?? defaultStats
+      await db.stats.put({ ...base, ...updates })
+    })
   },
 
   async enregistrerVisite(): Promise<void> {
@@ -35,7 +37,9 @@ export const statsRepository = {
     if (!isNewDay) return
 
     const joursDepuisExport = (stats.joursUsageDepuisExport ?? 0) + 1
-    const hierISO = new Date(Date.now() - 86400000).toISOString().slice(0, 10)
+    const hierDate = new Date()
+    hierDate.setUTCDate(hierDate.getUTCDate() - 1)
+    const hierISO = hierDate.toISOString().slice(0, 10)
     const streakContinue = stats.dernierJourUsage === hierISO
     const nouvelleActivite = { date: today, termesVus: 0, quizReussis: 0 }
 

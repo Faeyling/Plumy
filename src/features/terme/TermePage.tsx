@@ -32,6 +32,8 @@ export function TermePage() {
 
   const marquerVu = async () => {
     if (!id) return
+    const current = await progressionRepository.get(id)
+    if (current && current.statut !== 'jamais-vu') return
     await progressionRepository.marquerVu(id)
     await statsRepository.ajouterPoints(5)
     await statsRepository.ajouterTermeVuAujourdhui()

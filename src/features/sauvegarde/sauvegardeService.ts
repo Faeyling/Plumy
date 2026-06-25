@@ -53,7 +53,7 @@ export async function importerDonnees(
       if (data.termesPersonnels?.length) await db.termesPersonnels.bulkPut(data.termesPersonnels)
     })
   } else {
-    await db.transaction('rw', [db.progressions, db.termesPersonnels], async () => {
+    await db.transaction('rw', [db.progressions, db.stats, db.termesPersonnels], async () => {
       for (const prog of data.progression ?? []) {
         const existing = await db.progressions.get(prog.termeId)
         if (!existing || (prog.vuLe ?? 0) > (existing.vuLe ?? 0)) {
@@ -63,6 +63,17 @@ export async function importerDonnees(
       for (const terme of data.termesPersonnels ?? []) {
         const existing = await db.termesPersonnels.get(terme.id)
         if (!existing) await db.termesPersonnels.put(terme)
+      }
+      if (data.stats) {
+        const existing = await db.stats.get('global')
+        const base = existing ?? { id: 'global', points: 0, badges: [], serieJours: 0, derniereVisite: Date.now(), quizJoues: 0, historiqueActivite: [] }
+        const merged = {
+          ...base,
+          points: Math.max(base.points ?? 0, data.stats.points ?? 0),
+          quizJoues: Math.max(base.quizJoues ?? 0, data.stats.quizJoues ?? 0),
+          badges: Array.from(new Set([...(base.badges ?? []), ...(data.stats.badges ?? [])])),
+        }
+        await db.stats.put(merged)
       }
     })
   }

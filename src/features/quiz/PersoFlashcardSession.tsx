@@ -10,6 +10,7 @@ type Jugement = 'su' | 'a-revoir'
 export function PersoFlashcardSession() {
   const navigate = useNavigate()
   const [deck, setDeck] = useState<TermePersonnel[]>([])
+  const [loading, setLoading] = useState(true)
   const [index, setIndex] = useState(0)
   const [retourne, setRetourne] = useState(false)
   const [jugements, setJugements] = useState<Map<string, Jugement>>(new Map())
@@ -18,7 +19,10 @@ export function PersoFlashcardSession() {
   const [animKey, setAnimKey] = useState(0)
 
   useEffect(() => {
-    termesPersoRepository.list().then(setDeck)
+    termesPersoRepository.list().then(result => {
+      setDeck(result)
+      setLoading(false)
+    })
   }, [])
 
   const carteActuelle = deck[index]
@@ -46,6 +50,8 @@ export function PersoFlashcardSession() {
     setTermine(false)
     setAnimKey(k => k + 1)
   }
+
+  if (loading) return null
 
   if (deck.length === 0) {
     return (
