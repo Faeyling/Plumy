@@ -334,7 +334,7 @@ export const termesUnite1: Terme[] = [
   {
     id: 'mat-chinois',
     nom: 'Mât chinois',
-    alias: ['Chinese pole', 'mallakhamb'],
+    alias: ['Chinese pole'],
     disciplines: ['pole-dance'],
     categories: ['culture-histoire'],
     definition: "Discipline acrobatique et circassienne utilisant un mât vertical depuis des millénaires en Asie et en Afrique, considérée comme l'ancêtre technique du pole dance.",

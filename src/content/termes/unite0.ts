@@ -272,7 +272,7 @@ export const termesUnite0: Terme[] = [
   {
     id: 'cote-cour',
     nom: 'Côté cour',
-    alias: ['jardin', 'left stage', 'stage left'],
+    alias: ['left stage', 'stage left'],
     disciplines: ['commun'],
     categories: ['culture-histoire', 'concepts'],
     definition: "Côté gauche de la scène du point de vue du danseur face au public, correspondant au côté droit de la salle vu depuis le public.",
@@ -292,7 +292,7 @@ export const termesUnite0: Terme[] = [
   {
     id: 'cote-jardin',
     nom: 'Côté jardin',
-    alias: ['cour droite', 'right stage', 'stage right'],
+    alias: ['jardin', 'right stage', 'stage right'],
     disciplines: ['commun'],
     categories: ['culture-histoire', 'concepts'],
     definition: "Côté droit de la scène du point de vue du danseur face au public, correspondant au côté gauche de la salle vu depuis le public.",

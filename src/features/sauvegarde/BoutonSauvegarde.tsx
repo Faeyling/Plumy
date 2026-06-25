@@ -46,9 +46,14 @@ export function BoutonSauvegarde() {
 
   async function handleImport(mode: 'fusionner' | 'remplacer') {
     if (!donnees) return
-    await importerDonnees(donnees, mode)
-    setPhase('succes')
-    setTimeout(fermer, 2000)
+    try {
+      await importerDonnees(donnees, mode)
+      setPhase('succes')
+      setTimeout(fermer, 2000)
+    } catch (err) {
+      setErreur(err instanceof Error ? err.message : "Erreur lors de l'importation.")
+      setPhase('menu')
+    }
   }
 
   return (

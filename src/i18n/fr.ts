@@ -92,7 +92,7 @@ export const fr = {
     voirVideo: "Voir la vidéo",
     ajouterFavori: "Ajouter aux favoris",
     retirerFavori: "Retirer des favoris",
-    marquelVu: "Marquer comme vu",
+    marquerVu: "Marquer comme vu",
     niveauSuivant: "Quiz",
   },
 

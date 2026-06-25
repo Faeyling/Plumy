@@ -136,20 +136,4 @@ export const termesUnite9: Terme[] = [
     termesLies: ['tease', 'rapport-public', 'effeuillage'],
   },
 
-  {
-    id: 'neo-burlesque',
-    nom: "Néo-burlesque",
-    alias: ['neo-burlesque', 'burlesque contemporain', 'burlesque revival'],
-    disciplines: ['burlesque'],
-    categories: ['culture-histoire', 'concepts'],
-    definition: "Mouvement artistique né dans les années 1990 aux États-Unis qui renouvelle et réinvente le burlesque classique des années 1940–1960 — en intégrant des valeurs féministes, une inclusion radicale des corps et des genres, et une liberté de style totale.",
-    description: "Le néo-burlesque est né à New York et San Francisco dans les années 1990 comme acte de résistance culturelle et réappropriation féministe.\n\n**Les origines :**\n- **1990s** : Scènes burlesque à New York (World Famous BOB, Murray Hill), San Francisco\n- **2000s** : Explosion internationale, Dita Von Teese popularise le burlesque auprès du grand public\n- **2010s** : Le néo-burlesque dans toutes les grandes villes du monde\n\n**Ce qui différencie le néo-burlesque du burlesque classique :**\n\n**Inclusion des corps :**\nLe burlesque classique avait ses standards (le 'chorégirl look'). Le néo-burlesque célèbre activement tous les corps — toutes les tailles, tous les genres, toutes les couleurs.\n\n**Diversité de style :**\nThème medieval, science-fiction, punk, queerpunk, horror burlesque, politique — tout est possible.\n\n**Dimension féministe et queer :**\nLe néo-burlesque se positionne explicitement comme art de la souveraineté corporelle — 'Mon corps, mes règles'.\n\n**Les grandes artistes néo-burlesque :**\n- **Dita Von Teese** : référence glamour et classique\n- **Dirty Martini** : artiste plus size, militante\n- **Jo Boobs** : activiste et organisatrice communautaire\n- **Harvest Moon** : style plus dark et politique",
-    erreursCourantes: [],
-    conseils: [
-      "Le néo-burlesque n'a pas de 'bon corps' ou de 'bon style'. Sa seule règle est l'intention artistique et la souveraineté de l'artiste sur sa propre présentation. C'est sa force et sa beauté.",
-    ],
-    etymologie: "Du grec *neos* (nouveau) + 'burlesque' (de l'italien *burla*, plaisanterie, moquerie). Le néo-burlesque des années 1990 réactive la tradition du vaudeville et du music-hall américain en lui ajoutant une dimension féministe et queer explicite.",
-    difficulteInterne: 1,
-    termesLies: ['effeuillage', 'character-burlesque', 'burlesque-origines'],
-  },
 ]

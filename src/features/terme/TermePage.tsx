@@ -268,7 +268,7 @@ export function TermePage() {
             onClick={marquerVu}
             className="flex-1 bg-[var(--color-plumy-blue)] text-white font-[var(--font-titre)] font-bold py-3 rounded-[var(--radius-btn)] text-sm hover:opacity-90 transition-opacity"
           >
-            {fr.terme.marquelVu} (+5 pts)
+            {fr.terme.marquerVu} (+5 pts)
           </button>
         ) : (
           <div className="flex-1 flex items-center justify-center gap-2 text-sm text-[var(--color-candy-menthe)] font-semibold">

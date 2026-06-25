@@ -104,7 +104,7 @@ export const unites: Unite[] = [
     coursIds: ['intro-heels'],
     termeIds: [
       'posture-heels', 'walk-heels', 'strut', 'body-roll-heels', 'hair-toss',
-      'floorwork-heels', 'frame-heels', 'sass', 'cat-walk-heels', 'vogue-ballroom-heels', 'heel-turn',
+      'floorwork-heels', 'frame-heels', 'sass', 'cat-walk-heels', 'vogue-ballroom', 'heel-turn',
     ],
     quizDisponibles: ['qcm', 'association', 'texte-a-trous', 'flashcards'],
     iconeSvgId: 'heels',

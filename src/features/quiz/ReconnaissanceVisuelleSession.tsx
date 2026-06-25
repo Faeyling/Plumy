@@ -65,8 +65,7 @@ export function ReconnaissanceVisuelleSession() {
 
   async function handleNext() {
     if (isLast) {
-      const totalCorrects = corrects + (isCorrect ? 1 : 0)
-      const pts = totalCorrects * PTS_CORRECT
+      const pts = corrects * PTS_CORRECT
       setPtsGagnes(pts)
       await statsRepository.ajouterPoints(pts)
       const stats = await statsRepository.get()

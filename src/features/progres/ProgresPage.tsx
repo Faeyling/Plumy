@@ -27,7 +27,7 @@ export function ProgresPage() {
     return Array.from({ length: 14 }, (_, i) => {
       const d = new Date(now - (13 - i) * 86400000)
       const date = d.toISOString().slice(0, 10)
-      const entry = stats?.historiqueActivite.find(a => a.date === date)
+      const entry = stats?.historiqueActivite?.find(a => a.date === date)
       return {
         label: String(d.getDate()),
         termesVus: entry?.termesVus ?? 0,
