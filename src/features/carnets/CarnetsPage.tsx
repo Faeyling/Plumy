@@ -219,18 +219,25 @@ export function CarnetsPage() {
                     exit={{ opacity: 0, scale: 0.95 }}
                     className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-6"
                   >
-                    <div className="bg-white rounded-[var(--radius-card)] p-5 w-full max-w-xs shadow-xl space-y-4 text-center">
+                    <div
+                      className="bg-white rounded-[var(--radius-card)] p-5 w-full max-w-xs shadow-xl space-y-4 text-center"
+                      role="dialog"
+                      aria-modal="true"
+                      aria-label={fr.carnets.confirmerSuppression}
+                    >
                       <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)]">
                         {fr.carnets.confirmerSuppression}
                       </p>
                       <div className="flex gap-2">
                         <button
+                          type="button"
                           onClick={() => confirmerSuppression(suppression)}
                           className="flex-1 py-2.5 bg-[var(--color-candy-corail)] text-white font-[var(--font-titre)] font-bold rounded-lg text-sm"
                         >
                           {fr.carnets.supprimerTerme}
                         </button>
                         <button
+                          type="button"
                           onClick={() => setSuppression(null)}
                           className="flex-1 py-2.5 bg-[var(--color-gris-doux)] text-[var(--color-encre)] font-[var(--font-titre)] font-semibold rounded-lg text-sm"
                         >

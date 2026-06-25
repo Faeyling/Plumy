@@ -215,7 +215,11 @@ export function QCMSession() {
 
             {isAnswered && (
               <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="space-y-2">
-                <p className={`text-sm font-semibold ${isCorrect ? 'text-[var(--color-candy-menthe)]' : 'text-[var(--color-candy-corail)]'}`}>
+                <p
+                  role="status"
+                  aria-live="polite"
+                  className={`text-sm font-semibold ${isCorrect ? 'text-[var(--color-candy-menthe)]' : 'text-[var(--color-candy-corail)]'}`}
+                >
                   {isCorrect ? fr.quiz.bonne : fr.quiz.mauvaise}
                 </p>
                 {!isCorrect && (

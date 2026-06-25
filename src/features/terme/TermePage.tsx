@@ -72,6 +72,8 @@ export function TermePage() {
             initial={{ opacity: 0, y: -40 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -40 }}
+            role="status"
+            aria-live="polite"
             className="fixed top-4 left-1/2 -translate-x-1/2 z-50 bg-[var(--color-encre)] text-white text-sm px-4 py-2 rounded-full shadow-lg"
           >
             {toast}

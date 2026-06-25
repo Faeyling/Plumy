@@ -236,7 +236,11 @@ export function ReconnaissanceVisuelleSession() {
                 animate={{ opacity: 1, y: 0 }}
                 className={`rounded-[var(--radius-card)] p-4 ${isCorrect ? 'bg-[#d1fae5]' : 'bg-[#fee2e2]'}`}
               >
-                <p className={`font-[var(--font-titre)] font-bold text-sm ${isCorrect ? 'text-[#065f46]' : 'text-[var(--color-candy-corail)]'}`}>
+                <p
+                  role="status"
+                  aria-live="polite"
+                  className={`font-[var(--font-titre)] font-bold text-sm ${isCorrect ? 'text-[#065f46]' : 'text-[var(--color-candy-corail)]'}`}
+                >
                   {isCorrect ? fr.quiz.bonne : fr.quiz.mauvaise}
                 </p>
                 {!isCorrect && (
