@@ -656,11 +656,12 @@ Centralisé dans `src/components/mascotte/`.
   - Brique 4 : `ProgresPage` avec Recharts, vraies stats, grille badges
   - Brique 5 : `CarnetsPage` avec tabs Favoris / Mes termes
   - Brique 6 : `RevisionPage` (`/revision`), lien dans AccueilPage
+- ✅ Étape 8 : `BoutonSauvegarde` (export/import JSON), `OnboardingModal` (3 écrans), `RappelSauvegarde` (seuil 5 jours)
+- ✅ Étape 9 : 70 tests Vitest (quiz, badges, recherche, sauvegarde, progressionRepository, statsRepository) — accessibilité : `role="dialog"` modales, `aria-live` toasts/feedback quiz
+- ✅ Étape 10 : Build production propre, vendor-splitting (index.js 545 kB → 49 kB), `vercel.json` SPA rewrite
 
 ### En attente
-- ⬜ Étape 8 : Export/import JSON, onboarding, rappel sauvegarde
-- ⬜ Étape 9 : Accessibilité, tests, Lighthouse
-- ⬜ Étape 10 : Finalisation, déploiement Vercel
+- ⬜ Déploiement effectif sur Vercel (action manuelle)
 
 ### Notes techniques
 - `animationId` absent sur tous les termes → quiz `reconnaissance-visuelle` désactivé (voir `ANIMATIONS_TODO.md`)

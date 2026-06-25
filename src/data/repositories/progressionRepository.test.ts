@@ -15,7 +15,7 @@ vi.mock('@/data/db', () => ({
         equals: (val: unknown) => ({
           toArray: async () =>
             Object.values(store).filter(
-              (p) => (p as Record<string, unknown>)[field] === val,
+              (p) => (p as unknown as Record<string, unknown>)[field] === val,
             ),
         }),
       }),

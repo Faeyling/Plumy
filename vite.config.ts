@@ -41,6 +41,19 @@ export default defineConfig({
       },
     }),
   ],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: (id) => {
+          if (id.includes('node_modules/react') || id.includes('node_modules/react-dom') || id.includes('node_modules/react-router')) return 'vendor-react'
+          if (id.includes('node_modules/framer-motion') || id.includes('node_modules/motion')) return 'vendor-motion'
+          if (id.includes('node_modules/d3') || id.includes('node_modules/internmap') || id.includes('node_modules/delaunator') || id.includes('node_modules/robust-predicates')) return 'vendor-d3'
+          if (id.includes('node_modules/dexie')) return 'vendor-db'
+          if (id.includes('node_modules/recharts') || id.includes('node_modules/victory-vendor')) return 'vendor-charts'
+        },
+      },
+    },
+  },
   test: {
     globals: true,
     environment: 'jsdom',
