@@ -177,7 +177,7 @@ export function TermePage() {
               <PluмyMascot etat="encouragement" taille={48} className="flex-shrink-0 mt-1" />
               <ul className="space-y-2">
                 {terme.conseils.map((c, i) => (
-                  <li key={i} className="text-sm text-[var(--color-encre)] leading-relaxed italic">
+                  <li key={i} className="font-[var(--font-manuscrit)] text-base text-[var(--color-encre)] leading-relaxed">
                     « {c} »
                   </li>
                 ))}
@@ -307,7 +307,7 @@ function Section({
           {titre}
         </h2>
       </div>
-      <div className="bg-white rounded-[var(--radius-card)] p-4 shadow-[var(--shadow-card)]">
+      <div className="bg-[var(--color-papier-creme)] rounded-[var(--radius-card)] p-4 shadow-[var(--shadow-card)] carnet-lignes">
         {children}
       </div>
     </section>
