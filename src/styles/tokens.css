@@ -27,8 +27,6 @@
   --color-encre-soft: #312e81;
   --color-papier: #fdf4ff;
   --color-papier-alt: #f5f3ff;
-  --color-papier-creme: #faf8f3;
-  --color-marge-carnet: #fda4af;
   --color-gris-doux: #e2e8f0;
   --color-gris-texte: #64748b;
 
@@ -75,17 +73,3 @@ html {
 ::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: var(--color-candy-lavande-light); }
 ::-webkit-scrollbar-thumb { background: var(--color-candy-lavande); border-radius: 9999px; }
-
-/* ── Style carnet manuscrit ──────────────────────────────────────────────── */
-
-/* Post-it — encart jaune à bordure gauche, police manuscrite */
-.carnet-postit {
-  background-color: #fef9c3;
-  border-left: 3px solid var(--color-candy-jaune);
-  padding: 0.625rem 0.875rem;
-  border-radius: 0 0.625rem 0.625rem 0;
-  font-family: var(--font-manuscrit);
-  font-size: 1.0625rem;
-  line-height: 1.55;
-  color: var(--color-encre);
-}

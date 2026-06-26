@@ -59,7 +59,7 @@ export function CoursPage() {
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.06 }}
-            className="bg-[var(--color-papier-creme)] rounded-[var(--radius-card)] shadow-[var(--shadow-card)] overflow-hidden"
+            className="bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] overflow-hidden"
           >
             <button
               className="w-full flex items-center justify-between p-4 text-left"
@@ -186,13 +186,16 @@ function CoursMarkdown({ content }: { content: string }) {
       )
     } else if (line.startsWith('## ')) {
       elements.push(
-        <h2 key={i} className="font-[var(--font-manuscrit)] font-semibold text-[var(--color-encre)] text-lg mt-4 mb-1">
+        <h2 key={i} className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-base mt-4 mb-2">
           {line.slice(3)}
         </h2>
       )
     } else if (line.startsWith('> ')) {
       elements.push(
-        <blockquote key={i} className="carnet-postit my-3">
+        <blockquote
+          key={i}
+          className="border-l-2 border-[var(--color-candy-lavande)] pl-3 italic text-sm text-[var(--color-gris-texte)] my-3"
+        >
           <InlineMarkdown text={line.slice(2)} />
         </blockquote>
       )
