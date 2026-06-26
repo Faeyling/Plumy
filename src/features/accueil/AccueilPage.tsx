@@ -14,6 +14,13 @@ function pickRandom<T>(arr: readonly T[]): T {
   return arr[Math.floor(Math.random() * arr.length)]
 }
 
+const iconeIllustration: Partial<Record<string, string>> = {
+  classique: '/mascotte/plumy-classique.png',
+  contemporain: '/mascotte/plumy-contemporain.png',
+  jazz: '/mascotte/plumy-jazz.png',
+  cabaret: '/mascotte/plumy-cabaret.png',
+}
+
 const iconeCouleur: Record<string, string> = {
   'corps-qui-danse': 'var(--color-candy-lavande)',
   'histoire-danse': 'var(--color-candy-corail)',
@@ -148,6 +155,7 @@ function StatPill({
 
 function UniteCard({ unite, index }: { unite: Unite; index: number }) {
   const couleur = iconeCouleur[unite.iconeSvgId] ?? 'var(--color-candy-lavande)'
+  const illustration = iconeIllustration[unite.iconeSvgId]
 
   return (
     <motion.div
@@ -160,13 +168,22 @@ function UniteCard({ unite, index }: { unite: Unite; index: number }) {
         className="flex items-center gap-4 p-4 bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-shadow"
         aria-label={`Unité ${index} — ${unite.titre}`}
       >
-        <span
-          className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-[var(--font-titre)] font-bold text-white text-sm"
-          style={{ backgroundColor: couleur }}
-          aria-hidden="true"
-        >
-          {index}
-        </span>
+        {illustration ? (
+          <img
+            src={illustration}
+            alt=""
+            aria-hidden="true"
+            className="flex-shrink-0 w-12 h-12 object-contain"
+          />
+        ) : (
+          <span
+            className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-[var(--font-titre)] font-bold text-white text-sm"
+            style={{ backgroundColor: couleur }}
+            aria-hidden="true"
+          >
+            {index}
+          </span>
+        )}
         <div className="flex-1 min-w-0">
           <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm leading-snug">
             {unite.titre}

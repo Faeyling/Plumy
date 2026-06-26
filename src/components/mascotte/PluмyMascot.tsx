@@ -23,6 +23,11 @@ const messageParEtat: Record<PluмyEtat, string> = {
   retour: "Plumy content de te revoir",
 }
 
+const PNG_ETATS: Partial<Record<PluмyEtat, string>> = {
+  accueil: '/mascotte/plumy-accueil.png',
+  encouragement: '/mascotte/plumy-encouragement.png',
+}
+
 // Pivot de la crête (sommet de la tête)
 const CPX = 66
 const CPY = 45
@@ -34,12 +39,26 @@ const CREST_LEN   = [30, 34, 37, 38, 36, 32, 27]
 
 export function PluмyMascot({ etat = 'accueil', taille = 120, className }: Props) {
   const reduceMotion = useReducedMotion()
+  const pngSrc = PNG_ETATS[etat]
+
+  if (pngSrc) {
+    return (
+      <motion.img
+        src={pngSrc}
+        alt={messageParEtat[etat]}
+        width={taille}
+        height={taille}
+        className={className}
+        style={{ objectFit: 'contain' }}
+        animate={reduceMotion ? {} : { y: [0, -3, 0] }}
+        transition={{ duration: 2.8, repeat: Infinity, ease: 'easeInOut' }}
+      />
+    )
+  }
 
   const crestFactor =
     etat === 'reussite'      ? 1.0 :
-    etat === 'encouragement' ? 0.80 :
     etat === 'retour'        ? 0.70 :
-    etat === 'accueil'       ? 0.62 :
     etat === 'echec'         ? 0.28 : 0.04
 
   return (
@@ -61,7 +80,7 @@ export function PluмyMascot({ etat = 'accueil', taille = 120, className }: Prop
         </clipPath>
       </defs>
 
-      {(etat === 'accueil' || etat === 'retour') && (
+      {etat === 'retour' && (
         <ellipse cx="62" cy="100" rx="70" ry="60" fill="#fce7f3" opacity="0.45" />
       )}
 
@@ -117,7 +136,7 @@ function CouTete({
   crestFactor: number
   reduceMotion: boolean
 }) {
-  const clignement = etat === 'accueil' || etat === 'retour'
+  const clignement = etat === 'retour'
 
   return (
     <motion.g
@@ -137,20 +156,16 @@ function CouTete({
           const len   = CREST_LEN[i]
           const tx    = CPX + len * Math.cos(rad)
           const ty    = CPY - len * Math.sin(rad)
-          // bande blanche sub-terminale
           const wx    = CPX + (len - 5) * Math.cos(rad)
           const wy    = CPY - (len - 5) * Math.sin(rad)
 
           return (
             <g key={i}>
-              {/* Tige cannelle-orange */}
               <line
                 x1={CPX} y1={CPY} x2={tx} y2={ty}
                 stroke="#f97316" strokeWidth="2.2" strokeLinecap="round"
               />
-              {/* Bande blanche sub-terminale */}
               <circle cx={wx} cy={wy} r={2} fill="white" opacity={0.88} />
-              {/* Pointe noire distinctive */}
               <circle cx={tx} cy={ty} r={2.5} fill="#1e293b" />
             </g>
           )
