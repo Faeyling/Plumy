@@ -307,7 +307,7 @@ function Section({
           {titre}
         </h2>
       </div>
-      <div className="bg-[var(--color-papier-creme)] rounded-[var(--radius-card)] p-4 shadow-[var(--shadow-card)] carnet-lignes">
+      <div className="bg-[var(--color-papier-creme)] rounded-[var(--radius-card)] p-4 shadow-[var(--shadow-card)]">
         {children}
       </div>
     </section>

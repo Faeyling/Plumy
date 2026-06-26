@@ -88,7 +88,7 @@ export function CoursPage() {
                 animate={{ opacity: 1, height: 'auto' }}
                 exit={{ opacity: 0, height: 0 }}
                 transition={{ duration: 0.25 }}
-                className="px-4 pb-4 carnet-lignes"
+                className="px-4 pb-4"
               >
                 <CoursMarkdown content={section.contenuMarkdown} />
               </motion.div>
