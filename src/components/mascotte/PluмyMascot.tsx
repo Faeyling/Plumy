@@ -17,204 +17,171 @@ interface Props {
 const messageParEtat: Record<PluмyEtat, string> = {
   accueil: "Plumy te souhaite la bienvenue",
   encouragement: "Plumy t'encourage",
-  reussite: "Plumy déploie sa couronne en célébration",
+  reussite: "Plumy déploie sa crête en célébration",
   echec: "Plumy te réconforte avec bienveillance",
-  repos: "Plumy au repos",
+  repos: "Plumy au repos, crête repliée",
   retour: "Plumy content de te revoir",
 }
 
-// Pivot de la couronne (sommet de la tête)
-const CPX = 118
-const CPY = 38
+// Pivot de la crête (sommet de la tête)
+const CPX = 66
+const CPY = 45
 
-// Plumes de couronne : angle CCW depuis +x, longueur
-const COURONNE = [
-  { a: 115, len: 18 },
-  { a: 100, len: 22 },
-  { a: 84,  len: 25 },
-  { a: 68,  len: 25 },
-  { a: 52,  len: 22 },
-  { a: 36,  len: 18 },
-  { a: 20,  len: 14 },
-]
+// Angles ouverts par plume (CCW depuis +x), fermés tous à 172°
+const CREST_OPEN  = [68, 80, 92, 104, 116, 128, 140]
+const CREST_CLOSE = 172
+const CREST_LEN   = [30, 34, 37, 38, 36, 32, 27]
 
 export function PluмyMascot({ etat = 'accueil', taille = 120, className }: Props) {
   const reduceMotion = useReducedMotion()
 
-  const droopHead = etat === 'echec'
-  const tucked    = etat === 'repos'
+  const crestFactor =
+    etat === 'reussite'      ? 1.0 :
+    etat === 'encouragement' ? 0.80 :
+    etat === 'retour'        ? 0.70 :
+    etat === 'accueil'       ? 0.62 :
+    etat === 'echec'         ? 0.28 : 0.04
 
   return (
     <motion.svg
       width={taille}
-      height={Math.round(taille * 215 / 190)}
-      viewBox="0 0 190 215"
+      height={Math.round(taille * 162 / 140)}
+      viewBox="0 0 140 162"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       aria-label={messageParEtat[etat]}
       role="img"
       className={className}
-      animate={reduceMotion ? {} : { y: tucked ? 0 : [0, -3, 0] }}
+      animate={reduceMotion ? {} : { y: etat === 'repos' ? 0 : [0, -2, 0] }}
       transition={{ duration: 2.8, repeat: Infinity, ease: 'easeInOut' }}
     >
+      <defs>
+        <clipPath id="plumy-wing">
+          <ellipse cx="32" cy="93" rx="27" ry="19" transform="rotate(-8, 32, 93)" />
+        </clipPath>
+      </defs>
+
       {(etat === 'accueil' || etat === 'retour') && (
-        <ellipse cx="95" cy="130" rx="88" ry="82" fill="#fce7f3" opacity="0.45" />
+        <ellipse cx="62" cy="100" rx="70" ry="60" fill="#fce7f3" opacity="0.45" />
       )}
 
-      <Corps etat={etat} />
-      <CouTete etat={etat} droopHead={droopHead} tucked={tucked} reduceMotion={!!reduceMotion} />
+      <Corps />
+      <CouTete etat={etat} crestFactor={crestFactor} reduceMotion={!!reduceMotion} />
     </motion.svg>
   )
 }
 
-function Corps({ etat }: { etat: PluмyEtat }) {
+function Corps() {
   return (
     <g>
-      {/* Plumes de queue – légèrement tombantes vers l'arrière */}
-      <ellipse cx="52" cy="122" rx="18" ry="9" fill="#475569" opacity={0.7} transform="rotate(18, 52, 122)" />
-      <ellipse cx="49" cy="126" rx="14" ry="7" fill="#64748b" opacity={0.55} transform="rotate(24, 49, 126)" />
-      <ellipse cx="46" cy="130" rx="11" ry="5" fill="#94a3b8" opacity={0.45} transform="rotate(30, 46, 130)" />
+      {/* Queue – quelques rectrices sombres */}
+      <ellipse cx="13" cy="100" rx="13" ry="7" fill="#1e293b" opacity={0.7} transform="rotate(10, 13, 100)" />
+      <ellipse cx="15" cy="107" rx="9"  ry="5" fill="#334155" opacity={0.5} transform="rotate(16, 15, 107)" />
 
-      {/* Corps principal – gris-bleu ardoise */}
-      <ellipse cx="88" cy="122" rx="34" ry="22" fill="#64748b" />
-      {/* Ventre – blanc cassé */}
-      <ellipse cx="94" cy="128" rx="24" ry="15" fill="#f1f5f9" opacity={0.85} />
-      {/* Aile – surface principale gris chaud */}
-      <ellipse cx="82" cy="116" rx="28" ry="16" fill="#78909c" opacity={0.9} transform="rotate(-8, 82, 116)" />
-      {/* Lisière de l'aile – rémiges sombres */}
-      <ellipse cx="68" cy="128" rx="20" ry="6" fill="#334155" opacity={0.75} transform="rotate(-15, 68, 128)" />
-      {/* Reflet dorsal */}
-      <ellipse cx="82" cy="110" rx="16" ry="8" fill="#b0bec5" opacity={0.4} transform="rotate(-8, 82, 110)" />
+      {/* Corps principal – ventre + poitrine cannelle-buff */}
+      <ellipse cx="42" cy="98" rx="30" ry="22" fill="#fb923c" />
+      {/* Poitrine – reflet plus chaud */}
+      <ellipse cx="52" cy="103" rx="18" ry="15" fill="#fdba74" opacity={0.65} />
 
-      {/* Jambe avant */}
-      <line x1="93" y1="142" x2="93" y2="188" stroke="#78716c" strokeWidth="4.5" strokeLinecap="round" />
-      {/* Genou avant (articulation) */}
-      <circle cx="93" cy="165" r="3.5" fill="#a8a29e" />
-      {/* Jambe arrière */}
-      <line x1="78" y1="143" x2="78" y2="187" stroke="#78716c" strokeWidth="4.5" strokeLinecap="round" />
-      <circle cx="78" cy="163" r="3.5" fill="#a8a29e" />
+      {/* Aile – plaque sombre avec barres blanches caractéristiques */}
+      <ellipse cx="32" cy="93" rx="27" ry="19" fill="#1e293b" transform="rotate(-8, 32, 93)" />
+      <g clipPath="url(#plumy-wing)">
+        {[79, 87, 95, 103, 111].map((y, i) => (
+          <rect key={i} x="4" y={y} width="58" height="4.5" fill="#f8fafc" opacity={0.85} />
+        ))}
+      </g>
+      {/* Liseré supérieur de l'aile */}
+      <path d="M 7 78 Q 32 72 57 80" stroke="#475569" strokeWidth="1.5" fill="none" opacity={0.5} />
 
-      {/* Pieds avant – 3 doigts */}
-      <line x1="93" y1="188" x2="80" y2="194" stroke="#78716c" strokeWidth="3" strokeLinecap="round" />
-      <line x1="93" y1="188" x2="93" y2="196" stroke="#78716c" strokeWidth="3" strokeLinecap="round" />
-      <line x1="93" y1="188" x2="105" y2="193" stroke="#78716c" strokeWidth="3" strokeLinecap="round" />
-      {/* Pouce arrière */}
-      <line x1="93" y1="188" x2="100" y2="197" stroke="#78716c" strokeWidth="2.5" strokeLinecap="round" />
-
+      {/* Pattes courtes, gris-brun */}
+      <line x1="50" y1="118" x2="50" y2="148" stroke="#78716c" strokeWidth="4" strokeLinecap="round" />
+      <line x1="38" y1="120" x2="38" y2="148" stroke="#78716c" strokeWidth="4" strokeLinecap="round" />
+      {/* Pieds avant */}
+      <line x1="50" y1="148" x2="39" y2="152" stroke="#78716c" strokeWidth="2.5" strokeLinecap="round" />
+      <line x1="50" y1="148" x2="50" y2="156" stroke="#78716c" strokeWidth="2.5" strokeLinecap="round" />
+      <line x1="50" y1="148" x2="60" y2="152" stroke="#78716c" strokeWidth="2.5" strokeLinecap="round" />
       {/* Pieds arrière */}
-      <line x1="78" y1="187" x2="65" y2="193" stroke="#78716c" strokeWidth="3" strokeLinecap="round" />
-      <line x1="78" y1="187" x2="78" y2="195" stroke="#78716c" strokeWidth="3" strokeLinecap="round" />
-      <line x1="78" y1="187" x2="90" y2="192" stroke="#78716c" strokeWidth="3" strokeLinecap="round" />
-      <line x1="78" y1="187" x2="84" y2="196" stroke="#78716c" strokeWidth="2.5" strokeLinecap="round" />
-
-      {/* Aile levée en réussite */}
-      {etat === 'reussite' && (
-        <motion.ellipse
-          cx="82" cy="100" rx="28" ry="12"
-          fill="#90a4ae" opacity={0.7}
-          transform="rotate(-30, 82, 100)"
-          initial={{ rotate: -8, opacity: 0 }}
-          animate={{ rotate: [-30, -25, -30], opacity: [0.7, 0.9, 0.7] }}
-          transition={{ duration: 1, repeat: Infinity }}
-        />
-      )}
+      <line x1="38" y1="148" x2="27" y2="153" stroke="#78716c" strokeWidth="2.5" strokeLinecap="round" />
+      <line x1="38" y1="148" x2="38" y2="157" stroke="#78716c" strokeWidth="2.5" strokeLinecap="round" />
+      <line x1="38" y1="148" x2="48" y2="153" stroke="#78716c" strokeWidth="2.5" strokeLinecap="round" />
     </g>
   )
 }
 
 function CouTete({
   etat,
-  droopHead,
-  tucked,
+  crestFactor,
   reduceMotion,
 }: {
   etat: PluмyEtat
-  droopHead: boolean
-  tucked: boolean
+  crestFactor: number
   reduceMotion: boolean
 }) {
   const clignement = etat === 'accueil' || etat === 'retour'
 
   return (
     <motion.g
-      animate={reduceMotion ? {} : { rotate: droopHead ? 18 : tucked ? -8 : 0 }}
-      style={{ transformOrigin: '108px 105px' }}
+      animate={reduceMotion ? {} : { rotate: etat === 'echec' ? 14 : 0 }}
+      style={{ transformOrigin: '56px 78px' }}
       transition={{ type: 'spring', stiffness: 100, damping: 14 }}
     >
-      {/* Cou – silhouette blanche, fine et longue */}
-      <path
-        d="M 108 108 Q 112 90 116 72 Q 119 58 122 50"
-        stroke="#e2e8f0"
-        strokeWidth="13"
-        strokeLinecap="round"
-        fill="none"
-      />
-      {/* Cou – reflet central blanc pur */}
-      <path
-        d="M 108 108 Q 112 90 116 72 Q 119 58 122 50"
-        stroke="white"
-        strokeWidth="5"
-        strokeLinecap="round"
-        fill="none"
-        opacity={0.55}
-      />
-
-      {/* Tête – cercle bleu ardoise */}
-      <circle cx="122" cy="45" r="16" fill="#546e7a" />
-
-      {/* Tache rouge caractéristique (grue couronnée) */}
-      <ellipse cx="115" cy="40" rx="10" ry="8" fill="#ef4444" opacity={0.88} />
-
-      {/* Joue blanche */}
-      <ellipse cx="126" cy="50" rx="9" ry="8" fill="#f1f5f9" opacity={0.92} />
-
-      {/* Masque facial sombre */}
-      <ellipse cx="134" cy="44" rx="10" ry="9" fill="#1e293b" />
-
-      {/* Œil – sclère blanc */}
-      <circle cx="136" cy="41" r="5" fill="white" />
+      {/* Crête – éventail de plumes à pointes noires */}
       <motion.g
-        animate={clignement && !reduceMotion ? { scaleY: [1, 0.08, 1] } : {}}
-        transition={{ duration: 0.16, repeat: Infinity, repeatDelay: 4, ease: 'easeInOut' }}
-        style={{ originX: '136px', originY: '41px' }}
+        animate={etat === 'reussite' && !reduceMotion ? { rotate: [-6, 6, -6] } : {}}
+        transition={{ duration: 0.6, repeat: Infinity }}
+        style={{ transformOrigin: `${CPX}px ${CPY}px` }}
       >
-        <circle cx="136" cy="41" r="3.2" fill="#1a1a3e" />
-        <circle cx="137.2" cy="39.8" r="1.1" fill="white" />
-      </motion.g>
+        {CREST_OPEN.map((openAngle, i) => {
+          const angle = CREST_CLOSE + crestFactor * (openAngle - CREST_CLOSE)
+          const rad   = (angle * Math.PI) / 180
+          const len   = CREST_LEN[i]
+          const tx    = CPX + len * Math.cos(rad)
+          const ty    = CPY - len * Math.sin(rad)
+          // bande blanche sub-terminale
+          const wx    = CPX + (len - 5) * Math.cos(rad)
+          const wy    = CPY - (len - 5) * Math.sin(rad)
 
-      {/* Bec – gris foncé pointu */}
-      <path d="M 143 43 L 168 41 L 143 48 Z" fill="#475569" />
-      <line x1="143" y1="45" x2="167" y2="42" stroke="#334155" strokeWidth="0.8" opacity={0.5} />
-
-      {/* Couronne de plumes dorées */}
-      <motion.g
-        animate={etat === 'reussite' && !reduceMotion ? { rotate: [-8, 8, -8] } : {}}
-        transition={{ duration: 0.55, repeat: Infinity }}
-        style={{ originX: `${CPX}px`, originY: `${CPY}px` }}
-      >
-        {COURONNE.map(({ a, len }, i) => {
-          const rad = (a * Math.PI) / 180
-          const tx = CPX + len * Math.cos(rad)
-          const ty = CPY - len * Math.sin(rad)
           return (
             <g key={i}>
+              {/* Tige cannelle-orange */}
               <line
-                x1={CPX} y1={CPY}
-                x2={tx} y2={ty}
-                stroke="#fbbf24"
-                strokeWidth="1.8"
-                strokeLinecap="round"
+                x1={CPX} y1={CPY} x2={tx} y2={ty}
+                stroke="#f97316" strokeWidth="2.2" strokeLinecap="round"
               />
-              {/* Pompon doré au bout */}
-              <circle cx={tx} cy={ty} r={3} fill="#fbbf24" />
-              {/* Cœur du pompon – couleur candy alternée */}
-              <circle
-                cx={tx} cy={ty} r={1.6}
-                fill={['#f472b6', '#a78bfa', '#34d399', '#fbbf24', '#f472b6', '#a78bfa', '#34d399'][i % 7]}
-              />
+              {/* Bande blanche sub-terminale */}
+              <circle cx={wx} cy={wy} r={2} fill="white" opacity={0.88} />
+              {/* Pointe noire distinctive */}
+              <circle cx={tx} cy={ty} r={2.5} fill="#1e293b" />
             </g>
           )
         })}
+      </motion.g>
+
+      {/* Tête – orange-cannelle chaud */}
+      <circle cx="70" cy="58" r="17" fill="#fb923c" />
+      <circle cx="65" cy="53" r="10" fill="#fdba74" opacity={0.4} />
+
+      {/* Bec – long, fin, légèrement courbé vers le bas */}
+      <path
+        d="M 86 60 Q 106 65 126 73"
+        stroke="#334155" strokeWidth="3.5" strokeLinecap="round" fill="none"
+      />
+      <path
+        d="M 86 63 Q 106 68 126 75"
+        stroke="#475569" strokeWidth="2" strokeLinecap="round" fill="none" opacity={0.45}
+      />
+
+      {/* Anneau oculaire clair */}
+      <circle cx="81" cy="53" r="6.5" fill="none" stroke="#fed7aa" strokeWidth="1" opacity={0.6} />
+      {/* Œil */}
+      <circle cx="81" cy="53" r="5" fill="#1a1a3e" />
+      <motion.g
+        animate={clignement && !reduceMotion ? { scaleY: [1, 0.08, 1] } : {}}
+        transition={{ duration: 0.18, repeat: Infinity, repeatDelay: 4.5, ease: 'easeInOut' }}
+        style={{ originX: '81px', originY: '53px' }}
+      >
+        <circle cx="81" cy="53" r="3.2" fill="#1a1a3e" />
+        <circle cx="82.2" cy="51.8" r="1.1" fill="white" />
       </motion.g>
     </motion.g>
   )
