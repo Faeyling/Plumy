@@ -4,7 +4,7 @@ export const coursUnite11: Cours[] = [
   {
     id: 'improvisation',
     titre: "L'improvisation en danse — art, méthode et pratique",
-    resume: "L'improvisation n'est pas l'absence de préparation — c'est une compétence qui s'entraîne. Comprendre l'état de disponibilité, les scores et contraintes, l'écoute du partenaire, et comment l'improvisation alimente la composition. C'est un des chapitres de mes carnets que je relis le plus souvent.",
+    resume: "L'improvisation n'est pas l'absence de préparation — c'est une compétence qui s'entraîne. C'est un des chapitres de mes carnets que je relis le plus souvent, parce que chaque fois j'y découvre quelque chose que j'avais oublié. Comprendre l'état de disponibilité, les scores et contraintes, l'écoute du partenaire, et comment l'improvisation alimente la composition — je t'emmène dans tout ça.",
     disciplines: ['contemporain', 'moderne', 'jazz', 'classique', 'burlesque', 'pole-dance'],
     termesAbordes: [
       'improvisation-structuree', 'contrainte-creative', 'donnee-de-depart',
@@ -13,7 +13,7 @@ export const coursUnite11: Cours[] = [
     sections: [
       {
         titre: "Qu'est-ce que l'improvisation en danse ?",
-        contenuMarkdown: `L'improvisation en danse est souvent mal comprise — ni libertinage total, ni performance sans préparation. C'est une discipline à part entière, et j'ai envie de réhabiliter ce mot : discipline. L'improvisation, ça s'apprend.
+        contenuMarkdown: `L'improvisation en danse est souvent mal comprise — ni libertinage total, ni performance sans préparation. C'est une discipline à part entière, et j'ai envie de réhabiliter ce mot : discipline. L'improvisation, ça s'apprend. Je l'ai appris à mes dépens, et j'aurais aimé qu'on me le dise plus tôt.
 
 **Définition :**
 L'improvisation est l'art de composer du mouvement en temps réel, en réponse à une situation donnée — espace, musique, partenaire, contrainte, état intérieur.
@@ -42,7 +42,7 @@ Le jazz musical est fondamentalement improvisé — la danse jazz hérite de cet
       },
       {
         titre: "L'état de disponibilité — se préparer à l'imprévisible",
-        contenuMarkdown: `Avant d'improviser, il faut un état. Pas n'importe quel état — un état de disponibilité totale. Et ça, c'est quelque chose qu'on ne t'explique presque jamais clairement.
+        contenuMarkdown: `Avant d'improviser, il faut un état. Pas n'importe quel état — un état de disponibilité totale. Et ça, c'est quelque chose qu'on ne t'explique presque jamais clairement. Dans mes carnets, j'ai une double page là-dessus avec des dessins et tout.
 
 **Qu'est-ce que l'état de disponibilité ?**
 
@@ -78,7 +78,7 @@ Fixe un point au centre du champ visuel tout en élargissant la conscience au ma
       },
       {
         titre: "Scores, contraintes et tâches — les outils de l'improvisation",
-        contenuMarkdown: `L'improvisation sans structure est souvent moins intéressante que l'improvisation avec une bonne contrainte. Le paradoxe créatif : la limite libère. Je l'ai vécu des dizaines de fois dans mes carnets.
+        contenuMarkdown: `L'improvisation sans structure est souvent moins intéressante que l'improvisation avec une bonne contrainte. Le paradoxe créatif : la limite libère. Je l'ai vécu des dizaines de fois — et ça ne cesse pas de me surprendre.
 
 ---
 
@@ -113,7 +113,7 @@ Une tâche est une consigne précise qui génère du mouvement. Différente du s
 
 ## Les contraintes créatives
 
-La contrainte la plus productive est celle qui empêche le confort habituel. Et c'est souvent inconfortable — c'est exprès.
+La contrainte la plus productive est celle qui empêche le confort habituel. Et c'est souvent inconfortable — c'est exprès. Tu vas voir, ça décoince des choses qu'on ne soupçonnait pas.
 
 **Contraintes puissantes :**
 - Travailler sans musique (le silence révèle le rythme interne)
@@ -127,7 +127,7 @@ Commence par une impro libre (5 minutes). Puis ajoute une contrainte. Puis une d
       },
       {
         titre: "L'écoute du partenaire — improviser à plusieurs",
-        contenuMarkdown: `Improviser seul est une chose. Improviser avec un ou plusieurs partenaires en est une autre — plus complexe, plus riche, plus vivante. Et c'est là que ça devient vraiment fascinant.
+        contenuMarkdown: `Improviser seul est une chose. Improviser avec un ou plusieurs partenaires en est une autre — plus complexe, plus riche, plus vivante. Et c'est là que ça devient vraiment fascinant, honnêtement.
 
 **Le principe fondamental :**
 L'improvisation collective n'est pas des solos simultanés. C'est une conversation — où chacun parle, chacun écoute, et quelque chose naît de l'entre-deux.
@@ -160,7 +160,7 @@ Anticiper la réponse avant d'avoir vraiment reçu la proposition. Préparer sa 
       },
       {
         titre: "De l'improvisation à la composition — le passage",
-        contenuMarkdown: `L'improvisation et la composition ne sont pas opposées. La composition est souvent de l'improvisation sédimentée — du mouvement trouvé, sélectionné, fixé. C'est une phrase qui m'a ouvert des portes.
+        contenuMarkdown: `L'improvisation et la composition ne sont pas opposées. La composition est souvent de l'improvisation sédimentée — du mouvement trouvé, sélectionné, fixé. C'est une phrase qui m'a ouvert des portes quand je l'ai rencontrée pour la première fois.
 
 **Le processus typique :**
 
@@ -193,7 +193,7 @@ Le corps se souvient de ce qu'il a fait. Revenir à une impro le lendemain — c
   {
     id: 'composition',
     titre: 'Composition chorégraphique — construire une pièce',
-    resume: "De la première idée à la pièce terminée : motif, phrase, procédés de composition, structure globale, intention artistique et regard extérieur. Un guide pratique pour construire une œuvre chorégraphique — et quelque chose que j'aurais voulu avoir quand j'ai commencé à créer.",
+    resume: "De la première idée à la pièce terminée : motif, phrase, procédés de composition, structure globale, intention artistique et regard extérieur. J'aurais tellement voulu avoir ce guide quand j'ai commencé à créer — alors je l'ai écrit pour toi. C'est un des carnets dont je suis le plus fier.",
     disciplines: ['contemporain', 'moderne', 'jazz', 'classique', 'burlesque', 'cabaret'],
     termesAbordes: [
       'motif-choregraphique', 'phrase-choregraphique', 'procedes-composition',
@@ -202,7 +202,7 @@ Le corps se souvient de ce qu'il a fait. Revenir à une impro le lendemain — c
     sections: [
       {
         titre: "Le point de départ — trouver sa matière",
-        contenuMarkdown: `Toute pièce commence par quelque chose — une image, une question, une sensation, un problème formel. Le point de départ n'est pas le sujet de la pièce — c'est ce qui la met en mouvement. Et c'est souvent la partie la plus difficile.
+        contenuMarkdown: `Toute pièce commence par quelque chose — une image, une question, une sensation, un problème formel. Le point de départ n'est pas le sujet de la pièce — c'est ce qui la met en mouvement. Et c'est souvent la partie la plus difficile. Je te dis ça parce que j'ai longtemps cru que ça devrait être facile — ça ne l'est pas, et c'est normal.
 
 **Types de points de départ — j'en ai listé huit dans mes carnets :**
 
@@ -236,7 +236,7 @@ Tiens un journal du processus — croquis, mots, questions, impasses. La créati
       },
       {
         titre: "Motif, phrase et développement",
-        contenuMarkdown: `La composition chorégraphique commence par le plus petit — le motif — et construit vers le plus grand — la structure de la pièce entière. Ce chemin du grain de sable à la cathédrale, c'est ce qui me fascine dans la composition.
+        contenuMarkdown: `La composition chorégraphique commence par le plus petit — le motif — et construit vers le plus grand — la structure de la pièce entière. Ce chemin du grain de sable à la cathédrale, c'est ce qui me fascine dans la composition. Et je crois que ça va te fasciner aussi.
 
 ---
 
@@ -292,7 +292,7 @@ Une fois le motif et la phrase établis, les procédés de composition permetten
       },
       {
         titre: "La structure — architecturer la pièce",
-        contenuMarkdown: `La structure est l'architecture globale de la pièce — comment les sections s'articulent, où est le climax, comment ça commence et comment ça finit. C'est ce qui fait qu'une pièce tient debout.
+        contenuMarkdown: `La structure est l'architecture globale de la pièce — comment les sections s'articulent, où est le climax, comment ça commence et comment ça finit. C'est ce qui fait qu'une pièce tient debout. Et les questions que je te pose ci-dessous, je me les pose moi-même à chaque fois que je crée.
 
 **Les formes structurelles principales :**
 
@@ -328,7 +328,7 @@ Même sans récit, toute pièce a une courbe d'intensité — elle monte, attein
       },
       {
         titre: "L'espace, le temps et la dynamique",
-        contenuMarkdown: `Les trois paramètres fondamentaux de la composition chorégraphique — au-delà des pas eux-mêmes. Ce sont les outils que tu peux moduler infiniment.
+        contenuMarkdown: `Les trois paramètres fondamentaux de la composition chorégraphique — au-delà des pas eux-mêmes. Ce sont les outils que tu peux moduler infiniment. Et ce que j'aime, c'est qu'on ne les épuise jamais.
 
 ---
 
@@ -387,7 +387,7 @@ Une pièce sans contrastes dynamiques est plate. La composition vivante alterne 
       },
       {
         titre: "Le regard extérieur et le processus créatif",
-        contenuMarkdown: `Créer seul a ses limites — on ne peut pas se voir danser. Le regard extérieur est un outil, pas un oracle. Et savoir faire la différence, c'est capital.
+        contenuMarkdown: `Créer seul a ses limites — on ne peut pas se voir danser. Le regard extérieur est un outil, pas un oracle. Et savoir faire la différence, c'est capital. Je me suis longtemps débattu avec ça.
 
 **Le regard dramaturgique :**
 Un dramaturge (ou tout observateur de confiance) accompagne le processus créatif sans danser. Son rôle : poser des questions, pas donner des réponses.
@@ -428,7 +428,7 @@ La première version est toujours imparfaite — et c'est normal. Son rôle est 
   {
     id: 'notation-danse',
     titre: 'Systèmes de notation de la danse — une fiche culturelle',
-    resume: "La danse a longtemps été un art de transmission orale. Comment les différents systèmes de notation — Labanotation, Benesh, vidéo — tentent de résoudre l'impossibilité de 'fixer' le mouvement sur papier. Une question philosophique autant que technique, et une de mes curiosités préférées.",
+    resume: "La danse a longtemps été un art de transmission orale — et la question de savoir comment \"écrire\" le mouvement est une de mes curiosités préférées. Comment les différents systèmes de notation (Labanotation, Benesh, vidéo) tentent de résoudre l'impossibilité de fixer le mouvement sur papier : une question philosophique autant que technique, et quelque chose que j'ai glissé dans mes carnets parce que je ne pouvais pas m'en empêcher.",
     disciplines: ['classique', 'contemporain', 'moderne', 'jazz'],
     termesAbordes: [
       'notation-mouvement', 'labanotation', 'benesh-notation', 'video-comme-notation',
@@ -436,7 +436,7 @@ La première version est toujours imparfaite — et c'est normal. Son rôle est 
     sections: [
       {
         titre: "Le problème de la notation — comment écrire le mouvement ?",
-        contenuMarkdown: `La musique a la partition. La littérature a l'écriture. Le théâtre a le texte. La danse a... longtemps eu uniquement la transmission orale et corporelle. C'est un des paradoxes qui m'ont le plus intrigué.
+        contenuMarkdown: `La musique a la partition. La littérature a l'écriture. Le théâtre a le texte. La danse a... longtemps eu uniquement la transmission orale et corporelle. C'est un des paradoxes qui m'ont le plus intrigué — et que je n'arrive toujours pas à trouver ennuyeux.
 
 **Le paradoxe de la danse :**
 La danse existe dans le temps — elle naît et disparaît à chaque performance. Comment la préserver ? Comment la transmettre à ceux qui n'ont pas vu la version originale ? Comment la recréer après la mort du chorégraphe ?
@@ -464,7 +464,7 @@ Aucun système de notation n'a résolu tous ces problèmes. Chaque système fait
       },
       {
         titre: "Les principaux systèmes de notation",
-        contenuMarkdown: `Plusieurs systèmes ont été développés depuis le XIXe siècle. Les deux dominants aujourd'hui sont la Labanotation et la Notation Benesh — et j'ai une tendresse particulière pour la Labanotation, parce que son créateur est aussi l'homme derrière la théorie des efforts que j'ai présentée en Unité 0.
+        contenuMarkdown: `Plusieurs systèmes ont été développés depuis le XIXe siècle. Les deux dominants aujourd'hui sont la Labanotation et la Notation Benesh — et j'ai une tendresse particulière pour la Labanotation, parce que son créateur est aussi l'homme derrière la théorie des efforts que j'ai présentée en Unité 0. Tout se tient.
 
 ---
 
@@ -513,7 +513,7 @@ Mocap (motion capture), Laban/Kinetography Laban informatisée — des tentative
       },
       {
         titre: "La vidéo — une notation imparfaite mais universelle",
-        contenuMarkdown: `La démocratisation de la vidéo depuis les années 1980 a transformé la pratique de l'archivage chorégraphique. La vidéo ne remplace pas la notation formelle — elle la complète. Et aujourd'hui, c'est l'outil que tout le monde utilise.
+        contenuMarkdown: `La démocratisation de la vidéo depuis les années 1980 a transformé la pratique de l'archivage chorégraphique. La vidéo ne remplace pas la notation formelle — elle la complète. Et aujourd'hui, c'est l'outil que tout le monde utilise, moi y compris.
 
 **Pourquoi la vidéo a pris le dessus :**
 - Accessible à tous (tout le monde peut filmer)
@@ -546,7 +546,7 @@ Même une vidéo parfaite ne suffit pas pour recréer une pièce. Il faut toujou
       },
       {
         titre: "La transmission — entre fidélité et trahison",
-        contenuMarkdown: `Recréer une pièce chorégraphique pose des questions philosophiques profondes — qui n'ont pas de réponse univoque. Et je trouve ces questions magnifiques, parce qu'elles disent quelque chose d'essentiel sur la danse.
+        contenuMarkdown: `Recréer une pièce chorégraphique pose des questions philosophiques profondes — qui n'ont pas de réponse univoque. Et je trouve ces questions magnifiques, parce qu'elles disent quelque chose d'essentiel sur la nature de la danse. J'aime les poser plus que les résoudre.
 
 **La question de l'authenticité :**
 Qu'est-ce que la "vraie" version d'une pièce ? La première représentation ? La version filmée ? La version transmise par le chorégraphe à ses assistants ? La version adaptée à des interprètes différents ?
