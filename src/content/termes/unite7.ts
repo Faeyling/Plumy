@@ -215,4 +215,83 @@ export const termesUnite7: Terme[] = [
     difficulteInterne: 3,
     termesLies: ['presentation-scenique', 'tease', 'sass'],
   },
+
+  // ─── Termes supplémentaires cabaret ──────────────────────────────────────
+
+  {
+    id: 'grand-ecart-cancan',
+    nom: 'Grand écart',
+    alias: ['split', 'grand split cancan', 'split final', 'écart au sol'],
+    disciplines: ['cabaret'],
+    categories: ['pas', 'equilibres'],
+    definition: "Position au sol où les deux jambes sont étendues en ligne droite à 180°, atteinte au terme d'une descente contrôlée — signature dramatique du cancan et de la revue, utilisée comme finale spectaculaire.",
+    description: "Le grand écart est la signature finale du cancan — et c'est aussi l'une des choses les plus mal comprises. Ce n'est pas une chute. C'est un choix.\n\n**Le grand écart dans le cancan :**\nIl ne s'agit pas de 'tomber' dans un split — c'est une *descente contrôlée*, chorégraphiée, souvent placée sur un accent musical final. La descente elle-même fait partie du spectacle.\n\n**Exécution :**\n1. Position debout ou en saut de split (grand écart sauté)\n2. Descente progressive vers le sol, jambes qui s'ouvrent simultanément\n3. Arrêt au sol en ouverture maximale\n4. Maintien de la position pour l'effet dramatique\n5. L'expression reste présente — le grand écart ne doit jamais *sembler* douloureux\n\n**Grand écart sauté (niveau avancé) :**\nDans les revues professionnelles, le grand écart peut être précédé d'un saut — la danseuse quitte le sol et atterrit directement en split. Ça nécessite des années de préparation.\n\n**Ce qui fait un bon grand écart en cabaret :**\n- Descente contrôlée et chorégraphiée\n- Position finale tenue avec soin\n- Expression préservée — sourire, regard actif\n- Timing sur un accent musical fort\n\n**Entretien :**\nLe grand écart nécessite une souplesse maintenue au quotidien — ischio-jambiers et fléchisseurs de hanche. Sans entretien régulier, il disparaît vite.",
+    erreursCourantes: [
+      "Descente non contrôlée — le grand écart se chorégraphie, il ne se 'laisse pas tomber'.",
+      "Expression perdue pendant la descente — le visage doit rester présent jusqu'à la position finale.",
+      "Forcer l'ouverture sans souplesse préalable — risque de déchirure musculaire.",
+    ],
+    securite: {
+      risques: ["Déchirure des ischio-jambiers ou des adducteurs si forcé", "Blessure en grand écart sauté par atterrissage non contrôlé"],
+      precautions: ["Souplesse à entretenir quotidiennement", "Jamais à froid", "Progressivité sur plusieurs mois avant de viser 180°"],
+    },
+    conseils: [
+      "Travaille ton grand écart chaque jour, même 5 minutes. La souplesse se perd vite et se regagne lentement. Si tu ne pratiques que le jour du spectacle, tu vas souffrir — et ça se verra.",
+    ],
+    etymologie: "Du français 'grand' et 'écart' (distance entre deux éléments). Le grand écart désigne l'ouverture maximale des deux jambes — une image parlante, même hors de la danse.",
+    difficulteInterne: 4,
+    termesLies: ['french-cancan', 'high-kick', 'chorus-line'],
+  },
+
+  {
+    id: 'accroche-pied',
+    nom: 'Accroche-pied',
+    alias: ['saut accroche', 'saut jambe accrochée', 'pas accroche cancan'],
+    disciplines: ['cabaret'],
+    categories: ['pas', 'sauts'],
+    definition: "Saut sur une jambe d'appui où la jambe libre est accrochée en flexion — genou pointé vers le bas, talon ramené vers la fesse — figure rythmique légère caractéristique du french cancan.",
+    description: "L'accroche-pied est un des 'petits pas' du cancan — moins spectaculaire que le high kick ou le grand écart, mais essentiel pour la respiration rythmique du numéro. Je l'adore parce qu'il prouve que le cancan ne se résume pas à la jambe qui monte.\n\n**Exécution :**\n1. Position debout, poids sur les deux pieds\n2. Petit saut sur la jambe d'appui\n3. La jambe libre se fléchit, genou pointé vers le bas, talon ramené vers la fesse\n4. Le mouvement est rapide et rebondi — une légèreté vive\n5. La jambe libre 'accroche' derrière\n\n**Usage dans le cancan :**\nL'accroche-pied intervient généralement entre les grands battements — c'est un temps de 'respiration rythmique' qui permet de reprendre l'élan avant le kick suivant.\n\n**La sensation :**\nCelui d'un petit rebond spontané — presque un skip, mais avec la jambe qui s'accroche derrière plutôt que de monter.\n\n**En ligne chorus :**\nEn synchronisation, l'accroche-pied doit être fait à la même hauteur et avec la même énergie par toutes — sinon la ligne devient 'bruyante' visuellement.",
+    erreursCourantes: [
+      "Genou qui monte vers l'avant — il doit pointer vers le bas, pas vers le haut.",
+      "Accroche-pied trop lent — c'est un pas vif, avec rebond spontané, pas une pose.",
+    ],
+    conseils: [
+      "Entraîne-toi d'abord sans saut : reste sur une jambe, fléchis l'autre derrière toi. Quand la position est claire, ajoute le petit saut. La forme avant le dynamisme.",
+    ],
+    difficulteInterne: 2,
+    termesLies: ['french-cancan', 'high-kick', 'chorus-line'],
+  },
+
+  {
+    id: 'revue',
+    nom: 'Revue de music-hall',
+    alias: ['revue', 'music-hall', 'spectacle de revue', 'grand spectacle'],
+    disciplines: ['cabaret'],
+    categories: ['culture-histoire', 'concepts'],
+    definition: "Forme de spectacle de variétés composée de tableaux successifs mêlant danse, chant, sketches et effets scéniques — genre emblématique du cabaret parisien et du music-hall international, né à la fin du XIXe siècle.",
+    description: "La revue est le format autour duquel s'est construit tout le cabaret occidental. Si je devais résumer : c'est un album de moments — pas un film avec un fil narratif.\n\n**Structure d'une revue :**\nUne revue est une succession de **tableaux** — chacun est un mini-spectacle autonome avec son thème, son costume, sa musique. La revue n'a pas de narration unique : c'est la variété et le contraste qui font le rythme.\n\n**Les ingrédients de base :**\n- **Tableaux** : scènes chorégraphiées thématiques enchaînées\n- **Chorus line** : danseuses synchronisées en ligne\n- **Meneuse** : la soliste qui anime et relie\n- **Costumes extravagants** : plumes, paillettes, coiffes hautes\n- **Décors et machinerie** : escaliers monumentaux, effets de lumière\n- **Artistes invités** : musiciens, comédiens, acrobates\n\n**Les grandes maisons :**\n- **Moulin Rouge** (Paris, 1889) : Doris Girls, cancan, dîner-spectacle\n- **Lido** (Paris, 1946) : Bluebell Girls, décors géants\n- **Folies Bergère** (Paris, 1869) : Joséphine Baker, revues legendaires\n- **Ziegfeld Follies** (New York, 1907–1931) : la revue américaine\n\n**La revue contemporaine :**\nLes grandes maisons continuent. Et le 'néo-cabaret' propose une version plus intime — moins de plumes, plus de sens, plus de diversité.",
+    erreursCourantes: [],
+    conseils: [
+      "Si tu n'as jamais vu une revue en vrai, note le 'parcours émotionnel' des tableaux quand tu en verras une. Comment chaque tableau prépare-t-il le suivant ? C'est l'art du programmateur de revue — et ça s'apprend juste en regardant.",
+    ],
+    etymologie: "Du latin 'revidere' (revoir) → français 'revue'. Au XIXe siècle, la revue est un spectacle de variétés qui 'passe en revue' l'actualité ou les modes — d'abord satirique, puis purement spectaculaire.",
+    difficulteInterne: 1,
+    termesLies: ['tableau-revue', 'chorus-line', 'meneuse-revue', 'french-cancan'],
+  },
+
+  {
+    id: 'tableau-revue',
+    nom: 'Tableau',
+    alias: ['tableau de revue', 'tableau chorégraphique', 'numéro de revue', 'scène de revue'],
+    disciplines: ['cabaret'],
+    categories: ['concepts', 'culture-histoire'],
+    definition: "Unité autonome d'une revue de music-hall — séquence chorégraphique et scénique avec son propre thème, costume, musique et atmosphère, qui s'enchaîne à d'autres tableaux pour former le spectacle complet.",
+    description: "Le tableau est la brique de base de la revue. Comprendre le tableau, c'est comprendre comment fonctionne le cabaret.\n\n**Structure d'un tableau :**\n- Un **thème** unificateur (une époque, un pays, une saison, un état d'esprit)\n- Un **costume** cohérent avec le thème\n- Une **musique** originale ou arrangée\n- Une **chorégraphie** construite autour du thème\n- Un **début et une fin** nets — le tableau a une forme complète\n\n**Exemples de thèmes :**\n- 'Le Brésil' — samba, costumes tropicaux, percussions\n- 'L'Égypte' — lignes géométriques, coiffes de pharaon\n- 'La Belle Époque' — corsets, jupons, valse\n- 'L'Espace' — costumes futuristes, lumières stroboscopiques\n\n**Le rôle du tableau dans la revue :**\nLa succession des tableaux crée le rythme de la soirée. Un tableau lent, un tableau vif, un solo, un grand ensemble — le programme d'une revue est une orchestration de contrastes.\n\n**Durée :**\nUn tableau dure généralement de 3 à 10 minutes. La revue complète peut durer de 90 minutes à 2h30.",
+    erreursCourantes: [],
+    conseils: [
+      "Quand tu regardes une revue, observe les *transitions* entre tableaux. Comment une ambiance glisse vers une autre ? C'est là que se révèle le soin de la mise en scène — dans les coutures invisibles.",
+    ],
+    difficulteInterne: 1,
+    termesLies: ['revue', 'chorus-line', 'meneuse-revue'],
+  },
 ]

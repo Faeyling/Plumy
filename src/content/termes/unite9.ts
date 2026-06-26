@@ -136,4 +136,117 @@ export const termesUnite9: Terme[] = [
     termesLies: ['tease', 'rapport-public', 'effeuillage'],
   },
 
+  // ─── Termes supplémentaires burlesque ────────────────────────────────────
+
+  {
+    id: 'neo-burlesque',
+    nom: 'Néo-burlesque',
+    alias: ['new burlesque', 'burlesque contemporain', 'burlesque revival'],
+    disciplines: ['burlesque'],
+    categories: ['culture-histoire', 'concepts'],
+    definition: "Mouvement artistique né dans les années 1990 à New York et San Francisco qui réinvente le burlesque classique avec des valeurs féministes, une inclusion radicale des corps et des genres, et une liberté esthétique totale — en rupture avec les standards de la revue traditionnelle.",
+    description: "Le néo-burlesque est pour moi l'une des formes artistiques les plus politiquement intéressantes du XXe siècle finissant. C'est une renaissance — mais pas une nostalgie.\n\n**Comment est né le néo-burlesque :**\nÀ la fin des années 1980 et au début des années 1990, des artistes à New York et San Francisco redécouvrent le burlesque classique — et décident de le réinventer radicalement. L'idée n'est pas de reproduire l'âge d'or, mais d'en prendre l'esprit et d'y injecter une conscience politique contemporaine.\n\n**Ce qui distingue le néo-burlesque :**\n\n**Inclusion radicale :**\nLe burlesque classique avait ses standards de corps (la chorus girl). Le néo-burlesque célèbre *activement* tous les corps — toutes les tailles, tous les genres, toutes les couleurs. Ce n'est pas de la tolérance — c'est de la célébration.\n\n**Pluralité esthétique :**\nHorror burlesque, steampunk burlesque, queer burlesque, comedy burlesque, political burlesque — il n'y a pas de 'bon style'. Chaque artiste invente le sien.\n\n**Souveraineté corporelle :**\n'Mon corps, mes règles.' Le néo-burlesque revendique le droit de chaque artiste à définir ses propres termes de représentation.\n\n**Artistes fondateurs et figures majeures :**\n- **Dita Von Teese** : a popularisé le néo-burlesque au grand public dans les années 2000 — glamour, référence au burlesque classique\n- **Dirty Martini** : artiste plus size, activiste corporelle\n- **Jo Boobs** : organisatrice communautaire, New York Burlesque Festival\n- **Harvest Moon** : style queerpunk, dark et politique\n\n**Le néo-burlesque et le féminisme :**\nLe débat existe et il est sain. Ce qui est sûr : le néo-burlesque *peut* être une pratique féministe quand il est exercé avec conscience, intention et consentement — quand l'artiste est sujet, pas objet.",
+    erreursCourantes: [],
+    conseils: [
+      "Pour comprendre le néo-burlesque, cherche des artistes qui *ne* ressemblent *pas* à Dita Von Teese. La force du mouvement est dans sa diversité — pas dans ses têtes d'affiche les plus médiatisées.",
+    ],
+    etymologie: "Du grec 'néo' (nouveau) + burlesque. Le terme émerge dans les années 1990–2000 pour distinguer le mouvement de revival du burlesque classique des années 1940.",
+    difficulteInterne: 1,
+    termesLies: ['effeuillage', 'character-burlesque', 'tease'],
+  },
+
+  {
+    id: 'fan-dance',
+    nom: 'Fan dance',
+    alias: ['danse aux éventails', 'danse des éventails', 'Sally Rand dance'],
+    disciplines: ['burlesque'],
+    categories: ['pas', 'accessoires', 'jeu-de-scene'],
+    definition: "Danse de voilage utilisant un ou deux grands éventails de plumes pour révéler et dissimuler le corps en mouvement — popularisée par Sally Rand à l'Exposition Universelle de Chicago en 1933, devenue l'une des images emblématiques du burlesque classique.",
+    description: "La fan dance est l'une des formes de burlesque les plus poétiques — et les plus techniques. Je l'aime particulièrement parce qu'elle est un art du non-voir.\n\n**Sally Rand et l'Exposition de Chicago (1933) :**\nSally Rand (1904–1979) crée sa fan dance en 1932 et la présente à l'Exposition Universelle de Chicago en 1933. Elle danse pratiquement nue derrière deux grands éventails de plumes d'autruche blancs — avec une telle maîtrise qu'elle ne révèle presque rien, mais promet tout. C'est un scandale et un triomphe simultanément. Sally Rand devient célèbre du jour au lendemain.\n\n**La technique de la fan dance :**\n\n**Les éventails géants :**\nLes éventails de fan dance sont souvent plus grands que le danseur — ils sont faits de plumes d'autruche ou de plumes synthétiques montées sur un bâton articulé.\n\n**Les principes de base :**\n- **Ouverture/fermeture** : l'éventail s'ouvre et se ferme en arc\n- **Voilage** : l'éventail couvre une partie du corps\n- **Révélation** : l'éventail s'écarte pour révéler\n- **Valse des deux éventails** : l'un se ferme quand l'autre s'ouvre — dialogue entre les deux\n\n**Le paradoxe de la fan dance :**\nC'est une conversation permanente entre révélation et mystère. Le public voit et ne voit pas — et c'est là que réside toute la magie.\n\n**L'éventail comme extension du corps :**\nL'éventail doit sembler être une prolongation naturelle des bras. Si tu penses encore à comment le tenir, tu n'y es pas encore.",
+    erreursCourantes: [
+      "Éventails qui 'claquent' — les gestes doivent être fluides, pas brusques.",
+      "Corps figé derrière l'éventail — le corps bouge, les éventails suivent et précèdent.",
+    ],
+    conseils: [
+      "Avant de chorégraphier, passe 15 minutes à explorer l'éventail sans musique. Ce délai entre ton geste et la réponse de l'éventail — apprends à le sentir. C'est de là que vient la grâce.",
+    ],
+    etymologie: "De l'anglais 'fan' (éventail) et 'dance' (danse). Désigne spécifiquement la danse aux grands éventails de plumes popularisée par Sally Rand en 1933.",
+    difficulteInterne: 3,
+    termesLies: ['boa-eventail', 'prop-burlesque', 'tease', 'effeuillage'],
+  },
+
+  {
+    id: 'strut-burlesque',
+    nom: 'Strut',
+    alias: ['strut burlesque', 'marche burlesque', 'démarche de scène', 'walk burlesque'],
+    disciplines: ['burlesque'],
+    categories: ['deplacements', 'jeu-de-scene'],
+    definition: "Démarche de scène caractéristique du burlesque — marche intentionnelle, portée, avec un fort engagement de la posture et du regard, qui exprime la présence, la confiance et la personnalité du personnage.",
+    description: "Le strut est la façon dont un personnage burlesque *entre* sur scène — et c'est souvent là que tout se joue. Marcher, c'est se déplacer. Strutter, c'est *arriver*.\n\n**Éléments du strut :**\n\n**La posture :**\n- Colonne vertébrale allongée\n- Épaules détendues, légèrement en arrière\n- Poitrine ouverte\n- Menton parallèle au sol — ni baissé ni arrogant\n\n**Le bassin :**\nDans le strut burlesque, le bassin est actif — il participe au mouvement à chaque pas. Ce n'est pas un déhanchement exagéré : c'est une présence dans les hanches.\n\n**Les bras :**\nDécontractés, naturels — pas rigides. Ils suivent le corps avec légèreté.\n\n**Le regard :**\nDroit devant — ou vers le public. Le regard qui ne cherche pas, qui sait déjà.\n\n**Strut et personnage :**\nLe strut change selon le personnage : une reine aura un strut majestueux et lent, une espionne un strut précis et économe, un personnage comique un strut légèrement exagéré.\n\n**Tempo :**\nLe strut prend son temps. C'est peut-être le premier réflexe à corriger : un strut qui se dépêche n'est plus un strut.",
+    erreursCourantes: [
+      "Strut trop rapide — le strut prend son temps, il ne court pas.",
+      "Épaules crispées vers les oreilles — détendre, allonger.",
+      "Regard vers le sol — le regard est une partie du strut autant que les jambes.",
+    ],
+    conseils: [
+      "Entraîne-toi à faire dix pas dans une pièce comme si tu arrivais à ta propre fête surprise — et que tout le monde était là pour toi. Filme-toi. Observe ce que ton corps fait quand il sait qu'on le regarde avec admiration.",
+    ],
+    difficulteInterne: 2,
+    termesLies: ['character-burlesque', 'presentation-scenique', 'rapport-public'],
+  },
+
+  {
+    id: 'pasties',
+    nom: 'Pasties',
+    alias: ['cache-seins', 'cache-tétons', 'nipple covers', 'tassel pasties'],
+    disciplines: ['burlesque'],
+    categories: ['accessoires', 'jeu-de-scene'],
+    definition: "Petit accessoire adhésif — souvent en forme de coquille, d'étoile ou de spirale pailletée — que les artistes burlesque portent pour couvrir les mamelons, permettant un dévoilement partiel tout en respectant les règles de décence scénique.",
+    description: "Les pasties sont un accessoire iconique du burlesque — à la fois pratiques (respect des règles scéniques) et esthétiques (le pasty est lui-même un bijou).\n\n**Histoire des pasties :**\nLes pasties apparaissent dans le burlesque américain classique (années 1940–1960) comme solution pour contourner les lois sur la nudité. Gypsy Rose Lee est parmi les premières à avoir transformé ce cache en accessoire signature — et non en simple obligation.\n\n**Le pasty comme objet artistique :**\nDans le néo-burlesque, les pasties deviennent des œuvres en soi — paillettes, plumes, lumières LED, miniatures, pompons qui tourbillonnent (les 'tassel pasties').\n\n**Tassel twirling :**\nArt de faire tourner les pompons des pasties en mouvement musculaire — compétence à part entière qui consiste à alterner la tension dans chaque pectoral pour faire tourner les tassels dans des directions opposées.\n\n**Matériaux et adhérence :**\nLes pasties adhèrent à la peau avec de la colle double-face ou du spirit gum. Leur retrait se fait à l'huile démaquillante.\n\n**Choisir ses pasties :**\nCouleur, forme (géométrique, naturelle, fantaisiste), taille, décoration — les pasties sont un choix esthétique et identitaire.",
+    erreursCourantes: [
+      "Mauvaise adhérence — tester systématiquement avant le spectacle, pas le soir même.",
+    ],
+    conseils: [
+      "Si tu travailles les tassel pasties, commence par isoler chaque pectoral séparément. Quand tu peux contracter l'un sans l'autre, tu pourras faire tourner les tassels dans des directions opposées. C'est plus difficile qu'il n'y paraît — et plus satisfaisant quand ça marche.",
+    ],
+    etymologie: "De l'anglais américain 'pastie' — origine incertaine, probablement de 'paste' (coller) en référence à l'adhésif utilisé.",
+    difficulteInterne: 2,
+    termesLies: ['effeuillage', 'prop-burlesque', 'tease'],
+  },
+
+  {
+    id: 'nom-scene-burlesque',
+    nom: 'Nom de scène',
+    alias: ['stage name', 'nom artiste burlesque', 'nom de performer', 'identité burlesque'],
+    disciplines: ['burlesque'],
+    categories: ['concepts', 'culture-histoire'],
+    definition: "Identité artistique adoptée par un artiste burlesque pour ses performances — distinct du nom civil, souvent évocateur, glamour, humoristique ou symbolique, qui matérialise et complète le personnage de scène.",
+    description: "Le nom de scène est une tradition du burlesque depuis ses origines — et dans le néo-burlesque, c'est souvent le moment où tout commence vraiment. Quand le bon nom arrive, le personnage existe.\n\n**Pourquoi un nom de scène ?**\n\n**Séparation privé/public :**\nLe nom de scène trace une frontière entre la vie quotidienne et la scène. Ce n'est pas 'moi' avec ce nom — c'est mon personnage.\n\n**Protection :**\nHistoriquement, les artistes de burlesque utilisaient un nom de scène pour protéger leur vie privée dans un milieu parfois stigmatisé.\n\n**Identité artistique :**\nLe nom dit quelque chose sur le personnage, le style, l'univers de l'artiste — avant même qu'ils entrent sur scène.\n\n**Les noms de scène dans le burlesque classique :**\n- Gypsy Rose Lee (née Louise Hovick)\n- Lili St. Cyr (née Marie Van Schaack)\n- Sally Rand (née Helen Beck)\n- Dita Von Teese (née Heather Sweet)\n\n**Construire son nom de scène :**\nBonne pratique dans le néo-burlesque : le prénom + le nom comme une rencontre de deux références (une période, un lieu, un état d'esprit). Mais il n'y a pas de règle — l'essentiel est que ça *sonne* comme le personnage.\n\n**Le moment du choix :**\nChoisir son nom de scène peut prendre du temps. Et quand le bon arrive, on le sait.",
+    erreursCourantes: [],
+    conseils: [
+      "Prends une feuille. Écris d'un côté des mots qui appartiennent à l'univers que tu veux incarner (époques, lieux, objets, sensations). De l'autre, des prénoms qui te parlent. Combine. Dis-les à voix haute. Celui qui sonne juste — c'est probablement le bon.",
+    ],
+    difficulteInterne: 1,
+    termesLies: ['character-burlesque', 'effeuillage', 'neo-burlesque'],
+  },
+
+  {
+    id: 'pose-burlesque',
+    nom: 'Pose',
+    alias: ['freeze burlesque', 'tableau vivant burlesque', 'pose scénique', 'hold position'],
+    disciplines: ['burlesque'],
+    categories: ['jeu-de-scene', 'concepts'],
+    definition: "Moment d'immobilité intentionnelle dans un numéro de burlesque — la pose arrête le mouvement pour concentrer l'attention du public sur une image précise, créant un effet de tableau vivant et amplifiant le timing dramatique.",
+    description: "Dans le burlesque, l'immobilité est un outil aussi puissant que le mouvement — et souvent plus difficile à maîtriser. C'est une chose que j'insiste à répéter : savoir s'arrêter, c'est une technique.\n\n**Pourquoi la pose est-elle puissante ?**\nLe mouvement constant habite le regard sans le fixer. La pose *arrête* le regard — elle dit au public 'regarde ici, maintenant, ça'. C'est une ponctuation.\n\n**Types de poses en burlesque :**\n\n**La pose de révélation :**\nAprès un moment de tease, la pose expose l'image que le public attendait — ou une image inattendue.\n\n**La pose de suspense :**\nAvant un moment de tease — immobilité qui crée l'anticipation. Le public sait que quelque chose va se passer, mais quand ?\n\n**La pose comique :**\nDans le burlesque humoristique, une pose trop longue devient elle-même comique. L'artiste sait utiliser ce délai — et le dépasser.\n\n**La pose de clôture :**\nLa position finale du numéro — souvent la plus travaillée, la plus forte visuellement.\n\n**Comment réussir une pose :**\n- Le corps est entièrement immobile\n- L'énergie ne s'effondre pas — la pose est habitée, pas figée\n- Le regard reste actif\n- La durée est choisie — ni trop courte ni trop longue\n\n**Le tableau vivant :**\nLa pose burlesque renvoie à l'art du 'tableau vivant' — tradition du XIXe siècle où des artistes reproduisaient des tableaux de maître en immobilité. Beaucoup d'artistes burlesque s'en inspirent explicitement.",
+    erreursCourantes: [
+      "Pose qui 'dégonfle' — l'énergie disparaît pendant l'immobilité. La pose doit rester habitée jusqu'au bout.",
+      "Pose trop courte — couper soi-même le moment avant que le public ait pu le recevoir.",
+    ],
+    conseils: [
+      "Choisis ta pose finale et tiens-la devant un miroir. Compte jusqu'à 10. Est-ce que ton énergie est encore là à 10 ? Ton regard est-il toujours vivant ? C'est ça, une bonne pose — elle ne se vide pas.",
+    ],
+    difficulteInterne: 2,
+    termesLies: ['timing-burlesque', 'tease', 'presentation-scenique'],
+  },
+
 ]
