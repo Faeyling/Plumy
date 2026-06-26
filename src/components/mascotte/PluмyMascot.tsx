@@ -26,6 +26,7 @@ const messageParEtat: Record<PluмyEtat, string> = {
 const PNG_ETATS: Partial<Record<PluмyEtat, string>> = {
   accueil: '/mascotte/plumy-accueil.png',
   encouragement: '/mascotte/plumy-encouragement.png',
+  reussite: '/mascotte/plumy-reussite.png',
   echec: '/mascotte/plumy-echec.png',
   repos: '/mascotte/plumy-repos.png',
 }
