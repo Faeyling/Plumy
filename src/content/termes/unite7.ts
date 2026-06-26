@@ -294,4 +294,79 @@ export const termesUnite7: Terme[] = [
     difficulteInterne: 1,
     termesLies: ['revue', 'chorus-line', 'meneuse-revue'],
   },
+
+  {
+    id: 'chahut',
+    nom: 'Chahut',
+    alias: ['chahut populaire', 'danse de bal populaire', 'ancêtre du cancan'],
+    disciplines: ['cabaret'],
+    categories: ['culture-histoire'],
+    definition: "Danse populaire parisienne des années 1820–1840, ancêtre direct du french cancan — pratiquée dans les bals publics de Montparnasse et du quartier Latin, caractérisée par une improvisation exubérante, des mouvements acrobatiques et un esprit délibérément scandaleux.",
+    description: "Le chahut, c'est le commencement de tout — et j'adore que le cancan ait une histoire aussi populaire. Il n'est pas né dans une école de danse. Il a jailli d'une salle de bal bondée.\n\n**Le chahut dans les bals populaires :**\nLe chahut naît dans les bals publics parisiens du début du XIXe siècle — Bal Bullier, Closerie des Lilas, dans les quartiers du Panthéon et de Montparnasse. C'est une danse mixte, improvisée, pratiquée par des étudiants, des grisettes, des artistes. Elle est délibérément scandaleuse — tapage, gestes suggestifs, jupes qui volent.\n\n**Étymologie du 'chahut' :**\nLe mot signifie 'tapage, désordre, bruit' — la danse porte parfaitement son nom. Elle *dérange*, elle *scandalise*.\n\n**Du chahut au cancan :**\n- 1820s : chahut dans les bals populaires\n- 1858 : Offenbach compose le Galop infernal\n- 1889 : Moulin Rouge — La Goulue et Valentin-le-Désossé transforment le chahut en spectacle professionnel codifié\n\n**Figures historiques du chahut :**\n- **Céleste Mogador** (1824–1909) : danseuse de bal populaire, l'une des premières figures du chahut\n- **Valentin-le-Désossé** (1843–1907) : danseur hors norme au Moulin Rouge, immortalisé par Toulouse-Lautrec\n- **La Goulue** (1866–1929) : celle qui fait passer le chahut au rang de spectacle international",
+    erreursCourantes: [],
+    conseils: [
+      "Comprendre le chahut, c'est comprendre pourquoi le cancan est une danse vivante. Elle n'a pas été inventée dans une académie — elle a jailli d'une salle de bal scandaleuse. Garde cette énergie populaire en tête quand tu danses.",
+    ],
+    etymologie: "Mot français désignant le tapage, le désordre, le bruit. Utilisé pour désigner la danse par analogie avec l'agitation et le scandale qu'elle provoquait dans les bals populaires parisiens.",
+    difficulteInterne: 1,
+    termesLies: ['french-cancan', 'galop-cancan', 'revue'],
+  },
+
+  {
+    id: 'galop-cancan',
+    nom: 'Galop',
+    alias: ['galop infernal', 'pas de galop', 'galop cancan', 'galop Offenbach'],
+    disciplines: ['cabaret'],
+    categories: ['deplacements', 'pas'],
+    definition: "Pas locomoteur de base du french cancan — séquence de petits sauts alternatifs en déplacement latéral ou en avant, au rythme du Galop infernal d'Offenbach, qui donne au cancan son énergie et sa célérité caractéristiques.",
+    description: "Le galop est le moteur du cancan — ce qui fait courir, tourbillonner, s'élancer les danseuses. Impossible de comprendre le cancan sans comprendre le galop.\n\n**La musique du galop :**\nLe 'Galop infernal' d'Offenbach (extrait d'*Orphée aux Enfers*, 1858) est devenu la musique universelle du cancan. Son rythme effréné, à 2/4 très rapide, dicte directement la vitesse et l'énergie du pas.\n\n**Exécution du galop :**\n1. Départ sur une jambe, légèrement en flexion\n2. Saut léger avec impulsion sur cette jambe\n3. Réception sur le pied opposé (en déplacement)\n4. Enchaînement rapide : droite–gauche–droite–gauche\n5. Le mouvement est vif, rebondi, aérien malgré la vitesse\n\n**Variantes :**\n- **Galop latéral** : déplacement vers les côtés (la plus courante en chorus)\n- **Galop en avant** : course légère vers le devant, souvent vers le public\n- **Galop en cercle** : formation tournante\n\n**Le galop dans la phrase musicale :**\nLe galop structure les liaisons entre les figures — il donne de l'élan avant un high kick, permet de changer de position dans la ligne, crée une énergie continue entre les moments forts.",
+    erreursCourantes: [
+      "Galop lourd et pesant — le galop doit être aérien et rebondi, pas plaqué au sol.",
+      "Galop trop grand (les pas sont petits et serrés, pas de grandes enjambées).",
+    ],
+    conseils: [
+      "Écoute le Galop d'Offenbach et essaie de 'tomber' dans son rythme avant de bouger. Le galop n'est pas un effort — c'est un abandon au tempo. Quand tu forces, ça se voit immédiatement.",
+    ],
+    etymologie: "Du vieux français 'galoper' (aller au galop) — le pas imite le rythme du galop du cheval : léger, alterné, rapide. Le 'Galop infernal' d'Offenbach a popularisé ce pas au-delà de toute autre danse.",
+    difficulteInterne: 2,
+    termesLies: ['french-cancan', 'chahut', 'high-kick'],
+  },
+
+  {
+    id: 'arabesque-cancan',
+    nom: 'Arabesque cancan',
+    alias: ['port de jambe cancan', 'arabesque revue', 'jambe arrière cancan'],
+    disciplines: ['cabaret'],
+    categories: ['pas', 'equilibres'],
+    definition: "Position où la jambe libre est portée en arrière et en hauteur, tendue, tandis que le buste s'incline légèrement vers l'avant — variante théâtrale de l'arabesque intégrée dans le french cancan, souvent associée au port du jupon.",
+    description: "L'arabesque cancan est la position qui donne au cancan sa silhouette la plus élégante — et la plus photographiée. La jambe arrière qui monte, le buste qui s'incline, la jupe qui vole. C'est le moment de grâce dans un enchaînement d'énergie.\n\n**Exécution :**\n1. Position debout, poids sur la jambe d'appui\n2. La jambe libre s'étend vers l'arrière, pied pointé\n3. La jambe monte en hauteur (amplitude selon la souplesse)\n4. Le buste s'incline légèrement vers l'avant\n5. Les bras tiennent le jupon, s'ouvrent sur les côtés, ou se posent sur la hanche selon le style\n\n**Différence avec l'arabesque classique :**\nEn danse classique, le dos reste long et horizontal. En cancan, l'inclinaison du buste est plus prononcée — la silhouette est plus théâtrale, moins épurée. Ce n'est pas une faute : c'est le style.\n\n**Usage dans le cancan :**\nL'arabesque cancan arrive dans les moments de respiration rythmique — après une série de kicks, elle ralentit le tempo et crée un contraste élégant avant de repartir.\n\n**Le jupon dans l'arabesque :**\nSouvent, le jupon est tenu d'une ou deux mains pendant l'arabesque — ce qui ajoute un voile de tissu dans l'espace et rend la silhouette encore plus spectaculaire.",
+    erreursCourantes: [
+      "Jambe arrière fléchie — elle doit rester tendue, pied pointé, tout le long.",
+      "Buste qui ne s'incline pas — c'est l'inclinaison qui crée la ligne caractéristique du cancan.",
+    ],
+    conseils: [
+      "Pense à la jambe arrière qui tire le buste vers l'avant — les deux extrémités du corps sont en tension opposée. C'est cette tension qui crée la beauté de la ligne.",
+    ],
+    difficulteInterne: 3,
+    termesLies: ['french-cancan', 'porte-jupon', 'high-kick'],
+  },
+
+  {
+    id: 'porte-jupon',
+    nom: 'Porte-jupon',
+    alias: ['soulèvement du jupon', 'agitation du jupon', 'technique du jupon cancan'],
+    disciplines: ['cabaret'],
+    categories: ['accessoires', 'pas'],
+    definition: "Geste technique de soulèvement du jupon de cancan à deux mains, suivi d'une agitation rythmique — chorégraphie dans la chorégraphie, le porte-jupon révèle et dissimule alternativement les jambes en synchronisation avec la musique.",
+    description: "Le porte-jupon est l'un des éléments les plus distinctifs du cancan — et l'un des plus sous-estimés. Ce n'est pas un geste décoratif. C'est une technique à part entière, et le jupon a sa propre chorégraphie.\n\n**La prise :**\nAttraper le jupon à deux mains, légèrement de chaque côté du corps — pas trop près, pas trop loin. Les coudes sont légèrement fléchis, les poignets souples.\n\n**Le soulèvement :**\nLever le jupon pour révéler les jambes — la hauteur est chorégraphiée, pas improvisée. Soulèvement bas (cheville), moyen (genou), haut (hanche) — chacun crée une image différente.\n\n**L'agitation :**\nLe jupon oscille : à gauche, à droite, vers l'avant. Cette agitation est rythmique — elle accompagne les accents musicaux, les pas, les kicks.\n\n**Le jupon comme voile :**\nLe jupon révèle (soulèvement) et cache (abaissement). C'est une danse dans la danse.\n\n**L'inertie du jupon :**\nComme le boa de plumes, le jupon a une inertie propre — il suit les bras avec un léger délai. Ce délai crée l'effet de volume et de légèreté qui est sa signature.",
+    erreursCourantes: [
+      "Agitation désordonnée — le porte-jupon doit être rythmique et précis, pas frénétique.",
+      "Jupon tenu trop bas (ne révèle pas les jambes) ou trop haut (perd l'effet de voile).",
+    ],
+    conseils: [
+      "Pratique le porte-jupon séparément de tout le reste. D'abord l'agitation à la main droite seule, puis gauche, puis à deux mains — avant d'intégrer des pas. Le jupon mérite sa propre répétition.",
+    ],
+    difficulteInterne: 2,
+    termesLies: ['french-cancan', 'arabesque-cancan', 'port-costume'],
+  },
 ]

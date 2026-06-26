@@ -249,4 +249,95 @@ export const termesUnite9: Terme[] = [
     termesLies: ['timing-burlesque', 'tease', 'presentation-scenique'],
   },
 
+  {
+    id: 'glove-peel',
+    nom: 'Glove peel',
+    alias: ['retrait des gants', 'effeuillage des gants', 'déshabillage des gants longs'],
+    disciplines: ['burlesque'],
+    categories: ['accessoires', 'jeu-de-scene'],
+    definition: "Technique chorégraphiée de retrait des gants longs — effeuillage progressif, doigt par doigt, suivi d'un déroulement du gant jusqu'au coude et d'un retrait dramatique — premier acte de l'effeuillage burlesque et l'un des plus sophistiqués.",
+    description: "Le glove peel est le premier chapitre de tout numéro de burlesque qui se respecte — et c'est aussi l'un des plus délicats à exécuter. Un gant qui se retire bien peut durer deux minutes entières et tenir une salle en haleine. J'ai une page entière là-dessus dans mon carnet.\n\n**La structure du glove peel :**\n\n**1. L'invitation :**\nLe regard se pose sur le gant. Le public comprend ce qui va se passer — et l'anticipation commence.\n\n**2. Le retrait des doigts :**\nChaque doigt se retire en séquence — pouce, index, majeur, annulaire, auriculaire. Lentement, avec des holds entre chaque. Ce moment seul peut durer une minute.\n\n**3. Le déroulement :**\nLe gant se retrousse jusqu'au poignet, puis jusqu'au coude — centimètre par centimètre.\n\n**4. Le retrait final :**\nLe gant quitte le bras d'un seul geste décidé — contraste avec la lenteur qui précède.\n\n**5. La disposition :**\nLe gant est jeté dans le public, posé avec soin sur une chaise, ou gardé en bouche le temps de retirer l'autre. C'est un choix de personnage.\n\n**Avec deux gants :**\nLe numéro classique retire les deux gants dans un ordre précis — le gauche d'abord, puis le droit, avec des variations entre les deux pour maintenir l'intérêt.",
+    erreursCourantes: [
+      "Retirer le gant trop vite — c'est le piège numéro un. Ralentir, encore ralentir, encore.",
+      "Oublier le regard pendant le retrait — le regard parle autant que les mains pendant le glove peel.",
+    ],
+    conseils: [
+      "Prends un gant long. Mets-le. Essaie de le retirer en 3 minutes entières en utilisant tous les outils du tease : hold, slow reveal, misdirection. C'est un exercice d'entraînement complet — et très révélateur de là où tu en es.",
+    ],
+    difficulteInterne: 3,
+    termesLies: ['prop-burlesque', 'tease', 'effeuillage', 'timing-burlesque'],
+  },
+
+  {
+    id: 'reveal-burlesque',
+    nom: 'Reveal',
+    alias: ['révélation finale', 'grand reveal', 'moment de révélation', 'reveal final'],
+    disciplines: ['burlesque'],
+    categories: ['jeu-de-scene', 'concepts'],
+    definition: "Moment culminant d'un numéro de burlesque où la révélation attendue (ou inattendue) se produit — point de résolution dramatique du tease, qui peut être partiel, total, comique ou délibérément détourné selon l'intention artistique.",
+    description: "Le reveal est le moment pour lequel tout le numéro a été construit — et c'est souvent le plus difficile à réussir. Parce que trop souvent, les gens pensent que le reveal, c'est 'montrer'. C'est bien plus complexe que ça.\n\n**Types de reveals :**\n\n**Le reveal partiel :**\nOn révèle une partie seulement — l'épaule, le dos, la jambe. La révélation complète n'arrive jamais (ou arrive hors champ). C'est le reveal le plus sophistiqué.\n\n**Le reveal total :**\nLa révélation complète de l'image finale — pasties, costume de dessous, tenue finale. C'est ce que le public anticipe, et le donner au bon moment est un art.\n\n**Le reveal comique :**\nLa révélation est une surprise humoristique — le dessous est une combinaison ridicule, le corps porte un message inattendu. Le rire remplace le désir.\n\n**Le reveal détourné :**\nLe numéro se termine avant la révélation attendue — lights out, rideau, fin soudaine. Le public n'obtient jamais ce qui lui était promis. C'est le tease poussé à son extrême logique.\n\n**Timing du reveal :**\nLe reveal est toujours placé sur un moment musical fort — l'accent final, le dernier accord, ou parfois le silence total. Le timing transforme le reveal en ponctuation parfaite.",
+    erreursCourantes: [
+      "Reveal trop tôt — si le tease n'a pas créé suffisamment d'attente, le reveal passe inaperçu.",
+      "Reveal non préparé musicalement — le reveal doit coïncider avec un moment fort de la partition.",
+    ],
+    conseils: [
+      "Pose-toi ces trois questions avant de construire ton numéro : qu'est-ce que je révèle ? à quel moment exact ? comment ? La réponse à ces trois questions, c'est le cœur de ton numéro. Tout le reste est construction vers ce point.",
+    ],
+    difficulteInterne: 3,
+    termesLies: ['tease', 'effeuillage', 'timing-burlesque', 'pose-burlesque'],
+  },
+
+  {
+    id: 'comedy-burlesque',
+    nom: 'Comedy burlesque',
+    alias: ['burlesque comique', 'burlesque parodique', 'burlesque humoristique', 'comic burlesque'],
+    disciplines: ['burlesque'],
+    categories: ['concepts', 'culture-histoire'],
+    definition: "Style de burlesque qui place l'humour au premier plan — parodie, absurde, gags visuels, timing comique — héritier direct du vaudeville et du slapstick, qui utilise le tease et l'effeuillage comme matière première d'une performance résolument humoristique.",
+    description: "La dimension comique du burlesque est aussi vieille que le burlesque lui-même — et je trouve qu'elle est souvent sous-estimée par rapport à la dimension glamour. C'est pourtant là qu'est né l'art.\n\n**Le burlesque et le vaudeville :**\nLe burlesque américain du début du XXe siècle est directement lié au vaudeville — le circuit de théâtres de variétés où se produisaient comédiens, acrobates, magiciens. Le burlesque hérite du vaudeville son sens du timing, ses gags visuels et son rapport direct au public.\n\n**Les formes du comedy burlesque :**\n\n**La parodie :**\nParodier un genre cinématographique, un personnage célèbre, une situation — et y insérer l'effeuillage comme révélation comique inattendue.\n\n**L'absurde :**\nLe numéro part dans une direction inattendue — le tease révèle quelque chose de ridicule plutôt que de sensuel. L'humour naît du décalage.\n\n**Le slapstick burlesque :**\nChutes, accessoires qui tombent, gestes exagérés — la comédie physique traditionnelle adaptée au format burlesque.\n\n**Le commentaire :**\nRegards en coin, haussements d'épaules, mimes — l'artiste commente sa propre performance avec ironie.\n\n**Artistes de référence :**\n- **Dirty Martini** : glamour et humour, jeu de scène très développé\n- **Julie Atlas Muz** : absurde et politique\n- **World Famous *BOB*** : comedy burlesque, drag\n- **The World Famous Pontani Sisters** : chorégraphies burlesques comiques en trio",
+    erreursCourantes: [
+      "Humour explicatif — le gag doit être lisible immédiatement, sans explications. Si tu dois l'expliquer, il est raté.",
+    ],
+    conseils: [
+      "Pour développer ton comedy burlesque : regarde des comédiens stand-up, pas seulement des artistes burlesque. Le timing comique s'apprend au contact de ceux qui ont passé des années à faire rire. C'est la même chose.",
+    ],
+    etymologie: "Du latin 'burla' (plaisanterie, moquerie) — le burlesque a toujours eu une dimension comique à sa racine. Le 'comedy burlesque' en est l'expression la plus directe.",
+    difficulteInterne: 3,
+    termesLies: ['timing-burlesque', 'tease', 'rapport-public', 'neo-burlesque'],
+  },
+
+  {
+    id: 'tassel-twirling',
+    nom: 'Tassel twirling',
+    alias: ['rotation des pompons', 'spinning tassels', 'faire tourner les glands'],
+    disciplines: ['burlesque'],
+    categories: ['accessoires', 'jeu-de-scene'],
+    definition: "Art de faire tourner simultanément les pompons (tassels) fixés aux pasties, dans des directions opposées ou en synchronisation, par contrôle musculaire isolé de chaque pectoral — compétence technique et artistique signature du burlesque classique.",
+    description: "Le tassel twirling est une des compétences les plus spectaculaires — et les plus absurdes dans le bon sens du terme — du burlesque. C'est de la danse musculaire pure, et c'est totalement unique à cette discipline.\n\n**Comment ça fonctionne :**\nLes tassels (pompons) sont fixés aux pasties. Pour les faire tourner, il faut faire tourner la peau. Ce qui implique de contracter et relâcher les pectoraux dans un mouvement circulaire — une isolation musculaire très précise.\n\n**La technique de base :**\n1. Sentir comment contracter le pectoral droit seul (sans que le gauche bouge)\n2. Puis le gauche seul\n3. Alterner les contractions dans un schéma circulaire\n4. Le tassel commence à osciller, puis à tourner\n\n**Les niveaux de maîtrise :**\n- Les deux tassels qui tournent dans le même sens\n- Les deux tassels qui tournent en sens opposés (le plus spectaculaire)\n- Un tassel qui tourne, l'autre immobile\n- Alternance rythmique en accord avec la musique\n\n**L'apprentissage :**\nLe tassel twirling s'apprend progressivement — d'abord un côté, puis l'autre, puis les deux ensemble. Certains y passent des semaines avant de trouver le schéma musculaire.\n\n**Dans le numéro :**\nC'est souvent un moment de virtuosité pure — et aussi un moment comique. L'absurdité totale de la chose fait toujours sourire. C'est voulu.",
+    erreursCourantes: [
+      "Forcer le mouvement par les bras ou les épaules — les tassels se font tourner par les pectoraux, pas par des mouvements extérieurs.",
+      "Vouloir aller trop vite — le schéma musculaire doit s'installer lentement avant d'accélérer.",
+    ],
+    conseils: [
+      "Commence sans les tassels — juste les mains posées sur la poitrine. Essaie de sentir la contraction circulaire d'un côté. Quand tu peux le faire séparément de chaque côté, ajoute les tassels. La proprioception avant la technique.",
+    ],
+    difficulteInterne: 4,
+    termesLies: ['pasties', 'prop-burlesque', 'effeuillage'],
+  },
+
+  {
+    id: 'glamour-burlesque',
+    nom: 'Glamour burlesque',
+    alias: ['esthétique burlesque', 'style classique burlesque', 'glamour pin-up', 'old Hollywood burlesque'],
+    disciplines: ['burlesque'],
+    categories: ['concepts', 'culture-histoire'],
+    definition: "Esthétique de raffinement et d'élégance extrême du burlesque classique et néo-classique — inspirée de Hollywood golden age et de la haute couture — qui utilise le luxe visuel (soie, strass, plumes, corsets) comme langage artistique et déclaration d'identité.",
+    description: "Le glamour burlesque, c'est quand le luxe devient un argument artistique. Et ce n'est pas superficiel — c'est une prise de position.\n\n**Les origines du glamour burlesque :**\nLe glamour entre dans le burlesque dans les années 1920–1940, avec des artistes comme Lili St. Cyr et Gypsy Rose Lee, qui apportent sophistication et mise en scène théâtrale là où le burlesque populaire restait plus brut. L'idée : l'effeuillage peut être élégant, raffiné, luxueux.\n\n**Les éléments du glamour burlesque :**\n- **Costumes** : soie, satin, velours, dentelle, strass, plumes d'autruche\n- **Accessoires** : bijoux, gants longs, boa de plumes, coiffes élaborées\n- **Maquillage** : influencé par Hollywood des années 1940 — lèvres rouges, yeux charbonneux, teint mat\n- **Mise en scène** : bain de champagne (Lili St. Cyr), miroirs, escaliers, accessoires théâtraux\n- **Musique** : jazz de grande formation, standards, orchestres de big band\n\n**Dita Von Teese et le renouveau :**\nDita Von Teese (née en 1972) est la figure contemporaine du glamour burlesque — esthétique du burlesque classique, collaborations avec des maisons de haute couture, visibilité au grand public dans les années 2000.\n\n**Glamour et débat féministe :**\nL'esthétique glamour est parfois questionnée dans les cercles néo-burlesque — est-elle une reproduction de standards de beauté normés ? La réponse du mouvement : le glamour *choisi* et *maîtrisé* par l'artiste est une déclaration d'agentivité. La différence entre subir un standard et s'en emparer.",
+    erreursCourantes: [],
+    conseils: [
+      "Si tu travailles dans l'esthétique glamour, investis dans un costume qui te ressemble vraiment. Un costume de qualité — même modeste — change la façon dont tu te portes et dont le public te reçoit. Le glamour burlesque commence dans le rapport à ton propre costume.",
+    ],
+    difficulteInterne: 2,
+    termesLies: ['neo-burlesque', 'character-burlesque', 'effeuillage', 'pasties'],
+  },
 ]
