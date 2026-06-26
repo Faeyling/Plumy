@@ -4,7 +4,7 @@ export const coursUnite5: Cours[] = [
   {
     id: 'intro-jazz',
     titre: 'La danse jazz — tronc commun et fondamentaux',
-    resume: "Le jazz n'est pas un style, c'est un monde — et j'adore le dire parce que c'est littéralement vrai. Dans mes carnets : le groove, les accents et contretemps, les pas de base (ball change, jazz square, chassé), les isolations percussives, les niveaux, les sauts et les tours.",
+    resume: "Le jazz n'est pas un style, c'est un monde — et j'adore le dire parce que c'est littéralement vrai. Dans mes carnets : le groove, les accents et contretemps, les pas de base (ball change, jazz square, chassé), les isolations percussives, les niveaux, les sauts et les tours. J'ai des pages entières là-dessus, et j'ai hâte de te les montrer.",
     disciplines: ['jazz'],
     termesAbordes: [
       'groove', 'accent-jazz', 'eight-count', 'preparation-elan',
@@ -14,7 +14,7 @@ export const coursUnite5: Cours[] = [
     sections: [
       {
         titre: "Qu'est-ce que la danse jazz ?",
-        contenuMarkdown: `La danse jazz est née aux États-Unis à la fin du XIXe siècle — et elle n'a jamais cessé de se transformer. C'est exactement ce qui en fait l'une des disciplines les plus vivantes et les plus passionnantes que je connaisse.
+        contenuMarkdown: `La danse jazz est née aux États-Unis à la fin du XIXe siècle — et elle n'a jamais cessé de se transformer. C'est exactement ce qui en fait l'une des disciplines les plus vivantes et les plus passionnantes que je connaisse. Chaque époque y a laissé son empreinte, et cette empreinte, tu peux encore la sentir dans le corps quand tu danses.
 
 **Ses racines — et il faut les nommer clairement :**
 - Danses africaines et afro-américaines apportées aux Amériques
@@ -40,18 +40,18 @@ export const coursUnite5: Cours[] = [
 | 2000s+ | Street jazz, afro-jazz, fusion |
 
 **Pourquoi le jazz est difficile à classer :**
-Contrairement à la danse classique (une technique) ou au contemporain (un champ), le jazz est un *continuum* — de l'héritage africain aux clips de pop d'aujourd'hui, en passant par Broadway et Fosse. Il n'existe pas de "technique jazz universelle". C'est une liberté, pas un défaut.
+Contrairement à la danse classique (une technique) ou au contemporain (un champ), le jazz est un *continuum* — de l'héritage africain aux clips de pop d'aujourd'hui, en passant par Broadway et Fosse. Il n'existe pas de "technique jazz universelle". C'est une liberté, pas un défaut. Et perso, c'est cette liberté qui me fait l'aimer autant.
 
-> Cette fluidité fait du jazz une danse vivante — elle change avec son époque. Moi, je trouve ça magnifique.`,
+> Cette fluidité fait du jazz une danse vivante — elle change avec son époque. Moi, je trouve ça magnifique. Et toi, tu trouveras ta place à l'intérieur.`,
       },
       {
         titre: 'Le groove et la musicalité jazz',
-        contenuMarkdown: `Le groove est ce qui sépare un danseur de jazz d'un danseur *qui fait du jazz*. Ce n'est pas une technique — c'est une relation à la musique. Et je peux te dire que la première fois que tu le ressens vraiment dans ton corps, tu ne l'oublies plus.
+        contenuMarkdown: `Le groove est ce qui sépare un danseur de jazz d'un danseur *qui fait du jazz*. Ce n'est pas une technique — c'est une relation à la musique. Et je peux te dire que la première fois que tu le ressens vraiment dans ton corps, tu ne l'oublies plus. J'ai noté ce moment dans mon carnet à l'époque, tellement c'était frappant.
 
 **Le groove n'est pas :**
 - Une question de vitesse ou de force
 - Un style particulier de mouvement
-- Réservé aux "naturellement musicaux" (cette idée m'énerve un peu)
+- Réservé aux "naturellement musicaux" (cette idée m'énerve franchement — tout le monde peut y arriver)
 
 **Le groove est :**
 - La capacité à s'*installer* dans le rythme
@@ -64,7 +64,7 @@ En musique jazz, le groove se joue dans le "pocket" — légèrement en arrière
 **Le comptage en 8 :**
 Le jazz compte en 8 temps (deux mesures de 4). La préparation est souvent sur "5, 6, 7, 8" — et les contretemps ("et 1", "et 2") sont aussi importants que les temps eux-mêmes.
 
-**Développer ton groove — la progression que je donne à mes élèves :**
+**Développer ton groove — la progression que j'utilise avec mes élèves :**
 
 **Étape 1 — Écouter sans bouger**
 Mets de la musique jazz. Ferme les yeux. Écoute seulement.
@@ -81,11 +81,11 @@ Laisse la cage thoracique ou les épaules rejoindre la conversation.
 **Étape 5 — Ne plus penser**
 Quand tu dois *réfléchir* pour groover, tu n'es pas encore dans le groove. C'est quand tu *oublies* que tu commences vraiment.
 
-> Le groove ne s'enseigne pas — il se *découvre*. Mais on peut créer les conditions pour qu'il apparaisse. Et toi, tu peux y arriver.`,
+> Le groove ne s'enseigne pas — il se *découvre*. Mais on peut créer les conditions pour qu'il apparaisse. Et toi, tu peux y arriver, j'en suis certain.`,
       },
       {
         titre: 'Les pas de base — ball change, jazz square, chassé',
-        contenuMarkdown: `Trois pas de base traversent tous les styles de jazz. Les maîtriser solidement, c'est avoir le vocabulaire minimal pour aborder n'importe quel cours. Passe autant de temps que nécessaire sur chacun — ça paiera en suite.
+        contenuMarkdown: `Trois pas de base traversent tous les styles de jazz. Les maîtriser solidement, c'est avoir le vocabulaire minimal pour aborder n'importe quel cours. Passe autant de temps que nécessaire sur chacun — ça paiera, crois-moi.
 
 ---
 
@@ -107,7 +107,7 @@ Transfert de poids rapide sur deux temps : demi-pointe + plein pied.
 
 ## Jazz square
 
-Quatre pas qui dessinent un carré dans l'espace. Ça paraît simple ; ça ne l'est pas quand il faut y mettre du style.
+Quatre pas qui dessinent un carré dans l'espace. Ça paraît simple ; ça ne l'est pas quand il faut y mettre du style — et c'est justement ce qui le rend si intéressant.
 
 **Exécution :**
 1. Pied droit croise devant
@@ -140,11 +140,11 @@ Ces trois pas se combinent naturellement. Une phrase simple que j'utilise souven
 - Jazz walk (4 pas) + jazz square + ball change + chassé = une phrase de 8 temps complète
 
 **Clé pédagogique :**
-Ces pas doivent devenir *automatiques* — ton corps les connaît sans que ton cerveau les commande. Alors ta tête peut penser à l'expression, à la musicalité, au style. C'est là que la vraie danse commence.`,
+Ces pas doivent devenir *automatiques* — ton corps les connaît sans que ton cerveau les commande. Alors ta tête peut penser à l'expression, à la musicalité, au style. C'est là que la vraie danse commence. Et tu vas voir, ça change tout.`,
       },
       {
         titre: 'Les isolations et le travail par niveaux',
-        contenuMarkdown: `Les isolations et les niveaux sont les deux axes du travail technique spécifique au jazz. Deux choses que j'ai dû vraiment travailler pour les avoir dans le corps — pas juste dans la tête.
+        contenuMarkdown: `Les isolations et les niveaux sont les deux axes du travail technique spécifique au jazz. Deux choses que j'ai dû vraiment travailler pour les avoir dans le corps — pas juste dans la tête. Je te partage ce que j'ai appris.
 
 **Les isolations jazz :**
 Plus percussives et rythmiques qu'en danse moderne — le jazz utilise les isolations comme des accents sonores dans le corps. Chaque pop est une note de musique qui devient mouvement.
@@ -159,7 +159,7 @@ Plus percussives et rythmiques qu'en danse moderne — le jazz utilise les isola
 - Smooth : isolation fluide et continue (lyrical, modern jazz)
 
 **La polyrythmie corporelle :**
-Épaules sur un rythme, hanches sur un autre, pieds sur un troisième — c'est le polycentrisme appliqué au jazz. Base du groove funk. Difficile ? Oui. Impossible ? Non. Et tellement satisfaisant quand ça vient.
+Épaules sur un rythme, hanches sur un autre, pieds sur un troisième — c'est le polycentrisme appliqué au jazz. Base du groove funk. Difficile ? Oui. Impossible ? Non. Et tellement satisfaisant quand ça vient — vraiment l'une des sensations les plus jouissives en danse.
 
 ---
 
@@ -174,11 +174,11 @@ Plus percussives et rythmiques qu'en danse moderne — le jazz utilise les isola
 Beaucoup de styles jazz maintiennent les genoux légèrement fléchis en permanence — ce n'est pas de la fatigue, c'est une qualité esthétique. Les genoux fléchis créent un ressort constant, une disponibilité au mouvement.
 
 **Alternance de niveaux comme dynamique :**
-Passer rapidement d'un niveau haut à un niveau bas (ou vice versa) est l'un des outils les plus puissants du jazz pour créer du dynamisme et de l'impact. Et à voir, c'est spectaculaire quand c'est maîtrisé.`,
+Passer rapidement d'un niveau haut à un niveau bas (ou vice versa) est l'un des outils les plus puissants du jazz pour créer du dynamisme et de l'impact. À voir, c'est spectaculaire quand c'est maîtrisé — et à ressentir dans le corps, c'est encore mieux.`,
       },
       {
         titre: "Tours et sauts — l'air en jazz",
-        contenuMarkdown: `La technique des tours et des sauts en jazz mérite une attention particulière — elle diffère du classique dans sa qualité et son esprit, pas nécessairement dans ses principes fondamentaux.
+        contenuMarkdown: `La technique des tours et des sauts en jazz mérite une attention particulière — elle diffère du classique dans sa qualité et son esprit, pas nécessairement dans ses principes fondamentaux. C'est quelque chose que j'ai mis du temps à vraiment saisir.
 
 **Les tours en jazz :**
 
@@ -218,7 +218,7 @@ Le saut nécessite de la force et de la souplesse. Je ne peux pas assez insister
 2. Souplesse des hanches (splits progressifs)
 3. Saut bas avec bonne forme avant d'aller haut
 
-> Un saut bien exécuté à faible hauteur vaut plus qu'un saut haut mal contrôlé. Toujours. Je te promets que les professeurs préfèrent le premier.`,
+> Un saut bien exécuté à faible hauteur vaut plus qu'un saut haut mal contrôlé. Toujours. Je te promets que les professeurs préfèrent le premier — et ton corps aussi.`,
       },
     ],
   },
@@ -226,7 +226,7 @@ Le saut nécessite de la force et de la souplesse. Je ne peux pas assez insister
   {
     id: 'sous-styles-jazz',
     titre: "Les sept sous-styles jazz — une carte pour s'orienter",
-    resume: "Comment naviguer dans le monde du jazz : les sept sous-styles différenciés, leurs caractéristiques, leurs pédagogues, leurs œuvres de référence et ce qui les distingue les uns des autres. J'ai passé des heures à cartographier tout ça, alors profites-en.",
+    resume: "Comment naviguer dans le monde du jazz : les sept sous-styles différenciés, leurs caractéristiques, leurs pédagogues, leurs œuvres de référence et ce qui les distingue les uns des autres. J'ai passé des heures à cartographier tout ça dans mes carnets, alors profites-en — c'est cadeau.",
     disciplines: ['jazz'],
     termesAbordes: [
       'sous-style-jazz-classique', 'sous-style-broadway', 'sous-style-fosse',
@@ -235,7 +235,7 @@ Le saut nécessite de la force et de la souplesse. Je ne peux pas assez insister
     sections: [
       {
         titre: 'Pourquoi parler de sous-styles ?',
-        contenuMarkdown: `Le jazz est trop vaste pour être enseigné comme un bloc monolithique — et honnêtement, prétendre le contraire rendrait un mauvais service à tout le monde. Voilà pourquoi je tiens à ce chapitre dans mes carnets.
+        contenuMarkdown: `Le jazz est trop vaste pour être enseigné comme un bloc monolithique — et honnêtement, prétendre le contraire rendrait un mauvais service à tout le monde. Voilà pourquoi je tiens tant à ce chapitre dans mes carnets. C'est une des pages que j'ai le plus annotées, le plus raturées, le plus retravaillées.
 
 Parler de sous-styles permet de :
 - **Décrire précisément** ce qu'on danse ou ce qu'on cherche à apprendre
@@ -255,11 +255,11 @@ Parler de sous-styles permet de :
 - La technique prioritaire (isolations / fluidité / floorwork)
 - Le contexte d'origine (théâtre / clips / académique / communautaire)
 
-> Chaque sous-style est un monde cohérent — avec ses codes, ses maîtres, ses œuvres de référence. Et il n'y en a pas un meilleur que les autres.`,
+> Chaque sous-style est un monde cohérent — avec ses codes, ses maîtres, ses œuvres de référence. Et il n'y en a pas un meilleur que les autres. Aucun. Tu vas voir.`,
       },
       {
         titre: 'Jazz classique et Broadway',
-        contenuMarkdown: `Ces deux sous-styles partagent une époque (1930–1970) mais des esthétiques bien distinctes. Ce sont ceux que j'ai découverts en premier, et je t'avoue que Broadway m'a conquis d'emblée.
+        contenuMarkdown: `Ces deux sous-styles partagent une époque (1930–1970) mais des esthétiques bien distinctes. Ce sont les deux que j'ai découverts en premier, et je t'avoue que Broadway m'a conquis d'emblée — il y a quelque chose dans cette façon de projeter chaque mouvement jusqu'au fond de la salle qui m'a toujours fasciné.
 
 ---
 
@@ -276,7 +276,7 @@ Parler de sous-styles permet de :
 
 **Figures fondatrices à connaître :**
 - **Jack Cole** : systématise les isolations, crée le langage du "theatrical jazz"
-- **Katharine Dunham** : intègre les danses caribéennes et africaines dans la danse concert — une pionnière incontournable
+- **Katharine Dunham** : intègre les danses caribéennes et africaines dans la danse concert — une pionnière incontournable, et j'insiste là-dessus
 - **Matt Mattox** : transmetteur de l'héritage Cole en Europe
 
 ---
@@ -294,18 +294,18 @@ Parler de sous-styles permet de :
 
 **Chorégraphes emblématiques :**
 - **Jerome Robbins** — West Side Story, Fiddler on the Roof : jazz narratif et précis
-- **Michael Bennett** — A Chorus Line : humanité et structure (ce spectacle me touche à chaque fois)
+- **Michael Bennett** — A Chorus Line : humanité et structure (ce spectacle me touche à chaque fois, vraiment)
 - **Gower Champion** — 42nd Street : tap meets Broadway jazz
 
 ---
 
-**Différence clé que je retiens :**
+**Différence clé que je retiens — et que tu peux noter dans ton propre carnet :**
 - Jazz classique : la musique commande
 - Broadway jazz : l'histoire (le livret) commande`,
       },
       {
         titre: 'Style Fosse et Modern jazz',
-        contenuMarkdown: `Deux styles qui poussent le jazz vers plus d'intériorité et de sophistication — et Fosse en particulier est quelque chose qui m'a fasciné pendant des années.
+        contenuMarkdown: `Deux styles qui poussent le jazz vers plus d'intériorité et de sophistication — et Fosse en particulier est quelque chose qui m'a fasciné pendant des années. J'ai des carnets entiers sur lui. Tu vas comprendre pourquoi.
 
 ---
 
@@ -322,7 +322,7 @@ Parler de sous-styles permet de :
 - Séduction sophistiquée et ironique
 
 **L'esprit Fosse — et c'est là que l'histoire devient fascinante :**
-Bob Fosse cachait sa propre gêne physique (il était profondément auto-conscient de son corps) derrière un style qui sublimait ces traits en esthétique. Le résultat : une grammaire visuelle unique, immédiatement reconnaissable. C'est beau, comme idée.
+Bob Fosse cachait sa propre gêne physique (il était profondément auto-conscient de son corps) derrière un style qui sublimait ces traits en esthétique. Le résultat : une grammaire visuelle unique, immédiatement reconnaissable. C'est beau, comme idée — transformer ses complexes en langage artistique.
 
 **Œuvres incontournables :**
 - *Cabaret* (1972) — "Mein Herr", "Money Money"
@@ -343,7 +343,7 @@ Bob Fosse cachait sa propre gêne physique (il était profondément auto-conscie
 - Qualité du corps avant le spectacle
 
 **Pédagogues :**
-- **Luigi** : *Never Stop Moving*, souplesse et continuité — une approche qui a changé des générations de danseurs
+- **Luigi** : *Never Stop Moving*, souplesse et continuité — une approche qui a changé des générations de danseurs, et qui me touche beaucoup
 - **Gus Giordano** : Chicago, Giordano Dance Company
 - **Lynn Simonson** : technique centrée sur le corps sain
 
@@ -355,7 +355,7 @@ Bob Fosse cachait sa propre gêne physique (il était profondément auto-conscie
       },
       {
         titre: 'Lyrical, Street jazz et Afro-jazz',
-        contenuMarkdown: `Les trois sous-styles les plus actuels et les plus pratiqués dans les cours d'aujourd'hui. Trois mondes très différents — et j'ai un attachement particulier pour l'afro-jazz.
+        contenuMarkdown: `Les trois sous-styles les plus actuels et les plus pratiqués dans les cours d'aujourd'hui. Trois mondes très différents — et j'ai un attachement particulier pour l'afro-jazz, parce qu'il dit quelque chose d'essentiel sur l'origine de tout ça.
 
 ---
 
@@ -396,7 +396,7 @@ Il garde une structure de formation et une chorégraphie apprise — le hip-hop 
 ## Afro-jazz
 
 **Ce que c'est :**
-Le jazz qui renoue explicitement avec ses origines africaines. Et ça me touche profondément, parce que ces origines ont trop longtemps été invisibilisées.
+Le jazz qui renoue explicitement avec ses origines africaines. Et ça me touche profondément, parce que ces origines ont trop longtemps été invisibilisées — dans l'histoire, dans les cours, dans les manuels.
 
 **Caractéristiques :**
 - Polycentrisme : plusieurs centres actifs simultanément
@@ -410,7 +410,7 @@ L'afro-jazz nomme et célèbre ce qui a longtemps été effacé ou approprié �
 
 ---
 
-**Tableau de synthèse — ma page préférée de mes carnets :**
+**Tableau de synthèse — ma page préférée de mes carnets, celle que je montre à tout le monde :**
 
 | Sous-style | Musique | Énergie | Priorité |
 |---|---|---|---|
@@ -423,8 +423,8 @@ L'afro-jazz nomme et célèbre ce qui a longtemps été effacé ou approprié �
 | Afro-jazz | Percussions | Ancrée | Polycentrisme, sol |`,
       },
       {
-        titre: "Comment s'orienter dans sa pratique jazz",
-        contenuMarkdown: `Avec sept sous-styles, la question se pose naturellement : par où commencer ? Comment s'orienter ? Voilà ce que je dis à mes élèves quand ils me demandent.
+        titre: "Comment t'orienter dans ta pratique jazz",
+        contenuMarkdown: `Avec sept sous-styles, la question se pose naturellement : par où commencer ? Comment s'orienter ? Voilà ce que je dis à mes élèves quand ils me posent la question — et je la note ici pour toi.
 
 **Conseil 1 — Le tronc commun d'abord**
 Avant de te spécialiser dans un sous-style, construis le tronc commun jazz :
@@ -447,7 +447,7 @@ Même si tu te spécialises, explorer les autres sous-styles enrichit ta danse :
 - L'afro-jazz apporte le polycentrisme à tous
 
 **Conseil 4 — Regarde les œuvres**
-Chaque sous-style a ses œuvres de référence. Les regarder est aussi important que les pratiquer — je l'écris dans tous mes carnets :
+Chaque sous-style a ses œuvres de référence. Les regarder est aussi important que les pratiquer — je l'écris dans tous mes carnets, sans exception :
 - *West Side Story* → Broadway jazz
 - *Chicago* (film) → Fosse
 - *So You Think You Can Dance* (saisons 1–5) → panorama des styles actuels
@@ -455,9 +455,9 @@ Chaque sous-style a ses œuvres de référence. Les regarder est aussi important
 - Germaine Acogny → Afro-jazz
 
 **Conseil 5 — Comprends l'histoire**
-Chaque sous-style vient de quelque part. Comprendre son histoire, c'est l'honorer.
+Chaque sous-style vient de quelque part. Comprendre son histoire, c'est l'honorer. Et c'est aussi se comprendre soi-même en tant que danseur.
 
-> Il n'y a pas de hiérarchie entre les sous-styles de jazz. Chacun est une façon d'être au monde à travers la danse. Et toi, tu trouveras le tien.`,
+> Il n'y a pas de hiérarchie entre les sous-styles de jazz. Chacun est une façon d'être au monde à travers la danse. Et toi, tu trouveras le tien — j'en suis sûr.`,
       },
     ],
   },

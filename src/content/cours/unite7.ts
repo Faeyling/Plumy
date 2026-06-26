@@ -4,7 +4,7 @@ export const coursUnite7: Cours[] = [
   {
     id: 'intro-cabaret',
     titre: 'Le cabaret — revue, cancan et art du spectacle',
-    resume: "L'univers du cabaret dans toute sa richesse : le french cancan et ses techniques (high kick, fan kick), la chorus line et l'art de la synchronisation, le port du costume et des accessoires (canne, chapeau, boa), la présentation scénique et le rapport au public. J'ai un faible pour le cancan.",
+    resume: "Le french cancan et ses techniques (high kick, fan kick), la chorus line et l'art de la synchronisation, le port du costume et des accessoires (canne, chapeau, boa), la présentation scénique et le rapport au public. J'ai un faible pour le cancan depuis que j'ai compris à quel point c'est physique — dans mes carnets, j'ai des pages entières là-dessus.",
     disciplines: ['cabaret'],
     termesAbordes: [
       'french-cancan', 'high-kick', 'fan-kick', 'chorus-line', 'synchronisation-chorus',
@@ -14,7 +14,7 @@ export const coursUnite7: Cours[] = [
     sections: [
       {
         titre: "Histoire du cabaret — du Moulin Rouge à aujourd'hui",
-        contenuMarkdown: `Le cabaret est né à Paris dans la deuxième moitié du XIXe siècle — et il n'a pas cessé de se réinventer. C'est une des formes de danse dont l'histoire me fascine le plus, parce qu'elle est indissociable de l'histoire sociale et politique de son époque.
+        contenuMarkdown: `Je vais te dire quelque chose sur le cabaret : c'est l'une des formes de danse dont l'histoire me fascine le plus, parce qu'elle est indissociable de l'histoire sociale et politique de son époque. Chaque grande période a eu son cabaret, et chaque cabaret a dit quelque chose que les autres formes d'art ne pouvaient pas dire. Installe-toi — on remonte le temps.
 
 **Les origines :**
 - **1881** : Le Chat Noir (Montmartre) — premier cabaret au sens moderne. Artistes, intellectuels, bohème parisienne.
@@ -33,7 +33,7 @@ export const coursUnite7: Cours[] = [
 - *Chicago* (2002, Rob Marshall) — la revue américaine
 
 **Le cabaret contemporain :**
-Les grandes maisons parisiennes continuent : Moulin Rouge, Lido, Folies Bergère. Mais le "néo-cabaret" existe aussi — plus intimiste, plus diversifié, plus expérimental. L'esprit du cabaret s'adapte à chaque époque.
+Les grandes maisons parisiennes continuent : Moulin Rouge, Lido, Folies Bergère. Mais le "néo-cabaret" existe aussi — plus intimiste, plus diversifié, plus expérimental. L'esprit du cabaret s'adapte à chaque époque. Ce qui m'émerveille, c'est que ça continue.
 
 **Ce qui unit toutes ces formes à travers le temps :**
 - Le spectacle : l'art d'éblouir
@@ -42,7 +42,7 @@ Les grandes maisons parisiennes continuent : Moulin Rouge, Lido, Folies Bergère
       },
       {
         titre: "Le french cancan — technique et histoire",
-        contenuMarkdown: `Le french cancan est la danse la plus iconique au monde — et j'avoue que ça m'intimide un peu d'en parler tant il est chargé d'histoire. C'est aussi l'une des plus exigeantes physiquement. Ne te laisse pas tromper par les sourires.
+        contenuMarkdown: `Parlons du french cancan — et je vais commencer par casser une idée reçue. Derrière les sourires, les jupons et la musique d'Offenbach, il y a une des danses les plus exigeantes physiquement que je connaisse. Ne te laisse pas tromper par l'apparente légèreté. J'ai noté tout ça dans mes carnets parce que ça m'a surpris aussi.
 
 **Histoire du cancan :**
 
@@ -75,11 +75,11 @@ Au Moulin Rouge (ouvert en 1889), La Goulue et Valentin-le-Désossé codifient e
 - Descente en split au sol — signature emblématique. Et oui, c'est autant de physique que ça en a l'air.
 
 **En ligne de chorus :**
-Tout le vocabulaire du cancan se danse en formation — la synchronisation est centrale. Ce qu'une seule danseuse fait est beau ; ce que douze font ensemble est époustouflant.`,
+Tout le vocabulaire du cancan se danse en formation — la synchronisation est centrale. Ce qu'une seule danseuse fait est beau ; ce que douze font ensemble est époustouflant. Tu vas voir.`,
       },
       {
         titre: "La chorus line — art de la synchronisation",
-        contenuMarkdown: `La chorus line est l'image définitive de la revue. Une ligne de danseuses synchronisées est un spectacle à part entière — et ce n'est pas juste de l'alignement géométrique. C'est une discipline en soi.
+        contenuMarkdown: `Voici quelque chose que j'ai mis du temps à comprendre sur la chorus line : une ligne de danseuses synchronisées, ce n'est pas de l'alignement géométrique. C'est une discipline à part entière — peut-être la plus sociale de toutes les disciplines de danse. Et j'adore l'enseigner parce qu'il faut changer d'état d'esprit pour y entrer.
 
 **Histoire de la chorus line — des moments que j'aime raconter :**
 - **1866** : *The Black Crook* (New York) — premières chorus girls
@@ -88,12 +88,12 @@ Tout le vocabulaire du cancan se danse en formation — la synchronisation est c
 - **Moulin Rouge, Lido, Folies Bergère** : les grandes maisons de chorus européens
 
 **Les Bluebell Girls :**
-Fondées par Margaret Kelly ("Bluebell") en 1932, les Bluebell Girls du Lido de Paris sont l'une des troupes les plus célèbres au monde — standards de sélection stricts, formation intensive. Si tu ne les as jamais vues, regarde ça.
+Fondées par Margaret Kelly ("Bluebell") en 1932, les Bluebell Girls du Lido de Paris sont l'une des troupes les plus célèbres au monde — standards de sélection stricts, formation intensive. Si tu ne les as jamais vues, je te dis une chose : regarde ça.
 
 **Principes de la synchronisation — ce que j'ai noté dans mes carnets :**
 
 **L'écoute musicale :**
-La synchronisation commence dans les oreilles, pas dans les yeux. Écouter le pulse ensemble — ne pas regarder les voisines pour se caler (ça crée un délai au lieu de le supprimer).
+La synchronisation commence dans les oreilles, pas dans les yeux. Écouter le pulse ensemble — ne pas regarder les voisines pour se caler (ça crée un délai au lieu de le supprimer). C'est contre-intuitif, mais ça change tout.
 
 **La vision périphérique :**
 En ligne, on voit ses voisines sans tourner la tête. C'est un outil actif, pas un hasard.
@@ -105,11 +105,11 @@ Si l'amplitude diffère, l'image est déséquilibrée. On s'accorde souvent sur 
 Pas seulement la forme — l'énergie, le regard, le sourire doivent être unifiés.
 
 **La répétition comme construction :**
-La synchronisation se construit en répétant ensemble — un seul cours ne suffit pas. C'est un travail de groupe dans la durée. Et c'est ça qui est beau.`,
+La synchronisation se construit en répétant ensemble — un seul cours ne suffit pas. C'est un travail de groupe dans la durée. Et c'est ça qui est beau — vraiment beau.`,
       },
       {
         titre: "Le port du costume et des accessoires",
-        contenuMarkdown: `En cabaret, le costume n'est pas un ajout à la danse. Il *est* la danse. C'est une des choses qui m'a le plus étonné quand j'ai découvert le cabaret : les accessoires ont leur propre technique.
+        contenuMarkdown: `Une des choses qui m'a le plus étonné quand j'ai découvert le cabaret : les accessoires ont leur propre technique. En cabaret, le costume n'est pas un ajout à la danse. Il *est* la danse. Laisse-moi te montrer.
 
 **La canne de cabaret :**
 
@@ -134,7 +134,7 @@ La synchronisation se construit en répétant ensemble — un seul cours ne suff
 
 **Le boa et l'éventail :**
 
-Le boa a une physique propre — il suit le corps avec un délai qu'il faut anticiper et *utiliser*. Ce délai, c'est ta chance de créer quelque chose de beau.
+Le boa a une physique propre — il suit le corps avec un délai qu'il faut anticiper et *utiliser*. Ce délai, c'est ta chance de créer quelque chose de beau. Je note ça dans mes carnets comme une des leçons les plus utiles du cabaret.
 
 **Techniques :**
 - Draper (autour du cou, des épaules)
@@ -151,19 +151,19 @@ Le boa a une physique propre — il suit le corps avec un délai qu'il faut anti
 ---
 
 **Règle d'or — je te la donne gratuitement :**
-Répéter en costume complet dès que possible. Le costume modifie la danse — il faut s'y habituer physiquement. Ce n'est pas anodin.`,
+Répéter en costume complet dès que possible. Le costume modifie la danse — il faut s'y habituer physiquement. Ce n'est vraiment pas anodin, crois-moi.`,
       },
       {
         titre: "Présentation scénique et rapport au public",
-        contenuMarkdown: `La technique est nécessaire. La présentation scénique est ce qui fait le spectacle. Et cette distinction, j'y tiens profondément.
+        contenuMarkdown: `J'y tiens profondément à cette distinction, et je veux que tu l'aies clairement dans la tête : la technique est nécessaire. La présentation scénique est ce qui fait le spectacle. On peut maîtriser tout le reste et rater ça — et alors le public ne "reçoit" rien.
 
 **La présentation scénique — les éléments clés dans mon carnet :**
 
 **Le regard :**
-En cabaret, le regard est actif et dirigé. Vers le public, vers un partenaire imaginaire, vers les coulisses avec mystère — mais jamais "perdu". Un regard qui flotte tue la magie.
+En cabaret, le regard est actif et dirigé. Vers le public, vers un partenaire imaginaire, vers les coulisses avec mystère — mais jamais "perdu". Un regard qui flotte tue la magie. Je l'ai vérifié trop de fois.
 
 **Le sourire :**
-Un sourire habité (qui vient d'une joie réelle de performer) vs un sourire figé (qui vient de la peur). Le public voit la différence — toujours.
+Un sourire habité (qui vient d'une joie réelle de performer) vs un sourire figé (qui vient de la peur). Le public voit la différence — toujours. Tu vas apprendre à sentir la différence sur ton propre visage.
 
 **La projection :**
 L'énergie qui sort du corps vers la salle. Un danseur peut techniquement être parfait et ne rien projeter — alors le public ne "reçoit" rien. La technique sans projection, c'est de la mécanique.

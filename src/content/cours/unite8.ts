@@ -4,7 +4,7 @@ export const coursUnite8: Cours[] = [
   {
     id: 'intro-pole-dance',
     titre: 'La pole dance — technique, styles et progression',
-    resume: "Du grip et des prises aux figures statiques, spins et inversions : comprendre la technique fondamentale du pole, les quatre styles (pole sport, pole art, exotic, pole theatre), le conditioning indispensable à la sécurité, et le floorwork comme discipline à part entière. Il y a plus de technique là-dedans qu'on ne le pense.",
+    resume: "Du grip et des prises aux figures statiques, spins et inversions : comprendre la technique fondamentale du pole, les quatre styles (pole sport, pole art, exotic, pole theatre), le conditioning indispensable à la sécurité, et le floorwork comme discipline à part entière. Il y a bien plus de technique là-dedans qu'on ne le croit — dans mes carnets, ça prend plusieurs pages rien que pour les prises.",
     disciplines: ['pole-dance'],
     termesAbordes: [
       'grip-pole', 'prise-basique', 'montee-pole', 'spin-pole', 'figure-statique',
@@ -14,7 +14,7 @@ export const coursUnite8: Cours[] = [
     sections: [
       {
         titre: "La pole dance — une discipline plurielle",
-        contenuMarkdown: `La pole dance est plusieurs disciplines en une — réunies par la barre, séparées par leur esthétique, leur technique et leurs valeurs. Et je tiens à commencer par ça : il n'y a pas un "vrai" pole dance.
+        contenuMarkdown: `Je veux commencer par une chose que j'ai mise longtemps à comprendre : il n'y a pas un "vrai" pole dance. La barre est une — les disciplines qui s'y accrochent sont plusieurs, et elles sont toutes légitimes. Une fois que tu as ça dans la tête, tout le reste devient plus clair.
 
 **Les quatre grandes familles :**
 
@@ -42,11 +42,11 @@ export const coursUnite8: Cours[] = [
 - **Diamètre** : 40 mm (standard) ou 45 mm (plus accessible pour les grandes mains)
 
 **La communauté pole :**
-La communauté pole est connue pour être particulièrement bienveillante et inclusive — un espace où les corps de toutes formes et tous genres pratiquent ensemble. C'est quelque chose que j'ai vraiment apprécié en la découvrant.`,
+La communauté pole est connue pour être particulièrement bienveillante et inclusive — un espace où les corps de toutes formes et tous genres pratiquent ensemble. C'est quelque chose que j'ai vraiment apprécié en la découvrant. Tu vas voir.`,
       },
       {
         titre: "Grip et prises — la fondation technique",
-        contenuMarkdown: `Le grip est la compétence la plus fondamentale du pole — et celle qui conditionne toute la sécurité. Je ne saurai jamais trop insister là-dessus : sans grip, il n'y a pas de pole.
+        contenuMarkdown: `Le grip, c'est la compétence la plus fondamentale du pole — et celle qui conditionne toute la sécurité. Je ne saurai jamais trop insister là-dessus, alors je le dis clairement : sans grip, il n'y a pas de pole. Tout le reste vient après.
 
 **Comment fonctionne le grip :**
 Le pole dance utilise la friction peau-acier. Pas de prises comme en escalade — juste la peau en contact direct avec la barre. C'est pourquoi la qualité de ta peau (et de la barre) change tout.
@@ -77,12 +77,12 @@ Le pole dance utilise la friction peau-acier. Pas de prises comme en escalade �
 - Dos des genoux (creux poplité)
 - Pieds/chevilles (avancé)
 
-**Les marques — info importante que personne ne t'a dite :**
-Les premières semaines de pole laissent des marques et rougeurs — c'est normal. La peau s'habitue. Ne pas forcer à travers de la douleur *vive*, mais les marques normales ne sont pas dangereuses.`,
+**Les marques — quelque chose que personne ne t'a peut-être dit :**
+Les premières semaines de pole laissent des marques et rougeurs — c'est normal. La peau s'habitue. Ne pas forcer à travers de la douleur *vive*, mais les marques normales ne sont pas dangereuses. On est tous passés par là.`,
       },
       {
         titre: "Montées, spins et figures statiques",
-        contenuMarkdown: `Les trois catégories techniques fondamentales du pole. Ce sont les premières choses que tu vas apprendre — dans cet ordre, et pas dans un autre.
+        contenuMarkdown: `Ce sont les trois catégories techniques fondamentales du pole. Ce sont les premières choses que tu vas apprendre — dans cet ordre, et pas dans un autre. J'ai appris ça à mes dépens, alors je te le donne directement.
 
 ---
 
@@ -98,7 +98,7 @@ Technique d'ascension le long de la barre.
 5. Jambes reprennent appui plus haut
 6. Répéter
 
-**Toujours apprendre la descente avant la montée.** Je le mets en gras parce que c'est important. Vraiment.
+**Toujours apprendre la descente avant la montée.** Je le mets en gras parce que c'est vraiment important. Vraiment.
 
 ---
 
@@ -113,7 +113,7 @@ Corps qui tourne autour de la barre avec un point de contact.
 **Attitude spin :** Une jambe tendue devant, une pliée derrière. Silhouette élégante.
 
 **Principe physique :**
-Jambes proches du corps = rotation plus rapide. Jambes éloignées = rotation plus lente. C'est de la physique pure.
+Jambes proches du corps = rotation plus rapide. Jambes éloignées = rotation plus lente. C'est de la physique pure — et c'est beau à utiliser.
 
 ---
 
@@ -137,7 +137,7 @@ Corps tenu immobile dans une position précise.
       },
       {
         titre: "Inversions — progresser en sécurité",
-        contenuMarkdown: `Les inversions (corps à l'envers) sont les figures les plus impressionnantes du pole — et les plus techniques à apprendre. Je veux qu'on soit clairs sur ce que ça demande avant d'y aller.
+        contenuMarkdown: `Les inversions (corps à l'envers) sont les figures les plus impressionnantes du pole — et les plus techniques à apprendre. Je veux que tu saches exactement ce que ça demande avant d'y aller, parce que cette partie-là ne souffre pas d'approximation.
 
 **Pourquoi les inversions sont-elles différentes ?**
 En inversion, la gravité inverse ses effets sur le corps :
@@ -170,15 +170,15 @@ Inversion avec jambe tendue, corps face à la salle.
 Corps horizontal maintenu uniquement par la force des bras. Plusieurs années de conditioning nécessaires.
 
 **Test de gainage minimal avant l'inversion :**
-Tenir un hollow body (au sol) pendant 10 secondes sans que le bas du dos décolle. C'est le minimum. Vraiment le minimum.`,
+Tenir un hollow body (au sol) pendant 10 secondes sans que le bas du dos décolle. C'est le minimum. Vraiment le minimum — et ça vaut la peine d'y revenir autant de fois qu'il le faut.`,
       },
       {
         titre: "Conditioning, floorwork et les quatre styles",
-        contenuMarkdown: `Les deux piliers qui font la durabilité de la pratique : le conditioning et la connaissance des styles. L'un sans l'autre, c'est incomplet.
+        contenuMarkdown: `Deux piliers qui font la durabilité de la pratique : le conditioning et la connaissance des styles. L'un sans l'autre, c'est incomplet. Je te parle du conditioning en connaissance de cause — c'est ce qui rend tout le reste possible, et ce qu'on est souvent tenté de passer trop vite.
 
 **Le conditioning — pourquoi c'est non-négociable :**
 
-Le pole dance exige une force importante. Sauter le conditioning augmente significativement le risque de blessure — notamment à l'épaule. Je t'en parle en connaissance de cause.
+Le pole dance exige une force importante. Sauter le conditioning augmente significativement le risque de blessure — notamment à l'épaule. C'est dans mes carnets de santé aussi.
 
 **Programme de base (avant chaque séance) :**
 - Hollow body hold : 3 × 20 secondes
@@ -221,18 +221,18 @@ En exotic pole : c'est le cœur du style
   {
     id: 'histoire-culturelle-pole',
     titre: "Histoire et culture du pole dance — celles qui ont tout créé",
-    resume: "L'histoire plurielle et souvent effacée du pole dance : du mallakhamb indien à la barre chinoise de cirque, des bars canadiens des années 1980 à la révolution sportive et artistique contemporaine. Et les femmes — souvent anonymes — qui ont inventé les techniques que la communauté utilise aujourd'hui. C'est une des pages de mes carnets auxquelles je tiens le plus.",
+    resume: "L'histoire plurielle et souvent effacée du pole dance : du mallakhamb indien à la barre chinoise de cirque, des bars canadiens des années 1980 à la révolution sportive et artistique contemporaine. Et les femmes — souvent anonymes — qui ont inventé les techniques que la communauté utilise aujourd'hui. C'est la page de mes carnets à laquelle je tiens le plus dans toute l'Unité 8.",
     disciplines: ['pole-dance'],
     termesAbordes: ['origine-pole', 'pole-sport', 'pole-art', 'exotic-pole'],
     sections: [
       {
         titre: "Des origines multiples",
-        contenuMarkdown: `Le pole dance n'a pas une seule origine — il en a plusieurs, géographiquement et culturellement distinctes. Et il faut les connaître toutes, parce qu'elles éclairent la pratique d'aujourd'hui d'une façon que rien d'autre ne peut faire.
+        contenuMarkdown: `J'ai passé beaucoup de temps sur cette page de mes carnets, parce que le pole dance n'a pas une seule origine — il en a plusieurs, géographiquement et culturellement distinctes. Il faut les connaître toutes, parce qu'elles éclairent la pratique d'aujourd'hui d'une façon que rien d'autre ne peut faire. Et parce qu'une histoire racontée à moitié, c'est une histoire déformée.
 
 **Le mallakhamb (Inde, XIIe siècle) :**
 Le mot "malla" (athlète) + "khamb" (poteau). Discipline de lutteurs indiens — acrobaties, flexibilité et force sur un poteau de bois. Utilisé comme entraînement, pas comme performance érotique.
 
-Aujourd'hui, le mallakhamb est un sport national en Inde, avec ses propres compétitions et fédérations. Il est totalement distinct du pole dance occidental dans son contexte — et il serait faux de les confondre.
+Aujourd'hui, le mallakhamb est un sport national en Inde, avec ses propres compétitions et fédérations. Il est totalement distinct du pole dance occidental dans son contexte — et il serait faux de les confondre. Je note ce point parce que beaucoup l'ignorent, et que l'ignorer fait du mal à tout le monde.
 
 **La barre chinoise (cirque) :**
 Dans la tradition du cirque chinois et européen, les numéros sur barres verticales existent depuis des siècles — haute virtuosité, contexte familial.
@@ -243,11 +243,11 @@ Les "hoochy koochy dancers" utilisaient des structures (dont des barres) dans de
 **La divergence des histoires — ce qui compte vraiment :**
 Ces origines multiples montrent que l'acrobatie sur barre verticale a été inventée indépendamment dans plusieurs cultures — pour des raisons différentes (athlétisme, cirque, divertissement adulte).
 
-Ce qui rend le pole dance moderne unique, c'est la synthèse de ces héritages dans une pratique accessible, codifiée et mondialisée. Mais cette synthèse n'efface pas les origines — elle les porte.`,
+Ce qui rend le pole dance moderne unique, c'est la synthèse de ces héritages dans une pratique accessible, codifiée et mondialisée. Mais cette synthèse n'efface pas les origines — elle les porte. Et c'est à nous de les porter honnêtement.`,
       },
       {
         titre: "L'Amérique du Nord — naissance du pole dance moderne",
-        contenuMarkdown: `Le pole dance tel qu'on le connaît — avec barre verticale, studio, enseignement — est né en Amérique du Nord dans les années 1980. Et je veux que tu saches exactement comment, parce que cette histoire a souvent été racontée de manière incomplète ou inexacte.
+        contenuMarkdown: `Je veux que tu saches exactement comment le pole dance moderne est né, parce que cette histoire a souvent été racontée de manière incomplète ou inexacte — et que l'inexactitude fait du tort à des femmes qui méritent mieux. Alors voilà ce que j'ai dans mes carnets.
 
 **Les bars canadiens (années 1980) :**
 Dans des bars pour adultes canadiens (notamment en Ontario), des danseuses commencent à utiliser une barre verticale fixée au sol et au plafond pour leurs performances. Ce contexte — souvent réduit à "strip-club" dans les récits — est plus complexe : c'est un espace de travail artistique et physique où des femmes ont développé des techniques. Ces femmes méritent d'être reconnues comme des innovatrices.
@@ -258,14 +258,14 @@ Danseuse et instructrice canadienne, souvent citée comme pionnière de l'enseig
 **La révolution fitness (années 1990–2000) :**
 Des instructrices en Australie (Bobbi Douglas), au Royaume-Uni commencent à proposer des cours de pole dans un cadre fitness — pour toutes, dans un contexte non-adulte.
 
-Cette "respectabilisation" est un mouvement complexe : elle a rendu le pole accessible à des millions de personnes, mais elle a parfois effacé ou marginalisé les origines et les travailleuses qui avaient développé les techniques. C'est une tension que la communauté discute encore.
+Cette "respectabilisation" est un mouvement complexe : elle a rendu le pole accessible à des millions de personnes, mais elle a parfois effacé ou marginalisé les origines et les travailleuses qui avaient développé les techniques. C'est une tension que la communauté discute encore — et que j'estime importante à connaître.
 
 **Les pionnières souvent oubliées :**
 De nombreuses danseuses — souvent sans nom dans l'histoire écrite — ont développé dans les années 1980–1990 des techniques de montée, de figure et de floorwork que la communauté utilise aujourd'hui. Les honorer, c'est écrire une histoire plus juste.`,
       },
       {
         titre: "La révolution sportive et artistique",
-        contenuMarkdown: `Les années 2000–2020 voient le pole dance exploser en termes de reconnaissance, de diversité et de niveau technique. Quand je regarde les championnats actuels, je me demande parfois ce que les pionnières des années 1980 penseraient.
+        contenuMarkdown: `Les années 2000–2020 voient le pole dance exploser en termes de reconnaissance, de diversité et de niveau technique. Quand je regarde les championnats actuels, je me demande parfois ce que les pionnières des années 1980 penseraient. J'espère qu'elles seraient fières — et j'espère qu'elles se reconnaîtraient.
 
 **La révolution sportive :**
 
@@ -288,16 +288,16 @@ Les artistes de pole art repoussent les frontières de ce que la barre peut expr
 Dans les années 2010, des danseuses — notamment russes — révolutionnent l'exotic pole avec un niveau de floorwork, de technicité de corps et de maîtrise de chaussures à plateau jamais vu. L'exotic devient une discipline avec ses propres compétitions mondiales.
 
 **Le débat politique dans la communauté :**
-La question "faut-il désexualiser le pole pour l'accepter socialement ?" divise la communauté depuis des années. Certains voient le mouvement sportif comme une légitimation nécessaire. D'autres critiquent l'effacement des origines et la stigmatisation de l'exotic. Je n'ai pas de réponse toute faite — mais la question mérite d'être posée.`,
+La question "faut-il désexualiser le pole pour l'accepter socialement ?" divise la communauté depuis des années. Certains voient le mouvement sportif comme une légitimation nécessaire. D'autres critiquent l'effacement des origines et la stigmatisation de l'exotic. Je n'ai pas de réponse toute faite — mais la question mérite d'être posée, et tu mérites de l'avoir en main.`,
       },
       {
         titre: "Celles qui ont créé — honorer les pionnières",
-        contenuMarkdown: `Une histoire honnête du pole dance ne peut pas être racontée sans parler de celles qui l'ont inventé. C'est la page de mes carnets à laquelle je tiens le plus dans toute l'Unité 8.
+        contenuMarkdown: `C'est la page de mes carnets à laquelle je tiens le plus dans toute l'Unité 8. Une histoire honnête du pole dance ne peut pas être racontée sans parler de celles qui l'ont inventé. Alors voilà ce que j'écris — et ce que je veux que tu gardes avec toi.
 
 **Le problème de l'effacement :**
 Quand le pole dance a commencé à être "mainstream" (cours en studio, compétitions, YouTube), il s'est souvent présenté comme né de nulle part — ou comme une invention récente du fitness.
 
-Cette narration efface les femmes — souvent travailleuses du sexe, souvent noires, racisées et/ou LGBTQ+, souvent marginalisées — qui ont développé pendant des décennies les techniques de grip, de figure et de floorwork que la communauté utilise aujourd'hui.
+Cette narration efface les femmes — souvent travailleuses du sexe, souvent noires, racisées et/ou LGBTQ+, souvent marginalisées — qui ont développé pendant des décennies les techniques de grip, de figure et de floorwork que la communauté utilise aujourd'hui. Ce whitewashing fait du tort à des personnes réelles, et je refuse d'y participer dans mes carnets.
 
 **Pourquoi c'est important :**
 - Ces femmes méritent d'être reconnues dans l'histoire de leur discipline
@@ -315,7 +315,7 @@ Cette narration efface les femmes — souvent travailleuses du sexe, souvent noi
 **Les travailleuses du sexe anonymes :** Des milliers de femmes qui, dans les années 1980–1990, ont développé les techniques fondamentales sans jamais être nommées dans les livres d'histoire.
 
 **Le mouvement "Sex Worker Rights" dans la communauté pole :**
-Un mouvement croissant dans la communauté pole milite pour que les travailleuses du sexe — passées et présentes — soient reconnues, respectées et soutenues dans leur travail. J'y suis sensible, et tu devrais l'être aussi.
+Un mouvement croissant dans la communauté pole milite pour que les travailleuses du sexe — passées et présentes — soient reconnues, respectées et soutenues dans leur travail. J'y suis sensible, et j'espère que toi aussi.
 
 > Chaque fois que tu montes sur une barre, tu te tiens sur les épaules de celles qui ont appris avant toi — souvent dans des conditions bien moins glamour que ton studio de pole. Connaître leur histoire, c'est pratiquer avec gratitude.`,
       },

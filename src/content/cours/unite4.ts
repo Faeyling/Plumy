@@ -4,7 +4,7 @@ export const coursUnite4: Cours[] = [
   {
     id: 'intro-moderne',
     titre: 'La danse moderne — héritage, techniques et langage',
-    resume: "La danse moderne n'est pas un style unique mais une révolution — et j'ai mis du temps à comprendre ça. Le travail du buste (flat back, hinge, ondulation), les isolations et la segmentation corporelle, les trois grandes techniques pédagogiques (Horton, Cunningham, Limón), et les outils de composition que sont le canon et l'unisson : tout est dans mes carnets.",
+    resume: "La danse moderne n'est pas un style unique mais une révolution — et j'ai mis du temps à comprendre ça. Le travail du buste (flat back, hinge, ondulation), les isolations et la segmentation corporelle, les trois grandes techniques pédagogiques (Horton, Cunningham, Limón), et les outils de composition que sont le canon et l'unisson : tout est dans mes carnets, annoté, raturé, complété au fil des années.",
     disciplines: ['moderne'],
     termesAbordes: [
       'isolation', 'succession-corporelle', 'opposition-corps',
@@ -16,7 +16,7 @@ export const coursUnite4: Cours[] = [
     sections: [
       {
         titre: "Qu'est-ce que la danse moderne ?",
-        contenuMarkdown: `La danse moderne est née au début du XXe siècle comme une **rupture** avec la danse académique — pas une évolution, une révolution. Ce que j'aime dans cette histoire, c'est que ce sont essentiellement des femmes qui ont tout cassé et tout reconstruit.
+        contenuMarkdown: `La danse moderne est née au début du XXe siècle comme une **rupture** avec la danse académique — pas une évolution, une révolution. Ce que j'aime dans cette histoire, c'est que ce sont essentiellement des femmes qui ont tout cassé et tout reconstruit. Ça méritait que je leur consacre un chapitre entier dans mes carnets.
 
 **Ce qui a déclenché la rupture :**
 - Le rejet des pointes et du turn-out obligatoire
@@ -50,7 +50,7 @@ Merce Cunningham, puis les artistes du Judson Dance Theater (Yvonne Rainer, Stev
       },
       {
         titre: 'Les isolations et la segmentation corporelle',
-        contenuMarkdown: `L'une des contributions les plus distinctives de la danse moderne est la **segmentation consciente** du corps — la capacité à activer et contrôler chaque partie indépendamment. C'est aussi l'une des choses les plus difficiles à maîtriser, et des plus satisfaisantes quand ça vient.
+        contenuMarkdown: `L'une des contributions les plus distinctives de la danse moderne est la **segmentation consciente** du corps — la capacité à activer et contrôler chaque partie indépendamment. C'est aussi l'une des choses les plus difficiles à maîtriser, et des plus satisfaisantes quand ça vient. Je me souviens encore de la première fois où ma cage thoracique a bougé toute seule.
 
 **L'isolation corporelle :**
 Mouvement d'une seule partie du corps pendant que le reste reste immobile. Ce n'est pas une invention de la danse moderne — c'est un héritage des **traditions africaines et afro-américaines** que la danse moderne a intégré et codifié. Il faut le dire clairement.
@@ -79,7 +79,7 @@ L'impulsion voyage séquentiellement à travers les segments — comme une vague
       },
       {
         titre: 'Le travail du buste — flat back, hinge, ondulation',
-        contenuMarkdown: `La danse moderne a développé un vocabulaire spécifique pour le travail du buste qui n'a pas d'équivalent dans la technique classique. Ce sont trois des premières choses que j'ai notées soigneusement dans mon carnet quand j'ai découvert la technique Horton.
+        contenuMarkdown: `La danse moderne a développé un vocabulaire spécifique pour le travail du buste qui n'a pas d'équivalent dans la technique classique. Ce sont trois des premières choses que j'ai notées soigneusement dans mon carnet quand j'ai découvert la technique Horton — et je les ai pratiquées des heures avant de les sentir vraiment.
 
 ---
 
@@ -121,7 +121,7 @@ L'impression de continuité — chaque segment répond au précédent avec un l�
 
 ---
 
-**Comparaison des trois :**
+**Comparaison des trois — je la recopie ici parce que je la consulte souvent :**
 | | Flat back | Hinge | Ondulation |
 |---|---|---|---|
 | **Direction** | En avant / latéral | En arrière | Verticale |
@@ -133,8 +133,8 @@ L'impression de continuité — chaque segment répond au précédent avec un l�
 > Le buste en danse moderne n'est pas un bloc rigide qui se déplace dans l'espace. Il *parle* — chaque inclinaison, chaque vague, chaque torsion est une phrase du corps. Apprends sa grammaire.`,
       },
       {
-        titre: 'Les trois grandes techniques modernes',
-        contenuMarkdown: `Trois pédagogies ont structuré l'enseignement de la danse moderne et continuent d'être enseignées dans le monde entier. J'ai consacré un chapitre entier de mes carnets à chacune — voici ce que tu dois absolument retenir.
+        titre: 'Les trois grandes techniques modernes — mes trois bibles',
+        contenuMarkdown: `Trois pédagogies ont structuré l'enseignement de la danse moderne et continuent d'être enseignées dans le monde entier. J'ai consacré un chapitre entier de mes carnets à chacune — voici ce que tu dois absolument retenir. Et si tu ne devais en étudier qu'une pour commencer, je te laisserais choisir : elles te diront chacune quelque chose de différent sur toi-même.
 
 ---
 
@@ -192,7 +192,7 @@ Les œuvres de Limón traitent de la condition humaine, de la liberté, de la r�
       },
       {
         titre: 'Canon et unisson — composer avec le temps',
-        contenuMarkdown: `La danse moderne a apporté une réflexion nouvelle sur la **composition chorégraphique** — comment organiser les corps dans l'espace et le temps. J'ai deux outils fondamentaux à te présenter : le canon et l'unisson. Des outils simples en apparence, redoutablement complexes à maîtriser.
+        contenuMarkdown: `La danse moderne a apporté une réflexion nouvelle sur la **composition chorégraphique** — comment organiser les corps dans l'espace et le temps. J'ai deux outils fondamentaux à te présenter : le canon et l'unisson. Des outils simples en apparence, redoutablement complexes à maîtriser — et terriblement beaux quand ils sont bien utilisés.
 
 ---
 
@@ -230,7 +230,7 @@ Plusieurs danseurs réalisent la même phrase à des **moments différents** —
 - La possibilité de remplir l'espace avec peu de matériel
 - Une **conversation** entre les danseurs
 
-**Référence incontournable :**
+**Référence incontournable — je l'ai dans mes carnets avec trois étoiles :**
 *Fase* d'Anne Teresa De Keersmaeker et Steve Reich (1982) — un chef-d'œuvre de canon où deux danseuses exécutent la même phrase avec un léger décalage pendant toute la durée de la pièce. Regarde-la. Tu ne pourras plus jamais voir un canon de la même façon.
 
 ---
@@ -241,7 +241,7 @@ En plus du canon et de l'unisson, l'opposition est un outil de composition *dans
 
 ---
 
-> Canon et unisson sont les deux faces d'une même médaille : comment les corps communiquent à travers le temps — ensemble ou en décalé. Avec ces deux outils et une bonne phrase de mouvement, tu peux faire une pièce entière.`,
+> Canon et unisson sont les deux faces d'une même médaille : comment les corps communiquent à travers le temps — ensemble ou en décalé. Avec ces deux outils et une bonne phrase de mouvement, tu peux faire une pièce entière. C'est ça qui est beau dans la composition.`,
       },
     ],
   },

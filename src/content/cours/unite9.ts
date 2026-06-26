@@ -4,7 +4,7 @@ export const coursUnite9: Cours[] = [
   {
     id: 'intro-burlesque',
     titre: "L'effeuillage burlesque — art, histoire et technique",
-    resume: "Le burlesque est bien plus qu'un déshabillage : c'est un art du tease, du personnage et du rapport au public. Comprendre l'effeuillage progressif, le timing comique, la construction d'un character, les accessoires (gants, boa, éventail), et la dimension politique du néo-burlesque contemporain. C'est une discipline qui ne ressemble à aucune autre.",
+    resume: "Le burlesque m'a longtemps fasciné, et j'ai des carnets entiers là-dessus. C'est bien plus qu'un déshabillage : c'est un art du tease, du personnage et du rapport au public — avec un timing comique digne des meilleurs vaudevillistes. Effeuillage progressif, construction d'un character, accessoires (gants, boa, éventail), dimension politique du néo-burlesque : je t'emmène dans une discipline qui ne ressemble vraiment à aucune autre.",
     disciplines: ['burlesque'],
     termesAbordes: [
       'effeuillage', 'tease', 'character-burlesque', 'shimmy', 'bump-grind',
@@ -13,7 +13,7 @@ export const coursUnite9: Cours[] = [
     sections: [
       {
         titre: "Histoire du burlesque — des origines au néo-burlesque",
-        contenuMarkdown: `Le burlesque a une histoire longue et complexe — et une résurgence contemporaine qui lui donne un sens entièrement nouveau. C'est une des disciplines dont j'ai le plus aimé retracer l'histoire dans mes carnets.
+        contenuMarkdown: `Le burlesque a une histoire longue et complexe — et une résurgence contemporaine qui lui donne un sens entièrement nouveau. C'est une des disciplines dont j'ai le plus aimé retracer l'histoire dans mes carnets. Accroche-toi, on remonte loin.
 
 **Les origines du mot :**
 "Burlesque" vient de l'italien *burla* (plaisanterie, moquerie) via le français. À l'origine, c'est une forme littéraire et théâtrale qui parodie en exagérant. Pas de nudité — juste de l'humour.
@@ -39,7 +39,7 @@ Né à New York et San Francisco, une nouvelle génération réinvente le burles
       },
       {
         titre: "L'art du tease — la technique de la suggestion",
-        contenuMarkdown: `Le burlesque n'est pas du striptease. La différence — et j'insiste là-dessus — c'est que dans le burlesque, ce qu'on ne montre *pas* est plus puissant que ce qu'on montre.
+        contenuMarkdown: `Le burlesque n'est pas du striptease. La différence — et j'insiste là-dessus dans mes carnets avec trois étoiles dans la marge — c'est que dans le burlesque, ce qu'on ne montre *pas* est plus puissant que ce qu'on montre. C'est tout l'art.
 
 **Le tease comme dialogue :**
 Le public veut quelque chose. L'artiste le sait — et joue avec cette attente. Le tease, c'est l'art de promettre et de retarder la livraison. C'est du théâtre pur.
@@ -68,11 +68,11 @@ Les moments de tease efficaces se répètent souvent 3 fois :
 3. Subversion (le public est surpris)
 
 **Un exercice que j'adore donner :**
-Prends un gant. Essaie de prendre 2 minutes pour le retirer en utilisant hold, misdirection et slow reveal. 2 minutes, c'est un bon tease. Et tu verras, c'est plus difficile que ça en a l'air.`,
+Prends un gant. Essaie de prendre 2 minutes pour le retirer en utilisant hold, misdirection et slow reveal. 2 minutes, c'est un bon tease. Et tu verras, c'est plus difficile que ça en a l'air — mais tellement jouissif quand ça marche.`,
       },
       {
         titre: "Le personnage — construire son alter-ego",
-        contenuMarkdown: `Le burlesque se danse avec un personnage. Sans personnage, c'est du déshabillage. Avec un personnage, c'est de l'art. C'est la distinction qui me tient le plus à cœur dans toute cette unité.
+        contenuMarkdown: `Le burlesque se danse avec un personnage. Sans personnage, c'est du déshabillage. Avec un personnage, c'est de l'art. C'est la distinction qui me tient le plus à cœur dans toute cette unité — et si tu ne retiens qu'une chose de mes carnets sur le burlesque, que ce soit ça.
 
 **Pourquoi un personnage ?**
 
@@ -100,11 +100,11 @@ Un geste, une façon de marcher, un tic qui appartient uniquement à ton personn
 Qui est ce personnage ? Quel est son passé ? Qu'est-ce qu'il veut ce soir ? Ces réponses ne seront pas visibles directement — mais elles nourriront tout.
 
 **Le nom de scène :**
-Presque tous les artistes burlesque ont un nom de scène — c'est l'identité publique du personnage. Et parfois, choisir ce nom est le moment où le personnage devient vraiment réel.`,
+Presque tous les artistes burlesque ont un nom de scène — c'est l'identité publique du personnage. Et parfois, choisir ce nom est le moment où le personnage devient vraiment réel. J'aime beaucoup ce moment-là.`,
       },
       {
         titre: "Shimmy, bump and grind et accessoires",
-        contenuMarkdown: `Les éléments techniques signature du burlesque. Des choses simples à expliquer, complexes à maîtriser, et absolument jouissives à exécuter.
+        contenuMarkdown: `Voilà les éléments techniques signature du burlesque. Des choses simples à expliquer, complexes à maîtriser, et absolument jouissives à exécuter — je t'assure que même moi j'ai mis du temps à avoir un shimmy qui tient la route.
 
 ---
 
@@ -155,7 +155,7 @@ Point fixe pour le jeu de scène, les poses, les moments de connivence avec le p
       },
       {
         titre: "Le néo-burlesque — dimension politique et liberté",
-        contenuMarkdown: `Le néo-burlesque contemporain n'est pas seulement une forme artistique — c'est un acte politique. Et cette dimension m'importe profondément.
+        contenuMarkdown: `Le néo-burlesque contemporain n'est pas seulement une forme artistique — c'est un acte politique. Et cette dimension m'importe profondément. Je voulais te la transmettre avec le soin qu'elle mérite.
 
 **Ce que le néo-burlesque affirme :**
 
@@ -184,7 +184,7 @@ Le burlesque est-il féministe ? Le débat est ouvert — et c'est normal qu'il 
 **La performance du genre :**
 Le burlesque joue avec les codes du genre — les hommes en burlesque, les artistes non-binaires, les drag performers — remettant en question ce que "séduire" et "se révéler" signifient selon les corps et les identités.
 
-> Le burlesque à son meilleur est une déclaration d'indépendance — celle de quelqu'un qui décide de ses propres termes d'existence dans le regard des autres. Je ne connais pas de définition plus belle.`,
+> Le burlesque à son meilleur est une déclaration d'indépendance — celle de quelqu'un qui décide de ses propres termes d'existence dans le regard des autres. Je ne connais pas de définition plus belle. Et je l'ai notée dans mes carnets en gros caractères.`,
       },
     ],
   },

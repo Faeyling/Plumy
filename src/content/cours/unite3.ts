@@ -4,7 +4,7 @@ export const coursUnite3: Cours[] = [
   {
     id: 'intro-contemporain',
     titre: 'La danse contemporaine — corps, espace et liberté',
-    resume: "Comprendre la danse contemporaine de l'intérieur : rapport à la gravité, techniques de release, travail au sol, contact improvisation, pratiques somatiques et composition. Tout ce qui différencie un corps contemporain d'un corps classique — et j'ai beaucoup à te dire là-dessus.",
+    resume: "Comprendre la danse contemporaine de l'intérieur : rapport à la gravité, techniques de release, travail au sol, contact improvisation, pratiques somatiques et composition. Tout ce qui différencie un corps contemporain d'un corps classique — et j'ai beaucoup à te dire là-dessus. Dans mes carnets, j'ai des pages entières sur chacun de ces territoires.",
     disciplines: ['contemporain'],
     termesAbordes: [
       'release-technique', 'poids-abandon', 'gravite-contemporain',
@@ -15,7 +15,7 @@ export const coursUnite3: Cours[] = [
     sections: [
       {
         titre: "Qu'est-ce que la danse contemporaine ?",
-        contenuMarkdown: `Ce que j'adore dans la danse contemporaine, c'est qu'elle résiste à la définition — et c'est volontaire. Elle s'est construite précisément contre les cases fermées.
+        contenuMarkdown: `Ce que j'adore dans la danse contemporaine, c'est qu'elle résiste à la définition — et c'est volontaire. Elle s'est construite précisément contre les cases fermées. Chaque fois que tu penses l'avoir cernée, elle glisse ailleurs. C'est toute sa beauté.
 
 **Ce qu'elle n'est pas :**
 - Un style esthétique unique (il n'existe pas de "technique contemporaine" universelle comme la technique classique)
@@ -40,11 +40,11 @@ export const coursUnite3: Cours[] = [
 - La dimension de questionnement (artistique, social, politique)
 - L'importance accordée au processus autant qu'au résultat
 
-> Ce qui m'a touché dans le contemporain, c'est ça : on te demande de penser, pas juste d'exécuter. Ça change tout.`,
+> Ce qui m'a touché dans le contemporain, c'est ça : on te demande de penser, pas juste d'exécuter. Ça change tout — promis.`,
       },
       {
         titre: 'Le corps contemporain — un rapport différent à la gravité',
-        contenuMarkdown: `La différence fondamentale entre le corps classique et le corps contemporain tient à leur rapport à la **gravité** — et quand j'ai compris ça, tout le contemporain s'est mis à faire sens.
+        contenuMarkdown: `La différence fondamentale entre le corps classique et le corps contemporain tient à leur rapport à la **gravité** — et quand j'ai compris ça, tout le contemporain s'est mis à faire sens. Tu vas voir, c'est une de ces clés qui déverrouillent des pans entiers.
 
 **Corps classique :**
 - Lutte contre la gravité (élévation, légèreté, pointes)
@@ -58,7 +58,7 @@ export const coursUnite3: Cours[] = [
 - Le sol est un espace de danse à part entière
 - Esthétique de la fluidité, de la rupture, de la diversité
 
-**Les trois axes que j'utilise pour m'orienter :**
+**Les trois axes que j'utilise pour m'orienter — je les ai redessinés une dizaine de fois dans mes carnets avant de les avoir vraiment en tête :**
 
 **1. Axe vertical** (partagé avec le classique)
 Tu es debout, l'axe passe du sommet du crâne au milieu des pieds. Mais en contemporain, cet axe peut s'incliner, se courber, se tordre — et c'est là que ça devient intéressant.
@@ -72,8 +72,8 @@ Le corps penché, en déséquilibre volontaire — entre verticale et horizontal
 > La richesse du corps contemporain vient de sa capacité à habiter tous ces axes, à passer de l'un à l'autre, à trouver du sens dans chacun. Ne choisis pas : explore-les tous.`,
       },
       {
-        titre: 'La release technique et le travail de relâchement',
-        contenuMarkdown: `La **release technique** est l'une des approches les plus répandues en danse contemporaine — et aussi l'une des moins bien comprises. Je vais mettre les choses au clair, parce que j'ai longtemps eu des idées floues là-dessus.
+        titre: 'La release technique — moins tu forces, plus tu bouges',
+        contenuMarkdown: `La **release technique** est l'une des approches les plus répandues en danse contemporaine — et aussi l'une des moins bien comprises. Je vais mettre les choses au clair, parce que j'ai longtemps eu des idées floues là-dessus, et je ne veux pas que tu perdes le temps que j'ai perdu.
 
 **Ce que ce n'est pas :**
 - De la relaxation (tu restes pleinement actif·ve)
@@ -91,7 +91,7 @@ Le corps penché, en déséquilibre volontaire — entre verticale et horizontal
 3. Observe sans juger : est-ce que tu tiens quelque chose ? Est-ce que ça peut se relâcher ?
 4. Libère les zones de tension non nécessaires — juste elles
 
-**Les tensions que je retrouve chez presque tout le monde :**
+**Les tensions que je retrouve chez presque tout le monde — et que j'ai moi-même dû apprendre à lâcher :**
 - Mâchoire serrée (classique)
 - Épaules soulevées (encore plus classique)
 - Ventre contracté en permanence
@@ -100,13 +100,13 @@ Le corps penché, en déséquilibre volontaire — entre verticale et horizontal
 **L'anatomie comme outil :**
 La release technique s'appuie sur une connaissance anatomique — comprendre comment les os s'articulent te permet de trouver des positions naturellement stables, sans effort musculaire excessif.
 
-> Moins tu forces, plus tu bouges. C'est contre-intuitif, mais c'est vrai. Fais-moi confiance.`,
+> Moins tu forces, plus tu bouges. C'est contre-intuitif, mais c'est vrai. Fais-moi confiance là-dessus.`,
       },
       {
-        titre: 'La contraction-release et le travail Graham',
+        titre: 'La contraction-release — le souffle qui danse',
         contenuMarkdown: `**Martha Graham** (1894–1991) — si tu ne connais qu'un nom dans l'histoire de la danse moderne, que ce soit le sien. Elle a créé une des techniques les plus complètes et les plus codifiées qui soit. Son principe central : **la contraction et le release**.
 
-J'ai une page entière dans mon carnet rien que pour ça, parce que ce principe va bien au-delà de la technique Graham — il est partout.
+J'ai une page entière dans mon carnet rien que pour ça, parce que ce principe va bien au-delà de la technique Graham — il est partout, dans presque tout ce qu'on danse.
 
 **La contraction :**
 - Creusement actif du bas-ventre et du bas du dos
@@ -142,7 +142,7 @@ La respiration *génère* le mouvement — elle n'est pas superposée à un mouv
       },
       {
         titre: 'Le travail au sol — floorwork, chutes et roulades',
-        contenuMarkdown: `Le travail au sol est l'une des compétences les plus distinctives de la danse contemporaine — et franchement, une des plus libératrices. Quand tu apprivoises le sol, tu gagnes un espace entier que la plupart des danseurs ignorent.
+        contenuMarkdown: `Le travail au sol est l'une des compétences les plus distinctives de la danse contemporaine — et franchement, une des plus libératrices. Quand tu apprivoises le sol, tu gagnes un espace entier que beaucoup de danseurs ignorent. Moi, ça m'a pris du temps, et puis un jour j'ai arrêté de le craindre. Tu vas voir, ça vient.
 
 Voici la progression que j'ai dans mes carnets, et qui fonctionne vraiment bien :
 
@@ -171,7 +171,7 @@ Combine roulades, transitions, chutes en des phrases fluides. C'est là que le s
       },
       {
         titre: 'Le contact improvisation — écouter avec le corps',
-        contenuMarkdown: `Le **contact improvisation** — Steve Paxton, 1972 — est une des pratiques qui m'a le plus ouvert les yeux sur ce que peut être la danse. Elle a révolutionné le contemporain, et elle se pratique encore intensément aujourd'hui dans des jams du monde entier. J'en ai fait, et je peux te dire que rien ne prépare vraiment à la première fois.
+        contenuMarkdown: `Le **contact improvisation** — Steve Paxton, 1972 — est une des pratiques qui m'a le plus ouvert les yeux sur ce que peut être la danse. Elle a révolutionné le contemporain, et elle se pratique encore intensément aujourd'hui dans des jams du monde entier. J'en ai fait, et je peux te dire que rien ne prépare vraiment à la première fois — mais que tu vas adorer.
 
 **Les principes fondamentaux :**
 
@@ -204,7 +204,7 @@ Des sessions ouvertes, souvent hebdomadaires, dans la plupart des grandes villes
       },
       {
         titre: "L'improvisation et la composition — créer en mouvement",
-        contenuMarkdown: `La frontière entre improvisation et composition est l'un des terrains les plus fertiles de la danse contemporaine — et aussi l'un des plus mal compris. Laisse-moi clarifier ça.
+        contenuMarkdown: `La frontière entre improvisation et composition est l'un des terrains les plus fertiles de la danse contemporaine — et aussi l'un des plus mal compris. Laisse-moi clarifier ça, parce que j'ai entendu trop de gens se bloquer sur cette fausse opposition.
 
 **Improvisation ≠ faire n'importe quoi**
 Une bonne improvisation en danse est informée par :
@@ -220,7 +220,7 @@ Le score (partition d'improvisation) donne un cadre sans fixer le contenu. Voici
 - "Quand je touche un mur, je change de direction"
 - "Je commence chaque phrase par une immobilité"
 
-Ces contraintes semblent limitantes — elles sont en réalité libératrices. Moins tu as de choix, plus ton mouvement est précis.
+Ces contraintes semblent limitantes — elles sont en réalité libératrices. Moins tu as de choix, plus ton mouvement est précis. Je l'ai vérifié des dizaines de fois.
 
 **La phrase de mouvement comme matériau :**
 Même en improvisation, tu peux utiliser des **phrases mémorisées** comme matériau — les modifier, les interrompre, les combiner avec du mouvement libre. C'est de la composition en temps réel.
