@@ -200,7 +200,7 @@ export function AssociationSession() {
 
   return (
     <div className="flex flex-col min-h-svh">
-      <header className="px-5 pt-10 pb-4 bg-gradient-to-b from-[#e3f2fd] to-[var(--color-plumy-bg)]">
+      <header className="px-5 pt-10 pb-4 bg-white">
         <button
           onClick={() => navigate(`/unite/${numUnite}`)}
           className="flex items-center gap-1 text-[var(--color-gris-texte)] text-sm mb-4"

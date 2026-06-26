@@ -82,7 +82,7 @@ export function TermePage() {
       </AnimatePresence>
 
       {/* En-tête */}
-      <header className="bg-gradient-to-b from-[var(--color-candy-bleu-light)] to-[var(--color-plumy-bg)] px-5 pt-12 pb-6">
+      <header className="bg-white px-5 pt-12 pb-6">
         <div className="flex items-center justify-between mb-4">
           <button
             onClick={() => navigate(-1)}

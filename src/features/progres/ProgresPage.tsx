@@ -42,7 +42,7 @@ export function ProgresPage() {
 
   return (
     <div className="flex flex-col min-h-svh">
-      <header className="px-5 pt-10 pb-6 bg-gradient-to-b from-[var(--color-candy-lavande-light)] to-[var(--color-plumy-bg)]">
+      <header className="px-5 pt-10 pb-6 bg-white">
         <div className="flex items-center gap-4">
           <PluмyMascot etat={stats && stats.points > 0 ? 'reussite' : 'accueil'} taille={72} />
           <div>

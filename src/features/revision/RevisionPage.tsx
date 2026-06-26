@@ -51,7 +51,7 @@ export function RevisionPage() {
 
   return (
     <div className="flex flex-col min-h-svh">
-      <header className="px-5 pt-10 pb-6 bg-gradient-to-b from-[#fce4ec] to-[var(--color-plumy-bg)]">
+      <header className="px-5 pt-10 pb-6 bg-white">
         <button
           onClick={() => navigate(-1)}
           className="flex items-center gap-1 text-[var(--color-gris-texte)] text-sm mb-4"
