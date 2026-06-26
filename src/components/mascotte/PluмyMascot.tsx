@@ -29,6 +29,7 @@ const PNG_ETATS: Partial<Record<PluмyEtat, string>> = {
   reussite: '/mascotte/plumy-reussite.png',
   echec: '/mascotte/plumy-echec.png',
   repos: '/mascotte/plumy-repos.png',
+  retour: '/mascotte/plumy-retour.png',
 }
 
 // Pivot de la crête (sommet de la tête)

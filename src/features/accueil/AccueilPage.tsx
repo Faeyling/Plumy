@@ -15,6 +15,7 @@ function pickRandom<T>(arr: readonly T[]): T {
 }
 
 const iconeIllustration: Partial<Record<string, string>> = {
+  'corps-qui-danse': '/mascotte/plumy-corps-qui-danse.png',
   'histoire-danse': '/mascotte/plumy-histoire.png',
   classique: '/mascotte/plumy-classique.png',
   contemporain: '/mascotte/plumy-contemporain.png',
