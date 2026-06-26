@@ -57,7 +57,7 @@ export function AccueilPage() {
   return (
     <div className="flex flex-col min-h-svh">
       {/* En-tête rose */}
-      <header className="relative bg-white pt-10 pb-6 px-5 text-center overflow-hidden">
+      <header className="relative bg-[var(--color-plumy-bg)] pt-10 pb-6 px-5 text-center overflow-hidden">
         <motion.div
           initial={{ opacity: 0, y: -16 }}
           animate={{ opacity: 1, y: 0 }}

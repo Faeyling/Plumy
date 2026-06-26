@@ -135,7 +135,7 @@ export function ReconnaissanceVisuelleSession() {
   return (
     <div className="flex flex-col min-h-svh">
       {/* En-tête */}
-      <header className="px-5 pt-10 pb-4 bg-white">
+      <header className="px-5 pt-10 pb-4 bg-[var(--color-plumy-bg)]">
         <div className="flex items-center justify-between mb-4">
           <button onClick={() => navigate(`/unite/${numUnite}`)} className="flex items-center gap-1 text-[var(--color-gris-texte)] text-sm" aria-label="Retour">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">

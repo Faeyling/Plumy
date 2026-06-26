@@ -148,7 +148,7 @@ export function TexteATrousSession() {
 
   return (
     <div className="flex flex-col min-h-svh">
-      <header className="px-5 pt-10 pb-4 bg-white">
+      <header className="px-5 pt-10 pb-4 bg-[var(--color-plumy-bg)]">
         <button
           onClick={() => navigate(`/unite/${numUnite}`)}
           className="flex items-center gap-1 text-[var(--color-gris-texte)] text-sm mb-4"

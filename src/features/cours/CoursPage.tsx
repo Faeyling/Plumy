@@ -26,7 +26,7 @@ export function CoursPage() {
   return (
     <div className="flex flex-col min-h-svh">
       {/* En-tête */}
-      <header className="bg-white px-5 pt-12 pb-6">
+      <header className="bg-[var(--color-plumy-bg)] px-5 pt-12 pb-6">
         <button
           onClick={() => navigate(-1)}
           className="flex items-center gap-1 text-[var(--color-gris-texte)] text-sm mb-4"

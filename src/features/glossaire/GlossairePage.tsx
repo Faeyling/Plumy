@@ -54,7 +54,7 @@ export function GlossairePage() {
 
   return (
     <div className="flex flex-col min-h-svh">
-      <header className="px-5 pt-10 pb-4 bg-white">
+      <header className="px-5 pt-10 pb-4 bg-[var(--color-plumy-bg)]">
         <h1 className="font-[var(--font-titre)] font-bold text-2xl text-[var(--color-encre)] mb-3">
           {fr.glossaire.titre}
         </h1>
