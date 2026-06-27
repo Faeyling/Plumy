@@ -7,7 +7,6 @@ import { useStats } from '@/hooks/useStats'
 import { statsRepository } from '@/data/repositories/statsRepository'
 import { progressionRepository } from '@/data/repositories/progressionRepository'
 import { unites } from '@/content/unites'
-import { iconeIllustration } from '@/content/illustrations'
 import type { Unite } from '@/content/schema'
 import { fr } from '@/i18n/fr'
 
@@ -149,7 +148,6 @@ function StatPill({
 
 function UniteCard({ unite, index }: { unite: Unite; index: number }) {
   const couleur = iconeCouleur[unite.iconeSvgId] ?? 'var(--color-candy-lavande)'
-  const illustration = iconeIllustration[unite.iconeSvgId]
 
   return (
     <motion.div
@@ -159,24 +157,16 @@ function UniteCard({ unite, index }: { unite: Unite; index: number }) {
     >
       <Link
         to={`/unite/${unite.numero}`}
-        className="flex items-center gap-3 p-3 bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-shadow"
+        className="flex items-center gap-4 p-4 bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-shadow"
         aria-label={`Unité ${index} — ${unite.titre}`}
       >
         <span
-          className="flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center font-[var(--font-titre)] font-bold text-white text-xs"
+          className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-[var(--font-titre)] font-bold text-white text-sm"
           style={{ backgroundColor: couleur }}
           aria-hidden="true"
         >
           {index}
         </span>
-        {illustration && (
-          <img
-            src={illustration}
-            alt=""
-            aria-hidden="true"
-            className="flex-shrink-0 w-10 h-10 object-contain"
-          />
-        )}
         <div className="flex-1 min-w-0">
           <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm leading-snug">
             {unite.titre}
