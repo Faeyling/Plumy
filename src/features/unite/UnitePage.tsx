@@ -62,7 +62,7 @@ export function UnitePage() {
 
         {illustration && (
           <div className="flex justify-center mb-3">
-            <img src={illustration} alt="" aria-hidden="true" className="w-32 h-32 object-contain" />
+            <img src={illustration} alt="" aria-hidden="true" className="w-64 h-64 object-contain" />
           </div>
         )}
         <div className="flex items-start gap-4">
