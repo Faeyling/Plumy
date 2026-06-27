@@ -5,7 +5,6 @@ import { statsRepository } from '@/data/repositories/statsRepository'
 import { BoutonSauvegarde } from '@/features/sauvegarde/BoutonSauvegarde'
 import { RappelSauvegarde } from '@/features/sauvegarde/RappelSauvegarde'
 import { OnboardingModal } from '@/features/onboarding/OnboardingModal'
-import { PlumesVolantes } from '@/components/mascotte/PlumesVolantes'
 
 const navItems = [
   { to: '/', label: fr.nav.accueil, icon: HomeIcon, end: true },
@@ -27,7 +26,6 @@ export function Layout() {
 
   return (
     <div className="flex flex-col min-h-svh bg-[var(--color-plumy-bg)]">
-      <PlumesVolantes />
       {/* Skip link accessibilité */}
       <a
         href="#main-content"
