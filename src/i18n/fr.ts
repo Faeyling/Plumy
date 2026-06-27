@@ -295,6 +295,61 @@ export const fr = {
     "sante-prevention": "Santé & prévention",
   },
 
+  parametres: {
+    titre: "Paramètres",
+    affichage: "Affichage",
+    taillePolice: "Taille du texte",
+    normale: "Normale",
+    grande: "Grande",
+    tresGrande: "Très grande",
+    installer: "Installer l'application",
+    installerAndroid: "Sur Android (Chrome)",
+    installerEtapes: [
+      "Ouvre Plumy dans Chrome sur ton téléphone.",
+      "Appuie sur les trois points (⋮) en haut à droite.",
+      'Sélectionne "Ajouter à l\'écran d\'accueil" ou "Installer l\'application".',
+      "Confirme — Plumy apparaît sur ton écran d'accueil !",
+    ],
+    contact: "Contact",
+    contactTexte: "Une question, une suggestion, un bug à signaler ?",
+    confidentialite: "Confidentialité & données (RGPD)",
+    rgpdTexte1: "Aucune donnée envoyée en ligne. Toutes tes données (progression, favoris, points) sont stockées uniquement sur cet appareil, dans la mémoire du navigateur (IndexedDB).",
+    rgpdTexte2: "Plumy ne crée aucun compte, ne te demande aucune adresse email, et n'envoie aucune information à un serveur.",
+    rgpdTexte3: "Tu peux exporter l'intégralité de tes données à tout moment via le bouton \"Sauvegarder\". Le fichier JSON reste sur ton appareil.",
+    rgpdTexte4: "Pour effacer toutes tes données, vide le stockage du navigateur (Paramètres du navigateur → Site web → Plumy → Vider les données).",
+    version: "Plumy — vocabulaire de la danse",
+  },
+
+  defiQuotidien: {
+    titre: "Défi du jour",
+    sousTitre: "5 termes sélectionnés pour aujourd'hui",
+    faireLeDefi: "Relever le défi",
+    dejaFait: "Reviens demain pour un nouveau défi !",
+    score: (correct: number, total: number) => `${correct} / ${total}`,
+    partage: (score: number) => `J'ai fait ${score}/5 au défi Plumy aujourd'hui !`,
+  },
+
+  historiqueQuiz: {
+    titre: "Mes quiz récents",
+    aucun: "Aucun quiz joué pour l'instant. Lance-toi !",
+    types: {
+      qcm: "QCM",
+      association: "Association",
+      "texte-a-trous": "Texte à trous",
+      flashcards: "Flashcards",
+      "defi-quotidien": "Défi du jour",
+      "revision-rapide": "Révision rapide",
+    } as Record<string, string>,
+  },
+
+  revisionRapide: {
+    titre: "Révision rapide",
+    description: "10 termes · 2 minutes",
+    commencer: "C'est parti !",
+    tempsEcoule: "Temps écoulé !",
+    aucunTerme: "Pas encore de termes à revoir. Explore des unités d'abord !",
+  },
+
   erreurs: {
     generique: "Oups ! Quelque chose s'est mal passé.",
     chargement: "Impossible de charger les données.",

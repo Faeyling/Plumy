@@ -1,10 +1,14 @@
 import { useEffect, useState } from 'react'
-import { Outlet, NavLink } from 'react-router-dom'
+import { Outlet, NavLink, useNavigate, useLocation } from 'react-router-dom'
+import { AnimatePresence, motion } from 'framer-motion'
 import { fr } from '@/i18n/fr'
 import { statsRepository } from '@/data/repositories/statsRepository'
 import { BoutonSauvegarde } from '@/features/sauvegarde/BoutonSauvegarde'
 import { RappelSauvegarde } from '@/features/sauvegarde/RappelSauvegarde'
 import { OnboardingModal } from '@/features/onboarding/OnboardingModal'
+type TaillePolice = 'normale' | 'grande' | 'tres-grande'
+const TAILLE_SCALE: Record<TaillePolice, string> = { normale: '16px', grande: '18px', 'tres-grande': '20px' }
+function appliquerTaillePolice(t: TaillePolice) { document.documentElement.style.fontSize = TAILLE_SCALE[t] }
 
 const navItems = [
   { to: '/', label: fr.nav.accueil, icon: HomeIcon, end: true },
@@ -17,11 +21,15 @@ const navItems = [
 
 export function Layout() {
   const [showOnboarding, setShowOnboarding] = useState(false)
+  const navigate = useNavigate()
+  const location = useLocation()
 
   useEffect(() => {
     statsRepository.get().then(stats => {
       if (!stats.onboardingVu) setShowOnboarding(true)
     })
+    const taille = (localStorage.getItem('plumy-taille-police') as Parameters<typeof appliquerTaillePolice>[0]) ?? 'normale'
+    appliquerTaillePolice(taille)
   }, [])
 
   return (
@@ -34,13 +42,30 @@ export function Layout() {
         Aller au contenu principal
       </a>
 
-      {/* Bouton sauvegarde permanent */}
-      <div className="fixed top-3 right-3 z-40">
+      {/* Bouton sauvegarde permanent + paramètres */}
+      <div className="fixed top-3 right-3 z-40 flex items-center gap-2">
         <BoutonSauvegarde />
+        <button
+          onClick={() => navigate('/parametres')}
+          className="flex items-center justify-center w-8 h-8 rounded-full bg-white/90 shadow-sm border border-[var(--color-gris-doux)]"
+          aria-label={fr.parametres.titre}
+        >
+          <GearIcon />
+        </button>
       </div>
 
       <main id="main-content" className="flex-1 overflow-y-auto pb-20">
-        <Outlet />
+        <AnimatePresence mode="wait" initial={false}>
+          <motion.div
+            key={location.pathname}
+            initial={{ opacity: 0, y: 6 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -6 }}
+            transition={{ duration: 0.18, ease: 'easeOut' }}
+          >
+            <Outlet />
+          </motion.div>
+        </AnimatePresence>
       </main>
 
       <RappelSauvegarde />
@@ -80,6 +105,21 @@ export function Layout() {
         </ul>
       </nav>
     </div>
+  )
+}
+
+function GearIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path
+        d="M12 15a3 3 0 100-6 3 3 0 000 6z"
+        stroke="var(--color-gris-texte)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+      />
+      <path
+        d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"
+        stroke="var(--color-gris-texte)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+      />
+    </svg>
   )
 }
 

@@ -20,6 +20,9 @@ const GrapheDansesPage = lazy(() => import('@/features/graphe-danses/GrapheDanse
 const UnitePage = lazy(() => import('@/features/unite/UnitePage').then(m => ({ default: m.UnitePage })))
 const TermePage = lazy(() => import('@/features/terme/TermePage').then(m => ({ default: m.TermePage })))
 const CoursPage = lazy(() => import('@/features/cours/CoursPage').then(m => ({ default: m.CoursPage })))
+const ParametresPage = lazy(() => import('@/features/parametres/ParametresPage').then(m => ({ default: m.ParametresPage })))
+const DefiQuotidienSession = lazy(() => import('@/features/quiz/DefiQuotidienSession').then(m => ({ default: m.DefiQuotidienSession })))
+const RevisionRapidePage = lazy(() => import('@/features/revision/RevisionRapidePage').then(m => ({ default: m.RevisionRapidePage })))
 
 function PageLoader() {
   return (
@@ -55,6 +58,9 @@ export const router = createBrowserRouter([
       { path: 'unite/:numero', element: withSuspense(<UnitePage />) },
       { path: 'terme/:id', element: withSuspense(<TermePage />) },
       { path: 'cours/:id', element: withSuspense(<CoursPage />) },
+      { path: 'parametres', element: withSuspense(<ParametresPage />) },
+      { path: 'quiz/defi', element: withSuspense(<DefiQuotidienSession />) },
+      { path: 'revision/rapide', element: withSuspense(<RevisionRapidePage />) },
     ],
   },
 ])

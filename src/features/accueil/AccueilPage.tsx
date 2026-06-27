@@ -6,6 +6,7 @@ import { useStats } from '@/hooks/useStats'
 import { statsRepository } from '@/data/repositories/statsRepository'
 import { progressionRepository } from '@/data/repositories/progressionRepository'
 import { unites } from '@/content/unites'
+import { getTermesParUnite } from '@/content/termes/index'
 import { iconeIllustration } from '@/content/illustrations'
 import type { Unite } from '@/content/schema'
 import { fr } from '@/i18n/fr'
@@ -38,6 +39,7 @@ export function AccueilPage() {
   const [premiereFois, setPremiereFois] = useState(false)
   const [aRevoir, setARevoir] = useState(0)
   const [showOnboarding, setShowOnboarding] = useState(false)
+  const [progressParUnite, setProgressParUnite] = useState<Record<number, { vus: number; total: number }>>({})
   const [illustrationIdx] = useState(() => {
     const key = 'plumy-accueil-illustration-idx'
     const stored = parseInt(localStorage.getItem(key) ?? '0', 10)
@@ -60,6 +62,19 @@ export function AccueilPage() {
     })
     statsRepository.enregistrerVisite().then(refresh)
     progressionRepository.listARevoir().then(list => setARevoir(list.length))
+    progressionRepository.list().then(progressions => {
+      const progMap = new Map(progressions.map(p => [p.termeId, p]))
+      const result: Record<number, { vus: number; total: number }> = {}
+      for (const unite of unites) {
+        const termes = getTermesParUnite(unite.numero)
+        const vus = termes.filter(t => {
+          const p = progMap.get(t.id)
+          return p && p.statut !== 'jamais-vu'
+        }).length
+        result[unite.numero] = { vus, total: termes.length }
+      }
+      setProgressParUnite(result)
+    })
   }, [refresh])
 
 
@@ -101,12 +116,17 @@ export function AccueilPage() {
       >
         <StatPill value={points} label={fr.accueil.pointsLabel} color="var(--color-candy-lavande)" />
         <div className="w-px h-8 bg-[var(--color-gris-doux)]" />
-        <StatPill
-          value={serieJours}
-          label={serieJours <= 1 ? '1 jour de suite' : `${serieJours} jours de suite`}
-          color="var(--color-candy-menthe)"
-          icon="🔥"
-        />
+        <motion.div
+          animate={serieJours >= 1 ? { scale: [1, 1.15, 1] } : {}}
+          transition={{ repeat: Infinity, repeatDelay: 3, duration: 0.5 }}
+        >
+          <StatPill
+            value={serieJours}
+            label={serieJours <= 1 ? '1 jour de suite' : `${serieJours} jours de suite`}
+            color="var(--color-candy-menthe)"
+            icon="🔥"
+          />
+        </motion.div>
         {aRevoir > 0 && (
           <>
             <div className="w-px h-8 bg-[var(--color-gris-doux)]" />
@@ -123,7 +143,7 @@ export function AccueilPage() {
           {fr.accueil.toutesLesUnites}
         </h2>
         {unites.map((unite, idx) => (
-          <UniteCard key={unite.numero} unite={unite} index={idx} />
+          <UniteCard key={unite.numero} unite={unite} index={idx} progression={progressParUnite[unite.numero]} />
         ))}
       </section>
 
@@ -166,8 +186,10 @@ function StatPill({
   )
 }
 
-function UniteCard({ unite, index }: { unite: Unite; index: number }) {
+function UniteCard({ unite, index, progression }: { unite: Unite; index: number; progression?: { vus: number; total: number } }) {
   const couleur = iconeCouleur[unite.iconeSvgId] ?? 'var(--color-candy-lavande)'
+  const pct = progression && progression.total > 0 ? Math.round((progression.vus / progression.total) * 100) : 0
+  const termine = pct === 100
 
   return (
     <motion.div
@@ -185,12 +207,28 @@ function UniteCard({ unite, index }: { unite: Unite; index: number }) {
           style={{ backgroundColor: couleur }}
           aria-hidden="true"
         >
-          {index}
+          {termine ? '✓' : index}
         </span>
         <div className="flex-1 min-w-0">
           <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm leading-snug">
             {unite.titre}
           </p>
+          {progression && progression.total > 0 && (
+            <div className="mt-1.5">
+              <div className="h-1 bg-[var(--color-gris-doux)] rounded-full overflow-hidden">
+                <motion.div
+                  className="h-full rounded-full"
+                  style={{ backgroundColor: termine ? 'var(--color-candy-menthe)' : couleur }}
+                  initial={{ width: 0 }}
+                  animate={{ width: `${pct}%` }}
+                  transition={{ duration: 0.6, ease: 'easeOut', delay: index * 0.04 }}
+                />
+              </div>
+              <p className="text-[10px] text-[var(--color-gris-texte)] mt-0.5">
+                {progression.vus} / {progression.total}
+              </p>
+            </div>
+          )}
         </div>
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="flex-shrink-0 text-[var(--color-gris-texte)]">
           <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />

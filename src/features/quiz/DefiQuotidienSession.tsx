@@ -1,9 +1,7 @@
 import { useState } from 'react'
-import { useParams, useNavigate, Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { getTermesParUnite } from '@/content/termes/index'
-import { unites } from '@/content/unites'
-import { genererQCM, type QuestionQCM } from './quiz.utils'
+import { tousLesTermes } from '@/content/termes/index'
 import { statsRepository } from '@/data/repositories/statsRepository'
 import { useBadgeCheck } from '@/hooks/useBadgeCheck'
 import { getBadge } from '@/data/badges'
@@ -11,16 +9,48 @@ import { PluмyMascot } from '@/components/mascotte/PluмyMascot'
 import { fr } from '@/i18n/fr'
 import { db } from '@/data/db'
 
+const NB_QUESTIONS = 5
 const PTS_CORRECT = 10
 
-export function QCMSession() {
-  const { numero } = useParams<{ numero: string }>()
-  const navigate = useNavigate()
-  const numUnite = Number(numero ?? 0)
-  const unite = unites.find(u => u.numero === numUnite)
-  const termes = getTermesParUnite(numUnite)
+function seededRandom(seed: number) {
+  let s = seed
+  return () => {
+    s = (s * 1664525 + 1013904223) & 0xffffffff
+    return (s >>> 0) / 0x100000000
+  }
+}
 
-  const [questions, setQuestions] = useState<QuestionQCM[]>(() => genererQCM(termes, 10))
+function getDefiDuJour() {
+  const today = new Date().toISOString().slice(0, 10)
+  const seed = today.split('').reduce((acc, c) => acc + c.charCodeAt(0), 0)
+  const rng = seededRandom(seed)
+  const termesCandidats = tousLesTermes.filter(t => t.definition.length > 20)
+  const shuffled = [...termesCandidats].sort(() => rng() - 0.5)
+  return shuffled.slice(0, NB_QUESTIONS)
+}
+
+interface QuestionDefi {
+  terme: typeof tousLesTermes[0]
+  choix: string[]
+  bonneReponse: string
+}
+
+function construireQuestions(): QuestionDefi[] {
+  const termes = getDefiDuJour()
+  return termes.map(terme => {
+    const distracteurs = tousLesTermes
+      .filter(t => t.id !== terme.id && t.nom !== terme.nom)
+      .sort(() => Math.random() - 0.5)
+      .slice(0, 3)
+      .map(t => t.nom)
+    const choix = [terme.nom, ...distracteurs].sort(() => Math.random() - 0.5)
+    return { terme, choix, bonneReponse: terme.nom }
+  })
+}
+
+export function DefiQuotidienSession() {
+  const navigate = useNavigate()
+  const [questions] = useState<QuestionDefi[]>(() => construireQuestions())
   const [index, setIndex] = useState(0)
   const [selected, setSelected] = useState<string | null>(null)
   const [corrects, setCorrects] = useState(0)
@@ -29,43 +59,16 @@ export function QCMSession() {
   const [newBadges, setNewBadges] = useState<string[]>([])
   const { checkBadges } = useBadgeCheck()
 
-  function handleRecommencer() {
-    setQuestions(genererQCM(termes, 10))
-    setIndex(0)
-    setSelected(null)
-    setCorrects(0)
-    setTermine(false)
-    setPtsGagnes(0)
-    setNewBadges([])
-  }
-
-  if (questions.length === 0) {
-    return (
-      <div className="flex flex-col items-center justify-center min-h-[60vh] p-8 text-center gap-4">
-        <PluмyMascot etat="repos" taille={80} />
-        <p className="text-[var(--color-gris-texte)]">Pas assez de termes pour ce quiz (minimum 4).</p>
-        <button
-          onClick={() => navigate(`/unite/${numUnite}`)}
-          className="text-[var(--color-plumy-blue)] underline text-sm"
-        >
-          {fr.quiz.retourUnite}
-        </button>
-      </div>
-    )
-  }
-
   const question = questions[index]
   const total = questions.length
   const isAnswered = selected !== null
   const isLast = index === total - 1
-  const isCorrect = selected === question.bonneReponse
+  const isCorrect = selected === question?.bonneReponse
 
   function handleSelect(choix: string) {
-    if (isAnswered) return
+    if (isAnswered || !question) return
     setSelected(choix)
-    if (choix === question.bonneReponse) {
-      setCorrects(c => c + 1)
-    }
+    if (choix === question.bonneReponse) setCorrects(c => c + 1)
   }
 
   async function handleNext() {
@@ -81,8 +84,7 @@ export function QCMSession() {
     await statsRepository.ajouterQuizReussiAujourdhui()
     await db.historiqueQuiz.add({
       date: new Date().toISOString().slice(0, 10),
-      type: 'qcm',
-      uniteNumero: numUnite,
+      type: 'defi-quotidien',
       correct: corrects,
       total,
     })
@@ -97,13 +99,13 @@ export function QCMSession() {
     return (
       <div className="flex flex-col min-h-svh">
         <div className="flex-1 flex flex-col items-center justify-center p-8 gap-5 text-center">
-          <PluмyMascot etat={pct >= 50 ? 'reussite' : 'echec'} taille={100} />
+          <PluмyMascot etat={pct >= 60 ? 'reussite' : 'encouragement'} taille={100} />
           <div>
             <h1 className="font-[var(--font-titre)] font-bold text-2xl text-[var(--color-encre)] mb-1">
-              {fr.quiz.finTitre}
+              Défi du jour terminé !
             </h1>
             <p className="text-[var(--color-gris-texte)] text-sm">
-              {fr.quiz.score(corrects, total)} — {pct}%
+              {fr.defiQuotidien.score(corrects, total)} — {pct}%
             </p>
           </div>
           {ptsGagnes > 0 && (
@@ -133,31 +135,12 @@ export function QCMSession() {
               })}
             </div>
           )}
-          <div className="flex flex-col gap-2 w-full">
-            <button
-              onClick={handleRecommencer}
-              className="w-full py-3 bg-[var(--color-candy-jaune)] text-[var(--color-encre)] font-[var(--font-titre)] font-bold rounded-[var(--radius-card)] shadow-[var(--shadow-card)]"
-            >
-              {fr.quiz.recommencer}
-            </button>
-            <button
-              onClick={() => navigate(`/unite/${numUnite}`)}
-              className="w-full py-3 bg-white text-[var(--color-encre)] font-[var(--font-titre)] font-semibold rounded-[var(--radius-card)] shadow-[var(--shadow-card)]"
-            >
-              {fr.quiz.retourUnite}
-            </button>
-            {(() => {
-              const prochaine = unites.find(u => u.numero === numUnite + 1)
-              return prochaine ? (
-                <Link
-                  to={`/unite/${prochaine.numero}`}
-                  className="w-full py-3 text-center bg-[var(--color-candy-lavande-light)] text-[var(--color-candy-lavande-dark,var(--color-candy-lavande))] font-[var(--font-titre)] font-semibold rounded-[var(--radius-card)] text-sm"
-                >
-                  Continuer → {prochaine.titre}
-                </Link>
-              ) : null
-            })()}
-          </div>
+          <button
+            onClick={() => navigate('/quiz')}
+            className="w-full max-w-xs py-3 bg-[var(--color-candy-rose)] text-white font-[var(--font-titre)] font-bold rounded-[var(--radius-card)] shadow-[var(--shadow-card)]"
+          >
+            Retour aux quiz
+          </button>
         </div>
       </div>
     )
@@ -167,26 +150,26 @@ export function QCMSession() {
     <div className="flex flex-col min-h-svh">
       <header className="px-5 pt-10 pb-4 bg-[var(--color-plumy-bg)]">
         <button
-          onClick={() => navigate(`/unite/${numUnite}`)}
+          onClick={() => navigate('/quiz')}
           className="flex items-center gap-1 text-[var(--color-gris-texte)] text-sm mb-4"
           aria-label="Retour"
         >
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
-          {unite?.titre ?? `Unité ${numUnite}`}
+          Quiz
         </button>
         <div className="flex items-center justify-between mb-2">
           <span className="font-[var(--font-titre)] font-bold text-[var(--color-encre)]">
-            {fr.quiz.typesLabels.qcm}
+            {fr.defiQuotidien.titre}
           </span>
           <span className="text-xs text-[var(--color-gris-texte)]">
-            {fr.quiz.question} {index + 1} {fr.quiz.sur} {total}
+            {index + 1} / {total}
           </span>
         </div>
         <div className="h-2 bg-[var(--color-gris-doux)] rounded-full overflow-hidden">
           <motion.div
-            className="h-full bg-[var(--color-candy-jaune)] rounded-full"
+            className="h-full bg-[var(--color-candy-rose)] rounded-full"
             animate={{ width: `${((index + (isAnswered ? 1 : 0)) / total) * 100}%` }}
             transition={{ duration: 0.4 }}
           />
@@ -204,14 +187,16 @@ export function QCMSession() {
             className="flex flex-col gap-3"
           >
             <div className="bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] p-5">
-              <p className="text-xs text-[var(--color-gris-texte)] uppercase tracking-wide mb-2">Définition</p>
+              <p className="text-xs text-[var(--color-gris-texte)] uppercase tracking-wide mb-2">
+                Quel terme correspond à cette définition ?
+              </p>
               <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-base leading-snug">
-                {question.definition}
+                {question.terme.definition}
               </p>
             </div>
 
             <div className="space-y-2">
-              {question.choix.map((choix) => {
+              {question.choix.map(choix => {
                 const isBonne = choix === question.bonneReponse
                 const isSelected = choix === selected
                 let cls = 'w-full text-left p-4 rounded-[var(--radius-card)] border-2 font-[var(--font-titre)] font-medium text-sm transition-all shadow-[var(--shadow-card)]'
@@ -248,7 +233,7 @@ export function QCMSession() {
                 )}
                 <button
                   onClick={handleNext}
-                  className="w-full py-3 bg-[var(--color-candy-jaune)] text-[var(--color-encre)] font-[var(--font-titre)] font-bold rounded-[var(--radius-card)] shadow-[var(--shadow-card)]"
+                  className="w-full py-3 bg-[var(--color-candy-rose)] text-white font-[var(--font-titre)] font-bold rounded-[var(--radius-card)] shadow-[var(--shadow-card)]"
                 >
                   {isLast ? fr.quiz.terminer : fr.quiz.suivant}
                 </button>

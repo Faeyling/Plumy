@@ -30,6 +30,16 @@ export function TermePage() {
     setTimeout(() => setToast(null), 2000)
   }
 
+  const partager = async () => {
+    const texte = `${terme?.nom} : ${terme?.definition}`
+    if (navigator.share) {
+      await navigator.share({ title: terme?.nom, text: texte }).catch(() => null)
+    } else {
+      await navigator.clipboard.writeText(texte).catch(() => null)
+      afficherToast(fr.actions.copie)
+    }
+  }
+
   const marquerVu = async () => {
     if (!id) return
     const current = await progressionRepository.get(id)
@@ -95,14 +105,25 @@ export function TermePage() {
             Retour
           </button>
 
-          <button
-            onClick={toggleFavori}
-            className="p-2 rounded-full transition-colors"
-            style={{ color: estFavori ? 'var(--color-candy-rose)' : 'var(--color-gris-texte)' }}
-            aria-label={estFavori ? fr.terme.retirerFavori : fr.terme.ajouterFavori}
-          >
-            {estFavori ? '♥' : '♡'}
-          </button>
+          <div className="flex items-center gap-1">
+            <button
+              onClick={partager}
+              className="p-2 rounded-full transition-colors text-[var(--color-gris-texte)]"
+              aria-label={fr.actions.partager}
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8M16 6l-4-4-4 4M12 2v13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+            <button
+              onClick={toggleFavori}
+              className="p-2 rounded-full transition-colors"
+              style={{ color: estFavori ? 'var(--color-candy-rose)' : 'var(--color-gris-texte)' }}
+              aria-label={estFavori ? fr.terme.retirerFavori : fr.terme.ajouterFavori}
+            >
+              {estFavori ? '♥' : '♡'}
+            </button>
+          </div>
         </div>
 
         <h1 className="font-[var(--font-titre)] font-extrabold text-3xl text-[var(--color-encre)] leading-tight">

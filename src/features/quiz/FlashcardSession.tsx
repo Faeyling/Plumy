@@ -5,6 +5,7 @@ import { fr } from '@/i18n/fr'
 import { unites } from '@/content/unites'
 import { getTermesParUnite } from '@/content/termes/index'
 import { progressionRepository } from '@/data/repositories/progressionRepository'
+import { db } from '@/data/db'
 import type { Terme, ProgressionTerme } from '@/content/schema'
 
 type Jugement = 'su' | 'a-revoir'
@@ -65,6 +66,14 @@ export function FlashcardSession() {
           statut: (juge === 'su' ? 'maitrise' : 'a-revoir') as Statut,
         }))
         await progressionRepository.mettreAJourStatutBatch(mises)
+        const nbSu = Array.from(newJugements.values()).filter(j => j === 'su').length
+        await db.historiqueQuiz.add({
+          date: new Date().toISOString().slice(0, 10),
+          type: 'flashcards',
+          uniteNumero: numUnite,
+          correct: nbSu,
+          total: newJugements.size,
+        })
         setTermine(true)
       } else {
         setAnimKey((k) => k + 1)
@@ -153,8 +162,16 @@ export function FlashcardSession() {
             initial={{ opacity: 0, x: exitDir * 60 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -exitDir * 60 }}
+            drag={retourne ? 'x' : false}
+            dragConstraints={{ left: 0, right: 0 }}
+            dragElastic={0.15}
+            onDragEnd={(_, info) => {
+              if (info.offset.x > 80) juger('su')
+              else if (info.offset.x < -80) juger('a-revoir')
+            }}
             transition={{ duration: 0.2, ease: 'easeOut' }}
-            className="w-full max-w-sm"
+            className="w-full max-w-sm cursor-grab active:cursor-grabbing"
+            style={{ touchAction: retourne ? 'none' : 'auto' }}
           >
             <Carte
               carte={carteActuelle}
@@ -169,6 +186,11 @@ export function FlashcardSession() {
           <StatutPill statut={carteActuelle.statutInitial} />
           <span className="text-xs text-[var(--color-gris-texte)]">statut actuel</span>
         </div>
+        {retourne && (
+          <p className="text-[10px] text-[var(--color-gris-texte)] mt-2 opacity-60">
+            ← glisse à gauche (à revoir) · glisse à droite (je sais) →
+          </p>
+        )}
       </div>
 
       {/* Boutons de jugement */}
@@ -300,6 +322,30 @@ function StatutPill({ statut }: { statut: Statut }) {
   )
 }
 
+function ConfettiBurst() {
+  const confetti = Array.from({ length: 18 }, (_, i) => ({
+    id: i,
+    x: (Math.random() - 0.5) * 300,
+    y: -(Math.random() * 200 + 80),
+    rotate: Math.random() * 720 - 360,
+    color: ['var(--color-candy-rose)', 'var(--color-candy-lavande)', 'var(--color-candy-jaune)', 'var(--color-candy-menthe)', 'var(--color-candy-corail)'][i % 5],
+  }))
+  return (
+    <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+      {confetti.map(c => (
+        <motion.div
+          key={c.id}
+          className="absolute w-3 h-3 rounded-sm"
+          style={{ backgroundColor: c.color, left: '50%', top: '40%' }}
+          initial={{ x: 0, y: 0, rotate: 0, opacity: 1 }}
+          animate={{ x: c.x, y: c.y, rotate: c.rotate, opacity: 0 }}
+          transition={{ duration: 1.2, ease: 'easeOut', delay: c.id * 0.03 }}
+        />
+      ))}
+    </div>
+  )
+}
+
 function EcranFin({
   jugements,
   deck,
@@ -314,16 +360,18 @@ function EcranFin({
   const nbSu = Array.from(jugements.values()).filter((j) => j === 'su').length
   const nbARevoir = Array.from(jugements.values()).filter((j) => j === 'a-revoir').length
   const nbNonJuge = deck.length - jugements.size
+  const toutMaitrise = nbSu === deck.length && nbARevoir === 0 && nbNonJuge === 0
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-svh bg-[var(--color-plumy-bg)] px-6 text-center gap-6">
+    <div className="relative flex flex-col items-center justify-center min-h-svh bg-[var(--color-plumy-bg)] px-6 text-center gap-6">
+      {toutMaitrise && <ConfettiBurst />}
       <motion.div
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ type: 'spring', stiffness: 200 }}
         className="w-20 h-20 rounded-full bg-[var(--color-candy-lavande-light)] flex items-center justify-center text-4xl"
       >
-        ✨
+        {toutMaitrise ? '🏆' : '✨'}
       </motion.div>
 
       <div>

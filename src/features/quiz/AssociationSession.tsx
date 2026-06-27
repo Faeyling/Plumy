@@ -9,6 +9,7 @@ import { useBadgeCheck } from '@/hooks/useBadgeCheck'
 import { getBadge } from '@/data/badges'
 import { PluмyMascot } from '@/components/mascotte/PluмyMascot'
 import { fr } from '@/i18n/fr'
+import { db } from '@/data/db'
 
 const PTS_PAIRE = 15
 
@@ -66,6 +67,13 @@ export function AssociationSession() {
     const stats = await statsRepository.get()
     await statsRepository.update({ quizJoues: stats.quizJoues + 1 })
     await statsRepository.ajouterQuizReussiAujourdhui()
+    await db.historiqueQuiz.add({
+      date: new Date().toISOString().slice(0, 10),
+      type: 'association',
+      uniteNumero: numUnite,
+      correct: totalCorrects,
+      total: paires.length,
+    })
     const badges = await checkBadges()
     setPtsGagnes(pts)
     setNewBadges(badges)
