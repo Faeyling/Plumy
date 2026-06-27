@@ -34,7 +34,7 @@ export const fr = {
       "Tu arrives à point nommé — je venais juste de terminer ce chapitre.",
     ],
     bonRetour: [
-      "Te revoilà ! Ma queue se déploie de joie.",
+      "Te revoilà ! J'avais gardé ta page ouverte.",
       "Ah, tu es revenu ! J'avais gardé ta place.",
       "Encore toi ! C'est une habitude que j'apprécie beaucoup.",
       "Tu reviens — c'est la constance qui forge les grands danseurs.",
