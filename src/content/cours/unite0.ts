@@ -93,7 +93,7 @@ Tout ça, c'est génétique. Tu ne peux pas y changer grand-chose structurelleme
 - La souplesse des rotateurs internes (adducteurs, fléchisseurs de hanche)
 - La proprioception du turn-out (tenir ton turn-out *en mouvement*, pas seulement debout immobile)
 
-**Ce qu'on ne peut pas changer :** la structure osseuse. Forcer au-delà blesse — les hanches, les genoux, les chevilles paient pour les pieds forcés. Ton turn-out vient de ta hanche, pas de tes pieds. C'est une des premières choses que j'ai notées dans gros caractères.`,
+**Ce qu'on ne peut pas changer :** la structure osseuse. Forcer au-delà blesse — les hanches, les genoux, les chevilles paient pour les pieds forcés. Ton turn-out vient de ta hanche, pas de tes pieds. C'est une des premières choses que j'ai notée en gros caractères.`,
       },
       {
         titre: "Centre de gravité, tonicité et proprioception",
