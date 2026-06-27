@@ -1,6 +1,6 @@
 import { useEffect, useState, useMemo } from 'react'
 import { Link } from 'react-router-dom'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { OnboardingModal } from '@/features/onboarding/OnboardingModal'
 import { useStats } from '@/hooks/useStats'
 import { statsRepository } from '@/data/repositories/statsRepository'
@@ -38,7 +38,13 @@ export function AccueilPage() {
   const [premiereFois, setPremiereFois] = useState(false)
   const [aRevoir, setARevoir] = useState(0)
   const [showOnboarding, setShowOnboarding] = useState(false)
-  const [illustrationIdx, setIllustrationIdx] = useState(0)
+  const [illustrationIdx] = useState(() => {
+    const key = 'plumy-accueil-illustration-idx'
+    const stored = parseInt(localStorage.getItem(key) ?? '0', 10)
+    const idx = isNaN(stored) ? 0 : stored % ILLUSTRATIONS.length
+    localStorage.setItem(key, String((idx + 1) % ILLUSTRATIONS.length))
+    return idx
+  })
 
   const message = useMemo(
     () =>
@@ -56,12 +62,6 @@ export function AccueilPage() {
     progressionRepository.listARevoir().then(list => setARevoir(list.length))
   }, [refresh])
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setIllustrationIdx(i => (i + 1) % ILLUSTRATIONS.length)
-    }, 3000)
-    return () => clearInterval(timer)
-  }, [])
 
   const serieJours = stats?.serieJours ?? 0
   const points = stats?.points ?? 0
@@ -77,20 +77,15 @@ export function AccueilPage() {
           className="flex flex-col items-center gap-3"
         >
           <h1 className="sr-only">Plumy — Vocabulaire de la danse</h1>
-          <div className="relative w-32 h-32" aria-hidden="true">
-            <AnimatePresence mode="wait">
-              <motion.img
-                key={illustrationIdx}
-                src={ILLUSTRATIONS[illustrationIdx]}
-                alt=""
-                className="w-32 h-32 object-contain absolute inset-0"
-                initial={{ opacity: 0, scale: 0.88 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 1.08 }}
-                transition={{ duration: 0.45, ease: 'easeInOut' }}
-              />
-            </AnimatePresence>
-          </div>
+          <motion.img
+            src={ILLUSTRATIONS[illustrationIdx]}
+            alt=""
+            aria-hidden="true"
+            className="w-64 h-64 object-contain"
+            initial={{ opacity: 0, scale: 0.92 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.45, ease: 'easeOut' }}
+          />
           <p className="font-[var(--font-manuscrit)] text-[var(--color-encre)] text-lg leading-snug max-w-xs px-2">
             {message}
           </p>
