@@ -1,0 +1,14 @@
+export const iconeIllustration: Partial<Record<string, string>> = {
+  'corps-qui-danse': '/mascotte/plumy-corps-qui-danse.png',
+  'histoire-danse': '/mascotte/plumy-histoire.png',
+  classique: '/mascotte/plumy-classique.png',
+  contemporain: '/mascotte/plumy-contemporain.png',
+  moderne: '/mascotte/plumy-moderne.png',
+  jazz: '/mascotte/plumy-jazz.png',
+  heels: '/mascotte/plumy-heels.png',
+  cabaret: '/mascotte/plumy-cabaret.png',
+  'pole-dance': '/mascotte/plumy-pole-dance.png',
+  burlesque: '/mascotte/plumy-burlesque.png',
+  sante: '/mascotte/plumy-sante.png',
+  improvisation: '/mascotte/plumy-improvisation.png',
+}

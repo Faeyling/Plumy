@@ -7,26 +7,12 @@ import { useStats } from '@/hooks/useStats'
 import { statsRepository } from '@/data/repositories/statsRepository'
 import { progressionRepository } from '@/data/repositories/progressionRepository'
 import { unites } from '@/content/unites'
+import { iconeIllustration } from '@/content/illustrations'
 import type { Unite } from '@/content/schema'
 import { fr } from '@/i18n/fr'
 
 function pickRandom<T>(arr: readonly T[]): T {
   return arr[Math.floor(Math.random() * arr.length)]
-}
-
-const iconeIllustration: Partial<Record<string, string>> = {
-  'corps-qui-danse': '/mascotte/plumy-corps-qui-danse.png',
-  'histoire-danse': '/mascotte/plumy-histoire.png',
-  classique: '/mascotte/plumy-classique.png',
-  contemporain: '/mascotte/plumy-contemporain.png',
-  moderne: '/mascotte/plumy-moderne.png',
-  jazz: '/mascotte/plumy-jazz.png',
-  heels: '/mascotte/plumy-heels.png',
-  cabaret: '/mascotte/plumy-cabaret.png',
-  'pole-dance': '/mascotte/plumy-pole-dance.png',
-  burlesque: '/mascotte/plumy-burlesque.png',
-  sante: '/mascotte/plumy-sante.png',
-  improvisation: '/mascotte/plumy-improvisation.png',
 }
 
 const iconeCouleur: Record<string, string> = {
@@ -173,24 +159,23 @@ function UniteCard({ unite, index }: { unite: Unite; index: number }) {
     >
       <Link
         to={`/unite/${unite.numero}`}
-        className="flex items-center gap-4 p-4 bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-shadow"
+        className="flex items-center gap-3 p-3 bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-shadow"
         aria-label={`Unité ${index} — ${unite.titre}`}
       >
-        {illustration ? (
+        <span
+          className="flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center font-[var(--font-titre)] font-bold text-white text-xs"
+          style={{ backgroundColor: couleur }}
+          aria-hidden="true"
+        >
+          {index}
+        </span>
+        {illustration && (
           <img
             src={illustration}
             alt=""
             aria-hidden="true"
-            className="flex-shrink-0 w-12 h-12 object-contain"
+            className="flex-shrink-0 w-10 h-10 object-contain"
           />
-        ) : (
-          <span
-            className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-[var(--font-titre)] font-bold text-white text-sm"
-            style={{ backgroundColor: couleur }}
-            aria-hidden="true"
-          >
-            {index}
-          </span>
         )}
         <div className="flex-1 min-w-0">
           <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm leading-snug">

@@ -7,6 +7,7 @@ import { getCoursParUnite } from '@/content/cours/index'
 import { progressionRepository } from '@/data/repositories/progressionRepository'
 import type { ProgressionTerme } from '@/content/schema'
 import { PluмyMascot } from '@/components/mascotte/PluмyMascot'
+import { iconeIllustration } from '@/content/illustrations'
 import { fr } from '@/i18n/fr'
 
 export function UnitePage() {
@@ -39,6 +40,7 @@ export function UnitePage() {
     )
   }
 
+  const illustration = iconeIllustration[unite.iconeSvgId]
   const vus = termes.filter((t) => progressions[t.id]?.statut !== 'jamais-vu' && progressions[t.id] !== undefined).length
   const total = termes.length
   const pourcentage = total > 0 ? Math.round((vus / total) * 100) : 0
@@ -58,9 +60,14 @@ export function UnitePage() {
           Retour
         </button>
 
+        {illustration && (
+          <div className="flex justify-center mb-3">
+            <img src={illustration} alt="" aria-hidden="true" className="w-32 h-32 object-contain" />
+          </div>
+        )}
         <div className="flex items-start gap-4">
           <span
-            className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-[var(--font-titre)] font-bold text-white text-lg"
+            className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-[var(--font-titre)] font-bold text-white text-base"
             style={{ backgroundColor: 'var(--color-candy-lavande)' }}
             aria-hidden="true"
           >
