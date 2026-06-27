@@ -1,12 +1,12 @@
 import { useEffect, useState, useMemo } from 'react'
 import { Link } from 'react-router-dom'
-import { motion } from 'framer-motion'
-import { PluмyMascot } from '@/components/mascotte/PluмyMascot'
+import { motion, AnimatePresence } from 'framer-motion'
 import { OnboardingModal } from '@/features/onboarding/OnboardingModal'
 import { useStats } from '@/hooks/useStats'
 import { statsRepository } from '@/data/repositories/statsRepository'
 import { progressionRepository } from '@/data/repositories/progressionRepository'
 import { unites } from '@/content/unites'
+import { iconeIllustration } from '@/content/illustrations'
 import type { Unite } from '@/content/schema'
 import { fr } from '@/i18n/fr'
 
@@ -29,11 +29,16 @@ const iconeCouleur: Record<string, string> = {
   improvisation: 'var(--color-candy-jaune)',
 }
 
+const ILLUSTRATIONS = unites
+  .map(u => iconeIllustration[u.iconeSvgId])
+  .filter((src): src is string => !!src)
+
 export function AccueilPage() {
   const { stats, refresh } = useStats()
   const [premiereFois, setPremiereFois] = useState(false)
   const [aRevoir, setARevoir] = useState(0)
   const [showOnboarding, setShowOnboarding] = useState(false)
+  const [illustrationIdx, setIllustrationIdx] = useState(0)
 
   const message = useMemo(
     () =>
@@ -51,6 +56,13 @@ export function AccueilPage() {
     progressionRepository.listARevoir().then(list => setARevoir(list.length))
   }, [refresh])
 
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIllustrationIdx(i => (i + 1) % ILLUSTRATIONS.length)
+    }, 3000)
+    return () => clearInterval(timer)
+  }, [])
+
   const serieJours = stats?.serieJours ?? 0
   const points = stats?.points ?? 0
 
@@ -65,7 +77,20 @@ export function AccueilPage() {
           className="flex flex-col items-center gap-3"
         >
           <h1 className="sr-only">Plumy — Vocabulaire de la danse</h1>
-          <PluмyMascot etat={premiereFois ? 'accueil' : 'retour'} taille={130} />
+          <div className="relative w-32 h-32" aria-hidden="true">
+            <AnimatePresence mode="wait">
+              <motion.img
+                key={illustrationIdx}
+                src={ILLUSTRATIONS[illustrationIdx]}
+                alt=""
+                className="w-32 h-32 object-contain absolute inset-0"
+                initial={{ opacity: 0, scale: 0.88 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 1.08 }}
+                transition={{ duration: 0.45, ease: 'easeInOut' }}
+              />
+            </AnimatePresence>
+          </div>
           <p className="font-[var(--font-manuscrit)] text-[var(--color-encre)] text-lg leading-snug max-w-xs px-2">
             {message}
           </p>
