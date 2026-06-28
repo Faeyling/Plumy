@@ -4,12 +4,26 @@ import { motion } from 'framer-motion'
 import { getCours } from '@/content/cours/index'
 import { getTerme } from '@/content/termes/index'
 import { PluмyMascot } from '@/components/mascotte/PluмyMascot'
+import { useSpeech } from '@/hooks/useSpeech'
+import { stripMarkdown } from '@/lib/stripMarkdown'
 
 export function CoursPage() {
   const { id } = useParams<{ id: string }>()
   const navigate = useNavigate()
   const cours = getCours(id ?? '')
   const [sectionOuverte, setSectionOuverte] = useState<number>(0)
+  const { isPlaying, isSupported, speak, stop } = useSpeech()
+  const [playingSection, setPlayingSection] = useState<number | null>(null)
+
+  function handleSpeakSection(i: number, text: string) {
+    if (isPlaying && playingSection === i) {
+      stop()
+      setPlayingSection(null)
+    } else {
+      speak(text)
+      setPlayingSection(i)
+    }
+  }
 
   if (!cours) {
     return (
@@ -66,20 +80,38 @@ export function CoursPage() {
               onClick={() => setSectionOuverte(sectionOuverte === i ? -1 : i)}
               aria-expanded={sectionOuverte === i}
             >
-              <h2 className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-sm pr-4 leading-snug">
+              <h2 className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-sm pr-2 leading-snug flex-1">
                 {section.titre}
               </h2>
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                aria-hidden="true"
-                className="flex-shrink-0 text-[var(--color-gris-texte)] transition-transform"
-                style={{ transform: sectionOuverte === i ? 'rotate(180deg)' : 'rotate(0deg)' }}
-              >
-                <path d="M6 9l6 6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
+              <div className="flex items-center gap-1 flex-shrink-0">
+                {isSupported && (
+                  <button
+                    onClick={(e) => { e.stopPropagation(); handleSpeakSection(i, section.titre + '. ' + stripMarkdown(section.contenuMarkdown)) }}
+                    className="p-1.5 rounded-full transition-colors"
+                    style={{ color: (isPlaying && playingSection === i) ? 'var(--color-plumy-blue)' : 'var(--color-gris-texte)' }}
+                    aria-label={(isPlaying && playingSection === i) ? 'Arrêter la lecture' : 'Écouter cette section'}
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      {(isPlaying && playingSection === i) ? (
+                        <path d="M6 4h4v16H6zM14 4h4v16h-4z" fill="currentColor" />
+                      ) : (
+                        <path d="M11 5L6 9H2v6h4l5 4V5zM19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      )}
+                    </svg>
+                  </button>
+                )}
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                  className="text-[var(--color-gris-texte)] transition-transform"
+                  style={{ transform: sectionOuverte === i ? 'rotate(180deg)' : 'rotate(0deg)' }}
+                >
+                  <path d="M6 9l6 6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </div>
             </button>
 
             {sectionOuverte === i && (

@@ -7,6 +7,8 @@ import { statsRepository } from '@/data/repositories/statsRepository'
 import { PluмyMascot } from '@/components/mascotte/PluмyMascot'
 import type { ProgressionTerme } from '@/content/schema'
 import { fr } from '@/i18n/fr'
+import { useSpeech } from '@/hooks/useSpeech'
+import { stripMarkdown } from '@/lib/stripMarkdown'
 
 export function TermePage() {
   const { id } = useParams<{ id: string }>()
@@ -15,6 +17,7 @@ export function TermePage() {
 
   const [prog, setProg] = useState<ProgressionTerme | undefined>()
   const [toast, setToast] = useState<string | null>(null)
+  const { isPlaying, isSupported, toggle } = useSpeech()
 
   const chargerProg = useCallback(() => {
     if (!id) return
@@ -106,6 +109,22 @@ export function TermePage() {
           </button>
 
           <div className="flex items-center gap-1">
+            {isSupported && (
+              <button
+                onClick={() => toggle(`${terme.nom}. ${terme.definition}. ${stripMarkdown(terme.description)}`)}
+                className="p-2 rounded-full transition-colors"
+                style={{ color: isPlaying ? 'var(--color-plumy-blue)' : 'var(--color-gris-texte)' }}
+                aria-label={isPlaying ? 'Arrêter la lecture' : 'Écouter ce terme'}
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  {isPlaying ? (
+                    <path d="M6 4h4v16H6zM14 4h4v16h-4z" fill="currentColor" />
+                  ) : (
+                    <path d="M11 5L6 9H2v6h4l5 4V5zM19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  )}
+                </svg>
+              </button>
+            )}
             <button
               onClick={partager}
               className="p-2 rounded-full transition-colors text-[var(--color-gris-texte)]"
