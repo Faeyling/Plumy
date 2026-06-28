@@ -20,8 +20,23 @@ interface QuestionScene {
   choix: string[]
 }
 
+function resumeDescription(raw: string): string {
+  const plain = raw
+    .replace(/\*\*([^*]+)\*\*/g, '$1')
+    .replace(/\*([^*]+)\*/g, '$1')
+    .replace(/ ?- /g, '. ')
+    .replace(/\s+/g, ' ')
+    .trim()
+  const sentences = plain.match(/[^.!?]+[.!?]+/g) ?? [plain]
+  return sentences.slice(0, 2).join(' ').trim()
+}
+
 function genererQuestionsScene(): QuestionScene[] {
-  const candidats = tousLesTermes.filter(t => t.description && t.description.length > 60)
+  const candidats = tousLesTermes.filter(t => {
+    if (!t.description || t.description.length < 60) return false
+    const resume = resumeDescription(t.description)
+    return resume.length > 40
+  })
   const selection = shuffle(candidats).slice(0, NB_QUESTIONS)
   return selection.map(terme => {
     const distracteurs = tousLesTermes
@@ -33,7 +48,7 @@ function genererQuestionsScene(): QuestionScene[] {
     return {
       termeId: terme.id,
       nom: terme.nom,
-      description: terme.description,
+      description: resumeDescription(terme.description),
       bonneReponse: terme.nom,
       choix,
     }
