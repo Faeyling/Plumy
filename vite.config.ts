@@ -29,10 +29,18 @@ export default defineConfig({
         ],
       },
       workbox: {
-        globPatterns: ['**/*.{js,css,html,svg,woff2}'],
+        globPatterns: ['**/*.{js,css,html,svg,woff2,png,ico}'],
+        globIgnores: ['**/plumy-retour.png'],
+        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
+        cleanupOutdatedCaches: true,
         navigateFallback: '/index.html',
         navigateFallbackDenylist: [/^\/api\//],
         runtimeCaching: [
+          {
+            urlPattern: /\/mascotte\/plumy-retour\.png$/,
+            handler: 'CacheFirst',
+            options: { cacheName: 'mascotte-large', expiration: { maxEntries: 5 } },
+          },
           {
             urlPattern: /^https:\/\/(www\.youtube\.com|youtu\.be)\/.*/i,
             handler: 'NetworkOnly',
