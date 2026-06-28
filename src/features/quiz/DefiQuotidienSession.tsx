@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { tousLesTermes } from '@/content/termes/index'
 import { statsRepository } from '@/data/repositories/statsRepository'
@@ -8,22 +8,26 @@ import { getBadge } from '@/data/badges'
 import { PluмyMascot } from '@/components/mascotte/PluмyMascot'
 import { fr } from '@/i18n/fr'
 import { db } from '@/data/db'
+import { seededRandom, todaySeed } from '@/lib/seededRandom'
 
 const NB_QUESTIONS = 5
-const PTS_CORRECT = 10
+const PTS_CORRECT_BASE = 10
 
-function seededRandom(seed: number) {
-  let s = seed
-  return () => {
-    s = (s * 1664525 + 1013904223) & 0xffffffff
-    return (s >>> 0) / 0x100000000
-  }
+function comboMultiplier(combo: number): number {
+  if (combo >= 10) return 3
+  if (combo >= 5) return 2
+  if (combo >= 3) return 1.5
+  return 1
+}
+
+function comboLabel(combo: number): string | null {
+  if (combo >= 5) return fr.combos.seuil5
+  if (combo >= 3) return fr.combos.seuil3
+  return null
 }
 
 function getDefiDuJour() {
-  const today = new Date().toISOString().slice(0, 10)
-  const seed = today.split('').reduce((acc, c) => acc + c.charCodeAt(0), 0)
-  const rng = seededRandom(seed)
+  const rng = seededRandom(todaySeed())
   const termesCandidats = tousLesTermes.filter(t => t.definition.length > 20)
   const shuffled = [...termesCandidats].sort(() => rng() - 0.5)
   return shuffled.slice(0, NB_QUESTIONS)
@@ -54,6 +58,9 @@ export function DefiQuotidienSession() {
   const [index, setIndex] = useState(0)
   const [selected, setSelected] = useState<string | null>(null)
   const [corrects, setCorrects] = useState(0)
+  const [combo, setCombo] = useState(0)
+  const [ptsTotal, setPtsTotal] = useState(0)
+  const [showMiniLecon, setShowMiniLecon] = useState(false)
   const [termine, setTermine] = useState(false)
   const [ptsGagnes, setPtsGagnes] = useState(0)
   const [newBadges, setNewBadges] = useState<string[]>([])
@@ -64,20 +71,32 @@ export function DefiQuotidienSession() {
   const isAnswered = selected !== null
   const isLast = index === total - 1
   const isCorrect = selected === question?.bonneReponse
+  const multiplier = comboMultiplier(combo)
+  const comboMsg = comboLabel(combo)
 
   function handleSelect(choix: string) {
     if (isAnswered || !question) return
     setSelected(choix)
-    if (choix === question.bonneReponse) setCorrects(c => c + 1)
+    if (choix === question.bonneReponse) {
+      const newCombo = combo + 1
+      setCombo(newCombo)
+      const pts = Math.round(PTS_CORRECT_BASE * comboMultiplier(newCombo))
+      setPtsTotal(p => p + pts)
+      setCorrects(c => c + 1)
+    } else {
+      setCombo(0)
+      setShowMiniLecon(true)
+    }
   }
 
   async function handleNext() {
+    setShowMiniLecon(false)
     if (!isLast) {
       setIndex(i => i + 1)
       setSelected(null)
       return
     }
-    const pts = corrects * PTS_CORRECT
+    const pts = ptsTotal
     await statsRepository.ajouterPoints(pts)
     const stats = await statsRepository.get()
     await statsRepository.update({ quizJoues: stats.quizJoues + 1 })
@@ -163,9 +182,16 @@ export function DefiQuotidienSession() {
           <span className="font-[var(--font-titre)] font-bold text-[var(--color-encre)]">
             {fr.defiQuotidien.titre}
           </span>
-          <span className="text-xs text-[var(--color-gris-texte)]">
-            {index + 1} / {total}
-          </span>
+          <div className="flex items-center gap-2">
+            {combo >= 3 && (
+              <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-[var(--color-candy-jaune)] text-[var(--color-encre)]">
+                ×{multiplier} {fr.combos.serie(combo)}
+              </span>
+            )}
+            <span className="text-xs text-[var(--color-gris-texte)]">
+              {index + 1} / {total}
+            </span>
+          </div>
         </div>
         <div className="h-2 bg-[var(--color-gris-doux)] rounded-full overflow-hidden">
           <motion.div
@@ -217,6 +243,41 @@ export function DefiQuotidienSession() {
               })}
             </div>
 
+            {isAnswered && isCorrect && comboMsg && (
+              <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} className="text-center py-1">
+                <span className="text-sm font-bold text-[var(--color-candy-jaune)]">{comboMsg}</span>
+              </motion.div>
+            )}
+
+            {isAnswered && !isCorrect && showMiniLecon && (
+              <motion.div
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="bg-[var(--color-candy-rose-light)] rounded-[var(--radius-card)] p-4 flex gap-3"
+              >
+                <img
+                  src="/mascotte/plumy-encouragement.png"
+                  alt="Plumy encourage"
+                  className="w-12 h-12 object-contain flex-shrink-0"
+                />
+                <div className="flex-1 min-w-0">
+                  <p className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-sm mb-1">
+                    {fr.miniLecon.titre}
+                  </p>
+                  <p className="text-xs font-semibold text-[var(--color-encre)] mb-1">{question.bonneReponse}</p>
+                  <p className="text-xs text-[var(--color-encre)] leading-snug line-clamp-3">
+                    {question.terme.definition}
+                  </p>
+                  <Link
+                    to={`/terme/${question.terme.id}`}
+                    className="text-xs text-[var(--color-plumy-blue)] underline mt-1 inline-block"
+                  >
+                    {fr.miniLecon.voirFiche}
+                  </Link>
+                </div>
+              </motion.div>
+            )}
+
             {isAnswered && (
               <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="space-y-2">
                 <p
@@ -235,7 +296,7 @@ export function DefiQuotidienSession() {
                   onClick={handleNext}
                   className="w-full py-3 bg-[var(--color-candy-rose)] text-white font-[var(--font-titre)] font-bold rounded-[var(--radius-card)] shadow-[var(--shadow-card)]"
                 >
-                  {isLast ? fr.quiz.terminer : fr.quiz.suivant}
+                  {!isCorrect ? fr.miniLecon.compris : isLast ? fr.quiz.terminer : fr.quiz.suivant}
                 </button>
               </motion.div>
             )}

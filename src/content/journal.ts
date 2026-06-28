@@ -1,0 +1,380 @@
+export interface EntreeJournal {
+  id: number
+  titre: string
+  contenu: string
+  termeIds: string[]
+}
+
+export const journalDePlumy: EntreeJournal[] = [
+  {
+    id: 1,
+    titre: "La base de tout (vraiment tout)",
+    contenu: "J'écris ça en premier parce que c'est littéralement la première chose qu'on apprend en classique : le plié. Une flexion des genoux, oui — mais aussi la racine de presque chaque saut, chaque tour, chaque réception. Quand tu fais un plié parfait, tu prépares tout ce qui vient après.",
+    termeIds: ['plie'],
+  },
+  {
+    id: 2,
+    titre: "L'arabesque m'a humilié",
+    contenu: "J'ai mis des mois à comprendre pourquoi mon arabesque ne ressemblait à rien. La réponse ? J'ouvrais depuis le genou, pas depuis la hanche. L'arabesque, c'est une ligne continue du bout des doigts à la pointe du pied arrière. Rien ne doit être cassé.",
+    termeIds: ['arabesque'],
+  },
+  {
+    id: 3,
+    titre: "La pirouette et le vertige (l'histoire d'amour impossible)",
+    contenu: "Chaque fois que je travaille ma pirouette, je me rappelle que le secret c'est le spotting — mais surtout que le préparation compte autant que le tour lui-même. Un mauvais départ, c'est une mauvaise pirouette, peu importe le talent. Je me répète ça à chaque cours.",
+    termeIds: ['pirouette'],
+  },
+  {
+    id: 4,
+    titre: "Mes bras ont leurs propres opinions",
+    contenu: "Le port de bras, c'est la partie de mon corps qui décide souvent de faire autre chose que ce que j'ai décidé. Arrondir sans être mou, allonger sans être raide — il faut des semaines pour que les bras et la tête s'accordent. Mais quand ça marche, c'est magique.",
+    termeIds: ['port-de-bras'],
+  },
+  {
+    id: 5,
+    titre: "Grand battement : quand la jambe décide de voyager",
+    contenu: "Le grand battement, c'est le moment où je me sens vraiment libre. La jambe part vers le ciel — mais ce qui compte, c'est la jambe d'appui qui reste solide, ancrée, impeccable. La liberté de la jambe libre dépend entièrement de la stabilité de l'autre.",
+    termeIds: ['grand-battement'],
+  },
+  {
+    id: 6,
+    titre: "L'en-dehors : ne jamais forcer",
+    contenu: "Petit truc que j'ai appris à mes dépens : l'en-dehors vient de la rotation de la hanche, pas des pieds. Forcer tes pieds à pointer à 180° sans en avoir la rotation naturelle, c'est le meilleur moyen d'abîmer tes genoux. Travaille depuis la hanche. Toujours.",
+    termeIds: ['en-dehors-en-dedans', 'turn-out'],
+  },
+  {
+    id: 7,
+    titre: "L'épaulement change absolument tout",
+    contenu: "J'ai découvert l'épaulement assez tard, et ça a tout changé dans mon classique. Ce léger décrochage des épaules par rapport au bassin — cette torsion subtile — donne une vie à chaque pose qu'aucun alignement parfait ne peut donner seul. C'est la différence entre une statue et une danseuse.",
+    termeIds: ['epaulement'],
+  },
+  {
+    id: 8,
+    titre: "Sur les pointes : non, c'est pas que ça fait mal",
+    contenu: "Les pointes font mal quand elles sont mal utilisées ou trop tôt. Mais sur des pieds bien préparés, des pointes bien adaptées et avec un gainage solide, c'est un dialogue entre le pied et le sol. On monte sur les pointes depuis le centre, pas depuis les orteils.",
+    termeIds: ['sur-les-pointes'],
+  },
+  {
+    id: 9,
+    titre: "Quand les pieds font de la musique",
+    contenu: "La batterie en danse classique, c'est l'art de faire claquer les jambes l'une contre l'autre dans les airs. Entrechats, brisés, royales — chaque figure a sa propre mélodie. J'adore ce côté percussif du classique, cette idée que le corps peut être un instrument.",
+    termeIds: ['batterie'],
+  },
+  {
+    id: 10,
+    titre: "Le développé, une leçon de patience",
+    contenu: "Le développé se déploie lentement — et c'est tout le point. Tu passes par le retiré, tu laisses la jambe s'ouvrir progressivement, tu tiens à la hauteur maximale. C'est le mouvement qui m'a appris que la lenteur est une forme de force.",
+    termeIds: ['developpe'],
+  },
+  {
+    id: 11,
+    titre: "Apprendre à laisser aller",
+    contenu: "La release technique m'a mis face à une évidence : je dansais en retenant mon corps. En contemporain, relâcher le tonus superficiel ne veut pas dire s'effondrer — ça veut dire laisser le poids et la gravité travailler avec toi, pas contre toi. Ça change tout.",
+    termeIds: ['release-technique'],
+  },
+  {
+    id: 12,
+    titre: "Tomber en confiance",
+    contenu: "Le contact improvisation m'a appris quelque chose que je n'aurais pas cru possible : faire confiance à quelqu'un que je connais à peine, en quelques secondes, avec mon poids entier. Le point de contact entre deux corps crée une conversation sans mots. C'est assez bouleversant.",
+    termeIds: ['contact-improvisation'],
+  },
+  {
+    id: 13,
+    titre: "La chute, ça s'apprend",
+    contenu: "Une chute contrôlée en contemporain n'est pas un accident — c'est un choix artistique. Tu laisses la gravité gagner, tu guides la descente, tu roules ou tu cèdes progressivement. C'est l'une des choses les plus difficiles à enseigner : lâcher prise sans se blesser.",
+    termeIds: ['chute-controlee'],
+  },
+  {
+    id: 14,
+    titre: "Les spirales du contemporain",
+    contenu: "Dans mon carnet, j'ai une page entière consacrée aux spirales. Cette organisation torsadée du tronc — où les épaules et le bassin se décalent en rotation — est au cœur du contemporain. Une spirale bien lancée peut initier tout un enchaînement sans effort apparent.",
+    termeIds: ['spirale'],
+  },
+  {
+    id: 15,
+    titre: "La gravité comme alliée",
+    contenu: "En contemporain, le rapport à la gravité est radicalement différent du classique. Ici, on ne lutte pas contre elle — on joue avec elle, on s'y abandonne, on l'utilise. Ce concept a révolutionné ma façon de voir le mouvement. La chute peut être aussi belle que l'envol.",
+    termeIds: ['gravite-contemporain', 'poids-abandon'],
+  },
+  {
+    id: 16,
+    titre: "Donner son poids",
+    contenu: "Partager son poids avec un partenaire — vraiment le donner, pas le simuler — c'est un acte de confiance totale. Le poids et l'abandon dans le contemporain ne sont pas de la faiblesse : ils sont la condition pour que la danse soit réelle, incarnée, vivante.",
+    termeIds: ['poids-abandon', 'partage-poids'],
+  },
+  {
+    id: 17,
+    titre: "Laban avait tout compris",
+    contenu: "Les facteurs Laban — poids, espace, temps, flux — m'ont donné un langage pour décrire quelque chose que je ressentais sans pouvoir le nommer. Comment un même mouvement peut être lourd ou léger, soudain ou soutenu, direct ou indirect. C'est un outil de composition extraordinaire.",
+    termeIds: ['effort-laban'],
+  },
+  {
+    id: 18,
+    titre: "Martha Graham et les tripes",
+    contenu: "La contraction de Graham part du bassin, remonte jusqu'au sternum, creuse le ventre. Ce n'est pas une posture — c'est une émotion physiquement incarnée. Et le release qui suit est comme un soupir du corps entier. Je n'ai jamais rien senti d'aussi viscéral en danse.",
+    termeIds: ['contraction-release'],
+  },
+  {
+    id: 19,
+    titre: "Tomber pour mieux se relever",
+    contenu: "Doris Humphrey a construit toute une technique autour du fall and recovery — le déséquilibre comme moteur du mouvement. On se laisse tomber vers la limite du possible, puis on récupère. Entre les deux : la vie. C'est une des métaphores les plus belles de la danse moderne.",
+    termeIds: ['fall-recovery', 'desequilibre'],
+  },
+  {
+    id: 20,
+    titre: "Le dos plat de la danse moderne",
+    contenu: "Le flat back — dos horizontal, jambes droites, bassin à 90° — est une des formes les plus iconiques de la danse moderne. Ce n'est pas simplement se pencher en avant : c'est maintenir une ligne parfaitement parallèle au sol depuis la nuque jusqu'au coccyx. Ma colonne vertébrale en a encore des souvenirs.",
+    termeIds: ['flat-back'],
+  },
+  {
+    id: 21,
+    titre: "L'héritage d'Horton",
+    contenu: "Lester Horton a créé une technique basée sur le développement de la force et de la flexibilité simultanément — sans se blesser. Les T-positions, les lateral T, les flat backs : autant de formes que j'ai retrouvées dans la danse commerciale sans toujours savoir d'où elles venaient. Maintenant je sais.",
+    termeIds: ['technique-horton'],
+  },
+  {
+    id: 22,
+    titre: "José Limón et le poids de l'humanité",
+    contenu: "La technique Limón, c'est travailler avec le poids du corps comme s'il portait quelque chose de plus grand que lui-même. Les successsions, les balancements, les rebonds — tout vient d'une forme de gravité émotionnelle. J'y reviens souvent quand je cherche de la profondeur.",
+    termeIds: ['technique-limon'],
+  },
+  {
+    id: 23,
+    titre: "Les isolations de jazz : un corps par sections",
+    contenu: "En jazz, isoler la tête pendant que les épaules restent fixes, ou faire bouger le bassin sans que rien d'autre ne suive — c'est une compétence à part entière. Les isolations jazz demandent une conscience corporelle segment par segment. Et une fois qu'on sait les faire, on les voit partout.",
+    termeIds: ['isolations-jazz', 'isolation'],
+  },
+  {
+    id: 24,
+    titre: "Le jazz walk : une attitude",
+    contenu: "Le jazz walk n'est pas une simple façon de marcher — c'est une déclaration. Chaque pas porte une intention, une énergie, une présence. Ce qui change tout, c'est l'utilisation du bassin, le timing des bras, l'angle du regard. On ne traverse pas le plateau en jazz : on le possède.",
+    termeIds: ['jazz-walk'],
+  },
+  {
+    id: 25,
+    titre: "Le jazz square est partout",
+    contenu: "Quatre pas en forme de carré — devant, côté, derrière, côté — le jazz square est l'un des pas de base les plus reconnaissables du jazz. On le retrouve dans les comédies musicales, les clips, les chorés de groupe. C'est simple, efficace, et déclinable à l'infini selon le style.",
+    termeIds: ['jazz-square'],
+  },
+  {
+    id: 26,
+    titre: "Le groove ne s'apprend pas, il se ressent",
+    contenu: "J'ai longtemps cherché à analyser ce qu'était le groove. La conclusion dans mon carnet : c'est le dialogue entre ton corps et la pulsation musicale, ce léger décalage qui donne l'impression que la musique vient de toi. Ça ne s'enseigne pas directement — ça s'attrape par immersion.",
+    termeIds: ['groove'],
+  },
+  {
+    id: 27,
+    titre: "La syncope m'a mis par terre",
+    contenu: "La syncope en danse jazz, c'est accentuer sur les temps faibles — le 'et' entre les temps forts. Ça paraît simple sur le papier. Puis tu essaies de le faire tout en souriant et en gardant les bras placés, et là tu comprends pourquoi le rythme est une discipline à part entière.",
+    termeIds: ['syncope'],
+  },
+  {
+    id: 28,
+    titre: "Broadway : quand le jazz raconte une histoire",
+    contenu: "Le Broadway jazz, c'est le jazz au service du récit. Chaque geste porte un sentiment, une intention narrative. Les bras larges, le sourire calculé, le regard qui cherche le dernier rang — tout est pensé pour que même le spectateur du fond comprenne l'émotion. J'adore ce côté généreux.",
+    termeIds: ['sous-style-broadway'],
+  },
+  {
+    id: 29,
+    titre: "Bob Fosse et les épaules voûtées",
+    contenu: "Le style Fosse m'a fasciné dès que je l'ai découvert. Cette façon de voûter légèrement les épaules, de tout mettre dans les mains et les hanches, ce staccato précis — c'est l'anti-pose, l'élégance dans l'imperfection calculée. Cabaret, Chicago, All That Jazz. Je pourrais regarder ça en boucle.",
+    termeIds: ['sous-style-fosse'],
+  },
+  {
+    id: 30,
+    titre: "Le street jazz et ses influences",
+    contenu: "Le street jazz mélange les fondamentaux du jazz avec les codes du hip-hop et de la culture urbaine. Les 'sharp moves', les accents percussifs, l'attitude cool — c'est un style vivant qui évolue en permanence avec la musique du moment. Et c'est pour ça que je l'adore.",
+    termeIds: ['sous-style-street-jazz'],
+  },
+  {
+    id: 31,
+    titre: "La posture en heels : tout part de là",
+    contenu: "Danser en talons hauts change tout l'axe du corps. Le centre de gravité remonte, le bassin se repositionne, les cuisses s'activent différemment. Avant même de bouger, apprendre à se tenir en talons est un apprentissage en soi. La posture heels, c'est la fondation de tout le reste.",
+    termeIds: ['posture-heels'],
+  },
+  {
+    id: 32,
+    titre: "Le walk en heels : pas si simple",
+    contenu: "Il n'y a pas qu'une façon de marcher en talons — il y en a des dizaines. Le strut, le cat walk, le sass walk... chacun dit quelque chose de différent. Ce que j'aime dans le walk heels, c'est que chaque pas devient une affirmation. On ne se déplace plus : on arrive.",
+    termeIds: ['walk-heels', 'strut'],
+  },
+  {
+    id: 33,
+    titre: "Le body roll : une vague de la tête aux pieds",
+    contenu: "Le body roll, c'est une ondulation continue qui part de la tête ou des hanches et traverse tout le corps — chaque vertèbre, chaque articulation. Le faire vraiment, sans rien bloquer, demande une conscience corporelle que peu de disciplines développent aussi bien que le heels.",
+    termeIds: ['body-roll-heels'],
+  },
+  {
+    id: 34,
+    titre: "Descendre au sol en talons",
+    contenu: "Le floorwork en heels, c'est l'art de descendre, bouger et se relever au sol avec des talons hauts — sans se blesser, avec style. C'est une compétence à part entière qui demande du gainage, de la souplesse et une confiance totale dans son corps. L'un des aspects les plus spectaculaires du heels.",
+    termeIds: ['floorwork-heels'],
+  },
+  {
+    id: 35,
+    titre: "Le hair toss : toujours plus dramatique que prévu",
+    contenu: "Le hair toss en heels, c'est ce moment où les cheveux deviennent une extension du mouvement — un geste qui amplifie une transition ou souligne un temps fort. C'est théâtral, c'est intentionnel, c'est puissant. Et oui, ça donne parfois un torticolis. Ça en vaut la peine.",
+    termeIds: ['hair-toss'],
+  },
+  {
+    id: 36,
+    titre: "Le sass : une petite attitude qui dit tout",
+    contenu: "Le sass en heels, c'est ce déhanché latéral rapide qui dit 'je suis là' sans avoir besoin de crier. Deux pas de côté avec un accent hip, une qualité presque nonchalante — mais entièrement contrôlée. C'est le genre de détail qui sépare quelqu'un qui danse en heels de quelqu'un qui danse vraiment en heels.",
+    termeIds: ['sass'],
+  },
+  {
+    id: 37,
+    titre: "La prise, avant tout",
+    contenu: "En pole, avant d'apprendre quoi que ce soit d'autre, tu apprends les grips. La façon dont tu tiens la barre détermine tout : ta sécurité, ta progression, tes figures possibles. J'ai noté dans mon carnet chaque famille de prises que j'ai croisée, parce qu'un mauvais grip est la cause numéro un de chutes non choisies.",
+    termeIds: ['grip-pole'],
+  },
+  {
+    id: 38,
+    titre: "La première montée : un souvenir",
+    contenu: "Je me souviens de ma première montée sur la barre. Les mains brûlaient, les cuisses serraient comme jamais, et j'étais à 50 cm du sol. Aujourd'hui je sais que la montée pole est une question de technique autant que de force — l'angle, la pression, l'enchaînement des appuis. Mais ce souvenir reste.",
+    termeIds: ['montee-pole'],
+  },
+  {
+    id: 39,
+    titre: "Les spins me font tourner la tête (au sens propre)",
+    contenu: "En pole, les spins sur barre tournante te donnent une sensation grisante que j'ai mis du temps à gérer. Sur barre statique, le spin c'est toi qui génères le mouvement rotatif par le placement du corps. Dans les deux cas, l'habitude de la désorientation est une compétence à développer.",
+    termeIds: ['spin-pole'],
+  },
+  {
+    id: 40,
+    titre: "La première inversion : quand le monde se retourne",
+    contenu: "Être inversé sur une barre pour la première fois change ta perception de l'espace de façon permanente. L'inversion en pole demande une confiance absolue dans ton grip et ton gainage, et une progression lente depuis le sol. Ne saute pas les étapes — chaque préalable existe pour une raison.",
+    termeIds: ['inversion-pole'],
+  },
+  {
+    id: 41,
+    titre: "D'où vient vraiment la pole dance",
+    contenu: "Je tiens à écrire ça clairement dans mon carnet : la pole moderne a été créée dans les strip-clubs par des travailleuses du sexe, majoritairement des femmes noires, racisées et LGBTQ+. Ce sont elles qui ont bâti ce vocabulaire. L'histoire de la pole commence là, et nulle part ailleurs.",
+    termeIds: ['origine-pole'],
+  },
+  {
+    id: 42,
+    titre: "La pole comme forme d'art",
+    contenu: "Le pole art pousse la pratique vers une expression purement artistique — narratif, émotionnel, visuel. Les figures deviennent des images, les transitions des phrases. Ce que j'aime dans cette branche, c'est qu'elle réconcilie la virtuosité athlétique avec la profondeur chorégraphique.",
+    termeIds: ['pole-art'],
+  },
+  {
+    id: 43,
+    titre: "L'art de ne pas aller trop vite",
+    contenu: "En burlesque, le tease n'est pas ce qu'on retire — c'est le temps qu'on prend pour ne pas le faire. La maîtrise du tempo, du regard, de la pause au bon moment, c'est ça le tease. J'ai réalisé que c'est une forme de narration corporelle d'une sophistication rare.",
+    termeIds: ['tease'],
+  },
+  {
+    id: 44,
+    titre: "Le shimmy : vibrations et histoire",
+    contenu: "Le shimmy — cette vibration rapide des épaules ou des hanches — est l'un des mouvements les plus anciens et les plus universels du burlesque. Il vient de traditions de danse africaines, et je trouve important de le rappeler quand on parle de son usage dans le burlesque américain.",
+    termeIds: ['shimmy'],
+  },
+  {
+    id: 45,
+    titre: "Bumps, grinds et vocabulaire",
+    contenu: "Les bumps sont des projections rapides du bassin, les grinds des rotations circulaires plus lentes et continues. Ensemble, ils forment le cœur du vocabulaire burlesque classique. Savoir doser l'un et l'autre selon la musique, c'est comprendre ce que la danse burlesque cherche à communiquer.",
+    termeIds: ['bump-grind'],
+  },
+  {
+    id: 46,
+    titre: "Le reveal : le moment",
+    contenu: "Dans le burlesque, le reveal est le moment où quelque chose se dévoile — un accessoire ôté, une pose révélée, un regard offert au public. Ce n'est pas anodin : c'est chorégraphié, minuté, pensé. Le reveal burlesque, c'est le climax d'une petite histoire de séduction artistique.",
+    termeIds: ['reveal-burlesque'],
+  },
+  {
+    id: 47,
+    titre: "Mes accessoires préférés",
+    contenu: "L'éventail de plumes, le boa, les gants longs, le corset — les accessoires en burlesque ne sont pas des décorations. Ils sont des partenaires de scène avec leurs propres contraintes : comment tenir l'éventail pour qu'il cache exactement ce qu'il faut, comment peler un gant avec lenteur. Ça s'apprend.",
+    termeIds: ['prop-burlesque', 'glove-peel'],
+  },
+  {
+    id: 48,
+    titre: "Le timing, c'est tout",
+    contenu: "En burlesque, une seconde de décalage sur un pose, un révèle qui arrive trop tôt — et c'est toute la magie qui disparaît. Le timing burlesque est une discipline en soi : écouter la musique, sentir le public, savoir quand tenir et quand lâcher. C'est ce qui distingue une performeuse d'une artiste.",
+    termeIds: ['timing-burlesque'],
+  },
+  {
+    id: 49,
+    titre: "Le French cancan, cette folie organisée",
+    contenu: "Le french cancan est l'un de mes sujets favoris dans mon carnet. Cette énergie explosive, ces jupes qui tourbillonnent, ces jambes qui montent en synchronie parfaite — c'est le chaos magnifiquement contrôlé. Tout repose sur la puissance des jambes et la solidité du tronc.",
+    termeIds: ['french-cancan', 'cancan'],
+  },
+  {
+    id: 50,
+    titre: "Le grand écart aérien du cancan",
+    contenu: "Le grand écart sauté du cancan — cette jambe qui monte vers le ciel pendant que l'autre quitte le sol — est l'une des figures les plus iconiques de la danse française. Ce n'est pas une figure acrobatique qu'on apprend vite : il faut des mois de travail sur la souplesse active et la puissance.",
+    termeIds: ['grand-ecart-cancan'],
+  },
+  {
+    id: 51,
+    titre: "Le high kick et les ischio-jambiers",
+    contenu: "J'ai noté dans mon carnet une mise en garde importante sur le high kick : il ne doit jamais se faire à froid, et jamais au maximum de sa souplesse passive. Les ischio-jambiers sont les premiers à trinquer. Progressivité, échauffement, renforcement — dans cet ordre.",
+    termeIds: ['high-kick', 'entorse-cheville'],
+  },
+  {
+    id: 52,
+    titre: "La précision de la chorus line",
+    contenu: "Dans une chorus line, chaque danseuse doit être un reflet parfait de ses voisines — même angle de jambe, même timing du regard, même hauteur du bras. C'est un exercice collectif d'une exigence absolue. Et paradoxalement, ce nivellement par la précision crée quelque chose de profondément beau.",
+    termeIds: ['chorus-line', 'synchronisation-chorus'],
+  },
+  {
+    id: 53,
+    titre: "La revue : un art de la mise en scène",
+    contenu: "La revue, c'est l'art de raconter sans vraiment raconter — tableaux qui se succèdent, costumes qui éblouissent, numéros qui s'enchaînent. Chaque tableau de revue est une mini-œuvre autonome. J'ai une tendresse particulière pour cette forme qui mélange tous les arts du spectacle.",
+    termeIds: ['revue', 'tableau-revue'],
+  },
+  {
+    id: 54,
+    titre: "Porter son costume, pas le subir",
+    contenu: "Il y a une chose que j'ai apprise en étudiant le cabaret et la revue : le costume est un outil, pas un obstacle. La façon dont tu portes une coiffe à plumes, dont tu gères une robe à traîne, dont tu marches avec un boa — ça s'apprend. Et une fois maîtrisé, le costume amplifie tout.",
+    termeIds: ['port-costume', 'boa-eventail'],
+  },
+  {
+    id: 55,
+    titre: "Ne saute jamais l'échauffement",
+    contenu: "J'ai une page entière dans mon carnet sur ce sujet. L'échauffement n'est pas une option ou un rituel inutile — c'est la préparation progressive du muscle, des tendons, du système nerveux. Court mais bien fait : élévation de la température, mobilisation articulaire, activation neuromusculaire. Dans cet ordre.",
+    termeIds: ['echauffement-danse'],
+  },
+  {
+    id: 56,
+    titre: "Pourquoi le renforcement change tout",
+    contenu: "Les données sur la prévention des blessures sont claires : le renforcement neuromusculaire réduit le risque de blessure de 30 à 50%. Ce n'est pas du gainage pour le plaisir — c'est de la sécurité active. Les muscles stabilisateurs protègent tes articulations là où elles sont le plus vulnérables.",
+    termeIds: ['renforcement-neuromusculaire', 'gainage-fonctionnel'],
+  },
+  {
+    id: 57,
+    titre: "L'en-dehors ne se force pas (deuxième avertissement)",
+    contenu: "Je l'ai déjà écrit mais je le réécris parce que c'est important. Le turn-out naturel est déterminé par la morphologie de ta hanche — certaines personnes ont naturellement 70°, d'autres 120°. Travailler dans ton amplitude naturelle te protège ; la forcer t'abîme. Pas de compromis là-dessus.",
+    termeIds: ['turn-out', 'syndrome-rotulien'],
+  },
+  {
+    id: 58,
+    titre: "Le repos, c'est de l'entraînement",
+    contenu: "On sous-estime dramatiquement le repos dans la danse. C'est pendant la récupération que les muscles se reconstruisent, que le système nerveux consolide les patterns moteurs, que le mental digère. Deux jours sans danser ne te font pas reculer — ils te font avancer. J'ai mis du temps à l'accepter.",
+    termeIds: ['repos-recuperation'],
+  },
+  {
+    id: 59,
+    titre: "Ma bulle de danse",
+    contenu: "La kinésphère, c'est l'espace atteignable autour de ton corps sans te déplacer — ta bulle personnelle. Laban a formalisé ce concept, mais tu le ressens instinctivement : l'espace qui t'appartient, celui que tu habites. Travailler la kinésphère, c'est apprendre à remplir ton espace avec intention.",
+    termeIds: ['kinesphere'],
+  },
+  {
+    id: 60,
+    titre: "Écouter la musique autrement",
+    contenu: "La phrase musicale, c'est une unité de sens dans la musique — comme une phrase dans une langue. La comprendre te permet de danser avec la musique plutôt que dessus. J'ai noté dans mon carnet que les meilleurs danseurs que j'ai vus semblaient respirer la même phrase que les musiciens.",
+    termeIds: ['phrase-musicale'],
+  },
+  {
+    id: 61,
+    titre: "L'improvisation libère",
+    contenu: "Improviser, ce n'est pas danser sans règles — c'est jouer avec des contraintes que tu te donnes toi-même. Partir d'une partie du corps, d'une qualité de mouvement, d'une intention. L'improvisation structurée m'a appris que la liberté ne se trouve pas dans l'absence de limite, mais dans ce qu'on fait de celle qu'on choisit.",
+    termeIds: ['improvisation-structuree', 'contrainte-creative'],
+  },
+]
+
+export function getEntreeJournal(seed: number): EntreeJournal {
+  const idx = Math.abs(seed) % journalDePlumy.length
+  return journalDePlumy[idx]
+}

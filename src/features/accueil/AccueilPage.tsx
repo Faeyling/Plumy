@@ -6,14 +6,35 @@ import { useStats } from '@/hooks/useStats'
 import { statsRepository } from '@/data/repositories/statsRepository'
 import { progressionRepository } from '@/data/repositories/progressionRepository'
 import { unites } from '@/content/unites'
-import { getTermesParUnite } from '@/content/termes/index'
+import { tousLesTermes, getTermesParUnite } from '@/content/termes/index'
 import { iconeIllustration } from '@/content/illustrations'
-import type { Unite } from '@/content/schema'
+import { seededRandom, todaySeed } from '@/lib/seededRandom'
+import { getEntreeJournal } from '@/content/journal'
+import { parcours } from '@/content/parcours'
+import type { Unite, Discipline } from '@/content/schema'
 import { fr } from '@/i18n/fr'
 
 function pickRandom<T>(arr: readonly T[]): T {
   return arr[Math.floor(Math.random() * arr.length)]
 }
+
+const DISCIPLINES: Array<{ id: Discipline; label: string; emoji: string; couleur: string }> = [
+  { id: 'classique', label: 'Classique', emoji: '🩰', couleur: 'var(--color-plumy-blue)' },
+  { id: 'contemporain', label: 'Contemporain', emoji: '🌊', couleur: 'var(--color-candy-menthe)' },
+  { id: 'moderne', label: 'Moderne', emoji: '🎭', couleur: 'var(--color-candy-corail)' },
+  { id: 'jazz', label: 'Jazz', emoji: '🎷', couleur: 'var(--color-candy-jaune)' },
+  { id: 'heels', label: 'Heels', emoji: '👠', couleur: 'var(--color-candy-rose)' },
+  { id: 'cabaret', label: 'Cabaret', emoji: '✨', couleur: 'var(--color-candy-lavande)' },
+  { id: 'pole-dance', label: 'Pole', emoji: '🌀', couleur: 'var(--color-plumy-teal)' },
+  { id: 'burlesque', label: 'Burlesque', emoji: '🪶', couleur: 'var(--color-candy-lavande)' },
+]
+
+const _seed = todaySeed()
+const _rng = seededRandom(_seed)
+const _candidats = tousLesTermes.filter(t => t.definition.length > 20)
+const TERME_DU_JOUR = [..._candidats].sort(() => _rng() - 0.5)[0]
+const ENTREE_JOURNAL = getEntreeJournal(_seed)
+const MOT_PLUMY = fr.termeDuJour.motDePlumy[_seed % fr.termeDuJour.motDePlumy.length]
 
 const iconeCouleur: Record<string, string> = {
   'corps-qui-danse': 'var(--color-candy-lavande)',
@@ -40,6 +61,8 @@ export function AccueilPage() {
   const [aRevoir, setARevoir] = useState(0)
   const [showOnboarding, setShowOnboarding] = useState(false)
   const [progressParUnite, setProgressParUnite] = useState<Record<number, { vus: number; total: number }>>({})
+  const [progressParDiscipline, setProgressParDiscipline] = useState<Record<string, { vus: number; total: number }>>({})
+  const [parcoursVus, setParcoursVus] = useState<Record<string, number>>({})
   const [illustrationIdx] = useState(() => {
     const key = 'plumy-accueil-illustration-idx'
     const stored = parseInt(localStorage.getItem(key) ?? '0', 10)
@@ -74,6 +97,27 @@ export function AccueilPage() {
         result[unite.numero] = { vus, total: termes.length }
       }
       setProgressParUnite(result)
+
+      const discResult: Record<string, { vus: number; total: number }> = {}
+      for (const disc of DISCIPLINES) {
+        const termes = tousLesTermes.filter(t => t.disciplines.includes(disc.id))
+        const vus = termes.filter(t => {
+          const p = progMap.get(t.id)
+          return p && p.statut !== 'jamais-vu'
+        }).length
+        discResult[disc.id] = { vus, total: termes.length }
+      }
+      setProgressParDiscipline(discResult)
+
+      const parcResult: Record<string, number> = {}
+      for (const p of parcours) {
+        const vus = p.termeIds.filter(id => {
+          const prog = progMap.get(id)
+          return prog && prog.statut !== 'jamais-vu'
+        }).length
+        parcResult[p.id] = vus
+      }
+      setParcoursVus(parcResult)
     })
   }, [refresh])
 
@@ -135,6 +179,161 @@ export function AccueilPage() {
             </Link>
           </>
         )}
+      </section>
+
+      {/* Terme du jour */}
+      {TERME_DU_JOUR && (
+        <section className="px-4 pt-5" aria-label="Terme du jour">
+          <h2 className="font-[var(--font-titre)] font-bold text-sm text-[var(--color-encre)] uppercase tracking-wide mb-3">
+            {fr.termeDuJour.titre}
+          </h2>
+          <motion.div
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
+            className="bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] p-4 flex gap-3"
+          >
+            <img
+              src="/mascotte/plumy-encouragement.png"
+              alt=""
+              aria-hidden="true"
+              className="w-14 h-14 object-contain flex-shrink-0"
+              style={{ mixBlendMode: 'multiply' }}
+            />
+            <div className="flex-1 min-w-0">
+              <p className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-base leading-snug mb-1">
+                {TERME_DU_JOUR.nom}
+              </p>
+              <p className="text-xs text-[var(--color-gris-texte)] leading-snug mb-2 line-clamp-2">
+                {TERME_DU_JOUR.definition}
+              </p>
+              <p className="text-xs italic text-[var(--color-candy-rose)] mb-2">{MOT_PLUMY}</p>
+              <Link
+                to={`/terme/${TERME_DU_JOUR.id}`}
+                className="text-xs font-semibold text-[var(--color-plumy-blue)] underline underline-offset-2"
+              >
+                {fr.termeDuJour.decouvrir}
+              </Link>
+            </div>
+          </motion.div>
+        </section>
+      )}
+
+      {/* Journal de Plumy */}
+      {ENTREE_JOURNAL && (
+        <section className="px-4 pt-4" aria-label="Journal de Plumy">
+          <h2 className="font-[var(--font-titre)] font-bold text-sm text-[var(--color-encre)] uppercase tracking-wide mb-3">
+            {fr.journalPlumy.titre}
+          </h2>
+          <motion.div
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.15 }}
+            className="bg-[var(--color-candy-lavande-light,#f3f0ff)] rounded-[var(--radius-card)] shadow-[var(--shadow-card)] p-4"
+          >
+            <p className="font-[var(--font-manuscrit)] font-bold text-[var(--color-encre)] text-base mb-2">
+              {ENTREE_JOURNAL.titre}
+            </p>
+            <p className="text-sm text-[var(--color-encre)] leading-snug line-clamp-3">
+              {ENTREE_JOURNAL.contenu}
+            </p>
+            {ENTREE_JOURNAL.termeIds.length > 0 && (
+              <div className="flex flex-wrap gap-1.5 mt-2">
+                {ENTREE_JOURNAL.termeIds.map(id => {
+                  const t = tousLesTermes.find(x => x.id === id)
+                  if (!t) return null
+                  return (
+                    <Link
+                      key={id}
+                      to={`/terme/${id}`}
+                      className="text-xs px-2 py-0.5 rounded-full bg-white text-[var(--color-plumy-blue)] font-semibold"
+                    >
+                      {t.nom}
+                    </Link>
+                  )
+                })}
+              </div>
+            )}
+          </motion.div>
+        </section>
+      )}
+
+      {/* Carte des disciplines */}
+      <section className="px-4 pt-4" aria-label={fr.carteDisciplines.titre}>
+        <h2 className="font-[var(--font-titre)] font-bold text-sm text-[var(--color-encre)] uppercase tracking-wide mb-3">
+          {fr.carteDisciplines.titre}
+        </h2>
+        <div className="grid grid-cols-4 gap-2">
+          {DISCIPLINES.map((disc, idx) => {
+            const prog = progressParDiscipline[disc.id]
+            const pct = prog && prog.total > 0 ? Math.round((prog.vus / prog.total) * 100) : 0
+            return (
+              <motion.div
+                key={disc.id}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: idx * 0.04, duration: 0.3 }}
+                className="flex flex-col items-center gap-1 p-2 bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)]"
+              >
+                <span className="text-xl" aria-hidden="true">{disc.emoji}</span>
+                <p className="text-[10px] font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-center leading-tight">
+                  {disc.label}
+                </p>
+                <div className="w-full h-1 bg-[var(--color-gris-doux)] rounded-full overflow-hidden">
+                  <div
+                    className="h-full rounded-full transition-all duration-700"
+                    style={{ width: `${pct}%`, backgroundColor: disc.couleur }}
+                  />
+                </div>
+                <p className="text-[9px] text-[var(--color-gris-texte)]">
+                  {prog ? fr.carteDisciplines.progression(prog.vus, prog.total) : fr.carteDisciplines.aucunTerme}
+                </p>
+              </motion.div>
+            )
+          })}
+        </div>
+      </section>
+
+      {/* Parcours thématiques */}
+      <section className="px-4 pt-4" aria-label={fr.parcours.titre}>
+        <h2 className="font-[var(--font-titre)] font-bold text-sm text-[var(--color-encre)] uppercase tracking-wide mb-3">
+          {fr.parcours.titre}
+        </h2>
+        <div className="grid grid-cols-2 gap-2">
+          {parcours.map((p, idx) => {
+            const vus = parcoursVus[p.id] ?? 0
+            return (
+              <motion.div
+                key={p.id}
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: idx * 0.06, duration: 0.35 }}
+              >
+                <Link
+                  to={`/parcours/${p.id}`}
+                  className="flex flex-col p-3 bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-shadow h-full"
+                >
+                  <span className="text-2xl mb-1" aria-hidden="true">{p.emoji}</span>
+                  <p className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-xs leading-snug mb-1">
+                    {p.titre}
+                  </p>
+                  <p className="text-[10px] text-[var(--color-gris-texte)] leading-snug mb-2 flex-1">
+                    {fr.parcours.termes(p.termeIds.length)}
+                  </p>
+                  <div className="h-1 bg-[var(--color-gris-doux)] rounded-full overflow-hidden">
+                    <div
+                      className="h-full rounded-full transition-all duration-700"
+                      style={{ width: `${Math.round((vus / p.termeIds.length) * 100)}%`, backgroundColor: p.couleur }}
+                    />
+                  </div>
+                  <p className="text-[9px] text-[var(--color-gris-texte)] mt-0.5">
+                    {fr.parcours.progression(vus, p.termeIds.length)}
+                  </p>
+                </Link>
+              </motion.div>
+            )
+          })}
+        </div>
       </section>
 
       {/* Liste des unités */}

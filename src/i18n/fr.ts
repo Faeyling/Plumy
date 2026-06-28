@@ -339,6 +339,7 @@ export const fr = {
       flashcards: "Flashcards",
       "defi-quotidien": "Défi du jour",
       "revision-rapide": "Révision rapide",
+      "en-scene": "Mode En scène",
     } as Record<string, string>,
   },
 
@@ -348,6 +349,59 @@ export const fr = {
     commencer: "C'est parti !",
     tempsEcoule: "Temps écoulé !",
     aucunTerme: "Pas encore de termes à revoir. Explore des unités d'abord !",
+  },
+
+  termeDuJour: {
+    titre: "Terme du jour",
+    decouvrir: "Voir la fiche →",
+    motDePlumy: [
+      "J'ai une affection particulière pour celui-là.",
+      "Prends le temps de bien le lire — ça vaut vraiment le coup.",
+      "C'est l'un de mes préférés dans mes carnets.",
+      "Garde-le en tête pour la prochaine fois que tu danses.",
+      "Je reviens souvent à ce terme. Il dit beaucoup.",
+      "Celui-là m'a surpris quand je l'ai découvert.",
+    ],
+  },
+
+  journalPlumy: {
+    titre: "Journal de Plumy",
+    termeCite: "Terme mentionné",
+    termesCites: "Termes mentionnés",
+  },
+
+  enScene: {
+    titre: "Mode En scène !",
+    sousTitre: "Plumy décrit, tu trouves le terme",
+    consigne: "Quelle technique correspond à cette situation ?",
+    finTitre: "Scène terminée !",
+    description: "Reconnais les termes depuis leur description technique",
+  },
+
+  combos: {
+    seuil3: "Combo ×1.5 !",
+    seuil5: "Combo ×2 !",
+    seuil10: "Combo ×3 !",
+    serie: (n: number) => `${n} de suite`,
+  },
+
+  miniLecon: {
+    titre: "Plumy t'explique…",
+    voirFiche: "Voir la fiche complète",
+    compris: "J'ai compris, continuer →",
+  },
+
+  carteDisciplines: {
+    titre: "Tes disciplines",
+    aucunTerme: "0 terme",
+    progression: (vus: number, total: number) => `${vus}/${total}`,
+  },
+
+  parcours: {
+    titre: "Parcours thématiques",
+    commencer: "Explorer →",
+    termes: (n: number) => `${n} termes`,
+    progression: (vus: number, total: number) => `${vus}/${total} vus`,
   },
 
   erreurs: {

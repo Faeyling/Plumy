@@ -23,6 +23,8 @@ const CoursPage = lazy(() => import('@/features/cours/CoursPage').then(m => ({ d
 const ParametresPage = lazy(() => import('@/features/parametres/ParametresPage').then(m => ({ default: m.ParametresPage })))
 const DefiQuotidienSession = lazy(() => import('@/features/quiz/DefiQuotidienSession').then(m => ({ default: m.DefiQuotidienSession })))
 const RevisionRapidePage = lazy(() => import('@/features/revision/RevisionRapidePage').then(m => ({ default: m.RevisionRapidePage })))
+const EnSceneSession = lazy(() => import('@/features/quiz/EnSceneSession').then(m => ({ default: m.EnSceneSession })))
+const ParcourPage = lazy(() => import('@/features/parcours/ParcourPage').then(m => ({ default: m.ParcourPage })))
 
 function PageLoader() {
   return (
@@ -61,6 +63,8 @@ export const router = createBrowserRouter([
       { path: 'parametres', element: withSuspense(<ParametresPage />) },
       { path: 'quiz/defi', element: withSuspense(<DefiQuotidienSession />) },
       { path: 'revision/rapide', element: withSuspense(<RevisionRapidePage />) },
+      { path: 'quiz/scene', element: withSuspense(<EnSceneSession />) },
+      { path: 'parcours/:id', element: withSuspense(<ParcourPage />) },
     ],
   },
 ])

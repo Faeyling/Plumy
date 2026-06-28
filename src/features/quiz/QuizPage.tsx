@@ -76,6 +76,32 @@ export function QuizPage() {
           )}
         </section>
 
+        {/* Mode En scène */}
+        <section>
+          <h2 className="font-[var(--font-titre)] font-bold text-sm text-[var(--color-encre)] uppercase tracking-wide mb-3">
+            {fr.enScene.titre}
+          </h2>
+          <Link
+            to="/quiz/scene"
+            className="flex items-center gap-4 p-4 bg-[var(--color-candy-menthe)] rounded-[var(--radius-card)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-shadow"
+          >
+            <span className="flex-shrink-0 w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-center text-2xl" aria-hidden="true">
+              🎭
+            </span>
+            <div className="flex-1">
+              <p className="font-[var(--font-titre)] font-bold text-white text-base">
+                {fr.enScene.titre}
+              </p>
+              <p className="text-sm text-white/80">
+                {fr.enScene.sousTitre}
+              </p>
+            </div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M9 18l6-6-6-6" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </Link>
+        </section>
+
         {/* Révision rapide */}
         <section>
           <h2 className="font-[var(--font-titre)] font-bold text-sm text-[var(--color-encre)] uppercase tracking-wide mb-3">
