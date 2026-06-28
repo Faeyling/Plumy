@@ -53,7 +53,7 @@ export function PluмyMascot({ etat = 'accueil', taille = 120, className }: Prop
         width={taille}
         height={taille}
         className={className}
-        style={{ objectFit: 'contain' }}
+        style={{ objectFit: 'contain', mixBlendMode: 'multiply' }}
         animate={reduceMotion ? {} : { y: [0, -3, 0] }}
         transition={{ duration: 2.8, repeat: Infinity, ease: 'easeInOut' }}
       />
