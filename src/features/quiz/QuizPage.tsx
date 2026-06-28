@@ -22,16 +22,22 @@ export function QuizPage() {
   return (
     <div className="flex flex-col min-h-svh">
       {/* En-tête */}
-      <header className="bg-[var(--color-plumy-bg)] px-5 pt-10 pb-6 text-center">
+      <header className="bg-[var(--color-plumy-bg)] px-5 pt-10 pb-6">
         <motion.div
+          className="flex items-center gap-4"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
         >
-          <PluмyMascot etat="accueil" taille={80} />
-          <h1 className="font-[var(--font-titre)] font-bold text-2xl text-[var(--color-encre)] mt-3">
-            {fr.nav.quiz}
-          </h1>
+          <PluмyMascot etat="accueil" taille={72} />
+          <div>
+            <h1 className="font-[var(--font-titre)] font-bold text-2xl text-[var(--color-encre)]">
+              {fr.nav.quiz}
+            </h1>
+            <p className="text-sm text-[var(--color-gris-texte)] mt-0.5">
+              À toi de jouer !
+            </p>
+          </div>
         </motion.div>
       </header>
 
