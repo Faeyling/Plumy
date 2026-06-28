@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { tousLesTermes } from '@/content/termes/index'
+import { getSituationsDisponibles } from '@/content/enScene'
 import { statsRepository } from '@/data/repositories/statsRepository'
 import { useBadgeCheck } from '@/hooks/useBadgeCheck'
 import { getBadge } from '@/data/badges'
@@ -20,36 +21,23 @@ interface QuestionScene {
   choix: string[]
 }
 
-function resumeDescription(raw: string): string {
-  const plain = raw
-    .replace(/\*\*([^*]+)\*\*/g, '$1')
-    .replace(/\*([^*]+)\*/g, '$1')
-    .replace(/ ?- /g, '. ')
-    .replace(/\s+/g, ' ')
-    .trim()
-  const sentences = plain.match(/[^.!?]+[.!?]+/g) ?? [plain]
-  return sentences.slice(0, 2).join(' ').trim()
-}
-
 function genererQuestionsScene(): QuestionScene[] {
-  const candidats = tousLesTermes.filter(t => {
-    if (!t.description || t.description.length < 60) return false
-    const resume = resumeDescription(t.description)
-    return resume.length > 40
-  })
-  const selection = shuffle(candidats).slice(0, NB_QUESTIONS)
-  return selection.map(terme => {
+  const situations = getSituationsDisponibles()
+  const selection = shuffle(situations).slice(0, NB_QUESTIONS)
+  return selection.map(({ termeId, situation }) => {
+    const terme = tousLesTermes.find(t => t.id === termeId)
+    const nom = terme?.nom ?? termeId
     const distracteurs = tousLesTermes
-      .filter(t => t.id !== terme.id)
+      .filter(t => t.id !== termeId)
       .sort(() => Math.random() - 0.5)
       .slice(0, 3)
       .map(t => t.nom)
-    const choix = shuffle([terme.nom, ...distracteurs])
+    const choix = shuffle([nom, ...distracteurs])
     return {
-      termeId: terme.id,
-      nom: terme.nom,
-      description: resumeDescription(terme.description),
-      bonneReponse: terme.nom,
+      termeId,
+      nom,
+      description: situation,
+      bonneReponse: nom,
       choix,
     }
   })
