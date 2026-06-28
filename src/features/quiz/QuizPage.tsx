@@ -28,7 +28,7 @@ export function QuizPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
         >
-          <PluмyMascot etat="encouragement" taille={80} />
+          <PluмyMascot etat="accueil" taille={80} />
           <h1 className="font-[var(--font-titre)] font-bold text-2xl text-[var(--color-encre)] mt-3">
             {fr.nav.quiz}
           </h1>

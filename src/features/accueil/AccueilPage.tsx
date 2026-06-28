@@ -211,7 +211,7 @@ export function AccueilPage() {
             <p className="font-[var(--font-manuscrit)] font-bold text-[var(--color-encre)] text-base mb-2">
               {ENTREE_JOURNAL.titre}
             </p>
-            <p className="text-sm text-[var(--color-encre)] leading-snug line-clamp-3">
+            <p className="text-sm italic text-[var(--color-encre)] leading-snug line-clamp-3">
               {ENTREE_JOURNAL.contenu}
             </p>
             {ENTREE_JOURNAL.termeIds.length > 0 && (
