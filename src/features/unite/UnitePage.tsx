@@ -5,7 +5,8 @@ import { unites } from '@/content/unites'
 import { getTermesParUnite } from '@/content/termes/index'
 import { getCoursParUnite } from '@/content/cours/index'
 import { progressionRepository } from '@/data/repositories/progressionRepository'
-import type { ProgressionTerme } from '@/content/schema'
+import { termesPersoRepository } from '@/data/repositories/termesPersoRepository'
+import type { ProgressionTerme, TermePersonnel } from '@/content/schema'
 import { PluмyMascot } from '@/components/mascotte/PluмyMascot'
 import { iconeIllustration } from '@/content/illustrations'
 import { fr } from '@/i18n/fr'
@@ -19,6 +20,7 @@ export function UnitePage() {
   const cours = getCoursParUnite(unite?.coursIds ?? [])
 
   const [progressions, setProgressions] = useState<Record<string, ProgressionTerme>>({})
+  const [termesPerso, setTermesPerso] = useState<TermePersonnel[]>([])
 
   useEffect(() => {
     progressionRepository.list().then((list) => {
@@ -26,7 +28,10 @@ export function UnitePage() {
       for (const p of list) map[p.termeId] = p
       setProgressions(map)
     })
-  }, [])
+    termesPersoRepository.list().then(all => {
+      setTermesPerso(all.filter(t => t.uniteId === numUnite))
+    })
+  }, [numUnite])
 
   if (!unite) {
     return (
@@ -264,10 +269,10 @@ export function UnitePage() {
         )}
 
         {/* Termes */}
-        {termes.length > 0 && (
+        {(termes.length > 0 || termesPerso.length > 0) && (
           <section aria-label="Termes de l'unité">
             <h2 className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-base mb-3">
-              Vocabulaire — {total} termes
+              Vocabulaire — {total + termesPerso.length} termes
             </h2>
             <div className="space-y-2">
               {termes.map((terme, i) => {
@@ -307,6 +312,42 @@ export function UnitePage() {
                   </motion.div>
                 )
               })}
+              {termesPerso.map((terme, i) => (
+                <motion.div
+                  key={terme.id}
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: (termes.length + i) * 0.03, duration: 0.3 }}
+                >
+                  <div className="flex items-center gap-3 p-3 bg-[var(--color-candy-rose-light)] rounded-[var(--radius-card)] shadow-[var(--shadow-card)] border border-[var(--color-candy-rose)]/30">
+                    <span
+                      className="flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-white text-xs font-bold"
+                      style={{ backgroundColor: 'var(--color-candy-rose)' }}
+                      aria-label="Terme personnel"
+                      title="Ton terme"
+                    >
+                      ✎
+                    </span>
+                    <div className="flex-1 min-w-0">
+                      <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm">
+                        {terme.nom}
+                      </p>
+                      {terme.definition && (
+                        <p className="text-xs text-[var(--color-gris-texte)] line-clamp-1 mt-0.5">
+                          {terme.definition}
+                        </p>
+                      )}
+                    </div>
+                    <Link
+                      to="/carnets"
+                      className="text-xs text-[var(--color-candy-rose)] underline flex-shrink-0"
+                      aria-label="Modifier dans mes carnets"
+                    >
+                      ✏
+                    </Link>
+                  </div>
+                </motion.div>
+              ))}
             </div>
           </section>
         )}

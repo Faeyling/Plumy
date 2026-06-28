@@ -124,6 +124,7 @@ export interface TermePersonnel extends Partial<Terme> {
   id: string;
   estPersonnel: true;
   noteLibre?: string;
+  uniteId?: number;
 }
 
 export type ThemeReference =

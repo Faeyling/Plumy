@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { progressionRepository } from '@/data/repositories/progressionRepository'
 import { termesPersoRepository } from '@/data/repositories/termesPersoRepository'
 import { getTerme } from '@/content/termes/index'
+import { unites } from '@/content/unites'
 import type { ProgressionTerme, Terme, TermePersonnel } from '@/content/schema'
 import { fr } from '@/i18n/fr'
 
@@ -16,7 +17,7 @@ export function CarnetsPage() {
   const [activeTab, setActiveTab] = useState<Tab>('favoris')
   const [favoris, setFavoris] = useState<FavoriItem[]>([])
   const [termesPerso, setTermesPerso] = useState<TermePersonnel[]>([])
-  const [form, setForm] = useState<{ id?: string; nom: string; definition: string; noteLibre: string } | null>(null)
+  const [form, setForm] = useState<{ id?: string; nom: string; definition: string; noteLibre: string; uniteId?: number } | null>(null)
   const [suppression, setSuppression] = useState<string | null>(null)
 
   const chargerFavoris = useCallback(() => {
@@ -45,6 +46,7 @@ export function CarnetsPage() {
       nom: form.nom.trim(),
       definition: form.definition.trim(),
       noteLibre: form.noteLibre.trim() || undefined,
+      uniteId: form.uniteId,
       disciplines: ['commun'],
       categories: ['concepts'],
       description: '',
@@ -183,6 +185,21 @@ export function CarnetsPage() {
                         className="w-full border border-[var(--color-gris-doux)] rounded-lg px-3 py-2 text-sm text-[var(--color-encre)] focus:outline-none focus:border-[var(--color-candy-rose)]"
                       />
                     </label>
+                    <label className="block">
+                      <span className="text-xs text-[var(--color-gris-texte)] mb-1 block">Unité (optionnel)</span>
+                      <select
+                        value={form.uniteId ?? ''}
+                        onChange={e => setForm(f => f ? { ...f, uniteId: e.target.value === '' ? undefined : Number(e.target.value) } : null)}
+                        className="w-full border border-[var(--color-gris-doux)] rounded-lg px-3 py-2 text-sm text-[var(--color-encre)] focus:outline-none focus:border-[var(--color-candy-rose)] bg-white"
+                      >
+                        <option value="">— Aucune unité —</option>
+                        {unites.map(u => (
+                          <option key={u.numero} value={u.numero}>
+                            Unité {u.numero} — {u.titre}
+                          </option>
+                        ))}
+                      </select>
+                    </label>
                   </div>
                   <div className="flex gap-2">
                     <button
@@ -277,10 +294,15 @@ export function CarnetsPage() {
                               {terme.noteLibre}
                             </p>
                           )}
+                          {terme.uniteId !== undefined && (
+                            <p className="text-xs text-[var(--color-candy-lavande)] mt-1 font-semibold">
+                              Unité {terme.uniteId}
+                            </p>
+                          )}
                         </div>
                         <div className="flex items-center gap-1 flex-shrink-0">
                           <button
-                            onClick={() => setForm({ id: terme.id, nom: terme.nom ?? '', definition: terme.definition ?? '', noteLibre: terme.noteLibre ?? '' })}
+                            onClick={() => setForm({ id: terme.id, nom: terme.nom ?? '', definition: terme.definition ?? '', noteLibre: terme.noteLibre ?? '', uniteId: terme.uniteId })}
                             className="text-[var(--color-gris-texte)] text-sm p-1.5 rounded hover:bg-[var(--color-gris-doux)] transition-colors"
                             aria-label={fr.carnets.modifierTerme}
                           >
