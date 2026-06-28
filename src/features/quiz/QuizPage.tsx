@@ -2,10 +2,12 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { PluмyMascot } from '@/components/mascotte/PluмyMascot'
+import { useStats } from '@/hooks/useStats'
 import { fr } from '@/i18n/fr'
 import { db, type EntreeHistoriqueQuiz } from '@/data/db'
 
 export function QuizPage() {
+  const { stats } = useStats()
   const [historique, setHistorique] = useState<EntreeHistoriqueQuiz[]>([])
   const today = new Date().toISOString().slice(0, 10)
   const dejaFaitAujourdhui = historique.some(h => h.date === today && h.type === 'defi-quotidien')
@@ -23,13 +25,8 @@ export function QuizPage() {
     <div className="flex flex-col min-h-svh">
       {/* En-tête */}
       <header className="bg-[var(--color-plumy-bg)] px-5 pt-10 pb-6">
-        <motion.div
-          className="flex items-center gap-4"
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
-        >
-          <PluмyMascot etat="accueil" taille={72} />
+        <div className="flex items-center gap-4">
+          <PluмyMascot etat={stats && stats.points > 0 ? 'reussite' : 'accueil'} taille={72} />
           <div>
             <h1 className="font-[var(--font-titre)] font-bold text-2xl text-[var(--color-encre)]">
               {fr.nav.quiz}
@@ -38,7 +35,7 @@ export function QuizPage() {
               À toi de jouer !
             </p>
           </div>
-        </motion.div>
+        </div>
       </header>
 
       <div className="flex-1 px-4 py-5 space-y-6 pb-24">
