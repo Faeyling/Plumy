@@ -48,7 +48,16 @@ export function UnitePage() {
   return (
     <div className="flex flex-col min-h-svh">
       {/* En-tête */}
-      <header className="bg-[var(--color-plumy-bg)] px-5 pt-12 pb-6">
+      <header className="relative bg-[var(--color-plumy-bg)] px-5 pt-12 pb-6 overflow-hidden">
+        {/* Plume watermark décorative */}
+        <img
+          src={['/plumes/plume-duo-croisees.png', '/plumes/plume-solo-reve.png', '/plumes/plume-duo-arc.png'][numUnite % 3]}
+          alt=""
+          aria-hidden="true"
+          draggable={false}
+          className="absolute -right-8 -bottom-6 w-48 pointer-events-none select-none"
+          style={{ opacity: 0.10, mixBlendMode: 'multiply', transform: 'rotate(10deg)' }}
+        />
         <button
           onClick={() => navigate(-1)}
           className="flex items-center gap-1 text-[var(--color-gris-texte)] text-sm mb-4"

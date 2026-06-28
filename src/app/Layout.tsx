@@ -6,6 +6,7 @@ import { statsRepository } from '@/data/repositories/statsRepository'
 import { BoutonSauvegarde } from '@/features/sauvegarde/BoutonSauvegarde'
 import { RappelSauvegarde } from '@/features/sauvegarde/RappelSauvegarde'
 import { OnboardingModal } from '@/features/onboarding/OnboardingModal'
+import { PlumesBackground } from '@/components/ui/PlumesBackground'
 type TaillePolice = 'normale' | 'grande' | 'tres-grande'
 const TAILLE_SCALE: Record<TaillePolice, string> = { normale: '16px', grande: '18px', 'tres-grande': '20px' }
 function appliquerTaillePolice(t: TaillePolice) { document.documentElement.style.fontSize = TAILLE_SCALE[t] }
@@ -33,7 +34,8 @@ export function Layout() {
   }, [])
 
   return (
-    <div className="flex flex-col min-h-svh bg-[var(--color-plumy-bg)]">
+    <div className="flex flex-col min-h-svh">
+      <PlumesBackground />
       {/* Skip link accessibilité */}
       <a
         href="#main-content"
