@@ -11,23 +11,12 @@ import { iconeIllustration } from '@/content/illustrations'
 import { seededRandom, todaySeed } from '@/lib/seededRandom'
 import { getEntreeJournal } from '@/content/journal'
 import { parcours } from '@/content/parcours'
-import type { Unite, Discipline } from '@/content/schema'
+import type { Unite } from '@/content/schema'
 import { fr } from '@/i18n/fr'
 
 function pickRandom<T>(arr: readonly T[]): T {
   return arr[Math.floor(Math.random() * arr.length)]
 }
-
-const DISCIPLINES: Array<{ id: Discipline; label: string; emoji: string; couleur: string }> = [
-  { id: 'classique', label: 'Classique', emoji: '🩰', couleur: 'var(--color-plumy-blue)' },
-  { id: 'contemporain', label: 'Contemporain', emoji: '🌊', couleur: 'var(--color-candy-menthe)' },
-  { id: 'moderne', label: 'Moderne', emoji: '🎭', couleur: 'var(--color-candy-corail)' },
-  { id: 'jazz', label: 'Jazz', emoji: '🎷', couleur: 'var(--color-candy-jaune)' },
-  { id: 'heels', label: 'Heels', emoji: '👠', couleur: 'var(--color-candy-rose)' },
-  { id: 'cabaret', label: 'Cabaret', emoji: '✨', couleur: 'var(--color-candy-lavande)' },
-  { id: 'pole-dance', label: 'Pole', emoji: '🌀', couleur: 'var(--color-plumy-teal)' },
-  { id: 'burlesque', label: 'Burlesque', emoji: '🪶', couleur: 'var(--color-candy-lavande)' },
-]
 
 const _seed = todaySeed()
 const _rng = seededRandom(_seed)
@@ -61,7 +50,6 @@ export function AccueilPage() {
   const [aRevoir, setARevoir] = useState(0)
   const [showOnboarding, setShowOnboarding] = useState(false)
   const [progressParUnite, setProgressParUnite] = useState<Record<number, { vus: number; total: number }>>({})
-  const [progressParDiscipline, setProgressParDiscipline] = useState<Record<string, { vus: number; total: number }>>({})
   const [parcoursVus, setParcoursVus] = useState<Record<string, number>>({})
   const [illustrationIdx] = useState(() => {
     const key = 'plumy-accueil-illustration-idx'
@@ -97,17 +85,6 @@ export function AccueilPage() {
         result[unite.numero] = { vus, total: termes.length }
       }
       setProgressParUnite(result)
-
-      const discResult: Record<string, { vus: number; total: number }> = {}
-      for (const disc of DISCIPLINES) {
-        const termes = tousLesTermes.filter(t => t.disciplines.includes(disc.id))
-        const vus = termes.filter(t => {
-          const p = progMap.get(t.id)
-          return p && p.statut !== 'jamais-vu'
-        }).length
-        discResult[disc.id] = { vus, total: termes.length }
-      }
-      setProgressParDiscipline(discResult)
 
       const parcResult: Record<string, number> = {}
       for (const p of parcours) {
@@ -257,42 +234,6 @@ export function AccueilPage() {
           </motion.div>
         </section>
       )}
-
-      {/* Carte des disciplines */}
-      <section className="px-4 pt-4" aria-label={fr.carteDisciplines.titre}>
-        <h2 className="font-[var(--font-titre)] font-bold text-sm text-[var(--color-encre)] uppercase tracking-wide mb-3">
-          {fr.carteDisciplines.titre}
-        </h2>
-        <div className="grid grid-cols-4 gap-2">
-          {DISCIPLINES.map((disc, idx) => {
-            const prog = progressParDiscipline[disc.id]
-            const pct = prog && prog.total > 0 ? Math.round((prog.vus / prog.total) * 100) : 0
-            return (
-              <motion.div
-                key={disc.id}
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: idx * 0.04, duration: 0.3 }}
-                className="flex flex-col items-center gap-1 p-2 bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)]"
-              >
-                <span className="text-xl" aria-hidden="true">{disc.emoji}</span>
-                <p className="text-[10px] font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-center leading-tight">
-                  {disc.label}
-                </p>
-                <div className="w-full h-1 bg-[var(--color-gris-doux)] rounded-full overflow-hidden">
-                  <div
-                    className="h-full rounded-full transition-all duration-700"
-                    style={{ width: `${pct}%`, backgroundColor: disc.couleur }}
-                  />
-                </div>
-                <p className="text-[9px] text-[var(--color-gris-texte)]">
-                  {prog ? fr.carteDisciplines.progression(prog.vus, prog.total) : fr.carteDisciplines.aucunTerme}
-                </p>
-              </motion.div>
-            )
-          })}
-        </div>
-      </section>
 
       {/* Parcours thématiques */}
       <section className="px-4 pt-4" aria-label={fr.parcours.titre}>
