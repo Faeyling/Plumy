@@ -1,6 +1,7 @@
 import { useCallback } from 'react'
 import { statsRepository } from '@/data/repositories/statsRepository'
 import { progressionRepository } from '@/data/repositories/progressionRepository'
+import { PALIERS } from '@/lib/paliers'
 
 export function useBadgeCheck() {
   const checkBadges = useCallback(async (): Promise<string[]> => {
@@ -33,6 +34,12 @@ export function useBadgeCheck() {
     if (termesMaitrises >= 50) candidats.push('maitrise-x50')
 
     if (termesFavoris >= 10) candidats.push('collectionneur')
+
+    for (const palier of PALIERS) {
+      if (palier.badgeId && stats.points >= palier.seuilPts) {
+        candidats.push(palier.badgeId)
+      }
+    }
 
     const nouveaux = candidats.filter(id => !stats.badges.includes(id))
     for (const badgeId of nouveaux) {

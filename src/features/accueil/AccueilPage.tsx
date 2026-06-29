@@ -13,6 +13,7 @@ import { getEntreeJournal } from '@/content/journal'
 import { parcours } from '@/content/parcours'
 import type { Unite } from '@/content/schema'
 import { fr } from '@/i18n/fr'
+import { getPalierCourant, getPalierSuivant } from '@/lib/paliers'
 
 function pickRandom<T>(arr: readonly T[]): T {
   return arr[Math.floor(Math.random() * arr.length)]
@@ -131,31 +132,32 @@ export function AccueilPage() {
       </header>
 
       {/* Bande de stats */}
-      <section
-        aria-label="Tes statistiques"
-        className="flex items-center justify-center gap-6 py-4 px-5 bg-white/60 border-b border-[var(--color-gris-doux)]"
-      >
-        <StatPill value={points} label={fr.accueil.pointsLabel} color="var(--color-candy-lavande)" />
-        <div className="w-px h-8 bg-[var(--color-gris-doux)]" />
-        <motion.div
-          animate={serieJours >= 1 ? { scale: [1, 1.15, 1] } : {}}
-          transition={{ repeat: Infinity, repeatDelay: 3, duration: 0.5 }}
-        >
-          <StatPill
-            value={serieJours}
-            label={serieJours <= 1 ? '1 jour de suite' : `${serieJours} jours de suite`}
-            color="var(--color-candy-menthe)"
-            icon="🔥"
-          />
-        </motion.div>
-        {aRevoir > 0 && (
-          <>
-            <div className="w-px h-8 bg-[var(--color-gris-doux)]" />
-            <Link to="/revision">
-              <StatPill value={aRevoir} label="à revoir" color="var(--color-candy-corail)" icon="↩" />
-            </Link>
-          </>
-        )}
+      <section aria-label="Tes statistiques" className="bg-white/60 border-b border-[var(--color-gris-doux)]">
+        {/* Palier de points */}
+        <PalierPoints points={points} />
+
+        {/* Série + à revoir */}
+        <div className="flex items-center justify-center gap-6 pb-4 px-5">
+          <motion.div
+            animate={serieJours >= 1 ? { scale: [1, 1.15, 1] } : {}}
+            transition={{ repeat: Infinity, repeatDelay: 3, duration: 0.5 }}
+          >
+            <StatPill
+              value={serieJours}
+              label={serieJours <= 1 ? '1 jour de suite' : `${serieJours} jours de suite`}
+              color="var(--color-candy-menthe)"
+              icon="🔥"
+            />
+          </motion.div>
+          {aRevoir > 0 && (
+            <>
+              <div className="w-px h-8 bg-[var(--color-gris-doux)]" />
+              <Link to="/revision">
+                <StatPill value={aRevoir} label="à revoir" color="var(--color-candy-corail)" icon="↩" />
+              </Link>
+            </>
+          )}
+        </div>
       </section>
 
       {/* Terme du jour */}
@@ -300,6 +302,44 @@ export function AccueilPage() {
       {showOnboarding && (
         <OnboardingModal onTermine={() => setShowOnboarding(false)} />
       )}
+    </div>
+  )
+}
+
+function PalierPoints({ points }: { points: number }) {
+  const courant = getPalierCourant(points)
+  const suivant = getPalierSuivant(points)
+  const pct = suivant
+    ? Math.round(((points - courant.seuilPts) / (suivant.seuilPts - courant.seuilPts)) * 100)
+    : 100
+
+  return (
+    <div className="px-5 pt-4 pb-3">
+      <div className="flex items-baseline justify-between mb-1">
+        <div className="flex items-baseline gap-2">
+          <span className="font-[var(--font-titre)] font-extrabold text-2xl" style={{ color: courant.couleur }}>
+            {points}
+          </span>
+          <span className="text-xs text-[var(--color-gris-texte)]">{fr.accueil.pointsLabel}</span>
+        </div>
+        <span className="text-sm font-[var(--font-titre)] font-semibold text-[var(--color-encre)]">
+          {courant.symbole} {courant.nom}
+        </span>
+      </div>
+      <div className="h-2 bg-[var(--color-gris-doux)] rounded-full overflow-hidden">
+        <motion.div
+          className="h-full rounded-full"
+          style={{ backgroundColor: suivant ? suivant.couleur : courant.couleur }}
+          initial={{ width: 0 }}
+          animate={{ width: `${pct}%` }}
+          transition={{ duration: 0.7, ease: 'easeOut' }}
+        />
+      </div>
+      <p className="text-[10px] text-[var(--color-gris-texte)] mt-1">
+        {suivant
+          ? `${suivant.seuilPts - points} pts pour atteindre ${suivant.symbole} ${suivant.nom}`
+          : `Palier maximum atteint — tu es ${courant.symbole} ${courant.nom} !`}
+      </p>
     </div>
   )
 }

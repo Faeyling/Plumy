@@ -110,6 +110,49 @@ export const BADGES: BadgeDefinition[] = [
     symbole: '♥',
     couleur: 'var(--color-candy-rose)',
   },
+  // ─── Paliers de points ────────────────────────────────────────────────────
+  {
+    id: 'palier-plume',
+    nom: 'Plume légère',
+    description: '100 points accumulés',
+    symbole: '🪶',
+    couleur: '#a78bfa',
+  },
+  {
+    id: 'palier-en-scene',
+    nom: 'En scène',
+    description: '300 points accumulés',
+    symbole: '💃',
+    couleur: '#f472b6',
+  },
+  {
+    id: 'palier-etoile',
+    nom: 'Étoile montante',
+    description: '750 points accumulés',
+    symbole: '⭐',
+    couleur: '#fbbf24',
+  },
+  {
+    id: 'palier-role',
+    nom: 'Premier rôle',
+    description: '1 500 points accumulés',
+    symbole: '🎭',
+    couleur: '#fb923c',
+  },
+  {
+    id: 'palier-vedette',
+    nom: 'Vedette',
+    description: '3 000 points accumulés',
+    symbole: '🏆',
+    couleur: '#f59e0b',
+  },
+  {
+    id: 'palier-plumy-or',
+    nom: "Plumy d'or",
+    description: '6 000 points accumulés',
+    symbole: '🦚',
+    couleur: '#10b981',
+  },
 ]
 
 export function getBadge(id: string): BadgeDefinition | undefined {
