@@ -17,7 +17,13 @@ export function TermePage() {
 
   const [prog, setProg] = useState<ProgressionTerme | undefined>()
   const [toast, setToast] = useState<string | null>(null)
-  const { isPlaying, isSupported, toggle } = useSpeech()
+  const [playingSection, setPlayingSection] = useState<string | null>(null)
+  const { isPlaying, isSupported, speak, stop } = useSpeech()
+
+  function speakSection(id: string, text: string) {
+    if (isPlaying && playingSection === id) { stop(); setPlayingSection(null) }
+    else { speak(text); setPlayingSection(id) }
+  }
 
   const chargerProg = useCallback(() => {
     if (!id) return
@@ -109,22 +115,6 @@ export function TermePage() {
           </button>
 
           <div className="flex items-center gap-1">
-            {isSupported && (
-              <button
-                onClick={() => toggle(`${terme.nom}. ${terme.definition}. ${stripMarkdown(terme.description)}`)}
-                className="p-2 rounded-full transition-colors"
-                style={{ color: isPlaying ? 'var(--color-plumy-blue)' : 'var(--color-gris-texte)' }}
-                aria-label={isPlaying ? 'Arrêter la lecture' : 'Écouter ce terme'}
-              >
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  {isPlaying ? (
-                    <path d="M6 4h4v16H6zM14 4h4v16h-4z" fill="currentColor" />
-                  ) : (
-                    <path d="M11 5L6 9H2v6h4l5 4V5zM19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  )}
-                </svg>
-              </button>
-            )}
             <button
               onClick={partager}
               className="p-2 rounded-full transition-colors text-[var(--color-gris-texte)]"
@@ -180,25 +170,44 @@ export function TermePage() {
       {/* Corps */}
       <div className="flex-1 px-4 py-5 space-y-5 pb-24">
         {/* Définition */}
-        <Section titre={fr.terme.definition} couleur="var(--color-candy-bleu)">
+        <Section
+          titre={fr.terme.definition}
+          couleur="var(--color-candy-bleu)"
+          onSpeak={isSupported ? () => speakSection('def', terme.definition) : undefined}
+          isSpeaking={isPlaying && playingSection === 'def'}
+        >
           <p className="text-[var(--color-encre)] leading-relaxed">{terme.definition}</p>
         </Section>
 
         {/* Description */}
-        <Section titre={fr.terme.description}>
+        <Section
+          titre={fr.terme.description}
+          onSpeak={isSupported ? () => speakSection('desc', stripMarkdown(terme.description)) : undefined}
+          isSpeaking={isPlaying && playingSection === 'desc'}
+        >
           <MarkdownSimple content={terme.description} />
         </Section>
 
         {/* Étymologie */}
         {terme.etymologie && (
-          <Section titre={fr.terme.etymologie} couleur="var(--color-candy-lavande)">
+          <Section
+            titre={fr.terme.etymologie}
+            couleur="var(--color-candy-lavande)"
+            onSpeak={isSupported ? () => speakSection('etym', terme.etymologie!) : undefined}
+            isSpeaking={isPlaying && playingSection === 'etym'}
+          >
             <p className="text-[var(--color-encre)] text-sm leading-relaxed italic">{terme.etymologie}</p>
           </Section>
         )}
 
         {/* Erreurs courantes */}
         {terme.erreursCourantes.length > 0 && (
-          <Section titre={fr.terme.erreursCourantes} couleur="var(--color-candy-corail)">
+          <Section
+            titre={fr.terme.erreursCourantes}
+            couleur="var(--color-candy-corail)"
+            onSpeak={isSupported ? () => speakSection('err', terme.erreursCourantes.join('. ')) : undefined}
+            isSpeaking={isPlaying && playingSection === 'err'}
+          >
             <ul className="space-y-2">
               {terme.erreursCourantes.map((e, i) => (
                 <li key={i} className="flex gap-2 text-sm text-[var(--color-encre)]">
@@ -212,7 +221,12 @@ export function TermePage() {
 
         {/* Conseils de Plumy */}
         {terme.conseils && terme.conseils.length > 0 && (
-          <Section titre={fr.terme.conseils} couleur="var(--color-candy-menthe)">
+          <Section
+            titre={fr.terme.conseils}
+            couleur="var(--color-candy-menthe)"
+            onSpeak={isSupported ? () => speakSection('conseils', terme.conseils!.join('. ')) : undefined}
+            isSpeaking={isPlaying && playingSection === 'conseils'}
+          >
             <div className="flex gap-3">
               <PluмyMascot etat="encouragement" taille={48} className="flex-shrink-0 mt-1" />
               <ul className="space-y-2">
@@ -228,7 +242,15 @@ export function TermePage() {
 
         {/* Sécurité */}
         {terme.securite && (
-          <Section titre={fr.terme.securite} couleur="var(--color-candy-corail)">
+          <Section
+            titre={fr.terme.securite}
+            couleur="var(--color-candy-corail)"
+            onSpeak={isSupported ? () => speakSection('secu', [
+              ...terme.securite!.risques,
+              ...terme.securite!.precautions,
+            ].join('. ')) : undefined}
+            isSpeaking={isPlaying && playingSection === 'secu'}
+          >
             {terme.securite.risques.length > 0 && (
               <div className="mb-3">
                 <p className="text-xs font-semibold text-[var(--color-candy-corail-dark,var(--color-candy-corail))] uppercase tracking-wide mb-1">
@@ -329,10 +351,14 @@ export function TermePage() {
 function Section({
   titre,
   couleur = 'var(--color-candy-lavande)',
+  onSpeak,
+  isSpeaking,
   children,
 }: {
   titre: string
   couleur?: string
+  onSpeak?: () => void
+  isSpeaking?: boolean
   children: React.ReactNode
 }) {
   return (
@@ -343,9 +369,25 @@ function Section({
           style={{ backgroundColor: couleur }}
           aria-hidden="true"
         />
-        <h2 className="font-[var(--font-titre)] font-bold text-sm text-[var(--color-encre)] uppercase tracking-wide">
+        <h2 className="font-[var(--font-titre)] font-bold text-sm text-[var(--color-encre)] uppercase tracking-wide flex-1">
           {titre}
         </h2>
+        {onSpeak && (
+          <button
+            onClick={onSpeak}
+            className="p-1 rounded-full transition-colors flex-shrink-0"
+            style={{ color: isSpeaking ? 'var(--color-plumy-blue)' : 'var(--color-gris-texte)' }}
+            aria-label={isSpeaking ? 'Arrêter la lecture' : `Écouter — ${titre}`}
+          >
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              {isSpeaking ? (
+                <path d="M6 4h4v16H6zM14 4h4v16h-4z" fill="currentColor" />
+              ) : (
+                <path d="M11 5L6 9H2v6h4l5 4V5zM19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              )}
+            </svg>
+          </button>
+        )}
       </div>
       <div className="bg-white rounded-[var(--radius-card)] p-4 shadow-[var(--shadow-card)]">
         {children}
