@@ -2,7 +2,7 @@
 
 > **Référence permanente.** Ce fichier est le cahier des charges complet de l'application. S'y référer à chaque prompt pour toute décision d'architecture, de contenu ou de design.
 >
-> **Contrainte absolue : demander confirmation avant tout `git push`.**
+> **Contrainte absolue : toujours demander confirmation à l'utilisateur avant tout `git push`, sans exception. Ne jamais pousser automatiquement après un commit, même si la tâche semble terminée.**
 
 ---
 
