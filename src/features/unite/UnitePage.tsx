@@ -10,6 +10,7 @@ import type { ProgressionTerme, TermePersonnel } from '@/content/schema'
 import { PluмyMascot } from '@/components/mascotte/PluмyMascot'
 import { iconeIllustration } from '@/content/illustrations'
 import { fr } from '@/i18n/fr'
+import { SpeakButton } from '@/components/ui/SpeakButton'
 
 export function UnitePage() {
   const { numero } = useParams<{ numero: string }>()
@@ -87,13 +88,16 @@ export function UnitePage() {
           >
             {numUnite}
           </span>
-          <div>
+          <div className="flex-1 min-w-0">
             <h1 className="font-[var(--font-titre)] font-extrabold text-xl text-[var(--color-encre)] leading-tight">
               {unite.titre}
             </h1>
-            <p className="text-sm text-[var(--color-gris-texte)] mt-1 leading-snug">
-              {unite.description}
-            </p>
+            <div className="flex items-start gap-1 mt-1">
+              <p className="text-sm text-[var(--color-gris-texte)] leading-snug flex-1">
+                {unite.description}
+              </p>
+              <SpeakButton text={unite.description} size={13} />
+            </div>
           </div>
         </div>
 
@@ -126,29 +130,34 @@ export function UnitePage() {
             </h2>
             <div className="space-y-2">
               {cours.map((c) => (
-                <Link
+                <div
                   key={c.id}
-                  to={`/cours/${c.id}`}
-                  className="flex items-center gap-3 p-3 bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-shadow"
+                  className="flex items-center gap-2 bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-shadow"
                 >
-                  <span
-                    className="flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-sm"
-                    style={{ backgroundColor: 'var(--color-candy-lavande-light)' }}
+                  <Link
+                    to={`/cours/${c.id}`}
+                    className="flex items-center gap-3 p-3 flex-1 min-w-0"
                   >
-                    📖
-                  </span>
-                  <div className="flex-1 min-w-0">
-                    <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm leading-snug">
-                      {c.titre}
-                    </p>
-                    <p className="text-xs text-[var(--color-gris-texte)] line-clamp-1 mt-0.5">
-                      {c.resume}
-                    </p>
-                  </div>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="flex-shrink-0 text-[var(--color-gris-texte)]">
-                    <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </Link>
+                    <span
+                      className="flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-sm"
+                      style={{ backgroundColor: 'var(--color-candy-lavande-light)' }}
+                    >
+                      📖
+                    </span>
+                    <div className="flex-1 min-w-0">
+                      <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm leading-snug">
+                        {c.titre}
+                      </p>
+                      <p className="text-xs text-[var(--color-gris-texte)] line-clamp-1 mt-0.5">
+                        {c.resume}
+                      </p>
+                    </div>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="flex-shrink-0 text-[var(--color-gris-texte)]">
+                      <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </Link>
+                  <SpeakButton text={c.resume} size={13} className="mr-2" />
+                </div>
               ))}
             </div>
           </section>

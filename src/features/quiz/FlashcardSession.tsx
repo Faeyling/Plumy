@@ -7,6 +7,7 @@ import { getTermesParUnite } from '@/content/termes/index'
 import { progressionRepository } from '@/data/repositories/progressionRepository'
 import { db } from '@/data/db'
 import type { Terme, ProgressionTerme } from '@/content/schema'
+import { SpeakButton } from '@/components/ui/SpeakButton'
 
 type Jugement = 'su' | 'a-revoir'
 type Statut = ProgressionTerme['statut']
@@ -156,6 +157,12 @@ export function FlashcardSession() {
 
       {/* Carte */}
       <div className="flex-1 flex flex-col items-center justify-center px-5">
+        <div className="w-full max-w-sm flex justify-end mb-1">
+          <SpeakButton
+            text={retourne ? carteActuelle.terme.definition : carteActuelle.terme.nom}
+            size={15}
+          />
+        </div>
         <AnimatePresence mode="wait">
           <motion.div
             key={animKey}

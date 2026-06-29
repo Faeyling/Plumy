@@ -14,6 +14,7 @@ import { parcours } from '@/content/parcours'
 import type { Unite } from '@/content/schema'
 import { fr } from '@/i18n/fr'
 import { getPalierCourant, getPalierSuivant } from '@/lib/paliers'
+import { SpeakButton } from '@/components/ui/SpeakButton'
 
 function pickRandom<T>(arr: readonly T[]): T {
   return arr[Math.floor(Math.random() * arr.length)]
@@ -183,9 +184,12 @@ export function AccueilPage() {
               <p className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-base leading-snug mb-1">
                 {TERME_DU_JOUR.nom}
               </p>
-              <p className="text-xs text-[var(--color-gris-texte)] leading-snug mb-2 line-clamp-2">
-                {TERME_DU_JOUR.definition}
-              </p>
+              <div className="flex items-start gap-1 mb-2">
+                <p className="text-xs text-[var(--color-gris-texte)] leading-snug line-clamp-2 flex-1">
+                  {TERME_DU_JOUR.definition}
+                </p>
+                <SpeakButton text={TERME_DU_JOUR.definition} size={13} />
+              </div>
               <p className="text-xs italic text-[var(--color-candy-rose)] mb-2">{MOT_PLUMY}</p>
               <Link
                 to={`/terme/${TERME_DU_JOUR.id}`}
@@ -213,9 +217,12 @@ export function AccueilPage() {
             <p className="font-[var(--font-manuscrit)] font-bold text-[var(--color-encre)] text-base mb-2">
               {ENTREE_JOURNAL.titre}
             </p>
-            <p className="text-sm italic text-[var(--color-encre)] leading-snug line-clamp-3">
-              {ENTREE_JOURNAL.contenu}
-            </p>
+            <div className="flex items-start gap-1">
+              <p className="text-sm italic text-[var(--color-encre)] leading-snug line-clamp-3 flex-1">
+                {ENTREE_JOURNAL.contenu}
+              </p>
+              <SpeakButton text={ENTREE_JOURNAL.contenu} size={13} />
+            </div>
             {ENTREE_JOURNAL.termeIds.length > 0 && (
               <div className="flex flex-wrap gap-1.5 mt-2">
                 {ENTREE_JOURNAL.termeIds.map(id => {

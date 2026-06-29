@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react'
 import { fr } from '@/i18n/fr'
 import { references } from '@/content/references'
 import type { Reference } from '@/content/schema'
+import { SpeakButton } from '@/components/ui/SpeakButton'
 
 type ThemeReference = Reference['theme']
 
@@ -136,7 +137,10 @@ function ReferenceCard({ reference: r }: { reference: Reference }) {
         {r.revue && <span> · <em>{r.revue}</em></span>}
       </p>
       {r.resume && (
-        <p className="text-xs text-[var(--color-encre)] mt-2 leading-relaxed opacity-80">{r.resume}</p>
+        <div className="flex items-start gap-1 mt-2">
+          <p className="text-xs text-[var(--color-encre)] leading-relaxed opacity-80 flex-1">{r.resume}</p>
+          <SpeakButton text={r.resume} size={13} />
+        </div>
       )}
       <div className="flex items-center gap-3 mt-3">
         {r.disciplines && r.disciplines.length > 0 && (

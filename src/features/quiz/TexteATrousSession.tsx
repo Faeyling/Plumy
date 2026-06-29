@@ -10,6 +10,7 @@ import { getBadge } from '@/data/badges'
 import { PluмyMascot } from '@/components/mascotte/PluмyMascot'
 import { fr } from '@/i18n/fr'
 import { db } from '@/data/db'
+import { SpeakButton } from '@/components/ui/SpeakButton'
 
 const PTS_CORRECT = 10
 
@@ -195,9 +196,12 @@ export function TexteATrousSession() {
             className="flex flex-col gap-3"
           >
             <div className="bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] p-5">
-              <p className="text-xs text-[var(--color-gris-texte)] uppercase tracking-wide mb-2">
-                {fr.quiz.texteATrous.consigne}
-              </p>
+              <div className="flex items-center justify-between mb-2">
+                <p className="text-xs text-[var(--color-gris-texte)] uppercase tracking-wide">
+                  {fr.quiz.texteATrous.consigne}
+                </p>
+                <SpeakButton text={question.texteAvecTrous.replace('___', question.motManquant)} size={14} />
+              </div>
               <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-base leading-snug">
                 {partsAvecTrous.length > 1 ? (
                   <>
