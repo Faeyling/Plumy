@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { getTermesParUnite, getTerme } from '@/content/termes/index'
@@ -13,6 +13,25 @@ import { db } from '@/data/db'
 import { SpeakButton } from '@/components/ui/SpeakButton'
 
 const PTS_CORRECT_BASE = 10
+
+interface QCMSavedState {
+  questions: QuestionQCM[]
+  index: number
+  selected: string | null
+  corrects: number
+  combo: number
+  ptsTotal: number
+  showMiniLecon: boolean
+}
+
+function loadQCMState(key: string): QCMSavedState | null {
+  try {
+    const raw = sessionStorage.getItem(key)
+    return raw ? (JSON.parse(raw) as QCMSavedState) : null
+  } catch {
+    return null
+  }
+}
 
 function comboMultiplier(combo: number): number {
   if (combo >= 10) return 3
@@ -32,22 +51,38 @@ export function QCMSession() {
   const { numero } = useParams<{ numero: string }>()
   const navigate = useNavigate()
   const numUnite = Number(numero ?? 0)
+  const SESSION_KEY = `plumy-qcm-${numUnite}`
   const unite = unites.find(u => u.numero === numUnite)
   const termes = getTermesParUnite(numUnite)
 
-  const [questions, setQuestions] = useState<QuestionQCM[]>(() => genererQCM(termes, 10))
-  const [index, setIndex] = useState(0)
-  const [selected, setSelected] = useState<string | null>(null)
-  const [corrects, setCorrects] = useState(0)
-  const [combo, setCombo] = useState(0)
-  const [ptsTotal, setPtsTotal] = useState(0)
-  const [showMiniLecon, setShowMiniLecon] = useState(false)
+  // Restore state from sessionStorage if the user navigated away mid-quiz
+  const [initData] = useState<QCMSavedState | null>(() => loadQCMState(SESSION_KEY))
+  const [questions, setQuestions] = useState<QuestionQCM[]>(() => initData?.questions ?? genererQCM(termes, 10))
+  const [index, setIndex] = useState<number>(() => initData?.index ?? 0)
+  const [selected, setSelected] = useState<string | null>(() => initData?.selected ?? null)
+  const [corrects, setCorrects] = useState<number>(() => initData?.corrects ?? 0)
+  const [combo, setCombo] = useState<number>(() => initData?.combo ?? 0)
+  const [ptsTotal, setPtsTotal] = useState<number>(() => initData?.ptsTotal ?? 0)
+  const [showMiniLecon, setShowMiniLecon] = useState<boolean>(() => initData?.showMiniLecon ?? false)
   const [termine, setTermine] = useState(false)
   const [ptsGagnes, setPtsGagnes] = useState(0)
   const [newBadges, setNewBadges] = useState<string[]>([])
   const { checkBadges } = useBadgeCheck()
 
+  // Persist quiz progress so back-navigation restores the exact question
+  useEffect(() => {
+    if (termine) {
+      sessionStorage.removeItem(SESSION_KEY)
+    } else {
+      sessionStorage.setItem(
+        SESSION_KEY,
+        JSON.stringify({ questions, index, selected, corrects, combo, ptsTotal, showMiniLecon }),
+      )
+    }
+  }, [SESSION_KEY, questions, index, selected, corrects, combo, ptsTotal, showMiniLecon, termine])
+
   function handleRecommencer() {
+    sessionStorage.removeItem(SESSION_KEY)
     setQuestions(genererQCM(termes, 10))
     setIndex(0)
     setSelected(null)
