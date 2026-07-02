@@ -183,9 +183,23 @@ export const unites: Unite[] = [
     description: "L'abrazo, l'eje, la caminada et les figures improvisées — le vocabulaire du tango argentin social, né dans les faubourgs de Buenos Aires et inscrit au patrimoine de l'UNESCO.",
     coursIds: ['intro-tango-argentin'],
     termeIds: [
-      'abrazo', 'eje', 'caminada', 'ocho', 'cruce', 'parada',
-      'gancho', 'boleo', 'barrida', 'sacada', 'enrosque', 'molinete',
-      'volcada', 'milonga', 'cabeceo', 'tanda', 'musicalidad-tango', 'improvisacion-tango',
+      // Niveau 0 — Fondations absolues
+      'postura-tango', 'compas-tango', 'transfert-de-poids', 'roles-tango',
+      'connexion-tango', 'codigos-milonga', 'vals-tango',
+      // Niveau 0–1 — Connexion et abrazo
+      'abrazo', 'eje', 'apilado',
+      // Niveau 1 — Premiers pas
+      'caminada', 'salida-tango', 'paso-lateral', 'cambio-de-peso-en-place',
+      'cruce', 'pausa-tango', 'resolucion-tango',
+      // Niveau 1–2 — Figures de base
+      'ocho', 'parada', 'molinete',
+      // Niveau 2 — Vocabulaire intermédiaire
+      'adorno-tango', 'amague', 'lapiz',
+      'gancho', 'boleo', 'barrida', 'enrosque',
+      // Niveau 3 — Technique avancée
+      'sacada', 'volcada', 'colgada',
+      // Culture et musique
+      'milonga', 'cabeceo', 'tanda', 'musicalidad-tango', 'improvisacion-tango',
     ],
     quizDisponibles: ['qcm', 'association', 'texte-a-trous', 'flashcards'],
     iconeSvgId: 'tango-argentin',
