@@ -183,6 +183,7 @@ export const fr = {
     "pole-dance": "Pole dance",
     burlesque: "Effeuillage burlesque",
     heels: "Heels",
+    "tango-argentin": "Tango argentin",
     commun: "Commun à toutes",
   },
 

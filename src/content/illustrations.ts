@@ -11,4 +11,5 @@ export const iconeIllustration: Partial<Record<string, string>> = {
   burlesque: '/mascotte/plumy-burlesque.png',
   sante: '/mascotte/plumy-sante.png',
   improvisation: '/mascotte/plumy-improvisation.png',
+  'tango-argentin': '/mascotte/plumy-tango-argentin.png',
 }

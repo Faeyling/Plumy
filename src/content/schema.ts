@@ -7,6 +7,7 @@ export type Discipline =
   | 'pole-dance'
   | 'burlesque'
   | 'heels'
+  | 'tango-argentin'
   | 'commun';
 
 export type SousStyle =

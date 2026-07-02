@@ -177,4 +177,17 @@ export const unites: Unite[] = [
     quizDisponibles: ['qcm', 'association', 'texte-a-trous', 'flashcards'],
     iconeSvgId: 'improvisation',
   },
+  {
+    numero: 12,
+    titre: 'Tango argentin',
+    description: "L'abrazo, l'eje, la caminada et les figures improvisées — le vocabulaire du tango argentin social, né dans les faubourgs de Buenos Aires et inscrit au patrimoine de l'UNESCO.",
+    coursIds: ['intro-tango-argentin'],
+    termeIds: [
+      'abrazo', 'eje', 'caminada', 'ocho', 'cruce', 'parada',
+      'gancho', 'boleo', 'barrida', 'sacada', 'enrosque', 'molinete',
+      'volcada', 'milonga', 'cabeceo', 'tanda', 'musicalidad-tango', 'improvisacion-tango',
+    ],
+    quizDisponibles: ['qcm', 'association', 'texte-a-trous', 'flashcards'],
+    iconeSvgId: 'tango-argentin',
+  },
 ]
