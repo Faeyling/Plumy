@@ -703,6 +703,115 @@ Le vals appelle une légèreté dans le corps que le tango standard n'exige pas 
     termesLies: ['compas-tango', 'milonga', 'musicalidad-tango'],
   },
 
+  {
+    id: 'ronda',
+    nom: 'Ronda',
+    alias: ['ronda', 'ligne de danse', 'line of dance', 'circulation milonga'],
+    disciplines: ['tango-argentin'],
+    categories: ['culture-histoire', 'concepts'],
+    definition: "Flux circulaire de la circulation sur la piste de milonga — les couples se déplacent dans le sens antihoraire autour de la piste, formant des 'voies' concentriques. Respecter la ronda est une obligation sociale fondamentale, équivalent du code de la route sur la piste.",
+    description: `**Le terme — qu'est-ce que la ronda ?**
+
+La ronda (la ronde) est la façon dont les couples circulent ensemble sur la piste d'une milonga. Ce n'est pas un détail — c'est le cœur de l'organisation sociale de la danse. Sans ronda, une milonga bondée serait un chaos de collisions.
+
+Imagine une piste de milonga vue du dessus. Les couples forment naturellement une ou plusieurs files circulaires qui tournent dans le sens antihoraire. Les couples avancent progressivement vers la gauche. Quand un couple s'arrête trop longtemps, il bloque toute la file derrière lui — comme une voiture immobile sur une autoroute.
+
+**Les règles de la ronda :**
+
+**1. Le sens de circulation :**
+Toujours antihoraire — c'est universel dans toutes les milongas du monde. Exception : nulle.
+
+**2. Les voies :**
+Sur une grande piste, il peut y avoir deux ou trois files concentriques :
+- La voie externe (près du mur) : pour les couples qui avancent normalement
+- La voie interne (vers le centre) : pour les couples qui avancent plus lentement ou font des figures
+- Le centre : parfois utilisé pour les figures spectaculaires sur les pistas vides
+
+**3. Ne pas couper à travers la piste :**
+On ne traverse jamais d'une file à l'autre en coupant devant d'autres couples. Pour changer de voie, on attend l'espace.
+
+**4. Maintenir un espace correct :**
+Ni trop proche du couple devant (risque de collision si il s'arrête), ni trop loin (on bloque la file derrière).
+
+**5. Les figures et l'espace :**
+Les figures qui occupent beaucoup d'espace (boleos hauts, ganchos latéraux) ne se font que quand l'espace le permet réellement — pas juste quand le couple devant est à 80 cm.
+
+---
+
+**Comment s'intégrer à la ronda ?**
+
+En arrivant sur la piste, on attend le bon moment pour s'insérer dans la file sans couper devant un couple. On entre dans la ronda comme on s'insère dans le trafic : en regardant, en attendant l'espace.`,
+    erreursCourantes: [
+      "Rester immobile trop longtemps au même endroit (bloquer la ronda).",
+      "Faire de grandes figures sans vérifier l'espace autour (risque de toucher d'autres couples).",
+      "Tourner dans le mauvais sens — sens horaire — (circulation inverse à toute la salle).",
+      "S'insérer dans la ronda sans regarder les couples déjà présents.",
+    ],
+    conseils: [
+      "Avant d'entrer sur la piste, observe la ronda depuis la lisière : où sont les espaces ? À quelle vitesse circule-t-elle ? Quand tu vois une place naturelle pour ton couple, entre. Ne force jamais ton entrée.",
+    ],
+    etymologie: "De l'espagnol 'ronda' (ronde, patrouille circulaire, tournée) — de 'rondar' (tourner autour, faire des rondes). La ronda de la milonga est littéralement la ronde des danseurs.",
+    difficulteInterne: 1,
+    termesLies: ['codigos-milonga', 'milonga', 'caminada'],
+  },
+
+  {
+    id: 'practica-tango',
+    nom: 'Práctica',
+    alias: ['practica', 'práctica tango', 'répétition tango', 'practice tango'],
+    disciplines: ['tango-argentin'],
+    categories: ['culture-histoire', 'concepts'],
+    definition: "Session de travail et d'exploration dans le tango argentin — espace intermédiaire entre le cours et la milonga où les danseurs peuvent s'arrêter, répéter, poser des questions, essayer des figures et travailler leur technique sans les contraintes sociales d'une milonga.",
+    description: `**Le terme — qu'est-ce qu'une práctica ?**
+
+La práctica est ton laboratoire de tango. C'est là que tu apprends vraiment, entre les cours et les milongas. J'insiste beaucoup là-dessus dans mes carnets : sans práctica régulière, les cours et les milongas ne suffisent pas.
+
+**Práctica ≠ Milonga :**
+
+| Práctica | Milonga |
+|----------|---------|
+| On s'arrête, on répète, on recommence | On danse sans interruption |
+| On peut parler, poser des questions | Conversation minimale sur la piste |
+| Pas de códigos stricts | Códigos respectés |
+| Tenue décontractée | Tenue soignée |
+| Musique continue ou arrêtée selon besoin | Tandas et cortinas |
+| On change de partenaire librement | Cabeceo pour inviter |
+
+**Ce qu'on fait en práctica :**
+
+**Répéter les figures du cours :**
+Reprendre ce qui a été appris en cours et le travailler lentement, avec un partenaire, jusqu'à ce que ça devienne naturel.
+
+**Travailler la connexion :**
+Danser des passages en silence, les yeux fermés, en se concentrant uniquement sur l'abrazo et le transfert de poids.
+
+**Demander du feedback :**
+C'est le moment idéal pour demander à un partenaire plus expérimenté son ressenti, ou à un professeur présent d'observer.
+
+**Explorer librement :**
+Essayer des choses qu'on ne se permettrait pas en milonga — des figures qu'on ne maîtrise pas encore, des idées musicales, des variations.
+
+**Regarder les autres :**
+Observer les danseurs plus avancés pendant la práctica — comprendre comment ils abordent les mêmes problèmes techniques.
+
+---
+
+**Le rythme recommandé pour un débutant :**
+
+- 1 cours par semaine
+- 1–2 practiques par semaine
+- 1 milonga par mois (les premiers temps)
+
+La práctica est ce qui transforme les informations du cours en savoir corporel.`,
+    erreursCourantes: [],
+    conseils: [
+      "À chaque práctica, donne-toi un seul objectif technique — pas cinq. 'Aujourd'hui je travaille uniquement le transfert de poids complet.' Focalisé, tu progresses dix fois plus vite qu'en essayant tout à la fois.",
+    ],
+    etymologie: "De l'espagnol 'práctica' (pratique, exercice, entraînement) — du latin 'practica', du grec 'praktikê' (action pratique, art d'agir). La práctica est l'espace de la pratique délibérée.",
+    difficulteInterne: 1,
+    termesLies: ['milonga', 'codigos-milonga', 'connexion-tango'],
+  },
+
   // ─── Niveau 1 — Premiers pas en milonga ───────────────────────────────────
 
   {
@@ -1001,6 +1110,257 @@ La resolución crée un moment de stabilité — les deux eje sont au même endr
     etymologie: "De l'espagnol 'resolución' (résolution, conclusion, dénouement) — de 'resolver' (résoudre, conclure). En musique comme en tango, la résolution est la conclusion naturelle d'une phrase en tension.",
     difficulteInterne: 1,
     termesLies: ['salida-tango', 'compas-tango', 'pausa-tango'],
+  },
+
+  {
+    id: 'disociacion-tango',
+    nom: 'Disociación',
+    alias: ['dissociation tango', 'disociación', 'dissociation haut-bas', 'torsion tango'],
+    disciplines: ['tango-argentin'],
+    categories: ['concepts', 'qualites-de-mouvement'],
+    definition: "Capacité à mouvoir le bas du corps indépendamment du haut du corps dans le tango argentin — le bassin et les jambes pivotent pendant que le buste reste face au partenaire, ou inversement. Clé technique indispensable pour l'ocho, le molinete et la plupart des figures de rotation.",
+    description: `**Le terme — qu'est-ce que la disociación ?**
+
+La disociación est LA clé technique du tango. Sans elle, l'ocho n'existe pas, le molinete n'existe pas, la plupart des figures de rotation n'existent pas. Et pourtant, c'est un concept simple — une fois qu'on a trouvé le mouvement dans son propre corps.
+
+La disociación, c'est la capacité de ton corps à faire deux choses en même temps dans des directions différentes :
+- Le bas (bassin, jambes) tourne dans une direction
+- Le haut (buste, épaules) reste face au partenaire — ou tourne moins vite, ou tourne dans l'autre sens
+
+C'est une forme de torsion contrôlée de la colonne. On ne force pas — on utilise la mobilité naturelle de la colonne vertébrale entre le bassin et les épaules.
+
+---
+
+**Le mouvement — comment trouver et développer la disociación ?**
+
+**Exercice 1 — debout, mains sur les épaules :**
+Pose les mains sur tes propres épaules. Maintenant, tourne les hanches à droite en gardant les épaules immobiles. Tu dois sentir une légère torsion dans la taille. C'est la disociación basique.
+
+**Exercice 2 — face au mur :**
+Mets-toi face à un mur, à une longueur de bras. Pose les deux mains sur le mur. Maintenant essaie de tourner tes pieds et tes hanches sur la gauche en gardant tes mains (et donc tes épaules) en face du mur. Tu crées de la torsion dans ton buste. C'est exactement la disociación de l'ocho.
+
+**Exercice 3 — l'ocho sans partenaire :**
+Marche un pas en avant-gauche, puis pivote sur le pied gauche : les hanches et les pieds tournent à 180°, le buste reste face au mur devant toi. Marche un pas en avant-droit, pivote sur le pied droit : même chose en sens inverse. Tu fais un ocho.
+
+**La disociación dans les figures :**
+
+| Figure | Disociación utilisée |
+|--------|---------------------|
+| Ocho | Hanches pivotent, buste reste face au meneur |
+| Molinete | Hanches tournent autour du meneur, buste l'accompagne |
+| Enrosque (meneur) | Hanches pivotent, buste guide le suiveur |
+
+**Jusqu'où peut aller la disociación ?**
+Environ 45° de différence entre le bas et le haut est courant. Les danseurs très souples peuvent aller plus loin, mais l'élégance n'est pas dans l'amplitude — c'est dans la fluidité.`,
+    erreursCourantes: [
+      "Tout le corps qui tourne en même temps (pas de dissociation — les figures perdent leur élégance).",
+      "Forcer la torsion (crispation — la disociación doit être fluide et détendue).",
+      "Épaules qui précèdent les hanches au lieu de rester en retard.",
+    ],
+    conseils: [
+      "Passe 5 minutes par jour à faire des pivots face au mur, mains posées dessus. C'est l'exercice le plus simple et le plus efficace pour développer la disociación. Au bout de 2 semaines, tu la sentiras dans ta danse.",
+    ],
+    difficulteInterne: 2,
+    termesLies: ['ocho', 'molinete', 'pivot-tango'],
+  },
+
+  {
+    id: 'coleccion-tango',
+    nom: 'Colección',
+    alias: ['colección tango', 'collect tango', 'fermeture des pieds', 'rassemblement'],
+    disciplines: ['tango-argentin'],
+    categories: ['pas', 'qualites-de-mouvement'],
+    definition: "Geste de rassemblement des pieds dans le tango argentin — le pied libre revient se placer contre la cheville ou le mollet du pied de support avant de repartir dans une nouvelle direction. La colección crée de la propreté dans le mouvement et prépare le changement de direction.",
+    description: `**Le terme — qu'est-ce que la colección ?**
+
+La colección (de 'colectar' : collecter, rassembler) est un des petits secrets qui distingue un danseur propre d'un danseur brouillon. Quand le pied libre passe d'un endroit à un autre, il ne prend pas un raccourci aléatoire — il passe par la position rassemblée, jambes ensemble, avant de repartir.
+
+Ce n'est pas toujours visible sur une vidéo. Mais ça se ressent dans l'abrazo. Et ça se voit clairement chez les bons danseurs quand on sait quoi regarder.
+
+---
+
+**Le mouvement — comment exécuter la colección ?**
+
+**La séquence :**
+1. Poids sur pied gauche — pied droit vient de terminer un pas
+2. Le pied droit glisse le long du sol vers la cheville gauche
+3. Les deux chevilles sont proches (sans transfert de poids — pied gauche toujours porteur)
+4. Depuis cette position rassemblée, le pied droit repart dans la direction suivante
+
+**La colección n'est pas un arrêt :**
+Ce n'est pas une pause sur deux pieds — c'est un passage. Le pied libre arrive à la cheville de support et repart immédiatement. La durée peut être très courte (une fraction de seconde) ou plus longue si le meneur laisse le temps.
+
+**La colección dans la caminada :**
+Entre chaque pas de la caminada, la jambe libre passe près de la jambe de support avant d'avancer ou de reculer. Les danseurs expérimentés le font naturellement, sans y penser.
+
+**La colección et l'ocho :**
+Dans l'ocho, après chaque pivot, le pied libre revient près du pied de support avant de repartir dans la direction suivante. La colección donne le temps du pivot sans que le pied libre traîne.
+
+**Exercice :**
+Marche lentement. À chaque pas, avant de poser le pied suivant à sa destination, passe par la cheville de l'autre pied. Pied gauche → colección → pied droit → colección → pied gauche. Tu verras immédiatement que ta marche devient plus propre et plus musicale.`,
+    erreursCourantes: [
+      "Pied libre qui va directement à sa destination sans passer par la colección (déplacement peu propre).",
+      "Colección avec transfert de poids (les deux pieds prennent le poids — confusion dans l'abrazo).",
+      "Colección trop lente qui interrompt le flux de la danse.",
+    ],
+    conseils: [
+      "Filme ta marche de côté. Si tes pieds décrivent des arcs aléatoires entre chaque pas, tu n'as pas encore la colección. Avec la colección, chaque pied passe systématiquement près de l'autre — la trajectoire est propre et prévisible.",
+    ],
+    difficulteInterne: 2,
+    termesLies: ['caminada', 'ocho', 'pivot-tango'],
+  },
+
+  {
+    id: 'pivot-tango',
+    nom: 'Pivot',
+    alias: ['pivot tango', 'pivote', 'rotation sur place', 'giro tango'],
+    disciplines: ['tango-argentin'],
+    categories: ['tours', 'pas'],
+    definition: "Rotation du corps sur un pied de support dans le tango argentin — le pied de support pivote sur l'avant du pied pendant que le corps tourne, permettant un changement de direction complet sans déplacement. Technique fondamentale utilisée dans l'ocho, le molinete et de nombreuses figures.",
+    description: `**Le terme — qu'est-ce que le pivot dans le tango ?**
+
+Le pivot est l'élément mécanique qui permet au tango de changer de direction avec fluidité. Sans pivot propre, l'ocho est impossible, le molinete est impossible, la plupart des figures de rotation n'existent pas.
+
+C'est une compétence qui semble simple — tourner sur un pied — et qui nécessite pourtant un travail spécifique. La plupart des débutants pivotent de façon trop rigide, sur les talons, ou en perdant leur eje.
+
+---
+
+**Le mouvement — comment réaliser un pivot correct ?**
+
+**La position de pivot :**
+- Tout le poids est sur un pied (eje complet)
+- Le pied de support est sur l'avant du pied — pas sur le talon, pas sur la pointe, sur le métatarse
+- Le genou du pied de support est légèrement fléchi
+- Le pied libre est détendu, légèrement soulevé ou effleurant le sol
+
+**La rotation :**
+La rotation part du centre du corps — pas des épaules, pas des hanches seules. Imagine que quelqu'un tire un fil attaché à ton sternum : tout le corps tourne ensemble autour de l'axe vertical.
+
+**L'avant du pied :**
+Le pivot se fait sur l'avant du pied, jamais sur le talon. Le talon peut légèrement quitter le sol pendant la rotation — c'est normal et souhaitable.
+
+**L'amplitude du pivot :**
+Dans l'ocho, le pivot est de 180° (demi-tour complet). Dans le molinete, chaque pivot peut être de 90° ou 180° selon la figure.
+
+**Exercice fondamental :**
+Debout sur le pied gauche. Transfère le poids sur l'avant du pied. Tourne de 90° vers la gauche, puis de 90° vers la droite, puis de 90° vers la gauche, puis 90° vers la droite. Répète 20 fois. L'objectif : que le pivot soit fluide, que l'eje ne bouge pas pendant la rotation.
+
+**Le pivot et la disociación :**
+Dans l'ocho, la disociación permet au buste de rester face au partenaire pendant que les hanches pivotent. Le pivot commence dans les hanches — le buste suit après, dans la même direction, mais avec un léger retard.`,
+    erreursCourantes: [
+      "Pivoter sur le talon (perte d'équilibre, friction excessive, douleur possible au genou).",
+      "Corps qui s'effondre pendant le pivot (perdre l'eje — le buste s'incline ou s'affaisse).",
+      "Pivots brusques au lieu de fluides (mouvement saccadé — perdre la qualité du mouvement).",
+      "Pied libre qui touche le sol et freine la rotation.",
+    ],
+    conseils: [
+      "Un bon test : ferme les yeux et fais des pivots de 90° lentement. Après chaque pivot, ouvre les yeux — es-tu toujours où tu pensais être ? Si tu 'dérapes' d'un côté ou de l'autre, tu perds ton eje pendant la rotation. Corrige d'abord les yeux ouverts, puis fermés.",
+    ],
+    difficulteInterne: 2,
+    termesLies: ['ocho', 'molinete', 'disociacion-tango'],
+  },
+
+  {
+    id: 'cadencia',
+    nom: 'Cadencia',
+    alias: ['cadence tango', 'cadencia', 'balancement tango', 'swaying tango'],
+    disciplines: ['tango-argentin'],
+    categories: ['qualites-de-mouvement', 'concepts'],
+    definition: "Balancement rythmique naturel du corps de chaque danseur en accord avec le compás — un léger mouvement d'oscillation du poids qui s'établit dans l'abrazo avant même que la danse commence, créant une écoute commune de la musique entre les deux partenaires.",
+    description: `**Le terme — qu'est-ce que la cadencia ?**
+
+La cadencia est ce qui se passe dans le corps d'un bon danseur de tango quand la musique commence — avant le premier pas. Ce n'est pas une figure, ce n'est pas un déplacement : c'est juste le corps qui écoute.
+
+Tu sais comment certaines personnes commencent à se balancer imperceptiblement dès qu'elles entendent de la musique ? C'est ça, la cadencia. Dans le tango, ce balancement naturel devient partagé — dans l'abrazo, les deux corps établissent une écoute commune du compás.
+
+La cadencia prépare la danse. Un couple qui a établi sa cadencia ensemble avant le premier pas danse différemment d'un couple qui 'part' mécaniquement sur le temps 1.
+
+---
+
+**Le mouvement — comment créer la cadencia ?**
+
+**Seul(e) d'abord :**
+Mets-toi en posture tango, musique tango. Laisse ton poids osciller très légèrement d'un pied à l'autre sur le compás — pas des pas, juste une oscillation interne, presque invisible. Tes genoux se fléchissent et se détendent alternativement. C'est ta cadencia naturelle.
+
+**Dans l'abrazo :**
+Une fois dans l'abrazo avec ton partenaire, avant le premier pas, établis cette cadencia. Laisse ton balancement interne se transmettre dans l'abrazo. Le partenaire reçoit ce signal et commence à balancer en même temps. Quand les deux corps ont trouvé la même cadencia — vous êtes prêts à danser.
+
+**Combien de temps ?**
+La cadencia peut s'établir en 2 secondes ou en 8 mesures selon la connexion. Il n'y a pas de règle — vous attendez que ce soit là.
+
+**La cadencia et la préparation :**
+La cadencia inclut souvent la préparation (preparación) : le meneur signale sa présence dans l'abrazo, le couple s'aligne sur le compás ensemble, puis la salida naît naturellement de cette oscillation partagée.
+
+**Ce que la cadencia révèle :**
+La qualité de la cadencia révèle immédiatement la qualité de la connexion. Si les deux corps ne bougent pas ensemble dans leur balancement, ils ne danseront pas vraiment ensemble non plus.`,
+    erreursCourantes: [
+      "Partir sur le premier temps sans établir la cadencia (danse mécanique, sans dialogue préalable).",
+      "Cadencia visible et exagérée (le balancement doit être subtil — une intention plus qu'un mouvement).",
+      "Cadencia asymétrique (l'un balance, l'autre pas — connexion non établie).",
+    ],
+    conseils: [
+      "Avant ton prochain tanda, donne-toi comme objectif de ne pas faire un seul pas pendant les 8 premières mesures. Juste établir la cadencia avec ton partenaire. Quand elle est là — quand tu le sens vraiment — alors commence à marcher. Vois ce que ça change.",
+    ],
+    etymologie: "De l'espagnol 'cadencia' (cadence, rythme, balancement) — du latin 'cadentia' (chute, le fait de tomber en rythme). La cadencia est le battement partagé avant le mouvement.",
+    difficulteInterne: 2,
+    termesLies: ['compas-tango', 'connexion-tango', 'salida-tango'],
+  },
+
+  {
+    id: 'media-vuelta',
+    nom: 'Media vuelta',
+    alias: ['demi-tour tango', 'media vuelta', 'half turn tango', 'retour tango'],
+    disciplines: ['tango-argentin'],
+    categories: ['pas', 'deplacements'],
+    definition: "Demi-tour dans le tango argentin — figure qui inverse la direction de marche des deux partenaires en 3 pas, permettant au couple de changer de sens sur la ligne de danse. Une des figures les plus utilisées en milonga pour naviguer dans la ronda.",
+    description: `**Le terme — qu'est-ce que la media vuelta ?**
+
+La media vuelta (demi-tour) est l'une des premières figures vraiment utiles en milonga. Elle permet de changer de direction sans avoir à reculer interminablement — indispensable pour naviguer dans la ronda.
+
+Quand un obstacle apparaît devant le couple (un autre couple, un mur), la media vuelta permet d'inverser la direction en 3 pas fluides. C'est comme un demi-tour en voiture — mais en dansant.
+
+---
+
+**Le mouvement — comment exécuter une media vuelta ?**
+
+**La media vuelta básica — séquence du meneur :**
+
+| Pas | Pied | Direction |
+|-----|------|-----------|
+| 1 | Droit | En avant (comme une caminada normale) |
+| 2 | Gauche | Se pivote sur le pied droit — commence à tourner |
+| 3 | Droit | Complète le demi-tour — maintenant face à l'autre sens |
+
+**La media vuelta du suiveur (miroir du meneur) :**
+
+| Pas | Pied | Direction |
+|-----|------|-----------|
+| 1 | Gauche | En arrière (réponse normale à la caminada du meneur) |
+| 2 | Droit | Pivote — commence à tourner avec le meneur |
+| 3 | Gauche | Complète le demi-tour |
+
+**Résultat :**
+Après la media vuelta, le meneur marche maintenant là où le suiveur était, et vice versa — les deux ont fait un demi-tour complet autour de l'axe central du couple.
+
+**Le guidage de la media vuelta :**
+Le meneur guide la media vuelta par une légère torsion de son buste vers l'intérieur du demi-tour, accompagnée d'un déplacement de son poids dans la direction du tournant. Le suiveur ressent ce virage dans l'abrazo.
+
+**Différence media vuelta / molinete :**
+Dans le molinete, c'est le suiveur qui tourne autour du meneur stationnaire. Dans la media vuelta, les DEUX partenaires tournent ensemble autour de leur axe commun.
+
+**Utilisation en milonga :**
+La media vuelta est très utilisée en milonga pour gérer l'espace : quand la ronda est ralentie devant, au lieu de reculer (pas toujours possible), on fait une media vuelta et on riparte dans une autre direction.`,
+    erreursCourantes: [
+      "Media vuelta trop large (les pas du demi-tour prennent trop d'espace — risque de toucher d'autres couples).",
+      "Perdre l'abrazo pendant la rotation (le buste se sépare du partenaire).",
+      "Meneur qui guide par les bras au lieu du buste (poussée inconfortable pour le suiveur).",
+    ],
+    conseils: [
+      "Pratique la media vuelta seul(e) en tournant autour d'un point imaginaire au sol. 3 pas, demi-tour propre. Quand tu peux le faire rapidement et proprement sans te déséquilibrer, entraîne-toi avec un partenaire.",
+    ],
+    etymologie: "De l'espagnol 'media vuelta' (demi-tour) — 'media' (demi) + 'vuelta' (tour, retournement). Le terme est explicitement descriptif : un demi-tour, ni plus ni moins.",
+    difficulteInterne: 2,
+    termesLies: ['caminada', 'pivot-tango', 'ronda'],
   },
 
   // ─── Niveau 2 — Construction du vocabulaire ───────────────────────────────
