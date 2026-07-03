@@ -14,7 +14,10 @@ export const PALIERS: Palier[] = [
   { id: 'etoile',    nom: 'Étoile montante',     symbole: '⭐', couleur: '#fbbf24', seuilPts: 750,   badgeId: 'palier-etoile' },
   { id: 'role',      nom: 'Premier rôle',        symbole: '🎭', couleur: '#fb923c', seuilPts: 1500,  badgeId: 'palier-role' },
   { id: 'vedette',   nom: 'Vedette',             symbole: '🏆', couleur: '#f59e0b', seuilPts: 3000,  badgeId: 'palier-vedette' },
-  { id: 'plumy-or',  nom: 'Plumy d\'or',         symbole: '🦚', couleur: '#10b981', seuilPts: 6000,  badgeId: 'palier-plumy-or' },
+  { id: 'plumy-or',    nom: "Plumy d'or",        symbole: '🦚', couleur: '#10b981', seuilPts: 6000,  badgeId: 'palier-plumy-or' },
+  { id: 'virtuose',   nom: 'Virtuose',           symbole: '🎖️', couleur: '#6366f1', seuilPts: 12000, badgeId: 'palier-virtuose' },
+  { id: 'maitre',     nom: 'Maître de scène',    symbole: '🎪', couleur: '#ec4899', seuilPts: 25000, badgeId: 'palier-maitre' },
+  { id: 'legende',    nom: 'Légende vivante',    symbole: '🌟', couleur: '#f59e0b', seuilPts: 50000, badgeId: 'palier-legende' },
 ]
 
 export function getPalierCourant(points: number): Palier {

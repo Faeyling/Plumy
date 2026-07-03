@@ -2,6 +2,8 @@ import { useCallback } from 'react'
 import { statsRepository } from '@/data/repositories/statsRepository'
 import { progressionRepository } from '@/data/repositories/progressionRepository'
 import { PALIERS } from '@/lib/paliers'
+import { getTotalSectionsLues } from '@/lib/coursProgression'
+import { tousCesLeCours } from '@/content/cours/index'
 
 export function useBadgeCheck() {
   const checkBadges = useCallback(async (): Promise<string[]> => {
@@ -9,6 +11,7 @@ export function useBadgeCheck() {
       statsRepository.get(),
       progressionRepository.list(),
     ])
+    const sectionsLues = getTotalSectionsLues(tousCesLeCours.map((c) => c.id))
 
     const termesVus = progressions.filter(p => p.statut !== 'jamais-vu').length
     const termesMaitrises = progressions.filter(p => p.statut === 'maitrise').length
@@ -34,6 +37,10 @@ export function useBadgeCheck() {
     if (termesMaitrises >= 50) candidats.push('maitrise-x50')
 
     if (termesFavoris >= 10) candidats.push('collectionneur')
+
+    if (sectionsLues >= 1) candidats.push('premiere-page')
+    if (sectionsLues >= 5) candidats.push('lecteur')
+    if (sectionsLues >= 20) candidats.push('lecteur-assidu')
 
     for (const palier of PALIERS) {
       if (palier.badgeId && stats.points >= palier.seuilPts) {

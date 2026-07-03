@@ -31,3 +31,7 @@ export function aLuRecemment(coursId: string, heures = 24): boolean {
 export function uniteALuRecemment(coursIds: string[], heures = 24): boolean {
   return coursIds.some((id) => aLuRecemment(id, heures))
 }
+
+export function getTotalSectionsLues(coursIds: string[]): number {
+  return coursIds.reduce((sum, id) => sum + getCoursProgression(id).sectionsVues.length, 0)
+}

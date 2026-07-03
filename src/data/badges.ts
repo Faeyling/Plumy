@@ -110,6 +110,28 @@ export const BADGES: BadgeDefinition[] = [
     symbole: '♥',
     couleur: 'var(--color-candy-rose)',
   },
+  // ─── Lecture ──────────────────────────────────────────────────────────────
+  {
+    id: 'premiere-page',
+    nom: 'Première page',
+    description: 'Première section de cours lue',
+    symbole: '📄',
+    couleur: 'var(--color-candy-menthe)',
+  },
+  {
+    id: 'lecteur',
+    nom: 'Lecteur',
+    description: '5 sections de cours lues',
+    symbole: '📖',
+    couleur: 'var(--color-candy-bleu)',
+  },
+  {
+    id: 'lecteur-assidu',
+    nom: 'Lecteur assidu',
+    description: '20 sections de cours lues',
+    symbole: '📚',
+    couleur: 'var(--color-candy-lavande)',
+  },
   // ─── Paliers de points ────────────────────────────────────────────────────
   {
     id: 'palier-plume',
@@ -152,6 +174,27 @@ export const BADGES: BadgeDefinition[] = [
     description: '6 000 points accumulés',
     symbole: '🦚',
     couleur: '#10b981',
+  },
+  {
+    id: 'palier-virtuose',
+    nom: 'Virtuose',
+    description: '12 000 points accumulés',
+    symbole: '🎖️',
+    couleur: '#6366f1',
+  },
+  {
+    id: 'palier-maitre',
+    nom: 'Maître de scène',
+    description: '25 000 points accumulés',
+    symbole: '🎪',
+    couleur: '#ec4899',
+  },
+  {
+    id: 'palier-legende',
+    nom: 'Légende vivante',
+    description: '50 000 points accumulés',
+    symbole: '🌟',
+    couleur: '#f59e0b',
   },
 ]
 
