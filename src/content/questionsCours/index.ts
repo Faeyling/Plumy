@@ -1,9 +1,13 @@
 import type { QuestionQCMCours } from '@/content/schema'
 import { questionsUnite0 } from './unite0'
+import { questionsUnite1 } from './unite1'
+import { questionsUnite2 } from './unite2'
 import { unites } from '@/content/unites'
 
 export const toutesLesQuestionsCours: QuestionQCMCours[] = [
   ...questionsUnite0,
+  ...questionsUnite1,
+  ...questionsUnite2,
 ]
 
 export function getQuestionsCoursPourUnite(uniteNumero: number): QuestionQCMCours[] {
