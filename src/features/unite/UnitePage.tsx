@@ -52,6 +52,10 @@ export function UnitePage() {
   const total = termes.length
   const pourcentage = total > 0 ? Math.round((vus / total) * 100) : 0
 
+  const totalSectionsUnite = cours.reduce((s, c) => s + c.sections.length, 0)
+  const sectionsLuesUnite = cours.reduce((s, c) => s + getCoursProgression(c.id).sectionsVues.length, 0)
+  const pourcentageTheorie = totalSectionsUnite > 0 ? Math.round((sectionsLuesUnite / totalSectionsUnite) * 100) : 0
+
   return (
     <div className="flex flex-col min-h-svh">
       {/* En-tête */}
@@ -102,22 +106,43 @@ export function UnitePage() {
           </div>
         </div>
 
-        {/* Progression */}
-        {total > 0 && (
-          <div className="mt-4">
-            <div className="flex justify-between text-xs text-[var(--color-gris-texte)] mb-1">
-              <span>{vus} / {total} termes vus</span>
-              <span>{pourcentage}%</span>
-            </div>
-            <div className="h-2 bg-[var(--color-gris-doux)] rounded-full overflow-hidden">
-              <motion.div
-                className="h-full rounded-full"
-                style={{ backgroundColor: 'var(--color-candy-lavande)' }}
-                initial={{ width: 0 }}
-                animate={{ width: `${pourcentage}%` }}
-                transition={{ duration: 0.6, ease: 'easeOut' }}
-              />
-            </div>
+        {/* Progression double */}
+        {(total > 0 || totalSectionsUnite > 0) && (
+          <div className="mt-4 space-y-2">
+            {total > 0 && (
+              <div>
+                <div className="flex justify-between text-xs text-[var(--color-gris-texte)] mb-1">
+                  <span>Vocabulaire — {vus} / {total} termes vus</span>
+                  <span>{pourcentage}%</span>
+                </div>
+                <div className="h-2 bg-[var(--color-gris-doux)] rounded-full overflow-hidden">
+                  <motion.div
+                    className="h-full rounded-full"
+                    style={{ backgroundColor: 'var(--color-candy-lavande)' }}
+                    initial={{ width: 0 }}
+                    animate={{ width: `${pourcentage}%` }}
+                    transition={{ duration: 0.6, ease: 'easeOut' }}
+                  />
+                </div>
+              </div>
+            )}
+            {totalSectionsUnite > 0 && (
+              <div>
+                <div className="flex justify-between text-xs text-[var(--color-gris-texte)] mb-1">
+                  <span>Théorie — {sectionsLuesUnite} / {totalSectionsUnite} sections lues</span>
+                  <span>{pourcentageTheorie}%</span>
+                </div>
+                <div className="h-2 bg-[var(--color-gris-doux)] rounded-full overflow-hidden">
+                  <motion.div
+                    className="h-full rounded-full"
+                    style={{ backgroundColor: 'var(--color-candy-menthe)' }}
+                    initial={{ width: 0 }}
+                    animate={{ width: `${pourcentageTheorie}%` }}
+                    transition={{ duration: 0.6, ease: 'easeOut', delay: 0.1 }}
+                  />
+                </div>
+              </div>
+            )}
           </div>
         )}
       </header>
