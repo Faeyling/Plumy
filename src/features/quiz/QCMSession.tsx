@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { getTermesParUnite, getTerme } from '@/content/termes/index'
 import { unites } from '@/content/unites'
 import { genererQCM, type QuestionQCM } from './quiz.utils'
+import { uniteALuRecemment } from '@/lib/coursProgression'
 import { statsRepository } from '@/data/repositories/statsRepository'
 import { useBadgeCheck } from '@/hooks/useBadgeCheck'
 import { getBadge } from '@/data/badges'
@@ -110,6 +111,7 @@ export function QCMSession() {
     )
   }
 
+  const bonusLecture = uniteALuRecemment(unite?.coursIds ?? [])
   const question = questions[index]
   const total = questions.length
   const isAnswered = selected !== null
@@ -124,7 +126,7 @@ export function QCMSession() {
     if (choix === question.bonneReponse) {
       const newCombo = combo + 1
       setCombo(newCombo)
-      const pts = Math.round(PTS_CORRECT_BASE * comboMultiplier(newCombo))
+      const pts = Math.round(PTS_CORRECT_BASE * comboMultiplier(newCombo) * (bonusLecture ? 1.5 : 1))
       setPtsTotal(p => p + pts)
       setCorrects(c => c + 1)
     } else {
@@ -247,6 +249,11 @@ export function QCMSession() {
             {fr.quiz.typesLabels.qcm}
           </span>
           <div className="flex items-center gap-2">
+            {bonusLecture && (
+              <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-[var(--color-candy-menthe)] text-white">
+                📖 ×1.5
+              </span>
+            )}
             {combo >= 3 && (
               <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-[var(--color-candy-jaune)] text-[var(--color-encre)]">
                 ×{multiplier} {fr.combos.serie(combo)}

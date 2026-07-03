@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { getTermesParUnite } from '@/content/termes/index'
 import { unites } from '@/content/unites'
 import { genererAssociation, shuffle, type PaireAssociation } from './quiz.utils'
+import { uniteALuRecemment } from '@/lib/coursProgression'
 import { statsRepository } from '@/data/repositories/statsRepository'
 import { useBadgeCheck } from '@/hooks/useBadgeCheck'
 import { getBadge } from '@/data/badges'
@@ -43,6 +44,7 @@ export function AssociationSession() {
   const [ptsGagnes, setPtsGagnes] = useState(0)
   const [newBadges, setNewBadges] = useState<string[]>([])
   const { checkBadges } = useBadgeCheck()
+  const bonusLecture = uniteALuRecemment(unite?.coursIds ?? [])
 
   function handleRecommencer() {
     const nouvellesPaires = genererAssociation(termes, 5)
@@ -62,7 +64,7 @@ export function AssociationSession() {
   }
 
   async function finirAssociation(totalCorrects: number) {
-    const pts = totalCorrects * PTS_PAIRE
+    const pts = Math.round(totalCorrects * PTS_PAIRE * (bonusLecture ? 1.5 : 1))
     await statsRepository.ajouterPoints(pts)
     const stats = await statsRepository.get()
     await statsRepository.update({ quizJoues: stats.quizJoues + 1 })
@@ -223,9 +225,16 @@ export function AssociationSession() {
           <span className="font-[var(--font-titre)] font-bold text-[var(--color-encre)]">
             {fr.quiz.typesLabels.association}
           </span>
-          <span className="text-xs text-[var(--color-gris-texte)]">
-            {fr.quiz.association.pairesRestantes(nbRestantes)}
-          </span>
+          <div className="flex items-center gap-2">
+            {bonusLecture && (
+              <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-[var(--color-candy-menthe)] text-white">
+                📖 ×1.5
+              </span>
+            )}
+            <span className="text-xs text-[var(--color-gris-texte)]">
+              {fr.quiz.association.pairesRestantes(nbRestantes)}
+            </span>
+          </div>
         </div>
         <div className="h-2 bg-[var(--color-gris-doux)] rounded-full overflow-hidden">
           <motion.div
