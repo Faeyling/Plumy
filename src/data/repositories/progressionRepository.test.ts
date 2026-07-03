@@ -98,21 +98,21 @@ describe('progressionRepository.listFavoris', () => {
 })
 
 describe('progressionRepository.enregistrerResultatQuiz', () => {
-  it("crée maitrise+reussitesQuiz=1 si réussi et inexistant", async () => {
+  it("crée vu+reussitesQuiz=1 si réussi et inexistant (seuil maitrise = 3)", async () => {
     await progressionRepository.enregistrerResultatQuiz('plie', true)
-    expect(store['plie'].statut).toBe('maitrise')
+    expect(store['plie'].statut).toBe('vu')
     expect(store['plie'].reussitesQuiz).toBe(1)
     expect(store['plie'].echecsQuiz).toBe(0)
   })
 
-  it("crée a-revoir+echecsQuiz=1 si échoué et inexistant", async () => {
+  it("crée a-revoir+echecsQuiz=1 si échoué et inexistant, reset reussitesQuiz", async () => {
     await progressionRepository.enregistrerResultatQuiz('arabesque', false)
     expect(store['arabesque'].statut).toBe('a-revoir')
     expect(store['arabesque'].echecsQuiz).toBe(1)
     expect(store['arabesque'].reussitesQuiz).toBe(0)
   })
 
-  it("incrémente reussitesQuiz si entrée existante + réussi", async () => {
+  it("passe à maitrise à la 3e réussite consécutive", async () => {
     store['plie'] = { termeId: 'plie', statut: 'vu', reussitesQuiz: 2, echecsQuiz: 1 }
     await progressionRepository.enregistrerResultatQuiz('plie', true)
     expect(store['plie'].reussitesQuiz).toBe(3)
@@ -120,10 +120,11 @@ describe('progressionRepository.enregistrerResultatQuiz', () => {
     expect(store['plie'].statut).toBe('maitrise')
   })
 
-  it("incrémente echecsQuiz si entrée existante + échoué", async () => {
+  it("incrémente echecsQuiz si entrée existante + échoué, reset reussitesQuiz", async () => {
     store['plie'] = { termeId: 'plie', statut: 'maitrise', reussitesQuiz: 3, echecsQuiz: 0 }
     await progressionRepository.enregistrerResultatQuiz('plie', false)
     expect(store['plie'].echecsQuiz).toBe(1)
+    expect(store['plie'].reussitesQuiz).toBe(0)
     expect(store['plie'].statut).toBe('a-revoir')
   })
 })

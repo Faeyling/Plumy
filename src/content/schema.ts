@@ -114,6 +114,7 @@ export interface ProgressionTerme {
   vuLe?: number;
   reussitesQuiz: number;
   echecsQuiz: number;
+  prochainRevision?: number;
 }
 
 export interface StatsGlobales {

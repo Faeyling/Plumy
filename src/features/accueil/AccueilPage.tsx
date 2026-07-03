@@ -53,6 +53,7 @@ export function AccueilPage() {
   const [showOnboarding, setShowOnboarding] = useState(false)
   const [progressParUnite, setProgressParUnite] = useState<Record<number, { vus: number; total: number }>>({})
   const [parcoursVus, setParcoursVus] = useState<Record<string, number>>({})
+  const [derniereUnite, setDerniereUnite] = useState<Unite | null>(null)
   const [illustrationIdx] = useState(() => {
     const key = 'plumy-accueil-illustration-idx'
     const stored = parseInt(localStorage.getItem(key) ?? '0', 10)
@@ -97,6 +98,14 @@ export function AccueilPage() {
         parcResult[p.id] = vus
       }
       setParcoursVus(parcResult)
+
+      // Dernière unité visitée
+      const avecDate = progressions.filter(p => p.vuLe)
+      if (avecDate.length > 0) {
+        const plusRecent = avecDate.reduce((a, b) => (b.vuLe ?? 0) > (a.vuLe ?? 0) ? b : a)
+        const unite = unites.find(u => u.termeIds.includes(plusRecent.termeId))
+        setDerniereUnite(unite ?? null)
+      }
     })
   }, [refresh])
 
@@ -160,6 +169,40 @@ export function AccueilPage() {
           )}
         </div>
       </section>
+
+      {/* Reprends où tu en étais */}
+      {derniereUnite && (
+        <section className="px-4 pt-5" aria-label="Reprends où tu en étais">
+          <h2 className="font-[var(--font-titre)] font-bold text-sm text-[var(--color-encre)] uppercase tracking-wide mb-3">
+            Reprends où tu en étais
+          </h2>
+          <Link
+            to={`/unite/${derniereUnite.numero}`}
+            className="flex items-center gap-3 p-4 bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-shadow"
+          >
+            <span
+              className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-[var(--font-titre)] font-bold text-white text-sm"
+              style={{ backgroundColor: iconeCouleur[derniereUnite.iconeSvgId] ?? 'var(--color-candy-lavande)' }}
+              aria-hidden="true"
+            >
+              {derniereUnite.numero}
+            </span>
+            <div className="flex-1 min-w-0">
+              <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm leading-snug">
+                {derniereUnite.titre}
+              </p>
+              <p className="text-xs text-[var(--color-gris-texte)] mt-0.5">
+                {progressParUnite[derniereUnite.numero]
+                  ? `${progressParUnite[derniereUnite.numero].vus} / ${progressParUnite[derniereUnite.numero].total} termes vus`
+                  : 'Continue ta progression'}
+              </p>
+            </div>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="flex-shrink-0 text-[var(--color-gris-texte)]">
+              <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </Link>
+        </section>
+      )}
 
       {/* Terme du jour */}
       {TERME_DU_JOUR && (

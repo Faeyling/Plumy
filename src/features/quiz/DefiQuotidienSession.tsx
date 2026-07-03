@@ -1,10 +1,11 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { tousLesTermes } from '@/content/termes/index'
 import { toutesLesQuestionsCours } from '@/content/questionsCours/index'
 import type { QuestionQCMCours } from '@/content/schema'
 import { statsRepository } from '@/data/repositories/statsRepository'
+import { progressionRepository } from '@/data/repositories/progressionRepository'
 import { useBadgeCheck } from '@/hooks/useBadgeCheck'
 import { getBadge } from '@/data/badges'
 import { PluмyMascot } from '@/components/mascotte/PluмyMascot'
@@ -12,7 +13,8 @@ import { fr } from '@/i18n/fr'
 import { db } from '@/data/db'
 import { seededRandom, todaySeed } from '@/lib/seededRandom'
 
-const NB_QUESTIONS = 5
+const NB_QUESTIONS = 10
+const NB_A_REVOIR_MAX = 3
 const PTS_CORRECT_BASE = 10
 
 function comboMultiplier(combo: number): number {
@@ -32,18 +34,29 @@ type QuestionDefi =
   | { kind: 'terme'; terme: (typeof tousLesTermes)[0]; choix: string[]; bonneReponse: string }
   | { kind: 'cours'; q: QuestionQCMCours; choix: string[]; bonneReponse: string }
 
-function construireQuestions(): QuestionDefi[] {
+async function construireQuestions(): Promise<QuestionDefi[]> {
   const rng = seededRandom(todaySeed())
 
-  // Select terms (seeded)
-  const termesCandidats = tousLesTermes.filter(t => t.definition.length > 20)
-  const shuffledTermes = [...termesCandidats].sort(() => rng() - 0.5)
-  const termesChoisis = shuffledTermes.slice(0, NB_QUESTIONS - 1) // 4 terms + 1 course
+  // Terms from "à revoir" list (personalised, due today)
+  const aRevoirProgres = await progressionRepository.listARevoir()
+  const aRevoirTermes = aRevoirProgres
+    .map(p => tousLesTermes.find(t => t.id === p.termeId))
+    .filter((t): t is typeof tousLesTermes[0] => !!t && t.definition.length > 20)
+  const fromARevoir = [...aRevoirTermes]
+    .sort(() => Math.random() - 0.5)
+    .slice(0, NB_A_REVOIR_MAX)
 
-  // Select one course question (seeded)
+  // Seeded terms (exclude "à revoir" already chosen)
+  const aRevoirIds = new Set(fromARevoir.map(t => t.id))
+  const termesCandidats = tousLesTermes.filter(t => t.definition.length > 20 && !aRevoirIds.has(t.id))
+  const nbSeeded = NB_QUESTIONS - 1 - fromARevoir.length // -1 for the cours question
+  const seededTermes = [...termesCandidats].sort(() => rng() - 0.5).slice(0, nbSeeded)
+  const termesChoisis = [...fromARevoir, ...seededTermes]
+
+  // Seeded cours question
   const shuffledCours = [...toutesLesQuestionsCours].sort(() => rng() - 0.5)
 
-  // Build term questions (distractors use Math.random for variety)
+  // Build term questions
   const termeQuestions: QuestionDefi[] = termesChoisis.map(terme => {
     const distracteurs = tousLesTermes
       .filter(t => t.id !== terme.id && t.nom !== terme.nom)
@@ -54,7 +67,7 @@ function construireQuestions(): QuestionDefi[] {
     return { kind: 'terme', terme, choix, bonneReponse: terme.nom }
   })
 
-  // Insert course question at a seeded position
+  // Insert cours question at a seeded position
   const result: QuestionDefi[] = [...termeQuestions]
   if (shuffledCours.length > 0) {
     const cq = shuffledCours[0]
@@ -67,7 +80,7 @@ function construireQuestions(): QuestionDefi[] {
 
 export function DefiQuotidienSession() {
   const navigate = useNavigate()
-  const [questions] = useState<QuestionDefi[]>(() => construireQuestions())
+  const [questions, setQuestions] = useState<QuestionDefi[] | null>(null)
   const [index, setIndex] = useState(0)
   const [selected, setSelected] = useState<string | null>(null)
   const [corrects, setCorrects] = useState(0)
@@ -78,6 +91,18 @@ export function DefiQuotidienSession() {
   const [ptsGagnes, setPtsGagnes] = useState(0)
   const [newBadges, setNewBadges] = useState<string[]>([])
   const { checkBadges } = useBadgeCheck()
+
+  useEffect(() => {
+    construireQuestions().then(setQuestions)
+  }, [])
+
+  if (questions === null) {
+    return (
+      <div className="flex items-center justify-center min-h-svh">
+        <span className="text-[var(--color-gris-texte)] text-sm">Préparation du défi…</span>
+      </div>
+    )
+  }
 
   const question = questions[index]
   const total = questions.length

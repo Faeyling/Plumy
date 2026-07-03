@@ -11,7 +11,7 @@ import { db } from '@/data/db'
 import { incrementerStreakSansCours } from '@/lib/streakSansCours'
 import { shuffle } from './quiz.utils'
 
-const NB_QUESTIONS = 8
+const NB_QUESTIONS = 13
 const PTS_CORRECT_BASE = 10
 const SESSION_KEY = 'plumy-en-scene'
 
