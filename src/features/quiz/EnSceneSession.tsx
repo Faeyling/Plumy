@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { tousLesTermes } from '@/content/termes/index'
@@ -12,6 +12,7 @@ import { shuffle } from './quiz.utils'
 
 const NB_QUESTIONS = 8
 const PTS_CORRECT_BASE = 10
+const SESSION_KEY = 'plumy-en-scene'
 
 interface QuestionScene {
   termeId: string
@@ -19,6 +20,25 @@ interface QuestionScene {
   description: string
   bonneReponse: string
   choix: string[]
+}
+
+interface EnSceneSavedState {
+  questions: QuestionScene[]
+  index: number
+  selected: string | null
+  corrects: number
+  combo: number
+  ptsTotal: number
+  showMiniLecon: boolean
+}
+
+function loadEnSceneState(): EnSceneSavedState | null {
+  try {
+    const raw = sessionStorage.getItem(SESSION_KEY)
+    return raw ? (JSON.parse(raw) as EnSceneSavedState) : null
+  } catch {
+    return null
+  }
 }
 
 function genererQuestionsScene(): QuestionScene[] {
@@ -59,17 +79,29 @@ function comboLabel(combo: number): string | null {
 
 export function EnSceneSession() {
   const navigate = useNavigate()
-  const [questions] = useState<QuestionScene[]>(() => genererQuestionsScene())
-  const [index, setIndex] = useState(0)
-  const [selected, setSelected] = useState<string | null>(null)
-  const [corrects, setCorrects] = useState(0)
-  const [combo, setCombo] = useState(0)
-  const [ptsTotal, setPtsTotal] = useState(0)
-  const [showMiniLecon, setShowMiniLecon] = useState(false)
+  const [initData] = useState<EnSceneSavedState | null>(() => loadEnSceneState())
+  const [questions] = useState<QuestionScene[]>(() => initData?.questions ?? genererQuestionsScene())
+  const [index, setIndex] = useState<number>(() => initData?.index ?? 0)
+  const [selected, setSelected] = useState<string | null>(() => initData?.selected ?? null)
+  const [corrects, setCorrects] = useState<number>(() => initData?.corrects ?? 0)
+  const [combo, setCombo] = useState<number>(() => initData?.combo ?? 0)
+  const [ptsTotal, setPtsTotal] = useState<number>(() => initData?.ptsTotal ?? 0)
+  const [showMiniLecon, setShowMiniLecon] = useState<boolean>(() => initData?.showMiniLecon ?? false)
   const [termine, setTermine] = useState(false)
   const [ptsGagnes, setPtsGagnes] = useState(0)
   const [newBadges, setNewBadges] = useState<string[]>([])
   const { checkBadges } = useBadgeCheck()
+
+  useEffect(() => {
+    if (termine) {
+      sessionStorage.removeItem(SESSION_KEY)
+    } else {
+      sessionStorage.setItem(
+        SESSION_KEY,
+        JSON.stringify({ questions, index, selected, corrects, combo, ptsTotal, showMiniLecon }),
+      )
+    }
+  }, [questions, index, selected, corrects, combo, ptsTotal, showMiniLecon, termine])
 
   const question = questions[index]
   const total = questions.length
