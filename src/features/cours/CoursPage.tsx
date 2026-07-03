@@ -6,14 +6,25 @@ import { getTerme } from '@/content/termes/index'
 import { PluмyMascot } from '@/components/mascotte/PluмyMascot'
 import { useSpeech } from '@/hooks/useSpeech'
 import { stripMarkdown } from '@/lib/stripMarkdown'
+import { getCoursProgression, marquerSectionVue } from '@/lib/coursProgression'
 
 export function CoursPage() {
   const { id } = useParams<{ id: string }>()
   const navigate = useNavigate()
   const cours = getCours(id ?? '')
-  const [sectionOuverte, setSectionOuverte] = useState<number>(0)
+  const [sectionOuverte, setSectionOuverte] = useState<number>(() => getCoursProgression(id ?? '').derniereSection)
+  const [sectionsVues, setSectionsVues] = useState<number[]>(() => getCoursProgression(id ?? '').sectionsVues)
   const { isPlaying, isSupported, speak, stop } = useSpeech()
   const [playingSection, setPlayingSection] = useState<number | null>(null)
+
+  function ouvrirSection(i: number) {
+    const isOpening = sectionOuverte !== i
+    setSectionOuverte(isOpening ? i : -1)
+    if (isOpening) {
+      marquerSectionVue(id ?? '', i)
+      setSectionsVues((prev) => (prev.includes(i) ? prev : [...prev, i]))
+    }
+  }
 
   function handleSpeakSection(i: number, text: string) {
     if (isPlaying && playingSection === i) {
@@ -61,6 +72,13 @@ export function CoursPage() {
             <p className="text-sm text-[var(--color-gris-texte)] mt-1 leading-snug">
               {cours.resume}
             </p>
+            <p className="text-xs text-[var(--color-gris-texte)] mt-2">
+              <span style={{ color: sectionsVues.length === cours.sections.length && cours.sections.length > 0 ? 'var(--color-candy-menthe)' : 'inherit' }}>
+                {sectionsVues.length === cours.sections.length && cours.sections.length > 0
+                  ? `✓ ${cours.sections.length} sections lues`
+                  : `${sectionsVues.length} / ${cours.sections.length} sections lues`}
+              </span>
+            </p>
           </div>
         </div>
       </header>
@@ -77,12 +95,24 @@ export function CoursPage() {
           >
             <button
               className="w-full flex items-center justify-between p-4 text-left"
-              onClick={() => setSectionOuverte(sectionOuverte === i ? -1 : i)}
+              onClick={() => ouvrirSection(i)}
               aria-expanded={sectionOuverte === i}
             >
-              <h2 className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-sm pr-2 leading-snug flex-1">
-                {section.titre}
-              </h2>
+              <div className="flex items-center gap-2 flex-1 min-w-0">
+                <span
+                  className="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold"
+                  style={{
+                    backgroundColor: sectionsVues.includes(i) ? 'var(--color-candy-menthe)' : 'var(--color-gris-doux)',
+                    color: 'white',
+                  }}
+                  aria-label={sectionsVues.includes(i) ? 'Section lue' : 'Section non lue'}
+                >
+                  {sectionsVues.includes(i) ? '✓' : '○'}
+                </span>
+                <h2 className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-sm pr-2 leading-snug flex-1">
+                  {section.titre}
+                </h2>
+              </div>
               <div className="flex items-center gap-1 flex-shrink-0">
                 {isSupported && (
                   <button

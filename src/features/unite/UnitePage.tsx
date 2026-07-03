@@ -11,6 +11,7 @@ import { PluмyMascot } from '@/components/mascotte/PluмyMascot'
 import { iconeIllustration } from '@/content/illustrations'
 import { fr } from '@/i18n/fr'
 import { SpeakButton } from '@/components/ui/SpeakButton'
+import { getCoursProgression } from '@/lib/coursProgression'
 
 export function UnitePage() {
   const { numero } = useParams<{ numero: string }>()
@@ -129,36 +130,51 @@ export function UnitePage() {
               Les carnets de Plumy
             </h2>
             <div className="space-y-2">
-              {cours.map((c) => (
-                <div
-                  key={c.id}
-                  className="flex items-center gap-2 bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-shadow"
-                >
-                  <Link
-                    to={`/cours/${c.id}`}
-                    className="flex items-center gap-3 p-3 flex-1 min-w-0"
+              {cours.map((c) => {
+                const prog = getCoursProgression(c.id)
+                const totalSections = c.sections.length
+                const vuesSections = prog.sectionsVues.length
+                const termine = totalSections > 0 && vuesSections >= totalSections
+                const enCours = vuesSections > 0 && !termine
+                return (
+                  <div
+                    key={c.id}
+                    className="flex items-center gap-2 bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-shadow"
                   >
-                    <span
-                      className="flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-sm"
-                      style={{ backgroundColor: 'var(--color-candy-lavande-light)' }}
+                    <Link
+                      to={`/cours/${c.id}`}
+                      className="flex items-center gap-3 p-3 flex-1 min-w-0"
                     >
-                      📖
-                    </span>
-                    <div className="flex-1 min-w-0">
-                      <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm leading-snug">
-                        {c.titre}
-                      </p>
-                      <p className="text-xs text-[var(--color-gris-texte)] line-clamp-1 mt-0.5">
-                        {c.resume}
-                      </p>
-                    </div>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="flex-shrink-0 text-[var(--color-gris-texte)]">
-                      <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  </Link>
-                  <SpeakButton text={c.resume} size={13} className="mr-2" />
-                </div>
-              ))}
+                      <span
+                        className="flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-sm"
+                        style={{ backgroundColor: termine ? 'var(--color-candy-menthe-light, #d1fae5)' : 'var(--color-candy-lavande-light)' }}
+                      >
+                        {termine ? '✓' : '📖'}
+                      </span>
+                      <div className="flex-1 min-w-0">
+                        <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm leading-snug">
+                          {c.titre}
+                        </p>
+                        <p className="text-xs text-[var(--color-gris-texte)] line-clamp-1 mt-0.5">
+                          {c.resume}
+                        </p>
+                        {(termine || enCours) && (
+                          <p
+                            className="text-xs font-semibold mt-0.5"
+                            style={{ color: termine ? 'var(--color-candy-menthe)' : 'var(--color-candy-jaune, #f59e0b)' }}
+                          >
+                            {termine ? '✓ Terminé' : `En cours · ${vuesSections} / ${totalSections} sections`}
+                          </p>
+                        )}
+                      </div>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="flex-shrink-0 text-[var(--color-gris-texte)]">
+                        <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </Link>
+                    <SpeakButton text={c.resume} size={13} className="mr-2" />
+                  </div>
+                )
+              })}
             </div>
           </section>
         )}
