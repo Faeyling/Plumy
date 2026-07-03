@@ -1,4 +1,6 @@
-import type { Terme } from '@/content/schema'
+import type { Terme, QuestionQCMCours } from '@/content/schema'
+
+export type { QuestionQCMCours }
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -33,6 +35,8 @@ export interface QuestionTexteATrous {
   motManquant: string
   propositions: string[]
 }
+
+export type QuestionQCMAny = QuestionQCM | QuestionQCMCours
 
 // ─── Utils ────────────────────────────────────────────────────────────────────
 

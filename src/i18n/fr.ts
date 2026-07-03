@@ -112,6 +112,7 @@ export const fr = {
     retourGlossaire: "Retour au glossaire",
     retourUnite: "Retour à l'unité",
     finTitre: "Quiz terminé !",
+    questionDeCours: "📖 Question de cours",
     typesLabels: {
       qcm: "QCM",
       association: "Association",
@@ -389,6 +390,8 @@ export const fr = {
   miniLecon: {
     titre: "Plumy t'explique…",
     voirFiche: "Voir la fiche complète",
+    voirSectionCours: "Lire la section dans mes carnets →",
+    reponseEnCarnets: "La réponse se trouve dans mes carnets de cours !",
     compris: "J'ai compris, continuer →",
   },
 

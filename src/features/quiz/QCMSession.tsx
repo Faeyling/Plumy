@@ -3,7 +3,8 @@ import { useParams, useNavigate, Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { getTermesParUnite, getTerme } from '@/content/termes/index'
 import { unites } from '@/content/unites'
-import { genererQCM, type QuestionQCM } from './quiz.utils'
+import { genererQCM, shuffle, type QuestionQCMAny } from './quiz.utils'
+import { getQuestionsCoursPourUnite } from '@/content/questionsCours/index'
 import { uniteALuRecemment } from '@/lib/coursProgression'
 import { incrementerStreakSansCours } from '@/lib/streakSansCours'
 import { statsRepository } from '@/data/repositories/statsRepository'
@@ -17,7 +18,7 @@ import { SpeakButton } from '@/components/ui/SpeakButton'
 const PTS_CORRECT_BASE = 10
 
 interface QCMSavedState {
-  questions: QuestionQCM[]
+  questions: QuestionQCMAny[]
   index: number
   selected: string | null
   corrects: number
@@ -49,6 +50,13 @@ function comboLabel(combo: number): string | null {
   return null
 }
 
+function genererQuestionsMixtes(termes: ReturnType<typeof getTermesParUnite>, uniteNumero: number): QuestionQCMAny[] {
+  const courseQs = shuffle(getQuestionsCoursPourUnite(uniteNumero)).slice(0, 3)
+  const nbTermes = Math.max(10 - courseQs.length, 4)
+  const termesQCM = genererQCM(termes, nbTermes)
+  return shuffle([...termesQCM, ...courseQs])
+}
+
 export function QCMSession() {
   const { numero } = useParams<{ numero: string }>()
   const navigate = useNavigate()
@@ -57,9 +65,8 @@ export function QCMSession() {
   const unite = unites.find(u => u.numero === numUnite)
   const termes = getTermesParUnite(numUnite)
 
-  // Restore state from sessionStorage if the user navigated away mid-quiz
   const [initData] = useState<QCMSavedState | null>(() => loadQCMState(SESSION_KEY))
-  const [questions, setQuestions] = useState<QuestionQCM[]>(() => initData?.questions ?? genererQCM(termes, 10))
+  const [questions, setQuestions] = useState<QuestionQCMAny[]>(() => initData?.questions ?? genererQuestionsMixtes(termes, numUnite))
   const [index, setIndex] = useState<number>(() => initData?.index ?? 0)
   const [selected, setSelected] = useState<string | null>(() => initData?.selected ?? null)
   const [corrects, setCorrects] = useState<number>(() => initData?.corrects ?? 0)
@@ -71,7 +78,6 @@ export function QCMSession() {
   const [newBadges, setNewBadges] = useState<string[]>([])
   const { checkBadges } = useBadgeCheck()
 
-  // Persist quiz progress so back-navigation restores the exact question
   useEffect(() => {
     if (termine) {
       sessionStorage.removeItem(SESSION_KEY)
@@ -85,7 +91,7 @@ export function QCMSession() {
 
   function handleRecommencer() {
     sessionStorage.removeItem(SESSION_KEY)
-    setQuestions(genererQCM(termes, 10))
+    setQuestions(genererQuestionsMixtes(termes, numUnite))
     setIndex(0)
     setSelected(null)
     setCorrects(0)
@@ -287,11 +293,13 @@ export function QCMSession() {
           >
             <div className="bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] p-5">
               <div className="flex items-center justify-between mb-2">
-                <p className="text-xs text-[var(--color-gris-texte)] uppercase tracking-wide">Définition</p>
-                <SpeakButton text={question.definition} size={14} />
+                <p className="text-xs text-[var(--color-gris-texte)] uppercase tracking-wide">
+                  {question.type === 'cours' ? fr.quiz.questionDeCours : 'Définition'}
+                </p>
+                {question.type === 'qcm' && <SpeakButton text={question.definition} size={14} />}
               </div>
               <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-base leading-snug">
-                {question.definition}
+                {question.type === 'cours' ? question.question : question.definition}
               </p>
             </div>
 
@@ -317,14 +325,12 @@ export function QCMSession() {
               })}
             </div>
 
-            {/* Combo flash sur bonne réponse */}
             {isAnswered && isCorrect && comboMsg && (
               <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} className="text-center py-1">
                 <span className="text-sm font-bold text-[var(--color-candy-jaune)]">{comboMsg}</span>
               </motion.div>
             )}
 
-            {/* Mini-leçon post-erreur */}
             {isAnswered && !isCorrect && showMiniLecon && (
               <motion.div
                 initial={{ opacity: 0, y: 8 }}
@@ -341,15 +347,31 @@ export function QCMSession() {
                     {fr.miniLecon.titre}
                   </p>
                   <p className="text-xs font-semibold text-[var(--color-encre)] mb-1">{question.bonneReponse}</p>
-                  <p className="text-xs text-[var(--color-encre)] leading-snug line-clamp-3">
-                    {getTerme(question.termeId)?.definition}
-                  </p>
-                  <Link
-                    to={`/terme/${question.termeId}`}
-                    className="text-xs text-[var(--color-plumy-blue)] underline mt-1 inline-block"
-                  >
-                    {fr.miniLecon.voirFiche}
-                  </Link>
+                  {question.type === 'cours' ? (
+                    <>
+                      <p className="text-xs text-[var(--color-encre)] leading-snug mb-1">
+                        {fr.miniLecon.reponseEnCarnets}
+                      </p>
+                      <Link
+                        to={`/cours/${question.coursId}?section=${question.sectionIndex}`}
+                        className="text-xs text-[var(--color-plumy-blue)] underline mt-1 inline-block"
+                      >
+                        {fr.miniLecon.voirSectionCours}
+                      </Link>
+                    </>
+                  ) : (
+                    <>
+                      <p className="text-xs text-[var(--color-encre)] leading-snug line-clamp-3">
+                        {getTerme(question.termeId)?.definition}
+                      </p>
+                      <Link
+                        to={`/terme/${question.termeId}`}
+                        className="text-xs text-[var(--color-plumy-blue)] underline mt-1 inline-block"
+                      >
+                        {fr.miniLecon.voirFiche}
+                      </Link>
+                    </>
+                  )}
                 </div>
               </motion.div>
             )}

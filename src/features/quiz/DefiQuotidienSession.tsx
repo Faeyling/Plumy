@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { tousLesTermes } from '@/content/termes/index'
+import { toutesLesQuestionsCours } from '@/content/questionsCours/index'
+import type { QuestionQCMCours } from '@/content/schema'
 import { statsRepository } from '@/data/repositories/statsRepository'
 import { useBadgeCheck } from '@/hooks/useBadgeCheck'
 import { getBadge } from '@/data/badges'
@@ -26,30 +28,41 @@ function comboLabel(combo: number): string | null {
   return null
 }
 
-function getDefiDuJour() {
-  const rng = seededRandom(todaySeed())
-  const termesCandidats = tousLesTermes.filter(t => t.definition.length > 20)
-  const shuffled = [...termesCandidats].sort(() => rng() - 0.5)
-  return shuffled.slice(0, NB_QUESTIONS)
-}
-
-interface QuestionDefi {
-  terme: typeof tousLesTermes[0]
-  choix: string[]
-  bonneReponse: string
-}
+type QuestionDefi =
+  | { kind: 'terme'; terme: (typeof tousLesTermes)[0]; choix: string[]; bonneReponse: string }
+  | { kind: 'cours'; q: QuestionQCMCours; choix: string[]; bonneReponse: string }
 
 function construireQuestions(): QuestionDefi[] {
-  const termes = getDefiDuJour()
-  return termes.map(terme => {
+  const rng = seededRandom(todaySeed())
+
+  // Select terms (seeded)
+  const termesCandidats = tousLesTermes.filter(t => t.definition.length > 20)
+  const shuffledTermes = [...termesCandidats].sort(() => rng() - 0.5)
+  const termesChoisis = shuffledTermes.slice(0, NB_QUESTIONS - 1) // 4 terms + 1 course
+
+  // Select one course question (seeded)
+  const shuffledCours = [...toutesLesQuestionsCours].sort(() => rng() - 0.5)
+
+  // Build term questions (distractors use Math.random for variety)
+  const termeQuestions: QuestionDefi[] = termesChoisis.map(terme => {
     const distracteurs = tousLesTermes
       .filter(t => t.id !== terme.id && t.nom !== terme.nom)
       .sort(() => Math.random() - 0.5)
       .slice(0, 3)
       .map(t => t.nom)
     const choix = [terme.nom, ...distracteurs].sort(() => Math.random() - 0.5)
-    return { terme, choix, bonneReponse: terme.nom }
+    return { kind: 'terme', terme, choix, bonneReponse: terme.nom }
   })
+
+  // Insert course question at a seeded position
+  const result: QuestionDefi[] = [...termeQuestions]
+  if (shuffledCours.length > 0) {
+    const cq = shuffledCours[0]
+    const pos = Math.floor(rng() * (result.length + 1))
+    result.splice(pos, 0, { kind: 'cours', q: cq, choix: cq.choix, bonneReponse: cq.bonneReponse })
+  }
+
+  return result
 }
 
 export function DefiQuotidienSession() {
@@ -214,10 +227,10 @@ export function DefiQuotidienSession() {
           >
             <div className="bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] p-5">
               <p className="text-xs text-[var(--color-gris-texte)] uppercase tracking-wide mb-2">
-                Quel terme correspond à cette définition ?
+                {question.kind === 'cours' ? fr.quiz.questionDeCours : 'Quel terme correspond à cette définition ?'}
               </p>
               <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-base leading-snug">
-                {question.terme.definition}
+                {question.kind === 'cours' ? question.q.question : question.terme.definition}
               </p>
             </div>
 
@@ -265,15 +278,31 @@ export function DefiQuotidienSession() {
                     {fr.miniLecon.titre}
                   </p>
                   <p className="text-xs font-semibold text-[var(--color-encre)] mb-1">{question.bonneReponse}</p>
-                  <p className="text-xs text-[var(--color-encre)] leading-snug line-clamp-3">
-                    {question.terme.definition}
-                  </p>
-                  <Link
-                    to={`/terme/${question.terme.id}`}
-                    className="text-xs text-[var(--color-plumy-blue)] underline mt-1 inline-block"
-                  >
-                    {fr.miniLecon.voirFiche}
-                  </Link>
+                  {question.kind === 'terme' ? (
+                    <>
+                      <p className="text-xs text-[var(--color-encre)] leading-snug line-clamp-3">
+                        {question.terme.definition}
+                      </p>
+                      <Link
+                        to={`/terme/${question.terme.id}`}
+                        className="text-xs text-[var(--color-plumy-blue)] underline mt-1 inline-block"
+                      >
+                        {fr.miniLecon.voirFiche}
+                      </Link>
+                    </>
+                  ) : (
+                    <>
+                      <p className="text-xs text-[var(--color-encre)] leading-snug mb-1">
+                        {fr.miniLecon.reponseEnCarnets}
+                      </p>
+                      <Link
+                        to={`/cours/${question.q.coursId}?section=${question.q.sectionIndex}`}
+                        className="text-xs text-[var(--color-plumy-blue)] underline mt-1 inline-block"
+                      >
+                        {fr.miniLecon.voirSectionCours}
+                      </Link>
+                    </>
+                  )}
                 </div>
               </motion.div>
             )}

@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { useParams, Link, useNavigate } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { useParams, Link, useNavigate, useSearchParams } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { getCours } from '@/content/cours/index'
 import { getTerme } from '@/content/termes/index'
@@ -11,10 +11,39 @@ import { resetStreakSansCours } from '@/lib/streakSansCours'
 
 export function CoursPage() {
   const { id } = useParams<{ id: string }>()
+  const [searchParams] = useSearchParams()
   const navigate = useNavigate()
   const cours = getCours(id ?? '')
-  const [sectionOuverte, setSectionOuverte] = useState<number>(() => getCoursProgression(id ?? '').derniereSection)
-  const [sectionsVues, setSectionsVues] = useState<number[]>(() => getCoursProgression(id ?? '').sectionsVues)
+
+  const [sectionOuverte, setSectionOuverte] = useState<number>(() => {
+    const sp = searchParams.get('section')
+    if (sp !== null) {
+      const n = Number(sp)
+      if (!isNaN(n)) return n
+    }
+    return getCoursProgression(id ?? '').derniereSection
+  })
+  const [sectionsVues, setSectionsVues] = useState<number[]>(() => {
+    const prog = getCoursProgression(id ?? '')
+    const sp = searchParams.get('section')
+    if (sp !== null) {
+      const n = Number(sp)
+      if (!isNaN(n) && !prog.sectionsVues.includes(n)) return [...prog.sectionsVues, n]
+    }
+    return prog.sectionsVues
+  })
+
+  useEffect(() => {
+    const sp = searchParams.get('section')
+    if (sp !== null) {
+      const n = Number(sp)
+      if (!isNaN(n) && cours && n >= 0 && n < cours.sections.length) {
+        marquerSectionVue(id ?? '', n)
+        resetStreakSansCours()
+      }
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
   const { isPlaying, isSupported, speak, stop } = useSpeech()
   const [playingSection, setPlayingSection] = useState<number | null>(null)
 

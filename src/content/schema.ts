@@ -81,6 +81,15 @@ export interface Cours {
   videosExternes?: { titre: string; url: string; source: string }[];
 }
 
+export interface QuestionQCMCours {
+  type: 'cours';
+  coursId: string;
+  sectionIndex: number;
+  question: string;
+  bonneReponse: string;
+  choix: string[];
+}
+
 export interface Unite {
   numero: number;
   titre: string;
