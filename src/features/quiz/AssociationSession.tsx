@@ -5,6 +5,7 @@ import { getTermesParUnite } from '@/content/termes/index'
 import { unites } from '@/content/unites'
 import { genererAssociation, shuffle, type PaireAssociation } from './quiz.utils'
 import { uniteALuRecemment } from '@/lib/coursProgression'
+import { incrementerStreakSansCours } from '@/lib/streakSansCours'
 import { statsRepository } from '@/data/repositories/statsRepository'
 import { useBadgeCheck } from '@/hooks/useBadgeCheck'
 import { getBadge } from '@/data/badges'
@@ -77,6 +78,7 @@ export function AssociationSession() {
       total: paires.length,
     })
     const badges = await checkBadges()
+    incrementerStreakSansCours()
     setPtsGagnes(pts)
     setNewBadges(badges)
     setTermine(true)

@@ -7,6 +7,7 @@ import { PluмyMascot } from '@/components/mascotte/PluмyMascot'
 import { useSpeech } from '@/hooks/useSpeech'
 import { stripMarkdown } from '@/lib/stripMarkdown'
 import { getCoursProgression, marquerSectionVue } from '@/lib/coursProgression'
+import { resetStreakSansCours } from '@/lib/streakSansCours'
 
 export function CoursPage() {
   const { id } = useParams<{ id: string }>()
@@ -22,6 +23,7 @@ export function CoursPage() {
     setSectionOuverte(isOpening ? i : -1)
     if (isOpening) {
       marquerSectionVue(id ?? '', i)
+      resetStreakSansCours()
       setSectionsVues((prev) => (prev.includes(i) ? prev : [...prev, i]))
     }
   }

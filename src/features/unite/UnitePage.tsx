@@ -12,6 +12,7 @@ import { iconeIllustration } from '@/content/illustrations'
 import { fr } from '@/i18n/fr'
 import { SpeakButton } from '@/components/ui/SpeakButton'
 import { getCoursProgression, aLuRecemment } from '@/lib/coursProgression'
+import { getStreakSansCours } from '@/lib/streakSansCours'
 
 export function UnitePage() {
   const { numero } = useParams<{ numero: string }>()
@@ -23,6 +24,7 @@ export function UnitePage() {
 
   const [progressions, setProgressions] = useState<Record<string, ProgressionTerme>>({})
   const [termesPerso, setTermesPerso] = useState<TermePersonnel[]>([])
+  const [suggestionFermee, setSuggestionFermee] = useState(false)
 
   useEffect(() => {
     progressionRepository.list().then((list) => {
@@ -55,6 +57,10 @@ export function UnitePage() {
   const totalSectionsUnite = cours.reduce((s, c) => s + c.sections.length, 0)
   const sectionsLuesUnite = cours.reduce((s, c) => s + getCoursProgression(c.id).sectionsVues.length, 0)
   const pourcentageTheorie = totalSectionsUnite > 0 ? Math.round((sectionsLuesUnite / totalSectionsUnite) * 100) : 0
+
+  const streakSansCours = getStreakSansCours()
+  const coursSuggere = cours.find((c) => getCoursProgression(c.id).sectionsVues.length < c.sections.length)
+  const afficherSuggestion = !suggestionFermee && streakSansCours >= 3 && coursSuggere !== undefined
 
   return (
     <div className="flex flex-col min-h-svh">
@@ -154,6 +160,43 @@ export function UnitePage() {
             <h2 className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-base mb-3">
               Les carnets de Plumy
             </h2>
+
+            {/* Suggestion Plumy après 3 quiz sans lecture */}
+            {afficherSuggestion && coursSuggere && (
+              <motion.div
+                initial={{ opacity: 0, y: -6 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="mb-3 bg-[var(--color-candy-lavande-light)] border border-[var(--color-candy-lavande)] rounded-[var(--radius-card)] p-3 flex gap-3"
+              >
+                <img
+                  src="/mascotte/plumy-encouragement.png"
+                  alt="Plumy suggère"
+                  className="w-12 h-12 object-contain flex-shrink-0"
+                />
+                <div className="flex-1 min-w-0">
+                  <p className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-sm mb-1">
+                    Tu joues super bien !
+                  </p>
+                  <p className="text-xs text-[var(--color-encre)] leading-snug mb-2">
+                    Mais j'ai des pages dans mes carnets qui vont tout éclairer — 3 minutes et tu comprends <em>pourquoi</em> ça marche, pas juste <em>quoi</em> répondre.
+                  </p>
+                  <Link
+                    to={`/cours/${coursSuggere.id}`}
+                    className="text-xs font-semibold text-[var(--color-plumy-blue)] underline"
+                  >
+                    Ouvrir « {coursSuggere.titre} »
+                  </Link>
+                </div>
+                <button
+                  onClick={() => setSuggestionFermee(true)}
+                  className="flex-shrink-0 text-[var(--color-gris-texte)] text-lg leading-none"
+                  aria-label="Fermer la suggestion"
+                >
+                  ×
+                </button>
+              </motion.div>
+            )}
+
             <div className="space-y-2">
               {cours.map((c) => {
                 const prog = getCoursProgression(c.id)

@@ -8,6 +8,7 @@ import { useBadgeCheck } from '@/hooks/useBadgeCheck'
 import { getBadge } from '@/data/badges'
 import { fr } from '@/i18n/fr'
 import { db } from '@/data/db'
+import { incrementerStreakSansCours } from '@/lib/streakSansCours'
 import { shuffle } from './quiz.utils'
 
 const NB_QUESTIONS = 8
@@ -144,6 +145,7 @@ export function EnSceneSession() {
       total,
     })
     const badges = await checkBadges()
+    incrementerStreakSansCours()
     setPtsGagnes(ptsTotal)
     setNewBadges(badges)
     setTermine(true)
