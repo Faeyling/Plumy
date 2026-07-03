@@ -8,6 +8,10 @@ import { questionsUnite5 } from './unite5'
 import { questionsUnite6 } from './unite6'
 import { questionsUnite7 } from './unite7'
 import { questionsUnite8 } from './unite8'
+import { questionsUnite9 } from './unite9'
+import { questionsUnite10 } from './unite10'
+import { questionsUnite11 } from './unite11'
+import { questionsUnite12 } from './unite12'
 import { unites } from '@/content/unites'
 
 export const toutesLesQuestionsCours: QuestionQCMCours[] = [
@@ -20,6 +24,10 @@ export const toutesLesQuestionsCours: QuestionQCMCours[] = [
   ...questionsUnite6,
   ...questionsUnite7,
   ...questionsUnite8,
+  ...questionsUnite9,
+  ...questionsUnite10,
+  ...questionsUnite11,
+  ...questionsUnite12,
 ]
 
 export function getQuestionsCoursPourUnite(uniteNumero: number): QuestionQCMCours[] {
