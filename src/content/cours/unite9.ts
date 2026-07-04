@@ -16,29 +16,41 @@ export const coursUnite9: Cours[] = [
         titre: "Histoire du cabaret — du Moulin Rouge à aujourd'hui",
         contenuMarkdown: `Je vais te dire quelque chose sur le cabaret : c'est l'une des formes de danse dont l'histoire me fascine le plus, parce qu'elle est indissociable de l'histoire sociale et politique de son époque. Chaque grande période a eu son cabaret, et chaque cabaret a dit quelque chose que les autres formes d'art ne pouvaient pas dire. Installe-toi — on remonte le temps.
 
-**Les origines :**
-- **1881** : Le Chat Noir (Montmartre) — premier cabaret au sens moderne. Artistes, intellectuels, bohème parisienne.
-- **1889** : Ouverture du Moulin Rouge — La Goulue, Valentin-le-Désossé, et l'invention du cancan spectaculaire.
+**Les origines — Montmartre, années 1880 :**
+- **1881** : Le **Chat Noir** (Montmartre) — premier cabaret au sens moderne. Fondé par **Rodolphe Salis**, qui invente le rôle du **Maître de Cérémonie** : hôte qui accueille, harangue et moque le public avec un humour irrésistible. Ce rôle existe encore dans tous les cabarets du monde. Sous un plafond taché de fumée, riches parisiens, étudiants, peintres, écrivains et prostituées se côtoient — les frontières sociales s'effacent. En 1882, Salis lance la revue **"Le Chat Noir"** (682 numéros jusqu'en 1895). En 1885, le cabaret déménage rue Victor-Massé, avec une scène de **théâtre d'ombres** animée par le peintre Henri Rivière.
 - **1886** : Les Folies Bergère — revue à grand spectacle, tableaux et girls.
+- **1889** : Ouverture du Moulin Rouge — La Goulue, Valentin-le-Désossé, et l'invention du cancan spectaculaire.
 
 **L'âge d'or de la revue (1900–1940) — des noms que tu dois connaître :**
 - **Mistinguett** : la meneuse par excellence
-- **Joséphine Baker** : révolutionnaire artistique et politique — une figure absolument majeure
-- **Les Ziegfeld Follies** (New York) : la revue américaine
-- **Le Kabarett allemand** : Ernst von Wolzogen, et sa version politique et satirique
+- **Joséphine Baker** : révolutionnaire artistique et politique — figure absolument majeure ; elle chante et danse à l'Abbaye de Thélème, et ouvre en **1927** son propre cabaret **"Chez Joséphine"** rue Fontaine
+- **Les Ziegfeld Follies** (New York) : la revue américaine standardisée
+- **Le Kabarett européen** : de Berlin à Vienne en passant par Munich, le cabaret se répand en Europe avec une dimension politique et avant-gardiste distincte
+
+**Le Kabarett européen — l'autre histoire du cabaret :**
+Ce qui me fascine en creusant cette période, c'est à quel point le cabaret européen hors de France devient un laboratoire artistique radical. **Max Reinhardt** fonde "Schall und Rauch" (*Bruit et Fumée*) à Berlin en **1901**. À Munich, **Les Onze Bourreaux** (1911) accueillent Frank Wedekind et voient le jeune Brecht comme spectateur assidu. À Vienne, **La Chauve-Souris** (1907) est décorée par Klimt et Kokoschka. À Saint-Pétersbourg, une autre Chauve-Souris est fondée en 1908 par des acteurs du Théâtre de Stanislavski.
+
+Et puis il y a Zurich, 1916 : le **Cabaret Voltaire** — éphémère et fondateur — où dadaïstes, futuristes et expressionnistes investissent la scène pendant que la Première Guerre mondiale fait rage. À Berlin, les revues de **Friedrich Hollaender** et **Marcellus Schiffer** transforment le Kabarett en arme politique — c'est cette tradition que Fosse mettra en scène dans *Cabaret* (1972).
+
+**Le Paris d'après-guerre et les grandes maisons :**
+- **1946** : Le **Lido** ouvre sur les Champs-Élysées (frères Joseph et Louis Clérico) — plus grand, plus showbiz, avec la troupe des **Bluebell Girls**
+- **Paradis Latin** : ses origines remontent à **1802** (le Théâtre Latin de Napoléon Bonaparte !) — il sort le cabaret des caves enfumées vers les grandes scènes
+- **1951** : Le **Crazy Horse** ouvre (Alain Bernard), inspiré des showgirls et artistes burlesques vus aux États-Unis — "plus sexy, inspiré de Las Vegas"
+- Entre 1945 et 1974, plus de **200 cabarets** ouvrent ou rouvrent à Paris : rive gauche, caves, cabarets-théâtres (Juliette Gréco, Charles Trénet, les Frères Jacques à la Rose Rouge)
+
+**Un pan de l'histoire qu'on oublie trop souvent — les cabarets travestis :**
+Les cabarets ont été des espaces de liberté pour les minorités bien avant les mouvements de libération. Dès les années 1920, **La Petite Chaumière** (Montmartre) accueille des danseurs travestis dans une atmosphère androgyne. Dans les années 1930, **Le Monocle** (tenu par Lulu de Montparnasse, "la garçonne", immortalisé par Brassaï) et **Suzy Solidor** (La Vie Parisienne, 1940 ; Chez Suzy Solidor, 1947). Après-guerre : **Madame Arthur** (1946), **Chez Michou** (début 1960s), **La Grande Eugène** (1970). Ce n'est pas une anecdote de l'histoire du cabaret — c'en est une composante essentielle, et je tenais à ce que tu le saches.
 
 **Le cabaret au cinéma — trois films que j'adore :**
-- *Cabaret* (1972, Bob Fosse) — le Kabarett berlinois des années 1930 comme métaphore politique
+- *Cabaret* (1972, Bob Fosse) — le Kabarett berlinois des années 1930 comme métaphore politique : un chef-d'œuvre absolu
 - *Moulin Rouge!* (2001, Baz Luhrmann) — hommage pop-art à l'ère du cancan
 - *Chicago* (2002, Rob Marshall) — la revue américaine
-
-**Le cabaret contemporain :**
-Les grandes maisons parisiennes continuent : Moulin Rouge, Lido, Folies Bergère. Mais le "néo-cabaret" existe aussi — plus intimiste, plus diversifié, plus expérimental. L'esprit du cabaret s'adapte à chaque époque. Ce qui m'émerveille, c'est que ça continue.
 
 **Ce qui unit toutes ces formes à travers le temps :**
 - Le spectacle : l'art d'éblouir
 - Le public au centre : la scène existe pour lui
-- Le costume, le décor, la lumière : tout est dans l'image`,
+- Le costume, le décor, la lumière : tout est dans l'image
+- Et toujours, depuis Le Chat Noir : la liberté de dire ce qu'on ne peut pas dire ailleurs`,
       },
       {
         titre: "Le french cancan — technique et histoire",
