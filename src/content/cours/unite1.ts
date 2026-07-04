@@ -438,61 +438,6 @@ Tout ça, c'est génétique. Tu ne peux pas y changer grand-chose structurelleme
   },
 
   {
-    id: 'musique-appliquee',
-    titre: "Formation musicale pour le danseur",
-    resume: "Tout danseur est aussi musicien de son corps. Comprendre le tempo, la mesure, le phrasé, l'anacrouse et la syncope, c'est apprendre à dialoguer avec la musique plutôt que la suivre aveuglément — et crois-moi, ça change tout.",
-    disciplines: ['commun'],
-    termesAbordes: ['tempo', 'mesure-musicale', 'phrase-musicale', 'anacrouse', 'syncope'],
-    sections: [
-      {
-        titre: "Le tempo et la mesure : le squelette rythmique",
-        contenuMarkdown: `Je vais te dire un secret : j'ai longtemps cru que la musique, c'était juste là pour "donner l'ambiance" pendant qu'on dansait. Quelle erreur. Comprendre la structure musicale, c'est débloquer un niveau entier de la danse.
-
-**Le tempo** est la vitesse de la pulsation, mesurée en BPM (battements par minute). L'intérioriser — au point de le sentir dans ton corps même quand la musique s'arrête — est une compétence fondamentale.
-
-**La mesure** organise les temps en groupes réguliers. Les mesures les plus courantes en danse :
-
-| Mesure | Caractère | Utilisations |
-|--------|-----------|-------------|
-| 4/4 | Universel, robuste | Jazz, pop, contemporain, hip-hop |
-| 3/4 | Ternaire, tournoyant | Valse, cabaret, classique romantique |
-| 2/4 | Binaire, énergique | French cancan, marche |
-| 6/8 | Oscillant, balancé | Certains jazz, musiques folkloriques |
-
-**Compter en danse :** on compte généralement en 8 (deux mesures de 4/4), en 6 (pour la valse), ou en combinaison. Si ton prof dit "5, 6, 7, 8", il te donne une anacrouse sur le dernier temps — patience, on y vient.`,
-      },
-      {
-        titre: "Le phrasé musical : la grammaire du temps",
-        contenuMarkdown: `Comme une phrase a un sujet, un verbe et une conclusion, la musique a des **phrases musicales** — généralement 4 ou 8 mesures — qui se terminent par une cadence (comme une ponctuation).
-
-En tant que danseur, tu dois apprendre à entendre :
-- **Le début de phrase** (downbeat) : souvent un point d'arrivée ou de départ fort
-- **La montée** : développement de l'énergie, tension qui s'accumule
-- **La cadence finale** : résolution, respiration, atterrissage
-
-**Phrasé dansé vs phrasé musical :** un chorégraphe peut aligner ses phrases avec la musique (*avec-la-musique*) ou créer délibérément des décalages (*contre la musique*). Ce jeu de tension/résolution est l'un des outils les plus puissants de la composition.
-
-> *Note de Plumy : J'adore les chorégraphes qui arrivent une mesure avant ou après la musique. Ça crée une surprise que même moi je n'arrive pas toujours à anticiper — et c'est cette imprévisibilité maîtrisée qui me coupe le souffle à chaque fois.*`,
-      },
-      {
-        titre: "Anacrouse et syncope : le jeu sur le temps",
-        contenuMarkdown: `Voilà deux notions qui vont transformer ta façon d'entrer dans la musique.
-
-**L'anacrouse** est la note (ou le mouvement) qui précède le temps fort pour l'annoncer. C'est la préparation, le souffle avant la parole. En danse, c'est la différence entre un geste *projeté* dans la musique et un geste *arraché* à elle. Quand tu entends "5, 6, 7, 8" — ces quatre comptes sont une anacrouse. Ton corps se prépare, s'élance avant de démarrer.
-
-**La syncope** déplace l'accent vers les temps faibles. C'est l'ADN du jazz et du funk — cette tension légèrement décalée qui crée le groove, ce balancement irrésistible.
-
-**Repères pratiques :**
-- Une valse qui passe sur le "3-et" avant le "1" utilise l'anacrouse
-- Un jazz step qui tombe sur le "2 et 4" plutôt que "1 et 3" est syncopé
-- Un danseur qui anticipe systématiquement le tempo "met en avance"
-
-Expérimenter avec ces déplacements temporels, c'est apprendre à *parler* en musique, pas seulement à l'*écouter*. Et franchement, une fois qu'on entend la syncope dans les muscles — on ne peut plus s'en passer.`,
-      },
-    ],
-  },
-
-  {
     id: 'espace-scenique',
     titre: "Repères d'espace scénique",
     resume: "Côté cour, côté jardin, face, lointain, diagonale — le vocabulaire de l'espace scénique est le langage commun de tous les danseurs. Apprends-le une fois, et tu le gardes toute ta vie.",
