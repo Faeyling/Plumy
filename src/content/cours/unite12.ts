@@ -25,13 +25,31 @@ Le tango mêle plusieurs influences que j'adore retracer :
 - Le **candombe** (héritage africain)
 - La **mazurka** et la **polka** européennes
 
-Ce n'est pas une musique de salon. C'est une musique de faubourg, dansée corps contre corps dans des espaces exigus.
+Ce n'est pas une musique de salon. C'est une musique de faubourg, dansée corps contre corps dans des espaces exigus. À ses débuts, les hommes dansaient souvent entre eux pour perfectionner leurs pas avant d'inviter une partenaire — ce qui a forgé l'intensité et la précision des mouvements caractéristiques du tango.
 
 **Le tango et la réprobation sociale :**
 Dès ses origines, le tango choque les classes bourgeoises argentines — à cause de l'abrazo fermé (les corps qui se touchent), jugé indécent. Paradoxalement, c'est d'abord à Paris (années 1910) que le tango est adopté par les classes aisées... avant de revenir triomphant en Argentine avec une légitimité nouvelle.
 
+**Le tango à Paris — le rôle inattendu des Apaches :**
+Ce que j'ai trouvé dans mes carnets sur cette période m'a vraiment surpris. Ce sont les **Apaches** — les gangsters parisiens du début du XXe siècle — qui ont joué un rôle crucial dans l'introduction du tango à Paris. Fascinés par cette danse exotique, ils l'ont adoptée et adaptée à leur propre style, créant une variante parisienne qui a rapidement gagné les quartiers populaires. Les **bals musette** ont commencé à intégrer le tango à leur répertoire, le diffusant auprès d'un public large — bien au-delà des cercles d'artistes et d'intellectuels.
+
+**La « tangomania » (1912–1914) :**
+La fièvre du tango ne s'est pas limitée à Paris. À **Londres**, les **tea dances** deviennent le terrain de prédilection pour la pratique du tango, attirant une clientèle chic. À **Berlin**, les cabarets adoptent cette danse exotique, l'intègrent à leurs spectacles et contribuent à sa popularisation. La tangomania atteint son apogée entre 1912 et 1914 — transformant le paysage culturel de toutes ces métropoles européennes.
+
+Le cinéma muet argentin joue aussi un rôle déterminant : des films comme **"Tango Argentino" (1913)** font découvrir la gestuelle et l'émotion du tango bien au-delà des frontières de l'Argentine.
+
+**Carlos Gardel — l'ambassadeur :**
+**Carlos Gardel** (surnommé "El Zorzal Criollo", le merle créole) est sans conteste la figure la plus emblématique du tango argentin. Sa voix unique et son charisme conquièrent l'Europe dès les années 1920 — ses tournées sont de véritables triomphes. Il incarne cette mélancolie élégante que résume la célèbre formule — souvent attribuée à Enrique Santos Discépolo mais portée par Gardel dans toute l'Europe :
+
+> *"Le tango, c'est une pensée triste qui se danse."*
+
+Il meurt en 1935. Mais son influence reste mondiale.
+
 **L'âge d'or du tango (années 1930–1950) :**
-L'ère des grandes orchestres — D'Arienzo, Di Sarli, Troilo, Pugliese. Le tango se professionnalise, s'enrichit musicalement, envahit les salles de bal. Carlos Gardel (chanteur de tango légendaire, mort en 1935) le rend mondial.
+L'ère des grandes orchestres — D'Arienzo, Di Sarli, Troilo, Pugliese. Le tango se professionnalise, s'enrichit musicalement, envahit les salles de bal. **Juan D'Arienzo** ("El Rey del Compás") dynamisise le tango avec son style énergique et dansant. **Aníbal Troilo** et son bandonéon magistral apportent une profondeur émotionnelle inégalée. Leurs enregistrements, largement diffusés sur le continent, maintiennent l'intérêt pour le tango même pendant les périodes où les voyages internationaux sont limités.
+
+**Astor Piazzolla — le Nuevo Tango :**
+**Astor Piazzolla** réinvente le tango au XXe siècle avec son **Nuevo Tango** — fusion audacieuse de tango traditionnel, de jazz et de musique classique. D'abord controversé en Argentine, il trouve un accueil enthousiaste en Europe. Ses compositions comme **"Libertango"** ou **"Adiós Nonino"** deviennent des classiques interprétés dans les salles de concert les plus prestigieuses — élevant le statut du tango au rang d'art majeur. Dans mes carnets, Piazzolla a sa propre page, avec trois étoiles dans la marge.
 
 **Le déclin et la renaissance :**
 Les années 1960–1970 voient le déclin du tango sous les dictatures militaires (les rassemblements de plus de trois personnes sont interdits — il ne pouvait pas y avoir de milongas). Dans les années 1980, le spectacle *Tango Argentino* à Broadway et Paris relance l'intérêt mondial.
@@ -193,12 +211,13 @@ C'est un système d'une élégance remarquable — la dignité de tout le monde 
 
 **Les grands orchestres à connaître :**
 
-| Orchestre | Personnalité |
+| Orchestre / Artiste | Personnalité |
 |-----------|-------------|
-| D'Arienzo | 'El rey del compás' — rythme fort, sec, marqué |
+| D'Arienzo | "El rey del compás" — rythme fort, sec, marqué |
 | Di Sarli | Élégance, legato, lyrisme mélodique |
-| Troilo | Émotion, profondeur, sentiment |
+| Troilo | Émotion, profondeur, bandonéon magistral |
 | Pugliese | Complexité, dramatisme, syncopations |
+| Piazzolla | Nuevo Tango — fusion jazz + classique, "Libertango" |
 
 **L'improvisation comme philosophie**
 

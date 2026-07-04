@@ -59,15 +59,19 @@ Le pole dance utilise la friction peau-acier. Pas de prises comme en escalade �
 
 **Les prises principales — j'ai un mémo dans mes carnets pour chacune :**
 
-**Cup grip :** Pouce en bas, quatre doigts en haut. Prise de base universelle.
+**Cup grip (normal grip) :** Pouce en bas, quatre doigts en haut. Prise de base universelle — la main extérieure est au-dessus, les pouces orientés vers le haut. C'est la traction verticale, l'un des grips les plus utilisés.
 
 **Baseball grip :** La main enserre complètement la barre. Plus fort mais plus fatigant.
 
-**Twisted grip :** Prise renversée (avancé). Controversée pour les débutants — risque épaule. Ne t'y aventure pas sans accompagnement.
+**Split grip :** La main intérieure est haute (bras tendu), la main extérieure basse repousse la barre latéralement. Utilisé dans des figures complexes comme l'Ayesha.
 
-**Bracket grip :** Deux mains en opposition. Stabilité maximale.
+**Hip grip (bracket grip) :** Corps face à la barre, une main haute bras tendu, l'autre main basse doigts vers le bas. Stabilité maximale pour les figures latérales.
 
-**Forearm grip :** L'avant-bras appuie sur la barre. Utilisé dans des figures spécifiques (flag).
+**Back balance :** Corps dos à la barre, la barre appuyée sur un côté de la nuque, les deux mains placées l'une au-dessus de l'autre, tous les doigts du même côté.
+
+**Twisted grip :** Prise renversée — la main haute est twistée, prise utilisée notamment pour l'Ayesha twisted grip. Controversée pour les débutants — risque épaule réel. Ne t'y aventure pas sans accompagnement sérieux.
+
+**Elbow grip / Forearm grip :** L'avant-bras appuie sur la barre, le creux du coude comme point d'ancrage. Utilisé dans des figures spécifiques (flag, figure head).
 
 **Les zones de grip du corps — ça m'a étonné quand j'ai découvert ça :**
 - Mains (principal)
@@ -108,32 +112,51 @@ Corps qui tourne autour de la barre avec un point de contact.
 
 **Fireman spin :** Corps vertical, jambes parallèles à la barre. Premier spin appris — et déjà magnifique quand il est propre.
 
-**Chair spin :** Corps en angle, jambes en forme de "chaise". Très courant en débutant.
+**Chair spin (Chaise) :** Corps en angle, jambes en forme de "chaise". Très courant en débutant.
 
 **Attitude spin :** Une jambe tendue devant, une pliée derrière. Silhouette élégante.
+
+**Autres spins à connaître par niveau — j'aime bien ce classement que j'ai noté dans mes carnets :**
+
+*Débutant :* Step around, Fireman spin, Front hook, Back hook, Chaise, Mermaid spin, Hollywood, Pencil spin
+
+*Intermédiaire :* Concorde, Chaise longue, Carrousel, Passé spin, Side spin, Tuck spin, Cradle spin, Juliette spin, Knee spin, Angel spin, Ballerina, Astronaute
+
+*Avancé :* Stag, Back stag, Reverse grab, Boomerang, Écureuil volant, Hélicoptère, Baby snake, Marche aérienne, Peter pan, Elbow chair
 
 **Principe physique :**
 Jambes proches du corps = rotation plus rapide. Jambes éloignées = rotation plus lente. C'est de la physique pure — et c'est beau à utiliser.
 
 ---
 
-## Les figures statiques
+## Les figures statiques (tricks)
 
 Corps tenu immobile dans une position précise.
 
 **Progression de difficulté :**
-- Pole hold (débutant)
-- Flag (intermédiaire)
-- Crucifix (intermédiaire)
-- Brass monkey (avancé)
-- Ayesha (très avancé — force pure, plusieurs années de conditioning)
+- Pole hold, Seat (débutant)
+- Flag, Crucifix, Scissor seat, Thigh hold, Stargazer (intermédiaire)
+- Blade, Flatline scorpio, Gemini, Scorpio, Butterfly, Genie (intermédiaire-avancé)
+- Brass monkey, Funky Monkey, Skyline, Marley, Bird, Gazelle (avancé)
+- Princess, Cupid, Superman, Dove, Allegra, Serpentine, Wrist seat, Yogini, Teddy (avancé)
+- Ayesha, Extended butterfly, Inverted D (très avancé — force pure, plusieurs années de conditioning)
 - Iron X (expert)
 
 **Ce qu'exige une bonne figure statique :**
 - La forme est claire et précise
 - Le corps est engagé (pas d'affaissement)
 - Le regard est vivant
-- La transition vers la figure est chorégraphiée`,
+- La transition vers la figure est chorégraphiée
+
+---
+
+## Les équilibres
+
+Figures de force tenues hors du sol :
+
+*Progression :* Caterpillar au sol → Avant-bras → Handstand (pencil bras) → Butterfly → Split aérien (Russian split) → Salto
+
+> Le nom des figures peut varier selon les écoles — c'est une réalité que j'ai vécue en passant d'un studio à l'autre. L'essentiel, c'est de comprendre la mécanique de la figure, pas son étiquette.`,
       },
       {
         titre: "Inversions — progresser en sécurité",
