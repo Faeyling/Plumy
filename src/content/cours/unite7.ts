@@ -45,6 +45,53 @@ Contrairement à la danse classique (une technique) ou au contemporain (un champ
 > Cette fluidité fait du jazz une danse vivante — elle change avec son époque. Moi, je trouve ça magnifique. Et toi, tu trouveras ta place à l'intérieur.`,
       },
       {
+        titre: "De l'Afrique à Broadway — les racines historiques du jazz",
+        contenuMarkdown: `Ce qui m'a le plus frappé quand j'ai vraiment creusé l'histoire du jazz, c'est à quel point elle est profonde — bien plus profonde que les années 1920 qu'on évoque souvent. Dans mes carnets, cette page est l'une des plus annotées, parce que comprendre d'où vient le jazz, c'est comprendre pourquoi il *résonne* comme il résonne.
+
+**Les origines — 300 ans de brassage culturel**
+
+Le terme "jazz" n'apparaît dans la presse qu'en 1917 pour désigner la musique syncopée issue de la culture afro-américaine. Mais les danses qui lui ont donné naissance viennent de bien plus loin : de trois siècles de brassage entre les cultures africaines, européennes et amérindiennes aux Amériques.
+
+Ces danses afro-américaines vernaculaires — transmises de génération en génération, souvent hors de tout cadre institutionnel — portent en elles les traces d'une histoire violente et d'une résistance créatrice. Il faut le nommer clairement : **le jazz naît dans un contexte de ségrégation raciale**, et son énergie vitale vient en partie de là.
+
+---
+
+**Les Jazz Roots (1920–1940) — l'âge d'or des revues de Harlem**
+
+C'est la période que j'appelle "l'explosion de l'expression" dans mes carnets. Les danses sociales afro-américaines envahissent les scènes et les salons :
+- **Cake-walk** — d'abord une satire codée des manières des maîtres dans les plantations, puis devenu danse de salon
+- **Shimmy** — vibration des épaules, sensualité et rythme
+- **Charleston** — jambes en dedans, déhanchement, virtuosité ; symbole des années folles
+- **Black bottom** — plus ancré dans le sol que le charleston, bascules du bassin très prononcées
+
+Les **Revues noires de Harlem** (Cotton Club, Apollo Theater) propulsent des artistes extraordinaires :
+- **Bill "Bojangles" Robinson** — maître du tap jazz, pédagogie et élégance hors du commun
+- **Les Berry Brothers** — acrobatie et jazz, une précision technique stupéfiante
+- Ces danses sont alors largement improvisées, solos, et portent la signature unique de chaque interprète
+
+---
+
+**L'ère des comédies musicales (années 1940) — le jazz entre dans la narration**
+
+Quand le jazz rencontre Broadway et Hollywood, quelque chose de nouveau se passe : l'improvisation laisse la place à la composition chorégraphique, et le jazz acquiert une **fonction narrative** — il ne divertit plus seulement, il *raconte*. Trois figures centrales :
+
+- **Jack Cole** — le "père du theatrical jazz" : il codifie les isolations, intègre les techniques afro-caribéennes, pose les bases d'un vocabulaire transmissible
+- **Jerome Robbins** — *West Side Story*, *On the Town* : précision dramatique sans jamais sacrifier le jazz
+- **Bob Fosse** — ses racines sont dans cette période ; il prolongera l'héritage Cole tout en le transformant profondément
+
+---
+
+**Le jazz moderne et sa codification (années 1950–1960)**
+
+Après la guerre, le jazz cherche à se systématiser — à devenir une discipline enseignable et transmissible :
+
+- **Matt Mattox** ouvre ses studios à New York et pose les bases du modern jazz : énergie, rythmes syncopés, pauses, silences, dynamique, expression individuelle
+- **Alvin Ailey** fonde son American Dance Theater en 1958, réunissant jazz afro-américain et techniques modernes Graham/Horton — *Revelations* (1960) reste une œuvre fondatrice
+- La **Technique Luigi** ("Never Stop Moving") représente la première codification spécifique au modern jazz : souplesse, continuité, jamais d'arrêt du flux
+
+> Ce que je retiens de tout ça : le jazz a toujours su se réinventer tout en gardant le fil de ses origines. Et cette capacité de transformation, tu vas la retrouver dans ta propre pratique — c'est l'âme du jazz.`,
+      },
+      {
         titre: 'Le groove et la musicalité jazz',
         contenuMarkdown: `Le groove est ce qui sépare un danseur de jazz d'un danseur *qui fait du jazz*. Ce n'est pas une technique — c'est une relation à la musique. Et je peux te dire que la première fois que tu le ressens vraiment dans ton corps, tu ne l'oublies plus. J'ai noté ce moment dans mon carnet à l'époque, tellement c'était frappant.
 
@@ -362,17 +409,24 @@ Bob Fosse cachait sa propre gêne physique (il était profondément auto-conscie
 ## Lyrical jazz
 
 **Ce que c'est :**
-Du jazz qui danse les *paroles* autant que le rythme.
+Une fusion en trois couches : *technique jazz + expressivité du contemporain + lignes du ballet*. Le résultat, ce sont des mouvements fluides et continus qui portent les paroles d'une chanson dans le corps — j'adore cette idée de "danser les mots".
 
-**Caractéristiques :**
-- Connexion directe avec les paroles ou la mélodie
-- Fluidité et transitions gracieuses
-- Expression émotionnelle authentique
-- Lignes longues, corps gracieux
+**Ce qui le définit :**
+- Mouvements continus et fluides — les transitions elles-mêmes sont chorégraphiées
+- Connexion directe avec les paroles ou la mélodie (et pas seulement le rythme)
+- Expression émotionnelle authentique — on *ressent* avant d'exécuter
+- Lignes longues héritées du ballet : pirouettes, développés, grands sauts
+
+**La technique lyrical en pratique :**
+- **Pirouettes** avec finition lyrique — sortie fluide, jamais plaquée
+- **Sauts** (grand jeté lyrical) : l'air devient un moment suspendu d'expression
+- **Développés** intégrés dans le flux — la jambe monte dans le mouvement continu
+- Port de bras inspiré du ballet mais laissé libre par l'émotion
 
 **Ce qui l'ancre dans le jazz (et non le contemporain) :**
 - Base technique jazz (ball change, jazz square, groove)
 - Souvent sur musique pop/R&B avec structure rythmique jazz
+- L'individualité de l'expression est centrale — ce n'est pas un style "standardisé"
 
 ---
 
@@ -390,6 +444,19 @@ Du jazz qui a fusionné avec les danses urbaines — hip-hop, dancehall, waackin
 
 **Ce qui le distingue du hip-hop pur :**
 Il garde une structure de formation et une chorégraphie apprise — le hip-hop est plus libre et cypher.
+
+---
+
+## Modern'jazz
+
+**Ce que c'est :**
+Un style né en France qui mélange l'énergie du jazz avec les recherches du mouvement contemporain. L'apostrophe dans "modern'jazz" marque la différence avec l'american modern jazz des années 1950 — et j'aime ce signe typographique qui dit : on s'approprie, on transforme, on crée quelque chose de nouveau.
+
+**Caractéristiques :**
+- Grande **mobilité du haut du corps** — thorax, épaules, nuque sont au centre de l'expression
+- **Dissociation haut/bas** : le bas du corps ancre, le haut s'exprime souvent de façon indépendante
+- Hybride revendiqué : la rigueur et la continuité du contemporain + l'énergie et le rythme du jazz
+- Registre large, entre technicité jazz et exploration du mouvement
 
 ---
 
@@ -418,6 +485,7 @@ L'afro-jazz nomme et célèbre ce qui a longtemps été effacé ou approprié �
 | Broadway | Comédie musicale | Projetée | Spectacle, narration |
 | Fosse | Cabaret, jazz cool | Intérieure | Style, sophistication |
 | Modern jazz | Contemporaine | Fluide | Technique, continuité |
+| Modern'jazz | Jazz + contemporain | Hybride | Dissociation, mobilité |
 | Lyrical | Pop/R&B | Émotionnelle | Expression, fluidité |
 | Street jazz | Hip-hop/trap | Brute | Attitude, isolation |
 | Afro-jazz | Percussions | Ancrée | Polycentrisme, sol |`,
