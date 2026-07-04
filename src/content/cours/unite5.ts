@@ -53,6 +53,8 @@ La révolution de Cunningham : le mouvement n'a pas besoin de raconter une histo
 **Pina Bausch (1940–2009) — le Tanztheater**
 Pina Bausch a créé quelque chose qu'on n'avait jamais vu : le **Tanztheater** (danse-théâtre). Elle mélange mouvement, parole, répétition, humour, violence et tendresse. Ses pièces parlent des relations humaines — entre hommes et femmes, entre individu et société. *Café Müller*, *Kontakthof*, *Nelken* (un plateau couvert de 8 000 œillets) — si tu n'en as vu aucune, commence maintenant. Elle posait à ses danseurs des questions comme "Qu'est-ce qui vous fait peur ?" et construisait la chorégraphie à partir de leurs réponses. Ça m'a toujours bouleversé.
 
+> *"La danse-théâtre ne cherche pas à montrer la beauté du mouvement, mais à révéler la vérité des émotions humaines, aussi laides ou inconfortables soient-elles."* — Pina Bausch
+
 **Trisha Brown (1936–2017) — le site-specific et la physique du mouvement**
 Trisha Brown a dansé sur des toits d'immeubles new-yorkais, sur des murs, dans des ruelles — longtemps avant que le terme "site-specific" n'existe. Elle s'intéressait à la physique pure du mouvement : accumulation, répétition, lois mécaniques du corps. *Roof Piece* (1971) : des danseurs transmettent des mouvements de toit en toit sur plusieurs blocs de Manhattan. J'aurais tellement voulu être là.
 

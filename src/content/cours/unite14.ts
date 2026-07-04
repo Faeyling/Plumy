@@ -82,7 +82,9 @@ La recherche en neurosciences a mis en lumière deux mécanismes qui éclairent 
 
 **La cognition incarnée (embodied cognition) :** Nos processus cognitifs sont profondément influencés par les expériences corporelles — et la relation est bidirectionnelle. En improvisation, cela signifie que le mouvement que tu produis influence en retour ton état émotionnel. Le corps n'attend pas l'émotion pour bouger — il la crée aussi en bougeant. L'état de disponibilité n'est pas seulement une préparation mentale : c'est une préparation physique qui produit un état mental.
 
-**Les neurones miroirs :** Ces neurones s'activent non seulement quand tu effectues une action, mais aussi quand tu observes cette même action chez quelqu'un d'autre. En danse, cela signifie que le public peut ressentir les émotions que le danseur exprime — pas métaphoriquement, mais neurologiquement. Et en improvisation collective, cela signifie que ton partenaire ressent ton mouvement de l'intérieur. L'écoute est littéralement inscrite dans le corps.`,
+**Les neurones miroirs :** Ces neurones s'activent non seulement quand tu effectues une action, mais aussi quand tu observes cette même action chez quelqu'un d'autre. En danse, cela signifie que le public peut ressentir les émotions que le danseur exprime — pas métaphoriquement, mais neurologiquement. Et en improvisation collective, cela signifie que ton partenaire ressent ton mouvement de l'intérieur. L'écoute est littéralement inscrite dans le corps.
+
+**Ce que l'IRMf révèle pendant l'improvisation :** Une étude utilisant l'imagerie par résonance magnétique fonctionnelle a mis en évidence une augmentation de l'activité dans le cortex préfrontal et le corps calleux pendant l'improvisation — deux zones impliquées respectivement dans la pensée créative et la coordination entre les hémisphères cérébraux. En d'autres termes : improviser *réorganise* le cerveau en temps réel. Je ne sais pas toi, mais ça me donne encore plus envie de pratiquer.`,
       },
       {
         titre: "Scores, contraintes et tâches — les outils de l'improvisation",
