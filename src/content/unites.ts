@@ -4,12 +4,11 @@ export const unites: Unite[] = [
   {
     numero: 1,
     titre: 'Comprendre le corps qui danse',
-    description: "Les fondamentaux communs à toutes les disciplines : mouvement selon Laban, anatomie appliquée, formation musicale et repères d'espace scénique.",
-    coursIds: ['laban-introduction', 'laban-effort-poids', 'laban-effort-espace', 'laban-effort-temps', 'laban-effort-flux', 'laban-synthese', 'anatomie-danseur', 'musique-appliquee', 'espace-scenique'],
+    description: "Les fondamentaux communs à toutes les disciplines : mouvement selon Laban (six cours dédiés), anatomie appliquée et repères d'espace scénique.",
+    coursIds: ['laban-introduction', 'laban-effort-poids', 'laban-effort-espace', 'laban-effort-temps', 'laban-effort-flux', 'laban-synthese', 'anatomie-danseur', 'espace-scenique'],
     termeIds: [
       'effort-laban', 'kinesphere', 'niveaux-espace', 'qualites-de-mouvement',
       'alignement', 'turn-out', 'centre-de-gravite', 'tonicite', 'proprioception',
-      'tempo', 'mesure-musicale', 'phrase-musicale', 'anacrouse', 'syncope',
       'cote-cour', 'cote-jardin', 'face-lointain', 'diagonale', 'en-croix',
     ],
     quizDisponibles: ['qcm', 'association', 'texte-a-trous', 'flashcards'],
@@ -34,6 +33,20 @@ export const unites: Unite[] = [
   },
   {
     numero: 3,
+    titre: 'Formation musicale pour le danseur',
+    description: "Tempo, mesure, phrasé, marquages italiens, dynamiques, articulation et formes musicales — tout ce qu'un danseur doit entendre pour dialoguer avec la musique plutôt que la suivre.",
+    coursIds: ['musique-appliquee', 'marquages-tempo', 'dynamiques-musicales', 'formes-musicales'],
+    termeIds: [
+      'tempo', 'mesure-musicale', 'phrase-musicale', 'anacrouse', 'syncope',
+      'marquage-tempo', 'rubato',
+      'dynamiques-musicales', 'crescendo', 'legato', 'staccato',
+      'forme-musicale', 'motif-musical', 'cadence-harmonique',
+    ],
+    quizDisponibles: ['qcm', 'association', 'texte-a-trous', 'flashcards'],
+    iconeSvgId: 'musique',
+  },
+  {
+    numero: 4,
     titre: 'Classique',
     description: 'Positions des pieds et des bras, barre et milieu, adage, allegro, tours, batterie et liaisons — le vocabulaire académique de la danse classique.',
     coursIds: ['intro-classique'],
@@ -50,7 +63,7 @@ export const unites: Unite[] = [
     iconeSvgId: 'classique',
   },
   {
-    numero: 4,
+    numero: 5,
     titre: 'Contemporain',
     description: 'Travail au sol, release, poids et abandon, spirales, contact improvisation — le vocabulaire de la danse contemporaine et ses concepts clés.',
     coursIds: ['intro-contemporain'],
@@ -68,7 +81,7 @@ export const unites: Unite[] = [
     iconeSvgId: 'contemporain',
   },
   {
-    numero: 5,
+    numero: 6,
     titre: 'Moderne',
     description: 'Héritage générique de la danse moderne : contraction et release, fall and recovery, isolations, travail du buste et du bassin.',
     coursIds: ['intro-moderne'],
@@ -83,7 +96,7 @@ export const unites: Unite[] = [
     iconeSvgId: 'moderne',
   },
   {
-    numero: 6,
+    numero: 7,
     titre: 'Jazz et sous-styles',
     description: 'Tronc commun jazz et sept sous-styles différenciés : jazz classique, Broadway, Fosse, modern jazz, lyrical, street jazz et afro-jazz.',
     coursIds: ['intro-jazz', 'sous-styles-jazz'],
@@ -98,7 +111,7 @@ export const unites: Unite[] = [
     iconeSvgId: 'jazz',
   },
   {
-    numero: 7,
+    numero: 8,
     titre: 'Heels',
     description: 'Danse sur talons hauts : posture, walks, mouvements signature, floorwork, présence et filiations culturelles.',
     coursIds: ['intro-heels'],
@@ -110,7 +123,7 @@ export const unites: Unite[] = [
     iconeSvgId: 'heels',
   },
   {
-    numero: 8,
+    numero: 9,
     titre: 'Cabaret',
     description: 'Esthétiques scéniques, french cancan, revue et music-hall, port du costume et des accessoires, lignes de chorus.',
     coursIds: ['intro-cabaret'],
@@ -123,7 +136,7 @@ export const unites: Unite[] = [
     iconeSvgId: 'cabaret',
   },
   {
-    numero: 9,
+    numero: 10,
     titre: 'Effeuillage burlesque',
     description: 'Art du dévoilement progressif, jeu de scène, personnage et rapport au public : le vocabulaire du burlesque artistique.',
     coursIds: ['intro-burlesque'],
@@ -135,7 +148,7 @@ export const unites: Unite[] = [
     iconeSvgId: 'burlesque',
   },
   {
-    numero: 10,
+    numero: 11,
     titre: 'Pole dance',
     description: "Pole sport, pole art, exotic et pole theatre : prises, montées, figures, inversions, floorwork — et l'histoire de celles qui ont créé cette discipline.",
     coursIds: ['intro-pole-dance', 'histoire-culturelle-pole'],
@@ -148,7 +161,7 @@ export const unites: Unite[] = [
     iconeSvgId: 'pole-dance',
   },
   {
-    numero: 11,
+    numero: 12,
     titre: 'Tango argentin',
     description: "L'abrazo, l'eje, la caminada et les figures improvisées — le vocabulaire du tango argentin social, né dans les faubourgs de Buenos Aires et inscrit au patrimoine de l'UNESCO.",
     coursIds: ['intro-tango-argentin'],
@@ -169,7 +182,7 @@ export const unites: Unite[] = [
     iconeSvgId: 'tango-argentin',
   },
   {
-    numero: 12,
+    numero: 13,
     titre: 'Danser sans se blesser',
     description: 'Prévention fondée sur la science : épidémiologie, facteurs de risque, renforcement neuromusculaire et spécificités par discipline.',
     coursIds: ['prevention-generale', 'prevention-par-discipline'],
@@ -184,7 +197,7 @@ export const unites: Unite[] = [
     iconeSvgId: 'sante',
   },
   {
-    numero: 13,
+    numero: 14,
     titre: "L'art de l'improvisation et la composition",
     description: 'Improvisation comme outil de création, composition chorégraphique et une fiche culturelle sur les systèmes de notation de la danse.',
     coursIds: ['improvisation', 'composition', 'notation-danse'],

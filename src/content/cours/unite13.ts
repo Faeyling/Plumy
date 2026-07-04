@@ -2,571 +2,487 @@ import type { Cours } from '../schema'
 
 export const coursUnite13: Cours[] = [
   {
-    id: 'improvisation',
-    titre: "L'improvisation en danse — art, méthode et pratique",
-    resume: "L'improvisation n'est pas l'absence de préparation — c'est une compétence qui s'entraîne. C'est un des chapitres de mes carnets que je relis le plus souvent, parce que chaque fois j'y découvre quelque chose que j'avais oublié. Comprendre l'état de disponibilité, les scores et contraintes, l'écoute du partenaire, et comment l'improvisation alimente la composition — je t'emmène dans tout ça.",
-    disciplines: ['contemporain', 'moderne', 'jazz', 'classique', 'burlesque', 'pole-dance'],
+    id: 'prevention-generale',
+    titre: 'Danser sans se blesser — principes fondamentaux',
+    resume: "J'ai consacré une unité entière à la prévention parce que ce sujet me tient vraiment à cœur — et parce que 80 % des blessures en danse sont évitables. Ce chiffre me met en colère à chaque fois que je le relis, parce qu'il signifie qu'on peut faire beaucoup mieux. Dans mes carnets de santé, j'ai compilé l'épidémiologie, les signaux d'alarme, l'échauffement, le renforcement neuromusculaire et tout ce qu'il faut savoir pour prendre soin de ton corps comme de l'outil précieux qu'il est.",
+    disciplines: ['classique', 'contemporain', 'moderne', 'jazz', 'heels', 'cabaret', 'pole-dance', 'burlesque'],
     termesAbordes: [
-      'improvisation-structuree', 'contrainte-creative', 'donnee-de-depart',
-      'etat-de-disponibilite', 'ecoute-partenaire', 'taches-choreographiques',
+      'blessure-surmenage', 'blessure-traumatique', 'facteurs-risque',
+      'echauffement-danse', 'retour-au-calme', 'renforcement-neuromusculaire',
+      'gainage-fonctionnel', 'souplesse-mobilite', 'repos-recuperation',
+      'hygiene-vie', 'sante-mentale-danse',
     ],
     sections: [
       {
-        titre: "Qu'est-ce que l'improvisation en danse ?",
-        contenuMarkdown: `L'improvisation en danse est souvent mal comprise — ni libertinage total, ni performance sans préparation. C'est une discipline à part entière, et j'ai envie de réhabiliter ce mot : discipline. L'improvisation, ça s'apprend. Je l'ai appris à mes dépens, et j'aurais aimé qu'on me le dise plus tôt.
+        titre: "Épidémiologie — ce que la science dit des blessures en danse",
+        contenuMarkdown: `La danse est une activité physique intense. Ses blessures sont réelles — et largement prévisibles. C'est la raison pour laquelle j'ai consacré une unité entière à ça dans mes carnets. Avant de commencer, j'ai besoin que tu lises ceci attentivement.
 
-**Définition :**
-L'improvisation est l'art de composer du mouvement en temps réel, en réponse à une situation donnée — espace, musique, partenaire, contrainte, état intérieur.
+**⚠️ Avertissement important :** Les informations de cette unité sont éducatives. Elles ne remplacent pas un avis médical individualisé. En cas de blessure, consulte un professionnel de santé. Je ne suis pas médecin — je suis un paon passionné qui a beaucoup lu, et il y a une différence.
 
-**Ce que l'improvisation N'EST PAS :**
-- Danser n'importe quoi
-- Faire des exercices libres sans intention
-- Une technique inférieure à la chorégraphie fixée
+**Les chiffres clés :**
+- 80–90% des danseurs professionnels se blessent au moins une fois par an
+- 80% des blessures sont des **blessures de surmenage** (accumulation de micro-traumatismes) — pas des accidents
+- Les zones les plus touchées : chevilles et pieds (40%), genoux (20%), dos et hanches (15%)
+- Le risque est plus élevé en période de production intensive (avant spectacle)
 
-**Ce que l'improvisation EST :**
-- Une compétence spécifique qui s'entraîne
-- Un dialogue entre le corps et le moment présent
-- Un outil de création chorégraphique (beaucoup de pièces naissent d'impros)
-- Une pratique en soi (concerts d'improvisation, jam sessions de danse)
+**Pourquoi les danseurs se blessent — les vraies raisons :**
+1. **Volume élevé** : Cours quotidiens + répétitions + spectacles = charge cumulée
+2. **Culture du "push through"** : La pression à ignorer la douleur est culturellement normalisée — et c'est un problème
+3. **Spécialisation précoce** : Entraînement intensif dès l'enfance sans diversification
+4. **Récupération insuffisante** : Pas assez de repos entre les sessions
+5. **Technique insuffisante** : Mauvaise exécution sur des milliers de répétitions
 
-**L'histoire de l'improvisation en danse :**
+**Distinguer douleur normale et signal d'alarme — une compétence essentielle :**
 
-**Judson Dance Theater (New York, 1960s) :**
-Collectif révolutionnaire qui a radicalement redéfini ce que "danse" pouvait signifier — tâches quotidiennes, gestes ordinaires, structures improvisées. Yvonne Rainer, Trisha Brown, Steve Paxton, Lucinda Childs. J'ai des notes sur chacun d'eux dans mes carnets.
+| Douleur normale | Signal d'alarme |
+|---|---|
+| Courbatures diffuses après effort | Douleur localisée (un point précis) |
+| Disparaît en 48–72h | Persiste plus de 72h |
+| Symétrique (les deux côtés) | Asymétrique (un seul côté) |
+| Diminue à l'échauffement | Augmente pendant l'activité |
+| Pas de gonflement | Gonflement, chaleur, ecchymose |
 
-**Contact Improvisation (Steve Paxton, 1972) :**
-Forme d'improvisation à deux basée sur le partage du poids et le dialogue tactile — devenu une pratique mondiale avec ses propres jams et communautés.
-
-**L'improvisation dans les autres disciplines :**
-Le jazz musical est fondamentalement improvisé — la danse jazz hérite de cette culture. La commedia dell'arte a influencé le burlesque. Le vogueing ballroom est à la fois codifié et improvisé.`,
+**La règle d'or que je te donne gratuitement :** Si la douleur a une localisation précise, persiste plus de 72h, ou modifie ta façon de danser — consulte un professionnel de santé spécialisé en danse. Ne fais pas le/la brave.`,
       },
       {
-        titre: "L'état de disponibilité — se préparer à l'imprévisible",
-        contenuMarkdown: `Avant d'improviser, il faut un état. Pas n'importe quel état — un état de disponibilité totale. Et ça, c'est quelque chose qu'on ne t'explique presque jamais clairement. Dans mes carnets, j'ai une double page là-dessus avec des dessins et tout.
+        titre: "Comprendre la douleur — ne pas la fuir, la décoder",
+        contenuMarkdown: `La douleur est un signal, pas un ennemi. Savoir la lire est une compétence essentielle — et c'est une compétence que personne n'enseigne assez. Dans mes carnets, j'y reviens constamment, parce que c'est souvent là que se joue tout.
 
-**Qu'est-ce que l'état de disponibilité ?**
+**Le continuum de la blessure de surmenage :**
 
-C'est un état corporel et mental qui n'est ni passif (j'attends) ni hyper-actif (j'anticipe tout). C'est le terrain fertile d'où peut surgir n'importe quoi.
+Les blessures de surmenage ne naissent pas du jour au lendemain. Elles passent par des stades — et à chaque stade, l'action appropriée change :
 
-**Les qualités de l'état de disponibilité :**
+- **Stade 1** : Douleur après l'activité, disparaît au repos → *Surveiller, réduire la charge*
+- **Stade 2** : Douleur pendant l'activité mais tu peux continuer → *Consulte maintenant*
+- **Stade 3** : Douleur qui modifie ta technique → *Arrêt nécessaire, consultation urgente*
+- **Stade 4** : Douleur au repos, activité impossible → *Trop tard — traitement long*
 
-**Tonus équilibré :**
-Ni trop contracté (empêche la fluidité), ni trop relâché (empêche la réactivité). Le tonus juste — comme un chat qui dort et peut bondir en un instant.
+La majorité des danseurs consultent au stade 3–4. Consulter au stade 2 réduit le temps de guérison de 60–80%. Je ne peux pas être plus clair : consulte tôt.
 
-**Attention diffuse :**
-Pas focalisée sur un point précis, mais capable de percevoir l'ensemble — les autres danseurs, l'espace, le son, les sensations internes.
+**Les professionnels de santé à connaître :**
+- **Médecin du sport** : Diagnostic, imagerie, suivi médical global
+- **Kinésithérapeute** : Rééducation, travail fonctionnel
+- **Ostéopathe** : Mobilité, restrictions articulaires
+- **Podologue** : Pied, appui, semelles orthopédiques
 
-**Suspension du jugement :**
-Le censeur intérieur ("c'est nul", "c'est banal", "qu'est-ce qu'ils vont penser ?") est le principal obstacle à l'improvisation authentique. Le suspendre — pas pour toujours, mais pendant le temps de l'impro.
+**Idéalement** : des professionnels qui connaissent la danse et ses exigences spécifiques. Ça change tout.
 
-**Présence au moment :**
-Ni dans le regret de ce qui vient de se passer, ni dans l'anticipation de ce qui va venir. Ici, maintenant.
+**La gestion de la douleur pendant la blessure :**
 
-**Exercices pour cultiver l'état de disponibilité — mes préférés :**
+RICE en phase aiguë :
+- **R**est — repos relatif (pas total pour les blessures de surmenage)
+- **I**ce — glace 15–20 min, 3x/jour les 48 premières heures
+- **C**ompression — contention pour limiter l'œdème
+- **E**levation — surélever le membre blessé
 
-**Le scan corporel :**
-Debout, immobile, parcours mentalement ton corps de bas en haut — pieds, chevilles, genoux, hanches, ventre, poitrine, épaules, bras, mains, cou, tête. Sens sans corriger.
-
-**La marche neutre :**
-Marche dans l'espace sans destination, sans intention de faire quelque chose. Observe ce qui se passe.
-
-**Le regard périphérique :**
-Fixe un point au centre du champ visuel tout en élargissant la conscience au maximum de la périphérie. Agrandis.
-
-**La respiration abdominale :**
-5 respirations lentes et profondes avant de commencer. Le système nerveux parasympathique s'active — la tension diminue.`,
+**Anti-douleurs et danse — un point qui me tient à cœur :** Les AINS (ibuprofène, etc.) masquent la douleur sans traiter la cause. Danser sous anti-douleurs = risque d'aggraver la blessure sans s'en rendre compte. Ne fais pas ça.`,
       },
       {
-        titre: "Scores, contraintes et tâches — les outils de l'improvisation",
-        contenuMarkdown: `L'improvisation sans structure est souvent moins intéressante que l'improvisation avec une bonne contrainte. Le paradoxe créatif : la limite libère. Je l'ai vécu des dizaines de fois — et ça ne cesse pas de me surprendre.
+        titre: "Échauffement et retour au calme — les deux rituels incontournables",
+        contenuMarkdown: `Un bon échauffement réduit le risque de blessure de 50%. Un bon retour au calme optimise la récupération. Si je pouvais t'obliger à faire une seule chose différemment dès demain, ce serait ça. Promis, ça vaut le coup.
 
 ---
 
-## Le score ouvert
+## L'échauffement — préparer le corps à l'effort
 
-Un score (partition ouverte) donne un cadre sans fixer le résultat. C'est une carte, pas un chemin.
+**Objectifs physiologiques :**
+- Augmenter la température musculaire (muscles plus élastiques)
+- Augmenter le débit sanguin vers les muscles
+- Préparer le système nerveux (coordination, temps de réaction)
+- Mobiliser les articulations dans leur amplitude
 
-**Exemple de score simple :**
-*"Traverse lentement l'espace. Chaque fois que quelqu'un entre dans ton champ de vision, immobilise-toi. Reprends quand il n'y a plus personne autour de toi."*
+**Structure d'un échauffement efficace (20–30 minutes) :**
 
-Le score peut être suivi différemment par chaque personne, dans chaque contexte — c'est sa force.
+**Phase 1 — Général cardiovasculaire (5 min) :**
+Marche rapide, trot léger, jumping jacks modérés — élever le rythme cardiaque progressivement.
 
-**Types de scores :**
-- **Score spatial** : comment occuper/traverser l'espace
-- **Score temporel** : quand s'arrêter, quand accélérer, quand sortir
-- **Score relationnel** : comment interagir avec les autres
-- **Score d'état** : dans quel état être (qualité de mouvement, intention)
-- **Score composite** : combinaison de plusieurs paramètres
+**Phase 2 — Mobilisation articulaire (8–10 min) :**
+Cercles des chevilles → genoux → hanches → colonne → épaules → cou. *Chaque articulation, dans les deux sens.*
+
+**Phase 3 — Activation musculaire (8–10 min) :**
+Exercices spécifiques à ta discipline — pliés progressifs en classique, relevés de fessiers pour le contemporain, isolations progressives en jazz.
+
+**Phase 4 — Préparation spécifique (5 min) :**
+Éléments techniques de la session à venir, à intensité réduite.
+
+**Ce que l'échauffement n'est PAS — et j'insiste :**
+- Des étirements statiques (contre-productif avant l'effort — réduit la force et augmente le risque de blessure)
+- 5 minutes en courant pour rattraper le cours
 
 ---
 
-## Les tâches chorégraphiques
+## Le retour au calme — récupérer intelligemment
 
-Une tâche est une consigne précise qui génère du mouvement. Différente du score (plus ouvert), la tâche a un objectif défini.
+**Objectifs :**
+- Ramener le rythme cardiaque progressivement
+- Évacuer l'acide lactique des muscles
+- Débuter la récupération tissulaire
 
-**Exemples que j'utilise souvent :**
-- *"Trouve 5 façons de traverser l'espace en contact avec le sol"*
-- *"Marche comme si le sol était fait de matières différentes"*
-- *"Répète un geste quotidien jusqu'à ce qu'il devienne abstrait"*
+**Structure (10–15 min) :**
+
+**Phase 1 — Décélération (3–5 min) :**
+Marche, mouvements lents, diminution progressive de l'intensité.
+
+**Phase 2 — Étirements statiques (8–10 min) :**
+*Ici* les étirements sont appropriés — tenir chaque position 30–60 secondes. Cible les zones travaillées.
+
+**Phase 3 — Respiration (2 min) :**
+Respiration profonde pour activer le système nerveux parasympathique (récupération).
+
+**Les zones prioritaires à étirer après une session de danse :**
+- Mollets et tibial postérieur (toujours sollicités)
+- Fléchisseurs de hanche (souvent raccourcis)
+- Ischio-jambiers
+- Psoas
+- Thoracique et épaules`,
+      },
+      {
+        titre: "Renforcement neuromusculaire — construire un corps résilient",
+        contenuMarkdown: `La flexibilité sans force est dangereuse. La force sans coordination est insuffisante. Le renforcement neuromusculaire combine les deux — et c'est le levier préventif le mieux étayé scientifiquement que je connaisse. Les études montrent une réduction de 30 à 50 % du risque de blessure dans le sport, avec des programmes spécifiques comme le 11+ Dance (adapté du FIFA 11+). Ça me donne envie de paonner.
+
+**Qu'est-ce que le renforcement neuromusculaire ?**
+
+Au-delà de la force musculaire pure, le renforcement neuromusculaire travaille la capacité du système nerveux à contrôler le mouvement — proprioception, équilibre, stabilité, réaction.
+
+**Pourquoi c'est crucial en danse :**
+Les danseurs ont souvent une hypermobilité développée — amplitude articulaire au-delà de la norme. L'hypermobilité sans force de stabilisation = risque élevé d'entorses, luxations, blessures. C'est un piège dans lequel je vois tomber beaucoup de danseurs.
+
+**Les piliers du renforcement en danse :**
+
+**1. Gainage fonctionnel :**
+Stabilité du centre (core) sans rigidité. Pas des abdos statiques — des chaînes musculaires activées pendant le mouvement.
+
+*Exercices fondamentaux :*
+- Planche (progressive : genoux → pieds → pieds avec déséquilibre)
+- Dead bug (coordination abdos + membres)
+- Bird dog (stabilité lombaire)
+
+**2. Travail excentrique :**
+Contrôler la descente, pas seulement la montée. Le frein est plus important que l'accélération pour protéger les tendons.
+
+*Exemple :* Relevé lent sur une jambe (3 temps haut, 5 temps descente)
+
+**3. Proprioception et équilibre :**
+Entraîner le système nerveux à corriger instinctivement. Sur une jambe, yeux fermés, surface instable (coussin proprioceptif).
+
+**4. Renforcement des pieds et chevilles :**
+Zone la plus blessée en danse — et la plus négligée dans l'entraînement. Ça me rend triste de le dire, mais c'est la réalité.
+
+*Exercices :*
+- Doming (voûte plantaire) — raccourcir le pied sans recroqueviller les orteils
+- Résistance à l'élastique (éversion, inversion, flexion plantaire excentrique)
+- Équilibre monopodal sur surface instable
+
+**5. Chaîne postérieure :**
+Fessiers, ischio-jambiers — souvent faibles chez les danseurs hypermobiles.
+*Exercices :* Hip thrust, deadlift à une jambe, Nordic hamstring`,
+      },
+      {
+        titre: "Hygiène de vie et santé mentale — le corps comme outil de travail",
+        contenuMarkdown: `La prévention des blessures ne s'arrête pas au studio. L'hygiène de vie conditionne la récupération et la résilience — et j'aurais voulu apprendre ça beaucoup plus tôt dans ma vie de danseur. Tu vas voir, ça change tout.
 
 ---
 
-## Les contraintes créatives
+## Sommeil — le médicament gratuit
 
-La contrainte la plus productive est celle qui empêche le confort habituel. Et c'est souvent inconfortable — c'est exprès. Tu vas voir, ça décoince des choses qu'on ne soupçonnait pas.
+**Pendant le sommeil, ton corps :**
+- Synthétise les protéines musculaires (réparation tissulaire)
+- Consolide les apprentissages moteurs (mémorisation des enchaînements)
+- Régule les hormones (cortisol, hormone de croissance)
 
-**Contraintes puissantes :**
-- Travailler sans musique (le silence révèle le rythme interne)
-- Travailler en silence total (les danseurs s'écoutent différemment)
-- Travailler au ralenti extrême
-- N'utiliser qu'une partie du corps
-- Ne jamais regarder dans la direction du mouvement
+**Recommandations pour les danseurs :**
+- 8–9h par nuit (plus que la moyenne — charge physique élevée)
+- Régularité horaire > durée totale
+- Pas d'écrans 1h avant le coucher (mélatonine)
 
-**L'exercice de la contrainte progressive :**
-Commence par une impro libre (5 minutes). Puis ajoute une contrainte. Puis une deuxième. Observe comment ton mouvement se transforme à chaque ajout.`,
-      },
-      {
-        titre: "L'écoute du partenaire — improviser à plusieurs",
-        contenuMarkdown: `Improviser seul est une chose. Improviser avec un ou plusieurs partenaires en est une autre — plus complexe, plus riche, plus vivante. Et c'est là que ça devient vraiment fascinant, honnêtement.
+---
 
-**Le principe fondamental :**
-L'improvisation collective n'est pas des solos simultanés. C'est une conversation — où chacun parle, chacun écoute, et quelque chose naît de l'entre-deux.
+## Nutrition — carburant et construction
 
-**Les niveaux de réponse — une progression que j'adore enseigner :**
+Les danseurs ont souvent une relation complexe à la nourriture — pression esthétique, culture de la restriction. La science est claire, et j'ai besoin que tu l'entendes :
 
-**1. Miroir :**
-Imiter précisément ce que fait l'autre — qualité, direction, timing. Point de départ pour entrer en relation, mais rarement une fin en soi.
+**Déficit énergétique relatif (RED-S) :**
+Manger insuffisamment par rapport à la dépense énergétique = blessures de stress (fractures, tendinopathies), troubles hormonaux, immunité réduite, apprentissage moteur dégradé.
 
-**2. Écho :**
-Reprendre ce que l'autre a proposé avec un léger décalage ou une légère variation. Le dialogue commence.
+**Principes fondamentaux :**
+- Glucides = carburant principal de la danse (ne pas les éliminer)
+- Protéines = construction musculaire (1,6–2g/kg/jour pour un danseur actif)
+- Hydratation : urines claires = bien hydraté
+- Fer : déficience courante chez les danseuses (fatigue, blessures)
 
-**3. Contraste :**
-Répondre par l'opposé — si l'autre est rapide, être lent ; si l'autre monte, descendre. La tension dramatique.
+---
 
-**4. Complétion :**
-Terminer une phrase que l'autre a commencée. Co-auteurs.
+## Santé mentale — le lien corps-esprit
 
-**5. Indépendance :**
-Continuer son propre fil tout en étant conscient de l'autre. La coexistence.
+Le stress psychologique augmente le risque de blessure physique — c'est prouvé scientifiquement. Mécanismes :
+- Tension musculaire excessive sous stress
+- Attention réduite (distraction = risque de traumatisme)
+- Récupération ralentie (cortisol élevé = inflammation)
 
-**6. Ignorance active :**
-Décider consciemment de ne pas répondre. Choix fort, pas manque d'attention.
+**Enjeux spécifiques au milieu de la danse :**
+- **Syndrome d'imposteur** : Normal dans une discipline aussi exposée
+- **Perfectionnisme** : Facteur de risque de surmenage
+- **Body image** : Pression esthétique intense dans certaines disciplines
+- **Identité fusionnée** : "Je suis danseur·se" (pas "je fais de la danse") = effacement de soi hors de la danse
 
-**Le piège principal — et il est commun :**
-Anticiper la réponse avant d'avoir vraiment reçu la proposition. Préparer sa réponse pendant que l'autre parle — on n'écoute pas, on attend son tour.
+**Ressources :**
+- Psychologue du sport spécialisé
+- Sophrologie, pleine conscience
+- Groupes de parole dans la communauté danse
 
-**L'improvisation de groupe :**
-À trois ou plus, les rôles peuvent circuler librement — leader, suiveur, témoin, perturbateur. Le groupe a une vie collective qui dépasse la somme de ses parties. Et quand ça fonctionne, c'est une des plus belles choses que je connaisse en danse.`,
-      },
-      {
-        titre: "De l'improvisation à la composition — le passage",
-        contenuMarkdown: `L'improvisation et la composition ne sont pas opposées. La composition est souvent de l'improvisation sédimentée — du mouvement trouvé, sélectionné, fixé. C'est une phrase qui m'a ouvert des portes quand je l'ai rencontrée pour la première fois.
+---
 
-**Le processus typique :**
-
-**1. Explorer :** Improvisation libre ou contrainte pour trouver du matériau.
-
-**2. Sélectionner :** Identifier les moments qui "fonctionnent" — qui ont de l'intérêt, de la qualité, du potentiel.
-
-**3. Fixer :** Mémoriser le matériau sélectionné — le répéter jusqu'à ce qu'il soit stable.
-
-**4. Organiser :** Trouver la structure qui fait sens.
-
-**5. Raffiner :** Affiner les qualités, les transitions, les intentions.
-
-**Comment identifier les "bons moments" dans une impro :**
-- Quand quelque chose de surprenant se produit
-- Quand le corps fait quelque chose que l'esprit n'avait pas planifié
-- Quand une qualité ou une image s'impose avec force
-- Quand le mouvement semble inévitable
-
-**L'improvisation dans la pièce finale :**
-Certains chorégraphes laissent des espaces d'improvisation dans des pièces par ailleurs fixées — zones de liberté dans un cadre précis. D'autres créent des pièces entièrement improvisées, où la structure est là mais le contenu change à chaque représentation.
-
-**La mémoire du corps :**
-Le corps se souvient de ce qu'il a fait. Revenir à une impro le lendemain — certains moments reviennent naturellement. Ce que le corps aime refaire, c'est souvent le bon matériau.
-
-> "L'improvisation n'est pas l'absence de préparation — c'est la préparation à l'absence de préparation." — Kirstie Simson`,
+> Ton corps n'est pas ton ennemi — c'est ton instrument. Comme tout instrument, il demande entretien, soin et respect pour produire son meilleur son. Prends-en soin, et il te le rendra. Je le crois profondément.`,
       },
     ],
   },
   {
-    id: 'composition',
-    titre: 'Composition chorégraphique — construire une pièce',
-    resume: "De la première idée à la pièce terminée : motif, phrase, procédés de composition, structure globale, intention artistique et regard extérieur. J'aurais tellement voulu avoir ce guide quand j'ai commencé à créer — alors je l'ai écrit pour toi. C'est un des carnets dont je suis le plus fier.",
-    disciplines: ['contemporain', 'moderne', 'jazz', 'classique', 'burlesque', 'cabaret'],
+    id: 'prevention-par-discipline',
+    titre: 'Prévention spécifique par discipline',
+    resume: "Chaque discipline a ses blessures signature, ses facteurs de risque propres et ses stratégies de prévention adaptées. J'ai compilé tout ça avec soin dans mes carnets de santé — classique, contemporain/moderne, jazz, heels, cabaret, pole dance et burlesque. Parce qu'une cheville de danseuse classique et une épaule de pôliste n'ont vraiment pas les mêmes besoins.",
+    disciplines: ['classique', 'contemporain', 'moderne', 'jazz', 'heels', 'cabaret', 'pole-dance', 'burlesque'],
     termesAbordes: [
-      'motif-choregraphique', 'phrase-choregraphique', 'procedes-composition',
-      'structure-choregraphique', 'intention-artistique', 'contrainte-creative',
+      'entorse-cheville', 'tendinopathie', 'syndrome-rotulien', 'equilibre-musculaire',
+      'renforcement-neuromusculaire', 'souplesse-mobilite', 'conditioning-pole',
     ],
     sections: [
       {
-        titre: "Le point de départ — trouver sa matière",
-        contenuMarkdown: `Toute pièce commence par quelque chose — une image, une question, une sensation, un problème formel. Le point de départ n'est pas le sujet de la pièce — c'est ce qui la met en mouvement. Et c'est souvent la partie la plus difficile. Je te dis ça parce que j'ai longtemps cru que ça devrait être facile — ça ne l'est pas, et c'est normal.
+        titre: "Classique — les risques du vocabulaire académique",
+        contenuMarkdown: `La danse classique a l'un des taux de blessures les plus élevés de toutes les disciplines. L'exigence technique extrême sur des structures anatomiques parfois poussées à leurs limites explique cette réalité — et je te dis ça sans vouloir te faire peur, juste pour que tu dances en connaissance de cause. C'est important.
 
-**Types de points de départ — j'en ai listé huit dans mes carnets :**
+**Blessures caractéristiques du classique :**
 
-**Kinesthésique :** Une qualité de mouvement, une sensation physique.
-*"Je veux explorer ce qu'est la résistance dans le corps."*
+**Pieds et chevilles (40% des blessures) :**
+- Entorse de cheville (réception de sauts)
+- Tendinopathie du tendon d'Achille (surcharge des relevés)
+- Syndrome du carrefour postérieur (os trigone — en pointe)
+- Hallux valgus (déformation de l'orteil liée aux chaussons de pointe)
+- Douleurs métatarsales (surcharge des têtes métatarsiennes)
 
-**Conceptuel :** Une idée, une question, une contradiction.
-*"Que se passe-t-il dans le corps quand on attend ?"*
+**Genoux (20%) :**
+- Syndrome fémoro-patellaire (rotation forcée du genou)
+- Tendinopathie rotulienne (sauts répétés)
 
-**Formel :** Un problème de composition.
-*"Je veux construire une pièce entièrement en canon."*
+**Dos et hanches (15%) :**
+- Spondylolyse (lombaire — arabesque, cambrés)
+- Syndrome d'accrochage de la hanche (snapping hip)
+- Pincement labral
 
-**Narratif :** Une histoire, un personnage, un événement.
-*"Je veux raconter le moment où quelqu'un réalise qu'il est seul."*
+**Le problème du turn-out compensé — je reviens là-dessus :**
+Le turn-out idéal vient de la rotation externe de hanche. Quand la mobilité articulaire est insuffisante, les danseurs compensent en tournant les genoux et les pieds vers l'extérieur — hyperpronation, torsion tibiale, syndrome rotulien.
 
-**Musical / Sonore :** Une musique, un son, un silence.
-*"Je veux chorégraphier le vide entre deux notes."*
+**Stratégies de prévention spécifiques :**
+1. **Évaluation du turn-out réel** vs compensé (test au sol)
+2. **Renforcement des rotateurs externes** : Coquilles, résistance élastique
+3. **Travail excentrique des mollets** avant de progresser en relevé et pointe
+4. **Progression rigoureuse** : pas de pointe avant technique de relevé maîtrisée
+5. **Proprioception chevilles** : indispensable avant les sauts
 
-**Textuel :** Un poème, une phrase, un discours.
-
-**Contextuel :** Un lieu, une situation, un public.
-*"Pièce pour un couloir. Le public voit de dos."*
-
-**La question de l'intention :**
-Avant de bouger, essaie de formuler : *"Je veux que le spectateur [ressente / comprende / découvre / éprouve] [quelque chose]."*
-
-Cette phrase peut changer pendant le processus — c'est normal. Mais l'avoir formulée donne une boussole.
-
-**Le carnet de création :**
-Tiens un journal du processus — croquis, mots, questions, impasses. La création n'est pas linéaire. Le carnet garde la trace de ce qui semblait sans intérêt au moment et révèle son importance plus tard. Je te donne ce conseil avec toute l'insistance dont je suis capable.`,
+**Pour les danseuses sur pointes :**
+Règle des 3 ans de classique minimum avant les pointes, technique de relevé solide, force des pieds et des chevilles validée par un professionnel.`,
       },
       {
-        titre: "Motif, phrase et développement",
-        contenuMarkdown: `La composition chorégraphique commence par le plus petit — le motif — et construit vers le plus grand — la structure de la pièce entière. Ce chemin du grain de sable à la cathédrale, c'est ce qui me fascine dans la composition. Et je crois que ça va te fasciner aussi.
+        titre: "Contemporain et moderne — les risques du sol et des chutes",
+        contenuMarkdown: `Le travail au sol, les chutes contrôlées et le contact improvisation sont des éléments fondamentaux du contemporain — avec des risques spécifiques que j'ai appris à connaître, et que j'ai notés avec soin dans mes carnets.
 
----
+**Blessures caractéristiques du contemporain/moderne :**
 
-## Le motif — la cellule germe
+**Poignets et mains :**
+- Entorses, fractures (chutes non maîtrisées)
+- Le poignet en contemporain travaille comme une articulation portante — inhabituel, et qui demande une préparation spécifique
 
-Un motif est une courte séquence reconnaissable qui peut être développée. Comme le motif de la Ve Symphonie de Beethoven (ta-ta-ta-TAAA) — quatre notes qui construisent toute une symphonie.
+**Genoux :**
+- Bursites (travail au sol sur des surfaces dures)
+- Ménisques (pivots au sol)
 
-**Comment trouver un motif :**
-- Improvise librement et identifie le moment qui revient naturellement
-- Réduis une phrase jusqu'à son noyau essentiel
-- Pars d'un geste quotidien et stylise-le
-- Matérialise physiquement une image ou une sensation
+**Colonne (contemporain) :**
+- Surmenage lombaire (oscillations, flexions extrêmes)
+- Cervicales (roulades, travail de tête)
 
-**Critères d'un bon motif :**
-- **Mémorable** : On le reconnaît quand il revient
-- **Riche** : Assez complexe pour être varié
-- **Concis** : Assez court pour être répété
-- **Expressif** : Porteur de qualité ou de sens
+**Épaules (contact improvisation) :**
+- Coiffe des rotateurs (portés, prises de poids imprévues)
+- Instabilité gléno-humérale (hypermobilité + charge)
 
----
+**Stratégies de prévention :**
 
-## La phrase — l'unité complète
+**Pour le floorwork :**
+- Apprentissage progressif des chutes (roulades avant maîtrise des chutes directes)
+- Surface adaptée (pas de parquet brut pour l'apprentissage)
+- Protection des genoux et coudes en phase d'apprentissage
 
-La phrase est une séquence avec un début, un développement et une fin. Elle contient souvent plusieurs motifs.
+**Pour le contact improvisation :**
+- Communication claire entre partenaires
+- Départ avec des portés simples avant les déséquilibres complexes
+- Renforcement des épaules et de la coiffe des rotateurs
 
-**Construire une phrase :**
-1. Pars du motif
-2. Donne-lui une impulsion initiale
-3. Laisse l'énergie se développer
-4. Trouve la résolution
+**Pour le travail spinal :**
+- Gainage fonctionnel actif pendant les mouvements extrêmes
+- Ne pas aller jusqu'à l'amplitude maximale de la colonne sans préparation
 
-**Types de fins de phrase :**
-- **Résolution** : L'énergie se pose — phrase fermée
-- **Suspension** : L'énergie reste en attente — phrase ouverte (appelle la suite)
-- **Interruption** : La phrase est coupée — effet de surprise
-
----
-
-## Les opérations sur le matériau
-
-Une fois le motif et la phrase établis, les procédés de composition permettent de les transformer :
-
-| Procédé | Description | Effet |
-|---------|-------------|-------|
-| Répétition | Même chose, identique | Insistance, rituel |
-| Variation | Même chose, différemment | Développement |
-| Rétrograde | À l'envers dans le temps | Étrangeté familière |
-| Inversion | Miroir dans l'espace | Symétrie |
-| Canon | Décalage temporel | Dialogue, fugue |
-| Fragmentation | Extraire une partie | Focus, distillation |
-| Augmentation | Plus lent | Poids, solennité |
-| Diminution | Plus rapide | Urgence, légèreté |`,
+**La notion de release technique — et un malentendu à corriger :**
+La release ne signifie pas "absence de tonus" — elle signifie tonus approprié, ni trop, ni pas assez. Un corps sans tonus est plus fragile qu'un corps engagé.`,
       },
       {
-        titre: "La structure — architecturer la pièce",
-        contenuMarkdown: `La structure est l'architecture globale de la pièce — comment les sections s'articulent, où est le climax, comment ça commence et comment ça finit. C'est ce qui fait qu'une pièce tient debout. Et les questions que je te pose ci-dessous, je me les pose moi-même à chaque fois que je crée.
+        titre: "Jazz, heels et cabaret — les risques de l'intensité et des talons",
+        contenuMarkdown: `Jazz, heels et cabaret partagent des caractéristiques communes : rythme intense, répétitions nombreuses, parfois accessoires ou chaussures contraignantes. Voilà ce que j'ai noté dans mes carnets pour chacun — avec quelques choses que je n'aurais pas voulu apprendre à mes dépens.
 
-**Les formes structurelles principales :**
+---
 
-**Forme binaire (AB) :**
-Deux sections contrastées. Simple, efficace, souvent utilisée pour les pièces courtes.
-*Ex : Section A — exploration lente et solitaire. Section B — explosion collective.*
+## Jazz — les risques de l'intensité et des sauts
 
-**Forme ternaire (ABA) :**
-Thème → contraste → retour du thème. La forme de la sonate, de l'aria, du blues.
-*Le retour n'est jamais identique — le matériau a été transformé par ce qui s'est passé entre les deux.*
+**Blessures caractéristiques :**
+- Chevilles (sauts, atterrissages)
+- Genoux (pirouettes, changements de direction)
+- Dos lombaire (kicks, cambrés)
+- Ischio-jambiers (grand battement, leaps)
 
-**Rondo (ABACAD...) :**
-Un thème central qui revient entrecoupé de digressions. Dynamique, varié, maintient l'attention.
+**Points d'attention :**
+- L'alignement en jazz est moins codifié qu'en classique — la liberté stylistique peut masquer de mauvaises compensations
+- Les leaps et sauts jazz atterrissent souvent en avant du corps (mauvais) plutôt que sous le corps (bon)
 
-**Through-composed :**
-Développement continu sans retour. La pièce transforme son matériau du début à la fin sans revenir en arrière. Convient aux œuvres narratives ou à transformation.
+**Prévention :**
+- Technique d'atterrissage : cheville → genou → hanche en séquence, genou aligné sur le pied
+- Renforcement des ischio-jambiers avant de travailler les kicks
 
-**Structure en arch (ABCBA) :**
-Symétrique autour d'un point central. La pièce se déploie puis revient en miroir.
+---
 
-**Questions structurelles fondamentales — celles que je pose toujours :**
+## Heels — les risques spécifiques aux talons hauts
 
-**Le début :** Comment entre-t-on dans la pièce ? In medias res (en pleine action) ? Installation progressive ? Rupture immédiate ?
+**La biomécanique des talons hauts :**
+- Augmentation de la pression sur l'avant-pied (métatarses)
+- Raccourcissement du mollet et du tendon d'Achille
+- Instabilité cheville augmentée (risque d'entorse)
+- Pression sur les genoux augmentée
 
-**Le climax :** Où est le moment de plus haute intensité ? (Souvent aux 2/3 de la pièce, pas à la fin.)
+**Blessures fréquentes :**
+- Entorse de cheville (instabilité + sol)
+- Douleurs métatarsales (névrome de Morton)
+- Tendinopathie d'Achille (mollet raccourci)
+- Fasciite plantaire
 
-**La fin :** Résolution, suspension ou effacement ? Comment veux-tu que le public reste ?
+**Prévention — des gestes simples qui changent tout :**
+- Jamais de session heels sans échauffement complet des pieds et des chevilles
+- Étirements du mollet systématiques après la session
+- Proprioception des chevilles — travailler pieds nus en parallèle
+- Progression vers les talons (commencer bas, monter progressivement)
+- Choisir des chaussures adaptées (semelles intérieures, maintien de la cheville)
 
-**La durée :** Règle générale — toujours plus court qu'on ne pense. Mieux vaut une pièce de 8 minutes parfaite qu'une de 15 minutes qui en contient 8 de bonnes.
+---
 
-**L'outil de l'arc dramatique :**
-Même sans récit, toute pièce a une courbe d'intensité — elle monte, atteint un sommet, descend. Savoir où tu en es dans cette courbe à chaque instant.`,
+## Cabaret — les risques des high kicks
+
+- Ischio-jambiers et adducteurs (sollicitation extrême en high kick)
+- Dos lombaire (extension extrême)
+
+**Prévention :** Amplitude maximale toujours en douceur, jamais à froid. Renforcement des ischio-jambiers en excentrique avant de travailler les kicks à pleine amplitude.`,
       },
       {
-        titre: "L'espace, le temps et la dynamique",
-        contenuMarkdown: `Les trois paramètres fondamentaux de la composition chorégraphique — au-delà des pas eux-mêmes. Ce sont les outils que tu peux moduler infiniment. Et ce que j'aime, c'est qu'on ne les épuise jamais.
+        titre: "Pole dance — les risques du travail aérien",
+        contenuMarkdown: `La pole dance combine force, agilité, inversions et travail aérien — avec des risques spécifiques aux prises, aux points de contact et aux chutes. Prendre ces risques au sérieux, c'est pratiquer intelligemment. Et moi, je te supplie de le faire.
 
----
+**Blessures caractéristiques de la pole dance :**
 
-## L'espace — où ?
+Les données scientifiques montrent que l'épaule est la zone la plus touchée (environ 54,5 % des blessures), suivie du poignet (environ 34,2 %) et du dos — avec des blessures aiguës (chutes, inversions) en plus des blessures de surmenage.
 
-**Les niveaux :**
-Bas (sol, accroupi) → Moyen (debout neutre) → Haut (relevé, saut)
+**Épaules (zone la plus blessée) :**
+- Coiffe des rotateurs (prises, portés, inversions)
+- Syndrome d'accrochage sous-acromial
+- Instabilité gléno-humérale
 
-**Les directions :**
-8 directions dans le plan horizontal + diagonales en 3D.
+**Poignets et mains :**
+- Tendinopathies des fléchisseurs (grip intense)
+- Syndrome du canal carpien (pression répétée)
 
-**Les trajets :**
-Lignes droites → vitesse, clarté, intention.
-Courbes → fluidité, rêverie.
-Zigzags → agitation, rupture.
-Spirales → tourbillon, confusion croissante.
+**Peau et ecchymoses (spécifiques à la pole) :**
+- Les "pole kisses" (ecchymoses et marques de barre) sont normaux pendant l'apprentissage
+- Blessures cutanées si la peau n'est pas conditionnée
 
-**L'utilisation de l'espace de la scène :**
-Le centre = force, exposition. Les coulisses = mystère, échappatoire.
-La diagonale = le trajet le plus long et le plus fort.
-L'avant-scène = proximité avec le public.
+**Genoux et tibias :**
+- Points de contact lors des figures (skin grip)
 
-**La formation :**
-Ligne, cercle, dispersion, cluster, symétrie — chaque formation porte une signification.
+**Inversions — risques spécifiques :**
+- Cervicales et rachis si la technique est insuffisante
+- Chute en inversion = risque de traumatisme grave
 
----
+**Stratégies de prévention :**
 
-## Le temps — quand ?
+**Pour les épaules (priorité absolue) :**
+- Renforcement de la coiffe des rotateurs (trapèzes inférieurs, serratus anterior)
+- Dépressions scapulaires actives dans toutes les figures
+- Jamais de hang passif — toujours actif
+- Progression : figure statique → spin → inversion → combinaisons
 
-**Tempo :** Vitesse générale de la pièce.
-**Rythme :** Variation de vitesse à l'intérieur du tempo.
-**Durée :** La longueur des phrases et des silences.
+**Pour les inversions :**
+1. Maîtrise complète du climber avant le premier renversement
+2. Spotter systématique lors de l'apprentissage
+3. Jamais de première inversion seule ou sans filet
 
-**Le silence en danse — quelque chose que j'adore :**
-L'immobilité n'est pas l'absence de danse — c'est de la danse à zéro. Souvent plus puissante que le mouvement.
+**Pour la peau :**
+- Conditionner progressivement (ne pas forcer les sessions longues)
+- Hydratation cutanée entre les sessions
+- Laisser les ecchymoses guérir avant de retravailler la même zone
 
-**Relation à la musique :**
-- **Unisson** : Le mouvement suit la musique
-- **Contrepoint** : Le mouvement s'oppose à la musique
-- **Indépendance** : Le mouvement ignore la musique (coexistence)
+**Conditioning pole :**
+Exercices de force spécifiques à la barre (pull-ups, shoulder mounts à vide, tuck inversions sans barre) — obligatoires avant de progresser en figures avancées.
 
----
-
-## La dynamique — comment ?
-
-La dynamique est la qualité de mouvement — ce qui différencie deux phrases identiques dans leur forme.
-
-**Les qualités d'effort Laban :**
-- **Poids** : Lourd ↔ Léger
-- **Temps** : Soudain ↔ Soutenu
-- **Espace** : Direct ↔ Indirect
-- **Flux** : Lié ↔ Retenu
-
-**Les contrastes dynamiques :**
-Une pièce sans contrastes dynamiques est plate. La composition vivante alterne les qualités — le lourd appelle le léger, le soudain appelle le soutenu.`,
+**La règle du pole que je répète à chaque élève :** Si tu ne peux pas sortir de la figure toi-même (en sécurité), tu n'es pas prêt·e à l'apprendre.`,
       },
       {
-        titre: "Le regard extérieur et le processus créatif",
-        contenuMarkdown: `Créer seul a ses limites — on ne peut pas se voir danser. Le regard extérieur est un outil, pas un oracle. Et savoir faire la différence, c'est capital. Je me suis longtemps débattu avec ça.
-
-**Le regard dramaturgique :**
-Un dramaturge (ou tout observateur de confiance) accompagne le processus créatif sans danser. Son rôle : poser des questions, pas donner des réponses.
-
-*Questions utiles d'un regard extérieur :*
-- "Qu'est-ce que tu voulais me montrer là ?"
-- "À quel moment ai-je perdu l'attention — et pourquoi ?"
-- "Qu'est-ce qui t'a surpris toi-même ?"
-- "Est-ce que la fin tient sa promesse par rapport au début ?"
-
-**La vidéo comme outil de travail :**
-Filme les sessions d'improvisation et de répétition. Regarde — pas pour juger, mais pour voir ce qui était réellement dans la salle, pas ce que tu croyais faire.
-
-**Les étapes du processus créatif — un itinéraire, pas une recette :**
-
-**1. Recherche :** Explorer sans objectif de résultat. Collecter du matériau brut.
-
-**2. Structure :** Organiser le matériau. Tester des ordres, des formats.
-
-**3. Répétition :** Fixer, mémoriser, intégrer. La phrase doit être dans le corps, pas dans la tête.
-
-**4. Travail de détail :** Affiner les transitions, les qualités, les intentions.
-
-**5. Distance :** Prendre du recul. Laisser reposer. Revenir avec des yeux neufs.
-
-**6. Présentation :** Montrer à un public (même petit). Les réactions informent.
-
-**Les doutes du processus — et il faut en parler :**
-Tout créateur traverse des moments où la pièce semble sans intérêt, sans cohérence, sans sens. Ces moments font partie du processus — pas une indication que la pièce est ratée. Je t'assure.
-
-**La règle de la première version :**
-La première version est toujours imparfaite — et c'est normal. Son rôle est d'exister pour qu'on puisse l'améliorer.
-
-> "La créativité, c'est permettre à ses erreurs de survivre." — Scott Adams`,
-      },
-    ],
-  },
-  {
-    id: 'notation-danse',
-    titre: 'Systèmes de notation de la danse — une fiche culturelle',
-    resume: "La danse a longtemps été un art de transmission orale — et la question de savoir comment \"écrire\" le mouvement est une de mes curiosités préférées. Comment les différents systèmes de notation (Labanotation, Benesh, vidéo) tentent de résoudre l'impossibilité de fixer le mouvement sur papier : une question philosophique autant que technique, et quelque chose que j'ai glissé dans mes carnets parce que je ne pouvais pas m'en empêcher.",
-    disciplines: ['classique', 'contemporain', 'moderne', 'jazz'],
-    termesAbordes: [
-      'notation-mouvement', 'labanotation', 'benesh-notation', 'video-comme-notation',
-    ],
-    sections: [
-      {
-        titre: "Le problème de la notation — comment écrire le mouvement ?",
-        contenuMarkdown: `La musique a la partition. La littérature a l'écriture. Le théâtre a le texte. La danse a... longtemps eu uniquement la transmission orale et corporelle. C'est un des paradoxes qui m'ont le plus intrigué — et que je n'arrive toujours pas à trouver ennuyeux.
-
-**Le paradoxe de la danse :**
-La danse existe dans le temps — elle naît et disparaît à chaque performance. Comment la préserver ? Comment la transmettre à ceux qui n'ont pas vu la version originale ? Comment la recréer après la mort du chorégraphe ?
-
-**La transmission orale — ses forces et ses limites :**
-
-**Forces :**
-- Fidèle aux qualités de mouvement (un maître transmet aussi *comment*, pas seulement *quoi*)
-- Vivante — la pièce évolue avec les interprètes
-- Efficace pour des vocabulaires stables (ballet classique, danses traditionnelles)
-
-**Limites :**
-- Dépend de la continuité humaine — si plus personne ne sait la pièce, elle est perdue
-- Transformation involontaire — le téléphone arabe du mouvement
-- Impossible à transmettre à grande échelle simultanément
-
-**Pourquoi la notation est difficile :**
-Le mouvement humain est :
-- **Continu** (pas discret comme les notes de musique)
-- **Multidimensionnel** (corps entier en 3D + temps)
-- **Qualitatif** (la façon compte autant que la forme)
-- **Relationnel** (rapport au sol, aux autres, à l'espace)
-
-Aucun système de notation n'a résolu tous ces problèmes. Chaque système fait des choix — et donc des sacrifices.`,
-      },
-      {
-        titre: "Les principaux systèmes de notation",
-        contenuMarkdown: `Plusieurs systèmes ont été développés depuis le XIXe siècle. Les deux dominants aujourd'hui sont la Labanotation et la Notation Benesh — et j'ai une tendresse particulière pour la Labanotation, parce que son créateur est aussi l'homme derrière la théorie des efforts que j'ai présentée en Unité 0. Tout se tient.
+        titre: "Blessures les plus fréquentes — reconnaissance et premiers soins",
+        contenuMarkdown: `Savoir reconnaître les blessures les plus fréquentes en danse permet d'agir vite et d'éviter l'aggravation. C'est la page la plus pratique de toute l'Unité 10 — et je voulais la finir sur quelque chose de concret et d'utile pour toi.
 
 ---
 
-## La Labanotation (1928)
+## Entorse de cheville
 
-**Créateur :** Rudolf Laban (1879–1958), théoricien du mouvement austro-hongrois.
+**Mécanisme :** Torsion du pied vers l'intérieur (inversion forcée) — lors d'une réception de saut ou d'un déséquilibre.
 
-**Principe :**
-Partition verticale (lecture de bas en haut). Des colonnes représentent les différentes parties du corps. Des symboles indiquent direction, niveau et durée.
+**Signes :** Douleur immédiate sur le bord externe de la cheville, gonflement, ecchymose possible, difficulté à appuyer.
 
-**Ce qu'elle note bien :**
-Direction précise de chaque geste, timing, niveau dans l'espace, rotations, mouvements du buste.
+**Premiers soins (RICE) :**
+Repos → Glace (15–20 min toutes les 2h) → Compression → Élévation
 
-**Ce qu'elle note moins bien :**
-Les qualités de mouvement (qui font l'objet d'un système séparé — l'Effort Laban).
+**La règle d'Ottawa :** Radiographie si douleur à la palpation sur les malléoles ou incapacité à marcher 4 pas → consultation urgente.
 
-**Utilisation :**
-Europe continentale, Amérique du Nord, Jooss-Leeder School. Le Dance Notation Bureau à New York archive des centaines de pièces en Labanotation.
+**Retour à la danse :** Pas avant rééducation complète — reprendre trop tôt = récidive quasi-certaine. Je t'en supplie.
 
 ---
 
-## La Notation Benesh (1955)
+## Tendinopathie (tendon d'Achille, rotulien, tibial postérieur)
 
-**Créateurs :** Joan Benesh (danseuse du Royal Ballet) et Rudolf Benesh (mathématicien).
+**Mécanisme :** Surcharge répétitive → micro-déchirures → dégénérescence du tendon.
 
-**Principe :**
-Portée horizontale à 5 lignes représentant le corps de dos — comme une portée musicale superposée à la partition musicale. Intuitive pour les musiciens-danseurs.
+**Signes :** Douleur localisée sur le tendon, raideur matinale, douleur augmentant à l'échauffement puis diminuant (stade 1–2).
 
-**Ce qu'elle note bien :**
-Le ballet classique — positions des pieds et des bras, déplacements, timing synchronisé avec la musique.
+**Traitement :** Travail excentrique progressif (le plus efficace scientifiquement prouvé), kinésithérapie, modification de la charge.
 
-**Utilisation :**
-Royal Ballet, English National Ballet, nombreuses compagnies britanniques et internationales de ballet.
+**Attention :** Éviter les injections de cortisone dans le tendon (affaiblit le tissu tendineux).
 
 ---
 
-## Eshkol-Wachman (1958)
+## Syndrome fémoro-patellaire (douleur au genou)
 
-Système mathématique basé sur les coordonnées sphériques — chaque segment du corps est noté par rapport à sa position angulaire. Très précis, utilisé en recherche biomécanique.
+**Mécanisme :** Mauvais tracking de la rotule — souvent lié à faiblesse des fessiers ou mauvais alignement du membre inférieur.
+
+**Signes :** Douleur diffuse autour ou sous la rotule, aggravée par les escaliers, les sauts, la position assise prolongée.
+
+**Traitement :** Renforcement des fessiers (vaste médial, abducteurs), correction de l'alignement, kinésithérapie.
 
 ---
 
-## Les systèmes numériques contemporains
+## Syndrome de la loge antérieure (shin splints)
 
-Mocap (motion capture), Laban/Kinetography Laban informatisée — des tentatives d'automatiser la notation via la capture de mouvement 3D.`,
-      },
-      {
-        titre: "La vidéo — une notation imparfaite mais universelle",
-        contenuMarkdown: `La démocratisation de la vidéo depuis les années 1980 a transformé la pratique de l'archivage chorégraphique. La vidéo ne remplace pas la notation formelle — elle la complète. Et aujourd'hui, c'est l'outil que tout le monde utilise, moi y compris.
+**Mécanisme :** Surcharge des muscles de la jambe → inflammation du périoste tibial.
 
-**Pourquoi la vidéo a pris le dessus :**
-- Accessible à tous (tout le monde peut filmer)
-- Rapide (filmer une heure de répétition prend... une heure)
-- Fidèle visuellement (on voit vraiment ce qui se passe)
-- Capture les qualités de mouvement et l'expression
+**Signes :** Douleur diffuse sur le bord interne du tibia, aggravée à l'effort, soulagée au repos.
 
-**Les limites de la vidéo pour la notation :**
+**Facteurs de risque en danse :** Surface dure, chaussures inadaptées, volume d'entraînement augmenté brutalement.
 
-**Point de vue unique :**
-La caméra fixe un angle. Ce qui n'est pas filmé n'existe pas. Une pirouette filmée de face ne montre pas les bras de dos.
+**Traitement :** Repos relatif, glace, correction des facteurs de risque, kinésithérapie.
 
-**Lecture difficile :**
-Retrouver un moment précis dans une heure de rushes. Comparer deux versions. Partager des notes précises sur un moment.
+---
 
-**Transmission incomplète :**
-La vidéo montre *quoi* — mais pas *comment* ni *pourquoi*. Un interprète qui apprend d'une vidéo reproduit la forme, pas la qualité.
-
-**Formats obsolescents :**
-VHS, DV, DVD — les formats se succèdent. Les archives vidéo des années 1980 sont souvent illisibles aujourd'hui.
-
-**Bonnes pratiques de captation :**
-- Filmer depuis plusieurs angles (face + côté minimum)
-- Inclure une prise avec le chorégraphe qui commente oralement
-- Garder les fichiers en haute qualité sur plusieurs supports
-- Maintenir des métadonnées précises (date, lieu, interprètes, version)
-
-**La vidéo et le passage humain :**
-Même une vidéo parfaite ne suffit pas pour recréer une pièce. Il faut toujours un passeur — quelqu'un qui connaît la pièce de l'intérieur. La vidéo est une aide-mémoire, pas un substitut au corps.`,
-      },
-      {
-        titre: "La transmission — entre fidélité et trahison",
-        contenuMarkdown: `Recréer une pièce chorégraphique pose des questions philosophiques profondes — qui n'ont pas de réponse univoque. Et je trouve ces questions magnifiques, parce qu'elles disent quelque chose d'essentiel sur la nature de la danse. J'aime les poser plus que les résoudre.
-
-**La question de l'authenticité :**
-Qu'est-ce que la "vraie" version d'une pièce ? La première représentation ? La version filmée ? La version transmise par le chorégraphe à ses assistants ? La version adaptée à des interprètes différents ?
-
-**La pièce vivante vs la pièce archivée :**
-Une pièce de ballet classique recréée au XXIe siècle avec des danseurs d'aujourd'hui est-elle la même pièce qu'en 1890 ? Les corps ont changé, les techniques ont évolué, les sensibilités esthétiques aussi.
-
-**Les reconstructions :**
-Certaines pièces disparues ont été recréées à partir de vidéos imparfaites, de notations fragmentaires et de témoignages — comme une archéologie du mouvement. Le Rite du printemps de Nijinski (1913) a été reconstitué par Millicent Hodson et Kenneth Archer en 1987.
-
-**La transmission vivante :**
-Les œuvres qui survivent le mieux sont celles dont les interprètes originaux ont pu transmettre directement — corps à corps, en répétition. Pina Bausch, Trisha Brown, Merce Cunningham ont toutes eu des politiques de transmission de leur répertoire.
-
-**La danse comme art de l'éphémère :**
-Peut-être que la nature de la danse est précisément d'être éphémère — et que chercher à la fixer trahit quelque chose de son essence. C'est un débat ouvert, sans résolution. Et moi, j'aime qu'il reste ouvert.
-
-**Ce que la notation nous apprend sur la danse :**
-Les tentatives de notation révèlent ce qui est central dans une discipline. La notation Benesh reflète l'importance des positions dans le ballet. La Labanotation reflète la conception du mouvement comme direction dans l'espace. Tout système de notation est aussi une théorie du mouvement.
-
-> "La danse est l'art des arts — parce qu'elle est le seul qui disparaît au moment même où il s'accomplit." — Paul Valéry`,
+> La meilleure prévention est la connaissance. Un danseur qui comprend son corps prend de meilleures décisions — sur le moment, sous la pression du cours, et sur le long terme. Et toi, maintenant, tu as les outils. C'est pour ça que j'ai rempli ces carnets.`,
       },
     ],
   },

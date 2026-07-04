@@ -2,193 +2,195 @@ import type { Cours } from '../schema'
 
 export const coursUnite8: Cours[] = [
   {
-    id: 'intro-cabaret',
-    titre: 'Le cabaret — revue, cancan et art du spectacle',
-    resume: "Le french cancan et ses techniques (high kick, fan kick), la chorus line et l'art de la synchronisation, le port du costume et des accessoires (canne, chapeau, boa), la présentation scénique et le rapport au public. J'ai un faible pour le cancan depuis que j'ai compris à quel point c'est physique — dans mes carnets, j'ai des pages entières là-dessus.",
-    disciplines: ['cabaret'],
+    id: 'intro-heels',
+    titre: 'La danse heels — technique, présence et héritage',
+    resume: "Tout ce qu'il faut savoir pour danser en talons hauts : la biomécanique et la posture adaptée, les marches fondamentales (walk, strut, cat walk), le body roll et le hair toss, le floorwork en sécurité, la notion de frame et de sass, et la dette artistique envers la culture vogue et ballroom. Je suis tombé amoureux de cette discipline, et dans mes carnets, elle a sa propre section — avec ses propres taches d'encre.",
+    disciplines: ['heels'],
     termesAbordes: [
-      'french-cancan', 'high-kick', 'fan-kick', 'chorus-line', 'synchronisation-chorus',
-      'port-costume', 'canne-chapeau-cabaret', 'boa-eventail',
-      'meneuse-revue', 'presentation-scenique', 'rapport-public',
+      'posture-heels', 'walk-heels', 'strut', 'body-roll-heels', 'hair-toss',
+      'floorwork-heels', 'frame-heels', 'sass', 'cat-walk-heels', 'vogue-ballroom-heels', 'heel-turn',
     ],
     sections: [
       {
-        titre: "Histoire du cabaret — du Moulin Rouge à aujourd'hui",
-        contenuMarkdown: `Je vais te dire quelque chose sur le cabaret : c'est l'une des formes de danse dont l'histoire me fascine le plus, parce qu'elle est indissociable de l'histoire sociale et politique de son époque. Chaque grande période a eu son cabaret, et chaque cabaret a dit quelque chose que les autres formes d'art ne pouvaient pas dire. Installe-toi — on remonte le temps.
+        titre: "Qu'est-ce que la danse heels ?",
+        contenuMarkdown: `La danse heels est une discipline à part entière — pas du jazz en talons, pas du cabaret avec des escarpins. Ça me tient à cœur de commencer par là, parce que la confusion est fréquente et qu'elle fait un vrai tort à cette discipline. J'ai consacré une page entière à ce sujet dans mon carnet — alors installe-toi.
 
-**Les origines :**
-- **1881** : Le Chat Noir (Montmartre) — premier cabaret au sens moderne. Artistes, intellectuels, bohème parisienne.
-- **1889** : Ouverture du Moulin Rouge — La Goulue, Valentin-le-Désossé, et l'invention du cancan spectaculaire.
-- **1886** : Les Folies Bergère — revue à grand spectacle, tableaux et girls.
+**Ce qu'est la danse heels :**
+- Un langage chorégraphique né à l'intersection de plusieurs traditions culturelles
+- Une technique qui utilise le talon haut comme outil expressif (pas comme contrainte)
+- Une forme d'exploration de la présence, de l'attitude et du sass
+- Une discipline inclusive — pour tous les genres, tous les corps
 
-**L'âge d'or de la revue (1900–1940) — des noms que tu dois connaître :**
-- **Mistinguett** : la meneuse par excellence
-- **Joséphine Baker** : révolutionnaire artistique et politique — une figure absolument majeure
-- **Les Ziegfeld Follies** (New York) : la revue américaine
-- **Le Kabarett allemand** : Ernst von Wolzogen, et sa version politique et satirique
+**Ses origines culturelles — et il faut les connaître :**
+La danse heels ne sort pas de nulle part. Elle porte plusieurs héritages que j'ai cartographiés avec soin dans mes carnets.
 
-**Le cabaret au cinéma — trois films que j'adore :**
-- *Cabaret* (1972, Bob Fosse) — le Kabarett berlinois des années 1930 comme métaphore politique
-- *Moulin Rouge!* (2001, Baz Luhrmann) — hommage pop-art à l'ère du cancan
-- *Chicago* (2002, Rob Marshall) — la revue américaine
+**La culture vogue et ballroom (Harlem, 1980s) :**
+Les compétitions de la scène ballroom incluaient des catégories de défilé en talons, de runway, de femme queen — codifiant la marche en talons comme performance artistique. Ce sont les communautés LGBTQ+ afro-américaines et latinx qui ont créé ce vocabulaire.
 
-**Le cabaret contemporain :**
-Les grandes maisons parisiennes continuent : Moulin Rouge, Lido, Folies Bergère. Mais le "néo-cabaret" existe aussi — plus intimiste, plus diversifié, plus expérimental. L'esprit du cabaret s'adapte à chaque époque. Ce qui m'émerveille, c'est que ça continue.
+**La culture drag :**
+Les drag queens ont développé des techniques de walk, de pose et d'attitude en talons qui ont profondément nourri la danse heels.
 
-**Ce qui unit toutes ces formes à travers le temps :**
-- Le spectacle : l'art d'éblouir
-- Le public au centre : la scène existe pour lui
-- Le costume, le décor, la lumière : tout est dans l'image`,
+**Le jazz et le cabaret :**
+Le jazz a toujours inclus des danses en talons — les danseuses de revue, les chorus girls, les stars de Broadway.
+
+**Le hip-hop et le R&B des années 1990–2000 :**
+Les clips vidéo de Janet Jackson, Beyoncé, Ciara — chorégraphiés en talons avec une qualité jazz/urban — ont popularisé le heels dance contemporain.
+
+**Aujourd'hui :**
+La danse heels est enseignée dans des studios du monde entier, avec des compétitions (World of Dance, etc.) et un corpus pédagogique croissant.
+
+> Porter des talons, c'est choisir une contrainte et en faire une qualité. La danse heels transforme la limitation en langage. Moi, je trouve ça magnifique — et j'espère que toi aussi tu vas l'apprécier.`,
       },
       {
-        titre: "Le french cancan — technique et histoire",
-        contenuMarkdown: `Parlons du french cancan — et je vais commencer par casser une idée reçue. Derrière les sourires, les jupons et la musique d'Offenbach, il y a une des danses les plus exigeantes physiquement que je connaisse. Ne te laisse pas tromper par l'apparente légèreté. J'ai noté tout ça dans mes carnets parce que ça m'a surpris aussi.
+        titre: "Biomécanique et posture — danser en sécurité",
+        contenuMarkdown: `Avant de danser en talons hauts, il faut comprendre ce qu'ils font au corps. Je ne veux pas te faire peur — juste te donner les outils pour danser intelligemment. Parce que j'ai vu trop de danseurs se précipiter, et c'est leur corps qui a payé le prix.
 
-**Histoire du cancan :**
+**Ce que le talon haut modifie :**
 
-Le "chahut" naît dans les bals populaires parisiens des années 1820. À l'origine, danse mixte et improvisée. En 1858, Offenbach compose *Orphée aux Enfers* — sa galop infernal devient la musique définitive du cancan.
+| Zone | Effet du talon |
+|---|---|
+| Pied | Avant-pied surchargé, talon allégé |
+| Cheville | Mobilité réduite (angle bloqué) |
+| Genoux | Tendance à l'hyperextension |
+| Bassin | Bascule en antéversion (creux lombaire) |
+| Centre de gravité | Déplacé vers l'avant |
 
-Au Moulin Rouge (ouvert en 1889), La Goulue et Valentin-le-Désossé codifient et spectacularisent le cancan devant un public international. Ce n'est plus une danse de bal — c'est un spectacle.
+**La posture de référence — ce que j'appelle la "posture de commandement" :**
+- Pieds : talons au sol, poids réparti sur l'avant-pied
+- Genoux : légèrement souples (jamais verrouillés)
+- Bassin : gainage abdominal léger pour contrer l'antéversion
+- Cage thoracique : haute, ouverte
+- Épaules : basses et ouvertes
+- Tête : portée haute, regard vers l'horizon
 
-**Les éléments techniques — dans mon carnet, j'ai un schéma pour chacun :**
+**Choisir ses talons selon son niveau :**
+- **Débutant :** 5–7 cm, talon large, plateforme
+- **Intermédiaire :** 8–10 cm, talon stiletto ou chunky
+- **Avancé :** 12–20 cm, plateforme (exotic), stiletto
 
-**Le grand battement (high kick) :**
-- Jambe tendue qui monte à la verticale ou au-delà
-- Pied pointé, dos droit, maintien de l'équilibre
-- Séquences alternées : jambe droite, jambe gauche
+**Conditioning hors cours — je ne saurais trop insister là-dessus :**
+Renforcer les chevilles (exercices de résistance, équilibre unipodal) est aussi important que les cours eux-mêmes. Les talons ne pardonnent pas la faiblesse des chevilles. Ton carnet de santé, c'est aussi ça.
 
-**Le fan kick :**
-- La jambe décrit un arc (avant → côté) en restant haute
-- Plus complexe que le high kick : mobilité de hanche dans plusieurs plans
+**La progression de sécurité :**
+1. Maîtriser la marche et la posture avant d'ajouter des mouvements
+2. Maîtriser les mouvements debout avant le floorwork
+3. Augmenter la hauteur du talon progressivement
 
-**Le porte-jupon :**
-- Soulèvement du jupon avec les deux mains
-- Agitation rythmée — c'est une chorégraphie dans la chorégraphie
-
-**Le port de la jambe (arabesque cancan) :**
-- Jambe en arrière, corps penché
-
-**L'accroche-pied :**
-- Saut sur une jambe, l'autre jambe accrochée (genou plié)
-
-**Le grand écart final :**
-- Descente en split au sol — signature emblématique. Et oui, c'est autant de physique que ça en a l'air.
-
-**En ligne de chorus :**
-Tout le vocabulaire du cancan se danse en formation — la synchronisation est centrale. Ce qu'une seule danseuse fait est beau ; ce que douze font ensemble est époustouflant. Tu vas voir.`,
+> Il n'y a pas de raccourci : le corps a besoin de temps pour s'adapter aux talons. Et ce temps est bien investi — tu me remercieras plus tard, promis.`,
       },
       {
-        titre: "La chorus line — art de la synchronisation",
-        contenuMarkdown: `Voici quelque chose que j'ai mis du temps à comprendre sur la chorus line : une ligne de danseuses synchronisées, ce n'est pas de l'alignement géométrique. C'est une discipline à part entière — peut-être la plus sociale de toutes les disciplines de danse. Et j'adore l'enseigner parce qu'il faut changer d'état d'esprit pour y entrer.
+        titre: "Walks fondamentales — marcher avant de danser",
+        contenuMarkdown: `La marche est la compétence première du heels. Tout le reste en découle — et ça m'a pris un moment de vraiment l'accepter, parce qu'on a envie d'aller directement aux mouvements spectaculaires. Je t'invite à résister à cette tentation. La walk, c'est la base, et quand elle est impeccable, tout le reste devient possible.
 
-**Histoire de la chorus line — des moments que j'aime raconter :**
-- **1866** : *The Black Crook* (New York) — premières chorus girls
-- **1907** : Les Ziegfeld Follies — la chorus girl américaine standardisée
-- **1974** : *A Chorus Line* (Broadway) — l'œuvre qui rend hommage et questionne l'institution
-- **Moulin Rouge, Lido, Folies Bergère** : les grandes maisons de chorus européens
+**Les qualités de walk à développer :**
 
-**Les Bluebell Girls :**
-Fondées par Margaret Kelly ("Bluebell") en 1932, les Bluebell Girls du Lido de Paris sont l'une des troupes les plus célèbres au monde — standards de sélection stricts, formation intensive. Si tu ne les as jamais vues, je te dis une chose : regarde ça.
+**1. Le walk de base :**
+Talon qui se pose, poids qui se transfère vers l'avant, autre pied. Simple et contrôlé. C'est la fondation de tout.
 
-**Principes de la synchronisation — ce que j'ai noté dans mes carnets :**
+**2. Le walk pointe-talon :**
+L'avant du pied pose en premier — plus silencieux, plus élégant. Caractéristique du walk editorial et sexy.
 
-**L'écoute musicale :**
-La synchronisation commence dans les oreilles, pas dans les yeux. Écouter le pulse ensemble — ne pas regarder les voisines pour se caler (ça crée un délai au lieu de le supprimer). C'est contre-intuitif, mais ça change tout.
+**3. Le cross-walk :**
+Les pieds posent légèrement sur une ligne (croisement léger) — crée le balancement naturel des hanches.
 
-**La vision périphérique :**
-En ligne, on voit ses voisines sans tourner la tête. C'est un outil actif, pas un hasard.
+**4. Le strut :**
+Walk avec attitude exacerbée : chest out, chin up, regard de propriétaire. Pour les moments d'autorité totale.
 
-**L'amplitude commune :**
-Si l'amplitude diffère, l'image est déséquilibrée. On s'accorde souvent sur la moins flexible du groupe — parce que la ligne vaut plus que la performance individuelle.
+**5. Le catwalk :**
+Walk sur une ligne imaginaire, précis, inspiré du défilé de mode. Souvent utilisé en entrée et en sortie.
 
-**La qualité homogène :**
-Pas seulement la forme — l'énergie, le regard, le sourire doivent être unifiés.
+**Les composantes d'un bon walk :**
+- **Le regard** : toujours vers l'horizon ou vers quelqu'un — jamais vers le sol
+- **Les épaules** : basses et ouvertes, une légère alternance naturelle
+- **Les bras** : avec styling (jamais qui battent mécaniquement)
+- **Le rythme** : en connexion avec la musique — le walk est musical, toujours
 
-**La répétition comme construction :**
-La synchronisation se construit en répétant ensemble — un seul cours ne suffit pas. C'est un travail de groupe dans la durée. Et c'est ça qui est beau — vraiment beau.`,
+**La progression que j'utilise :**
+1. Walk aller-retour sans musique (focus placement)
+2. Walk sur une musique lente
+3. Walk avec styling des bras
+4. Walk avec intention (une émotion, un personnage)
+5. Walk avec transitions (arrêt, pose, pivot)`,
       },
       {
-        titre: "Le port du costume et des accessoires",
-        contenuMarkdown: `Une des choses qui m'a le plus étonné quand j'ai découvert le cabaret : les accessoires ont leur propre technique. En cabaret, le costume n'est pas un ajout à la danse. Il *est* la danse. Laisse-moi te montrer.
+        titre: "Body roll, hair toss et éléments de style",
+        contenuMarkdown: `Les éléments de style qui transforment un walk en véritable danse heels. C'est là que ça devient vraiment fun — et c'est la section que mes élèves attendent toujours avec le plus d'impatience. Je les comprends.
 
-**La canne de cabaret :**
+**Le body roll en heels :**
+L'ondulation qui parcourt le corps verticalement — adaptée à la contrainte du talon.
 
-Élément signature du music-hall et du style Fosse.
+**Comment l'exécuter en heels (différent du contemporain) :**
+- Commence depuis les genoux (les pieds et chevilles sont contraints)
+- Genoux → bassin → bas du dos → cage thoracique → épaules → tête
+- Chaque segment répond au précédent avec un léger délai
+- La tête *termine* le voyage — elle ne précède pas
 
-**Positions de base :**
-- En appui (comme une canne ordinaire) pour les poses
-- Sur l'épaule, dans le coude
-- Tenue par le bas (baguette de chef d'orchestre)
+**Le hair toss :**
+Mouvement de tête vif qui projette les cheveux — et l'énergie — dans une direction.
 
-**Manipulation :**
-- Pirouette avec canne (dans les doigts pendant un tour)
-- Balancer (oscillation pendulaire)
-- Tap (frapper le sol sur les temps)
+**Types :**
+- Back toss : tête vers l'arrière, cheveux vers l'avant
+- Side toss : tête vers le côté
+- Circle flip : la tête effectue un arc complet
 
-**Le chapeau haut-de-forme :**
-- En équilibre sur la tête pendant les kicks
-- Roll sur le bras (de la main à l'épaule)
-- Tip (effleurer le bord — geste d'élégance absolue)
+**Placement musical :**
+Le hair toss arrive *sur* un accent — la tête atterrit sur le beat.
 
----
+**Sans longs cheveux :**
+Le mouvement de tête crée l'effet même avec des cheveux courts — c'est la qualité du mouvement qui compte, pas la longueur des cheveux. Je t'assure, j'ai vu des hair tosses dévastateurs sur des crânes rasés.
 
-**Le boa et l'éventail :**
+**Les isolations :**
+Les isolations en heels sont moins percussives qu'en jazz mais très présentes :
+- Épaule : vers l'avant ou le haut sur un accent
+- Cage thoracique : body roll partiel
+- Bassin : mouvements de hanche en coordination avec le walk
 
-Le boa a une physique propre — il suit le corps avec un délai qu'il faut anticiper et *utiliser*. Ce délai, c'est ta chance de créer quelque chose de beau. Je note ça dans mes carnets comme une des leçons les plus utiles du cabaret.
-
-**Techniques :**
-- Draper (autour du cou, des épaules)
-- Faire tourner (moulin au-dessus de la tête)
-- Whip (claquement vers le bas)
-
----
-
-**Le jupon de cancan :**
-- Porte-jupon : soulèvement à deux mains
-- Agitation rythmée
-- Le jupon révèle et cache — chorégraphie dans la chorégraphie
-
----
-
-**Règle d'or — je te la donne gratuitement :**
-Répéter en costume complet dès que possible. Le costume modifie la danse — il faut s'y habituer physiquement. Ce n'est vraiment pas anodin, crois-moi.`,
+**Le frame :**
+Même dans le mouvement, le corps maintient une organisation spatiale lisible — les lignes du corps "forment" une image à chaque moment. C'est ce qui donne cette qualité de présence permanente dans la danse heels. Tu vas voir, quand tu commences à y penser, tu ne peux plus t'en passer.`,
       },
       {
-        titre: "Présentation scénique et rapport au public",
-        contenuMarkdown: `J'y tiens profondément à cette distinction, et je veux que tu l'aies clairement dans la tête : la technique est nécessaire. La présentation scénique est ce qui fait le spectacle. On peut maîtriser tout le reste et rater ça — et alors le public ne "reçoit" rien.
+        titre: "Floorwork, sass et héritage culturel",
+        contenuMarkdown: `Les compétences qui élèvent la danse heels au-delà de la technique — et pourquoi l'héritage culturel n'est pas une option, c'est une responsabilité. C'est peut-être la section la plus importante de mon carnet sur cette discipline.
 
-**La présentation scénique — les éléments clés dans mon carnet :**
+**Le floorwork en heels :**
+Travail au sol avec talons hauts — l'une des compétences les plus spectaculaires. Et l'une des plus importantes à aborder avec méthode.
 
-**Le regard :**
-En cabaret, le regard est actif et dirigé. Vers le public, vers un partenaire imaginaire, vers les coulisses avec mystère — mais jamais "perdu". Un regard qui flotte tue la magie. Je l'ai vérifié trop de fois.
+**Progression de sécurité que je recommande :**
+1. Apprendre le floorwork pieds nus
+2. Talons bas (5 cm)
+3. Talons progressivement plus hauts
+4. Toujours : surface non-glissante, genouillères en apprentissage
 
-**Le sourire :**
-Un sourire habité (qui vient d'une joie réelle de performer) vs un sourire figé (qui vient de la peur). Le public voit la différence — toujours. Tu vas apprendre à sentir la différence sur ton propre visage.
+**Descente :**
+Depuis un lunge → genou au sol → côté de la cuisse → hanche. Jamais d'effondrement direct sur les genoux. Jamais.
 
-**La projection :**
-L'énergie qui sort du corps vers la salle. Un danseur peut techniquement être parfait et ne rien projeter — alors le public ne "reçoit" rien. La technique sans projection, c'est de la mécanique.
-
-**La conscience de l'espace :**
-Savoir où tu es sur scène, qui est devant toi, comment tu t'inscris dans la formation.
-
----
-
-**Le rapport au public :**
-
-En cabaret, le public n'est pas passif — il est participant. La relation est directe et vivante. C'est l'essence même du genre.
-
-**Techniques de rapport au public que j'adore :**
-- Regard direct (pas au-dessus des têtes — *dans* les yeux)
-- Wink et jeux complices
-- Timing : laisser le public réagir (rire, surprise) avant de continuer — ne jamais écraser la réaction
-- Révérence communicante (pas une formalité, une vraie transmission)
+**Remontée :**
+Utiliser l'élan et l'avant-pied (jamais le talon). Lunge avant pour faciliter.
 
 ---
 
-**La meneuse :**
-Dans une revue, la meneuse est celle qui "mène" — pas seulement physiquement, mais en énergie et en présence. La troupe se cale sur elle, pas l'inverse. C'est un rôle de responsabilité totale.
+**Le sass :**
+Qualité d'expression qui dépasse la technique — la confiance, l'impudence, la présence qui dit "je suis là".
 
-> Le public vient voir un spectacle. Donne-lui un spectacle. Ta technique est l'outil — ta présence est le cadeau. C'est cette phrase que je me répète avant de monter sur scène.`,
+Le sass ne s'enseigne pas directement — mais il se cultive, et j'ai mes techniques que je partage avec toi :
+- Danser seul(e) sans regard à satisfaire
+- Exagérer l'attitude jusqu'au ridicule, puis calibrer
+- Trouver l'émotion juste et la laisser traverser le mouvement
+
+---
+
+**L'héritage à honorer — et c'est important, je t'en supplie de ne pas passer ça en diagonale :**
+
+La danse heels porte l'héritage du **vogue et de la culture ballroom** — né à Harlem dans les années 1950–1980 par et pour la communauté LGBTQ+ afro-américaine et latinx.
+
+Les catégories ballroom comme *Runway*, *Face*, *Femme Queen Realness* ont codifié un art du déplacement en talons qui est au cœur de ce qu'on pratique aujourd'hui.
+
+Honorer cet héritage, c'est :
+- Connaître son histoire
+- Reconnaître les artistes ballroom et voguing
+- Ne pas pratiquer sans comprendre d'où ça vient
+
+> Porte tes talons avec intention. Chaque pas a une histoire. Et cette histoire mérite d'être connue — moi, je l'ai écrite dans mon carnet pour qu'elle ne soit jamais oubliée.`,
       },
     ],
   },

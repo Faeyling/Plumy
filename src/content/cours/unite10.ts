@@ -2,322 +2,189 @@ import type { Cours } from '../schema'
 
 export const coursUnite10: Cours[] = [
   {
-    id: 'intro-pole-dance',
-    titre: 'La pole dance — technique, styles et progression',
-    resume: "Du grip et des prises aux figures statiques, spins et inversions : comprendre la technique fondamentale du pole, les quatre styles (pole sport, pole art, exotic, pole theatre), le conditioning indispensable à la sécurité, et le floorwork comme discipline à part entière. Il y a bien plus de technique là-dedans qu'on ne le croit — dans mes carnets, ça prend plusieurs pages rien que pour les prises.",
-    disciplines: ['pole-dance'],
+    id: 'intro-burlesque',
+    titre: "L'effeuillage burlesque — art, histoire et technique",
+    resume: "Le burlesque m'a longtemps fasciné, et j'ai des carnets entiers là-dessus. C'est bien plus qu'un déshabillage : c'est un art du tease, du personnage et du rapport au public — avec un timing comique digne des meilleurs vaudevillistes. Effeuillage progressif, construction d'un character, accessoires (gants, boa, éventail), dimension politique du néo-burlesque : je t'emmène dans une discipline qui ne ressemble vraiment à aucune autre.",
+    disciplines: ['burlesque'],
     termesAbordes: [
-      'grip-pole', 'prise-basique', 'montee-pole', 'spin-pole', 'figure-statique',
-      'inversion-pole', 'ayesha', 'floorwork-pole', 'conditioning-pole',
-      'pole-sport', 'pole-art', 'exotic-pole',
+      'effeuillage', 'tease', 'character-burlesque', 'shimmy', 'bump-grind',
+      'prop-burlesque', 'timing-burlesque', 'neo-burlesque',
     ],
     sections: [
       {
-        titre: "La pole dance — une discipline plurielle",
-        contenuMarkdown: `Je veux commencer par une chose que j'ai mise longtemps à comprendre : il n'y a pas un "vrai" pole dance. La barre est une — les disciplines qui s'y accrochent sont plusieurs, et elles sont toutes légitimes. Une fois que tu as ça dans la tête, tout le reste devient plus clair.
+        titre: "Histoire du burlesque — des origines au néo-burlesque",
+        contenuMarkdown: `Le burlesque a une histoire longue et complexe — et une résurgence contemporaine qui lui donne un sens entièrement nouveau. C'est une des disciplines dont j'ai le plus aimé retracer l'histoire dans mes carnets. Accroche-toi, on remonte loin.
 
-**Les quatre grandes familles :**
+**Les origines du mot :**
+"Burlesque" vient de l'italien *burla* (plaisanterie, moquerie) via le français. À l'origine, c'est une forme littéraire et théâtrale qui parodie en exagérant. Pas de nudité — juste de l'humour.
 
-| Style | Esthétique | Musique | Costumes |
-|---|---|---|---|
-| **Pole sport** | Technique et athlétique | Classique, neutre | Sportifs |
-| **Pole art** | Artistique et expressif | Contemporaine variée | Libres |
-| **Exotic** | Sensuel, floorwork | Trap, R&B | Talons hauts |
-| **Pole theatre** | Narratif, costumé | Thématique | Costumes complets |
+**Le burlesque victorien (Angleterre, 1840s–1860s) :**
+Pièces comiques qui parodiaient les opéras et mythologies — souvent avec des femmes en rôles travestis. L'ancêtre de la comédie musicale.
 
-**Ce qui unit tous les styles — la colonne vertébrale :**
-- La barre comme outil chorégraphique principal
-- Le grip comme fondation technique
-- Le conditioning comme exigence incontournable
-- La progression comme seule voie sûre
+**Le burlesque américain (1860s–1930s) :**
+Importé de Grande-Bretagne, il se développe dans une direction différente aux États-Unis — spectacles de variétés avec humour, comedy sketches... et des effeuillages progressifs.
 
-**La barre statique vs rotative — une distinction importante :**
-- **Statique** : la barre ne tourne pas. Les figures et spins utilisent uniquement l'élan du corps.
-- **Rotative** : la barre tourne. Plus accessible pour certains spins en débutant, différente techniquement.
+**L'âge d'or du burlesque américain (1920s–1940s) — des artistes extraordinaires :**
+- **Gypsy Rose Lee** (1911–1970) : l'intellectuelle du striptease — ses effeuillages avaient de l'esprit et de la sophistication
+- **Lili St. Cyr** (1918–1999) : glamour et mise en scène théâtrale
+- **Sally Rand** (1904–1979) : la fan dance — deux grands éventails de plumes comme seul costume
 
-**Le matériel :**
-- **Chrome** : standard, bon grip pour la plupart
-- **Laiton** : meilleur grip naturel
-- **Silicone** : pour les problèmes de grip (mais moins de technique possible)
-- **Diamètre** : 40 mm (standard) ou 45 mm (plus accessible pour les grandes mains)
+**Le déclin (1950s–1980s) :**
+L'arrivée du film X et les nouvelles lois sur la nudité font disparaître le burlesque traditionnel.
 
-**La communauté pole :**
-La communauté pole est connue pour être particulièrement bienveillante et inclusive — un espace où les corps de toutes formes et tous genres pratiquent ensemble. C'est quelque chose que j'ai vraiment apprécié en la découvrant. Tu vas voir.`,
+**Le néo-burlesque (1990s–aujourd'hui) :**
+Né à New York et San Francisco, une nouvelle génération réinvente le burlesque — avec des valeurs féministes, une inclusion radicale des corps et des genres, et une totale liberté de style.
+
+**Dita Von Teese** popularise le néo-burlesque auprès du grand public dans les années 2000 — glamour, référence au burlesque classique, haute couture.`,
       },
       {
-        titre: "Grip et prises — la fondation technique",
-        contenuMarkdown: `Le grip, c'est la compétence la plus fondamentale du pole — et celle qui conditionne toute la sécurité. Je ne saurai jamais trop insister là-dessus, alors je le dis clairement : sans grip, il n'y a pas de pole. Tout le reste vient après.
+        titre: "L'art du tease — la technique de la suggestion",
+        contenuMarkdown: `Le burlesque n'est pas du striptease. La différence — et j'insiste là-dessus dans mes carnets avec trois étoiles dans la marge — c'est que dans le burlesque, ce qu'on ne montre *pas* est plus puissant que ce qu'on montre. C'est tout l'art.
 
-**Comment fonctionne le grip :**
-Le pole dance utilise la friction peau-acier. Pas de prises comme en escalade — juste la peau en contact direct avec la barre. C'est pourquoi la qualité de ta peau (et de la barre) change tout.
+**Le tease comme dialogue :**
+Le public veut quelque chose. L'artiste le sait — et joue avec cette attente. Le tease, c'est l'art de promettre et de retarder la livraison. C'est du théâtre pur.
 
-**Facteurs qui affectent le grip :**
-- Transpiration (utiliser du magnésium si trop)
-- Crème hydratante (NE PAS en mettre avant la barre — vraiment, ne fais pas ça)
-- Température : barre froide = meilleur grip
-- Type d'acier
+**Les techniques du tease — dans mon carnet, j'ai une page sur chacune :**
 
-**Les prises principales — j'ai un mémo dans mes carnets pour chacune :**
+**Le hold :**
+Au moment crucial (gant à demi-retiré, vêtement à demi-ouvert), on s'arrête. On regarde le public. On fait semblant de ne pas continuer. Le silence dure. Le public retient son souffle. Et ça, c'est de la magie.
 
-**Cup grip :** Pouce en bas, quatre doigts en haut. Prise de base universelle.
+**Le misdirection :**
+Commencer à faire quelque chose (sembler vouloir retirer un vêtement), puis aller vers autre chose. Tromper avec humour.
 
-**Baseball grip :** La main enserre complètement la barre. Plus fort mais plus fatigant.
+**Le slow reveal :**
+Montrer très lentement, centimètre par centimètre, quelque chose que le public attend. La lenteur devient comique.
 
-**Twisted grip :** Prise renversée (avancé). Controversée pour les débutants — risque épaule. Ne t'y aventure pas sans accompagnement.
+**Le cover-reveal-cover :**
+Montrer brièvement, puis cacher à nouveau. Le public a eu — et n'a plus. Rires et frustration bienveillante.
 
-**Bracket grip :** Deux mains en opposition. Stabilité maximale.
+**Le timing comique :**
+Le burlesque emprunte au vaudeville son sens du timing. Le rire naît du contraste temporel — la longue pause avant la surprise.
 
-**Forearm grip :** L'avant-bras appuie sur la barre. Utilisé dans des figures spécifiques (flag).
+**La règle du 3 :**
+Les moments de tease efficaces se répètent souvent 3 fois :
+1. Introduction (le public découvre)
+2. Confirmation (le public anticipe)
+3. Subversion (le public est surpris)
 
-**Les zones de grip du corps — ça m'a étonné quand j'ai découvert ça :**
-- Mains (principal)
-- Avant-bras
-- Creux du coude
-- Cuisses intérieures
-- Dos des genoux (creux poplité)
-- Pieds/chevilles (avancé)
-
-**Les marques — quelque chose que personne ne t'a peut-être dit :**
-Les premières semaines de pole laissent des marques et rougeurs — c'est normal. La peau s'habitue. Ne pas forcer à travers de la douleur *vive*, mais les marques normales ne sont pas dangereuses. On est tous passés par là.`,
+**Un exercice que j'adore donner :**
+Prends un gant. Essaie de prendre 2 minutes pour le retirer en utilisant hold, misdirection et slow reveal. 2 minutes, c'est un bon tease. Et tu verras, c'est plus difficile que ça en a l'air — mais tellement jouissif quand ça marche.`,
       },
       {
-        titre: "Montées, spins et figures statiques",
-        contenuMarkdown: `Ce sont les trois catégories techniques fondamentales du pole. Ce sont les premières choses que tu vas apprendre — dans cet ordre, et pas dans un autre. J'ai appris ça à mes dépens, alors je te le donne directement.
+        titre: "Le personnage — construire son alter-ego",
+        contenuMarkdown: `Le burlesque se danse avec un personnage. Sans personnage, c'est du déshabillage. Avec un personnage, c'est de l'art. C'est la distinction qui me tient le plus à cœur dans toute cette unité — et si tu ne retiens qu'une chose de mes carnets sur le burlesque, que ce soit ça.
+
+**Pourquoi un personnage ?**
+
+**Protection :** Ce n'est pas *toi* sur scène qui retire tes vêtements — c'est ton personnage. Cet espace protégé permet d'explorer des territoires qu'on n'oserait pas en tant que soi-même.
+
+**Cohérence :** Le personnage donne une logique à tout le numéro — son entrée, ses accessoires, sa façon de se déplacer.
+
+**Intérêt narratif :** Un personnage a une histoire, une motivation, un secret — même si le public ne le sait pas consciemment.
+
+**Construire ton personnage en 5 étapes :**
+
+**1. Choisir une inspiration :**
+Une figure historique, un archétype, un personnage fictif, un alter-ego de toi-même. Sois précis — "une femme fatale" est trop vague. "Une espionne russe des années 1960 qui a un humour sec" est un personnage.
+
+**2. Choisir un registre :**
+Séduction mystérieuse ? Humour absurde ? Glamour dramatique ? Horror camp ? Le registre guide tous les choix.
+
+**3. Choisir un costume cohérent :**
+Le costume est le personnage au premier regard. Il doit raconter quelque chose avant que tu bouges.
+
+**4. Trouver le mouvement signature :**
+Un geste, une façon de marcher, un tic qui appartient uniquement à ton personnage.
+
+**5. La biographie imaginaire :**
+Qui est ce personnage ? Quel est son passé ? Qu'est-ce qu'il veut ce soir ? Ces réponses ne seront pas visibles directement — mais elles nourriront tout.
+
+**Le nom de scène :**
+Presque tous les artistes burlesque ont un nom de scène — c'est l'identité publique du personnage. Et parfois, choisir ce nom est le moment où le personnage devient vraiment réel. J'aime beaucoup ce moment-là.`,
+      },
+      {
+        titre: "Shimmy, bump and grind et accessoires",
+        contenuMarkdown: `Voilà les éléments techniques signature du burlesque. Des choses simples à expliquer, complexes à maîtriser, et absolument jouissives à exécuter — je t'assure que même moi j'ai mis du temps à avoir un shimmy qui tient la route.
 
 ---
 
-## La montée (climb)
+## Le shimmy
 
-Technique d'ascension le long de la barre.
+Vibration ou tremblement rapide d'une partie du corps — épaules, poitrine ou hanches.
 
-**Montée classique :**
-1. Main dominante haute, main subdominante dessous
-2. Élévation par les jambes + appui de tout le corps
-3. Jambes qui enserrent la barre (cuisses + creux de genou)
-4. Mains qui grimpent l'une après l'autre
-5. Jambes reprennent appui plus haut
-6. Répéter
+**Comment créer un shoulder shimmy :**
+1. Laisse tomber les épaules
+2. Pousse légèrement l'épaule droite vers l'avant
+3. Puis la gauche
+4. Alterne lentement — accélère progressivement
+5. Relâche les bras (ne pas les rigidifier)
+6. La vibration se crée d'elle-même
 
-**Toujours apprendre la descente avant la montée.** Je le mets en gras parce que c'est vraiment important. Vraiment.
-
----
-
-## Les spins
-
-Corps qui tourne autour de la barre avec un point de contact.
-
-**Fireman spin :** Corps vertical, jambes parallèles à la barre. Premier spin appris — et déjà magnifique quand il est propre.
-
-**Chair spin :** Corps en angle, jambes en forme de "chaise". Très courant en débutant.
-
-**Attitude spin :** Une jambe tendue devant, une pliée derrière. Silhouette élégante.
-
-**Principe physique :**
-Jambes proches du corps = rotation plus rapide. Jambes éloignées = rotation plus lente. C'est de la physique pure — et c'est beau à utiliser.
+**Placement musical :**
+Le shimmy arrive sur les accents forts — les "big band hits", les montées d'orchestre, les moments de ponctuation musicale.
 
 ---
 
-## Les figures statiques
+## Le bump and grind
 
-Corps tenu immobile dans une position précise.
+**Le bump :** Impulsion nette du bassin dans une direction, sur un accent musical.
+**Le grind :** Mouvement circulaire lent du bassin.
 
-**Progression de difficulté :**
-- Pole hold (débutant)
-- Flag (intermédiaire)
-- Crucifix (intermédiaire)
-- Brass monkey (avancé)
-- Ayesha (très avancé — force pure, plusieurs années de conditioning)
-- Iron X (expert)
-
-**Ce qu'exige une bonne figure statique :**
-- La forme est claire et précise
-- Le corps est engagé (pas d'affaissement)
-- Le regard est vivant
-- La transition vers la figure est chorégraphiée`,
-      },
-      {
-        titre: "Inversions — progresser en sécurité",
-        contenuMarkdown: `Les inversions (corps à l'envers) sont les figures les plus impressionnantes du pole — et les plus techniques à apprendre. Je veux que tu saches exactement ce que ça demande avant d'y aller, parce que cette partie-là ne souffre pas d'approximation.
-
-**Pourquoi les inversions sont-elles différentes ?**
-En inversion, la gravité inverse ses effets sur le corps :
-- Les jambes deviennent le grip primaire (cuisses, creux de genou)
-- Le gainage abdominal est non-négociable
-- La déorientation (être à l'envers) s'apprivoise progressivement — et ça prend du temps
-
-**La règle absolue — je ne la formule pas plus doucement :**
-**Jamais d'inversion sans supervision pour les débutants.** Toujours avec tapis épais.
-
-**Progression obligatoire — pas de raccourci ici :**
-1. Gainage au sol (hollow body, plank, pike) — plusieurs mois
-2. Inversions au sol sans barre (shoulder stand, etc.)
-3. Inversions assistées par un professeur à basse hauteur
-4. Inversions autonomes à basse hauteur avec tapis
-5. Inversions à hauteur normale avec tapis
-
-**Inversions de base (par ordre de difficulté) :**
-
-**Tuck inversion (candy cane) :**
-Jambes ramenées contre la barre, bassin qui monte, tête qui descend. Première inversion.
-
-**Outside leg hang :**
-Une jambe enroule la barre extérieurement. Corps à l'envers, dos vers la salle.
-
-**Gemini :**
-Inversion avec jambe tendue, corps face à la salle.
-
-**Ayesha :**
-Corps horizontal maintenu uniquement par la force des bras. Plusieurs années de conditioning nécessaires.
-
-**Test de gainage minimal avant l'inversion :**
-Tenir un hollow body (au sol) pendant 10 secondes sans que le bas du dos décolle. C'est le minimum. Vraiment le minimum — et ça vaut la peine d'y revenir autant de fois qu'il le faut.`,
-      },
-      {
-        titre: "Conditioning, floorwork et les quatre styles",
-        contenuMarkdown: `Deux piliers qui font la durabilité de la pratique : le conditioning et la connaissance des styles. L'un sans l'autre, c'est incomplet. Je te parle du conditioning en connaissance de cause — c'est ce qui rend tout le reste possible, et ce qu'on est souvent tenté de passer trop vite.
-
-**Le conditioning — pourquoi c'est non-négociable :**
-
-Le pole dance exige une force importante. Sauter le conditioning augmente significativement le risque de blessure — notamment à l'épaule. C'est dans mes carnets de santé aussi.
-
-**Programme de base (avant chaque séance) :**
-- Hollow body hold : 3 × 20 secondes
-- Plank : 3 × 30 secondes
-- Pike compression : 3 × 10
-- Shoulder press : 3 × 8
-- Grip strength : 3 × 30 secondes
-
-**Zones prioritaires à renforcer :**
-- Épaules (coiffe des rotateurs, stabilisateurs de l'omoplate)
-- Gainage abdominal
-- Adducteurs (grip cuisses)
-- Avant-bras et mains
+**Usage :**
+Souvent dirigé vers le public — interaction directe, souvent comique dans le néo-burlesque.
 
 ---
 
-**Le floorwork :**
+## Les accessoires — chacun a sa technique propre
 
-En pole sport : fonctionnel (transitions propres)
-En pole art : chorégraphié et expressif
-En exotic pole : c'est le cœur du style
+**Les gants longs :**
+Premier accessoire retiré dans la plupart des numéros. La technique du "glove peel" :
+1. Retirer chaque doigt en séquence
+2. Faire rouler le gant jusqu'au poignet
+3. Retirer d'un seul geste
+4. Tourner et jeter (ou poser élégamment — selon le personnage)
 
-**Transition barre → sol :** Toujours chorégraphiée, jamais accidentelle.
-**Transition sol → barre :** Aussi expressive que le sol lui-même.
+**Le boa de plumes :**
+Joue avec son inertie — il suit le corps avec un délai à anticiper. C'est ce délai qui crée la magie.
 
----
+**L'éventail :**
+Pour les fan dances — art du voilage et de la révélation. Sally Rand en a fait une œuvre d'art à part entière.
 
-**Les quatre styles — comment t'orienter :**
-
-- **Pole sport** : tu aimes la compétition, la technique pure, la progression mesurable
-- **Pole art** : tu aimes la création, l'expression, le dialogue avec d'autres disciplines
-- **Exotic** : tu aimes la sensualité, le floorwork, les talons hauts
-- **Pole theatre** : tu aimes le théâtre, les personnages, la narration
-
-> Il n'y a pas un "vrai" pole dance. Il y a ton pole dance. Et ça, c'est une liberté magnifique.`,
-      },
-    ],
-  },
-
-  {
-    id: 'histoire-culturelle-pole',
-    titre: "Histoire et culture du pole dance — celles qui ont tout créé",
-    resume: "L'histoire plurielle et souvent effacée du pole dance : du mallakhamb indien à la barre chinoise de cirque, des bars canadiens des années 1980 à la révolution sportive et artistique contemporaine. Et les femmes — souvent anonymes — qui ont inventé les techniques que la communauté utilise aujourd'hui. C'est la page de mes carnets à laquelle je tiens le plus dans toute l'Unité 8.",
-    disciplines: ['pole-dance'],
-    termesAbordes: ['origine-pole', 'pole-sport', 'pole-art', 'exotic-pole'],
-    sections: [
-      {
-        titre: "Des origines multiples",
-        contenuMarkdown: `J'ai passé beaucoup de temps sur cette page de mes carnets, parce que le pole dance n'a pas une seule origine — il en a plusieurs, géographiquement et culturellement distinctes. Il faut les connaître toutes, parce qu'elles éclairent la pratique d'aujourd'hui d'une façon que rien d'autre ne peut faire. Et parce qu'une histoire racontée à moitié, c'est une histoire déformée.
-
-**Le mallakhamb (Inde, XIIe siècle) :**
-Le mot "malla" (athlète) + "khamb" (poteau). Discipline de lutteurs indiens — acrobaties, flexibilité et force sur un poteau de bois. Utilisé comme entraînement, pas comme performance érotique.
-
-Aujourd'hui, le mallakhamb est un sport national en Inde, avec ses propres compétitions et fédérations. Il est totalement distinct du pole dance occidental dans son contexte — et il serait faux de les confondre. Je note ce point parce que beaucoup l'ignorent, et que l'ignorer fait du mal à tout le monde.
-
-**La barre chinoise (cirque) :**
-Dans la tradition du cirque chinois et européen, les numéros sur barres verticales existent depuis des siècles — haute virtuosité, contexte familial.
-
-**Les fêtes foraines américaines (fin XIXe siècle) :**
-Les "hoochy koochy dancers" utilisaient des structures (dont des barres) dans des performances suggestives — premier lien documenté entre barre verticale et sensualité dans le contexte américain.
-
-**La divergence des histoires — ce qui compte vraiment :**
-Ces origines multiples montrent que l'acrobatie sur barre verticale a été inventée indépendamment dans plusieurs cultures — pour des raisons différentes (athlétisme, cirque, divertissement adulte).
-
-Ce qui rend le pole dance moderne unique, c'est la synthèse de ces héritages dans une pratique accessible, codifiée et mondialisée. Mais cette synthèse n'efface pas les origines — elle les porte. Et c'est à nous de les porter honnêtement.`,
+**La chaise :**
+Point fixe pour le jeu de scène, les poses, les moments de connivence avec le public.`,
       },
       {
-        titre: "L'Amérique du Nord — naissance du pole dance moderne",
-        contenuMarkdown: `Je veux que tu saches exactement comment le pole dance moderne est né, parce que cette histoire a souvent été racontée de manière incomplète ou inexacte — et que l'inexactitude fait du tort à des femmes qui méritent mieux. Alors voilà ce que j'ai dans mes carnets.
+        titre: "Le néo-burlesque — dimension politique et liberté",
+        contenuMarkdown: `Le néo-burlesque contemporain n'est pas seulement une forme artistique — c'est un acte politique. Et cette dimension m'importe profondément. Je voulais te la transmettre avec le soin qu'elle mérite.
 
-**Les bars canadiens (années 1980) :**
-Dans des bars pour adultes canadiens (notamment en Ontario), des danseuses commencent à utiliser une barre verticale fixée au sol et au plafond pour leurs performances. Ce contexte — souvent réduit à "strip-club" dans les récits — est plus complexe : c'est un espace de travail artistique et physique où des femmes ont développé des techniques. Ces femmes méritent d'être reconnues comme des innovatrices.
+**Ce que le néo-burlesque affirme :**
 
-**Fawnia Mondey :**
-Danseuse et instructrice canadienne, souvent citée comme pionnière de l'enseignement du pole dance hors du contexte adulte. Elle commence à enseigner dans les années 1990, puis crée des DVDs qui diffusent la pratique dans le monde entier.
+**La souveraineté corporelle :**
+"Mon corps, mes règles." Le néo-burlesque revendique le droit de chaque artiste à définir ses propres termes de représentation.
 
-**La révolution fitness (années 1990–2000) :**
-Des instructrices en Australie (Bobbi Douglas), au Royaume-Uni commencent à proposer des cours de pole dans un cadre fitness — pour toutes, dans un contexte non-adulte.
+**L'inclusion radicale :**
+Le burlesque classique avait ses standards (corps de "chorus girl"). Le néo-burlesque célèbre activement tous les corps — toutes les tailles, tous les genres, toutes les couleurs. Et ce n'est pas juste tolérance : c'est célébration.
 
-Cette "respectabilisation" est un mouvement complexe : elle a rendu le pole accessible à des millions de personnes, mais elle a parfois effacé ou marginalisé les origines et les travailleuses qui avaient développé les techniques. C'est une tension que la communauté discute encore — et que j'estime importante à connaître.
+**La pluralité esthétique :**
+Horror burlesque, steampunk burlesque, political burlesque, queer burlesque, comedy burlesque — il n'y a pas de "bon style". Chaque artiste invente le sien.
 
-**Les pionnières souvent oubliées :**
-De nombreuses danseuses — souvent sans nom dans l'histoire écrite — ont développé dans les années 1980–1990 des techniques de montée, de figure et de floorwork que la communauté utilise aujourd'hui. Les honorer, c'est écrire une histoire plus juste.`,
-      },
-      {
-        titre: "La révolution sportive et artistique",
-        contenuMarkdown: `Les années 2000–2020 voient le pole dance exploser en termes de reconnaissance, de diversité et de niveau technique. Quand je regarde les championnats actuels, je me demande parfois ce que les pionnières des années 1980 penseraient. J'espère qu'elles seraient fières — et j'espère qu'elles se reconnaîtraient.
+**Artistes néo-burlesque à connaître :**
 
-**La révolution sportive :**
+**Dita Von Teese :** La référence glamour — esthétique classique et haute couture.
 
-**2006 :** Création de l'IPSF (International Pole Sports Federation) — premier pas vers la reconnaissance institutionnelle.
+**Dirty Martini :** Artiste plus size, militante des droits corporels.
 
-**2016 :** L'IPSF reçoit une reconnaissance de la GAISF (Global Association of International Sports Federations) — une étape vers les Jeux Olympiques.
+**Jo Boobs :** Activiste et organisatrice communautaire à New York.
 
-**Les championnats du monde de pole sport** rassemblent aujourd'hui des athlètes de plus de 80 pays — des niveaux techniques qui rivalisent avec la gymnastique.
+**Harvest Moon :** Style dark, politique, queerpunk.
 
-**La révolution artistique :**
+**Le burlesque et le féminisme :**
+Le burlesque est-il féministe ? Le débat est ouvert — et c'est normal qu'il le soit. Ce qui est sûr : le néo-burlesque *peut* être une pratique féministe quand il est exercé avec conscience, intention et consentement — et quand il n'est pas réduit à l'objectification sans agentivité.
 
-Les artistes de pole art repoussent les frontières de ce que la barre peut exprimer :
-- Dialogues avec la danse contemporaine
-- Pole dans des compagnies de danse physique
-- Installations artistiques avec barres
-- Pole theatre (personnages, narration, costumes complets)
+**La performance du genre :**
+Le burlesque joue avec les codes du genre — les hommes en burlesque, les artistes non-binaires, les drag performers — remettant en question ce que "séduire" et "se révéler" signifient selon les corps et les identités.
 
-**La révolution exotic :**
-
-Dans les années 2010, des danseuses — notamment russes — révolutionnent l'exotic pole avec un niveau de floorwork, de technicité de corps et de maîtrise de chaussures à plateau jamais vu. L'exotic devient une discipline avec ses propres compétitions mondiales.
-
-**Le débat politique dans la communauté :**
-La question "faut-il désexualiser le pole pour l'accepter socialement ?" divise la communauté depuis des années. Certains voient le mouvement sportif comme une légitimation nécessaire. D'autres critiquent l'effacement des origines et la stigmatisation de l'exotic. Je n'ai pas de réponse toute faite — mais la question mérite d'être posée, et tu mérites de l'avoir en main.`,
-      },
-      {
-        titre: "Celles qui ont créé — honorer les pionnières",
-        contenuMarkdown: `C'est la page de mes carnets à laquelle je tiens le plus dans toute l'Unité 8. Une histoire honnête du pole dance ne peut pas être racontée sans parler de celles qui l'ont inventé. Alors voilà ce que j'écris — et ce que je veux que tu gardes avec toi.
-
-**Le problème de l'effacement :**
-Quand le pole dance a commencé à être "mainstream" (cours en studio, compétitions, YouTube), il s'est souvent présenté comme né de nulle part — ou comme une invention récente du fitness.
-
-Cette narration efface les femmes — souvent travailleuses du sexe, souvent noires, racisées et/ou LGBTQ+, souvent marginalisées — qui ont développé pendant des décennies les techniques de grip, de figure et de floorwork que la communauté utilise aujourd'hui. Ce whitewashing fait du tort à des personnes réelles, et je refuse d'y participer dans mes carnets.
-
-**Pourquoi c'est important :**
-- Ces femmes méritent d'être reconnues dans l'histoire de leur discipline
-- Comprendre les origines aide à pratiquer avec plus d'honnêteté et d'intégrité
-- La dignification du pole passe par la dignification de celles qui l'ont créé
-
-**Des femmes à connaître :**
-
-**Fawnia Mondey :** Pionnière de l'enseignement du pole au-delà du contexte adulte.
-
-**Bobbi Douglas (Australie) :** Une des premières à ouvrir un studio de pole dance "fitness".
-
-**Anastasia Sokolova :** A révolutionné l'exotic pole contemporain — son influence est mondiale.
-
-**Les travailleuses du sexe anonymes :** Des milliers de femmes qui, dans les années 1980–1990, ont développé les techniques fondamentales sans jamais être nommées dans les livres d'histoire.
-
-**Le mouvement "Sex Worker Rights" dans la communauté pole :**
-Un mouvement croissant dans la communauté pole milite pour que les travailleuses du sexe — passées et présentes — soient reconnues, respectées et soutenues dans leur travail. J'y suis sensible, et j'espère que toi aussi.
-
-> Chaque fois que tu montes sur une barre, tu te tiens sur les épaules de celles qui ont appris avant toi — souvent dans des conditions bien moins glamour que ton studio de pole. Connaître leur histoire, c'est pratiquer avec gratitude.`,
+> Le burlesque à son meilleur est une déclaration d'indépendance — celle de quelqu'un qui décide de ses propres termes d'existence dans le regard des autres. Je ne connais pas de définition plus belle. Et je l'ai notée dans mes carnets en gros caractères.`,
       },
     ],
   },

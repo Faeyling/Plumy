@@ -2,197 +2,259 @@ import type { Cours } from '../schema'
 
 export const coursUnite3: Cours[] = [
   {
-    id: 'intro-classique',
-    titre: 'La classe de danse classique — structure et vocabulaire',
-    resume: "Comprendre la logique d'un cours de danse classique de A à Z : barre, milieu, adage, allegro, pirouettes — pourquoi cet ordre, comment chaque exercice prépare le suivant. J'ai des pages et des pages là-dessus dans mon carnet.",
-    disciplines: ['classique'],
-    termesAbordes: [
-      'barre-classique', 'milieu-classique', 'plie', 'tendu', 'degage',
-      'rond-de-jambe', 'developpe', 'grand-battement', 'arabesque', 'attitude',
-      'pirouette', 'allegro', 'jete', 'assemble', 'pas-de-bourree',
-    ],
+    id: 'musique-appliquee',
+    titre: "Formation musicale pour le danseur",
+    resume: "Tout danseur est aussi musicien de son corps. Comprendre le tempo, la mesure, le phrasé, l'anacrouse et la syncope, c'est apprendre à dialoguer avec la musique plutôt que la suivre aveuglément — et crois-moi, ça change tout.",
+    disciplines: ['commun'],
+    termesAbordes: ['tempo', 'mesure-musicale', 'phrase-musicale', 'anacrouse', 'syncope'],
     sections: [
       {
-        titre: 'La logique du cours classique',
-        contenuMarkdown: `Ce que j'ai trouvé fascinant en découvrant le cours classique, c'est que rien n'est aléatoire. Chaque exercice prépare le suivant — c'est une architecture pensée sur des siècles de pratique pédagogique.
+        titre: "Le tempo et la mesure : le squelette rythmique",
+        contenuMarkdown: `Je vais te dire un secret : j'ai longtemps cru que la musique, c'était juste là pour "donner l'ambiance" pendant qu'on dansait. Quelle erreur. Comprendre la structure musicale, c'est débloquer un niveau entier de la danse.
 
-**La structure universelle :**
-1. **Échauffement** (5–10 min) : mobilisation générale, souvent avant la barre
-2. **La barre** (30–45 min) : exercices tenus à la barre, dans un ordre logique
-3. **Le milieu** (20–30 min) : reprise des exercices sans appui + adage
-4. **L'allegro** (15–20 min) : petit allegro puis grand allegro
-5. **Pointes** (10–15 min, si applicable) : travail technique en chaussons de pointe
-6. **Révérence** (2–3 min) : salut final, clôture du cours
+**Le tempo** est la vitesse de la pulsation, mesurée en BPM (battements par minute). L'intérioriser — au point de le sentir dans ton corps même quand la musique s'arrête — est une compétence fondamentale.
 
-**Pourquoi cet ordre ?**
-Chaque section prépare la suivante :
-- La barre chauffe et aligne le corps
-- Le milieu transfère les acquis de la barre sans appui
-- L'adage développe le contrôle et l'amplitude
-- Le petit allegro réveille la vivacité
-- Le grand allegro libère la puissance
+**La mesure** organise les temps en groupes réguliers. Les mesures les plus courantes en danse :
 
-> La barre n'est pas juste de l'échauffement. C'est là que se construisent les fondations de toute la technique — et les professionnels y passent toute leur vie. Ça m'a mis du temps à comprendre ça.`,
+| Mesure | Caractère | Utilisations |
+|--------|-----------|-------------|
+| 4/4 | Universel, robuste | Jazz, pop, contemporain, hip-hop |
+| 3/4 | Ternaire, tournoyant | Valse, cabaret, classique romantique |
+| 2/4 | Binaire, énergique | French cancan, marche |
+| 6/8 | Oscillant, balancé | Certains jazz, musiques folkloriques |
+
+**Compter en danse :** on compte généralement en 8 (deux mesures de 4/4), en 6 (pour la valse), ou en combinaison. Si ton prof dit "5, 6, 7, 8", il te donne une anacrouse sur le dernier temps — patience, on y vient.`,
       },
       {
-        titre: 'La barre — exercices fondamentaux',
-        contenuMarkdown: `Si tu retiens une chose sur la barre, c'est celle-ci : l'ordre des exercices n'est pas arbitraire. Chaque exercice prépare le suivant dans une logique irréprochable.
+        titre: "Le phrasé musical : la grammaire du temps",
+        contenuMarkdown: `Comme une phrase a un sujet, un verbe et une conclusion, la musique a des **phrases musicales** — généralement 4 ou 8 mesures — qui se terminent par une cadence (comme une ponctuation).
 
-**La barre suit toujours le même ordre :**
+En tant que danseur, tu dois apprendre à entendre :
+- **Le début de phrase** (downbeat) : souvent un point d'arrivée ou de départ fort
+- **La montée** : développement de l'énergie, tension qui s'accumule
+- **La cadence finale** : résolution, respiration, atterrissage
 
-| Ordre | Exercice | Tempo | Travail principal |
-|-------|----------|-------|------------------|
-| 1 | Pliés (demi et grands) | Lent | Échauffement, alignement |
-| 2 | Battements tendus | Modéré | Articulation du pied |
-| 3 | Battements dégagés | Rapide | Vitesse, articulation |
-| 4 | Ronds de jambe par terre | Lent–Modéré | Rotation de hanche |
-| 5 | Battements fondus | Modéré | Coordination, fluidité |
-| 6 | Battements frappés | Vif | Vivacité, impact |
-| 7 | Ronds de jambe en l'air | Modéré | Mobilité coxo-fémorale |
-| 8 | Développés / Adage | Très lent | Amplitude, contrôle |
-| 9 | Grands battements | Rapide | Puissance, amplitude max |
+**Phrasé dansé vs phrasé musical :** un chorégraphe peut aligner ses phrases avec la musique (*avec-la-musique*) ou créer délibérément des décalages (*contre la musique*). Ce jeu de tension/résolution est l'un des outils les plus puissants de la composition.
 
-**Ta position à la barre :**
-- Main intérieure posée légèrement (jamais agrippée — la barre est ton appui, pas ta béquille)
-- Corps perpendiculaire ou légèrement de biais selon l'exercice
-- Bras extérieur dans la position appropriée (2ème, 5ème...)
-- Poids bien centré sur les deux pieds
-
-**En retournant :**
-La séquence se répète de l'autre côté. Ton côté faible mérite autant d'attention que ton côté fort — j'insiste là-dessus.`,
+> *Note de Plumy : J'adore les chorégraphes qui arrivent une mesure avant ou après la musique. Ça crée une surprise que même moi je n'arrive pas toujours à anticiper — et c'est cette imprévisibilité maîtrisée qui me coupe le souffle à chaque fois.*`,
       },
       {
-        titre: 'Les cinq positions et le turn-out',
-        contenuMarkdown: `Le turn-out est le fondement de toute la technique classique — et aussi l'une des choses les plus mal comprises que j'aie rencontrées dans la danse.
+        titre: "Anacrouse et syncope : le jeu sur le temps",
+        contenuMarkdown: `Voilà deux notions qui vont transformer ta façon d'entrer dans la musique.
 
-**Ce qu'il permet :**
-- L'ouverture des jambes dans les 5 positions
-- Le travail à la seconde (2ème position)
-- La stabilité dans les équilibres
-- L'esthétique de la ligne classique
+**L'anacrouse** est la note (ou le mouvement) qui précède le temps fort pour l'annoncer. C'est la préparation, le souffle avant la parole. En danse, c'est la différence entre un geste *projeté* dans la musique et un geste *arraché* à elle. Quand tu entends "5, 6, 7, 8" — ces quatre comptes sont une anacrouse. Ton corps se prépare, s'élance avant de démarrer.
 
-**Les 5 positions des pieds :**
-La 1ère et la 2ème sont les plus utilisées pour commencer. La 5ème est la position "naturelle" du mouvement avancé — et elle demande des années de travail pour être vraiment propre.
+**La syncope** déplace l'accent vers les temps faibles. C'est l'ADN du jazz et du funk — cette tension légèrement décalée qui crée le groove, ce balancement irrésistible.
 
-**⚠️ Point crucial que je ne peux pas assez répéter :** Le turn-out se fait depuis la hanche, jamais depuis le genou ou le pied. Forcer le turn-out depuis les extrémités peut causer :
-- Syndrome fémoro-patellaire (genou)
-- Tendinopathie de la cheville
-- Douleurs lombaires (compensation du bassin)
+**Repères pratiques :**
+- Une valse qui passe sur le "3-et" avant le "1" utilise l'anacrouse
+- Un jazz step qui tombe sur le "2 et 4" plutôt que "1 et 3" est syncopé
+- Un danseur qui anticipe systématiquement le tempo "met en avance"
 
-**L'entraînement du turn-out :**
-- Exercices de renforcement des rotateurs externes (pelvi-trochantériens)
-- Étirements des fléchisseurs de hanche
-- Conscience proprioceptive en position neutre avant d'exiger l'ouverture
+Expérimenter avec ces déplacements temporels, c'est apprendre à *parler* en musique, pas seulement à l'*écouter*. Et franchement, une fois qu'on entend la syncope dans les muscles — on ne peut plus s'en passer.`,
+      },
+    ],
+  },
 
-> Le turn-out parfait vient du travail régulier, pas de la force brute. Prends les années qu'il faut — ton corps te remerciera.`,
+  {
+    id: 'marquages-tempo',
+    titre: "Les marquages de tempo italiens",
+    resume: "En classe, en répétition, sur une partition — les termes italiens de tempo reviennent partout. Adagio, allegro, rubato : autant de mots qui décrivent non seulement une vitesse, mais toute une qualité d'interprétation. J'en ai fait un aide-mémoire dans mon carnet.",
+    disciplines: ['commun'],
+    termesAbordes: ['tempo', 'marquage-tempo', 'rubato'],
+    sections: [
+      {
+        titre: "De Grave à Presto : la gamme complète",
+        contenuMarkdown: `La tradition musicale classique (et la pédagogie de la danse dans son sillage) utilise des termes italiens pour indiquer le tempo. Ils ne désignent pas seulement une vitesse — ils évoquent un **caractère**, une humeur, une façon d'habiter le temps.
+
+Voici la gamme des marquages, du plus lent au plus rapide :
+
+| Marquage | BPM approximatifs | Caractère |
+|----------|------------------|-----------|
+| **Grave** | < 40 | Très lent, solennel, lourd |
+| **Largo** | 40–60 | Large, ample, majestueux |
+| **Adagio** | 44–68 | Lent, expressif, méditatif |
+| **Andante** | 76–108 | "Allant" — rythme de marche naturelle |
+| **Moderato** | 108–120 | Modéré, ni lent ni rapide |
+| **Allegretto** | 112–120 | Légèrement vif, plus retenu qu'allegro |
+| **Allegro** | 120–168 | Vif, joyeux, énergique |
+| **Vivace** | 140–176 | Très animé, plein d'élan |
+| **Presto** | 168–200 | Rapide, brillant |
+| **Prestissimo** | > 200 | Extrêmement rapide |
+
+En danse, tu entendras surtout **adagio**, **andante**, **allegro** et **presto** — ce sont les quatre bornes du vocabulaire quotidien d'un prof. "On fait l'adage en adagio" veut dire : lent, expressif, avec tout le temps pour développer chaque position.`,
       },
       {
-        titre: "L'adage — lenteur, amplitude et expression",
-        contenuMarkdown: `L'adage est ma section préférée du cours classique. C'est là que la technique devient quelque chose de plus — de la musique incarnée.
+        titre: "Accelerando, ritardando : changer le tempo en cours de route",
+        contenuMarkdown: `La musique n'est pas toujours à un tempo fixe — elle peut accélérer ou ralentir progressivement, et ces changements créent des effets dramatiques que le danseur doit anticiper.
 
-**Les éléments clés de l'adage :**
+**Accelerando** (abrégé *accel.*) : accélération progressive. La musique — et le corps — monte en énergie, en urgence. On le trouve souvent avant un climax ou une transition forte.
 
-**1. Les développés**
-La jambe s'ouvre lentement depuis le retiré jusqu'à 90° ou plus. Devant, côté, derrière — chaque direction développe une zone musculaire différente.
+**Rallentando** et **Ritardando** (abrégés *rall.* et *rit.*) : ralentissement progressif. La musique perd de l'élan, s'étire vers une conclusion. Ce ralentissement doit être "habité" par le danseur — pas subi passivement.
 
-**2. L'arabesque**
-La position la plus longue du répertoire classique. La ligne va de la pointe des doigts à la pointe du pied arrière — tout le corps contribue à allonger cette diagonale. Et cette ligne vient du dos, pas de la jambe.
+**Accelerando vs Ritardando en danse :**
+- L'accelerando crée naturellement une qualité de Flux Libre (on se laisse emporter) et de Temps Soudain
+- Le ritardando invite le Flux Lié et le Temps Soutenu
 
-**3. L'attitude**
-Jambe arrière fléchie, genou à hauteur de hanche. Plus sculpturale que l'arabesque, plus expressive. Inspirée de la statue de Mercure de Giambologna — un détail que j'adore.
+**À-temps-sus** ou **Poco a poco** signifient "peu à peu" — la transition est graduelle, imperceptible au début. C'est l'art du changement sans rupture.
 
-**4. Les équilibres**
-Tenir une position sur demi-pointe ou pointe. La durée d'un équilibre dépend :
-- Du gainage du centre (transverse, plancher pelvien)
-- De la qualité de la demi-pointe
-- De l'alignement de l'axe
-- Et — je ne te cache pas — d'un peu de lâcher-prise mental
-
-**5. Les promenades (en pas de deux)**
-Tour lent autour d'un axe, tenu par le partenaire — le partenaire fait pivoter en arabesque ou attitude.
-
-> L'adage n'est pas "lent et ennuyeux". C'est l'espace de la musicalité — là où chaque note peut se voir dans le corps. C'est là que le classique devient de l'art.`,
+> *Ce qui m'a le plus surprise en apprenant ça : ce n'est pas la destination (le nouveau tempo) qui compte dans un accelerando, c'est le voyage. Comment le corps gère-t-il la montée d'énergie ? Où dans le corps ressens-tu l'accélération en premier ?*`,
       },
       {
-        titre: "L'allegro — de la légèreté à la puissance",
-        contenuMarkdown: `L'allegro divise le cours en deux temps forts — et j'avoue que le grand allegro me donne encore des étoiles dans les yeux quand il est bien exécuté.
+        titre: "Le rubato : quand le temps se plie",
+        contenuMarkdown: `Le **rubato** (de l'italien *rubare*, voler) est peut-être le marquage de tempo le plus poétique — et le plus difficile à maîtriser.
 
-**Le petit allegro**
-Petits sauts vifs, souvent en séquences de 8 à 16 temps :
-- **Changements de pied** : saut simple, les pieds alternent en 5ème
-- **Échappés** : ouverture vers la 2ème et retour en 5ème
-- **Assemblés** : jambe lancée, les deux jambes s'assemblent en l'air
-- **Jetés** : transfert de poids d'une jambe à l'autre
-- **Pas de bourrée** : liaison de trois petits pas sur demi-pointe
+Il signifie littéralement "temps volé" : le musicien (ou le danseur) s'autorise à étirer certains moments et à compresser d'autres, créant une liberté expressive par rapport au tempo strict. Le temps est *emprunté* à certains moments pour être *rendu* à d'autres.
 
-**La règle d'or du petit allegro :**
-Atterrir toujours en demi-plié, talon–voûte–métatarses–orteils. Un atterrissage silencieux = bonne technique. Si tu entends "clac" à chaque atterrissage, ton plié ne fait pas son travail.
+**Rubato en danse :**
+- Un port de bras en rubato : l'arrivée peut être légèrement retardée pour laisser l'air "s'emplir"
+- Une pirouette en rubato : le danseur peut s'attarder sur la préparation avant de lancer
+- Une phrase lyrical en rubato : le corps respire avec la musique plutôt que de la suivre métronomiquement
 
-**Le grand allegro**
-Combinaisons longues avec déplacement, souvent en diagonale :
-- Glissade + grand jeté (le "manège de course")
-- Chaînés en diagonal
-- Pas de chat enchaîné
-- Grand allegro conclusif avec tours et grands sauts
+**Ce qui distingue le rubato du hors-tempo :** la conscience. Un rubato maîtrisé revient toujours au tempo de base. Le hors-tempo est une dérive involontaire.
 
-**La préparation au grand allegro :**
-L'élan est fondamental. Des pas de couru, des glissades ou des chassés te donnent la vitesse avant les grands sauts. Ne jamais sauter "à sec" — prépare ton élan.`,
+Le rubato est omniprésent dans le ballet romantique et le lyrical jazz. Il exige une écoute musicale fine et une grande maturité d'interprétation.
+
+| Marquage | Ce qu'il dit au danseur |
+|----------|------------------------|
+| **Tempo giusto** | Tempo strict, pas de liberté |
+| **Rubato** | Liberté expressive — mais reviens |
+| **A piacere** | "À volonté" — liberté totale |
+| **Senza misura** | Sans mesure — improvisation temporelle |`,
+      },
+    ],
+  },
+
+  {
+    id: 'dynamiques-musicales',
+    titre: "Dynamiques, articulation et expression",
+    resume: "La dynamique, c'est le volume de la musique — de pianissimo (très doux) à fortissimo (très fort). L'articulation, c'est la façon dont les notes sont jouées : legato, staccato, avec accent... Ces paramètres se traduisent directement dans le corps du danseur.",
+    disciplines: ['commun'],
+    termesAbordes: ['dynamiques-musicales', 'legato', 'staccato', 'crescendo'],
+    sections: [
+      {
+        titre: "Les nuances dynamiques : du pp au ff",
+        contenuMarkdown: `Les **dynamiques** indiquent l'intensité sonore d'un passage musical. Pour le danseur, elles traduisent directement l'énergie à investir dans le geste.
+
+| Symbole | Terme | Signification | Traduction dansée |
+|---------|-------|--------------|-------------------|
+| **ppp** | pianississimo | Extrêmement doux | Geste minimaliste, presque invisible |
+| **pp** | pianissimo | Très doux | Légèreté extrême, effleur |
+| **p** | piano | Doux | Retenu, intérieur |
+| **mp** | mezzo-piano | Moyennement doux | Posé, sans excès |
+| **mf** | mezzo-forte | Moyennement fort | Présent, affirmé |
+| **f** | forte | Fort | Pleinement engagé |
+| **ff** | fortissimo | Très fort | Puissant, maximal |
+| **fff** | fortississimo | Extrêmement fort | Climax, fracassant |
+
+Ces nuances ne sont pas absolues — elles sont relatives au contexte musical. Un *piano* dans un orchestre romantique peut être plus fort qu'un *forte* dans un duo de chambre.
+
+Ce qui est fascinant pour le danseur : la même trajectoire de bras peut exprimer toute cette gamme dynamique. La dynamique, c'est **l'intention qui habille le geste**.`,
       },
       {
-        titre: 'Les tours — pirouette, fouetté, chaînés',
-        contenuMarkdown: `Les tours sont souvent la partie la plus intimidante de la technique classique — et la plus satisfaisante à maîtriser. Dans mon carnet, j'ai des pages entières de notes dessus.
+        titre: "Crescendo et decrescendo : l'énergie en mouvement",
+        contenuMarkdown: `Le **crescendo** et le **decrescendo** (ou diminuendo) sont des dynamiques *en transition* — la musique monte ou descend progressivement en intensité.
 
-**La pyramide de l'apprentissage des tours :**
+**Crescendo** (symbole *<*) : augmentation progressive du volume. En danse, le corps suit naturellement cette montée — l'espace s'ouvre, le geste s'amplifie, l'énergie s'accumule. Un crescendo bien dansé donne l'impression que le corps *grandit*.
 
-1. **Équilibre en retiré** (avant tout) : tenir en demi-pointe en retiré, 5+ secondes
-2. **Demi-tour** : pirouette d'un demi-tour, trouver l'axe
-3. **Tour complet** : pirouette simple, maîtriser le spotting
-4. **Tours multiples** : 2, 3, puis plus — qualité avant quantité
-5. **Tours en enchaînement** : pirouettes d'affilée, chaînés, fouettés
+**Decrescendo / Diminuendo** (symbole *>*) : diminution progressive. Le corps se concentre, l'espace se referme, l'énergie se retient. Un decrescendo dansé peut être aussi puissant qu'un climax — la retenue a sa propre force.
 
-**Le spotting (fouetté de tête) :**
-La technique fondamentale pour ne pas perdre l'orientation :
-1. Fixer un point devant toi (à hauteur des yeux)
-2. Laisser le corps tourner mais garder la tête fixée sur ce point
-3. Quand la tête ne peut plus rester sans se retourner, la tourner 360° rapidement
-4. Retrouver le point immédiatement
+**Fortepiano** (*fp*) : on démarre fort, puis on passe immédiatement à doux. C'est un effet de choc expressif — très présent dans la musique de Beethoven et dans les mouvements dramatiques.
 
-**L'axe de rotation :**
-Le corps tourne autour d'un axe imaginaire vertical, de la couronne de la tête jusqu'au milieu du pied d'appui. Tout écart de cet axe (penchement, bassin décalé) fait "partir" la pirouette.
-
-**La préparation :**
-- En 4ème position (pied devant et pied derrière)
-- Bras ouverts en 2ème (préparation)
-- Demi-plié sur les deux jambes
-- L'élan vient du plié, pas d'un effort brut
-
-> Un bon tour ne se force pas — il se laisse aller. La tension est l'ennemi de la rotation. C'est une des choses les plus contre-intuitives du classique.`,
+> *En improvisation, j'aime proposer cet exercice : commence un geste très petit (pp) et laisse-le grandir jusqu'à remplir toute ta kinesphère (ff). Puis fais-le rétrécirassez (decrescendo) jusqu'à disparaître presque. Observer comment l'espace interne change tout au long du crescendo — c'est une révélation.*`,
       },
       {
-        titre: 'Danse classique — questions de santé et de longévité',
-        contenuMarkdown: `Je ne peux pas te parler du classique sans aborder la santé — parce que cette discipline est exigeante, et que comprendre les risques, c'est pouvoir pratiquer intelligemment sur le long terme.
+        titre: "Legato, staccato : l'articulation dans le corps",
+        contenuMarkdown: `Si les dynamiques parlent du *volume*, l'**articulation** parle de la *façon* dont les sons (ou les gestes) sont produits. Les deux marquages les plus importants pour le danseur sont le legato et le staccato.
 
-**Les blessures les plus fréquentes :**
+**Legato** (*"lié"* en italien) : les notes sont jouées de façon connectée et fluide, sans coupure entre elles. En danse, c'est le mouvement qui coule d'une position à l'autre sans arrêt — les ports de bras classiques, les transitions en contemporary release, les ondulations en heels.
 
-| Zone | Blessure | Cause principale |
-|------|---------|-----------------|
-| Cheville | Entorse, tendinopathie | Demi-pointe forcée, réception de saut |
-| Pied | Stress fracture, hallux valgus | Chaussons de pointe mal adaptés |
-| Genou | Syndrome fémoro-patellaire | Turn-out forcé du genou |
-| Hanche | Impingement, bursites | Développés en compensation |
-| Dos | Lombalgies | Cambrure excessive en arabesque |
+**Staccato** : les notes sont jouées brèves et détachées, séparées par de courtes silences. En danse, c'est le geste qui "claque" — les isolations jazz, les hits en hip-hop, les frappes en contemporain expressif. Le staccato est identifiable par un point au-dessus de la note sur la partition.
 
-**Principes de prévention :**
-1. **Progressivité** : ne jamais sauter les étapes de l'apprentissage
-2. **Renforcement** : gainage, rotateurs de hanche, muscles intrinsèques du pied
-3. **Récupération** : respect des jours de repos, sommeil, hydratation
-4. **Écoute du corps** : distinguer la douleur de l'effort (normal) et la douleur de blessure (alarme)
-5. **Chaussures adaptées** : chaussons de pointe choisis avec un professionnel
+**Tenuto** : on tient la note pour toute sa valeur, avec légèrement plus d'appui. En danse, c'est un geste qui "pose" — ni legato fluide ni staccato bref, mais une présence affirmée.
 
-**La question des pointes :**
-L'âge minimum recommandé est 10–12 ans, selon la maturité osseuse. Avant cet âge, les os des pieds ne sont pas soudés et les déformations peuvent être permanentes. Un bilan podologique est recommandé avant toute mise en pointe.
+**Accent** : une note particulièrement mise en évidence. En jazz, l'accent sur les temps 2 et 4 crée le groove. En contemporain, les accents imprévus créent la surprise.
 
-> La longévité en danse classique se construit dans la sagesse, pas dans la souffrance. Les danseurs qui durent sont ceux qui ont appris à prendre soin d'eux. C'est une leçon que j'aurais voulu apprendre plus tôt.`,
+| Articulation | En musique | En danse |
+|-------------|-----------|----------|
+| Legato | Notes connectées | Mouvement coulé, transitions fluides |
+| Staccato | Notes brèves et séparées | Gestes piqués, isolations nettes |
+| Tenuto | Notes tenues pleinement | Gestes posés, affirmés |
+| Accent | Note marquée | Temps fort, hit, impact |`,
+      },
+    ],
+  },
+
+  {
+    id: 'formes-musicales',
+    titre: "Formes musicales et structure des morceaux",
+    resume: "Comprendre comment une chanson est construite, c'est ne plus être surpris par ce qui arrive — et pouvoir jouer avec la structure plutôt que la subir. Couplet, refrain, pont, ostinato, motif : le vocabulaire de l'architecture musicale au service du danseur.",
+    disciplines: ['commun'],
+    termesAbordes: ['forme-musicale', 'motif-musical', 'cadence-harmonique'],
+    sections: [
+      {
+        titre: "Les grandes formes : AB, ABA, rondo",
+        contenuMarkdown: `La musique, comme la danse, est organisée en **formes** — des structures qui déterminent l'ordre et la répétition des sections. Les connaître permet au danseur d'anticiper les changements et de construire une chorégraphie qui "respire" avec le morceau.
+
+**Forme AB** (deux sections distinctes) :
+- A : première idée musicale
+- B : nouvelle idée musicale
+- Exemple : beaucoup de morceaux pop courts, chansons de cabaret
+
+**Forme ABA** (ternaire) :
+- A : idée principale
+- B : section contrastante (plus douce, plus sombre, plus rapide)
+- A : retour à l'idée principale, souvent transformée
+- Exemple : aria d'opéra, valse de Chopin, beaucoup de musiques classiques
+
+**Rondo** (ABACADA…) :
+- Un refrain (A) revient régulièrement, alternant avec des épisodes variés (B, C, D…)
+- Exemple : le "Rondo alla turca" de Mozart — tu entends clairement le retour du thème principal
+
+**Couplet-Refrain** (structure pop) :
+- Couplet : développe l'histoire ou l'émotion
+- Refrain : moment de "climax" expressif, souvent répété
+- Pont : section de rupture avant le dernier refrain
+- Exemple : quasiment toute la musique pop/rock/jazz contemporaine
+
+> *Quand je travaille une chorégraphie, je commence toujours par écouter le morceau trois fois sans bouger — juste pour "cartographier" sa forme. Ça me donne une architecture où placer les moments forts.*`,
+      },
+      {
+        titre: "Motif, leitmotiv, ostinato : les briques de base",
+        contenuMarkdown: `À l'intérieur des grandes formes, la musique se construit sur des **unités répétées** qui créent la cohérence et la reconnaissance.
+
+**Le motif** est la plus petite idée musicale reconnaissable — quelques notes, un rythme caractéristique. C'est la cellule de base depuis laquelle une œuvre entière peut se développer. Les quatre premières notes de la Cinquième Symphonie de Beethoven (*ta-ta-ta-taaaam*) sont le motif le plus célèbre de l'histoire de la musique.
+
+**Le leitmotiv** est un motif récurrent associé à un personnage, une émotion ou une idée tout au long d'une œuvre. Wagner l'a systématisé à l'opéra. Le thème de James Bond est un leitmotiv : dès les premières notes, tu sais que l'espion est là.
+
+**L'ostinato** est un motif musical répété exactement, encore et encore, dans la même tonalité. Le Boléro de Ravel est construit sur un ostinato rythmique de 17 notes répété 18 fois. En danse, travailler sur un ostinato invite à explorer la variation dans la répétition.
+
+**En pratique pour le danseur :**
+- Repère le motif principal d'un morceau → c'est souvent là qu'un geste signature peut prendre racine
+- Entends les leitmotivs → utilise-les comme balises chorégraphiques
+- Danse sur un ostinato → explore ce que la répétition révèle dans ton corps`,
+      },
+      {
+        titre: "La cadence : comment la musique respire",
+        contenuMarkdown: `La **cadence** est la résolution harmonique qui termine une phrase musicale — comme la ponctuation d'une phrase écrite. Elle crée un sentiment de conclusion, de pause ou d'ouverture.
+
+**Les deux grandes cadences :**
+
+**Cadence parfaite** (V → I) : passage de l'accord de dominante vers la tonique. C'est la résolution la plus "fermée", la plus conclusive — comme un point final. En danse, c'est le moment où tu peux poser un équilibre, marquer une pause, laisser le geste résonner.
+
+**Cadence imparfaite** (I → V) : passage vers la dominante. La musique "s'ouvre", crée une attente — comme une virgule ou une question. En danse, c'est souvent là qu'une transition commence, une nouvelle direction s'amorce.
+
+**Dissonance et résolution :**
+La **dissonance** est la tension créée par des notes qui ne s'accordent pas encore — elles appellent une résolution. Le danseur peut physiquement "porter" cette tension dans le corps : une suspension, un déséquilibre, un geste inachevé. La **résolution** qui suit libère cette tension — et le corps peut l'habiter comme un soupir, un atterrissage, un relâchement.
+
+| Élément harmonique | Sensation | Traduction dansée |
+|-------------------|-----------|------------------|
+| Dissonance | Tension, instabilité | Déséquilibre, suspension, retenue |
+| Résolution | Soulagement, stabilité | Atterrissage, pose, relâchement |
+| Cadence parfaite | Conclusion | Pause, fin de phrase, bilan |
+| Cadence imparfaite | Ouverture | Transition, nouveau départ |
+
+> *Moi, je pense à la dissonance/résolution musicale comme à une question et sa réponse. Et j'essaie de rendre cette question-réponse visible dans mon corps. Ça transforme n'importe quelle variation en dialogue.*`,
       },
     ],
   },

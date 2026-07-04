@@ -2,189 +2,193 @@ import type { Cours } from '../schema'
 
 export const coursUnite9: Cours[] = [
   {
-    id: 'intro-burlesque',
-    titre: "L'effeuillage burlesque — art, histoire et technique",
-    resume: "Le burlesque m'a longtemps fasciné, et j'ai des carnets entiers là-dessus. C'est bien plus qu'un déshabillage : c'est un art du tease, du personnage et du rapport au public — avec un timing comique digne des meilleurs vaudevillistes. Effeuillage progressif, construction d'un character, accessoires (gants, boa, éventail), dimension politique du néo-burlesque : je t'emmène dans une discipline qui ne ressemble vraiment à aucune autre.",
-    disciplines: ['burlesque'],
+    id: 'intro-cabaret',
+    titre: 'Le cabaret — revue, cancan et art du spectacle',
+    resume: "Le french cancan et ses techniques (high kick, fan kick), la chorus line et l'art de la synchronisation, le port du costume et des accessoires (canne, chapeau, boa), la présentation scénique et le rapport au public. J'ai un faible pour le cancan depuis que j'ai compris à quel point c'est physique — dans mes carnets, j'ai des pages entières là-dessus.",
+    disciplines: ['cabaret'],
     termesAbordes: [
-      'effeuillage', 'tease', 'character-burlesque', 'shimmy', 'bump-grind',
-      'prop-burlesque', 'timing-burlesque', 'neo-burlesque',
+      'french-cancan', 'high-kick', 'fan-kick', 'chorus-line', 'synchronisation-chorus',
+      'port-costume', 'canne-chapeau-cabaret', 'boa-eventail',
+      'meneuse-revue', 'presentation-scenique', 'rapport-public',
     ],
     sections: [
       {
-        titre: "Histoire du burlesque — des origines au néo-burlesque",
-        contenuMarkdown: `Le burlesque a une histoire longue et complexe — et une résurgence contemporaine qui lui donne un sens entièrement nouveau. C'est une des disciplines dont j'ai le plus aimé retracer l'histoire dans mes carnets. Accroche-toi, on remonte loin.
+        titre: "Histoire du cabaret — du Moulin Rouge à aujourd'hui",
+        contenuMarkdown: `Je vais te dire quelque chose sur le cabaret : c'est l'une des formes de danse dont l'histoire me fascine le plus, parce qu'elle est indissociable de l'histoire sociale et politique de son époque. Chaque grande période a eu son cabaret, et chaque cabaret a dit quelque chose que les autres formes d'art ne pouvaient pas dire. Installe-toi — on remonte le temps.
 
-**Les origines du mot :**
-"Burlesque" vient de l'italien *burla* (plaisanterie, moquerie) via le français. À l'origine, c'est une forme littéraire et théâtrale qui parodie en exagérant. Pas de nudité — juste de l'humour.
+**Les origines :**
+- **1881** : Le Chat Noir (Montmartre) — premier cabaret au sens moderne. Artistes, intellectuels, bohème parisienne.
+- **1889** : Ouverture du Moulin Rouge — La Goulue, Valentin-le-Désossé, et l'invention du cancan spectaculaire.
+- **1886** : Les Folies Bergère — revue à grand spectacle, tableaux et girls.
 
-**Le burlesque victorien (Angleterre, 1840s–1860s) :**
-Pièces comiques qui parodiaient les opéras et mythologies — souvent avec des femmes en rôles travestis. L'ancêtre de la comédie musicale.
+**L'âge d'or de la revue (1900–1940) — des noms que tu dois connaître :**
+- **Mistinguett** : la meneuse par excellence
+- **Joséphine Baker** : révolutionnaire artistique et politique — une figure absolument majeure
+- **Les Ziegfeld Follies** (New York) : la revue américaine
+- **Le Kabarett allemand** : Ernst von Wolzogen, et sa version politique et satirique
 
-**Le burlesque américain (1860s–1930s) :**
-Importé de Grande-Bretagne, il se développe dans une direction différente aux États-Unis — spectacles de variétés avec humour, comedy sketches... et des effeuillages progressifs.
+**Le cabaret au cinéma — trois films que j'adore :**
+- *Cabaret* (1972, Bob Fosse) — le Kabarett berlinois des années 1930 comme métaphore politique
+- *Moulin Rouge!* (2001, Baz Luhrmann) — hommage pop-art à l'ère du cancan
+- *Chicago* (2002, Rob Marshall) — la revue américaine
 
-**L'âge d'or du burlesque américain (1920s–1940s) — des artistes extraordinaires :**
-- **Gypsy Rose Lee** (1911–1970) : l'intellectuelle du striptease — ses effeuillages avaient de l'esprit et de la sophistication
-- **Lili St. Cyr** (1918–1999) : glamour et mise en scène théâtrale
-- **Sally Rand** (1904–1979) : la fan dance — deux grands éventails de plumes comme seul costume
+**Le cabaret contemporain :**
+Les grandes maisons parisiennes continuent : Moulin Rouge, Lido, Folies Bergère. Mais le "néo-cabaret" existe aussi — plus intimiste, plus diversifié, plus expérimental. L'esprit du cabaret s'adapte à chaque époque. Ce qui m'émerveille, c'est que ça continue.
 
-**Le déclin (1950s–1980s) :**
-L'arrivée du film X et les nouvelles lois sur la nudité font disparaître le burlesque traditionnel.
-
-**Le néo-burlesque (1990s–aujourd'hui) :**
-Né à New York et San Francisco, une nouvelle génération réinvente le burlesque — avec des valeurs féministes, une inclusion radicale des corps et des genres, et une totale liberté de style.
-
-**Dita Von Teese** popularise le néo-burlesque auprès du grand public dans les années 2000 — glamour, référence au burlesque classique, haute couture.`,
+**Ce qui unit toutes ces formes à travers le temps :**
+- Le spectacle : l'art d'éblouir
+- Le public au centre : la scène existe pour lui
+- Le costume, le décor, la lumière : tout est dans l'image`,
       },
       {
-        titre: "L'art du tease — la technique de la suggestion",
-        contenuMarkdown: `Le burlesque n'est pas du striptease. La différence — et j'insiste là-dessus dans mes carnets avec trois étoiles dans la marge — c'est que dans le burlesque, ce qu'on ne montre *pas* est plus puissant que ce qu'on montre. C'est tout l'art.
+        titre: "Le french cancan — technique et histoire",
+        contenuMarkdown: `Parlons du french cancan — et je vais commencer par casser une idée reçue. Derrière les sourires, les jupons et la musique d'Offenbach, il y a une des danses les plus exigeantes physiquement que je connaisse. Ne te laisse pas tromper par l'apparente légèreté. J'ai noté tout ça dans mes carnets parce que ça m'a surpris aussi.
 
-**Le tease comme dialogue :**
-Le public veut quelque chose. L'artiste le sait — et joue avec cette attente. Le tease, c'est l'art de promettre et de retarder la livraison. C'est du théâtre pur.
+**Histoire du cancan :**
 
-**Les techniques du tease — dans mon carnet, j'ai une page sur chacune :**
+Le "chahut" naît dans les bals populaires parisiens des années 1820. À l'origine, danse mixte et improvisée. En 1858, Offenbach compose *Orphée aux Enfers* — sa galop infernal devient la musique définitive du cancan.
 
-**Le hold :**
-Au moment crucial (gant à demi-retiré, vêtement à demi-ouvert), on s'arrête. On regarde le public. On fait semblant de ne pas continuer. Le silence dure. Le public retient son souffle. Et ça, c'est de la magie.
+Au Moulin Rouge (ouvert en 1889), La Goulue et Valentin-le-Désossé codifient et spectacularisent le cancan devant un public international. Ce n'est plus une danse de bal — c'est un spectacle.
 
-**Le misdirection :**
-Commencer à faire quelque chose (sembler vouloir retirer un vêtement), puis aller vers autre chose. Tromper avec humour.
+**Les éléments techniques — dans mon carnet, j'ai un schéma pour chacun :**
 
-**Le slow reveal :**
-Montrer très lentement, centimètre par centimètre, quelque chose que le public attend. La lenteur devient comique.
+**Le grand battement (high kick) :**
+- Jambe tendue qui monte à la verticale ou au-delà
+- Pied pointé, dos droit, maintien de l'équilibre
+- Séquences alternées : jambe droite, jambe gauche
 
-**Le cover-reveal-cover :**
-Montrer brièvement, puis cacher à nouveau. Le public a eu — et n'a plus. Rires et frustration bienveillante.
+**Le fan kick :**
+- La jambe décrit un arc (avant → côté) en restant haute
+- Plus complexe que le high kick : mobilité de hanche dans plusieurs plans
 
-**Le timing comique :**
-Le burlesque emprunte au vaudeville son sens du timing. Le rire naît du contraste temporel — la longue pause avant la surprise.
+**Le porte-jupon :**
+- Soulèvement du jupon avec les deux mains
+- Agitation rythmée — c'est une chorégraphie dans la chorégraphie
 
-**La règle du 3 :**
-Les moments de tease efficaces se répètent souvent 3 fois :
-1. Introduction (le public découvre)
-2. Confirmation (le public anticipe)
-3. Subversion (le public est surpris)
+**Le port de la jambe (arabesque cancan) :**
+- Jambe en arrière, corps penché
 
-**Un exercice que j'adore donner :**
-Prends un gant. Essaie de prendre 2 minutes pour le retirer en utilisant hold, misdirection et slow reveal. 2 minutes, c'est un bon tease. Et tu verras, c'est plus difficile que ça en a l'air — mais tellement jouissif quand ça marche.`,
+**L'accroche-pied :**
+- Saut sur une jambe, l'autre jambe accrochée (genou plié)
+
+**Le grand écart final :**
+- Descente en split au sol — signature emblématique. Et oui, c'est autant de physique que ça en a l'air.
+
+**En ligne de chorus :**
+Tout le vocabulaire du cancan se danse en formation — la synchronisation est centrale. Ce qu'une seule danseuse fait est beau ; ce que douze font ensemble est époustouflant. Tu vas voir.`,
       },
       {
-        titre: "Le personnage — construire son alter-ego",
-        contenuMarkdown: `Le burlesque se danse avec un personnage. Sans personnage, c'est du déshabillage. Avec un personnage, c'est de l'art. C'est la distinction qui me tient le plus à cœur dans toute cette unité — et si tu ne retiens qu'une chose de mes carnets sur le burlesque, que ce soit ça.
+        titre: "La chorus line — art de la synchronisation",
+        contenuMarkdown: `Voici quelque chose que j'ai mis du temps à comprendre sur la chorus line : une ligne de danseuses synchronisées, ce n'est pas de l'alignement géométrique. C'est une discipline à part entière — peut-être la plus sociale de toutes les disciplines de danse. Et j'adore l'enseigner parce qu'il faut changer d'état d'esprit pour y entrer.
 
-**Pourquoi un personnage ?**
+**Histoire de la chorus line — des moments que j'aime raconter :**
+- **1866** : *The Black Crook* (New York) — premières chorus girls
+- **1907** : Les Ziegfeld Follies — la chorus girl américaine standardisée
+- **1974** : *A Chorus Line* (Broadway) — l'œuvre qui rend hommage et questionne l'institution
+- **Moulin Rouge, Lido, Folies Bergère** : les grandes maisons de chorus européens
 
-**Protection :** Ce n'est pas *toi* sur scène qui retire tes vêtements — c'est ton personnage. Cet espace protégé permet d'explorer des territoires qu'on n'oserait pas en tant que soi-même.
+**Les Bluebell Girls :**
+Fondées par Margaret Kelly ("Bluebell") en 1932, les Bluebell Girls du Lido de Paris sont l'une des troupes les plus célèbres au monde — standards de sélection stricts, formation intensive. Si tu ne les as jamais vues, je te dis une chose : regarde ça.
 
-**Cohérence :** Le personnage donne une logique à tout le numéro — son entrée, ses accessoires, sa façon de se déplacer.
+**Principes de la synchronisation — ce que j'ai noté dans mes carnets :**
 
-**Intérêt narratif :** Un personnage a une histoire, une motivation, un secret — même si le public ne le sait pas consciemment.
+**L'écoute musicale :**
+La synchronisation commence dans les oreilles, pas dans les yeux. Écouter le pulse ensemble — ne pas regarder les voisines pour se caler (ça crée un délai au lieu de le supprimer). C'est contre-intuitif, mais ça change tout.
 
-**Construire ton personnage en 5 étapes :**
+**La vision périphérique :**
+En ligne, on voit ses voisines sans tourner la tête. C'est un outil actif, pas un hasard.
 
-**1. Choisir une inspiration :**
-Une figure historique, un archétype, un personnage fictif, un alter-ego de toi-même. Sois précis — "une femme fatale" est trop vague. "Une espionne russe des années 1960 qui a un humour sec" est un personnage.
+**L'amplitude commune :**
+Si l'amplitude diffère, l'image est déséquilibrée. On s'accorde souvent sur la moins flexible du groupe — parce que la ligne vaut plus que la performance individuelle.
 
-**2. Choisir un registre :**
-Séduction mystérieuse ? Humour absurde ? Glamour dramatique ? Horror camp ? Le registre guide tous les choix.
+**La qualité homogène :**
+Pas seulement la forme — l'énergie, le regard, le sourire doivent être unifiés.
 
-**3. Choisir un costume cohérent :**
-Le costume est le personnage au premier regard. Il doit raconter quelque chose avant que tu bouges.
-
-**4. Trouver le mouvement signature :**
-Un geste, une façon de marcher, un tic qui appartient uniquement à ton personnage.
-
-**5. La biographie imaginaire :**
-Qui est ce personnage ? Quel est son passé ? Qu'est-ce qu'il veut ce soir ? Ces réponses ne seront pas visibles directement — mais elles nourriront tout.
-
-**Le nom de scène :**
-Presque tous les artistes burlesque ont un nom de scène — c'est l'identité publique du personnage. Et parfois, choisir ce nom est le moment où le personnage devient vraiment réel. J'aime beaucoup ce moment-là.`,
+**La répétition comme construction :**
+La synchronisation se construit en répétant ensemble — un seul cours ne suffit pas. C'est un travail de groupe dans la durée. Et c'est ça qui est beau — vraiment beau.`,
       },
       {
-        titre: "Shimmy, bump and grind et accessoires",
-        contenuMarkdown: `Voilà les éléments techniques signature du burlesque. Des choses simples à expliquer, complexes à maîtriser, et absolument jouissives à exécuter — je t'assure que même moi j'ai mis du temps à avoir un shimmy qui tient la route.
+        titre: "Le port du costume et des accessoires",
+        contenuMarkdown: `Une des choses qui m'a le plus étonné quand j'ai découvert le cabaret : les accessoires ont leur propre technique. En cabaret, le costume n'est pas un ajout à la danse. Il *est* la danse. Laisse-moi te montrer.
+
+**La canne de cabaret :**
+
+Élément signature du music-hall et du style Fosse.
+
+**Positions de base :**
+- En appui (comme une canne ordinaire) pour les poses
+- Sur l'épaule, dans le coude
+- Tenue par le bas (baguette de chef d'orchestre)
+
+**Manipulation :**
+- Pirouette avec canne (dans les doigts pendant un tour)
+- Balancer (oscillation pendulaire)
+- Tap (frapper le sol sur les temps)
+
+**Le chapeau haut-de-forme :**
+- En équilibre sur la tête pendant les kicks
+- Roll sur le bras (de la main à l'épaule)
+- Tip (effleurer le bord — geste d'élégance absolue)
 
 ---
 
-## Le shimmy
+**Le boa et l'éventail :**
 
-Vibration ou tremblement rapide d'une partie du corps — épaules, poitrine ou hanches.
+Le boa a une physique propre — il suit le corps avec un délai qu'il faut anticiper et *utiliser*. Ce délai, c'est ta chance de créer quelque chose de beau. Je note ça dans mes carnets comme une des leçons les plus utiles du cabaret.
 
-**Comment créer un shoulder shimmy :**
-1. Laisse tomber les épaules
-2. Pousse légèrement l'épaule droite vers l'avant
-3. Puis la gauche
-4. Alterne lentement — accélère progressivement
-5. Relâche les bras (ne pas les rigidifier)
-6. La vibration se crée d'elle-même
-
-**Placement musical :**
-Le shimmy arrive sur les accents forts — les "big band hits", les montées d'orchestre, les moments de ponctuation musicale.
+**Techniques :**
+- Draper (autour du cou, des épaules)
+- Faire tourner (moulin au-dessus de la tête)
+- Whip (claquement vers le bas)
 
 ---
 
-## Le bump and grind
-
-**Le bump :** Impulsion nette du bassin dans une direction, sur un accent musical.
-**Le grind :** Mouvement circulaire lent du bassin.
-
-**Usage :**
-Souvent dirigé vers le public — interaction directe, souvent comique dans le néo-burlesque.
+**Le jupon de cancan :**
+- Porte-jupon : soulèvement à deux mains
+- Agitation rythmée
+- Le jupon révèle et cache — chorégraphie dans la chorégraphie
 
 ---
 
-## Les accessoires — chacun a sa technique propre
-
-**Les gants longs :**
-Premier accessoire retiré dans la plupart des numéros. La technique du "glove peel" :
-1. Retirer chaque doigt en séquence
-2. Faire rouler le gant jusqu'au poignet
-3. Retirer d'un seul geste
-4. Tourner et jeter (ou poser élégamment — selon le personnage)
-
-**Le boa de plumes :**
-Joue avec son inertie — il suit le corps avec un délai à anticiper. C'est ce délai qui crée la magie.
-
-**L'éventail :**
-Pour les fan dances — art du voilage et de la révélation. Sally Rand en a fait une œuvre d'art à part entière.
-
-**La chaise :**
-Point fixe pour le jeu de scène, les poses, les moments de connivence avec le public.`,
+**Règle d'or — je te la donne gratuitement :**
+Répéter en costume complet dès que possible. Le costume modifie la danse — il faut s'y habituer physiquement. Ce n'est vraiment pas anodin, crois-moi.`,
       },
       {
-        titre: "Le néo-burlesque — dimension politique et liberté",
-        contenuMarkdown: `Le néo-burlesque contemporain n'est pas seulement une forme artistique — c'est un acte politique. Et cette dimension m'importe profondément. Je voulais te la transmettre avec le soin qu'elle mérite.
+        titre: "Présentation scénique et rapport au public",
+        contenuMarkdown: `J'y tiens profondément à cette distinction, et je veux que tu l'aies clairement dans la tête : la technique est nécessaire. La présentation scénique est ce qui fait le spectacle. On peut maîtriser tout le reste et rater ça — et alors le public ne "reçoit" rien.
 
-**Ce que le néo-burlesque affirme :**
+**La présentation scénique — les éléments clés dans mon carnet :**
 
-**La souveraineté corporelle :**
-"Mon corps, mes règles." Le néo-burlesque revendique le droit de chaque artiste à définir ses propres termes de représentation.
+**Le regard :**
+En cabaret, le regard est actif et dirigé. Vers le public, vers un partenaire imaginaire, vers les coulisses avec mystère — mais jamais "perdu". Un regard qui flotte tue la magie. Je l'ai vérifié trop de fois.
 
-**L'inclusion radicale :**
-Le burlesque classique avait ses standards (corps de "chorus girl"). Le néo-burlesque célèbre activement tous les corps — toutes les tailles, tous les genres, toutes les couleurs. Et ce n'est pas juste tolérance : c'est célébration.
+**Le sourire :**
+Un sourire habité (qui vient d'une joie réelle de performer) vs un sourire figé (qui vient de la peur). Le public voit la différence — toujours. Tu vas apprendre à sentir la différence sur ton propre visage.
 
-**La pluralité esthétique :**
-Horror burlesque, steampunk burlesque, political burlesque, queer burlesque, comedy burlesque — il n'y a pas de "bon style". Chaque artiste invente le sien.
+**La projection :**
+L'énergie qui sort du corps vers la salle. Un danseur peut techniquement être parfait et ne rien projeter — alors le public ne "reçoit" rien. La technique sans projection, c'est de la mécanique.
 
-**Artistes néo-burlesque à connaître :**
+**La conscience de l'espace :**
+Savoir où tu es sur scène, qui est devant toi, comment tu t'inscris dans la formation.
 
-**Dita Von Teese :** La référence glamour — esthétique classique et haute couture.
+---
 
-**Dirty Martini :** Artiste plus size, militante des droits corporels.
+**Le rapport au public :**
 
-**Jo Boobs :** Activiste et organisatrice communautaire à New York.
+En cabaret, le public n'est pas passif — il est participant. La relation est directe et vivante. C'est l'essence même du genre.
 
-**Harvest Moon :** Style dark, politique, queerpunk.
+**Techniques de rapport au public que j'adore :**
+- Regard direct (pas au-dessus des têtes — *dans* les yeux)
+- Wink et jeux complices
+- Timing : laisser le public réagir (rire, surprise) avant de continuer — ne jamais écraser la réaction
+- Révérence communicante (pas une formalité, une vraie transmission)
 
-**Le burlesque et le féminisme :**
-Le burlesque est-il féministe ? Le débat est ouvert — et c'est normal qu'il le soit. Ce qui est sûr : le néo-burlesque *peut* être une pratique féministe quand il est exercé avec conscience, intention et consentement — et quand il n'est pas réduit à l'objectification sans agentivité.
+---
 
-**La performance du genre :**
-Le burlesque joue avec les codes du genre — les hommes en burlesque, les artistes non-binaires, les drag performers — remettant en question ce que "séduire" et "se révéler" signifient selon les corps et les identités.
+**La meneuse :**
+Dans une revue, la meneuse est celle qui "mène" — pas seulement physiquement, mais en énergie et en présence. La troupe se cale sur elle, pas l'inverse. C'est un rôle de responsabilité totale.
 
-> Le burlesque à son meilleur est une déclaration d'indépendance — celle de quelqu'un qui décide de ses propres termes d'existence dans le regard des autres. Je ne connais pas de définition plus belle. Et je l'ai notée dans mes carnets en gros caractères.`,
+> Le public vient voir un spectacle. Donne-lui un spectacle. Ta technique est l'outil — ta présence est le cadeau. C'est cette phrase que je me répète avant de monter sur scène.`,
       },
     ],
   },

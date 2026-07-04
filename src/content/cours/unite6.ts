@@ -2,462 +2,246 @@ import type { Cours } from '../schema'
 
 export const coursUnite6: Cours[] = [
   {
-    id: 'intro-jazz',
-    titre: 'La danse jazz — tronc commun et fondamentaux',
-    resume: "Le jazz n'est pas un style, c'est un monde — et j'adore le dire parce que c'est littéralement vrai. Dans mes carnets : le groove, les accents et contretemps, les pas de base (ball change, jazz square, chassé), les isolations percussives, les niveaux, les sauts et les tours. J'ai des pages entières là-dessus, et j'ai hâte de te les montrer.",
-    disciplines: ['jazz'],
+    id: 'intro-moderne',
+    titre: 'La danse moderne — héritage, techniques et langage',
+    resume: "La danse moderne n'est pas un style unique mais une révolution — et j'ai mis du temps à comprendre ça. Le travail du buste (flat back, hinge, ondulation), les isolations et la segmentation corporelle, les trois grandes techniques pédagogiques (Horton, Cunningham, Limón), et les outils de composition que sont le canon et l'unisson : tout est dans mes carnets, annoté, raturé, complété au fil des années.",
+    disciplines: ['moderne'],
     termesAbordes: [
-      'groove', 'accent-jazz', 'eight-count', 'preparation-elan',
-      'ball-change', 'jazz-square', 'chasse-jazz', 'jazz-walk',
-      'arm-styling', 'niveau-bas', 'pirouette-jazz', 'leaps-jazz', 'isolations-jazz',
+      'isolation', 'succession-corporelle', 'opposition-corps',
+      'flat-back', 'hinge', 'undulation', 'table-moderne', 'lunge-moderne',
+      'travail-bassin', 'polycentrisme',
+      'technique-horton', 'technique-cunningham', 'technique-limon',
+      'canon', 'unisson', 'marche-moderne', 'elevation-moderne',
     ],
     sections: [
       {
-        titre: "Qu'est-ce que la danse jazz ?",
-        contenuMarkdown: `La danse jazz est née aux États-Unis à la fin du XIXe siècle — et elle n'a jamais cessé de se transformer. C'est exactement ce qui en fait l'une des disciplines les plus vivantes et les plus passionnantes que je connaisse. Chaque époque y a laissé son empreinte, et cette empreinte, tu peux encore la sentir dans le corps quand tu danses.
+        titre: "Qu'est-ce que la danse moderne ?",
+        contenuMarkdown: `La danse moderne est née au début du XXe siècle comme une **rupture** avec la danse académique — pas une évolution, une révolution. Ce que j'aime dans cette histoire, c'est que ce sont essentiellement des femmes qui ont tout cassé et tout reconstruit. Ça méritait que je leur consacre un chapitre entier dans mes carnets.
 
-**Ses racines — et il faut les nommer clairement :**
-- Danses africaines et afro-américaines apportées aux Amériques
-- Musique jazz (blues, ragtime, swing)
-- Vaudeville, minstrel shows (et leur histoire profondément problématique)
-- Danses sociales afro-américaines (Lindy Hop, Charleston)
+**Ce qui a déclenché la rupture :**
+- Le rejet des pointes et du turn-out obligatoire
+- Le rejet du livret narratif comme fondement de tout spectacle
+- L'exploration du corps comme instrument expressif direct
+- La recherche d'un mouvement naturel, humain, ancré dans la réalité
 
-**Ce qui la définit, tous styles confondus :**
-- **La musicalité** : le corps répond à la musique, pas seulement au compte
-- **La syncopation** : l'énergie vit souvent entre les temps, pas dessus
-- **Le polycentrisme** : plusieurs parties du corps actives indépendamment
-- **L'individualité** : dans le jazz, chaque danseur *est* son propre style
-- **Le groove** : s'installer dans le rythme, pas juste le suivre
+**Les pionnières qui ont tout changé :**
+- **Isadora Duncan** (1877–1927) : liberté du corps, pieds nus, inspiration grecque — elle a dansé comme si les corsets n'existaient pas
+- **Loïe Fuller** (1862–1928) : corps-instrument, jeux de lumière, abstraction pure
+- **Ruth St. Denis** (1879–1968) : influences orientales, spiritualité du mouvement
 
-**Le jazz en permanente évolution — mon tableau préféré de mes carnets :**
-| Décennie | Style dominant |
-|---|---|
-| 1920s | Charleston, Lindy Hop |
-| 1930–40s | Big band jazz, Jack Cole |
-| 1950–60s | Broadway (Robbins, Fosse), Jazz moderne |
-| 1970–80s | Jazz lyrique, influences soul |
-| 1990s | Commercial jazz, clips vidéo |
-| 2000s+ | Street jazz, afro-jazz, fusion |
+**La génération fondatrice américaine :**
+- **Martha Graham** (1894–1991) : contraction/release, technique codifiée, expressionnisme
+- **Doris Humphrey** (1895–1958) : fall and recovery, poids et gravité
+- **Lester Horton** (1906–1953) : anatomie fonctionnelle, inclusivité
+- **José Limón** (1908–1972) : héritage Humphrey, poids, swing, dramaticité
 
-**Pourquoi le jazz est difficile à classer :**
-Contrairement à la danse classique (une technique) ou au contemporain (un champ), le jazz est un *continuum* — de l'héritage africain aux clips de pop d'aujourd'hui, en passant par Broadway et Fosse. Il n'existe pas de "technique jazz universelle". C'est une liberté, pas un défaut. Et perso, c'est cette liberté qui me fait l'aimer autant.
+**La rupture avec la danse moderne (Judson Church, années 1960) :**
+Merce Cunningham, puis les artistes du Judson Dance Theater (Yvonne Rainer, Steve Paxton, Trisha Brown) remettent en question *la danse moderne elle-même* — et ouvrent la voie à la danse contemporaine. L'histoire de la danse, c'est des révolutions qui font des révolutions.
 
-> Cette fluidité fait du jazz une danse vivante — elle change avec son époque. Moi, je trouve ça magnifique. Et toi, tu trouveras ta place à l'intérieur.`,
+**Danse moderne vs danse contemporaine — le tableau qui m'a aidé à y voir clair :**
+| | Moderne | Contemporaine |
+|---|---|---|
+| **Techniques** | Codifiées (Graham, Horton, Limón) | Plurielles, hybrides |
+| **Expression** | Souvent narratif/émotionnel | Questionnement du mouvement lui-même |
+| **Période** | 1900–1970 environ | 1960 à aujourd'hui |
+| **Rapport au passé** | Rupture avec le ballet | Rupture aussi avec la moderne |
+
+> La danse moderne *croit encore* qu'il y a quelque chose à exprimer. La contemporaine remet en question ce postulat. C'est une nuance qui change tout.`,
       },
       {
-        titre: 'Le groove et la musicalité jazz',
-        contenuMarkdown: `Le groove est ce qui sépare un danseur de jazz d'un danseur *qui fait du jazz*. Ce n'est pas une technique — c'est une relation à la musique. Et je peux te dire que la première fois que tu le ressens vraiment dans ton corps, tu ne l'oublies plus. J'ai noté ce moment dans mon carnet à l'époque, tellement c'était frappant.
+        titre: 'Les isolations et la segmentation corporelle',
+        contenuMarkdown: `L'une des contributions les plus distinctives de la danse moderne est la **segmentation consciente** du corps — la capacité à activer et contrôler chaque partie indépendamment. C'est aussi l'une des choses les plus difficiles à maîtriser, et des plus satisfaisantes quand ça vient. Je me souviens encore de la première fois où ma cage thoracique a bougé toute seule.
 
-**Le groove n'est pas :**
-- Une question de vitesse ou de force
-- Un style particulier de mouvement
-- Réservé aux "naturellement musicaux" (cette idée m'énerve franchement — tout le monde peut y arriver)
+**L'isolation corporelle :**
+Mouvement d'une seule partie du corps pendant que le reste reste immobile. Ce n'est pas une invention de la danse moderne — c'est un héritage des **traditions africaines et afro-américaines** que la danse moderne a intégré et codifié. Il faut le dire clairement.
 
-**Le groove est :**
-- La capacité à s'*installer* dans le rythme
-- Sentir la pulsation *dans* le corps, pas juste l'entendre avec les oreilles
-- Un léger rebond permanent — les genoux ne sont jamais complètement verrouillés
+**Les cinq zones d'isolation principales :**
+1. **Tête** : droite/gauche, avant/arrière, rotations
+2. **Épaules** : haut/bas, avant/arrière, rotations indépendantes
+3. **Cage thoracique** : latérale, avant/arrière, rotation (la plus difficile à isoler — j'insiste, vraiment difficile)
+4. **Bassin** : toutes directions — source de la mobilité pelvienne
+5. **Genoux** : avant/arrière dans le plan sagittal
 
-**Le "pocket" — un concept que j'adore :**
-En musique jazz, le groove se joue dans le "pocket" — légèrement en arrière du temps, dans le creux. Les grands danseurs de jazz font la même chose : ils *tombent* dans le temps plutôt que de le frapper.
+**Le polycentrisme :**
+Plusieurs parties du corps actives *simultanément* avec des énergies et des rythmes différents. C'est la base du groove en jazz et une caractéristique fondamentale des danses africaines. Quand tu vois quelqu'un dont le corps entier semble penser à plusieurs choses en même temps — c'est ça.
 
-**Le comptage en 8 :**
-Le jazz compte en 8 temps (deux mesures de 4). La préparation est souvent sur "5, 6, 7, 8" — et les contretemps ("et 1", "et 2") sont aussi importants que les temps eux-mêmes.
+**La succession corporelle :**
+L'impulsion voyage séquentiellement à travers les segments — comme une vague. S'oppose au mouvement en "bloc" (toutes les parties bougent ensemble). La succession donne de la fluidité ; le bloc donne de la puissance.
 
-**Développer ton groove — la progression que j'utilise avec mes élèves :**
+**La progression que je recommande dans mes carnets :**
+1. Isolations une par une (tête, puis épaules, puis cage, puis bassin)
+2. Successions simples (bras : épaule → coude → poignet → doigts)
+3. Body wave complète (de bas en haut)
+4. Deux centres simultanés (cage et bassin dans des directions différentes)
+5. Polycentrisme avec rythmes différents (bras sur un rythme, hanches sur un autre)
 
-**Étape 1 — Écouter sans bouger**
-Mets de la musique jazz. Ferme les yeux. Écoute seulement.
-
-**Étape 2 — Laisser la tête bouger**
-Ne décide pas. Laisse la réaction naturelle de ta tête à la musique se faire.
-
-**Étape 3 — Ajouter les genoux**
-Un léger rebond des genoux sur le temps. Pas trop — juste assez pour créer un ressort.
-
-**Étape 4 — Ajouter un centre**
-Laisse la cage thoracique ou les épaules rejoindre la conversation.
-
-**Étape 5 — Ne plus penser**
-Quand tu dois *réfléchir* pour groover, tu n'es pas encore dans le groove. C'est quand tu *oublies* que tu commences vraiment.
-
-> Le groove ne s'enseigne pas — il se *découvre*. Mais on peut créer les conditions pour qu'il apparaisse. Et toi, tu peux y arriver, j'en suis certain.`,
+> La segmentation n'est pas une décomposition mécanique — c'est une intelligence du corps. Chaque partie qui parle est une partie qui *pense*. Et ça, ça s'apprend. Avec du temps, et avec de la patience.`,
       },
       {
-        titre: 'Les pas de base — ball change, jazz square, chassé',
-        contenuMarkdown: `Trois pas de base traversent tous les styles de jazz. Les maîtriser solidement, c'est avoir le vocabulaire minimal pour aborder n'importe quel cours. Passe autant de temps que nécessaire sur chacun — ça paiera, crois-moi.
+        titre: 'Le travail du buste — flat back, hinge, ondulation',
+        contenuMarkdown: `La danse moderne a développé un vocabulaire spécifique pour le travail du buste qui n'a pas d'équivalent dans la technique classique. Ce sont trois des premières choses que j'ai notées soigneusement dans mon carnet quand j'ai découvert la technique Horton — et je les ai pratiquées des heures avant de les sentir vraiment.
 
 ---
 
-## Ball change
+## Le flat back (dos plat)
 
-Transfert de poids rapide sur deux temps : demi-pointe + plein pied.
+Le torse s'incline depuis les **hanches** (pas depuis la taille) en maintenant la colonne parfaitement droite.
 
-**Exécution :**
-1. Pied droit en demi-pointe (arrière ou côté)
-2. Transfert sur le pied gauche plat
-3. Sur 2 temps : "et 1"
+**Points clés :**
+- La colonne reste droite et horizontale — pas de dos arrondi, même sous l'effort
+- La tête prolonge la ligne du dos (ne remonte pas !)
+- L'inclinaison vient du pliage de hanche (fold at the hip)
 
-**À quoi ça sert :**
-- Repositionner le poids pour changer de pied
-- Lien rythmique entre deux phrases
-- Rebond avant un accent, un saut ou un tour
+**Variantes :** flat back debout, flat back latéral, table (flat back à 90° — là tu es vraiment horizontal)
 
 ---
 
-## Jazz square
+## Le hinge (charnière)
 
-Quatre pas qui dessinent un carré dans l'espace. Ça paraît simple ; ça ne l'est pas quand il faut y mettre du style — et c'est justement ce qui le rend si intéressant.
+Inclinaison du corps entier en **arrière** depuis les genoux — le corps forme une ligne diagonale rigide.
 
-**Exécution :**
-1. Pied droit croise devant
-2. Pied gauche recule
-3. Pied droit s'ouvre sur le côté
-4. Pied gauche avance
+**Points clés :**
+- La source est dans les genoux, pas dans le dos
+- Le corps ne se casse pas à la taille : tout s'incline comme un seul bloc — c'est ça la difficulté
+- Exige des quadriceps forts et un gainage abdominal solide
 
-**Qualités selon le style :**
-- Broadway : net, projeté, bras fort
-- Street jazz : low, grooved, attitude
-- Fosse : intérieur, retenu, sophistiqué
+**Origine :** Technique Horton (Lester Horton, Los Angeles, années 1950)
 
 ---
 
-## Chassé
+## L'ondulation (body wave)
 
-Pas de déplacement en 3 temps : pas-joint-pas.
+Une vague qui parcourt le corps verticalement — de bas en haut ou de haut en bas. C'est ce qui me donne le plus de plaisir à regarder quand c'est bien fait.
 
-**Exécution (latéral) :**
-1. Pas vers la droite (pied droit)
-2. Pied gauche joint
-3. Nouveau pas vers la droite
+**Ondulation ascendante :**
+1. Flexion des genoux → bassin en avant → bas du dos → cage thoracique → épaules → tête
 
-**Se compte :** 1 - et - 2
-
----
-
-**Les combiner :**
-Ces trois pas se combinent naturellement. Une phrase simple que j'utilise souvent pour démarrer :
-- Jazz walk (4 pas) + jazz square + ball change + chassé = une phrase de 8 temps complète
-
-**Clé pédagogique :**
-Ces pas doivent devenir *automatiques* — ton corps les connaît sans que ton cerveau les commande. Alors ta tête peut penser à l'expression, à la musicalité, au style. C'est là que la vraie danse commence. Et tu vas voir, ça change tout.`,
-      },
-      {
-        titre: 'Les isolations et le travail par niveaux',
-        contenuMarkdown: `Les isolations et les niveaux sont les deux axes du travail technique spécifique au jazz. Deux choses que j'ai dû vraiment travailler pour les avoir dans le corps — pas juste dans la tête. Je te partage ce que j'ai appris.
-
-**Les isolations jazz :**
-Plus percussives et rythmiques qu'en danse moderne — le jazz utilise les isolations comme des accents sonores dans le corps. Chaque pop est une note de musique qui devient mouvement.
-
-**Les pops :**
-- **Chest pop** : cage thoracique vers l'avant sur un accent
-- **Hip pop** : bassin à droite ou gauche sur un contretemps
-- **Shoulder pop** : épaule vers l'avant ou vers le haut
-
-**Sharp vs smooth :**
-- Sharp : isolation nette avec début et fin précis (jazz, funk, street)
-- Smooth : isolation fluide et continue (lyrical, modern jazz)
-
-**La polyrythmie corporelle :**
-Épaules sur un rythme, hanches sur un autre, pieds sur un troisième — c'est le polycentrisme appliqué au jazz. Base du groove funk. Difficile ? Oui. Impossible ? Non. Et tellement satisfaisant quand ça vient — vraiment l'une des sensations les plus jouissives en danse.
+**Ce qui crée la beauté :**
+L'impression de continuité — chaque segment répond au précédent avec un léger retard. Si tu vois des "marches" au lieu d'une vague, c'est que les transitions entre segments sont trop nettes.
 
 ---
 
-**Les niveaux :**
-
-**Haut :** relevé, positions aérées
-**Moyen :** debout, position standard
-**Bas :** demi-plié, lunge, squats
-**Sol :** slides, splits, floorwork jazz
-
-**Le niveau bas en jazz :**
-Beaucoup de styles jazz maintiennent les genoux légèrement fléchis en permanence — ce n'est pas de la fatigue, c'est une qualité esthétique. Les genoux fléchis créent un ressort constant, une disponibilité au mouvement.
-
-**Alternance de niveaux comme dynamique :**
-Passer rapidement d'un niveau haut à un niveau bas (ou vice versa) est l'un des outils les plus puissants du jazz pour créer du dynamisme et de l'impact. À voir, c'est spectaculaire quand c'est maîtrisé — et à ressentir dans le corps, c'est encore mieux.`,
-      },
-      {
-        titre: "Tours et sauts — l'air en jazz",
-        contenuMarkdown: `La technique des tours et des sauts en jazz mérite une attention particulière — elle diffère du classique dans sa qualité et son esprit, pas nécessairement dans ses principes fondamentaux. C'est quelque chose que j'ai mis du temps à vraiment saisir.
-
-**Les tours en jazz :**
-
-**Ce qui est partagé avec le classique :**
-- Le spot (regard fixe qui tourne rapidement)
-- L'appui en relevé sur le pied de support
-- La préparation bras avant la rotation
-
-**Ce qui est différent — et c'est là que le jazz devient le jazz :**
-- Position souvent **parallèle** (pieds non en dehors)
-- Qualité plus habitée, expressive, avec attitude
-- Arm styling spécifique au style (Broadway ≠ Fosse ≠ Street)
-- La fin du tour peut être un accent fort (pop) et non une position neutre
-
-**Progresser dans les tours :**
-1. Pirouette simple, bien spotée → 2 tours → tours multiples
-2. Varier les positions de bras (un bras, deux bras, bras jazz)
-3. Intégrer les tours dans des phrases (avant et après)
-
----
-
-**Les sauts :**
-
-**Split leap (grand jeté jazz) :**
-- Saut d'une jambe sur l'autre, ouverture maximum en l'air
-- Préparation visible et dynamique — l'élan fait partie de la phrase
-- Arm styling expressif pendant le saut
-- Atterrissage amorti (pointe → mi-pied → talon)
-
-**Stag leap :**
-- Jambe avant tendue, jambe arrière pliée
-- Asymétrie et dynamisme — une signature visuelle très jazz
-
-**Pour progresser sans se blesser :**
-Le saut nécessite de la force et de la souplesse. Je ne peux pas assez insister là-dessus — ne jamais sacrifier la sécurité pour l'amplitude :
-1. Renforcement des jambes (squats, relevés)
-2. Souplesse des hanches (splits progressifs)
-3. Saut bas avec bonne forme avant d'aller haut
-
-> Un saut bien exécuté à faible hauteur vaut plus qu'un saut haut mal contrôlé. Toujours. Je te promets que les professeurs préfèrent le premier — et ton corps aussi.`,
-      },
-    ],
-  },
-
-  {
-    id: 'sous-styles-jazz',
-    titre: "Les sept sous-styles jazz — une carte pour s'orienter",
-    resume: "Comment naviguer dans le monde du jazz : les sept sous-styles différenciés, leurs caractéristiques, leurs pédagogues, leurs œuvres de référence et ce qui les distingue les uns des autres. J'ai passé des heures à cartographier tout ça dans mes carnets, alors profites-en — c'est cadeau.",
-    disciplines: ['jazz'],
-    termesAbordes: [
-      'sous-style-jazz-classique', 'sous-style-broadway', 'sous-style-fosse',
-      'sous-style-modern-jazz', 'sous-style-lyrical', 'sous-style-street-jazz', 'sous-style-afro-jazz',
-    ],
-    sections: [
-      {
-        titre: 'Pourquoi parler de sous-styles ?',
-        contenuMarkdown: `Le jazz est trop vaste pour être enseigné comme un bloc monolithique — et honnêtement, prétendre le contraire rendrait un mauvais service à tout le monde. Voilà pourquoi je tiens tant à ce chapitre dans mes carnets. C'est une des pages que j'ai le plus annotées, le plus raturées, le plus retravaillées.
-
-Parler de sous-styles permet de :
-- **Décrire précisément** ce qu'on danse ou ce qu'on cherche à apprendre
-- **Orienter le travail technique** : chaque sous-style a ses priorités
-- **Comprendre l'histoire** : les sous-styles reflètent des moments culturels différents
-- **Communiquer avec les professeurs et les directeurs artistiques**
-
-**Ce qui unit tous les sous-styles jazz :**
-- Héritage africain et afro-américain (à honorer, pas à effacer)
-- Musicalité et relation au rythme
-- Syncopation
-- Individualité dans l'expression
-
-**Ce qui les différencie :**
-- L'esthétique (élégant / brut / lyrique / sophistiqué)
-- La musique (jazz live / Broadway / pop contemporaine)
-- La technique prioritaire (isolations / fluidité / floorwork)
-- Le contexte d'origine (théâtre / clips / académique / communautaire)
-
-> Chaque sous-style est un monde cohérent — avec ses codes, ses maîtres, ses œuvres de référence. Et il n'y en a pas un meilleur que les autres. Aucun. Tu vas voir.`,
-      },
-      {
-        titre: 'Jazz classique et Broadway',
-        contenuMarkdown: `Ces deux sous-styles partagent une époque (1930–1970) mais des esthétiques bien distinctes. Ce sont les deux que j'ai découverts en premier, et je t'avoue que Broadway m'a conquis d'emblée — il y a quelque chose dans cette façon de projeter chaque mouvement jusqu'au fond de la salle qui m'a toujours fasciné.
-
----
-
-## Jazz classique
-
-**La période :** 1930–1960
-**La musique :** Jazz live, big band, bebop
-
-**Ce qui le définit :**
-- Musicalité au centre — les pas *répondent* à la musique jazz
-- Lignes élégantes, polycentrisme visible
-- Syncopation claire et lisible
-- Technique solide : turns, leaps, footwork
-
-**Figures fondatrices à connaître :**
-- **Jack Cole** : systématise les isolations, crée le langage du "theatrical jazz"
-- **Katharine Dunham** : intègre les danses caribéennes et africaines dans la danse concert — une pionnière incontournable, et j'insiste là-dessus
-- **Matt Mattox** : transmetteur de l'héritage Cole en Europe
-
----
-
-## Broadway jazz
-
-**La période :** 1940s à aujourd'hui
-**La musique :** Comédies musicales, chansons de show
-
-**Ce qui le définit :**
-- **Projection extrême** : chaque mouvement doit être vu du fond de salle
-- Bras en lignes nettes et fortes
-- Sens du spectacle et du jeu théâtral
-- Technique au service de la narration
-
-**Chorégraphes emblématiques :**
-- **Jerome Robbins** — West Side Story, Fiddler on the Roof : jazz narratif et précis
-- **Michael Bennett** — A Chorus Line : humanité et structure (ce spectacle me touche à chaque fois, vraiment)
-- **Gower Champion** — 42nd Street : tap meets Broadway jazz
-
----
-
-**Différence clé que je retiens — et que tu peux noter dans ton propre carnet :**
-- Jazz classique : la musique commande
-- Broadway jazz : l'histoire (le livret) commande`,
-      },
-      {
-        titre: 'Style Fosse et Modern jazz',
-        contenuMarkdown: `Deux styles qui poussent le jazz vers plus d'intériorité et de sophistication — et Fosse en particulier est quelque chose qui m'a fasciné pendant des années. J'ai des carnets entiers sur lui. Tu vas comprendre pourquoi.
-
----
-
-## Style Fosse
-
-**La période :** 1950–1987 (et ses influences encore très présentes)
-**La musique :** Broadway, jazz cool, cabaret
-
-**Les signatures visuelles — immédiatement reconnaissables :**
-- Coudes relevés, poignets cassés
-- Dos légèrement voûté
-- Regard en biais, regard oblique
-- Chapeau et canne comme extensions du corps
-- Séduction sophistiquée et ironique
-
-**L'esprit Fosse — et c'est là que l'histoire devient fascinante :**
-Bob Fosse cachait sa propre gêne physique (il était profondément auto-conscient de son corps) derrière un style qui sublimait ces traits en esthétique. Le résultat : une grammaire visuelle unique, immédiatement reconnaissable. C'est beau, comme idée — transformer ses complexes en langage artistique.
-
-**Œuvres incontournables :**
-- *Cabaret* (1972) — "Mein Herr", "Money Money"
-- *Chicago* (2002) — "All That Jazz", "Cell Block Tango"
-- *All That Jazz* (1979) — film autobiographique de Fosse
-
----
-
-## Modern jazz
-
-**La période :** 1960s–1980s (et toujours enseigné)
-**La musique :** Jazz et musique contemporaine
-
-**Ce qui le définit :**
-- Technique moderne intégrée (Graham, Limón, Cunningham)
-- Mouvement continu (*Never Stop Moving* — Luigi)
-- Moins de showmanship, plus d'exploration
-- Qualité du corps avant le spectacle
-
-**Pédagogues :**
-- **Luigi** : *Never Stop Moving*, souplesse et continuité — une approche qui a changé des générations de danseurs, et qui me touche beaucoup
-- **Gus Giordano** : Chicago, Giordano Dance Company
-- **Lynn Simonson** : technique centrée sur le corps sain
-
----
-
-**Différence clé :**
-- Fosse : le style *sur* le corps
-- Modern jazz : la technique *dans* le corps`,
-      },
-      {
-        titre: 'Lyrical, Street jazz et Afro-jazz',
-        contenuMarkdown: `Les trois sous-styles les plus actuels et les plus pratiqués dans les cours d'aujourd'hui. Trois mondes très différents — et j'ai un attachement particulier pour l'afro-jazz, parce qu'il dit quelque chose d'essentiel sur l'origine de tout ça.
-
----
-
-## Lyrical jazz
-
-**Ce que c'est :**
-Du jazz qui danse les *paroles* autant que le rythme.
-
-**Caractéristiques :**
-- Connexion directe avec les paroles ou la mélodie
-- Fluidité et transitions gracieuses
-- Expression émotionnelle authentique
-- Lignes longues, corps gracieux
-
-**Ce qui l'ancre dans le jazz (et non le contemporain) :**
-- Base technique jazz (ball change, jazz square, groove)
-- Souvent sur musique pop/R&B avec structure rythmique jazz
-
----
-
-## Street jazz / Urban jazz
-
-**Ce que c'est :**
-Du jazz qui a fusionné avec les danses urbaines — hip-hop, dancehall, waacking, krump.
-
-**Caractéristiques :**
-- Niveau bas permanent (knees bent, grounded)
-- Isolations sharps, chest pops, hip pops
-- Arm styling urbain
-- Attitude forte, confidence
-- Musique : hip-hop, R&B, trap, afropop
-
-**Ce qui le distingue du hip-hop pur :**
-Il garde une structure de formation et une chorégraphie apprise — le hip-hop est plus libre et cypher.
-
----
-
-## Afro-jazz
-
-**Ce que c'est :**
-Le jazz qui renoue explicitement avec ses origines africaines. Et ça me touche profondément, parce que ces origines ont trop longtemps été invisibilisées — dans l'histoire, dans les cours, dans les manuels.
-
-**Caractéristiques :**
-- Polycentrisme : plusieurs centres actifs simultanément
-- Pieds ancrés dans le sol, percussions avec les pieds
-- Relation intime avec les percussions
-- Bras amples et expressifs
-- Spirales, contractions, ondulations
-
-**Sa dimension politique :**
-L'afro-jazz nomme et célèbre ce qui a longtemps été effacé ou approprié — les origines africaines du jazz. C'est un acte culturel autant qu'artistique.
-
----
-
-**Tableau de synthèse — ma page préférée de mes carnets, celle que je montre à tout le monde :**
-
-| Sous-style | Musique | Énergie | Priorité |
+**Comparaison des trois — je la recopie ici parce que je la consulte souvent :**
+| | Flat back | Hinge | Ondulation |
 |---|---|---|---|
-| Jazz classique | Jazz live | Musicale | Footwork, synco |
-| Broadway | Comédie musicale | Projetée | Spectacle, narration |
-| Fosse | Cabaret, jazz cool | Intérieure | Style, sophistication |
-| Modern jazz | Contemporaine | Fluide | Technique, continuité |
-| Lyrical | Pop/R&B | Émotionnelle | Expression, fluidité |
-| Street jazz | Hip-hop/trap | Brute | Attitude, isolation |
-| Afro-jazz | Percussions | Ancrée | Polycentrisme, sol |`,
+| **Direction** | En avant / latéral | En arrière | Verticale |
+| **Colonne** | Droite | Droite | Séquentielle |
+| **Source** | Hanches | Genoux | Pieds / tête |
+
+---
+
+> Le buste en danse moderne n'est pas un bloc rigide qui se déplace dans l'espace. Il *parle* — chaque inclinaison, chaque vague, chaque torsion est une phrase du corps. Apprends sa grammaire.`,
       },
       {
-        titre: "Comment t'orienter dans ta pratique jazz",
-        contenuMarkdown: `Avec sept sous-styles, la question se pose naturellement : par où commencer ? Comment s'orienter ? Voilà ce que je dis à mes élèves quand ils me posent la question — et je la note ici pour toi.
+        titre: 'Les trois grandes techniques modernes — mes trois bibles',
+        contenuMarkdown: `Trois pédagogies ont structuré l'enseignement de la danse moderne et continuent d'être enseignées dans le monde entier. J'ai consacré un chapitre entier de mes carnets à chacune — voici ce que tu dois absolument retenir. Et si tu ne devais en étudier qu'une pour commencer, je te laisserais choisir : elles te diront chacune quelque chose de différent sur toi-même.
 
-**Conseil 1 — Le tronc commun d'abord**
-Avant de te spécialiser dans un sous-style, construis le tronc commun jazz :
-- Groove et musicalité
-- Ball change, jazz square, chassé
-- Isolations de base
-- Tours et sauts fondamentaux
+---
 
-**Conseil 2 — Suis tes goûts musicaux**
-Quelle musique te fait bouger naturellement ?
-- Hip-hop/trap → Street jazz
-- Grandes comédies musicales → Broadway jazz
-- Soul/R&B → Lyrical jazz
-- Percussions africaines → Afro-jazz
+## Technique Horton
 
-**Conseil 3 — Explore plusieurs styles**
-Même si tu te spécialises, explorer les autres sous-styles enrichit ta danse :
-- Le lyrical apporte la fluidité au street jazz
-- Le jazz classique apporte la précision au Broadway
-- L'afro-jazz apporte le polycentrisme à tous
+**Lester Horton** (1906–1953), Los Angeles.
 
-**Conseil 4 — Regarde les œuvres**
-Chaque sous-style a ses œuvres de référence. Les regarder est aussi important que les pratiquer — je l'écris dans tous mes carnets, sans exception :
-- *West Side Story* → Broadway jazz
-- *Chicago* (film) → Fosse
-- *So You Think You Can Dance* (saisons 1–5) → panorama des styles actuels
-- Alvin Ailey American Dance Theater → Jazz classique
-- Germaine Acogny → Afro-jazz
+**Principes :**
+- Anatomie d'abord — chaque exercice a une justification anatomique claire
+- Corps complet — toutes les parties, toutes les directions
+- Amplitude maximale
+- **Inclusivité** : Horton acceptait des danseurs de toutes origines à l'époque de la ségrégation. C'est un détail qui dit tout sur l'homme.
 
-**Conseil 5 — Comprends l'histoire**
-Chaque sous-style vient de quelque part. Comprendre son histoire, c'est l'honorer. Et c'est aussi se comprendre soi-même en tant que danseur.
+**Vocabulaire signature :** Hinges, flat backs, T-positions, latéraux en extension
 
-> Il n'y a pas de hiérarchie entre les sous-styles de jazz. Chacun est une façon d'être au monde à travers la danse. Et toi, tu trouveras le tien — j'en suis sûr.`,
+**Son élève le plus célèbre :** Alvin Ailey, qui a transmis la technique au monde entier via l'Alvin Ailey American Dance Theater — si tu ne connais qu'une compagnie de danse moderne, que ce soit celle-là.
+
+---
+
+## Technique Cunningham
+
+**Merce Cunningham** (1919–2009).
+
+**Principes radicaux — et je dis "radicaux" au sens littéral :**
+- **Dissociation** de la danse et de la musique (ils coexistent mais ne se synchronisent pas)
+- **Dissociation** de la danse et du sens (pas besoin d'exprimer une émotion)
+- Tous les points de l'espace ont la même valeur
+- Le **hasard** comme outil de composition
+
+**Caractéristiques techniques :**
+- Colonne mobile dans toutes directions
+- Jambes avec une virtuosité quasi-classique
+- Tête active et indépendante
+
+**Avec John Cage :** Cunningham et le compositeur Cage forment un des partenariats artistiques les plus féconds du XXe siècle. Leurs œuvres communes sont des œuvres d'art à part entière.
+
+---
+
+## Technique Limón
+
+**José Limón** (1908–1972), dans l'héritage de Doris Humphrey.
+
+**Principes :**
+- **Poids** : le corps utilise réellement son poids, sans illusion de légèreté
+- **Swing** : les membres oscillent en pendule — gravité + élan + suspension
+- **Succession** : l'impulsion voyage dans tout le corps
+- **Chute et récupération** : le mouvement vit entre l'équilibre et la chute
+
+**Dimension dramatique :**
+Les œuvres de Limón traitent de la condition humaine, de la liberté, de la résistance. Son héritage mexicain-américain nourrit une vision profondément humaniste — et ça s'entend dans chaque pas.
+
+---
+
+> Ces trois techniques ne sont pas des concurrentes — elles explorent trois visions du corps en mouvement. Un danseur moderne complet les connaît toutes les trois. Et honnêtement, chacune t'apprend quelque chose que les autres ne peuvent pas te donner.`,
+      },
+      {
+        titre: 'Canon et unisson — composer avec le temps',
+        contenuMarkdown: `La danse moderne a apporté une réflexion nouvelle sur la **composition chorégraphique** — comment organiser les corps dans l'espace et le temps. J'ai deux outils fondamentaux à te présenter : le canon et l'unisson. Des outils simples en apparence, redoutablement complexes à maîtriser — et terriblement beaux quand ils sont bien utilisés.
+
+---
+
+## L'unisson
+
+Tous les danseurs réalisent exactement le même mouvement au même moment.
+
+**Ce qui rend l'unisson difficile :**
+- Chaque corps a son propre timing naturel — il faut apprendre à l'ajuster
+- Les amplitudes diffèrent selon les corps
+- Il faut une **écoute musicale collective** — tous respirent ensemble, littéralement
+
+**Unisson vs uniformité — une distinction que j'aime beaucoup :**
+- L'uniformité vise la ressemblance mécanique des formes
+- L'unisson aspire à une **respiration commune** — l'énergie circule au même instant dans tous les corps
+
+**L'effet visuel :**
+La puissance de plusieurs corps animés par la même impulsion simultanée. C'est l'un des effets les plus saisissants en danse de groupe.
+
+---
+
+## Le canon
+
+Plusieurs danseurs réalisent la même phrase à des **moments différents** — avec un décalage précis.
+
+**Types de canon :**
+- **Canon strict** : décalage fixe (ex : tous les 8 temps)
+- **Canon libre** : décalages variables
+- **Canon en miroir** : la phrase est aussi retournée (droite/gauche)
+- **Canon en augmentation** : la phrase est ralentie chez certains danseurs
+
+**Ce que le canon crée visuellement :**
+- Une impression de **vague** qui traverse le groupe
+- La structure de la phrase mise en valeur (on la voit plusieurs fois, sous des angles différents)
+- La possibilité de remplir l'espace avec peu de matériel
+- Une **conversation** entre les danseurs
+
+**Référence incontournable — je l'ai dans mes carnets avec trois étoiles :**
+*Fase* d'Anne Teresa De Keersmaeker et Steve Reich (1982) — un chef-d'œuvre de canon où deux danseuses exécutent la même phrase avec un léger décalage pendant toute la durée de la pièce. Regarde-la. Tu ne pourras plus jamais voir un canon de la même façon.
+
+---
+
+## L'opposition des membres
+
+En plus du canon et de l'unisson, l'opposition est un outil de composition *dans* un seul corps : deux parties qui s'étirent simultanément dans des directions opposées. Elle crée de l'espace, de la tension linéaire, et stabilise le mouvement.
+
+---
+
+> Canon et unisson sont les deux faces d'une même médaille : comment les corps communiquent à travers le temps — ensemble ou en décalé. Avec ces deux outils et une bonne phrase de mouvement, tu peux faire une pièce entière. C'est ça qui est beau dans la composition.`,
       },
     ],
   },

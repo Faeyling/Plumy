@@ -2,357 +2,520 @@ import type { Terme } from '../schema'
 
 export const termesUnite5: Terme[] = [
 
-  // ─── Isolations et segmentation ───────────────────────────────────────────
+  // ─── Concepts fondamentaux ────────────────────────────────────────────────
 
   {
-    id: 'isolation',
-    nom: 'Isolation corporelle',
-    alias: ['isolations', 'isolation de tête', 'isolation des épaules', 'isolation des hanches'],
-    disciplines: ['moderne', 'jazz'],
+    id: 'release-technique',
+    nom: 'Release technique',
+    alias: ['release', 'technique release', 'danse release'],
+    disciplines: ['contemporain'],
+    categories: ['concepts'],
+    definition: "Approche de la danse développée dans les années 1960–1970 qui privilégie l'économie d'effort, le relâchement des tensions inutiles, la conscience somatique et l'utilisation intelligente de la gravité plutôt que la force brute.",
+    description: "La release technique est une philosophie autant qu'une technique. Elle naît en réaction aux techniques expressionnistes (Graham, Limón) jugées trop rigides et à l'approche académique du ballet.\n\n**Principes fondamentaux :**\n- **Relâchement des tensions non nécessaires** : identifier et libérer les contractions musculaires parasites\n- **Utilisation de la gravité** : laisser le poids tomber plutôt que le soulever\n- **Efficacité du mouvement** : chercher le moins d'effort pour le plus d'effet\n- **Conscience proprioceptive** : développer une connaissance fine de l'intérieur du corps\n- **Anatomie fonctionnelle** : comprendre la structure osseuse et musculaire pour bouger plus intelligemment\n\n**Les pionniers :**\n- **Mabel Todd** (auteure de *The Thinking Body*, 1937) pose les bases théoriques\n- **Barbara Clark** et **André Bernard** développent l'idéokinèse\n- **Joan Skinner** crée la Skinner Releasing Technique dans les années 1960\n- Les danseurs de Judson Church (Trisha Brown, Steve Paxton) intègrent ces principes\n\n**Différence avec la technique Graham :**\n- Graham : tonus élevé, contraction active, tension expressive\n- Release : tonus minimum nécessaire, relâchement actif, fluidité",
+    erreursCourantes: [
+      "Confondre 'release' avec 'absence de tonus' — il faut juste le tonus nécessaire, pas zéro.",
+      "Croire que la release technique est facile parce qu'elle semble moins acrobatique.",
+      "Oublier l'intention artistique au profit du seul confort physique.",
+    ],
+    conseils: [
+      "Scan ton corps depuis les pieds jusqu'au sommet de la tête. Repère les zones où tu tiens sans raison — mâchoire, épaules, ventre. Relâche-les. Ton mouvement sera immédiatement plus grand et plus libre.",
+    ],
+    etymologie: "De l'anglais 'release' (libération, relâchement) — s'opposant à la 'tension' ou au 'hold'. L'ajout de 'technique' souligne que le relâchement est ici travaillé, pas subi.",
+    difficulteInterne: 2,
+    termesLies: ['poids-abandon', 'gravite-contemporain', 'somatique', 'fluidite-mouvement'],
+  },
+
+  {
+    id: 'poids-abandon',
+    nom: 'Poids et abandon',
+    alias: ['abandon du poids', 'laisser aller le poids', 'weight sharing'],
+    disciplines: ['contemporain'],
     categories: ['concepts', 'qualites-de-mouvement'],
-    definition: "Mouvement d'une seule partie du corps — tête, épaules, cage thoracique, bassin, genoux — pendant que le reste reste immobile. Technique fondamentale de la danse moderne et du jazz, héritée des danses afro-américaines.",
-    description: "L'isolation est la capacité de faire bouger une partie du corps indépendamment des autres. C'est l'une des grandes différences avec la danse classique, où le corps est traité comme une unité.\n\n**Les zones d'isolation principales :**\n\n| Zone | Mouvements possibles |\n|------|---------------------|\n| **Tête** | Droite/gauche, haut/bas, rotation, cercle |\n| **Épaules** | Avant/arrière, haut/bas, rotation |\n| **Cage thoracique** | Droite/gauche, avant/arrière, rotation |\n| **Bassin / hanches** | Droite/gauche, avant/arrière, rotation, figure-8 |\n| **Genoux** | Avant/arrière isolé |\n\n**Origine africaine :**\nLes isolations viennent directement des traditions de danse d'Afrique de l'Ouest, où le **polycentrisme** — plusieurs centres du corps actifs et indépendants simultanément — est un principe fondamental. Les danses yoruba, mandingues et d'autres traditions ont apporté cette culture du corps aux Amériques.\n\n**Jack Cole** est le premier à systématiser les isolations dans un contexte de formation jazz-moderne (années 1940–1950). Bob Fosse les pousse à leur extrême dans ses chorégraphies de Broadway.\n\n**Qualité de l'isolation :**\nUne isolation est dite 'propre' quand seule la partie désignée bouge. Un épaule qui monte doit laisser la tête, l'autre épaule et le buste totalement immobiles.",
+    definition: "Principe chorégraphique consistant à utiliser le poids réel du corps — en le laissant tomber, rouler, basculer — plutôt que de le maintenir ou le soulever. L'abandon est la confiance donnée à la gravité et, en duo, à l'autre danseur.",
+    description: "En danse classique, le corps est toujours *tenu* — l'illusion de légèreté passe par un effort constant pour résister à la gravité. En danse contemporaine, cette résistance peut être abandonnée intentionnellement.\n\n**L'abandon du poids en solo :**\n- La tête part en avant, le corps suit\n- Le bras lancé entraîne le torse\n- Le plié s'approfondit sans résistance\n- La chute vers le sol n'est pas freinée, elle est accueillie\n\n**L'abandon du poids en duo :**\n- Donner réellement son poids à quelqu'un (et pas simuler)\n- Faire confiance à la capacité de l'autre à le recevoir\n- Cette confiance mutuelle est le fondement du **contact improvisation**\n\n**Doris Humphrey** fonde toute sa technique sur ce principe : la danse vit entre l'équilibre et la chute — entre le contrôle et l'abandon. La vie elle-même est cette tension permanente.\n\n**Sensations recherchées :**\n- Lourdeur des membres\n- Fluidité dans les transitions\n- Sensation de tomber *dans* le sol plutôt que de le fuir",
     erreursCourantes: [
-      "Corps qui compense (si le bassin bouge à droite, l'épaule part à gauche involontairement).",
-      "Amplitude insuffisante — l'isolation doit aller jusqu'au bout du mouvement.",
-      "Raideur dans les zones supposées immobiles — tension parasite.",
+      "Simuler l'abandon sans lâcher réellement le contrôle musculaire.",
+      "En duo, retenir son poids par peur de 'faire mal' à l'autre — c'est la retenue qui crée le déséquilibre.",
+      "Confondre abandon et effondrement — l'abandon a une direction et une intention.",
     ],
     conseils: [
-      "Pose les deux mains sur tes hanches pour les sentir. Maintenant, déplace uniquement la cage thoracique à droite — les hanches restent sous tes mains, immobiles. Si elles bougent, tu as perdu l'isolation.",
+      "Commence par laisser tomber ta tête. Vraiment tomber — sens son poids réel. Ensuite laisse ce poids voyager dans la nuque, les épaules, le dos. L'abandon se répand comme une vague.",
     ],
+    etymologie: "Mot hybride de la danse contemporaine francophone : 'poids' du latin *pondus* (ce qui pèse), et 'abandon' du vieux français *a bandon* (mettre à disposition, laisser aller). L'association dit tout : laisser son poids aller librement.",
     difficulteInterne: 2,
-    etymologie: "Du latin *insula* (île) → *insulare* → français 'isoler'. En danse, isoler une partie du corps c'est en faire une 'île' : un territoire indépendant qui bouge sans entraîner les continents voisins.",
-    termesLies: ['polycentrisme', 'travail-bassin', 'succession-corporelle'],
+    termesLies: ['fall-recovery', 'gravite-contemporain', 'partage-poids', 'contact-improvisation'],
   },
 
   {
-    id: 'succession-corporelle',
-    nom: 'Succession corporelle',
-    alias: ['mouvement séquentiel', 'body wave', 'succession', 'ondulation séquentielle'],
-    disciplines: ['moderne', 'contemporain'],
-    categories: ['qualites-de-mouvement'],
-    definition: "Propagation séquentielle d'une impulsion à travers les segments du corps, chaque partie activant la suivante dans une chaîne continue — comme une vague qui parcourt le corps de bas en haut ou d'une extrémité à l'autre.",
-    description: "La succession est le principe fondamental du mouvement fluide en danse moderne. Elle s'oppose au mouvement en 'bloc' (toutes les parties bougent ensemble).\n\n**Deux types de succession :**\n\n**Succession verticale (body wave) :**\n- Part des pieds (plié), remonte aux genoux, aux hanches, au buste, aux épaules, à la tête et aux bras\n- Comme une vague océanique\n- Peut aussi descendre (de la tête vers les pieds)\n\n**Succession horizontale :**\n- L'impulsion part d'un côté et parcourt le corps vers l'autre\n- Exemple : l'épaule droite s'avance, entraîne la cage, puis le bassin, puis la jambe\n\n**Succession dans le bras :**\n- L'épaule initie, le coude suit, le poignet suit, les doigts terminent\n- Ou dans l'autre sens : les doigts initient, le poignet suit...\n\n**Différence avec la spirale (U3) :**\n- La spirale ajoute une composante rotationnelle\n- La succession pure est une propagation dans un axe donné\n\n**Ce qui crée la beauté de la succession :**\nL'impression que le corps est habité par une onde — chaque segment répond au précédent avec un léger décalage.",
-    erreursCourantes: [
-      "Sauter des segments — la succession doit être continue et inclure toutes les articulations.",
-      "Trop de délai entre chaque segment (la succession devient décousu).",
-      "Isolation d'une partie sans propagation — commencer la succession mais ne pas la laisser voyager.",
-    ],
-    conseils: [
-      "Imagine une vague qui rentre dans la mer. Elle commence aux pieds (plié léger), monte doucement à travers tes genoux, ton bassin, ta colonne, tes épaules — jusqu'à tes doigts qui terminent le voyage. Répète jusqu'à sentir l'eau dans ton corps.",
-    ],
-    difficulteInterne: 2,
-    termesLies: ['isolation', 'undulation', 'polycentrisme'],
-  },
-
-  {
-    id: 'opposition-corps',
-    nom: 'Opposition des membres',
-    alias: ['opposition', 'contre-mouvement', 'opposition bras-jambes'],
-    disciplines: ['moderne', 'contemporain'],
-    categories: ['concepts', 'qualites-de-mouvement'],
-    definition: "Principe selon lequel deux parties du corps s'étirent simultanément dans des directions opposées, créant une tension linéaire qui allonge et dynamise le mouvement. Fondement de l'équilibre en mouvement.",
-    description: "L'opposition est ce qui empêche le corps de s'effondrer sur lui-même. Elle crée de l'espace, de la tension et de la longueur dans le mouvement.\n\n**Opposition naturelle dans la marche :**\nQuand la jambe droite avance, le bras gauche avance — c'est l'opposition naturelle du mouvement humain. La danse moderne amplifie et conscientise cette opposition.\n\n**Oppositions en danse moderne :**\n\n**Opposition verticale :**\n- Le sommet de la tête s'étire vers le haut\n- Le coccyx s'étire vers le bas\n- La colonne s'allonge entre les deux\n\n**Opposition latérale :**\n- Le bras droit s'étire à droite\n- Le bras gauche s'étire à gauche\n- Le corps s'élargit\n\n**Opposition diagonale (la plus courante en mouvement) :**\n- Le bras droit en avant / la jambe gauche en arrière\n- Le bras gauche en haut / le côté droit du bassin vers le bas\n\n**Dans la technique Limón :**\nLes oppositions sont extrêmes et expressives — le corps semble déchiré entre des forces contraires, ce qui crée une intensité dramatique.\n\n**Rôle fonctionnel :**\nLes oppositions stabilisent le corps en mouvement — elles créent un équilibre dynamique.",
-    erreursCourantes: [
-      "Étirer une direction sans activer l'opposition (le corps s'affaisse de l'autre côté).",
-      "Oppositions trop timides — elles doivent être engagées, presque exagérées.",
-    ],
-    conseils: [
-      "Prends conscience de l'opposition en marchant normalement. Exagère-la progressivement — bras de plus en plus loin, jambes de plus en plus étirées vers l'arrière. Tu fais de la danse moderne.",
-    ],
-    difficulteInterne: 2,
-    termesLies: ['torsion', 'succession-corporelle', 'flat-back'],
-  },
-
-  // ─── Travail du buste ─────────────────────────────────────────────────────
-
-  {
-    id: 'flat-back',
-    nom: 'Flat back',
-    alias: ['dos plat', 'inclinaison dos plat', 'flat'],
-    disciplines: ['moderne', 'jazz'],
+    id: 'gravite-contemporain',
+    nom: 'La gravité comme outil',
+    alias: ['rapport à la gravité', 'utilisation de la gravité', 'gravité en danse'],
+    disciplines: ['contemporain'],
     categories: ['concepts'],
-    definition: "Position dans laquelle le torse s'incline depuis les hanches en maintenant la colonne parfaitement droite et horizontale, formant un angle de 90° avec les jambes. Terme anglais universellement utilisé dans les cours de danse moderne et jazz.",
-    description: "Le flat back est l'une des positions les plus caractéristiques de la danse moderne — et des plus délicates à exécuter correctement.\n\n**Exécution :**\n1. Debout, pied à largeur des hanches\n2. Basculer le torse en avant depuis les hanches (pliage de hanche, pas de la taille)\n3. Le dos reste plat et parallèle au sol\n4. La tête prolonge la ligne du dos (regard vers le sol, légèrement en avant)\n5. Les bras peuvent être dans le prolongement du dos, vers le ciel ou en d'autres positions\n\n**Plié en flat back :**\nVariante debout avec genoux légèrement fléchis — permet de travailler plus profondément dans les ischio-jambiers.\n\n**Flat back latéral :**\nInclinaison latérale du buste (pas en avant mais sur le côté), en maintenant la colonne droite.\n\n**Différence flat back / contraction Graham :**\n- Flat back : colonne droite, inclinaison depuis les hanches\n- Contraction Graham : colonne arrondie en C, creusement du ventre\n\n**Ce que le flat back développe :**\n- Souplesse et conscience des ischio-jambiers\n- Force et stabilité lombaire\n- Conscience de l'axe de la colonne\n- Contrôle du basculement pelvien",
+    definition: "En danse contemporaine, la gravité n'est pas un obstacle à vaincre (comme en ballet) mais une force à utiliser, dialoguer avec, ou laisser agir. Ce rapport inversé à la gravité est l'une des révolutions de la danse du XXe siècle.",
+    description: "**Deux visions de la gravité en danse :**\n\n| Ballet classique | Danse contemporaine |\n|-----------------|--------------------|\n| La gravité est l'ennemie | La gravité est alliée |\n| On la surmonte (légèreté, élévation) | On l'utilise (chute, poids, ancrage) |\n| Le sol est un point de départ/arrivée | Le sol est un espace de danse |\n| L'élévation est valorisée | La profondeur est valorisée |\n\n**Comment utiliser la gravité :**\n\n**1. La chute :** laisser le corps descendre sans freiner, et trouver une issue créative à l'impact\n\n**2. L'ancrage :** s'enfoncer dans le sol pour en tirer de la force (comme un arbre dont les racines donnent la stabilité)\n\n**3. Le swing :** le bras qui oscille utilise son propre poids comme pendule — la gravité est le moteur du swing\n\n**4. L'ondulation :** une vague qui parcourt le corps du bas vers le haut (ou l'inverse) utilise le poids de chaque segment\n\n**Isadora Duncan** est la première à verbaliser ce rapport : 'Je n'ai jamais fait que suivre la loi de la gravitation — qui est la loi de l'amour.'",
     erreursCourantes: [
-      "Arrondir le dos (la colonne part en C au lieu de rester droite).",
-      "Le plié de hanches depuis la taille (un niveau trop haut) — le pliage part des hanches.",
-      "Tête qui tombe vers le bas au lieu de rester dans la ligne de la colonne.",
-    ],
-    securite: {
-      risques: ["Tension lombo-sacrée si le dos n'est pas maintenu droite", "Douleur aux ischio-jambiers si forcé sans échauffement"],
-      precautions: ["Échauffer les ischio-jambiers avant le flat back profond", "Contrôle du placement pelvien (pas de bascule excessive)"],
-    },
-    conseils: [
-      "Imagine une planche sur ton dos. Elle te force à rester droit. Maintenant penche-toi en avant depuis tes hanches — la planche reste horizontale. Voilà le flat back.",
-    ],
-    etymologie: "De l'anglais 'flat' (plat, horizontal) et 'back' (dos). La dénomination anglaise s'est imposée mondialement dans les cours de danse moderne et jazz, même dans les pays francophones.",
-    difficulteInterne: 2,
-    termesLies: ['hinge', 'undulation', 'table-moderne'],
-  },
-
-  {
-    id: 'hinge',
-    nom: 'Hinge',
-    alias: ['inclinaison Horton', 'inclinaison arrière', 'back hinge'],
-    disciplines: ['moderne'],
-    categories: ['concepts'],
-    definition: "Inclinaison du buste en arrière depuis les genoux, le corps formant une ligne diagonale rigide de genoux à tête, comme une charnière. Position emblématique de la technique Lester Horton.",
-    description: "Le hinge (anglais = charnière, gond) est une position spectaculaire et très exigeante de la technique Horton.\n\n**Exécution du hinge arrière :**\n1. Debout en première parallèle, genoux en légère flexion\n2. Depuis les genoux (pas depuis la taille), incliner tout le corps vers l'arrière\n3. La ligne genou-hanche-épaule-tête reste droite\n4. Les pieds restent à plat sur le sol\n5. Les bras peuvent s'ouvrir vers les côtés, vers le haut ou dans différentes positions\n\n**Amplitude possible :** De quelques degrés à une inclinaison quasi horizontale chez les pratiquants avancés.\n\n**Hinge latéral :**\nVariante où le corps s'incline sur le côté depuis les genoux — plus accessible que le hinge arrière.\n\n**Ce qui rend le hinge unique :**\n- Le corps forme une ligne d'un seul bloc (pas de brisure à la taille)\n- La source du mouvement est dans les genoux, pas dans le dos\n- Exige une grande force des quadriceps et une bonne conscience du gainage\n\n**Dans la technique Horton :**\nLester Horton (1906–1953) développe une technique centrée sur l'anatomie et la compréhension fonctionnelle du corps. Les hinges, les laterals et les flat backs sont ses positions signature.",
-    erreursCourantes: [
-      "S'incliner depuis la taille (cassure visible) au lieu des genoux (ligne droite).",
-      "Genoux qui se poussent vers l'avant (valgus) pendant l'inclinaison.",
-      "Revenir trop vite — contrôler la montée autant que la descente.",
-    ],
-    securite: {
-      risques: ["Pression lombaire si le gainage est insuffisant", "Hyperpression des genoux si mal alignés"],
-      precautions: ["Gainage abdominal actif pendant tout le hinge", "Genoux alignés dans l'axe des orteils (pas de valgus)"],
-    },
-    conseils: [
-      "Débout contre un mur, les pieds à 30 cm du mur. Glisse ton dos vers le bas en gardant tout le corps droit. Ce contact avec le mur t'aide à sentir la ligne du hinge.",
-    ],
-    difficulteInterne: 3,
-    etymologie: "De l'anglais 'hinge' (charnière, gond) — le corps s'ouvre comme une porte depuis les genoux.",
-    termesLies: ['flat-back', 'technique-horton', 'lunge-moderne'],
-  },
-
-  {
-    id: 'undulation',
-    nom: 'Ondulation',
-    alias: ['undulation', 'body wave verticale', 'vague corporelle', 'onde'],
-    disciplines: ['moderne', 'contemporain'],
-    categories: ['qualites-de-mouvement'],
-    definition: "Vague qui parcourt le corps verticalement (bas vers haut ou haut vers bas) en passant par toutes les articulations de façon séquentielle et fluide, créant une impression d'onde continue.",
-    description: "L'ondulation est la succession dans sa forme la plus visible — une vague qui parcourt le corps de pied en cap.\n\n**Ondulation ascendante (la plus courante) :**\n1. Légère flexion des genoux (début de la vague)\n2. Le bassin s'avance légèrement\n3. Le bas du dos s'arrondit puis s'étend\n4. La cage thoracique s'avance\n5. Les épaules suivent\n6. La tête termine en extension légère\n\n**Ondulation descendante :**\nLe sens inverse — de la tête vers les pieds.\n\n**L'undulation de poitrine (chest roll) :**\nVersion réduite : la cage thoracique seule effectue une vague avant-arrière.\n\n**Utilisations dans les danses :**\n- Danse moderne : transition, qualité de mouvement, expression\n- Jazz : introduction à des phrases, lien entre pas\n- Danses du monde : présente dans les danses africaines, orientales\n- Pole dance : technique de base\n\n**Ce qui fait la beauté de l'ondulation :**\nL'impression de continuité — aucun segment ne s'arrête avant que le suivant commence.",
-    erreursCourantes: [
-      "Faire 3 segments (genoux, bassin, épaules) au lieu d'une vague continue à travers toute la colonne.",
-      "Tête en avant trop tôt (avant les épaules).",
-      "Amplitude trop petite pour être visible.",
+      "Aller 'vers le bas' sans intention — la gravité est utilisée, pas subie.",
+      "Confondre s'ancrer et s'effondrer — l'ancrage maintient une présence active.",
     ],
     conseils: [
-      "Allonge-toi sur le dos et fait une 'table' (genoux pliés). Décolle ton bassin du sol, puis le bas du dos, puis le haut du dos, vertèbre par vertèbre. Redescends dans l'ordre. C'est l'ondulation en position couchée — sentir d'abord, puis mettre debout.",
-    ],
-    etymologie: "Du latin *undula* (petite vague), de *unda* (onde, vague). L'ondulation reproduit dans le corps la propagation d'une vague — chaque segment s'active après le précédent, comme des rouleaux successifs.",
-    difficulteInterne: 2,
-    termesLies: ['succession-corporelle', 'flat-back', 'isolation'],
-  },
-
-  {
-    id: 'table-moderne',
-    nom: 'Position table',
-    alias: ['flat back horizontal', 'table top', 'position horizontale'],
-    disciplines: ['moderne'],
-    categories: ['concepts'],
-    definition: "Position dans laquelle le torse est incliné à 90°, dos plat et parallèle au sol, comme la surface d'une table. Peut s'effectuer debout (jambes tendues ou fléchies) ou à quatre appuis.",
-    description: "La position table est le flat back poussé à son maximum — un angle de 90° entre les jambes et le torse.\n\n**Table debout :**\n- Flat back complet, buste horizontal, tête dans le prolongement du dos\n- Peut intégrer des bras tendus devant, sur les côtés ou vers le haut\n- Exige une grande souplesse et force des ischio-jambiers\n\n**Table à quatre appuis :**\n- Genoux et mains au sol\n- Le dos reste plat (ni creusé ni arrondi)\n- Mobilisation : on peut passer de la table à la contraction arrondie (dos de chat)\n- Exercice courant en début de cours de contemporain ou moderne\n\n**Utilisations chorégraphiques :**\n- Comme surface pour un partenaire (portés)\n- Comme position de départ d'une roulade ou d'une chute\n- Comme moment de suspension dans une phrase (l'image est forte)\n\n**La neutralité de la colonne en table :**\nLe dos n'est ni creusé (hyperlordose) ni arrondi (cyphose) — il est en position neutre, ce qui exige un engagement abdominal léger.",
-    erreursCourantes: [
-      "Dos creusé (lordose lombaire accentuée) au lieu d'être plat.",
-      "Genoux hyperstendus en position table debout — légère flexion est acceptable.",
-      "Tête qui pend vers le bas — elle reste dans l'axe de la colonne.",
-    ],
-    conseils: [
-      "En table à quatre appuis : pose un verre imaginaire sur ton dos. Il ne doit pas glisser ni tomber. C'est la colonne neutre — ni trop creusée ni trop arrondie.",
-    ],
-    difficulteInterne: 2,
-    termesLies: ['flat-back', 'floorwork', 'lunge-moderne'],
-  },
-
-  {
-    id: 'lunge-moderne',
-    nom: 'Lunge / Fente',
-    alias: ['lunge', 'fente avant', 'fente basse', 'position de fente'],
-    disciplines: ['moderne', 'jazz'],
-    categories: ['pas'],
-    definition: "Grand pas en avant ou sur le côté avec flexion profonde du genou avant, la jambe arrière tendue derrière. Position de force et d'ancrage très utilisée en danse moderne comme base de travail ou transition.",
-    description: "Le lunge (de l'anglais) ou fente est une position fondamentale qui croise la danse, le fitness et les arts martiaux.\n\n**Lunge avant (le plus courant) :**\n- Grand pas en avant, genou avant en flexion à 90° (ou moins)\n- Jambe arrière tendue, talon décolé ou au sol selon l'exercice\n- Le genou avant ne dépasse pas les orteils\n- Corps vertical ou légèrement incliné\n\n**Lunge bas (deep lunge) :**\n- Le genou arrière touche ou frôle le sol\n- Plus grande amplitude de mouvement à la hanche\n- Étirement fort du psoas\n\n**Lunge latéral :**\n- Grand pas sur le côté, genou qui fléchit, autre jambe tendue\n- Étirement des adducteurs de la jambe tendue\n\n**Utilisations en danse moderne :**\n- Comme position d'arrivée après un déplacement\n- Comme position de départ pour un saut ou un tour\n- Dans les portés (le porteur en lunge reçoit le poids)\n- En combinaison avec flat back ou hinge pour des positions expressives\n\n**Qualité du lunge en danse :**\nContrairement au lunge sportif, le lunge en danse est aussi une position expressive — l'orientation du regard, des bras et du buste lui donne son sens artistique.",
-    erreursCourantes: [
-      "Genou qui dépasse les orteils (hyperpression du genou avant).",
-      "Bassin qui tourne ou bascule (alignement perdu).",
-      "Corps qui s'effondre vers l'avant — maintenir la verticalité du buste.",
-    ],
-    securite: {
-      risques: ["Syndrome fémoro-patellaire (genou en valgus ou dépassement des orteils)", "Tension au psoas-iliaque si le lunge bas est forcé"],
-      precautions: ["Aligner genou-2ème orteil", "Échauffer psoas et quadriceps avant les lunges profonds"],
-    },
-    conseils: [
-      "En lunge, imagine un fil qui remonte depuis le sommet de ta tête. Il t'empêche de t'effondrer vers l'avant. Ton genou peut fléchir, mais ton buste reste droit et fier.",
+      "Assieds-toi sur une chaise et laisse vraiment ton poids s'installer dans le siège. Sens la terre sous toi. Cet ancrage — ce dialogue avec la gravité — est la base de tout mouvement contemporain.",
     ],
     difficulteInterne: 1,
-    termesLies: ['flat-back', 'table-moderne', 'hinge'],
+    termesLies: ['poids-abandon', 'fall-recovery', 'suspension', 'floorwork'],
   },
 
   {
-    id: 'travail-bassin',
-    nom: 'Travail du bassin',
-    alias: ['isolation pelvienne', 'bassin', 'pelvis work', 'hip work'],
-    disciplines: ['moderne', 'jazz'],
+    id: 'contraction-release',
+    nom: 'Contraction et release',
+    alias: ['contraction Graham', 'contraction-extension', 'contraction release technique'],
+    disciplines: ['contemporain', 'moderne'],
     categories: ['concepts', 'qualites-de-mouvement'],
-    definition: "Ensemble des mouvements d'isolation et de mobilisation du bassin (pelvis) — bascule avant-arrière, déplacement latéral, rotation, figure-8 — libérant une partie du corps souvent maintenue rigide dans la danse classique.",
-    description: "En danse classique, le bassin est maintenu neutre et 'sous contrôle' en permanence. En danse moderne et jazz, le bassin devient un centre expressif actif.\n\n**Les axes du bassin :**\n\n**Bascule avant-arrière (antéversion/rétroversion) :**\n- Antéversion : le bas du dos se creuse (bassin bascule en avant)\n- Rétroversion : le bas du dos s'arrondit (bassin bascule en arrière)\n\n**Déplacement latéral :**\n- Le bassin glisse à droite ou à gauche sans incliner le buste\n- Isolation pure\n\n**Rotation du bassin :**\n- Le bassin tourne dans le plan horizontal\n- Les épaules restent face (opposition)\n\n**La figure-8 (huit du bassin) :**\n- Combinaison de déplacement latéral et de bascule avant-arrière\n- Trace un 8 dans l'espace\n- Centrale dans les danses orientales (danse du ventre) et présente en jazz\n\n**Origines culturelles :**\nLe travail du bassin vient des danses africaines et afro-caribéennes. Son intégration en danse moderne (notamment par Martha Graham) et en jazz est un acte de reconnaissance de ces héritages.",
+    definition: "Principe technique central de la danse Graham : la contraction est une concavité active du centre du corps (abdomen, dos) calquée sur l'expiration, le release est son opposé convexe calqué sur l'inspiration. Ces deux états alternés génèrent le mouvement.",
+    description: "**Martha Graham** développe ce principe à partir des années 1920 comme alternative au mouvement classique. Pour elle, le mouvement ne part pas des pieds ni des bras, mais du **plexus solaire** — le centre émotionnel et physique du corps.\n\n**La contraction :**\n- Le bas-ventre et le bas du dos se creusent\n- La colonne se curve en C (surtout dans le bas du dos)\n- Associée à l'expiration\n- Sensation : se refermer sur soi, recueillir\n- Usage expressif : douleur, intériorité, combat intérieur\n\n**Le release :**\n- L'inverse de la contraction : le corps s'ouvre, se développe\n- La colonne s'allonge, le sternum se soulève\n- Associée à l'inspiration\n- Sensation : s'ouvrir, s'élancer, se libérer\n- Usage expressif : joie, aspiration, extériorité\n\n**Applications :**\n- Contraction assise au sol (position emblématique Graham)\n- Contraction debout avec appui sur jambe tendue\n- Séquence de contractions en mouvement (traveling contractions)\n- Contraction en arabesque (dos en C, jambe levée)\n\n> Pour Graham, la contraction n'est pas une crispation — c'est un engagement profond et actif du centre. La différence entre crampe et contraction, c'est l'intention.",
     erreursCourantes: [
-      "Compenser le déplacement du bassin avec le buste (qui doit rester immobile).",
-      "Retenir la respiration — le travail du bassin s'accompagne naturellement de la respiration.",
-      "Blocage psychologique face à un mouvement jugé 'trop sensuel' — neutraliser l'affect pour étudier le mouvement.",
+      "Contracter seulement les abdominaux (comme un exercice de gainage) — la contraction Graham engage tout le bas du dos.",
+      "Bloquer la respiration pendant la contraction — elle doit correspondre à l'expiration.",
+      "Release sans intention — le release est un état actif, pas un relâchement passif.",
     ],
     conseils: [
-      "Pour isoler le bassin : assieds-toi sur une chaise. Tu ne peux bouger QUE le bassin — le reste est limité par le dossier et le siège. C'est l'isolation pelvienne pure. Ensuite, retrouve cette même isolation debout.",
+      "Expire lentement et laisse ton ventre se creuser vers ta colonne, laisse ton bas du dos s'arrondir. C'est la contraction. Inspire et retrouve ta verticalité. C'est le release. Répète jusqu'à sentir que c'est ta respiration qui crée le mouvement.",
     ],
     difficulteInterne: 2,
-    termesLies: ['isolation', 'polycentrisme', 'undulation'],
+    etymologie: "Termes anglais adoptés en français dans la pratique : 'contraction' (tension musculaire active en creux) et 'release' (libération, relâchement).",
+    termesLies: ['release-technique', 'poids-abandon', 'spirale', 'floorwork'],
   },
 
   {
-    id: 'polycentrisme',
-    nom: 'Polycentrisme',
-    alias: ['corps polycentrique', 'multi-centrage', 'multiple centers'],
-    disciplines: ['moderne', 'jazz'],
-    categories: ['concepts'],
-    definition: "Principe de danse dans lequel plusieurs parties du corps agissent simultanément comme centres autonomes de mouvement, chacune avec sa propre énergie et direction. Héritage des traditions de danse africaine.",
-    description: "En opposition au **monocentrisme** du ballet classique (où tout le corps rayonne depuis un axe central vertical unique), le polycentrisme propose que le bassin, la tête, la cage thoracique et les membres peuvent chacun être un centre de mouvement indépendant et simultané.\n\n**Origines africaines :**\nLes danses d'Afrique de l'Ouest (yoruba, ewe, mandingue) sont polycentriques par nature — plusieurs percussions, plusieurs centres de corps, plusieurs rythmes simultanés s'interagissent. Ces danses ont voyagé aux Amériques avec la traite et ont influencé toute la danse afro-américaine.\n\n**Polycentrisme et polyrythmie :**\nLe corps polycentrique répond souvent à une musique polyrythmique — les épaules suivent un rythme, le bassin un autre, les pieds un troisième. C'est la base du groove en jazz.\n\n**Dans la pratique :**\n- Bassin qui bouge indépendamment de la cage thoracique\n- Épaules et tête en opposition avec le bas du corps\n- Bras qui ont leur propre phrase pendant que les jambes en font une autre\n\n**Dans la technique Horton :**\nLa technique Horton (pédagogie pour des danseurs afro-américains à Los Angeles) intègre explicitement la pensée polycentrique.",
+    id: 'fall-recovery',
+    nom: 'Chute et récupération',
+    alias: ['fall and recovery', 'fall-recovery Humphrey', 'principe de Humphrey'],
+    disciplines: ['contemporain', 'moderne'],
+    categories: ['concepts', 'qualites-de-mouvement'],
+    definition: "Principe chorégraphique de Doris Humphrey selon lequel tout mouvement dansé existe dans l'arc entre l'équilibre parfait (stabilité immobile) et la chute totale (perte de contrôle). La danse vit dans cet espace intermédiaire de tension et de récupération.",
+    description: "**Doris Humphrey** (1895–1958) formule ce principe dans les années 1920–1930 : pour elle, la vie elle-même est une tension permanente entre deux états extrêmes et impossibles à maintenir.\n\n**Les deux pôles :**\n- **Équilibre absolu** : immobilité parfaite — c'est la mort\n- **Chute totale** : perte de contrôle — c'est aussi la mort\n- **La danse** : tout ce qui se passe entre les deux\n\n**Dans le mouvement :**\nChaque fois que le corps se déplace hors de son axe, il entre dans un état de chute potentielle. La *récupération* est le moment où il reprend le contrôle — mais souvent pour se lancer vers une nouvelle chute.\n\nCette dynamique crée :\n- Une sensation de **vie et d'énergie** dans le mouvement\n- Un rythme naturel d'**aller-retour** (comme la respiration)\n- Des moments de **suspension** (entre la chute et la récupération)\n\n**Applications pratiques :**\n- Swings de bras (chute en avant, récupération par le bas, re-lancer)\n- Déplacements avec penchement du corps\n- Chutes vers le sol récupérées en roulade\n- Portés de partenaire qui utilisent l'élan de la 'chute'\n\n**Héritage :** La technique Limón, les danses de José Limón, et indirectement tout le courant postmoderne s'appuient sur ce principe.",
     erreursCourantes: [
-      "Perdre la coordination (chaque centre doit avoir sa logique même en liberté).",
-      "Polycentrisme = désordre : non — c'est une organisation complexe, pas un chaos.",
+      "La 'récupération' n'est pas un sauvetage paniqué — c'est un choix chorégraphique.",
+      "Rester dans l'équilibre confortable et ne jamais risquer la chute — le mouvement devient plat.",
     ],
     conseils: [
-      "Commence avec deux centres : fais battre tes mains à un rythme régulier. Pendant ce temps, fais bouger ton bassin dans un rythme différent. C'est le début du polycentrisme — deux centres, deux rythmes, un seul corps.",
+      "Lance ton bras en avant, laisse-le entraîner ton buste. Sens le moment où tu es 'en chute'. Puis récupère — mais pas pour t'arrêter, pour te relancer vers la prochaine chute. Ce balancement est la vie du mouvement.",
     ],
-    etymologie: "Du grec *polus* (plusieurs) et *kentron* (centre, point central). Le polycentrisme dansé est l'opposé du monocentrisme ballet : plusieurs centres du corps actifs et indépendants en même temps, héritage direct des danses d'Afrique de l'Ouest.",
-    difficulteInterne: 3,
-    termesLies: ['isolation', 'travail-bassin', 'succession-corporelle'],
-  },
-
-  // ─── Techniques modernes ──────────────────────────────────────────────────
-
-  {
-    id: 'technique-horton',
-    nom: 'Technique Horton',
-    alias: ['Horton technique', 'Lester Horton', 'technique danse Horton'],
-    disciplines: ['moderne'],
-    categories: ['culture-histoire'],
-    definition: "Technique de danse moderne développée par Lester Horton (1906–1953) à Los Angeles, fondée sur l'anatomie fonctionnelle, l'amplitude maximale du mouvement et une attention particulière au développement physique complet du danseur.",
-    description: "**Lester Horton** est une figure particulière de la danse américaine du XXe siècle — souvent sous-estimé comparé à Graham ou Humphrey, mais dont l'influence est immense via ses élèves.\n\n**Ses élèves les plus célèbres :**\n- **Alvin Ailey** — fondateur de l'Alvin Ailey American Dance Theater, il répand la technique Horton dans le monde entier\n- **Carmen de Lavallade** — ballerine et chorégraphe afro-américaine\n- **Frank Cavens** et **Joyce Trisler**\n\n**Principes de la technique Horton :**\n- **Anatomie d'abord** : chaque exercice est justifié par une compréhension anatomique précise\n- **Corps complet** : travail de toutes les parties du corps dans toutes les directions\n- **Amplitude maximale** : chercher les limites réelles du mouvement\n- **Inclusivité** : Horton acceptait des danseurs de toutes origines ethniques à une époque de ségrégation\n\n**Vocabulaire signature :**\nHinges, flat backs, T-positions, latéral en extension, progressions longues à travers la salle.\n\n**Héritage :**\nAlvin Ailey a intégré la technique Horton au répertoire de sa compagnie (notamment dans *Revelations*, 1960) — faisant de la technique Horton la base de la formation de milliers de danseurs dans le monde.",
-    erreursCourantes: [
-      "Confondre la technique Horton avec la technique Graham — deux approches très différentes malgré une époque commune.",
-    ],
-    conseils: [
-      "Cherche des vidéos d'Alvin Ailey American Dance Theater en cours technique. Tu verras la technique Horton vivante — ses flat backs, ses hinges, ses T-positions caractéristiques.",
-    ],
+    etymologie: "De l'anglais 'fall' (chute) et 'recovery' (rétablissement). Terme forgé par Doris Humphrey pour nommer son principe central : la danse vit dans l'arc entre la chute et le retour à l'équilibre.",
     difficulteInterne: 2,
-    termesLies: ['flat-back', 'hinge', 'isolation', 'polycentrisme'],
+    termesLies: ['poids-abandon', 'gravite-contemporain', 'suspension', 'rebond-swing'],
   },
 
-  {
-    id: 'technique-cunningham',
-    nom: 'Technique Cunningham',
-    alias: ['Merce Cunningham', 'technique néoclassique contemporaine', 'Cunningham'],
-    disciplines: ['moderne', 'contemporain'],
-    categories: ['culture-histoire'],
-    definition: "Technique de danse développée par Merce Cunningham (1919–2009), qui dissocie le mouvement de la narrativité et de l'expressivité émotionnelle, traite le corps comme une architecture dans l'espace et le temps, et utilise le hasard comme outil de composition.",
-    description: "**Merce Cunningham** (1919–2009) est l'une des figures les plus radicales de la danse du XXe siècle. Ancien danseur de Martha Graham, il rompt avec ses principes pour développer une esthétique radicalement différente.\n\n**Principes fondamentaux :**\n\n**1. Dissociation de la danse et de la musique :**\nLa danse et la musique se déroulent simultanément mais de façon indépendante — elles coexistent sans synchronisation. Cunningham travaille avec John Cage qui compose la musique séparément.\n\n**2. Dissociation de la danse et du sens :**\nLe mouvement n'a pas besoin d'exprimer une émotion ou de raconter une histoire. Il *est* — dans l'espace et le temps.\n\n**3. L'espace comme champ égal :**\nIl n'y a pas de centre de scène privilégié — tous les points de l'espace ont la même valeur.\n\n**4. Le hasard comme outil de composition :**\nCunningham utilise des dés ou des cartes pour décider de l'ordre des séquences, des formations, des transitions.\n\n**Caractéristiques techniques :**\n- Colonne mobile dans toutes les directions (héritage de Graham mais libérée)\n- Jambes dans l'esprit classique (virtuosité technique)\n- Tête active et indépendante\n- Vitesse et précision\n\n**Le MCDC (Merce Cunningham Dance Company) :**\nFerme en 2011, deux ans après la mort de Cunningham, en accord avec sa volonté.",
-    erreursCourantes: [
-      "Croire que la technique Cunningham est 'froide' ou sans expression — la neutralité est elle-même un choix expressif.",
-    ],
-    conseils: [
-      "Regarde *Rainforest* (1968) ou *BIPED* (1999) du MCDC — deux œuvres qui montrent à quel point l'absence de narrativité peut être fascinante.",
-    ],
-    difficulteInterne: 3,
-    termesLies: ['phrase-mouvement', 'contraction-release', 'technique-horton'],
-  },
+  // ─── Qualités de mouvement ────────────────────────────────────────────────
 
   {
-    id: 'technique-limon',
-    nom: 'Technique Limón',
-    alias: ['José Limón', 'technique Humphrey-Limón', 'Limon technique'],
-    disciplines: ['moderne'],
-    categories: ['culture-histoire'],
-    definition: "Technique de danse développée par José Limón (1908–1972) dans l'héritage de Doris Humphrey, basée sur l'utilisation du poids, du swing, des successions et des oppositions pour créer un mouvement profondément humain et dramatique.",
-    description: "**José Limón** (1908–1972), d'origine mexicaine-américaine, développe sous la direction de Doris Humphrey une technique qui devient l'une des plus enseignées dans les universités américaines.\n\n**Les principes de la technique Limón :**\n\n**Poids et gravité :**\nLe corps utilise réellement son poids — pas d'illusion de légèreté. Les bras tombent, les jambes s'abandonnent, la tête est lourde.\n\n**Swing :**\nLes membres oscillent en pendule — gravité + élan + suspension. Le swing Limón est ample et expressif.\n\n**Succession :**\nL'impulsion voyage à travers le corps segment par segment — chaque partie initie la suivante.\n\n**Chute et récupération :**\nHéritage direct de Humphrey — le mouvement vit entre l'équilibre et la chute.\n\n**Oppression et libération :**\nLes œuvres de Limón traitent souvent de la condition humaine, de la liberté, de la résistance — son Héritage mexicain et afro-américain nourrit sa vision.\n\n**Grandes œuvres :**\n- *There is a Time* (1956) — basé sur l'Ecclésiaste\n- *Missa Brevis* (1958) — en hommage aux victimes de guerre\n- *A Choreographic Offering* (1964) — hommage à Doris Humphrey\n\n**Aujourd'hui :**\nLa Limon Dance Company (New York) continue de développer cette technique.",
+    id: 'suspension',
+    nom: 'Suspension',
+    alias: ['temps suspendu', 'suspendre le mouvement'],
+    disciplines: ['contemporain', 'moderne'],
+    categories: ['qualites-de-mouvement'],
+    definition: "Moment de flottement dans un mouvement, où le corps semble défier brièvement la gravité avant de retomber. La suspension est l'instant de grâce entre la montée et la descente, entre l'impulsion et l'abandon.",
+    description: "La suspension est un concept fondamental dans toutes les techniques qui travaillent avec la gravité — Humphrey-Limón, jazz, contemporain.\n\n**La suspension dans la trajectoire d'un mouvement :**\n- Le corps monte par une impulsion (bras, plié, élan)\n- Au sommet de la trajectoire : **instant de suspension** — quelques millièmes de seconde où le corps semble flotter\n- Puis la descente (plus ou moins contrôlée selon l'intention)\n\n**Suspension vs pause :**\n- Une pause est une immobilité voulue et contrôlée\n- Une suspension conserve l'énergie et la direction du mouvement — elle va quelque part\n\n**Créer de la suspension :**\n- Impulse depuis le bas (plié, ancrage) puis laisse le mouvement monter jusqu'à son pic naturel\n- À ce pic, *ne retiens pas* — laisse l'apesanteur agir une fraction de seconde\n- La descente sera d'autant plus belle que la suspension était vraie\n\n**Rôle expressif :**\nLa suspension crée de l'attente, de la tension, de la beauté. C'est souvent le moment le plus fort d'une phrase de mouvement.",
     erreursCourantes: [
-      "Simuler le poids au lieu de le donner vraiment — la technique Limón exige un abandon physique réel.",
+      "Forcer la suspension en retenant le mouvement (c'est alors une pause artificielle).",
+      "Ne pas créer d'impulsion suffisante — sans élan, pas de suspension possible.",
     ],
     conseils: [
-      "Regarde *There is a Time* (1956) de José Limón — les swings des bras, le poids des torses, les chutes et récupérations. C'est la technique Limón dans toute sa richesse dramatique.",
+      "Lance une balle en l'air et regarde-la au sommet de sa trajectoire — l'instant où elle s'arrête avant de redescendre. C'est ça, la suspension. Reproduis cette sensation dans ton bras, ton buste, ta jambe.",
     ],
-    difficulteInterne: 3,
-    termesLies: ['fall-recovery', 'poids-abandon', 'suspension', 'opposition-corps'],
-  },
-
-  // ─── Éléments de composition ──────────────────────────────────────────────
-
-  {
-    id: 'canon',
-    nom: 'Canon',
-    alias: ['canon chorégraphique', 'décalage temporel', 'round'],
-    disciplines: ['moderne', 'contemporain'],
-    categories: ['concepts'],
-    definition: "Procédé de composition et d'interprétation dans lequel plusieurs danseurs ou groupes réalisent la même phrase de mouvement à des moments différents, créant un effet de décalage temporel — comme le canon musical.",
-    description: "Le canon est l'un des procédés compositionnels les plus utilisés — et les plus efficaces — en danse moderne et contemporaine.\n\n**Principe :**\nComme le canon en musique (Frère Jacques, par exemple), le canon en danse consiste à reprendre la même phrase avec un décalage d'un ou plusieurs temps.\n\n**Types de canon :**\n\n**Canon strict :** Chaque danseur commence à un temps précis après le précédent (ex : tous les 8 temps)\n\n**Canon libre :** Décalages variables\n\n**Canon en miroir :** La phrase est aussi retournée (droite/gauche ou avant/arrière)\n\n**Canon en augmentation/diminution :** La phrase est ralentie ou accélérée chez certains danseurs\n\n**Effets visuels du canon :**\n- Crée une impression de **vague** qui traverse le groupe\n- Met en valeur la **structure** de la phrase (on la voit plusieurs fois)\n- Permet de remplir l'espace avec peu de matériel chorégraphique\n- Crée une **conversation** entre les danseurs\n\n**Dans le répertoire :**\nMerce Cunningham, Anne Teresa De Keersmaeker et Steve Reich utilisent massivement le canon. *Fase* de De Keersmaeker/Reich (1982) est un chef-d'œuvre de canon en danse.",
-    erreursCourantes: [
-      "Perdre le décalage en s'ajustant sur les autres danseurs (l'oreille musicale prime sur le regard).",
-      "Canon trop court — le canon demande une phrase suffisamment longue pour que le décalage soit perceptible.",
-    ],
-    conseils: [
-      "À deux : apprenez la même phrase de 8 temps. Maintenant, B commence quand A est à son temps 5. Vous êtes à 4 temps de décalage. Observez comment la même phrase devient deux choses différentes — c'est la magie du canon.",
-    ],
-    etymologie: "Du grec *kanon* (règle, mesure, baguette droite) via le latin. Emprunté à la terminologie musicale : en musique, le canon est une mélodie imitée par une voix en décalage — même principe transposé au mouvement.",
-    difficulteInterne: 3,
-    termesLies: ['unisson', 'phrase-mouvement'],
-  },
-
-  {
-    id: 'unisson',
-    nom: 'Unisson',
-    alias: ['mouvement en unisson', 'ensemble synchronisé'],
-    disciplines: ['moderne', 'jazz'],
-    categories: ['concepts'],
-    definition: "Procédé de composition dans lequel plusieurs danseurs réalisent exactement le même mouvement au même moment, créant un effet de puissance collective. L'unisson parfait exige une écoute musicale commune et une synchronisation totale.",
-    description: "L'unisson est l'outil compositonnel le plus immédiatement lisible — et le plus exigeant en termes d'interprétation collective.\n\n**Ce qui rend l'unisson difficile :**\n- Chaque danseur a son propre timing naturel\n- Les amplitudes de mouvement varient selon les corps\n- L'écoute musicale doit être collective (tous respirent ensemble)\n- La qualité de mouvement doit être homogène (pas seulement la forme)\n\n**Unisson vs uniformité :**\n- L'uniformité vise la ressemblance mécanique des formes\n- L'unisson aspire à une **respiration commune** — l'énergie voyage au même moment dans tous les corps\n\n**L'effet de l'unisson :**\n- Puissance, force collective\n- Peut être oppressant (régimes, corps-de-ballet militaire)\n- Peut être libérateur (la synchronisation comme joie partagée)\n\n**Usage en composition :**\nL'unisson est souvent utilisé par contraste avec le canon, les solos ou les formations libres — le passage à l'unisson est un moment fort.",
-    erreursCourantes: [
-      "Regarder les autres pour se synchroniser (ça crée le retard). Il faut écouter la musique ensemble.",
-      "Unisson de forme mais pas d'énergie — les corps font le même geste mais l'intention est différente.",
-    ],
-    conseils: [
-      "En groupe : fermez tous les yeux. Écoutez la musique ensemble. Sentez le moment où vous voulez tous bouger en même temps. Ouvrez les yeux et bougez. C'est l'unisson qui vient de l'intérieur.",
-    ],
+    etymologie: "Du latin *suspendere* (*sub* + *pendere*, tenir en haut). La suspension dansée est le moment où le corps 'pend' entre montée et descente — comme un pendule au point mort de son oscillation.",
     difficulteInterne: 2,
-    termesLies: ['canon', 'phrase-mouvement'],
+    termesLies: ['fall-recovery', 'rebond-swing', 'poids-abandon'],
   },
 
   {
-    id: 'marche-moderne',
-    nom: 'Marche dansée',
-    alias: ['marche scénique', 'walk', 'travel', 'déplacement dansé'],
-    disciplines: ['moderne', 'contemporain'],
-    categories: ['deplacements'],
-    definition: "Utilisation artistique de la marche comme matériau chorégraphique — la marche quotidienne transformée en mouvement de danse par l'intention, la qualité et la conscience corporelle.",
-    description: "La marche est l'une des grandes révolutions de la danse postmoderne (Judson Church, années 1960). Yvonne Rainer et Steve Paxton l'ont érigée en acte artistique en soi — et cette décision a changé la danse pour toujours.\n\n**La marche ordinaire :**\nRegarder comment les gens marchent dans la rue — leur rythme naturel, leur posture, leur dynamique — c'est du matériau chorégraphique brut.\n\n**La marche scénique (technique) :**\nLa marche sur scène nécessite des adaptations :\n- Posture droite sans être rigide\n- Regard vers le public (pas vers le sol)\n- Talon-pointe ou pointe-talon selon la qualité voulue\n- Bras naturellement opposés aux jambes\n- Projection de l'énergie vers l'avant\n\n**Qualités de marche en danse moderne :**\n- Marche avec poids (ancrée, lourde)\n- Marche suspendue (légère, portée par l'élan)\n- Marche rythmée (avec accents)\n- Marche avec succession (vague dans le corps à chaque pas)\n\n**La marche comme composition :**\nSimone Forti, Trisha Brown : leurs 'pièces de déplacement' n'utilisent que la marche et le regard comme matériau.",
+    id: 'rebond-swing',
+    nom: 'Rebond et swing',
+    alias: ['rebond', 'swing', 'oscillation', 'balancement'],
+    disciplines: ['contemporain', 'moderne', 'jazz'],
+    categories: ['qualites-de-mouvement'],
+    definition: "Le swing est un mouvement oscillatoire qui utilise le poids du membre comme un pendule — impulsion initiale, arc libre, rebond naturel. Le rebond est l'utilisation de l'impact avec le sol comme nouvelle impulsion.",
+    description: "**Le swing (oscillation) :**\nUn bras en swing ne se déplace pas par effort musculaire continu — il est lancé une fois et oscille librement comme un pendule, grâce à son propre poids.\n\nLes facteurs du swing :\n1. **Impulsion initiale** : lancer le membre\n2. **Lâcher prise** : ne plus contrôler activement\n3. **Arc** : le membre suit l'arc naturel de la gravité\n4. **Rebond au bas** : l'impact au point le plus bas relance le swing\n\n**Le rebond (bouncing) :**\nL'impact avec le sol (ou avec la résistance de l'espace) génère une nouvelle impulsion vers le haut. C'est le principe d'un ressort ou d'une balle.\n\n**Utilisation en danse :**\n- Swings de bras simples (gauche-droite, avant-arrière)\n- Swing du torse avec poids de la tête\n- Marche avec swing (style Limón)\n- Rebonds dans les pliés (demi-pliés en bounce)\n- Grand swing du corps entier (bascule arrière-avant)\n\n**Différence swing / mouvement contrôlé :**\n- Contrôlé : muscles actifs tout au long du chemin\n- Swing : muscles actifs seulement au lancement, puis liberté",
     erreursCourantes: [
-      "Marcher en regardant le sol (perd le contact avec le public et l'espace).",
-      "Marcher 'en ballet' (orteils en dehors, jambes très tendues) en cours contemporain — la marche parallèle est la norme.",
+      "Contrôler tout le swing (le bras arrive au bout puis 'stope' — il n'oscille pas).",
+      "Rebond sans tonus — le rebond utilise l'élasticité musculaire, il ne s'effondre pas.",
     ],
     conseils: [
-      "Marche normalement. Maintenant, ajoute une intention : tu marches vers quelqu'un que tu aimes. Sens comme ça change. Maintenant, tu marches vers un danger. Observe. La marche dansée, c'est ça — une marche avec une intention qui la traverse.",
+      "Prends ton bras non dominant. Donne-lui une petite poussée vers l'avant. Maintenant laisse-le faire. Observe comme il oscille naturellement. C'est le swing. Tu n'as rien à faire — juste lui donner l'impulsion initiale.",
     ],
     difficulteInterne: 1,
-    termesLies: ['phrase-mouvement', 'contraction-release'],
+    termesLies: ['suspension', 'fall-recovery', 'poids-abandon'],
   },
 
   {
-    id: 'elevation-moderne',
-    nom: 'Élévation en danse moderne',
-    alias: ['saut en danse moderne', 'jump', 'leap moderne'],
-    disciplines: ['moderne'],
-    categories: ['sauts'],
-    definition: "Les sauts en danse moderne se distinguent des sauts classiques par leur rapport à la gravité (on entend l'atterrissage, le corps pèse), leur départ (souvent pieds parallèles) et leur qualité (ancrage dans le sol autant qu'élévation).",
-    description: "En ballet classique, les sauts visent l'illusion de légèreté — silence à l'atterrissage, élévation maximale, turn-out maintenu. En danse moderne, les sauts ont une autre philosophie.\n\n**Caractéristiques des sauts modernes :**\n\n**Départ :** Souvent en parallèle (pieds parallèles) plutôt qu'en dehors\n**Qualité :** Le sol est engagé — on utilise son poids pour rebondir\n**Atterrissage :** Peut être sonore (frappe intentionnelle du sol)\n**Forme :** Le corps peut être non aligné, tordre en l'air, avoir des niveaux différents\n**Expression :** Le saut peut exprimer la lourdeur autant que la légèreté\n\n**Types de sauts modernes :**\n- **Leap (grand jeté moderne)** : grand saut d'une jambe sur l'autre, corps souvent horizontal\n- **Jump** : saut sur deux jambes et retour sur deux jambes\n- **Hop** : saut sur une jambe et retour sur la même jambe\n- **Spring** : rebond léger, qualité de ballon\n\n**Dans la technique Limón :**\nLes sauts sont chargés — le corps tombe vers le sol autant qu'il s'élève. L'atterrissage est un moment de chute récupérée.",
+    id: 'fluidite-mouvement',
+    nom: 'Fluidité',
+    alias: ['mouvement fluide', 'continuité du mouvement', 'flux continu'],
+    disciplines: ['contemporain', 'moderne'],
+    categories: ['qualites-de-mouvement'],
+    definition: "Qualité de mouvement dans laquelle les transitions entre positions ou impulsions sont continues et sans rupture perceptible, comme un liquide qui coule. Corrèle au facteur de flux 'libre' dans le système Laban.",
+    description: "La fluidité est l'une des qualités les plus recherchées en danse contemporaine — et l'une des plus difficiles à enseigner parce qu'elle relève de l'intérieur plus que de la forme.\n\n**Ce qu'est la fluidité :**\n- Absence de rupture dans le transfert d'énergie\n- Chaque fin de mouvement contient déjà le début du suivant\n- Le corps ne 's'arrête' jamais vraiment — il *ralentit* ou *change de direction*\n- La respiration guide et soutient le flux\n\n**Ce que n'est pas la fluidité :**\n- La mollesse ou l'absence de tonus\n- L'uniformité de vitesse (la fluidité peut être rapide ou lente)\n- L'absence d'intention\n\n**Dans le système Laban :**\nLa fluidité correspond au facteur *flux libre* — le mouvement coule sans retenue. Son opposé est le *flux lié* (contrôlé, arrêtable à tout moment).\n\n**Construire la fluidité :**\n- Pratiquer des enchaînements où on ne s'arrête jamais\n- Travailler en 'fondu enchaîné' (chaque fin de geste relance le suivant)\n- Écouter la musique comme une rivière (suivre son courant, pas ses vagues)\n- Réduire les tensions inutiles (release)",
     erreursCourantes: [
-      "Appliquer l'esthétique du ballet (légèreté absolue, silence) à des sauts modernes qui doivent parfois avoir du poids.",
-      "Ne pas plier en réception — les genoux absorbent toujours.",
+      "Fluidité = lenteur (faux — la fluidité peut être rapide).",
+      "Ajouter des transitions 'molles' entre des mouvements — la fluidité est dans la continuité de l'énergie, pas dans l'ajout de segments.",
     ],
     conseils: [
-      "Essaie deux fois le même saut : une fois en cherchant à t'élever le plus haut possible. Une fois en cherchant à t'ancrer dans le sol avant de partir. Le deuxième devrait te propulser plus haut. C'est le principe du rebond moderne.",
+      "Ferme les yeux et fais danser tes mains comme si elles étaient dans de l'eau. Ne t'arrête pas. Laisse une impulsion amener la suivante. C'est cette continuité que tu cherches dans tout ton corps.",
     ],
     difficulteInterne: 2,
-    termesLies: ['fall-recovery', 'rebond-swing', 'suspension'],
+    termesLies: ['release-technique', 'suspension', 'rebond-swing'],
+  },
+
+  {
+    id: 'discontinuite',
+    nom: 'Discontinuité et contraste',
+    alias: ['mouvement discontinu', 'rupture', 'choc', 'accent'],
+    disciplines: ['contemporain'],
+    categories: ['qualites-de-mouvement'],
+    definition: "Qualité de mouvement caractérisée par des ruptures intentionnelles dans le flux, des changements brusques de vitesse, de direction ou de niveau. La discontinuité crée de la tension, de la surprise et du relief dans une phrase chorégraphique.",
+    description: "Si la fluidité est la rivière, la discontinuité est la chute d'eau — le brusque changement qui capte l'attention.\n\n**Dans le système Laban :**\nLa discontinuité correspond à la combinaison de flux lié + temps soudain — le mouvement s'arrête net ou change brusquement.\n\n**Formes de discontinuité :**\n- **L'accent** : un pic d'énergie dans une phrase régulière (comme un coup de poing dans une phrase fluide)\n- **La rupture** : arrêt complet puis reprise\n- **Le contraste de vitesse** : très lent puis très rapide\n- **Le contraste de niveau** : debout puis au sol brusquement\n- **La dissonance corps-musique** : couper contre le tempo\n\n**L'intérêt dramaturgique :**\nSans discontinuité, une phrase fluide devient monotone. La discontinuité crée :\n- Des points forts (accents)\n- De la surprise\n- Du suspense (silence avant la reprise)\n- De l'humour parfois (rupture inattendue)\n\n**Pina Bausch** maîtrise cette technique : des séquences lentes et poétiques coupées par des gestes brusques, des cris, des chutes soudaines.",
+    erreursCourantes: [
+      "Discontinuité non intentionnelle (manque de contrôle) confondue avec discontinuité artistique.",
+      "Accents tous identiques — la discontinuité doit varier en intensité.",
+    ],
+    conseils: [
+      "Fais une phrase fluide que tu connais bien. Maintenant choisis UN moment où tu coupes tout — net, immédiat. Observe l'effet sur toi et sur le public. C'est la puissance de la rupture.",
+    ],
+    difficulteInterne: 3,
+    termesLies: ['fluidite-mouvement', 'phrase-mouvement', 'score-improvisation'],
+  },
+
+  {
+    id: 'vibration',
+    nom: 'Vibration et tremblement',
+    alias: ['tremblement', 'shaking', 'vibration corporelle'],
+    disciplines: ['contemporain'],
+    categories: ['qualites-de-mouvement'],
+    definition: "Oscillation rapide et de faible amplitude d'une partie ou de tout le corps, utilisée comme qualité de mouvement expressive ou comme technique de libération des tensions musculaires.",
+    description: "La vibration est l'une des qualités de mouvement les plus particulières de la danse contemporaine — elle va à l'encontre du contrôle absolu valorisé dans le ballet.\n\n**Deux usages de la vibration :**\n\n**1. Comme outil technique (préparatoire) :**\n- Secouer les membres pour les dé-contracter\n- Vibration du corps entier debout (sur les deux jambes) pour sentir l'ancrage\n- Tremblement des poignets pour libérer les mains\n- Ces exercices viennent des pratiques somatiques (Feldenkrais, BMC)\n\n**2. Comme qualité artistique :**\n- Tremblement expressif (peur, froid, intensité émotionnelle)\n- Vibration de la voix et du corps combinées\n- Shaking rituel (inspiré de pratiques de transe)\n- Micro-vibrations dans une posture (corps qui 'vit' même immobile)\n\n**Dans la composition :**\nLa vibration crée une texture particulière — entre le mouvement et l'immobilité, entre le contrôle et la perte de contrôle. Elle est souvent utilisée pour les états limites.",
+    erreursCourantes: [
+      "Forcer la vibration musculairement — elle doit venir d'un relâchement suffisant pour que la gravité ou le tonus naturel crée l'oscillation.",
+      "Vibration toujours au même tempo — varier la vitesse et l'amplitude.",
+    ],
+    conseils: [
+      "Serre le poing très fort pendant 10 secondes, puis relâche complètement et secoue doucement. Sens la vibration naturelle qui suit. C'est le corps qui libère la tension accumulée — c'est le début de la vibration en danse.",
+    ],
+    difficulteInterne: 2,
+    termesLies: ['release-technique', 'somatique', 'fluidite-mouvement'],
+  },
+
+  // ─── Corps et espace ──────────────────────────────────────────────────────
+
+  {
+    id: 'spirale',
+    nom: 'Spirale',
+    alias: ['mouvement en spirale', 'spirale du buste', 'torsion en spirale'],
+    disciplines: ['contemporain', 'moderne'],
+    categories: ['qualites-de-mouvement', 'concepts'],
+    definition: "Mouvement rotatif du buste, de la colonne ou d'un membre autour d'un axe, dans lequel les différents segments du corps s'engagent séquentiellement, créant une torsion progressive qui se déroule ou s'enroule.",
+    description: "La spirale est l'une des formes de mouvement les plus présentes en danse contemporaine — une alternative à la ligne droite du ballet.\n\n**La spirale de colonne :**\nLa rotation part d'un point de la colonne (souvent la base) et se propage segment par segment vers le haut. C'est *séquentiel*, pas simultané — contrairement à la rotation du buste en bloc.\n\n**La spirale vers le sol (spirale descendante) :**\n- Un bras s'enroule\n- La torsion se propage au buste, au bassin\n- Le corps suit la spirale jusqu'au sol\n- Usage : pour descendre au sol sans violence, pour rouler\n\n**La spirale ascendante :**\n- Depuis le sol ou depuis une flexion\n- La torsion se déroule vers le haut\n- Débouche souvent sur un tour ou une extension\n\n**Dans la technique Graham :**\nLes spirales sont centrales — elles permettent de passer de la contraction (fermeture) à l'extension (ouverture) de façon organique.\n\n**Anatomiquement :**\nLa colonne a une grande capacité de rotation (davantage dans la zone dorsale et lombaire). La spirale utilise et développe cette mobilité.",
+    erreursCourantes: [
+      "Faire tourner le buste en bloc (rotation) au lieu de laisser chaque vertèbre initier séquentiellement.",
+      "Spirale trop courte (2–3 vertèbres) alors qu'elle doit impliquer toute la colonne.",
+      "Épaules qui montent pendant la spirale — les laisser tomber.",
+    ],
+    conseils: [
+      "Assieds-toi en tailleur. Place une main sur ton nombril. L'autre main commence à tourner vers la droite — laisse ton nombril la suivre peu à peu, puis ton sternum, tes épaules, ta tête. Chaque partie suit la précédente. C'est la séquentialité de la spirale.",
+    ],
+    etymologie: "Du latin *spiralis*, tiré du grec *speira* (enroulement, torsade). La spirale est une des formes fondamentales de la nature — la coquille, la galaxie, l'ADN — que la danse contemporaine ramène dans le corps.",
+    difficulteInterne: 2,
+    termesLies: ['torsion', 'contraction-release', 'floorwork', 'roulade'],
+  },
+
+  {
+    id: 'torsion',
+    nom: 'Torsion',
+    alias: ['twist', 'contre-torsion', 'opposition des lignes'],
+    disciplines: ['contemporain', 'moderne'],
+    categories: ['qualites-de-mouvement'],
+    definition: "État de tension entre deux parties du corps qui s'orientent dans des directions opposées, créant une ligne de force diagonale. La torsion est différente de la spirale : elle est un état (une tension maintenue) plus qu'un mouvement.",
+    description: "**Torsion vs spirale :**\n- La **spirale** est un mouvement séquentiel (l'un après l'autre)\n- La **torsion** est un état de tension simultané (l'une contre l'autre)\n\n**Exemple classique de torsion :**\n- Le bassin face au public, les épaules de profil\n- Les épaules tournées à droite, le bassin tourné à gauche\n- Un bras vers l'avant, l'autre vers l'arrière\n\n**La torsion comme source de force :**\nUne torsion maintenue crée de l'énergie potentielle — comme un élastique tordu. Le dénouement de cette torsion peut produire une rotation, un saut ou une chute contrôlée.\n\n**Dans le répertoire contemporain :**\nLes chorégraphies de **José Limón** et **Martha Graham** sont pleines de torsions expressives — elles traduisent le conflit intérieur, la déchirure, le doute.\n\n**Anatomiquement :**\nLa torsion engage les muscles obliques (internes et externes) et les rotateurs profonds de la colonne. Un travail modéré de torsion renforce ces muscles ; un travail excessif ou brusque peut les blesser.",
+    erreursCourantes: [
+      "Torsion bloquée au niveau de la taille seulement — elle doit s'étendre dans toute la colonne.",
+      "Laisser une hanche se lever lors de la torsion du buste — maintenir le bassin horizontal.",
+    ],
+    conseils: [
+      "Débout, ancre les pieds au sol et ne les bouge pas. Maintenant, tourne les épaules à droite. Tourne le bassin à gauche. Sens la tension dans ton ventre et ton dos. Voilà la torsion — une force qui tire en deux directions à la fois.",
+    ],
+    difficulteInterne: 2,
+    termesLies: ['spirale', 'contraction-release', 'desequilibre'],
+  },
+
+  {
+    id: 'desequilibre',
+    nom: 'Déséquilibre',
+    alias: ['off-balance', 'hors-axe', 'travail hors-axe'],
+    disciplines: ['contemporain'],
+    categories: ['concepts', 'qualites-de-mouvement'],
+    definition: "État intentionnel dans lequel le danseur place son centre de gravité hors de sa base de soutien, créant une tension vers la chute qui est exploitée chorégraphiquement. Le déséquilibre contrôlé est l'une des signatures de la danse contemporaine.",
+    description: "En ballet classique, l'équilibre est une valeur absolue — la stabilité est le but. En danse contemporaine, le déséquilibre *intentionnel* est un outil expressif et chorégraphique.\n\n**Types de déséquilibre :**\n\n**1. Déséquilibre sagittal (avant-arrière) :**\n- Corps penché vers l'avant (arabesque penchée, course avec inclinaison)\n- Corps penché vers l'arrière (cambré, chute en arrière)\n\n**2. Déséquilibre frontal (côté) :**\n- Corps incliné latéralement\n- Extension d'un côté qui déporte le centre\n\n**3. Déséquilibre en rotation :**\n- Corps en rotation hors de l'axe vertical\n- Combiné avec une chute ou une récupération\n\n**L'intérêt du déséquilibre :**\n- Crée du mouvement de façon organique (pour récupérer)\n- Exprime l'incertitude, la vulnérabilité, l'élan\n- Rend le corps intéressant — on *veut* voir ce qui va arriver\n\n**Maîtriser le déséquilibre :**\nContrôler un déséquilibre exige plus de force et de conscience que de maintenir l'équilibre. C'est un travail avancé.",
+    erreursCourantes: [
+      "Déséquilibre non choisi (simple manque d'équilibre) présenté comme artistique.",
+      "Ne pas avoir de plan de récupération — le déséquilibre doit aller quelque part.",
+    ],
+    conseils: [
+      "Debout, laisse ton buste partir en avant jusqu'à ce que tu doives faire un pas pour ne pas tomber. Ce pas *est* le déséquilibre récupéré. Maintenant, joue avec ce bord — jusqu'où peux-tu aller sans tomber ? C'est là que la danse contemporaine vit.",
+    ],
+    difficulteInterne: 3,
+    termesLies: ['fall-recovery', 'gravite-contemporain', 'poids-abandon'],
+  },
+
+  // ─── Travail au sol ────────────────────────────────────────────────────────
+
+  {
+    id: 'floorwork',
+    nom: 'Travail au sol',
+    alias: ['floorwork', 'travail sol', 'danse au sol'],
+    disciplines: ['contemporain'],
+    categories: ['travail-au-sol', 'concepts'],
+    definition: "Ensemble des techniques de danse qui s'effectuent au sol ou en transition avec le sol : roulades, chutes, reptations, passages au sol, floorwork. Le sol est un partenaire à part entière en danse contemporaine.",
+    description: "Le travail au sol est l'une des différences les plus visibles entre la danse contemporaine et le ballet classique — où le sol est uniquement une surface de départ/arrivée.\n\n**Principes du travail au sol :**\n- Le sol offre une surface de soutien à utiliser activement (pas à subir)\n- La transition debout/sol doit être organique (pas une chute accidentelle)\n- La percussion avec le sol peut être utilisée (élan, rebond)\n- Le corps roule, glisse, rampe en utilisant les surfaces osseuses (pas les proéminences fragiles)\n\n**Les surfaces sûres pour rouler :**\n✓ Dos plat → dégager les vertèbres saillantes par le gainage\n✓ Côtés (côté de la cuisse, côté du torse)\n✓ Avant (ventre, pectoraux)\n✗ Genoux, coudes, vertèbres saillantes (directement au sol sans préparation)\n\n**Les familles de mouvements au sol :**\n1. Les **chutes** (contrôlées et dirigées)\n2. Les **roulades** (transition sol-sol ou sol-debout)\n3. Le **reptation** (locomotion au sol)\n4. Le **travail en table** (à 4 appuis)\n5. Les **inversions** (tête en bas)\n\n**Techniques associées :** Forsythe, Cunningham, release, BMC",
+    erreursCourantes: [
+      "Aller au sol sur les genoux ou les coudes sans préparation — risque de blessure.",
+      "Considérer le travail au sol comme une chute récupérée plutôt que comme un espace de danse à part entière.",
+      "Sol glissant = risque de glissade non contrôlée — adapter les chaussures ou la technique.",
+    ],
+    securite: {
+      risques: ["Contusion des genoux, coudes, vertèbres", "Entorse de poignet (appui brutal)"],
+      precautions: ["Apprendre les chutes contrôlées avant de les intégrer dans des enchaînements", "Utiliser des surfaces adaptées (parquet bois, linoléum danse) — jamais du béton ou de la moquette"],
+    },
+    conseils: [
+      "Le sol est un partenaire, pas un accident. Avant de 'tomber', pense à où tu veux aller après — sur le dos, sur le côté, en roulade ? Le sol te répond si tu lui parles.",
+    ],
+    etymologie: "De l'anglais 'floor' (sol, plancher) et 'work' (travail). Le terme anglais s'est imposé en français parce que les pionniers qui l'ont théorisé — Cunningham, Forsythe, la scène new-yorkaise — écrivaient et enseignaient en anglais.",
+    difficulteInterne: 2,
+    termesLies: ['roulade', 'chute-controlee', 'spirale', 'gravite-contemporain'],
+  },
+
+  {
+    id: 'roulade',
+    nom: 'Roulade',
+    alias: ['roll', 'rolling', 'roulade diagonale', 'roulade avant', 'roulade arrière'],
+    disciplines: ['contemporain'],
+    categories: ['travail-au-sol'],
+    definition: "Technique de passage au sol dans laquelle le corps roule sur lui-même — sur le dos, le côté ou en diagonale — en utilisant la continuité du mouvement et les surfaces arrondies du corps pour éviter les impacts.",
+    description: "La roulade est l'une des premières techniques enseignées en danse contemporaine et en acrobatie — c'est aussi une technique de chute sécurisée (comme dans les arts martiaux).\n\n**La roulade sur le dos (back roll) :**\n1. Depuis la position accroupie ou en chute en arrière\n2. Le dos s'arrondit en C (protéger la nuque)\n3. Les épaules touchent le sol progressivement\n4. Le mouvement se prolonge jusqu'aux pieds\n5. Sortie : en accroupi, en debout, ou en continuation\n\n**La roulade latérale (side roll) :**\n1. Depuis le sol, en spirale\n2. Le corps tourne sur le côté (cuisse → bassin → dos → épaule)\n3. Ou dans l'autre sens\n4. Souvent utilisée pour traverser le sol ou changer de position\n\n**La roulade diagonale (log roll variante) :**\n- Corps allongé qui roule en diagonale\n- Bras tendus devant ou le long du corps\n\n**Clé de sécurité :**\nL'arrondi de la colonne est essentiel — ne jamais rouler sur des vertèbres saillantes. Le gainage abdominal protège.\n\n**Dans le répertoire :**\nLes roulades de Cunningham, les passages au sol de Forsythe ou de Pina Bausch utilisent toutes ce principe.",
+    erreursCourantes: [
+      "Rouler sur la nuque au lieu de la protéger (la nuque doit être rentrée, le menton vers la poitrine).",
+      "Impact brutal des épaules sur le sol — le contact doit être progressif.",
+      "S'arrêter au milieu de la roulade (perte d'élan) — maintenir la dynamique.",
+    ],
+    securite: {
+      risques: ["Traumatisme de la nuque si mal protégée", "Contusion des épaules si l'arrondi est insuffisant"],
+      precautions: ["Apprendre la roulade avec un encadrant avant de l'intégrer seul", "Menton toujours rentré vers la poitrine pour protéger les cervicales"],
+    },
+    conseils: [
+      "Avant toute roulade : arrondi le dos en C, menton vers la poitrine. Maintiens cet arrondi tout au long du roulement. Si tu sens une vertèbre saillante toucher le sol, ton arrondi n'est pas assez profond.",
+    ],
+    difficulteInterne: 2,
+    termesLies: ['chute-controlee', 'floorwork', 'spirale'],
+  },
+
+  {
+    id: 'chute-controlee',
+    nom: 'Chute contrôlée',
+    alias: ['chute', 'falling', 'back fall', 'side fall', 'forward fall'],
+    disciplines: ['contemporain', 'moderne'],
+    categories: ['travail-au-sol', 'qualites-de-mouvement'],
+    definition: "Technique de passage debout/sol dans laquelle la chute est dirigée, absorbée progressivement par les différents segments du corps, et transformée en ressource chorégraphique plutôt qu'en accident.",
+    description: "La chute contrôlée est une compétence fondamentale en danse contemporaine — et en sécurité générale. Elle s'enseigne aussi dans les arts martiaux, le cirque et les acrobaties.\n\n**Principes de la chute contrôlée :**\n\n1. **Choisir une direction** (pas se laisser tomber dans le vide)\n2. **Décélérer progressivement** en engageant les articulations dans l'ordre :\n   - D'abord la cheville, puis le genou, puis la hanche\n   - Pour une chute latérale : cuisse → hanche → buste → épaule\n3. **Ne jamais tendre les bras en premier** (fracture du radius)\n4. **Arrondir le corps** à l'arrivée pour rouler ou absorber\n\n**Les trois grandes chutes en technique contemporaine :**\n\n**Back fall (chute en arrière / Limón) :**\n- Du plié profond, le bassin recule et descend\n- Les vertèbres se déposent une à une\n- Arrivée en roll sur le dos avec impulsion de sortie\n\n**Side fall (chute latérale) :**\n- Depuis le plié latéral, le corps s'incline puis descend\n- Cuisse → hanche → côté du torse\n- Souvent continue vers une roulade\n\n**Forward fall (chute en avant) :**\n- La plus technique — protéger la tête\n- Bras qui *accompagnent* (pas qui bloquent brutalement)\n- Avant-bras et pectoraux absorbent",
+    erreursCourantes: [
+      "Tendre les bras pour freiner la chute — risque de fracture.",
+      "Tomber en rigide (corps non articulé) — le corps doit s'adapter segment par segment.",
+      "Avoir peur et retenir la chute à mi-chemin — une chute retenue est plus dangereuse qu'une chute complète.",
+    ],
+    securite: {
+      risques: ["Fracture du radius (chute sur mains tendues)", "Contusion du coude ou du genou (chute non absorbée)", "Commotion (chute de la tête)"],
+      precautions: ["Apprendre les chutes dans l'ordre : arrière puis côté puis avant", "Toujours s'assurer que le sol est adapté (ni glissant ni trop dur)", "Commencer lentement et petit avant d'aller vite et grand"],
+    },
+    conseils: [
+      "La clé est dans le regard : quand tu chutes vers l'arrière, garde les yeux ouverts et regarde vers le haut. Le regard guide le reste du corps. Si tu fermes les yeux par peur, ton corps se raidit et la chute devient dangereuse.",
+    ],
+    difficulteInterne: 3,
+    termesLies: ['roulade', 'floorwork', 'fall-recovery', 'poids-abandon'],
+  },
+
+  // ─── Contact improvisation ────────────────────────────────────────────────
+
+  {
+    id: 'point-de-contact',
+    nom: 'Point de contact',
+    alias: ['contact point', 'point d\'appui partagé'],
+    disciplines: ['contemporain'],
+    categories: ['concepts'],
+    definition: "En contact improvisation, zone du corps où deux danseurs se touchent et partagent leur poids. Ce point n'est pas fixe — il voyage sur les corps, changeant de nature et de localisation en permanence.",
+    description: "Le **contact improvisation** (Steve Paxton, 1972) repose sur un principe simple : deux corps qui partagent un point de contact et laissent ce contact guider l'improvisation.\n\n**Le point de contact est :**\n- Mobile : il voyage de l'épaule au dos, de la main au sternum, etc.\n- Actif : les deux danseurs l'entretiennent mutuellement\n- Informatif : à travers lui circule toute la communication entre les danseurs\n\n**Ce qui passe par le point de contact :**\n- Le poids (combien j'en donne, combien j'en reçois)\n- L'intention de direction\n- L'impulsion et la réponse\n- L'accord ou le désaccord\n\n**Le 'small dance' (Steve Paxton) :**\nExercice fondateur du contact impro : deux personnes debout immobiles, yeux fermés, commencent à percevoir les micro-mouvements de maintien de l'équilibre. Le contact commence déjà là — avec la gravité, avec soi-même.\n\n**Règles implicites du contact impro :**\n- Écouter plus que forcer\n- Maintenir la conscience du point de contact\n- Dire non avec le corps (pas besoin de paroles)\n- Le poids se donne progressivement, pas tout d'un coup",
+    erreursCourantes: [
+      "Choisir un point de contact et ne pas le laisser bouger — le point doit voyager.",
+      "Guider activement l'autre au lieu de co-construire — le contact impro est une conversation, pas un cours.",
+      "Donner tout son poids sans prévenir (déséquilibre dangereux).",
+    ],
+    conseils: [
+      "Commence à deux en vous touchant avec le dos d'une main. Fermez les yeux. Laissez cette zone se déplacer naturellement sur vos corps — sans chercher, sans forcer. La main suit le contact. C'est le début du contact improvisation.",
+    ],
+    difficulteInterne: 2,
+    termesLies: ['partage-poids', 'contact-improvisation', 'poids-abandon'],
+  },
+
+  {
+    id: 'partage-poids',
+    nom: 'Partage du poids',
+    alias: ['weight sharing', 'donner le poids', 'poids partagé'],
+    disciplines: ['contemporain'],
+    categories: ['concepts'],
+    definition: "En contact improvisation et en danse duo, technique par laquelle deux danseurs s'appuient mutuellement, transférant et partageant leur poids réel de façon à créer un équilibre dynamique et co-construit.",
+    description: "Le partage du poids est la colonne vertébrale technique du contact improvisation et de nombreux duos contemporains.\n\n**Différence avec les portés classiques :**\n\n| Porté classique | Partage de poids contemporain |\n|----------------|------------------------------|\n| Rôles fixes (porteur / porté) | Rôles interchangeables |\n| La femme semble ne pas peser | On donne son poids réel |\n| Acrobatique, préparé | Improvisé, organique |\n| Public voit la légèreté | Public voit la confiance |\n\n**Les niveaux de partage :**\n1. **Contact léger** : effleurement, juste assez de pression pour sentir l'autre\n2. **Appui partiel** : 20–40% du poids sur l'autre\n3. **Appui total** : tout le poids transféré (portés, contrepoids)\n\n**Le contrepoids :**\nDeux danseurs se tiennent mutuellement en s'éloignant — l'équilibre de l'un compense la chute de l'autre. Exemple : face à face, mains jointes, s'éloigner jusqu'à ce que chacun s'appuie sur la résistance de l'autre.\n\n**Construction de confiance :**\nLe partage de poids se construit progressivement. Commencer par de petits transferts avant les grands. La confiance mutuelle est la base.",
+    erreursCourantes: [
+      "Simuler le poids (retenir son corps) au lieu de le donner vraiment.",
+      "Donner tout son poids sans s'assurer que l'autre est prêt à le recevoir.",
+      "Le plus lourd pense qu'il ne peut pas être porté — la physique du contrepoids fonctionne pour tous les gabarits.",
+    ],
+    conseils: [
+      "À deux, dos à dos. Appuyez-vous l'un contre l'autre progressivement. Combien de poids pouvez-vous partager sans que l'un tombe ? Cette exploration est le partage de poids. Jouez avec la frontière.",
+    ],
+    difficulteInterne: 2,
+    termesLies: ['point-de-contact', 'contact-improvisation', 'poids-abandon'],
+  },
+
+  // ─── Improvisation et composition ─────────────────────────────────────────
+
+  {
+    id: 'phrase-mouvement',
+    nom: 'Phrase de mouvement',
+    alias: ['phrase chorégraphique', 'phrase dansée', 'motif'],
+    disciplines: ['contemporain', 'moderne'],
+    categories: ['concepts'],
+    definition: "Unité de base de la composition chorégraphique : une séquence de mouvements ayant un début, un développement et une fin, formant une unité syntaxique complète — l'équivalent d'une phrase dans le langage.",
+    description: "La phrase de mouvement est à la chorégraphie ce que la phrase grammaticale est au texte — l'unité minimale de sens.\n\n**Structure d'une phrase :**\n- **Début** : impulsion, initiation (d'où vient le mouvement)\n- **Développement** : comment le mouvement se propage et évolue\n- **Fin** : résolution, suspension ou transition\n\n**Caractéristiques d'une bonne phrase :**\n- Elle a une *logique interne* (les mouvements s'enchaînent avec cohérence)\n- Elle a une *qualité consistante* (ou un contraste intentionnel)\n- Elle est *mémorisable et reproductible* (critère pratique)\n- Elle peut être transformée (variations, inversions, augmentation)\n\n**Manipulations d'une phrase :**\n| Manipulation | Description |\n|-------------|-------------|\n| Inversion | La phrase à l'envers |\n| Rétrograde | Les gestes en sens inverse |\n| Augmentation | Plus lent |\n| Diminution | Plus rapide |\n| Canon | À décalage temporel |\n| Unisson | Tous ensemble |\n\n**Merce Cunningham** développe une approche radicale : les phrases peuvent être combinées de façon aléatoire — leur sens est créé par la juxtaposition, pas par une narrativité préétablie.",
+    erreursCourantes: [
+      "Confondre phrase et enchainement — une phrase a une intention artistique, pas seulement une succession.",
+      "Phrases toutes de même longueur — varier la durée crée du relief.",
+    ],
+    conseils: [
+      "Construis une phrase de 8 temps. Mémorise-la. Maintenant joue : fais-la deux fois plus lentement. Puis deux fois plus vite. Commence par la fin. Inverse-la. Tu viens de faire de la composition.",
+    ],
+    difficulteInterne: 3,
+    termesLies: ['score-improvisation', 'instant-composition', 'discontinuite'],
+  },
+
+  {
+    id: 'score-improvisation',
+    nom: "Score d'improvisation",
+    alias: ['score', 'partition d\'improvisation', 'cadre d\'improvisation'],
+    disciplines: ['contemporain'],
+    categories: ['concepts'],
+    definition: "Structure ou règle prédéfinie qui organise une improvisation sans en fixer le contenu. Le score donne le cadre (les contraintes), les danseurs remplissent ce cadre avec du mouvement inventé en temps réel.",
+    description: "Le score (de l'anglais, 'partition') est l'outil de l'improvisation structurée — une réponse à la question : 'Comment improviser sans que ça devienne du chaos ou de la répétition ?'\n\n**Types de scores :**\n\n**Score spatial :** 'Déplace-toi en suivant les lignes des carreaux du sol'\n\n**Score temporel :** 'Alterne 30 secondes de mouvement rapide et 30 secondes d'immobilité'\n\n**Score relationnel :** 'Quand tu croises quelqu'un, commence à l'imiter en décalé'\n\n**Score qualitatif :** 'Tout ton mouvement doit avoir une qualité aqueuse'\n\n**Score narratif :** 'Tu es une personne qui cherche quelque chose qu'elle a perdu'\n\n**Score de Judson :** Yvonne Rainer et ses contemporains utilisent des instructions minimales pour créer des pièces entières : 'Traverser la scène. S'arrêter. S'asseoir.'\n\n**Pourquoi les scores sont utiles :**\n- Donnent de la liberté dans un cadre (évite la page blanche)\n- Permettent d'explorer une qualité spécifique\n- Créent de la cohérence dans un groupe\n- Sont répétables (chaque exécution est différente mais dans le même cadre)",
+    erreursCourantes: [
+      "Respecter le score à la lettre au détriment de la qualité de mouvement.",
+      "Ignorer le score dès que l'improvisation 'prend' — le score est actif tout au long.",
+    ],
+    conseils: [
+      "Crée ton propre score simple : 'Je ne touche jamais le sol avec mes mains.' Improvise 3 minutes avec cette seule contrainte. Observe comment elle force la créativité.",
+    ],
+    difficulteInterne: 3,
+    termesLies: ['instant-composition', 'phrase-mouvement', 'contact-improvisation'],
+  },
+
+  {
+    id: 'instant-composition',
+    nom: 'Composition instantanée',
+    alias: ['CI — composition instantanée', 'real-time composition', 'composition en temps réel'],
+    disciplines: ['contemporain'],
+    categories: ['concepts'],
+    definition: "Pratique chorégraphique dans laquelle le danseur prend des décisions compositionnelles (structure, espace, temps, relations) en temps réel pendant la performance — sans partition fixe préalable, mais avec une conscience aiguë de l'ensemble.",
+    description: "La composition instantanée (CI) est distincte de la simple improvisation — l'improvisateur *bouge* de façon libre, le compositeur instantané *structure* ce qui se passe, pense l'ensemble, fait des choix de mise en scène en temps réel.\n\n**Les deux niveaux de conscience en CI :**\n\n1. **Le niveau du danseur** : je sens, je bouge, je réagis\n2. **Le niveau du compositeur** : comment est distribué l'espace ? quand entre le prochain danseur ? est-ce que cette scène dure assez ou trop ? quel est le rapport à la musique ?\n\n**Pionniers :**\n- **Steve Paxton** : contact improvisation comme CI à deux\n- **Nancy Stark Smith** : théorise et enseigne la CI\n- **Eva Karczag** : CI solo\n- En France : **Julyen Hamilton**, nombreux artistes de la scène de l'improvisation\n\n**L'écoute en CI :**\nLa composition instantanée exige une écoute à plusieurs niveaux simultanément : son propre corps, les autres danseurs, l'espace, le public, le son.\n\n**Les festivals de CI :**\nDes festivals comme le festival 'Biennale de la composition instantanée' (Paris) permettent de voir cette pratique en scène.",
+    erreursCourantes: [
+      "Confondre CI et improvisation pure — la CI a une dimension de mise en scène en temps réel.",
+      "Être tellement dans le 'compositeur' qu'on perd la spontanéité du danseur.",
+    ],
+    conseils: [
+      "Pendant une improvisation de groupe, essaie de regarder la salle depuis l'extérieur (même si tu danses dedans). Que manque-t-il ? Trop de monde au centre — tu vas vers les bords. Silence — tu entres. Tohu-bohu — tu immobilises. C'est le début du regard du compositeur instantané.",
+    ],
+    difficulteInterne: 4,
+    termesLies: ['score-improvisation', 'phrase-mouvement', 'contact-improvisation'],
+  },
+
+  // ─── Pratiques somatiques ─────────────────────────────────────────────────
+
+  {
+    id: 'somatique',
+    nom: 'Pratiques somatiques',
+    alias: ['éducation somatique', 'somatique', 'travail somatique', 'approche somatique'],
+    disciplines: ['contemporain'],
+    categories: ['concepts', 'sante-prevention'],
+    definition: "Ensemble d'approches pédagogiques et thérapeutiques centrées sur la conscience du corps de l'intérieur (soma = corps vécu de l'intérieur, par opposition au corps objectivé de l'extérieur). En danse, les pratiques somatiques enrichissent la technique par une conscience proprioceptive affinée.",
+    description: "Le terme 'somatique' vient du grec *soma* (corps). L'approche somatique s'intéresse au corps tel qu'il est vécu de l'intérieur — les sensations, les perceptions, les habitudes, les schémas de mouvement inconscients.\n\n**Principales pratiques somatiques utilisées en danse :**\n\n| Pratique | Fondateur | Principe central |\n|---------|----------|------------------|\n| Méthode Feldenkrais | Moshé Feldenkrais | Apprentissage par le mouvement exploratoire |\n| Body-Mind Centering | Bonnie Bainbridge Cohen | Anatomie vécue, cartographie intérieure |\n| Alexander Technique | F.M. Alexander | Inhibition des habitudes, équilibre tête-cou-dos |\n| Idéokinèse | Mabel Todd / André Bernard | Images mentales qui guident le mouvement |\n| Méthode Rolfing | Ida Rolf | Manipulation des fascias |\n\n**Pourquoi les danseurs s'y intéressent :**\n- Affiner la proprioception\n- Réduire les tensions chroniques\n- Augmenter l'amplitude de mouvement sans forcer\n- Prévenir et récupérer des blessures\n- Renouveler la créativité en changeant les habitudes\n\n**Dans l'enseignement :**\nDe nombreux cours de contemporain intègrent 5–15 minutes de pratique somatique en début de cours.",
+    erreursCourantes: [
+      "Considérer les pratiques somatiques comme du yoga ou de la relaxation — c'est de l'éducation du mouvement, pas du repos.",
+      "Penser que c'est incompatible avec la technique — les deux se renforcent.",
+    ],
+    conseils: [
+      "Allonge-toi sur le dos. Scanne ton corps : où est-ce que ça touche le sol ? Où il y a de l'espace ? Un côté plus ancré que l'autre ? Cet outil s'appelle le 'body scan' — c'est l'entrée de toutes les pratiques somatiques.",
+    ],
+    difficulteInterne: 2,
+    termesLies: ['body-mind-centering', 'feldenkrais', 'release-technique'],
+  },
+
+  {
+    id: 'body-mind-centering',
+    nom: 'Body-Mind Centering',
+    alias: ['BMC', 'Body Mind Centering', 'Bonnie Bainbridge Cohen'],
+    disciplines: ['contemporain'],
+    categories: ['concepts', 'sante-prevention'],
+    definition: "Approche somatique développée par Bonnie Bainbridge Cohen depuis les années 1970, qui explore la relation corps-esprit à travers l'anatomie vécue de l'intérieur : os, muscles, fascias, organes, fluides, système nerveux.",
+    description: "Le **Body-Mind Centering (BMC)** est une des pratiques somatiques les plus utilisées en danse contemporaine. Sa fondatrice, **Bonnie Bainbridge Cohen** (née en 1941), thérapeute en neurodéveloppement et danseuse, développe cette approche à partir des années 1970.\n\n**Principes fondamentaux :**\n- Chaque tissu du corps (os, muscles, organes, fascias, fluides) a une qualité de mouvement propre\n- En portant l'attention sur un tissu spécifique, on peut en modifier la qualité de mouvement\n- Le développement moteur humain (de l'embryon au mouvement adulte) est une ressource chorégraphique\n\n**Les patterns de développement moteur :**\nBMC cartographie les étapes du développement moteur humain :\n1. Mouvements prévertébrés (respiration, fluides)\n2. Reptation\n3. Quadrupédie\n4. Debout\n\nChaque étape peut être revisitée en danse pour trouver de nouvelles ressources de mouvement.\n\n**En pratique dans les cours :**\n- Sentir le poids des os (qualité 'dense')\n- Bouger depuis les organes (qualité 'molle', 'volumique')\n- Travailler avec la fluidité du sang, de la lymphe\n- Explorer les patterns prévertébrés (serpent, étoile de mer)",
+    erreursCourantes: [
+      "Rester dans le concept sans véritable exploration sensorielle.",
+      "Confondre BMC avec de l'anatomie académique — BMC est l'anatomie vécue.",
+    ],
+    conseils: [
+      "Pose ta main sur ton sternum. Laisse ta conscience descendre dans cet os — dense, rigide, protecteur. Maintenant bouge depuis cet os. Sens comme la qualité change. C'est l'approche BMC : l'anatomie comme ressource de mouvement.",
+    ],
+    difficulteInterne: 3,
+    termesLies: ['somatique', 'feldenkrais', 'release-technique'],
+  },
+
+  {
+    id: 'feldenkrais',
+    nom: 'Méthode Feldenkrais',
+    alias: ['Feldenkrais', 'IEM', 'Prise de conscience par le mouvement', 'ATM'],
+    disciplines: ['contemporain'],
+    categories: ['concepts', 'sante-prevention'],
+    definition: "Méthode d'éducation somatique développée par Moshé Feldenkrais (1904–1984), physicien et judoka, qui utilise le mouvement exploratoire pour reprogrammer les schémas moteurs habituels et améliorer l'efficacité et le confort du mouvement.",
+    description: "**Moshé Feldenkrais** (1904–1984) développe sa méthode après s'être blessé au genou — il cherche à marcher à nouveau sans opération. Sa formation en physique et en judo l'amène à comprendre le mouvement de façon unique.\n\n**Deux formats :**\n\n**ATM (Awarness Through Movement / Prise de conscience par le mouvement) :**\n- Séances en groupe, couché au sol\n- Un instructeur guide verbalement des séquences de mouvement très lentes et répétitives\n- L'élève explore en silence, sans effort\n- Durée : 30–60 min\n\n**IEM (Intégration fonctionnelle) :**\n- Séance individuelle\n- L'instructeur touche et déplace doucement le corps de l'élève\n- Apprentissage par le système nerveux (pas par la volonté)\n\n**Principes clés :**\n- 'Apprendre à apprendre' — développer la capacité d'apprentissage moteur en général\n- Le mouvement doit être confortable, jamais forcé\n- La répétition avec conscience est plus efficace que l'effort répété\n- Les petits mouvements révèlent plus que les grands\n\n**Pour les danseurs :**\n- Résoudre des problèmes techniques chroniques (tour-out, équilibre)\n- Récupérer de blessures\n- Trouver plus d'aisance dans des mouvements difficiles",
+    erreursCourantes: [
+      "Faire les mouvements Feldenkrais avec effort — la méthode est basée sur l'exploration facile.",
+      "S'endormir pendant les séances (c'est courant mais signifie que la conscience s'est perdue).",
+    ],
+    conseils: [
+      "Essaie ceci : tourne la tête à droite, note jusqu'où tu vas. Reviens au centre. Maintenant regarde à droite avec les yeux seulement (pas la tête), plusieurs fois. Puis, tourne à nouveau la tête à droite. Tu vas plus loin ? C'est la Feldenkrais — une petite exploration qui change une grande habitude.",
+    ],
+    difficulteInterne: 2,
+    termesLies: ['somatique', 'body-mind-centering', 'release-technique'],
+  },
+
+  {
+    id: 'site-specific',
+    nom: 'Danse in situ',
+    alias: ['site-specific', 'danse in situ', 'performance in situ', 'danse dans l\'espace public'],
+    disciplines: ['contemporain'],
+    categories: ['concepts'],
+    definition: "Pratique chorégraphique dans laquelle une danse est créée pour et à partir d'un lieu spécifique — rue, musée, forêt, architecture industrielle — qui n'est pas une scène conventionnelle et dont les caractéristiques influencent ou déterminent la création.",
+    description: "La danse **in situ** (ou *site-specific*) part d'un principe : le lieu n'est pas un décor mais un **co-créateur**. La danse émerge du lieu, répond à ses dimensions, sa texture, son histoire, ses usagers.\n\n**Histoire :**\nLes danseurs de Judson Church sont parmi les premiers à danser dans des espaces non-théâtraux (toits, musées, rues). **Trisha Brown** développe ses pièces 'd'équipement' dans des immeubles et sur les murs. En France, la scène *hors les murs* se développe dès les années 1970.\n\n**Types d'espaces in situ :**\n- Espace urbain (rue, place, gare)\n- Architecture (musée, usine, escaliers, parking)\n- Nature (forêt, plage, falaise)\n- Espace intime (appartement, piscine, ascenseur)\n\n**Le rapport au public :**\nLe public de la danse in situ est souvent mobile, non délimité, surpris. Certaines performances sont annoncées, d'autres sont des interventions dans le flux ordinaire (flash mob artistique).\n\n**Enjeux :**\n- L'accessibilité (pas besoin de billet)\n- Le rapport à la communauté (qui est le public ?)\n- La résistance à la marchandisation de l'art\n- La redécouverte du corps dans l'espace commun",
+    erreursCourantes: [
+      "Croire que danser dans la rue = danse in situ — la danse in situ est une réponse au lieu, pas juste un changement de scène.",
+      "Ignorer les contraintes pratiques (météo, bruit, badauds) au lieu de les intégrer.",
+    ],
+    conseils: [
+      "Va dans un lieu que tu connais bien (bibliothèque, jardin, couloir). Reste 10 minutes à l'observer — ses sons, ses textures, ses lignes. Puis bouge en réponse à ce lieu. Ta danse sera différente de ce qu'elle aurait été en studio. C'est le début du travail in situ.",
+    ],
+    difficulteInterne: 3,
+    termesLies: ['score-improvisation', 'instant-composition', 'phrase-mouvement'],
   },
 ]
