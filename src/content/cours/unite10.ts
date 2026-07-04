@@ -88,6 +88,10 @@ Prends un gant. Essaie de prendre 2 minutes pour le retirer en utilisant hold, m
         titre: "Le personnage — construire son alter-ego",
         contenuMarkdown: `Le burlesque se danse avec un personnage. Sans personnage, c'est du déshabillage. Avec un personnage, c'est de l'art. C'est la distinction qui me tient le plus à cœur dans toute cette unité — et si tu ne retiens qu'une chose de mes carnets sur le burlesque, que ce soit ça.
 
+J'aime beaucoup cette formulation de Coco Das Vegas, présidente de l'association Pin-Up d'Alsace — qui dit mieux que moi ce que je veux t'enseigner ici :
+
+> *"L'effeuillage burlesque, ce n'est pas juste une femme ou un homme qui se déshabille. C'est interpréter un personnage, avec une musique, une mise en scène. Ce n'est jamais dévalorisant. Il y a de la classe et beaucoup d'humour."*
+
 **Pourquoi un personnage ?**
 
 **Protection :** Ce n'est pas *toi* sur scène qui retire tes vêtements — c'est ton personnage. Cet espace protégé permet d'explorer des territoires qu'on n'oserait pas en tant que soi-même.

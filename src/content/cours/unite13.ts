@@ -232,6 +232,22 @@ Le stress psychologique augmente le risque de blessure physique — c'est prouv�
 
 ---
 
+## Bénéfices cardiovasculaires — la science a des choses réjouissantes à te dire
+
+Je fais de la prévention depuis le début de cette unité — laisse-moi finir par quelque chose de positif, parce que la science le mérite.
+
+**Ballet classique :** Les pliés et relevés répétitifs agissent comme une pompe naturelle pour le retour veineux (remontée du sang vers le cœur). Le travail en pointe renforce les muscles des mollets et crée une compression naturelle sur les veines profondes — réduit le risque de stase veineuse.
+
+**Danses de salon (valse, tango) :** Une pratique régulière de 12 semaines peut réduire la pression artérielle systolique de **12 mm Hg en moyenne** chez des personnes souffrant d'hypertension légère — un effet comparable à certains traitements médicamenteux.
+
+**Hip-hop :** Les sauts et changements de rythme rapides stimulent le débit cardiaque, poussant le cœur à pomper plus efficacement.
+
+**Danseurs professionnels et angiogenèse :** Une étude a mesuré une augmentation de **20 % de la densité capillaire** dans les muscles des mollets des danseurs professionnels par rapport aux sédentaires. Le corps, face à la demande régulière de la danse, crée de nouveaux vaisseaux sanguins pour mieux irriguer les tissus.
+
+La danse améliore aussi le tonus vasculaire : l'alternance rythmique de contraction et relâchement musculaire envoie des signaux au système nerveux autonome qui régule l'élasticité des artères. À long terme, c'est une protection contre l'hypertension.
+
+---
+
 > Ton corps n'est pas ton ennemi — c'est ton instrument. Comme tout instrument, il demande entretien, soin et respect pour produire son meilleur son. Prends-en soin, et il te le rendra. Je le crois profondément.`,
       },
     ],

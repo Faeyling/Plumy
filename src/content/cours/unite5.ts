@@ -67,6 +67,9 @@ En France, à partir des années 1980, une génération de chorégraphes renouve
 
 Le **CNDC** (Centre national de danse contemporaine) à Angers, fondé en 1978, accueille successivement comme directeurs artistiques **Alwin Nikolais**, **Viola Farber** et **Carolyn Carlson** — devenant l'un des foyers les plus importants de la danse contemporaine en France. La France investit dans la décentralisation culturelle — et ça change tout.
 
+**Germaine Acogny — la mère de la danse contemporaine africaine**
+**Germaine Acogny** (née en 1944 au Sénégal) a révolutionné le paysage chorégraphique en fusionnant les techniques du ballet classique avec les mouvements traditionnels africains. Son approche, baptisée **technique Acogny**, puise dans la rigueur du ballet tout en célébrant la liberté et l'expressivité des danses africaines — elle a fondé l'**École des Sables** en Casamance (Sénégal), lieu de rencontre entre chorégraphes du monde entier. Ce qui me touche dans son travail, c'est qu'il montre que deux traditions en apparence opposées partagent des fondements communs : l'ancrage au sol, la fluidité, la rigueur du geste. Si tu ne connais pas encore son nom, commence par là.
+
 **Deux courants que je ne veux pas te faire manquer**
 - **Le butō** : danse d'avant-garde japonaise née dans les années 1960, fondée par Tatsumi Hijikata et Kazuo Ohno. Mouvements très lents, esthétique sombre et radicale, exploration des limites du corps. Le butō a profondément influencé la scène contemporaine mondiale — et il continue de le faire.
 - **La danse conceptuelle** : des chorégraphes comme **Boris Charmatz** et **Jérôme Bel** (années 1990–2000) remettent en question la notion même de danse. Certaines de leurs pièces comportent peu ou pas de "danse" au sens habituel — le concept, l'idée, la présence du corps suffisent. Provocant, radical, et très français.
