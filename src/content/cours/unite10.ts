@@ -203,13 +203,24 @@ Horror burlesque, steampunk burlesque, political burlesque, queer burlesque, com
 
 **Artistes néo-burlesque à connaître :**
 
-**Dita Von Teese :** La référence glamour — esthétique classique et haute couture.
+**Dita Von Teese :** La référence glamour — esthétique classique, haute couture, reconnue pour avoir "ressuscité l'art du strip-tease" auprès du grand public.
 
-**Dirty Martini :** Artiste plus size, militante des droits corporels.
+**Dirty Martini :** Artiste plus size, militante des droits corporels, photographiée par Karl Lagerfeld.
 
 **Jo Boobs :** Activiste et organisatrice communautaire à New York.
 
 **Harvest Moon :** Style dark, politique, queerpunk.
+
+**Diablo Cody :** Scénariste oscarisée pour *Juno* — avant Hollywood, elle a travaillé dans des bars de danseuses et en a fait un récit écrit. Elle représente le passage de la scène burlesque à la reconnaissance culturelle mainstream, sans renie son passé.
+
+**Brooke Candy :** Ex-danseuse nue devenue rappeuse et muse de la mode — un parcours qui illustre les porosités entre burlesque, hip-hop et culture visuelle contemporaine.
+
+**Amber Rose :** A assumé publiquement son passé de strip-teaseuse comme acte féministe explicite — refusant la trajectoire "carrière socialement acceptable" et affirmant que la maîtrise de son propre corps est en soi une revendication politique.
+
+**Jacq The Stripper (Jacqueline Frances) :** Strip-teaseuse, comédienne, auteure de *The Beaver Show* — se définit comme "entrepreneure mégababe" et travaille à renverser les perceptions sur le métier en parlant de l'intérieur.
+
+**Un lieu à part — le Jumbo's Clown Room (Hollywood) :**
+Ce bikini-bar hollywoodien est devenu un cas d'école dans la conversation sur le burlesque contemporain : ses danseuses, souvent diplômées de Juilliard (l'une des plus grandes écoles du spectacle au monde), dansent sur du Black Sabbath avec des chaussures à plateforme. Hedi Slimane y a recruté des danseuses pour son défilé. C'est exactement ça, la tension du burlesque contemporain : un art que l'industrie culturelle s'empresse de photographier, d'utiliser comme motif (Alexander Wang, 2016) — sans toujours soutenir ni défendre les artistes qui le pratiquent.
 
 **Le burlesque et le féminisme :**
 Le burlesque est-il féministe ? Le débat est ouvert — et c'est normal qu'il le soit. Ce qui est sûr : le néo-burlesque *peut* être une pratique féministe quand il est exercé avec conscience, intention et consentement — et quand il n'est pas réduit à l'objectification sans agentivité.

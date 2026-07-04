@@ -30,8 +30,11 @@ Les compétitions de la scène ballroom incluaient des catégories de défilé e
 **La culture drag :**
 Les drag queens ont développé des techniques de walk, de pose et d'attitude en talons qui ont profondément nourri la danse heels.
 
-**Le jazz et le cabaret :**
-Le jazz a toujours inclus des danses en talons — les danseuses de revue, les chorus girls, les stars de Broadway.
+**La showgirl dance et le cabaret :**
+C'est le premier style de danse technique à se pratiquer en talons hauts — les danseuses de revue, les chorus girls, les stars de Broadway. La showgirl dance est littéralement l'ancêtre direct du heels dance. Ce que j'aime dans cette filiation, c'est qu'elle est directe, traçable, et souvent oubliée. Je la mets en premier dans mes carnets pour ça.
+
+**La danse orientale et les isolations :**
+Autre filiation souvent méconnue : la danse heels emprunte à la danse orientale ses isolations de torse — la capacité à mobiliser la cage thoracique indépendamment du bassin, et réciproquement. C'est ce qui donne à certaines danseuses heels cette fluidité de haut de corps si caractéristique.
 
 **Le hip-hop et le R&B des années 1990–2000 :**
 Les clips vidéo de Janet Jackson, Beyoncé, Ciara — chorégraphiés en talons avec une qualité jazz/urban — ont popularisé le heels dance contemporain.
@@ -48,11 +51,21 @@ Danser en talons ne veut pas dire faire de la heels dance. Porter des talons pen
 **Heels dance vs heels cabaret :**
 La heels dance regroupe plusieurs styles. Le heels cabaret met l'accent sur le théâtre, l'élégance, le jeu scénique — mouvements plus lents, plus posés, plus narratifs. La heels dance "classique" est plus proche des clips, du jazz ou du commercial. Beaucoup de studios mélangent les deux, et c'est tout à fait cohérent.
 
+Une formule que j'adore et qui résume tout : la heels dance est "résolument la forme la plus moderne des danses Cabaret." Elle porte des siècles d'héritage dans chaque pas — et elle les renouvelle entièrement.
+
 > Porter des talons, c'est choisir une contrainte et en faire une qualité. La danse heels transforme la limitation en langage. Moi, je trouve ça magnifique — et j'espère que toi aussi tu vas l'apprécier.`,
       },
       {
         titre: "Biomécanique et posture — danser en sécurité",
         contenuMarkdown: `Avant de danser en talons hauts, il faut comprendre ce qu'ils font au corps. Je ne veux pas te faire peur — juste te donner les outils pour danser intelligemment. Parce que j'ai vu trop de danseurs se précipiter, et c'est leur corps qui a payé le prix.
+
+**La colonne vertébrale — ta fondation :**
+La colonne vertébrale est le pivot autour duquel s'articulent tous les mouvements. Elle possède trois courbures naturelles qu'il faut maintenir, jamais exagérer ni aplatir :
+- **Lordose cervicale** (nuque, concave vers l'arrière)
+- **Cyphose thoracique** (dos, convexe vers l'arrière)
+- **Lordose lombaire** (bas du dos, concave vers l'arrière — c'est celle que le talon haut met sous pression)
+
+Les **muscles posturaux profonds** — multifides et transverse de l'abdomen — sont ceux qui maintiennent cet alignement. Souvent oubliés dans les entraînements, ils sont au cœur de la stabilité du core. Un gainage abdominal léger mais continu, c'est eux en action. La **proprioception** — la conscience du corps dans l'espace — est ce qui te permet d'ajuster ta posture en temps réel sans t'arrêter de danser. Ça se développe, et la danse heels est une des meilleures écoles pour ça.
 
 **Ce que le talon haut modifie :**
 

@@ -209,6 +209,8 @@ C'est un système d'une élégance remarquable — la dignité de tout le monde 
 
 Écouter le tempo, c'est le minimum. La musicalidad, c'est entendre la mélodie, la phrase musicale, les silences, l'émotion particulière de chaque orchestre.
 
+Une chose que j'aime beaucoup sur le rythme du tango : il est souvent décrit comme très proche du nombre de battements par minute du cœur humain. Ce n'est pas une métaphore poétique — c'est une réalité physiologique qui explique pourquoi le tango touche si directement. Le **rythme lent** évoque la tendresse, l'intimité, les instants de suspension. Le **rythme rapide** porte l'urgence, la passion, parfois une forme d'agressivité douce. Et dans une même tanda, un bon orchestre joue souvent sur les deux — comme une conversation qui traverse plusieurs émotions.
+
 **Les grands orchestres à connaître :**
 
 | Orchestre / Artiste | Personnalité |

@@ -340,6 +340,9 @@ Cette narration efface les femmes — souvent travailleuses du sexe, souvent noi
 **Le mouvement "Sex Worker Rights" dans la communauté pole :**
 Un mouvement croissant dans la communauté pole milite pour que les travailleuses du sexe — passées et présentes — soient reconnues, respectées et soutenues dans leur travail. J'y suis sensible, et j'espère que toi aussi.
 
+**#NotAStripper vs #YesAStripper — un débat qui compte :**
+En 2015, le hashtag **#NotAStripper** s'est répandu parmi des pratiquantes de pole sport qui publiaient leurs figures acrobatiques en précisant qu'elles étaient "des athlètes, pas des strip-teaseuses". La réponse ne s'est pas fait attendre : **#YesAStripper**, **#AllPoleDancers**, **#ProudStripper** ont inondé les réseaux. L'argument était simple et juste : l'art de la pole dance a été perfectionné par des strip-teaseuses. En niant ses racines pour se faire accepter, le mouvement #NotAStripper contribue à la stigmatisation des femmes qui ont popularisé cette discipline. Ce débat, je le trouve important — il touche directement à la question de l'honnêteté dans l'histoire de sa propre discipline.
+
 > Chaque fois que tu montes sur une barre, tu te tiens sur les épaules de celles qui ont appris avant toi — souvent dans des conditions bien moins glamour que ton studio de pole. Connaître leur histoire, c'est pratiquer avec gratitude.`,
       },
     ],
