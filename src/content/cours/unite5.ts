@@ -63,9 +63,13 @@ Ce qui me fascine chez Forsythe, c'est qu'il aime le ballet *tellement* qu'il l'
 Ohad Naharin dirige la Batsheva Dance Company (Israël) et a développé le **Gaga** — pas un style : une méthode. Dans une session Gaga, on te donne des "instructions" abstraites ("sens le liquide dans ton corps", "laisse l'effort t'étonner") et tu explores en mouvement continu. Pas de miroir, pas de correction. L'objectif : reconnecter avec la sensation plutôt qu'avec la forme. Il existe deux pratiques : Gaga/people (accessible à tous) et Gaga/dancers (pour les professionnels).
 
 **La Nouvelle danse française — l'explosion créative**
-En France, à partir des années 1980, une génération de chorégraphes renouvelle complètement le paysage : **Maguy Marin**, **Angelin Preljocaj**, **Jean-Claude Gallotta**, **Régine Chopinot**. Ils fondent leurs compagnies en région, développent leur propre esthétique, et dialoguent avec les arts visuels, la musique contemporaine, la technologie.
+En France, à partir des années 1980, une génération de chorégraphes renouvelle complètement le paysage : **Maguy Marin**, **Angelin Preljocaj**, **Jean-Claude Gallotta**, **Régine Chopinot**. Un exemple qui me touche particulièrement : Maguy Marin crée *May B* en 1981, inspirée de l'univers de Samuel Beckett — une pièce qui mêle danse et théâtre dans une esthétique brute et saisissante, toujours jouée aujourd'hui dans le monde entier. Ces chorégraphes fondent leurs compagnies en région, développent leur propre esthétique, et dialoguent avec les arts visuels, la musique contemporaine, la technologie.
 
-Le **CNDC** (Centre national de danse contemporaine) à Angers, fondé par Alwin Nikolais, devient un des centres de formation les plus importants d'Europe. La France investit dans la décentralisation culturelle — et ça change tout.
+Le **CNDC** (Centre national de danse contemporaine) à Angers, fondé en 1978, accueille successivement comme directeurs artistiques **Alwin Nikolais**, **Viola Farber** et **Carolyn Carlson** — devenant l'un des foyers les plus importants de la danse contemporaine en France. La France investit dans la décentralisation culturelle — et ça change tout.
+
+**Deux courants que je ne veux pas te faire manquer**
+- **Le butō** : danse d'avant-garde japonaise née dans les années 1960, fondée par Tatsumi Hijikata et Kazuo Ohno. Mouvements très lents, esthétique sombre et radicale, exploration des limites du corps. Le butō a profondément influencé la scène contemporaine mondiale — et il continue de le faire.
+- **La danse conceptuelle** : des chorégraphes comme **Boris Charmatz** et **Jérôme Bel** (années 1990–2000) remettent en question la notion même de danse. Certaines de leurs pièces comportent peu ou pas de "danse" au sens habituel — le concept, l'idée, la présence du corps suffisent. Provocant, radical, et très français.
 
 **Comparatif danse moderne / danse contemporaine :**
 

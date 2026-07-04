@@ -52,6 +52,61 @@ Le financement public est important : il permet à ces compagnies de maintenir u
 > Ce que j'aime dans cette histoire, c'est qu'elle montre que la danse classique n'a jamais été figée — elle s'est transformée à chaque siècle, en absorbant les révolutions de son temps. Elle continue.`,
       },
       {
+        titre: 'Les trois écoles de ballet et la hiérarchie dans la compagnie',
+        contenuMarkdown: `Un des aspects qui me fascine dans la danse classique, c'est qu'il n'existe pas une seule façon d'enseigner le même vocabulaire — il en existe plusieurs, chacune avec sa philosophie, son accent, ses exigences propres. Dans mon carnet, je les appelle "les trois ADN du ballet".
+
+**L'école française — l'élégance et l'épaulement**
+La plus ancienne — directement issue de Louis XIV et de l'Académie royale de danse. L'école française valorise :
+- L'élégance et la discrétion des bras (port de bras doux, jamais forcé)
+- L'**épaulement** raffiné : la rotation subtile des épaules par rapport aux hanches qui donne cette ligne si reconnaissable
+- La légèreté, la grâce, la clarté des lignes
+- Une certaine réserve dans l'expression, une noblesse dans le geste
+
+C'est le style qui imprègne encore aujourd'hui le Ballet de l'Opéra de Paris. Quand tu regardes un danseur de l'Opéra, tu reconnais cette qualité-là.
+
+**L'école italienne — la virtuosité**
+Développée autour du travail d'**Enrico Cecchetti** (1850–1928), maître de ballet légendaire qui a formé des danseurs comme Nijinsky et Pavlova. La **Méthode Cecchetti** met l'accent sur :
+- La **batterie** précise : entrechats, cabrioles, beaten steps
+- L'attaque du mouvement et le dynamisme
+- Une virtuosité technique clairement revendiquée
+
+La Méthode Cecchetti est encore enseignée dans le monde entier, avec des examens officiels jusqu'au niveau professionnel.
+
+**L'école russe (méthode Vaganova) — l'amplitude et l'expressivité**
+La grande synthèse. **Agrippina Vaganova** (1879–1951), ancienne ballerine du Mariinsky, a codifié l'enseignement de l'école russe dans un traité publié en 1934 qui reste une référence mondiale. Elle combine l'élégance française et la virtuosité italienne, en y ajoutant :
+- Une **amplitude** exceptionnelle (bras, dos, jambes)
+- Un port de bras expressif et sculptural
+- Une qualité dramatique et émotionnelle du mouvement
+- La puissance et l'énergie propres à la tradition russe
+
+C'est l'école du Bolchoï et du Mariinsky, et de nombreux danseurs considérés parmi les plus grands du XXe siècle.
+
+**La hiérarchie dans une grande compagnie**
+Dans les grandes compagnies à la française, les danseurs progressent selon une hiérarchie stricte — chaque échelon représente des années de travail. J'ai toujours trouvé ça fascinant : c'est une vie entière structurée par la progression artistique.
+
+| Rang | Rôle principal |
+|------|----------------|
+| **Quadrille** | Corps de ballet — ensembles, formations |
+| **Coryphée** | Mène des groupes, petits rôles solistes |
+| **Sujet** | Rôles solistes de second plan |
+| **Premier danseur / Première danseuse** | Grands rôles |
+| **Étoile** | Niveau suprême, nommé(e) par le directeur |
+
+À l'Opéra de Paris, le titre d'Étoile est décerné par le directeur — parfois en fin de représentation, devant le public. La danseuse ou le danseur apprend sa nomination en sortant de scène, sous les applaudissements. C'est un des moments les plus émouvants de la vie d'une compagnie.
+
+**Le Grand pas de deux — la structure de la rencontre**
+Dans le répertoire classique, le grand pas de deux suit une structure quasi-immuable :
+1. **Entrée** : les deux partenaires arrivent ensemble
+2. **Adage** : danse lente et intimiste, portés, équilibres — la relation se révèle
+3. **Variation masculine** : solo technique
+4. **Variation féminine** : solo technique
+5. **Coda** : final virtuose à deux
+
+Cette structure est celle du *Lac des cygnes*, de *La Belle au bois dormant*, de *Giselle*, de *Don Quichotte* — pratiquement tous les grands ballets du répertoire.
+
+> Ce que j'aime dans les trois écoles, c'est qu'elles prouvent qu'il n'y a pas une seule façon d'être "classique" — qu'à l'intérieur du même vocabulaire codifié, des cultures et des philosophies différentes ont laissé leur empreinte. La technique classique est universelle dans ses fondements, diverse dans ses expressions.`,
+      },
+      {
         titre: 'La logique du cours classique',
         contenuMarkdown: `Ce que j'ai trouvé fascinant en découvrant le cours classique, c'est que rien n'est aléatoire. Chaque exercice prépare le suivant — c'est une architecture pensée sur des siècles de pratique pédagogique.
 

@@ -49,6 +49,38 @@ Merce Cunningham, puis les artistes du Judson Dance Theater (Yvonne Rainer, Stev
 > La danse moderne *croit encore* qu'il y a quelque chose à exprimer. La contemporaine remet en question ce postulat. C'est une nuance qui change tout.`,
       },
       {
+        titre: 'Les grandes pionnières — celles qui ont tout inventé',
+        contenuMarkdown: `C'est l'une des choses qui me fascine le plus dans cette histoire : à une époque où les femmes avaient si peu de libertés, ce sont elles qui ont tout cassé et tout reconstruit. Je leur ai consacré des pages entières dans mes carnets. Laisse-moi te présenter celles (et ceux) qui ont inventé la danse moderne au tournant du XXe siècle.
+
+**Isadora Duncan (1877–1927) — la mère de la danse moderne**
+Américaine installée en Europe, Duncan a rejeté tout ce que le ballet lui imposait : pointes, tutus, corset, narratif obligatoire. Elle dansait **pieds nus**, vêtue de tuniques légères inspirées de la Grèce antique, au son de Beethoven ou Brahms. Sa théorie : le mouvement devait émaner du **plexus solaire** — le centre physique et spirituel du corps. L'idée que la danse doit venir d'un centre expressif intérieur plutôt que d'une technique extérieure imposée, c'est l'une des idées les plus révolutionnaires de l'histoire de l'art. Elle a dit : *"La danse du futur sera un mouvement nouveau, un fruit de toute l'évolution que l'humanité a traversée."* Elle avait raison.
+
+**Loïe Fuller (1862–1928) — la danse comme lumière**
+Contemporaine de Duncan, Fuller prend un chemin radicalement différent — et tout aussi révolutionnaire. Là où Duncan cherche le naturel et l'expressif, Fuller cherche **l'abstraction et la technologie**. Sa célèbre *danse serpentine* utilise des mètres de tissu en soie manipulés avec des baguettes extensibles, transformés en formes sculpturales par des éclairages colorés de sa propre invention. Elle a breveté ses techniques d'éclairage — c'est une pionnière des arts de la scène au sens le plus large. Fuller dansait aux Folies Bergère à Paris et fascinait aussi bien les artistes que les scientifiques. Elle a préfiguré la scénographie moderne et les arts numériques de plus d'un siècle.
+
+**La Denishawn School (1915) — l'école qui a tout formé**
+À New York, **Ruth St. Denis** (1879–1968) et **Ted Shawn** (1891–1972) fondent en 1915 la **Denishawn School** — le premier grand conservatoire de danse moderne aux États-Unis. St. Denis intègre des influences des danses orientales (indiennes, égyptiennes, japonaises) et une vision spirituelle du mouvement. Shawn, lui, cherche à légitimer la danse masculine à une époque où la danse était perçue comme une activité exclusivement féminine. Ce qui me fascine avec cette école, c'est qui en sort :
+- **Martha Graham**
+- **Doris Humphrey**
+- **Charles Weidman**, **Lester Horton**, **Jack Cole**...
+
+La Denishawn, c'est le berceau de toute la danse moderne américaine — tous les grands noms de la génération suivante y ont étudié.
+
+**Mary Wigman (1886–1973) — l'expressionnisme allemand**
+Pendant que Duncan et Graham révolutionnent la danse aux États-Unis, Mary Wigman fait la même chose en Allemagne. Élève de Rudolf Laban, elle développe l'**Ausdruckstanz** (danse d'expression) : mouvements angulaires et dramatiques, thèmes sombres et existentiels, masques, costumes expressifs, musique percussive — ou silence total. Son œuvre la plus célèbre, *Hexentanz* (Danse de la sorcière, 1914), est un solo où elle incarne une figure primitive et mystique. Son école à Dresde devient un centre de référence pour la danse moderne européenne. L'influence de Wigman dépasse la danse : elle touche le théâtre expressionniste, le cinéma, les arts visuels allemands.
+
+**Martha Graham (1894–1991) — la psychanalyse en mouvement**
+Sa technique (contraction-release) est développée ailleurs dans ce cours — mais Graham, c'est aussi un univers chorégraphique total. Influencée par la psychanalyse (Freud, Jung), elle explore les profondeurs de la psyché humaine à travers des mythes grecs et des archétypes psychologiques. *Appalachian Spring* (1944, musique de Copland), *Night Journey* (1947 — Jocaste et Œdipe), *Clytemnestre* (1958) — des œuvres d'une intensité dramatique sans précédent dans l'histoire de la danse. La **Martha Graham Dance Company**, fondée en 1926, est encore active aujourd'hui. Si tu n'as vu aucune de ses pièces, commence par *Appalachian Spring* — c'est accessible et bouleversant.
+
+**Doris Humphrey (1895–1958) — entre l'équilibre et la chute**
+Sa phrase la plus connue : *"Toute danse existe sur un arc entre deux morts — l'immobilité parfaite et la chute totale."* La danse de Humphrey vit dans cet espace entre les deux. Son **fall and recovery** explore l'oscillation perpétuelle entre l'équilibre et le déséquilibre comme source de mouvement. *Water Study* (1928) — sans musique — et *The Shakers* (1931) sont deux chefs-d'œuvre qui tiennent encore debout. C'est elle qui a formé José Limón et dirigé sa compagnie jusqu'à sa mort. Son héritage court jusqu'à aujourd'hui dans toute la tradition Limón.
+
+**José Limón (1908–1972) — le poids et la dignité**
+Mexicain-américain né à Culiacán, Limón a étudié avec Humphrey et Weidman avant de créer sa propre compagnie. Il ajoute au fall and recovery une qualité de mouvement plus lyrique, une dimension dramatique profonde et une humanité qui lui est propre. *The Moor's Pavane* (1949) — une réécriture d'Othello en danse — est considérée comme l'un des chefs-d'œuvre de la danse moderne. Son héritage mexicain-américain nourrit une vision profondément humaniste de l'art : le corps porte l'histoire, la mémoire, la résistance.
+
+> Ce qui me touche dans ces parcours, c'est que ces artistes ont dansé dans un monde qui ne leur faisait souvent pas de place — et ils ont fait de ce manque de place leur matière première. C'est toujours comme ça que les grandes choses arrivent.`,
+      },
+      {
         titre: 'Les isolations et la segmentation corporelle',
         contenuMarkdown: `L'une des contributions les plus distinctives de la danse moderne est la **segmentation consciente** du corps — la capacité à activer et contrôler chaque partie indépendamment. C'est aussi l'une des choses les plus difficiles à maîtriser, et des plus satisfaisantes quand ça vient. Je me souviens encore de la première fois où ma cage thoracique a bougé toute seule.
 
