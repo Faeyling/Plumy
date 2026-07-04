@@ -5,7 +5,7 @@ export const unites: Unite[] = [
     numero: 1,
     titre: 'Comprendre le corps qui danse',
     description: "Les fondamentaux communs à toutes les disciplines : mouvement selon Laban, anatomie appliquée, formation musicale et repères d'espace scénique.",
-    coursIds: ['laban-mouvement', 'anatomie-danseur', 'musique-appliquee', 'espace-scenique'],
+    coursIds: ['laban-introduction', 'laban-effort-poids', 'laban-effort-espace', 'laban-effort-temps', 'laban-effort-flux', 'laban-synthese', 'anatomie-danseur', 'musique-appliquee', 'espace-scenique'],
     termeIds: [
       'effort-laban', 'kinesphere', 'niveaux-espace', 'qualites-de-mouvement',
       'alignement', 'turn-out', 'centre-de-gravite', 'tonicite', 'proprioception',
