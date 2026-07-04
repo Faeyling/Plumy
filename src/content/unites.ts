@@ -2,7 +2,7 @@ import type { Unite } from './schema'
 
 export const unites: Unite[] = [
   {
-    numero: 0,
+    numero: 1,
     titre: 'Comprendre le corps qui danse',
     description: "Les fondamentaux communs à toutes les disciplines : mouvement selon Laban, anatomie appliquée, formation musicale et repères d'espace scénique.",
     coursIds: ['laban-mouvement', 'anatomie-danseur', 'musique-appliquee', 'espace-scenique'],
@@ -16,7 +16,7 @@ export const unites: Unite[] = [
     iconeSvgId: 'corps-qui-danse',
   },
   {
-    numero: 1,
+    numero: 2,
     titre: 'Histoire et évolution des arts chorégraphiques',
     description: 'De la naissance du ballet de cour aux disciplines contemporaines : histoire des huit disciplines, frise chronologique et schéma des origines et interactions.',
     coursIds: ['histoire-ballet', 'histoire-moderne-contemporain', 'histoire-jazz', 'histoire-cabaret-burlesque-heels', 'histoire-pole-dance'],
@@ -33,7 +33,7 @@ export const unites: Unite[] = [
     iconeSvgId: 'histoire-danse',
   },
   {
-    numero: 2,
+    numero: 3,
     titre: 'Classique',
     description: 'Positions des pieds et des bras, barre et milieu, adage, allegro, tours, batterie et liaisons — le vocabulaire académique de la danse classique.',
     coursIds: ['intro-classique'],
@@ -50,7 +50,7 @@ export const unites: Unite[] = [
     iconeSvgId: 'classique',
   },
   {
-    numero: 3,
+    numero: 4,
     titre: 'Contemporain',
     description: 'Travail au sol, release, poids et abandon, spirales, contact improvisation — le vocabulaire de la danse contemporaine et ses concepts clés.',
     coursIds: ['intro-contemporain'],
@@ -68,7 +68,7 @@ export const unites: Unite[] = [
     iconeSvgId: 'contemporain',
   },
   {
-    numero: 4,
+    numero: 5,
     titre: 'Moderne',
     description: 'Héritage générique de la danse moderne : contraction et release, fall and recovery, isolations, travail du buste et du bassin.',
     coursIds: ['intro-moderne'],
@@ -83,7 +83,7 @@ export const unites: Unite[] = [
     iconeSvgId: 'moderne',
   },
   {
-    numero: 5,
+    numero: 6,
     titre: 'Jazz et sous-styles',
     description: 'Tronc commun jazz et sept sous-styles différenciés : jazz classique, Broadway, Fosse, modern jazz, lyrical, street jazz et afro-jazz.',
     coursIds: ['intro-jazz', 'sous-styles-jazz'],
@@ -98,7 +98,7 @@ export const unites: Unite[] = [
     iconeSvgId: 'jazz',
   },
   {
-    numero: 6,
+    numero: 7,
     titre: 'Heels',
     description: 'Danse sur talons hauts : posture, walks, mouvements signature, floorwork, présence et filiations culturelles.',
     coursIds: ['intro-heels'],
@@ -110,7 +110,7 @@ export const unites: Unite[] = [
     iconeSvgId: 'heels',
   },
   {
-    numero: 7,
+    numero: 8,
     titre: 'Cabaret',
     description: 'Esthétiques scéniques, french cancan, revue et music-hall, port du costume et des accessoires, lignes de chorus.',
     coursIds: ['intro-cabaret'],
@@ -121,19 +121,6 @@ export const unites: Unite[] = [
     ],
     quizDisponibles: ['qcm', 'association', 'texte-a-trous', 'flashcards'],
     iconeSvgId: 'cabaret',
-  },
-  {
-    numero: 8,
-    titre: 'Pole dance',
-    description: "Pole sport, pole art, exotic et pole theatre : prises, montées, figures, inversions, floorwork — et l'histoire de celles qui ont créé cette discipline.",
-    coursIds: ['intro-pole-dance', 'histoire-culturelle-pole'],
-    termeIds: [
-      'grip-pole', 'prise-basique', 'montee-pole', 'spin-pole', 'figure-statique',
-      'inversion-pole', 'ayesha', 'floorwork-pole', 'conditioning-pole',
-      'pole-sport', 'pole-art', 'exotic-pole', 'origine-pole',
-    ],
-    quizDisponibles: ['qcm', 'association', 'reconnaissance-visuelle', 'texte-a-trous', 'flashcards'],
-    iconeSvgId: 'pole-dance',
   },
   {
     numero: 9,
@@ -149,6 +136,40 @@ export const unites: Unite[] = [
   },
   {
     numero: 10,
+    titre: 'Pole dance',
+    description: "Pole sport, pole art, exotic et pole theatre : prises, montées, figures, inversions, floorwork — et l'histoire de celles qui ont créé cette discipline.",
+    coursIds: ['intro-pole-dance', 'histoire-culturelle-pole'],
+    termeIds: [
+      'grip-pole', 'prise-basique', 'montee-pole', 'spin-pole', 'figure-statique',
+      'inversion-pole', 'ayesha', 'floorwork-pole', 'conditioning-pole',
+      'pole-sport', 'pole-art', 'exotic-pole', 'origine-pole',
+    ],
+    quizDisponibles: ['qcm', 'association', 'reconnaissance-visuelle', 'texte-a-trous', 'flashcards'],
+    iconeSvgId: 'pole-dance',
+  },
+  {
+    numero: 11,
+    titre: 'Tango argentin',
+    description: "L'abrazo, l'eje, la caminada et les figures improvisées — le vocabulaire du tango argentin social, né dans les faubourgs de Buenos Aires et inscrit au patrimoine de l'UNESCO.",
+    coursIds: ['intro-tango-argentin'],
+    termeIds: [
+      'postura-tango', 'compas-tango', 'transfert-de-poids', 'roles-tango',
+      'connexion-tango', 'codigos-milonga', 'vals-tango', 'ronda', 'practica-tango',
+      'abrazo', 'eje', 'apilado',
+      'cadencia', 'caminada', 'salida-tango', 'paso-lateral', 'cambio-de-peso-en-place',
+      'disociacion-tango', 'pivot-tango', 'coleccion-tango',
+      'cruce', 'pausa-tango', 'resolucion-tango', 'media-vuelta',
+      'ocho', 'parada', 'molinete',
+      'adorno-tango', 'amague', 'lapiz',
+      'gancho', 'boleo', 'barrida', 'enrosque',
+      'sacada', 'volcada', 'colgada',
+      'milonga', 'cabeceo', 'tanda', 'musicalidad-tango', 'improvisacion-tango',
+    ],
+    quizDisponibles: ['qcm', 'association', 'texte-a-trous', 'flashcards'],
+    iconeSvgId: 'tango-argentin',
+  },
+  {
+    numero: 12,
     titre: 'Danser sans se blesser',
     description: 'Prévention fondée sur la science : épidémiologie, facteurs de risque, renforcement neuromusculaire et spécificités par discipline.',
     coursIds: ['prevention-generale', 'prevention-par-discipline'],
@@ -163,7 +184,7 @@ export const unites: Unite[] = [
     iconeSvgId: 'sante',
   },
   {
-    numero: 11,
+    numero: 13,
     titre: "L'art de l'improvisation et la composition",
     description: 'Improvisation comme outil de création, composition chorégraphique et une fiche culturelle sur les systèmes de notation de la danse.',
     coursIds: ['improvisation', 'composition', 'notation-danse'],
@@ -176,33 +197,5 @@ export const unites: Unite[] = [
     ],
     quizDisponibles: ['qcm', 'association', 'texte-a-trous', 'flashcards'],
     iconeSvgId: 'improvisation',
-  },
-  {
-    numero: 12,
-    titre: 'Tango argentin',
-    description: "L'abrazo, l'eje, la caminada et les figures improvisées — le vocabulaire du tango argentin social, né dans les faubourgs de Buenos Aires et inscrit au patrimoine de l'UNESCO.",
-    coursIds: ['intro-tango-argentin'],
-    termeIds: [
-      // Niveau 0 — Fondations absolues (zéro connaissance)
-      'postura-tango', 'compas-tango', 'transfert-de-poids', 'roles-tango',
-      'connexion-tango', 'codigos-milonga', 'vals-tango', 'ronda', 'practica-tango',
-      // Niveau 0–1 — Connexion et abrazo
-      'abrazo', 'eje', 'apilado',
-      // Niveau 1 — Premiers pas
-      'cadencia', 'caminada', 'salida-tango', 'paso-lateral', 'cambio-de-peso-en-place',
-      'disociacion-tango', 'pivot-tango', 'coleccion-tango',
-      'cruce', 'pausa-tango', 'resolucion-tango', 'media-vuelta',
-      // Niveau 1–2 — Figures de base
-      'ocho', 'parada', 'molinete',
-      // Niveau 2 — Vocabulaire intermédiaire
-      'adorno-tango', 'amague', 'lapiz',
-      'gancho', 'boleo', 'barrida', 'enrosque',
-      // Niveau 3 — Technique avancée
-      'sacada', 'volcada', 'colgada',
-      // Culture et musique
-      'milonga', 'cabeceo', 'tanda', 'musicalidad-tango', 'improvisacion-tango',
-    ],
-    quizDisponibles: ['qcm', 'association', 'texte-a-trous', 'flashcards'],
-    iconeSvgId: 'tango-argentin',
   },
 ]

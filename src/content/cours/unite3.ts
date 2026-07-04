@@ -2,233 +2,197 @@ import type { Cours } from '../schema'
 
 export const coursUnite3: Cours[] = [
   {
-    id: 'intro-contemporain',
-    titre: 'La danse contemporaine — corps, espace et liberté',
-    resume: "Comprendre la danse contemporaine de l'intérieur : rapport à la gravité, techniques de release, travail au sol, contact improvisation, pratiques somatiques et composition. Tout ce qui différencie un corps contemporain d'un corps classique — et j'ai beaucoup à te dire là-dessus. Dans mes carnets, j'ai des pages entières sur chacun de ces territoires.",
-    disciplines: ['contemporain'],
+    id: 'intro-classique',
+    titre: 'La classe de danse classique — structure et vocabulaire',
+    resume: "Comprendre la logique d'un cours de danse classique de A à Z : barre, milieu, adage, allegro, pirouettes — pourquoi cet ordre, comment chaque exercice prépare le suivant. J'ai des pages et des pages là-dessus dans mon carnet.",
+    disciplines: ['classique'],
     termesAbordes: [
-      'release-technique', 'poids-abandon', 'gravite-contemporain',
-      'contraction-release', 'fall-recovery', 'suspension', 'rebond-swing',
-      'fluidite-mouvement', 'spirale', 'floorwork', 'roulade', 'chute-controlee',
-      'point-de-contact', 'partage-poids', 'score-improvisation', 'somatique',
+      'barre-classique', 'milieu-classique', 'plie', 'tendu', 'degage',
+      'rond-de-jambe', 'developpe', 'grand-battement', 'arabesque', 'attitude',
+      'pirouette', 'allegro', 'jete', 'assemble', 'pas-de-bourree',
     ],
     sections: [
       {
-        titre: "Qu'est-ce que la danse contemporaine ?",
-        contenuMarkdown: `Ce que j'adore dans la danse contemporaine, c'est qu'elle résiste à la définition — et c'est volontaire. Elle s'est construite précisément contre les cases fermées. Chaque fois que tu penses l'avoir cernée, elle glisse ailleurs. C'est toute sa beauté.
+        titre: 'La logique du cours classique',
+        contenuMarkdown: `Ce que j'ai trouvé fascinant en découvrant le cours classique, c'est que rien n'est aléatoire. Chaque exercice prépare le suivant — c'est une architecture pensée sur des siècles de pratique pédagogique.
 
-**Ce qu'elle n'est pas :**
-- Un style esthétique unique (il n'existe pas de "technique contemporaine" universelle comme la technique classique)
-- Synonyme de "danse moderne" (deux périodes et approches distinctes — je t'explique ça en Unité 4)
-- De la danse classique sans les pointes
+**La structure universelle :**
+1. **Échauffement** (5–10 min) : mobilisation générale, souvent avant la barre
+2. **La barre** (30–45 min) : exercices tenus à la barre, dans un ordre logique
+3. **Le milieu** (20–30 min) : reprise des exercices sans appui + adage
+4. **L'allegro** (15–20 min) : petit allegro puis grand allegro
+5. **Pointes** (10–15 min, si applicable) : travail technique en chaussons de pointe
+6. **Révérence** (2–3 min) : salut final, clôture du cours
 
-**Ce qu'elle est :**
-- Un ensemble de pratiques artistiques qui questionnent en permanence ce qu'est la danse
-- Un champ ouvert, pluriel, en constant renouvellement
-- Un rapport différent au corps, à l'espace, au temps et au public
+**Pourquoi cet ordre ?**
+Chaque section prépare la suivante :
+- La barre chauffe et aligne le corps
+- Le milieu transfère les acquis de la barre sans appui
+- L'adage développe le contrôle et l'amplitude
+- Le petit allegro réveille la vivacité
+- Le grand allegro libère la puissance
 
-**Repères historiques que j'ai gribouillés dans mon carnet :**
-- **1960s** : Judson Dance Theater (New York) — rupture radicale avec la technique moderne
-- **1970s** : Contact improvisation, danse postmoderne
-- **1980s** : Tanztheater (Bausch), explosion de la danse-théâtre
-- **1990–2000s** : Dialogue avec les arts visuels, performance, numérique
-- **Aujourd'hui** : Corps pluriels, identités, technologies, site-specific
-
-**La danse contemporaine se reconnaît à :**
-- La diversité des corps qui la pratiquent
-- La pluralité des techniques utilisées (souvent hybrides)
-- La dimension de questionnement (artistique, social, politique)
-- L'importance accordée au processus autant qu'au résultat
-
-> Ce qui m'a touché dans le contemporain, c'est ça : on te demande de penser, pas juste d'exécuter. Ça change tout — promis.`,
+> La barre n'est pas juste de l'échauffement. C'est là que se construisent les fondations de toute la technique — et les professionnels y passent toute leur vie. Ça m'a mis du temps à comprendre ça.`,
       },
       {
-        titre: 'Le corps contemporain — un rapport différent à la gravité',
-        contenuMarkdown: `La différence fondamentale entre le corps classique et le corps contemporain tient à leur rapport à la **gravité** — et quand j'ai compris ça, tout le contemporain s'est mis à faire sens. Tu vas voir, c'est une de ces clés qui déverrouillent des pans entiers.
+        titre: 'La barre — exercices fondamentaux',
+        contenuMarkdown: `Si tu retiens une chose sur la barre, c'est celle-ci : l'ordre des exercices n'est pas arbitraire. Chaque exercice prépare le suivant dans une logique irréprochable.
 
-**Corps classique :**
-- Lutte contre la gravité (élévation, légèreté, pointes)
-- Axe vertical maintenu en permanence
-- Le sol est un point de départ / arrivée
-- Esthétique de la ligne tendue et contrôlée
+**La barre suit toujours le même ordre :**
 
-**Corps contemporain :**
-- Dialogue avec la gravité (abandon, poids, ancrage)
-- L'axe vertical est une option parmi d'autres
-- Le sol est un espace de danse à part entière
-- Esthétique de la fluidité, de la rupture, de la diversité
+| Ordre | Exercice | Tempo | Travail principal |
+|-------|----------|-------|------------------|
+| 1 | Pliés (demi et grands) | Lent | Échauffement, alignement |
+| 2 | Battements tendus | Modéré | Articulation du pied |
+| 3 | Battements dégagés | Rapide | Vitesse, articulation |
+| 4 | Ronds de jambe par terre | Lent–Modéré | Rotation de hanche |
+| 5 | Battements fondus | Modéré | Coordination, fluidité |
+| 6 | Battements frappés | Vif | Vivacité, impact |
+| 7 | Ronds de jambe en l'air | Modéré | Mobilité coxo-fémorale |
+| 8 | Développés / Adage | Très lent | Amplitude, contrôle |
+| 9 | Grands battements | Rapide | Puissance, amplitude max |
 
-**Les trois axes que j'utilise pour m'orienter — je les ai redessinés une dizaine de fois dans mes carnets avant de les avoir vraiment en tête :**
+**Ta position à la barre :**
+- Main intérieure posée légèrement (jamais agrippée — la barre est ton appui, pas ta béquille)
+- Corps perpendiculaire ou légèrement de biais selon l'exercice
+- Bras extérieur dans la position appropriée (2ème, 5ème...)
+- Poids bien centré sur les deux pieds
 
-**1. Axe vertical** (partagé avec le classique)
-Tu es debout, l'axe passe du sommet du crâne au milieu des pieds. Mais en contemporain, cet axe peut s'incliner, se courber, se tordre — et c'est là que ça devient intéressant.
-
-**2. Axe horizontal** (sol)
-Le corps allongé, roulé, rampant — les niveaux proches du sol. Un espace que le classique n'habite presque jamais.
-
-**3. Axe diagonal**
-Le corps penché, en déséquilibre volontaire — entre verticale et horizontale. C'est là que vivent les chutes contrôlées.
-
-> La richesse du corps contemporain vient de sa capacité à habiter tous ces axes, à passer de l'un à l'autre, à trouver du sens dans chacun. Ne choisis pas : explore-les tous.`,
+**En retournant :**
+La séquence se répète de l'autre côté. Ton côté faible mérite autant d'attention que ton côté fort — j'insiste là-dessus.`,
       },
       {
-        titre: 'La release technique — moins tu forces, plus tu bouges',
-        contenuMarkdown: `La **release technique** est l'une des approches les plus répandues en danse contemporaine — et aussi l'une des moins bien comprises. Je vais mettre les choses au clair, parce que j'ai longtemps eu des idées floues là-dessus, et je ne veux pas que tu perdes le temps que j'ai perdu.
+        titre: 'Les cinq positions et le turn-out',
+        contenuMarkdown: `Le turn-out est le fondement de toute la technique classique — et aussi l'une des choses les plus mal comprises que j'aie rencontrées dans la danse.
 
-**Ce que ce n'est pas :**
-- De la relaxation (tu restes pleinement actif·ve)
-- De l'absence de technique (c'est une technique très précise)
-- Un style esthétique
+**Ce qu'il permet :**
+- L'ouverture des jambes dans les 5 positions
+- Le travail à la seconde (2ème position)
+- La stabilité dans les équilibres
+- L'esthétique de la ligne classique
 
-**Ce que c'est :**
-- Une philosophie du mouvement basée sur l'**économie d'effort**
-- Une méthode d'identification et de libération des **tensions parasites**
-- Un outil pour **maximiser la fluidité** et l'**amplitude** sans forcer
+**Les 5 positions des pieds :**
+La 1ère et la 2ème sont les plus utilisées pour commencer. La 5ème est la position "naturelle" du mouvement avancé — et elle demande des années de travail pour être vraiment propre.
 
-**Le scan corporel — ma pratique préférée pour démarrer :**
-1. Allonge-toi au sol (ou assieds-toi)
-2. Porte ton attention successivement sur chaque partie du corps
-3. Observe sans juger : est-ce que tu tiens quelque chose ? Est-ce que ça peut se relâcher ?
-4. Libère les zones de tension non nécessaires — juste elles
+**⚠️ Point crucial que je ne peux pas assez répéter :** Le turn-out se fait depuis la hanche, jamais depuis le genou ou le pied. Forcer le turn-out depuis les extrémités peut causer :
+- Syndrome fémoro-patellaire (genou)
+- Tendinopathie de la cheville
+- Douleurs lombaires (compensation du bassin)
 
-**Les tensions que je retrouve chez presque tout le monde — et que j'ai moi-même dû apprendre à lâcher :**
-- Mâchoire serrée (classique)
-- Épaules soulevées (encore plus classique)
-- Ventre contracté en permanence
-- Orteils crispés dans les chaussures
+**L'entraînement du turn-out :**
+- Exercices de renforcement des rotateurs externes (pelvi-trochantériens)
+- Étirements des fléchisseurs de hanche
+- Conscience proprioceptive en position neutre avant d'exiger l'ouverture
 
-**L'anatomie comme outil :**
-La release technique s'appuie sur une connaissance anatomique — comprendre comment les os s'articulent te permet de trouver des positions naturellement stables, sans effort musculaire excessif.
-
-> Moins tu forces, plus tu bouges. C'est contre-intuitif, mais c'est vrai. Fais-moi confiance là-dessus.`,
+> Le turn-out parfait vient du travail régulier, pas de la force brute. Prends les années qu'il faut — ton corps te remerciera.`,
       },
       {
-        titre: 'La contraction-release — le souffle qui danse',
-        contenuMarkdown: `**Martha Graham** (1894–1991) — si tu ne connais qu'un nom dans l'histoire de la danse moderne, que ce soit le sien. Elle a créé une des techniques les plus complètes et les plus codifiées qui soit. Son principe central : **la contraction et le release**.
+        titre: "L'adage — lenteur, amplitude et expression",
+        contenuMarkdown: `L'adage est ma section préférée du cours classique. C'est là que la technique devient quelque chose de plus — de la musique incarnée.
 
-J'ai une page entière dans mon carnet rien que pour ça, parce que ce principe va bien au-delà de la technique Graham — il est partout, dans presque tout ce qu'on danse.
+**Les éléments clés de l'adage :**
 
-**La contraction :**
-- Creusement actif du bas-ventre et du bas du dos
-- La colonne se courbe en C
-- Inspiration → expiration
-- Expression : intériorité, douleur, recueillement
+**1. Les développés**
+La jambe s'ouvre lentement depuis le retiré jusqu'à 90° ou plus. Devant, côté, derrière — chaque direction développe une zone musculaire différente.
 
-**Le release :**
-- Extension et ouverture du centre
-- La colonne s'allonge, le sternum monte
-- Expiration → inspiration
-- Expression : liberté, aspiration, extériorité
+**2. L'arabesque**
+La position la plus longue du répertoire classique. La ligne va de la pointe des doigts à la pointe du pied arrière — tout le corps contribue à allonger cette diagonale. Et cette ligne vient du dos, pas de la jambe.
 
-**Exercices fondamentaux de la technique Graham :**
+**3. L'attitude**
+Jambe arrière fléchie, genou à hauteur de hanche. Plus sculpturale que l'arabesque, plus expressive. Inspirée de la statue de Mercure de Giambologna — un détail que j'adore.
 
-**Contraction assise (sitting contraction) :**
-- En tailleur ou jambes tendues
-- Contracte depuis le bas-ventre, laisse la colonne s'arrondir
-- Reviens en release (colonne redressée)
-- Répète sur plusieurs respirations — laisse la respiration guider, pas l'inverse
+**4. Les équilibres**
+Tenir une position sur demi-pointe ou pointe. La durée d'un équilibre dépend :
+- Du gainage du centre (transverse, plancher pelvien)
+- De la qualité de la demi-pointe
+- De l'alignement de l'axe
+- Et — je ne te cache pas — d'un peu de lâcher-prise mental
 
-**Contraction latérale :**
-- Debout sur une jambe
-- Contraction + inclinaison latérale
-- Release et retour
+**5. Les promenades (en pas de deux)**
+Tour lent autour d'un axe, tenu par le partenaire — le partenaire fait pivoter en arabesque ou attitude.
 
-**Le spiral Graham :**
-- En contraction, la colonne se tord vers un côté
-- Le dénouement de la spirale relance le mouvement — tu ne l'arrêtes pas, tu le diriges
-
-**Ce qui m'a le plus frappé dans la technique Graham :**
-La respiration *génère* le mouvement — elle n'est pas superposée à un mouvement déjà décidé. C'est une révolution pédagogique. Avant Graham, on respirait malgré la danse. Avec Graham, on danse parce qu'on respire.`,
+> L'adage n'est pas "lent et ennuyeux". C'est l'espace de la musicalité — là où chaque note peut se voir dans le corps. C'est là que le classique devient de l'art.`,
       },
       {
-        titre: 'Le travail au sol — floorwork, chutes et roulades',
-        contenuMarkdown: `Le travail au sol est l'une des compétences les plus distinctives de la danse contemporaine — et franchement, une des plus libératrices. Quand tu apprivoises le sol, tu gagnes un espace entier que beaucoup de danseurs ignorent. Moi, ça m'a pris du temps, et puis un jour j'ai arrêté de le craindre. Tu vas voir, ça vient.
+        titre: "L'allegro — de la légèreté à la puissance",
+        contenuMarkdown: `L'allegro divise le cours en deux temps forts — et j'avoue que le grand allegro me donne encore des étoiles dans les yeux quand il est bien exécuté.
 
-Voici la progression que j'ai dans mes carnets, et qui fonctionne vraiment bien :
+**Le petit allegro**
+Petits sauts vifs, souvent en séquences de 8 à 16 temps :
+- **Changements de pied** : saut simple, les pieds alternent en 5ème
+- **Échappés** : ouverture vers la 2ème et retour en 5ème
+- **Assemblés** : jambe lancée, les deux jambes s'assemblent en l'air
+- **Jetés** : transfert de poids d'une jambe à l'autre
+- **Pas de bourrée** : liaison de trois petits pas sur demi-pointe
 
-**Étape 1 — Apprivoiser le sol**
-Explorations libres : roule, retourne-toi, trouve les positions confortables. Pas d'objectif de forme — juste explorer. Le sol ne mord pas.
+**La règle d'or du petit allegro :**
+Atterrir toujours en demi-plié, talon–voûte–métatarses–orteils. Un atterrissage silencieux = bonne technique. Si tu entends "clac" à chaque atterrissage, ton plié ne fait pas son travail.
 
-**Étape 2 — Les surfaces sûres**
-Identifie les surfaces corporelles sur lesquelles tu peux rouler sans te faire mal :
-- ✓ Dos plat (abdominaux engagés pour protéger les vertèbres)
-- ✓ Côté de la cuisse, côté du torse
-- ✓ Ventre (sur les pectoraux et les abdominaux)
-- ✗ Genoux, coudes, os saillants (sans préparation spécifique)
+**Le grand allegro**
+Combinaisons longues avec déplacement, souvent en diagonale :
+- Glissade + grand jeté (le "manège de course")
+- Chaînés en diagonal
+- Pas de chat enchaîné
+- Grand allegro conclusif avec tours et grands sauts
 
-**Étape 3 — Les transitions debout/sol**
-La difficulté n'est pas le sol — c'est la transition. Apprends à :
-- Descendre sans impact (plie les articulations dans l'ordre, de la plus haute à la plus basse)
-- Monter sans effort brut (utilise l'élan de la dynamique au sol)
-
-**Étape 4 — Les chutes dirigées**
-Back fall, side fall — toujours avec une direction, toujours avec un plan de sortie. Une chute incontrôlée n'est pas de la danse, c'est un accident.
-
-**Étape 5 — L'enchaînement floorwork**
-Combine roulades, transitions, chutes en des phrases fluides. C'est là que le sol devient vraiment ton partenaire de danse.
-
-> Le sol est ton allié, pas ton ennemi. Plus tu lui fais confiance, plus il t'aide. Et je dis "confiance" au sens littéral — ça commence dans ta tête.`,
+**La préparation au grand allegro :**
+L'élan est fondamental. Des pas de couru, des glissades ou des chassés te donnent la vitesse avant les grands sauts. Ne jamais sauter "à sec" — prépare ton élan.`,
       },
       {
-        titre: 'Le contact improvisation — écouter avec le corps',
-        contenuMarkdown: `Le **contact improvisation** — Steve Paxton, 1972 — est une des pratiques qui m'a le plus ouvert les yeux sur ce que peut être la danse. Elle a révolutionné le contemporain, et elle se pratique encore intensément aujourd'hui dans des jams du monde entier. J'en ai fait, et je peux te dire que rien ne prépare vraiment à la première fois — mais que tu vas adorer.
+        titre: 'Les tours — pirouette, fouetté, chaînés',
+        contenuMarkdown: `Les tours sont souvent la partie la plus intimidante de la technique classique — et la plus satisfaisante à maîtriser. Dans mon carnet, j'ai des pages entières de notes dessus.
 
-**Les principes fondamentaux :**
+**La pyramide de l'apprentissage des tours :**
 
-1. **Le point de contact** : une zone de toucher entre deux corps — mobile, changeante, jamais fixée
-2. **Le partage de poids** : donner réellement ton poids à l'autre, et recevoir le sien — pas "faire semblant"
-3. **L'écoute** : à travers le contact, communiquer intention, direction, résistance — sans parler
-4. **La réciprocité** : pas de rôle fixe porteur/porté — tout change en permanence
+1. **Équilibre en retiré** (avant tout) : tenir en demi-pointe en retiré, 5+ secondes
+2. **Demi-tour** : pirouette d'un demi-tour, trouver l'axe
+3. **Tour complet** : pirouette simple, maîtriser le spotting
+4. **Tours multiples** : 2, 3, puis plus — qualité avant quantité
+5. **Tours en enchaînement** : pirouettes d'affilée, chaînés, fouettés
 
-**Pourquoi c'est révolutionnaire :**
-- Il supprime la hiérarchie (l'idée que "l'homme porte, la femme est portée")
-- Il fonctionne avec des corps de toutes formes et toutes forces
-- Il est improvisé — pas de chorégraphie mémorisée
-- Il développe une intelligence corporelle qu'on ne trouve nulle part ailleurs
+**Le spotting (fouetté de tête) :**
+La technique fondamentale pour ne pas perdre l'orientation :
+1. Fixer un point devant toi (à hauteur des yeux)
+2. Laisser le corps tourner mais garder la tête fixée sur ce point
+3. Quand la tête ne peut plus rester sans se retourner, la tourner 360° rapidement
+4. Retrouver le point immédiatement
 
-**Les jams de contact improvisation :**
-Des sessions ouvertes, souvent hebdomadaires, dans la plupart des grandes villes. Accessibles aux débutants avec un minimum d'introduction — cherche près de chez toi, je parie qu'il y en a une.
+**L'axe de rotation :**
+Le corps tourne autour d'un axe imaginaire vertical, de la couronne de la tête jusqu'au milieu du pied d'appui. Tout écart de cet axe (penchement, bassin décalé) fait "partir" la pirouette.
 
-**Commencer en douceur :**
-1. Tiens-toi dos à dos avec quelqu'un
-2. Sens son poids, sa chaleur
-3. Laisse le contact voyager légèrement
-4. Introduis progressivement le partage de poids
+**La préparation :**
+- En 4ème position (pied devant et pied derrière)
+- Bras ouverts en 2ème (préparation)
+- Demi-plié sur les deux jambes
+- L'élan vient du plié, pas d'un effort brut
 
-**La sécurité en contact impro :**
-- Commence par peu de poids partagé
-- Communique (verbalement si besoin — aucune honte)
-- Tu as le droit de dire non avec le corps, à tout moment
-
-> Ce que j'ai appris avec le contact impro, c'est que l'écoute est une compétence physique, pas juste mentale. Ton corps peut écouter. Donne-lui la chance de le faire.`,
+> Un bon tour ne se force pas — il se laisse aller. La tension est l'ennemi de la rotation. C'est une des choses les plus contre-intuitives du classique.`,
       },
       {
-        titre: "L'improvisation et la composition — créer en mouvement",
-        contenuMarkdown: `La frontière entre improvisation et composition est l'un des terrains les plus fertiles de la danse contemporaine — et aussi l'un des plus mal compris. Laisse-moi clarifier ça, parce que j'ai entendu trop de gens se bloquer sur cette fausse opposition.
+        titre: 'Danse classique — questions de santé et de longévité',
+        contenuMarkdown: `Je ne peux pas te parler du classique sans aborder la santé — parce que cette discipline est exigeante, et que comprendre les risques, c'est pouvoir pratiquer intelligemment sur le long terme.
 
-**Improvisation ≠ faire n'importe quoi**
-Une bonne improvisation en danse est informée par :
-- La connaissance du corps et des qualités de mouvement
-- La conscience de l'espace (où tu es, comment tu te déplaces)
-- L'écoute musicale ou sonore
-- Le rapport aux autres danseurs
-- Une intention ou un score
+**Les blessures les plus fréquentes :**
 
-**Le score comme outil de liberté organisée :**
-Le score (partition d'improvisation) donne un cadre sans fixer le contenu. Voici des exemples simples que j'utilise pour démarrer :
-- "Je me déplace toujours lentement"
-- "Quand je touche un mur, je change de direction"
-- "Je commence chaque phrase par une immobilité"
+| Zone | Blessure | Cause principale |
+|------|---------|-----------------|
+| Cheville | Entorse, tendinopathie | Demi-pointe forcée, réception de saut |
+| Pied | Stress fracture, hallux valgus | Chaussons de pointe mal adaptés |
+| Genou | Syndrome fémoro-patellaire | Turn-out forcé du genou |
+| Hanche | Impingement, bursites | Développés en compensation |
+| Dos | Lombalgies | Cambrure excessive en arabesque |
 
-Ces contraintes semblent limitantes — elles sont en réalité libératrices. Moins tu as de choix, plus ton mouvement est précis. Je l'ai vérifié des dizaines de fois.
+**Principes de prévention :**
+1. **Progressivité** : ne jamais sauter les étapes de l'apprentissage
+2. **Renforcement** : gainage, rotateurs de hanche, muscles intrinsèques du pied
+3. **Récupération** : respect des jours de repos, sommeil, hydratation
+4. **Écoute du corps** : distinguer la douleur de l'effort (normal) et la douleur de blessure (alarme)
+5. **Chaussures adaptées** : chaussons de pointe choisis avec un professionnel
 
-**La phrase de mouvement comme matériau :**
-Même en improvisation, tu peux utiliser des **phrases mémorisées** comme matériau — les modifier, les interrompre, les combiner avec du mouvement libre. C'est de la composition en temps réel.
+**La question des pointes :**
+L'âge minimum recommandé est 10–12 ans, selon la maturité osseuse. Avant cet âge, les os des pieds ne sont pas soudés et les déformations peuvent être permanentes. Un bilan podologique est recommandé avant toute mise en pointe.
 
-**Les pratiques somatiques comme préparation :**
-Avant d'improviser, des pratiques comme le Feldenkrais ou le BMC te permettent de te "recentrer" dans ton corps — de sortir des habitudes automatiques pour être vraiment disponible à l'instant présent.
-
-> L'improvisation n'est pas l'absence de technique — c'est la technique à son plus haut degré d'intériorisation. Tu ne l'appliques plus, tu l'habites. Et ça, ça prend du temps, et c'est magnifique.`,
+> La longévité en danse classique se construit dans la sagesse, pas dans la souffrance. Les danseurs qui durent sont ceux qui ont appris à prendre soin d'eux. C'est une leçon que j'aurais voulu apprendre plus tôt.`,
       },
     ],
   },

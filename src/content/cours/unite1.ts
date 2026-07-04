@@ -2,378 +2,231 @@ import type { Cours } from '../schema'
 
 export const coursUnite1: Cours[] = [
   {
-    id: 'histoire-ballet',
-    titre: 'Du ballet de cour au ballet académique',
-    resume: "De Louis XIV danseur-roi aux pointes de l'Opéra de Paris, six siècles d'histoire du ballet classique et ses grandes révolutions esthétiques. Une des pages les plus annotées de mon carnet.",
-    disciplines: ['classique'],
-    termesAbordes: ['ballet-de-cour', 'ballet-romantique', 'ballet-classique-academique', 'sur-les-pointes', 'corps-de-ballet'],
+    id: 'laban-mouvement',
+    titre: "Le mouvement selon Laban",
+    resume: "Rudolf Laban a créé un langage universel pour analyser et noter le mouvement humain. Ses quatre facteurs d'Effort — Poids, Espace, Temps et Flux — sont des outils que j'utilise encore aujourd'hui pour décrire ce que je vois et ce que je ressens en dansant.",
+    disciplines: ['commun'],
+    termesAbordes: ['effort-laban', 'kinesphere', 'niveaux-espace', 'qualites-de-mouvement'],
     sections: [
       {
-        titre: 'Le ballet de cour (XVe–XVIIe siècle)',
-        contenuMarkdown: `Si tu me demandes quelle est la chose la plus surprenante que j'ai apprise sur le ballet, c'est ça : au départ, c'était avant tout un outil politique. Le ballet naît en Italie à la Renaissance, dans les cours princières qui utilisent la danse, la musique et la poésie pour célébrer le pouvoir. Le **Ballet Comique de la Reine** (1581), créé à Paris pour Catherine de Médicis, est considéré comme le premier ballet au sens moderne : un spectacle total d'environ cinq heures, mêlant danse, chant, déclamation et machines de théâtre.
+        titre: "Qui est Rudolf Laban ?",
+        contenuMarkdown: `J'ai une page entière consacrée à Laban dans mon carnet — avec des petits croquis tout autour, parce qu'il m'a vraiment bouleversé quand je l'ai découvert. Rudolf Laban (1879–1958) est un danseur et théoricien hongrois qui a révolutionné la manière dont on pense, enseigne et note le mouvement.
 
-**Louis XIV (1638–1715)** est la figure fondatrice du ballet français :
-- Il danse lui-même à la cour, notamment dans le *Ballet Royal de la Nuit* (1653), où il incarne le Soleil Levant — d'où son surnom de "Roi-Soleil".
-- En 1661, il crée l'**Académie Royale de Danse**, première institution chorégraphique au monde.
-- Son maître à danser, **Pierre Beauchamp**, codifie les **cinq positions** des pieds, encore enseignées aujourd'hui.
+Né à Bratislava, il développe son système entre les deux guerres mondiales, influencé par l'expressionnisme allemand, l'architecture et la géométrie. Son travail donne naissance à deux grandes disciplines :
 
-À cette époque, les danseurs portent des costumes lourds, des perruques et des talons — la virtuosité est limitée, et les femmes ne participent pas encore au spectacle public. Le ballet qu'on connaît aujourd'hui, avec ses tutus et ses pointes, n'est pas encore imaginable.`,
+- **La Labanotation** : un système de notation chorégraphique qui permet d'écrire n'importe quel mouvement humain sur une portée verticale — utilisé encore aujourd'hui pour archiver le répertoire.
+- **L'Analyse du Mouvement Laban (AML)** : un cadre d'observation et de description du mouvement, utilisé dans la danse, la thérapie, le théâtre et même le management.
+
+Son influence est immense : Martha Graham, Mary Wigman et Pina Bausch ont tous été marqués par ses idées. Ce n'est pas pour rien que son nom revient dans presque chaque conversation sérieuse sur la danse.`,
       },
       {
-        titre: "La naissance du ballet d'action (XVIIIe siècle)",
-        contenuMarkdown: `Le XVIIIe siècle voit le ballet quitter les salons pour la scène de théâtre. Deux révolutions majeures que j'adore raconter.
+        titre: "Les quatre facteurs d'Effort",
+        contenuMarkdown: `Ce qui m'a frappé quand j'ai découvert les facteurs d'Effort de Laban, c'est leur simplicité apparente — et leur profondeur réelle. Ils décrivent *comment* le corps se déplace, pas *où* ni *quoi* :
 
-**Jean-Georges Noverre (1727–1810)** publie en 1760 ses *Lettres sur la danse et les ballets*, véritable manifeste esthétique. Il défend le **ballet d'action** : la danse doit raconter une histoire par le geste expressif, pas seulement exhiber une technique. C'est l'ancêtre direct du ballet narratif moderne — et une idée qui résonne encore aujourd'hui.
+| Facteur | Polarité 1 | Polarité 2 |
+|---------|-----------|-----------|
+| **Poids** | Fort / Puissant | Léger / Délicat |
+| **Espace** | Direct / Focalisé | Indirect / Diffus |
+| **Temps** | Soudain / Urgent | Soutenu / Étalé |
+| **Flux** | Lié / Contrôlé | Libre / Fluide |
 
-**Marie Camargo et Marie Salle** (vers 1720–1750) révolutionnent la place de la femme :
-- Camargo raccourcit sa jupe pour montrer ses pieds et ses battements rapides — scandale !
-- Salle abandonne le corset et les paniers pour danser en tunique légère dans son *Pygmalion* (1734) — double scandale.
+Ces facteurs ne sont pas des opposés binaires mais des **continuums** — il existe une infinité de nuances entre les deux extrêmes. Et c'est ça qui les rend précieux : ils te donnent un vocabulaire pour décrire des choses qu'on ressent mais qu'on ne sait pas toujours nommer.
 
-Ces deux femmes ont pris des risques pour leur art. J'ai beaucoup de respect pour ça.
-
-La chaussure de danse évolue aussi : le talon disparaît progressivement, permettant plus d'agilité. Petite révolution technique qui prépare tout ce qui va suivre.`,
+**Exemple pratique :** Un applaudissement est fort, direct, soudain et lié. Une caresse est légère, indirecte, soutenue et libre. Essaie de penser à tes propres gestes de la journée avec cette grille — tu ne regarderas plus tes mains pareil.`,
       },
       {
-        titre: "L'âge romantique (1820–1870)",
-        contenuMarkdown: `Le ballet romantique est l'âge d'or des **sylphides et des willis** — femmes surnaturelles, légères, inaccessibles. Et j'avoue que malgré tout, cette esthétique me touche encore.
+        titre: "La kinesphère et les niveaux",
+        contenuMarkdown: `Laban a aussi développé une cartographie de l'espace autour de toi — et j'adore cette idée parce qu'elle te donne le sentiment que ton corps est le centre d'un univers personnel.
 
-Deux chefs-d'œuvre définissent l'époque :
-- **La Sylphide** (1832, chorégraphie de Filippo Taglioni pour sa fille Marie) — premier ballet sur les pointes, premier tutu romantique long et vaporeux.
-- **Giselle** (1841, Coralli/Perrot) — sommet du romantisme : folie, mort et rédemption par l'amour.
+**La kinesphère** est ta bulle personnelle : l'espace que tu peux atteindre sans déplacer tes pieds. Elle se divise en :
+- Portée proche (gestes serrés, intimes)
+- Portée médiane (bras à mi-chemin)
+- Portée éloignée (extension maximale)
 
-Les pointes apparaissent dans ce contexte : **Marie Taglioni** est la première à les utiliser de façon artistique (et non comme simple prouesse). Elles symbolisent l'évanescence, le désir de s'arracher à la terre.
+**Les trois niveaux** organisent l'espace verticalement :
+- **Bas** : au sol, accroupi
+- **Moyen** : debout naturel
+- **Haut** : relevé, sauté, suspendu
 
-> Le ballet romantique est un ballet de l'au-delà : l'homme désire une femme qui n'existe pas, et cette femme l'entraîne vers la mort. Fascinant et un brin inquiétant — mais quelle beauté formelle.
-
-Le tutu romantique (long, en mousseline blanche) est le costume emblématique. Les hommes reculent au second plan ; la ballerine devient la star absolue.`,
-      },
-      {
-        titre: "L'âge classique : Petipa et la Russie impériale (1870–1910)",
-        contenuMarkdown: `Quand le ballet décline en France, il s'épanouit à **Saint-Pétersbourg** sous l'égide du Tsar. Le **Théâtre Impérial Mariinsky** devient le temple du ballet académique — et c'est dans ces salles froides et dorées que le répertoire qu'on enseigne encore aujourd'hui prend forme.
-
-**Marius Petipa (1818–1910)**, maître de ballet français au service de la Russie, crée l'œuvre canonique du répertoire :
-
-| Œuvre | Compositeur | Date |
-|-------|------------|------|
-| Don Quichotte | Minkus | 1869 |
-| La Bayadère | Minkus | 1877 |
-| La Belle au bois dormant | Tchaïkovski | 1890 |
-| Le Lac des cygnes (révision) | Tchaïkovski | 1895 |
-| Casse-Noisette | Tchaïkovski | 1892 |
-
-Petipa codifie la structure du **grand ballet classique** : pas de deux académique (adage, variations, coda), corps de ballet en formations géométriques, hiérarchie des rôles (étoile, premiers danseurs, corps de ballet).
-
-Le tutu raccourcit : le **tutu classique** (en plateau rigide) apparaît, exhibant les jambes et les pointes. La virtuosité technique explose — et les exigences avec elle.`,
-      },
-      {
-        titre: 'Révolutions du XXe siècle',
-        contenuMarkdown: `Et puis tout éclate. C'est la partie de l'histoire du ballet que je préfère — quand des artistes décident que les règles ne leur suffisent plus.
-
-**Les Ballets Russes de Diaghilev (1909–1929)** font exploser le ballet classique :
-- **Nijinski** scandalise Paris avec *L'Après-midi d'un faune* (1912) : mouvement bidimensionnel, pied à plat, érotisme.
-- **Stravinski** compose *Le Sacre du printemps* (1913), chorégraphié par Nijinski — émeute à la première. Literalement.
-- La collaboration avec des peintres (Picasso, Matisse) et des compositeurs d'avant-garde transforme le ballet en art total moderniste.
-
-**George Balanchine (1904–1983)** invente le **néoclassicisme** : ballet sans histoire, sans décors surchargés, "plotless" — juste la musique et le mouvement pur. Il fonde le New York City Ballet (1948) et révolutionne le corps attendu : longues jambes, petite tête, hyperextension. Un idéal qui fait encore débat aujourd'hui.
-
-**Rudolf Noureev (1938–1993)** réhabilite le danseur masculin : virtuosité, charisme, tours en l'air spectaculaires. Il redonne au ballet classique son prestige populaire dans les années 1970–1980.
-
-Aujourd'hui, le ballet académique coexiste avec le ballet contemporain, le néoclassique et la danse-théâtre. L'histoire continue — et elle est loin d'être terminée.`,
+Et dans mon carnet, j'ai noté ça : Laban visualisait la kinesphère comme un **icosaèdre** — un solide à 20 faces — avec 26 directions de mouvement possibles depuis le centre. Si tu adores la géométrie, c'est ton moment de gloire. Si tu n'aimes pas les maths, retiens juste la bulle et les trois niveaux — ça suffit pour que tout s'éclaire.`,
       },
     ],
   },
+
   {
-    id: 'histoire-moderne-contemporain',
-    titre: 'Danse moderne et contemporaine',
-    resume: "D'Isadora Duncan aux chorégraphes de Judson Church, la longue révolte contre le ballet et la construction d'un autre corps dansant — libéré, expressif, politique. Un des chapitres les plus vivants de mon carnet.",
-    disciplines: ['moderne', 'contemporain'],
-    termesAbordes: ['danse-moderne', 'ausdruckstanz', 'danse-contemporaine', 'danse-postmoderne', 'contact-improvisation'],
+    id: 'anatomie-danseur',
+    titre: "Anatomie appliquée au danseur",
+    resume: "Comprendre son corps de l'intérieur pour danser plus intelligemment — et plus longtemps sans se blesser. Alignement, turn-out, centre de gravité, tonicité et proprioception : les piliers que j'aurais voulu connaître bien plus tôt.",
+    disciplines: ['commun'],
+    termesAbordes: ['alignement', 'turn-out', 'centre-de-gravite', 'tonicite', 'proprioception'],
     sections: [
       {
-        titre: 'La naissance de la danse moderne (1890–1920)',
-        contenuMarkdown: `La danse moderne naît d'un refus — et ce refus-là, je le comprends viscéralement. Refus du corset, du tutu, des pointes, de la hiérarchie académique. Des femmes qui ont dit non et ont inventé autre chose à la place.
+        titre: "L'alignement : la colonne comme boussole",
+        contenuMarkdown: `Dans mes carnets, j'ai griffonné des dizaines de schémas de colonnes vertébrales. Parce que l'alignement, c'est la chose que tous les professeurs mentionnent et que très peu d'entre nous comprennent vraiment au départ.
 
-**Loïe Fuller (1862–1928)** invente la danse lumineuse : voiles de soie manipulés par des baguettes, éclairages électriques colorés, scène plongée dans l'obscurité. Elle n'a pas de technique académique — elle invente la sienne. Les Symbolistes l'adorent.
+La colonne vertébrale n'est pas droite — elle présente trois courbures naturelles (lordose cervicale, cyphose thoracique, lordose lombaire). L'alignement dansé respecte ces courbures tout en les optimisant. L'idée n'est pas de t'aplatir comme une planche, mais de trouver ta verticalité vivante.
 
-**Isadora Duncan (1877–1927)** est la rebelle fondatrice :
-- Elle danse pieds nus, en tunique grecque, inspirée des frises antiques et de la nature.
-- Elle revendique la liberté du corps féminin contre le corset victorien.
-- Son principe : le mouvement naît du plexus solaire, le siège de l'émotion.
-- Elle ouvre des écoles en Europe (dont une à Moscou) et forme la première génération de danseuses "libres".
+**Tes repères d'alignement debout :**
+1. Tête : regard horizontal, occiput dans le prolongement de la colonne
+2. Épaules : basses, éloignées des oreilles
+3. Cage thoracique : ouverte, pas projetée en avant
+4. Bassin : neutre (ni basculé en avant, ni rétroversé)
+5. Genoux : dans l'axe des pieds, légèrement déverrouillés
+6. Pieds : plante entière en contact avec le sol
 
-> "Je n'ai jamais pu comprendre pourquoi l'on devrait apprendre à danser à partir des orteils." — Isadora Duncan
-
-**Ruth Saint Denis (1879–1968)** et **Ted Shawn (1891–1972)** fondent la **Denishawn School** à Los Angeles (1915) : mélange d'orientalisme, de mysticisme et de pragmatisme américain. Martha Graham, Doris Humphrey et Charles Weidman en sortent. Denishawn est en quelque sorte la pépinière de la danse moderne américaine.`,
+L'alignement est dynamique — il s'adapte à chaque mouvement sans jamais être figé. Pense à lui comme une conversation entre les différentes parties de ton corps, pas comme une statue.`,
       },
       {
-        titre: "L'Ausdruckstanz allemand (1910–1940)",
-        contenuMarkdown: `En Allemagne, la danse prend une toute autre couleur — plus sombre, plus radicale, plus politique.
+        titre: "Le turn-out : anatomie et limites",
+        contenuMarkdown: `J'ai appris ça à mes dépens, et je préfère te le dire franchement : le turn-out, on ne peut pas le forcer. Voici pourquoi — et c'est fascinant, je te jure.
 
-L'**Ausdruckstanz** ("danse d'expression") est née dans une époque de crise : guerres, révolutions, montée des extrémismes. La danse répond à tout ça.
+**Ce qui détermine ton turn-out :**
+- La forme de la tête du fémur (rotonde → plus de mobilité)
+- L'orientation de l'acétabule (cavité de la hanche)
+- L'angle d'antéversion du col fémoral (moins d'antéversion → plus de turn-out naturel)
+- La longueur des ligaments de la capsule articulaire
 
-**Rudolf Laban (1879–1958)** — tu le connais déjà via l'Unité 0 — forme des dizaines de chorégraphes. Son élève **Mary Wigman (1886–1973)** est la figure centrale :
-- Elle danse souvent seule, en masque, avec une percussion minimale ou en silence.
-- Son langage est sombre, tellurique, habité par des forces archaïques.
-- Elle ouvre des écoles dans toute l'Allemagne.
+Tout ça, c'est génétique. Tu ne peux pas y changer grand-chose structurellement.
 
-**Kurt Jooss (1901–1979)** crée *La Table Verte* (1932), chef-d'œuvre anti-guerre : la Mort conduit une danse macabre pendant que des diplomates négocient. C'est l'une des premières œuvres chorégraphiques à message politique explicite. Une œuvre qui, hélas, reste terriblement actuelle.
+**Ce que tu peux améliorer :**
+- Le renforcement des rotateurs externes (obturateur, pyramidal, sous-fessiers)
+- La souplesse des rotateurs internes (adducteurs, fléchisseurs de hanche)
+- La proprioception du turn-out (tenir ton turn-out *en mouvement*, pas seulement debout immobile)
 
-L'arrivée du nazisme disperse ces artistes — Wigman survit difficilement, Jooss s'exile en Angleterre. La danse aussi paie le prix de l'histoire.`,
+**Ce qu'on ne peut pas changer :** la structure osseuse. Forcer au-delà blesse — les hanches, les genoux, les chevilles paient pour les pieds forcés. Ton turn-out vient de ta hanche, pas de tes pieds. C'est une des premières choses que j'ai notée en gros caractères.`,
       },
       {
-        titre: "L'âge d'or américain (1930–1960)",
-        contenuMarkdown: `**Martha Graham (1894–1991)** est la figure qui m'impressionne le plus dans toute l'histoire de la danse — et je pèse mes mots.
+        titre: "Centre de gravité, tonicité et proprioception",
+        contenuMarkdown: `Trois concepts qui font la différence entre danser et vraiment *habiter* le mouvement.
 
-Elle développe une technique complète basée sur la **contraction et le release** — l'inspiration/expiration comme moteur du mouvement. Son travail est ancré dans la psychologie, la mythologie grecque, l'identité américaine.
+**Centre de gravité (CDG)** : situé environ à deux travers de doigt sous le nombril. En mouvement, ton CDG décrit une trajectoire — la régularité de cette trajectoire définit l'économie de ton geste. Un danseur efficace ne se bat pas contre la gravité ; il joue avec.
 
-Œuvres majeures : *Lamentation* (1930), *Appalachian Spring* (1944), *Cave of the Heart* (1946, sur Médée). Si tu as l'occasion de voir ces pièces, cours.
+**Tonicité** : tu dois cultiver un tonus *sélectif* — engager les muscles nécessaires au geste, relâcher les autres. Crisper tout le corps consomme de l'énergie pour rien, et ça se voit. Les débutants ont souvent tendance à "tout tenir" par peur de tomber — c'est naturel, mais ça freine la progression.
 
-**Doris Humphrey (1895–1958)** explore la **chute et la récupération** (fall and recovery) — la vie comme tension permanente entre équilibre et déséquilibre. Un concept que tu retrouves dans le contemporain d'aujourd'hui.
+**Proprioception** : le sens du corps dans l'espace. C'est ce qui te permet de corriger ta posture sans miroir, de mémoriser un mouvement dans la mémoire musculaire, de protéger instinctivement une articulation fragile.
 
-**José Limón (1908–1972)**, élève de Humphrey, apporte une dimension dramatique et culturelle (identité mexicaine-américaine) dans des œuvres comme *There is a Time* et *Missa Brevis*.
-
-Ces trois techniques — Graham, Humphrey-Limón, et plus tard Cunningham — forment le tronc commun de la **danse moderne** enseignée dans les conservatoires. Si tu étudies la danse sérieusement, tu en croiseras forcément une.`,
-      },
-      {
-        titre: 'La révolution postmoderne : Judson Church (1960–1975)',
-        contenuMarkdown: `C'est la partie de l'histoire de la danse qui me fascine le plus parce qu'elle pose la question la plus radicale qui soit : **qu'est-ce que la danse ?**
-
-En 1962, un groupe de danseurs, compositeurs et artistes visuels commence à se réunir à l'église **Judson Dance Theater** de New York. Leurs réponses remettent tout en question :
-
-- **Yvonne Rainer** rédige le *No Manifesto* (1965) : non à la virtuosité, non au spectaculaire, non à la transformation. Le mouvement quotidien est de la danse.
-- **Steve Paxton** développe le **contact improvisation** (1972) : deux corps qui partagent leur poids, sans hiérarchie, en temps réel.
-- **Trisha Brown** joue avec la gravité : danseurs sur les murs, dans la rue, dans des structures géométriques.
-- **Simone Forti** introduit les *dance constructions* : des instructions simples données aux interprètes.
-
-> Cette génération refuse le "beau" au sens conventionnel. Tout peut être danse : marcher, manger, parler.
-
-L'héritage Judson est immense : il autorise la danse contemporaine à inclure le théâtre, l'installation, la performance, et à questionner en permanence ses propres limites. En gros, si tu danses aujourd'hui de façon libre et expérimentale, tu dois quelque chose à ces artistes.`,
-      },
-      {
-        titre: "La danse contemporaine mondiale (1980 à aujourd'hui)",
-        contenuMarkdown: `**Pina Bausch (1940–2009)** et sa compagnie de Wuppertal inventent le **Tanztheater** (danse-théâtre) — et là, personnellement, j'ai failli tomber de ma chaise en découvrant son travail. Les interprètes parlent, pleurent, rient, répètent des gestes obsessionnels. Le corps est politique. *Café Müller* (1978) et *Kontakthof* (1978) sont des œuvres fondamentales — des pièces qui te hantent longtemps après les avoir vues.
-
-**William Forsythe** déconstruit le ballet classique depuis les années 1980 : géométries tordues, improvisations structurées, rapport au public perturbé. Fascinant et parfois déstabilisant — exactement l'effet voulu.
-
-**Maguy Marin** (France), **Anne Teresa De Keersmaeker** (Belgique), **Sasha Waltz** (Allemagne) — la danse contemporaine européenne développe des langages pluriels, sans chef de file ni école unique.
-
-En France, la politique de **décentralisation culturelle** (années 1980–1990) crée un réseau de Centres Chorégraphiques Nationaux qui permettent à des dizaines de compagnies de travailler sur le long terme.
-
-Aujourd'hui, la danse contemporaine :
-- Dialogue avec les arts visuels, la performance, la musique électronique, le numérique.
-- Intègre la diversité des corps et des identités.
-- Questionne les notions d'auteur, d'interprète et de spectateur.
-
-Et c'est précisément pour ça qu'elle me tient éveillé la nuit à remplir des carnets.`,
+> *Exercice de Plumy : Ferme les yeux, lève un bras dans une direction précise, puis essaie de sentir exactement où il est avant de vérifier. C'est la proprioception au travail — et on peut l'entraîner. Plus tu danses, plus elle s'affine.*`,
       },
     ],
   },
+
   {
-    id: 'histoire-jazz',
-    titre: 'Jazz dance — des origines à Broadway',
-    resume: "Née dans les communautés afro-américaines du Sud, la jazz dance a traversé le vaudeville, Harlem, Broadway et Hollywood. Son histoire, c'est aussi l'histoire de l'Amérique — avec tout ce que ça implique.",
-    disciplines: ['jazz'],
-    termesAbordes: ['origines-jazz-dance', 'lindy-hop', 'jazz-theatrical'],
+    id: 'musique-appliquee',
+    titre: "Formation musicale pour le danseur",
+    resume: "Tout danseur est aussi musicien de son corps. Comprendre le tempo, la mesure, le phrasé, l'anacrouse et la syncope, c'est apprendre à dialoguer avec la musique plutôt que la suivre aveuglément — et crois-moi, ça change tout.",
+    disciplines: ['commun'],
+    termesAbordes: ['tempo', 'mesure-musicale', 'phrase-musicale', 'anacrouse', 'syncope'],
     sections: [
       {
-        titre: 'Racines africaines et contexte américain',
-        contenuMarkdown: `Je vais être direct avec toi dès le début : la jazz dance ne se comprend pas sans l'histoire de l'Amérique et de l'esclavage. C'est une histoire qu'on ne peut pas raconter en esquivant sa source.
+        titre: "Le tempo et la mesure : le squelette rythmique",
+        contenuMarkdown: `Je vais te dire un secret : j'ai longtemps cru que la musique, c'était juste là pour "donner l'ambiance" pendant qu'on dansait. Quelle erreur. Comprendre la structure musicale, c'est débloquer un niveau entier de la danse.
 
-Les Africains déportés aux États-Unis ont apporté avec eux leurs traditions de danse : **polycentrisme** (plusieurs centres du corps bougent indépendamment), **polyrythmie** (corps qui répond à plusieurs rythmes simultanément), sens du **groove** et de l'improvisation, rapport au sol ancré.
+**Le tempo** est la vitesse de la pulsation, mesurée en BPM (battements par minute). L'intérioriser — au point de le sentir dans ton corps même quand la musique s'arrête — est une compétence fondamentale.
 
-Ces traditions survivent malgré l'oppression :
-- Dans les **ring shouts** (chants et danses rituels des communautés noires du Sud)
-- Au **Congo Square** de La Nouvelle-Orléans, où les esclaves avaient le droit de se rassembler le dimanche
-- Dans les danses de plantation, parfois ridiculisées dans les **minstrel shows** — spectacles de Blancs maquillés en Noir, qui diffusent des stéréotypes racistes tout en popularisant les rythmes afro-américains
+**La mesure** organise les temps en groupes réguliers. Les mesures les plus courantes en danse :
 
-> La jazz dance est une création afro-américaine. Son histoire ne peut se raconter sans reconnaître à la fois sa source et l'appropriation culturelle qui l'a suivie. J'y tiens.`,
+| Mesure | Caractère | Utilisations |
+|--------|-----------|-------------|
+| 4/4 | Universel, robuste | Jazz, pop, contemporain, hip-hop |
+| 3/4 | Ternaire, tournoyant | Valse, cabaret, classique romantique |
+| 2/4 | Binaire, énergique | French cancan, marche |
+| 6/8 | Oscillant, balancé | Certains jazz, musiques folkloriques |
+
+**Compter en danse :** on compte généralement en 8 (deux mesures de 4/4), en 6 (pour la valse), ou en combinaison. Si ton prof dit "5, 6, 7, 8", il te donne une anacrouse sur le dernier temps — patience, on y vient.`,
       },
       {
-        titre: 'Le Ragtime et les premières danses sociales (1890–1920)',
-        contenuMarkdown: `À la fin du XIXe siècle, le **ragtime** — musique syncopée à base de piano — envahit les salles de danse américaines. Et avec lui, de nouvelles danses apparaissent qui vont faire scandale dans les salons bourgeois.
+        titre: "Le phrasé musical : la grammaire du temps",
+        contenuMarkdown: `Comme une phrase a un sujet, un verbe et une conclusion, la musique a des **phrases musicales** — généralement 4 ou 8 mesures — qui se terminent par une cadence (comme une ponctuation).
 
-**Le Cake Walk** (fin XIXe) : danse parodique née dans les plantations, où les esclaves imitaient les danses formelles de leurs maîtres avec ironie. Récupérée par le vaudeville et les minstrel shows, elle devient à la mode dans les salons blancs — sans que son origine ironique soit jamais reconnue. Une histoire d'appropriation culturelle qui en préfigure beaucoup d'autres.
+En tant que danseur, tu dois apprendre à entendre :
+- **Le début de phrase** (downbeat) : souvent un point d'arrivée ou de départ fort
+- **La montée** : développement de l'énergie, tension qui s'accumule
+- **La cadence finale** : résolution, respiration, atterrissage
 
-**Le Turkey Trot, le Grizzly Bear, le Bunny Hug** (années 1910) : danses de couple proches, corps collés, scandaleuses pour l'époque. **Vernon et Irene Castle** les popularisent dans les salons en les "civilisant" — corps légèrement séparés, gestes épurés — pour un public blanc bourgeois.
+**Phrasé dansé vs phrasé musical :** un chorégraphe peut aligner ses phrases avec la musique (*avec-la-musique*) ou créer délibérément des décalages (*contre la musique*). Ce jeu de tension/résolution est l'un des outils les plus puissants de la composition.
 
-C'est dans ce contexte que naît le jazz : musique syncopée, improvisée, née à La Nouvelle-Orléans, portée par des musiciens noirs américains.`,
+> *Note de Plumy : J'adore les chorégraphes qui arrivent une mesure avant ou après la musique. Ça crée une surprise que même moi je n'arrive pas toujours à anticiper — et c'est cette imprévisibilité maîtrisée qui me coupe le souffle à chaque fois.*`,
       },
       {
-        titre: "Harlem et l'âge du swing (1920–1940)",
-        contenuMarkdown: `**La Renaissance de Harlem** (années 1920–1930) est une explosion culturelle afro-américaine à New York : littérature, peinture, jazz, danse. Une des périodes les plus créatives de l'histoire culturelle américaine.
+        titre: "Anacrouse et syncope : le jeu sur le temps",
+        contenuMarkdown: `Voilà deux notions qui vont transformer ta façon d'entrer dans la musique.
 
-Le **Savoy Ballroom** (1926–1958) est la grande salle de danse de Harlem — l'une des premières salles de spectacle non ségréguées aux États-Unis. C'est là que naît le **Lindy Hop** :
+**L'anacrouse** est la note (ou le mouvement) qui précède le temps fort pour l'annoncer. C'est la préparation, le souffle avant la parole. En danse, c'est la différence entre un geste *projeté* dans la musique et un geste *arraché* à elle. Quand tu entends "5, 6, 7, 8" — ces quatre comptes sont une anacrouse. Ton corps se prépare, s'élan avant de démarrer.
 
-- Inventé par **Frankie Manning** et **Shorty George Snowden** vers 1928
-- Nommé en référence à Charles Lindbergh (Lindy) et sa traversée de l'Atlantique
-- Caractérisé par ses **airsteps** (acrobaties aériennes), son swing continu, son improvisation
+**La syncope** déplace l'accent vers les temps faibles. C'est l'ADN du jazz et du funk — cette tension légèrement décalée qui crée le groove, ce balancement irrésistible.
 
-Le Lindy Hop est la première danse de couple où la femme est projetée, sautée, envoyée dans les airs — une révolution dans les rapports de genre dans la danse sociale. Frankie Manning, il faut le savoir, a continué à enseigner le Lindy Hop jusqu'à presque 95 ans. Ça, j'appelle ça de la passion.
+**Repères pratiques :**
+- Une valse qui passe sur le "3-et" avant le "1" utilise l'anacrouse
+- Un jazz step qui tombe sur le "2 et 4" plutôt que "1 et 3" est syncopé
+- Un danseur qui anticipe systématiquement le tempo "met en avance"
 
-**Louis Armstrong, Duke Ellington, Ella Fitzgerald** — la musique jazz accompagne ces danses et crée un dialogue permanent entre musiciens et danseurs.`,
-      },
-      {
-        titre: "Broadway et l'âge d'or (1940–1970)",
-        contenuMarkdown: `**Jack Cole (1911–1974)** est le père fondateur du **jazz theatrical** — et si tu danses du jazz de comédie musicale aujourd'hui, tu danses en partie grâce à lui.
-
-Il synthétise la danse classique indienne (Bharatanatyam), les isolations afro-caribéennes et le jazz pour développer un style qui deviendra la base du jazz de scène : technique exigeante, isolations précises, présence forte. Il forme Bob Fosse, Gwen Verdon, Carol Haney.
-
-**Bob Fosse (1927–1987)** crée un style immédiatement reconnaissable — et je veux dire immédiatement, à la première seconde :
-- Chapeaux melon, gants blancs, corps obliques, mains en avant
-- Mouvements sexuels mais stylisés, ironie et voyeurisme maîtrisés
-- Chefs-d'œuvre : *Chicago* (1975), *Pippin*, *All That Jazz* (film, 1979)
-
-**Jerome Robbins (1918–1998)** apporte la légèreté et la précision — *West Side Story* (1957) reste une leçon de dramaturgie chorégraphique.
-
-**Gus Giordano (1923–2008)** systématise la technique jazz dans l'enseignement américain. Grâce à lui, des milliers de professeurs ont une base commune.`,
-      },
-      {
-        titre: "La jazz dance aujourd'hui",
-        contenuMarkdown: `À partir des années 1980, la jazz dance éclate en **sous-styles** qui reflètent la diversité de la culture populaire — et c'est précisément ce qui la rend aussi vivante.
-
-| Sous-style | Caractéristiques |
-|-----------|-----------------|
-| **Jazz classique** | Héritage Giordano/Cole, technique pure |
-| **Broadway jazz** | Storytelling, comédie musicale, expressivité |
-| **Fosse** | Isolations, ironie, vêtements sombres |
-| **Modern jazz** | Influence contemporaine, fluidité |
-| **Lyrical jazz** | Connexion à la musique, émotion, fluidité |
-| **Street jazz** | Hip-hop + jazz, énergie urbaine |
-| **Afro-jazz** | Retour aux sources, polycentrisme, groove |
-
-**Beyoncé, Janet Jackson, Michael Jackson** popularisent à l'échelle mondiale un vocabulaire issu du jazz theatrical et du hip-hop. Chaque fois que tu regardes un clip ultra-chorégraphié, tu vois des décennies d'histoire de la jazz dance condensées en trois minutes.
-
-Aujourd'hui, la jazz dance est la discipline la plus enseignée en France après le classique et le contemporain. Elle est aussi l'une des plus pratiquées dans les concours internationaux.`,
+Expérimenter avec ces déplacements temporels, c'est apprendre à *parler* en musique, pas seulement à l'*écouter*. Et franchement, une fois qu'on entend la syncope dans les muscles — on ne peut plus s'en passer.`,
       },
     ],
   },
+
   {
-    id: 'histoire-cabaret-burlesque-heels',
-    titre: 'Cabaret, burlesque et heels',
-    resume: "Trois disciplines nées dans les marges — café-concert parisien, scène américaine alternative, culture vogue et ballroom — qui partagent une revendication commune : le corps comme espace de liberté et de pouvoir.",
-    disciplines: ['cabaret', 'heels'],
-    termesAbordes: ['cancan', 'kabarett', 'burlesque-origines', 'neo-burlesque', 'vogue-ballroom', 'heels-dance'],
+    id: 'espace-scenique',
+    titre: "Repères d'espace scénique",
+    resume: "Côté cour, côté jardin, face, lointain, diagonale — le vocabulaire de l'espace scénique est le langage commun de tous les danseurs. Apprends-le une fois, et tu le gardes toute ta vie.",
+    disciplines: ['commun'],
+    termesAbordes: ['cote-cour', 'cote-jardin', 'face-lointain', 'diagonale', 'en-croix'],
     sections: [
       {
-        titre: 'Le café-concert et la naissance du cabaret (1840–1900)',
-        contenuMarkdown: `Le **café-concert** parisien naît dans les années 1840 — une salle où l'on consomme des boissons en écoutant de la musique et en regardant des numéros de variétés. Public populaire mélangé, ambiance festive, liberté de mœurs relative. Ce que j'aime dans cette naissance, c'est qu'elle est populaire, pas élitiste.
+        titre: "La carte de la scène",
+        contenuMarkdown: `Le premier cours où un professeur m'a dit "côté cour !", je suis allé du mauvais côté. Donc je vais te sauver cette gêne — voilà la carte complète.
 
-De là émerge le **french cancan** (vers 1840–1860) :
-- Danse de troupe féminine, jupes et jupons relevés, battements de jambes hauts, grand écart, "pont"
-- Spectacle au **Moulin Rouge** (ouvert en 1889) où des danseuses comme **La Goulue** et **Nini Patte-en-l'air** deviennent des stars populaires
-- Toulouse-Lautrec immortalise cette scène dans ses affiches
-- Le cancan est d'abord subversif : corps de femme du peuple exposé, excès et insolence, refus de la bienséance bourgeoise
+L'espace scénique est organisé par convention depuis le XVIIe siècle français. Tous les professionnels utilisent ce vocabulaire — dans les studios, sur les scènes, dans les répétitions.
 
-**La Belle Époque** (1890–1914) voit l'explosion du music-hall et du cabaret artistique. Le **Moulin Rouge**, le **Folies Bergère** et le **Bataclan** créent le modèle de la **revue** : spectacle total avec des numéros variés, des décors somptueux et des **girls** en costume élaboré. Un modèle qui influence encore les shows de Las Vegas aujourd'hui.`,
+**Axe latéral (gauche-droite depuis toi, qui danses) :**
+- **Côté Cour** : à ta gauche quand tu fais face au public (à droite du public)
+- **Côté Jardin** : à ta droite quand tu fais face au public (à gauche du public)
+
+**Axe frontal (avant-arrière) :**
+- **Face / Avant-scène** : côté public
+- **Lointain / Fond de scène** : côté mur du fond
+
+**Les neuf zones classiques** (grille 3×3) :
+\`\`\`
+Cour-Lointain  |  Centre-Lointain  |  Jardin-Lointain
+Cour-Milieu    |     CENTRE        |  Jardin-Milieu
+Cour-Face      |  Centre-Face      |  Jardin-Face
+               [    PUBLIC    ]
+\`\`\`
+
+> *Mémo de Plumy : "Cour" = Court = le mot le plus court → côté gauche. "Jardin" = le mot plus fleuri, plus long → côté droit. Ça m'a sauvé la mise des dizaines de fois.*`,
+        schemaId: 'espace-scenique-grille',
       },
       {
-        titre: "Le Kabarett allemand et l'entre-deux-guerres (1900–1940)",
-        contenuMarkdown: `En Allemagne, le **Kabarett** est une forme très différente : cabaret politique et satirique, né à Munich et Berlin autour de 1900. Petit théâtre, ambiance de cave, chansons à texte, sketches. Ce n'est pas le même esprit du tout — c'est mordant, critique, dangereux.
+        titre: "Trajectoires et directions",
+        contenuMarkdown: `Une fois que tu as la carte dans la tête, les trajectoires deviennent un vrai terrain de jeu.
 
-À **Berlin** dans les années 1920 (la *goldene Zwanziger*), le cabaret atteint son apogée :
-- Liberté sexuelle affichée, mélange de genres, travestissement assumé
-- **Kurt Weill** et **Bertolt Brecht** créent l'*Opéra de quat'sous* (1928)
-- **Marlene Dietrich** incarne l'ambiguïté de genre dans *L'Ange bleu* (1930)
-- Le cabaret est un espace de résistance culturelle — ce que les nazis comprennent parfaitement en le faisant taire dès 1933
+**La diagonale** est la trajectoire la plus longue sur scène — elle traverse de coin à coin. Les deux grandes :
+- Jardin-Lointain → Cour-Face (la plus classique, celle qu'on utilise pour les grands manèges)
+- Cour-Lointain → Jardin-Face (l'autre sens)
 
-Ce modèle inspire directement la comédie musicale **Cabaret** de Kander et Ebb (Broadway, 1966), qui reconstruit cette époque avec le Kit Kat Club comme miroir de la montée du nazisme.
+**En croix** désigne un exercice exécuté dans 4 directions successives : devant, côté, derrière, côté. Ce principe revient à la barre classique, dans les isolations jazz, dans l'exploration contemporaine. Dès que tu entends "en croix", tu sais que tu vas travailler les quatre orientations.
 
-En France, la tradition du **music-hall** continue avec **Joséphine Baker** (1906–1975) : première grande star noire internationale, elle chante et danse aux Folies Bergère dès 1925. Elle subvertit par son ironie et son intelligence un numéro que le regard blanc tentait d'exotiser. Une artiste complexe, que je trouve fascinante.`,
+**Le manège** est une trajectoire circulaire le long des bords de la scène — très utilisé en classique pour les grandes combinaisons de tours et de sauts. Voir un manège de pirouettes bien lancé, c'est l'une des choses les plus belles de la danse classique. Dans mon carnet, j'ai une petite flèche circulaire pour le rappeler.
+
+**Les coulisses** sont les zones cachées de chaque côté (cour et jardin), depuis lesquelles tu attends ton entrée. C'est là aussi que se passent les chuchotements, les derniers encouragements, les sourires nerveux avant d'entrer en scène.`,
       },
       {
-        titre: 'Le burlesque américain et son histoire (1860–1960)',
-        contenuMarkdown: `Le mot **burlesque** vient du latin *burla* (moquerie, farce) — et c'est exactement ça qui m'y attire : le refus de se prendre au sérieux, l'humour comme arme.
+        titre: "Orientation du corps sur scène",
+        contenuMarkdown: `Au-delà de ta position sur scène, l'orientation de ton corps a aussi son propre vocabulaire — notamment en classique et en contemporain.
 
-Aux États-Unis, le burlesque est une forme de spectacle populaire née dans les années 1860 :
+| Terme | Sens |
+|-------|------|
+| **En face** | Face au public, de face |
+| **De profil** | Présentant le côté au public |
+| **De dos** | Dos au public |
+| **Épaulé** | Corps légèrement tourné (3/4 face) |
+| **Croisé** | Pied croisé sur l'autre axe |
+| **Ouvert** | Pied du même côté que le corps |
 
-**Première époque (1860–1900)** : troupes de femmes qui parodient les codes masculins, s'habillent en hommes, jouent Shakespeare de façon comique. La grande star est **Lydia Thompson** avec ses "British Blondes". Un féminisme avant l'heure.
+Ces orientations se combinent avec les zones de scène pour créer des positions précises — du genre "arabesque croisée côté jardin, face au lointain". Ça peut sembler compliqué dit comme ça, mais une fois que tu as le vocabulaire, c'est d'une clarté absolue.
 
-**Deuxième époque (1900–1930)** : le burlesque devient synonyme de **striptease progressif**, dans des salles de plus en plus séparées du grand public. C'est l'**effeuillage** : le déshabillage progressif, avec tease et jeu avec le public.
-
-Grandes personnalités :
-- **Gypsy Rose Lee (1911–1970)** : l'effeuillage comme art intellectuel et ironique — elle récite de la poésie en se déshabillant. Classe absolue.
-- **Sally Rand (1904–1979)** : fan dance avec des plumes d'autruche, image iconique du burlesque
-
-**Troisième époque (1950–1960)** : déclin avec l'arrivée de la télévision et du cinéma. Le burlesque disparaît presque complètement — avant de renaître sous une autre forme.`,
-      },
-      {
-        titre: "Le néo-burlesque et la culture heels (1990–aujourd'hui)",
-        contenuMarkdown: `**Le néo-burlesque** naît à New York et San Francisco dans les années 1990, porté par des artistes féministes qui réinventent l'effeuillage — et je trouve cette renaissance magnifique.
-
-- **Dita Von Teese** (née 1972) en est la figure emblématique internationale : glamour ultra-soigné, références vintage, maîtrise totale de l'image.
-- Le néo-burlesque est explicitement féministe : le corps s'offre au regard selon ses propres termes, pas ceux du marché.
-- Il inclut tous les genres, toutes les morphologies — refus des normes de beauté dominantes.
-- Il se pratique dans des petits théâtres, des bars, des festivals alternatifs. Un espace libre.
-
-**La culture heels dance** a une autre origine, et c'est important de le savoir : la culture **vogue et ballroom** afro-américaine et latino-américaine de New York (Harlem, années 1970–1980).
-
-Dans les **balls**, les personnes LGBTQ+ marginalisées — souvent noires et latines — créent des catégories de compétition dont le **femme performance** : marcher sur des talons hauts avec grâce, puissance et féminité revendiquée. Figures fondatrices : **Willi Ninja, Paris Dupree**.
-
-Le film **Paris Is Burning** (Jennie Livingston, 1990) documente cette scène. **Madonna** popularise le vogue en 1990 avec la chanson *Vogue* et la chorégraphie de Jose Gutierez Xtravaganza.
-
-Aujourd'hui, le **heels dance** est une discipline à part entière, enseignée en studios, avec ses propres compétitions. Et ses racines dans les communautés noires et LGBTQ+ méritent d'être connues et honorées.`,
-      },
-    ],
-  },
-  {
-    id: 'histoire-pole-dance',
-    titre: 'Histoire du pole dance',
-    resume: "Une histoire qu'on résume souvent mal, et que je tiens à raconter correctement : le pole dance moderne est né dans les strip-clubs, créé par des travailleuses du sexe, majoritairement des femmes noires, racisées et LGBTQ+. Ce sont elles qui ont bâti ce vocabulaire.",
-    disciplines: ['pole-dance'],
-    termesAbordes: ['mat-chinois', 'pole-contemporain'],
-    sections: [
-      {
-        titre: 'Origines multiples : mat chinois et Mallakhamb',
-        contenuMarkdown: `Avant de parler du pole dance tel qu'on le connaît, il y a deux pratiques anciennes à mentionner — qui sont distinctes, pas des ancêtres directs.
-
-**Le mat chinois** (Chinese pole) est une discipline du cirque traditionnel chinois vieille de plusieurs siècles : deux ou plusieurs artistes grimpent, descendent et effectuent des figures acrobatiques sur des mâts de bambou ou de métal, couverts de caoutchouc pour l'adhérence. Cette discipline est encore enseignée dans les écoles de cirque du monde entier.
-
-**Le Mallakhamb** est une discipline de lutte traditionnelle indienne datant du XIIe siècle, pratiquée sur un poteau de bois ou une corde. Le mot signifie "homme athlète" en marathi. Des compétitions Mallakhamb existent encore aujourd'hui en Inde.
-
-Ces deux traditions montrent que l'exercice de force sur un poteau vertical existe dans des cultures très différentes, sans lien direct entre elles. Je les mentionne parce qu'elles méritent d'être connues — et parce qu'elles ne doivent pas servir à blanchir l'histoire du pole dance moderne, qui a une autre source.`,
-      },
-      {
-        titre: 'La scène américaine des années 1920–1980',
-        contenuMarkdown: `Aux États-Unis, la version moderne du pole dance émerge dans les spectacles itinérants des années 1920.
-
-**Les "hoochie coochie" shows** (foires itinérantes, cirques, carnavals) présentent des danseuses dans des tentes, parfois sur de petites scènes équipées d'un poteau central utilisé comme appui ou accessoire de danse.
-
-Dans les années **1950–1980**, le pole s'installe dans les **gentlemen's clubs** (bars de strip clubs) aux États-Unis et au Canada. Ce sont les **travailleuses du sexe** — majoritairement des femmes noires, racisées et LGBTQ+ — qui développent le vocabulaire technique et artistique du pole tel qu'on le connaît aujourd'hui. Ce sont elles les créatrices de cette discipline. Ce point est souvent effacé de l'histoire officielle, et je tiens à ce qu'il soit dit clairement.
-
-Cette association avec le strip-club a longtemps stigmatisé le pole et ses pratiquantes — une **whorephobie** systématique qui a nié à ces femmes la reconnaissance de leur travail artistique. Des pionnières comme **Fawnia Mondey** (première à enseigner le pole en dehors des clubs, dès les années 1990) ont travaillé à faire reconnaître la discipline. Le chemin a été long, et il n'est pas fini.`,
-      },
-      {
-        titre: 'La révolution sportive et artistique (1990–2010)',
-        contenuMarkdown: `**Fawnia Mondey** crée en 1994 la première vidéo pédagogique de pole dance destinée au grand public. Elle ouvre le premier studio de pole non lié à un club adulte et forme les premières enseignantes.
-
-Dans les années **2000**, le mouvement s'accélère :
-- Des studios de pole dance ouvrent dans le monde entier.
-- **Kat Bjelland** et **Wendy Traskos** fondent des associations professionnelles.
-- Les premières **compétitions internationales** de pole sport apparaissent (Miss Pole Dance World, 2005).
-- La pratique se féminise massivement et devient un loisir sportif populaire.
-
-En **2017**, la **Fédération Internationale de Pole Sports (IPSF)** obtient la reconnaissance de l'Association Mondiale des Sports (GAISF) — étape vers les Jeux Olympiques.
-
-**La distinction pole sport / pole art** s'affirme :
-- Le **pole sport** juge la difficulté technique, la force, la souplesse.
-- Le **pole art** valorise l'expression artistique, la narration, l'esthétique.
-- Le **pole contemporain** fusionne avec la danse contemporaine et le cirque.
-
-C'est une période passionnante — mais elle pose aussi des questions importantes sur la légitimation culturelle. À qui profite la reconnaissance sportive ? Les origines restent-elles honorées ?`,
-      },
-      {
-        titre: "Le pole dance en France et le débat sur le regard",
-        contenuMarkdown: `En France, le pole dance se développe à partir des années **2000–2005** avec l'ouverture des premiers studios parisiens. La **Fédération Française de Pole Sports** est créée et organise des championnats nationaux.
-
-**La question du regard** reste centrale — et c'est une conversation que je trouve importante à avoir honnêtement.
-
-Pour certains, l'origine dans le strip-club perpétue une forme d'objectification. Pour les pratiquantes, le pole est une réappropriation du corps : force, discipline, confiance en soi. Ces deux lectures peuvent coexister — et la réponse n'appartient pas à ceux qui regardent de l'extérieur, mais à chaque pratiquante.
-
-**La misogynoir** — racisme et sexisme combinés visant les femmes noires — a joué un rôle majeur dans la stigmatisation du pole. Reconnaître les créatrices noires et racisées de cette discipline, c'est une forme de justice.
-
-**Les hommes et le pole** : longtemps marginalisés dans une pratique très féminisée, les pratiquants masculins et non-binaires sont de plus en plus présents dans les compétitions et les studios. La communauté pole est connue pour être particulièrement inclusive.
-
-Aujourd'hui, le pole dance est enseigné en studios indépendants, dans certains conservatoires, en clubs de fitness et en ligne. Et son vocabulaire — grip, montées, spins, inversions — est devenu une langue commune à des millions de pratiquant·e·s dans le monde.`,
+> *Le savoir scénique, c'est comme avoir un GPS dans le corps. Une fois intégré, tu ne te perds plus jamais sur scène — et tu peux recevoir n'importe quelle indication chorégraphique au millimètre, même en pleine répétition à la volée.*`,
       },
     ],
   },

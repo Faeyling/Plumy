@@ -2,322 +2,193 @@ import type { Cours } from '../schema'
 
 export const coursUnite8: Cours[] = [
   {
-    id: 'intro-pole-dance',
-    titre: 'La pole dance — technique, styles et progression',
-    resume: "Du grip et des prises aux figures statiques, spins et inversions : comprendre la technique fondamentale du pole, les quatre styles (pole sport, pole art, exotic, pole theatre), le conditioning indispensable à la sécurité, et le floorwork comme discipline à part entière. Il y a bien plus de technique là-dedans qu'on ne le croit — dans mes carnets, ça prend plusieurs pages rien que pour les prises.",
-    disciplines: ['pole-dance'],
+    id: 'intro-cabaret',
+    titre: 'Le cabaret — revue, cancan et art du spectacle',
+    resume: "Le french cancan et ses techniques (high kick, fan kick), la chorus line et l'art de la synchronisation, le port du costume et des accessoires (canne, chapeau, boa), la présentation scénique et le rapport au public. J'ai un faible pour le cancan depuis que j'ai compris à quel point c'est physique — dans mes carnets, j'ai des pages entières là-dessus.",
+    disciplines: ['cabaret'],
     termesAbordes: [
-      'grip-pole', 'prise-basique', 'montee-pole', 'spin-pole', 'figure-statique',
-      'inversion-pole', 'ayesha', 'floorwork-pole', 'conditioning-pole',
-      'pole-sport', 'pole-art', 'exotic-pole',
+      'french-cancan', 'high-kick', 'fan-kick', 'chorus-line', 'synchronisation-chorus',
+      'port-costume', 'canne-chapeau-cabaret', 'boa-eventail',
+      'meneuse-revue', 'presentation-scenique', 'rapport-public',
     ],
     sections: [
       {
-        titre: "La pole dance — une discipline plurielle",
-        contenuMarkdown: `Je veux commencer par une chose que j'ai mise longtemps à comprendre : il n'y a pas un "vrai" pole dance. La barre est une — les disciplines qui s'y accrochent sont plusieurs, et elles sont toutes légitimes. Une fois que tu as ça dans la tête, tout le reste devient plus clair.
+        titre: "Histoire du cabaret — du Moulin Rouge à aujourd'hui",
+        contenuMarkdown: `Je vais te dire quelque chose sur le cabaret : c'est l'une des formes de danse dont l'histoire me fascine le plus, parce qu'elle est indissociable de l'histoire sociale et politique de son époque. Chaque grande période a eu son cabaret, et chaque cabaret a dit quelque chose que les autres formes d'art ne pouvaient pas dire. Installe-toi — on remonte le temps.
 
-**Les quatre grandes familles :**
+**Les origines :**
+- **1881** : Le Chat Noir (Montmartre) — premier cabaret au sens moderne. Artistes, intellectuels, bohème parisienne.
+- **1889** : Ouverture du Moulin Rouge — La Goulue, Valentin-le-Désossé, et l'invention du cancan spectaculaire.
+- **1886** : Les Folies Bergère — revue à grand spectacle, tableaux et girls.
 
-| Style | Esthétique | Musique | Costumes |
-|---|---|---|---|
-| **Pole sport** | Technique et athlétique | Classique, neutre | Sportifs |
-| **Pole art** | Artistique et expressif | Contemporaine variée | Libres |
-| **Exotic** | Sensuel, floorwork | Trap, R&B | Talons hauts |
-| **Pole theatre** | Narratif, costumé | Thématique | Costumes complets |
+**L'âge d'or de la revue (1900–1940) — des noms que tu dois connaître :**
+- **Mistinguett** : la meneuse par excellence
+- **Joséphine Baker** : révolutionnaire artistique et politique — une figure absolument majeure
+- **Les Ziegfeld Follies** (New York) : la revue américaine
+- **Le Kabarett allemand** : Ernst von Wolzogen, et sa version politique et satirique
 
-**Ce qui unit tous les styles — la colonne vertébrale :**
-- La barre comme outil chorégraphique principal
-- Le grip comme fondation technique
-- Le conditioning comme exigence incontournable
-- La progression comme seule voie sûre
+**Le cabaret au cinéma — trois films que j'adore :**
+- *Cabaret* (1972, Bob Fosse) — le Kabarett berlinois des années 1930 comme métaphore politique
+- *Moulin Rouge!* (2001, Baz Luhrmann) — hommage pop-art à l'ère du cancan
+- *Chicago* (2002, Rob Marshall) — la revue américaine
 
-**La barre statique vs rotative — une distinction importante :**
-- **Statique** : la barre ne tourne pas. Les figures et spins utilisent uniquement l'élan du corps.
-- **Rotative** : la barre tourne. Plus accessible pour certains spins en débutant, différente techniquement.
+**Le cabaret contemporain :**
+Les grandes maisons parisiennes continuent : Moulin Rouge, Lido, Folies Bergère. Mais le "néo-cabaret" existe aussi — plus intimiste, plus diversifié, plus expérimental. L'esprit du cabaret s'adapte à chaque époque. Ce qui m'émerveille, c'est que ça continue.
 
-**Le matériel :**
-- **Chrome** : standard, bon grip pour la plupart
-- **Laiton** : meilleur grip naturel
-- **Silicone** : pour les problèmes de grip (mais moins de technique possible)
-- **Diamètre** : 40 mm (standard) ou 45 mm (plus accessible pour les grandes mains)
-
-**La communauté pole :**
-La communauté pole est connue pour être particulièrement bienveillante et inclusive — un espace où les corps de toutes formes et tous genres pratiquent ensemble. C'est quelque chose que j'ai vraiment apprécié en la découvrant. Tu vas voir.`,
+**Ce qui unit toutes ces formes à travers le temps :**
+- Le spectacle : l'art d'éblouir
+- Le public au centre : la scène existe pour lui
+- Le costume, le décor, la lumière : tout est dans l'image`,
       },
       {
-        titre: "Grip et prises — la fondation technique",
-        contenuMarkdown: `Le grip, c'est la compétence la plus fondamentale du pole — et celle qui conditionne toute la sécurité. Je ne saurai jamais trop insister là-dessus, alors je le dis clairement : sans grip, il n'y a pas de pole. Tout le reste vient après.
+        titre: "Le french cancan — technique et histoire",
+        contenuMarkdown: `Parlons du french cancan — et je vais commencer par casser une idée reçue. Derrière les sourires, les jupons et la musique d'Offenbach, il y a une des danses les plus exigeantes physiquement que je connaisse. Ne te laisse pas tromper par l'apparente légèreté. J'ai noté tout ça dans mes carnets parce que ça m'a surpris aussi.
 
-**Comment fonctionne le grip :**
-Le pole dance utilise la friction peau-acier. Pas de prises comme en escalade — juste la peau en contact direct avec la barre. C'est pourquoi la qualité de ta peau (et de la barre) change tout.
+**Histoire du cancan :**
 
-**Facteurs qui affectent le grip :**
-- Transpiration (utiliser du magnésium si trop)
-- Crème hydratante (NE PAS en mettre avant la barre — vraiment, ne fais pas ça)
-- Température : barre froide = meilleur grip
-- Type d'acier
+Le "chahut" naît dans les bals populaires parisiens des années 1820. À l'origine, danse mixte et improvisée. En 1858, Offenbach compose *Orphée aux Enfers* — sa galop infernal devient la musique définitive du cancan.
 
-**Les prises principales — j'ai un mémo dans mes carnets pour chacune :**
+Au Moulin Rouge (ouvert en 1889), La Goulue et Valentin-le-Désossé codifient et spectacularisent le cancan devant un public international. Ce n'est plus une danse de bal — c'est un spectacle.
 
-**Cup grip :** Pouce en bas, quatre doigts en haut. Prise de base universelle.
+**Les éléments techniques — dans mon carnet, j'ai un schéma pour chacun :**
 
-**Baseball grip :** La main enserre complètement la barre. Plus fort mais plus fatigant.
+**Le grand battement (high kick) :**
+- Jambe tendue qui monte à la verticale ou au-delà
+- Pied pointé, dos droit, maintien de l'équilibre
+- Séquences alternées : jambe droite, jambe gauche
 
-**Twisted grip :** Prise renversée (avancé). Controversée pour les débutants — risque épaule. Ne t'y aventure pas sans accompagnement.
+**Le fan kick :**
+- La jambe décrit un arc (avant → côté) en restant haute
+- Plus complexe que le high kick : mobilité de hanche dans plusieurs plans
 
-**Bracket grip :** Deux mains en opposition. Stabilité maximale.
+**Le porte-jupon :**
+- Soulèvement du jupon avec les deux mains
+- Agitation rythmée — c'est une chorégraphie dans la chorégraphie
 
-**Forearm grip :** L'avant-bras appuie sur la barre. Utilisé dans des figures spécifiques (flag).
+**Le port de la jambe (arabesque cancan) :**
+- Jambe en arrière, corps penché
 
-**Les zones de grip du corps — ça m'a étonné quand j'ai découvert ça :**
-- Mains (principal)
-- Avant-bras
-- Creux du coude
-- Cuisses intérieures
-- Dos des genoux (creux poplité)
-- Pieds/chevilles (avancé)
+**L'accroche-pied :**
+- Saut sur une jambe, l'autre jambe accrochée (genou plié)
 
-**Les marques — quelque chose que personne ne t'a peut-être dit :**
-Les premières semaines de pole laissent des marques et rougeurs — c'est normal. La peau s'habitue. Ne pas forcer à travers de la douleur *vive*, mais les marques normales ne sont pas dangereuses. On est tous passés par là.`,
+**Le grand écart final :**
+- Descente en split au sol — signature emblématique. Et oui, c'est autant de physique que ça en a l'air.
+
+**En ligne de chorus :**
+Tout le vocabulaire du cancan se danse en formation — la synchronisation est centrale. Ce qu'une seule danseuse fait est beau ; ce que douze font ensemble est époustouflant. Tu vas voir.`,
       },
       {
-        titre: "Montées, spins et figures statiques",
-        contenuMarkdown: `Ce sont les trois catégories techniques fondamentales du pole. Ce sont les premières choses que tu vas apprendre — dans cet ordre, et pas dans un autre. J'ai appris ça à mes dépens, alors je te le donne directement.
+        titre: "La chorus line — art de la synchronisation",
+        contenuMarkdown: `Voici quelque chose que j'ai mis du temps à comprendre sur la chorus line : une ligne de danseuses synchronisées, ce n'est pas de l'alignement géométrique. C'est une discipline à part entière — peut-être la plus sociale de toutes les disciplines de danse. Et j'adore l'enseigner parce qu'il faut changer d'état d'esprit pour y entrer.
+
+**Histoire de la chorus line — des moments que j'aime raconter :**
+- **1866** : *The Black Crook* (New York) — premières chorus girls
+- **1907** : Les Ziegfeld Follies — la chorus girl américaine standardisée
+- **1974** : *A Chorus Line* (Broadway) — l'œuvre qui rend hommage et questionne l'institution
+- **Moulin Rouge, Lido, Folies Bergère** : les grandes maisons de chorus européens
+
+**Les Bluebell Girls :**
+Fondées par Margaret Kelly ("Bluebell") en 1932, les Bluebell Girls du Lido de Paris sont l'une des troupes les plus célèbres au monde — standards de sélection stricts, formation intensive. Si tu ne les as jamais vues, je te dis une chose : regarde ça.
+
+**Principes de la synchronisation — ce que j'ai noté dans mes carnets :**
+
+**L'écoute musicale :**
+La synchronisation commence dans les oreilles, pas dans les yeux. Écouter le pulse ensemble — ne pas regarder les voisines pour se caler (ça crée un délai au lieu de le supprimer). C'est contre-intuitif, mais ça change tout.
+
+**La vision périphérique :**
+En ligne, on voit ses voisines sans tourner la tête. C'est un outil actif, pas un hasard.
+
+**L'amplitude commune :**
+Si l'amplitude diffère, l'image est déséquilibrée. On s'accorde souvent sur la moins flexible du groupe — parce que la ligne vaut plus que la performance individuelle.
+
+**La qualité homogène :**
+Pas seulement la forme — l'énergie, le regard, le sourire doivent être unifiés.
+
+**La répétition comme construction :**
+La synchronisation se construit en répétant ensemble — un seul cours ne suffit pas. C'est un travail de groupe dans la durée. Et c'est ça qui est beau — vraiment beau.`,
+      },
+      {
+        titre: "Le port du costume et des accessoires",
+        contenuMarkdown: `Une des choses qui m'a le plus étonné quand j'ai découvert le cabaret : les accessoires ont leur propre technique. En cabaret, le costume n'est pas un ajout à la danse. Il *est* la danse. Laisse-moi te montrer.
+
+**La canne de cabaret :**
+
+Élément signature du music-hall et du style Fosse.
+
+**Positions de base :**
+- En appui (comme une canne ordinaire) pour les poses
+- Sur l'épaule, dans le coude
+- Tenue par le bas (baguette de chef d'orchestre)
+
+**Manipulation :**
+- Pirouette avec canne (dans les doigts pendant un tour)
+- Balancer (oscillation pendulaire)
+- Tap (frapper le sol sur les temps)
+
+**Le chapeau haut-de-forme :**
+- En équilibre sur la tête pendant les kicks
+- Roll sur le bras (de la main à l'épaule)
+- Tip (effleurer le bord — geste d'élégance absolue)
 
 ---
 
-## La montée (climb)
+**Le boa et l'éventail :**
 
-Technique d'ascension le long de la barre.
+Le boa a une physique propre — il suit le corps avec un délai qu'il faut anticiper et *utiliser*. Ce délai, c'est ta chance de créer quelque chose de beau. Je note ça dans mes carnets comme une des leçons les plus utiles du cabaret.
 
-**Montée classique :**
-1. Main dominante haute, main subdominante dessous
-2. Élévation par les jambes + appui de tout le corps
-3. Jambes qui enserrent la barre (cuisses + creux de genou)
-4. Mains qui grimpent l'une après l'autre
-5. Jambes reprennent appui plus haut
-6. Répéter
-
-**Toujours apprendre la descente avant la montée.** Je le mets en gras parce que c'est vraiment important. Vraiment.
+**Techniques :**
+- Draper (autour du cou, des épaules)
+- Faire tourner (moulin au-dessus de la tête)
+- Whip (claquement vers le bas)
 
 ---
 
-## Les spins
-
-Corps qui tourne autour de la barre avec un point de contact.
-
-**Fireman spin :** Corps vertical, jambes parallèles à la barre. Premier spin appris — et déjà magnifique quand il est propre.
-
-**Chair spin :** Corps en angle, jambes en forme de "chaise". Très courant en débutant.
-
-**Attitude spin :** Une jambe tendue devant, une pliée derrière. Silhouette élégante.
-
-**Principe physique :**
-Jambes proches du corps = rotation plus rapide. Jambes éloignées = rotation plus lente. C'est de la physique pure — et c'est beau à utiliser.
+**Le jupon de cancan :**
+- Porte-jupon : soulèvement à deux mains
+- Agitation rythmée
+- Le jupon révèle et cache — chorégraphie dans la chorégraphie
 
 ---
 
-## Les figures statiques
-
-Corps tenu immobile dans une position précise.
-
-**Progression de difficulté :**
-- Pole hold (débutant)
-- Flag (intermédiaire)
-- Crucifix (intermédiaire)
-- Brass monkey (avancé)
-- Ayesha (très avancé — force pure, plusieurs années de conditioning)
-- Iron X (expert)
-
-**Ce qu'exige une bonne figure statique :**
-- La forme est claire et précise
-- Le corps est engagé (pas d'affaissement)
-- Le regard est vivant
-- La transition vers la figure est chorégraphiée`,
+**Règle d'or — je te la donne gratuitement :**
+Répéter en costume complet dès que possible. Le costume modifie la danse — il faut s'y habituer physiquement. Ce n'est vraiment pas anodin, crois-moi.`,
       },
       {
-        titre: "Inversions — progresser en sécurité",
-        contenuMarkdown: `Les inversions (corps à l'envers) sont les figures les plus impressionnantes du pole — et les plus techniques à apprendre. Je veux que tu saches exactement ce que ça demande avant d'y aller, parce que cette partie-là ne souffre pas d'approximation.
+        titre: "Présentation scénique et rapport au public",
+        contenuMarkdown: `J'y tiens profondément à cette distinction, et je veux que tu l'aies clairement dans la tête : la technique est nécessaire. La présentation scénique est ce qui fait le spectacle. On peut maîtriser tout le reste et rater ça — et alors le public ne "reçoit" rien.
 
-**Pourquoi les inversions sont-elles différentes ?**
-En inversion, la gravité inverse ses effets sur le corps :
-- Les jambes deviennent le grip primaire (cuisses, creux de genou)
-- Le gainage abdominal est non-négociable
-- La déorientation (être à l'envers) s'apprivoise progressivement — et ça prend du temps
+**La présentation scénique — les éléments clés dans mon carnet :**
 
-**La règle absolue — je ne la formule pas plus doucement :**
-**Jamais d'inversion sans supervision pour les débutants.** Toujours avec tapis épais.
+**Le regard :**
+En cabaret, le regard est actif et dirigé. Vers le public, vers un partenaire imaginaire, vers les coulisses avec mystère — mais jamais "perdu". Un regard qui flotte tue la magie. Je l'ai vérifié trop de fois.
 
-**Progression obligatoire — pas de raccourci ici :**
-1. Gainage au sol (hollow body, plank, pike) — plusieurs mois
-2. Inversions au sol sans barre (shoulder stand, etc.)
-3. Inversions assistées par un professeur à basse hauteur
-4. Inversions autonomes à basse hauteur avec tapis
-5. Inversions à hauteur normale avec tapis
+**Le sourire :**
+Un sourire habité (qui vient d'une joie réelle de performer) vs un sourire figé (qui vient de la peur). Le public voit la différence — toujours. Tu vas apprendre à sentir la différence sur ton propre visage.
 
-**Inversions de base (par ordre de difficulté) :**
+**La projection :**
+L'énergie qui sort du corps vers la salle. Un danseur peut techniquement être parfait et ne rien projeter — alors le public ne "reçoit" rien. La technique sans projection, c'est de la mécanique.
 
-**Tuck inversion (candy cane) :**
-Jambes ramenées contre la barre, bassin qui monte, tête qui descend. Première inversion.
-
-**Outside leg hang :**
-Une jambe enroule la barre extérieurement. Corps à l'envers, dos vers la salle.
-
-**Gemini :**
-Inversion avec jambe tendue, corps face à la salle.
-
-**Ayesha :**
-Corps horizontal maintenu uniquement par la force des bras. Plusieurs années de conditioning nécessaires.
-
-**Test de gainage minimal avant l'inversion :**
-Tenir un hollow body (au sol) pendant 10 secondes sans que le bas du dos décolle. C'est le minimum. Vraiment le minimum — et ça vaut la peine d'y revenir autant de fois qu'il le faut.`,
-      },
-      {
-        titre: "Conditioning, floorwork et les quatre styles",
-        contenuMarkdown: `Deux piliers qui font la durabilité de la pratique : le conditioning et la connaissance des styles. L'un sans l'autre, c'est incomplet. Je te parle du conditioning en connaissance de cause — c'est ce qui rend tout le reste possible, et ce qu'on est souvent tenté de passer trop vite.
-
-**Le conditioning — pourquoi c'est non-négociable :**
-
-Le pole dance exige une force importante. Sauter le conditioning augmente significativement le risque de blessure — notamment à l'épaule. C'est dans mes carnets de santé aussi.
-
-**Programme de base (avant chaque séance) :**
-- Hollow body hold : 3 × 20 secondes
-- Plank : 3 × 30 secondes
-- Pike compression : 3 × 10
-- Shoulder press : 3 × 8
-- Grip strength : 3 × 30 secondes
-
-**Zones prioritaires à renforcer :**
-- Épaules (coiffe des rotateurs, stabilisateurs de l'omoplate)
-- Gainage abdominal
-- Adducteurs (grip cuisses)
-- Avant-bras et mains
+**La conscience de l'espace :**
+Savoir où tu es sur scène, qui est devant toi, comment tu t'inscris dans la formation.
 
 ---
 
-**Le floorwork :**
+**Le rapport au public :**
 
-En pole sport : fonctionnel (transitions propres)
-En pole art : chorégraphié et expressif
-En exotic pole : c'est le cœur du style
+En cabaret, le public n'est pas passif — il est participant. La relation est directe et vivante. C'est l'essence même du genre.
 
-**Transition barre → sol :** Toujours chorégraphiée, jamais accidentelle.
-**Transition sol → barre :** Aussi expressive que le sol lui-même.
+**Techniques de rapport au public que j'adore :**
+- Regard direct (pas au-dessus des têtes — *dans* les yeux)
+- Wink et jeux complices
+- Timing : laisser le public réagir (rire, surprise) avant de continuer — ne jamais écraser la réaction
+- Révérence communicante (pas une formalité, une vraie transmission)
 
 ---
 
-**Les quatre styles — comment t'orienter :**
+**La meneuse :**
+Dans une revue, la meneuse est celle qui "mène" — pas seulement physiquement, mais en énergie et en présence. La troupe se cale sur elle, pas l'inverse. C'est un rôle de responsabilité totale.
 
-- **Pole sport** : tu aimes la compétition, la technique pure, la progression mesurable
-- **Pole art** : tu aimes la création, l'expression, le dialogue avec d'autres disciplines
-- **Exotic** : tu aimes la sensualité, le floorwork, les talons hauts
-- **Pole theatre** : tu aimes le théâtre, les personnages, la narration
-
-> Il n'y a pas un "vrai" pole dance. Il y a ton pole dance. Et ça, c'est une liberté magnifique.`,
-      },
-    ],
-  },
-
-  {
-    id: 'histoire-culturelle-pole',
-    titre: "Histoire et culture du pole dance — celles qui ont tout créé",
-    resume: "L'histoire plurielle et souvent effacée du pole dance : du mallakhamb indien à la barre chinoise de cirque, des bars canadiens des années 1980 à la révolution sportive et artistique contemporaine. Et les femmes — souvent anonymes — qui ont inventé les techniques que la communauté utilise aujourd'hui. C'est la page de mes carnets à laquelle je tiens le plus dans toute l'Unité 8.",
-    disciplines: ['pole-dance'],
-    termesAbordes: ['origine-pole', 'pole-sport', 'pole-art', 'exotic-pole'],
-    sections: [
-      {
-        titre: "Des origines multiples",
-        contenuMarkdown: `J'ai passé beaucoup de temps sur cette page de mes carnets, parce que le pole dance n'a pas une seule origine — il en a plusieurs, géographiquement et culturellement distinctes. Il faut les connaître toutes, parce qu'elles éclairent la pratique d'aujourd'hui d'une façon que rien d'autre ne peut faire. Et parce qu'une histoire racontée à moitié, c'est une histoire déformée.
-
-**Le mallakhamb (Inde, XIIe siècle) :**
-Le mot "malla" (athlète) + "khamb" (poteau). Discipline de lutteurs indiens — acrobaties, flexibilité et force sur un poteau de bois. Utilisé comme entraînement, pas comme performance érotique.
-
-Aujourd'hui, le mallakhamb est un sport national en Inde, avec ses propres compétitions et fédérations. Il est totalement distinct du pole dance occidental dans son contexte — et il serait faux de les confondre. Je note ce point parce que beaucoup l'ignorent, et que l'ignorer fait du mal à tout le monde.
-
-**La barre chinoise (cirque) :**
-Dans la tradition du cirque chinois et européen, les numéros sur barres verticales existent depuis des siècles — haute virtuosité, contexte familial.
-
-**Les fêtes foraines américaines (fin XIXe siècle) :**
-Les "hoochy koochy dancers" utilisaient des structures (dont des barres) dans des performances suggestives — premier lien documenté entre barre verticale et sensualité dans le contexte américain.
-
-**La divergence des histoires — ce qui compte vraiment :**
-Ces origines multiples montrent que l'acrobatie sur barre verticale a été inventée indépendamment dans plusieurs cultures — pour des raisons différentes (athlétisme, cirque, divertissement adulte).
-
-Ce qui rend le pole dance moderne unique, c'est la synthèse de ces héritages dans une pratique accessible, codifiée et mondialisée. Mais cette synthèse n'efface pas les origines — elle les porte. Et c'est à nous de les porter honnêtement.`,
-      },
-      {
-        titre: "L'Amérique du Nord — naissance du pole dance moderne",
-        contenuMarkdown: `Je veux que tu saches exactement comment le pole dance moderne est né, parce que cette histoire a souvent été racontée de manière incomplète ou inexacte — et que l'inexactitude fait du tort à des femmes qui méritent mieux. Alors voilà ce que j'ai dans mes carnets.
-
-**Les bars canadiens (années 1980) :**
-Dans des bars pour adultes canadiens (notamment en Ontario), des danseuses commencent à utiliser une barre verticale fixée au sol et au plafond pour leurs performances. Ce contexte — souvent réduit à "strip-club" dans les récits — est plus complexe : c'est un espace de travail artistique et physique où des femmes ont développé des techniques. Ces femmes méritent d'être reconnues comme des innovatrices.
-
-**Fawnia Mondey :**
-Danseuse et instructrice canadienne, souvent citée comme pionnière de l'enseignement du pole dance hors du contexte adulte. Elle commence à enseigner dans les années 1990, puis crée des DVDs qui diffusent la pratique dans le monde entier.
-
-**La révolution fitness (années 1990–2000) :**
-Des instructrices en Australie (Bobbi Douglas), au Royaume-Uni commencent à proposer des cours de pole dans un cadre fitness — pour toutes, dans un contexte non-adulte.
-
-Cette "respectabilisation" est un mouvement complexe : elle a rendu le pole accessible à des millions de personnes, mais elle a parfois effacé ou marginalisé les origines et les travailleuses qui avaient développé les techniques. C'est une tension que la communauté discute encore — et que j'estime importante à connaître.
-
-**Les pionnières souvent oubliées :**
-De nombreuses danseuses — souvent sans nom dans l'histoire écrite — ont développé dans les années 1980–1990 des techniques de montée, de figure et de floorwork que la communauté utilise aujourd'hui. Les honorer, c'est écrire une histoire plus juste.`,
-      },
-      {
-        titre: "La révolution sportive et artistique",
-        contenuMarkdown: `Les années 2000–2020 voient le pole dance exploser en termes de reconnaissance, de diversité et de niveau technique. Quand je regarde les championnats actuels, je me demande parfois ce que les pionnières des années 1980 penseraient. J'espère qu'elles seraient fières — et j'espère qu'elles se reconnaîtraient.
-
-**La révolution sportive :**
-
-**2006 :** Création de l'IPSF (International Pole Sports Federation) — premier pas vers la reconnaissance institutionnelle.
-
-**2016 :** L'IPSF reçoit une reconnaissance de la GAISF (Global Association of International Sports Federations) — une étape vers les Jeux Olympiques.
-
-**Les championnats du monde de pole sport** rassemblent aujourd'hui des athlètes de plus de 80 pays — des niveaux techniques qui rivalisent avec la gymnastique.
-
-**La révolution artistique :**
-
-Les artistes de pole art repoussent les frontières de ce que la barre peut exprimer :
-- Dialogues avec la danse contemporaine
-- Pole dans des compagnies de danse physique
-- Installations artistiques avec barres
-- Pole theatre (personnages, narration, costumes complets)
-
-**La révolution exotic :**
-
-Dans les années 2010, des danseuses — notamment russes — révolutionnent l'exotic pole avec un niveau de floorwork, de technicité de corps et de maîtrise de chaussures à plateau jamais vu. L'exotic devient une discipline avec ses propres compétitions mondiales.
-
-**Le débat politique dans la communauté :**
-La question "faut-il désexualiser le pole pour l'accepter socialement ?" divise la communauté depuis des années. Certains voient le mouvement sportif comme une légitimation nécessaire. D'autres critiquent l'effacement des origines et la stigmatisation de l'exotic. Je n'ai pas de réponse toute faite — mais la question mérite d'être posée, et tu mérites de l'avoir en main.`,
-      },
-      {
-        titre: "Celles qui ont créé — honorer les pionnières",
-        contenuMarkdown: `C'est la page de mes carnets à laquelle je tiens le plus dans toute l'Unité 8. Une histoire honnête du pole dance ne peut pas être racontée sans parler de celles qui l'ont inventé. Alors voilà ce que j'écris — et ce que je veux que tu gardes avec toi.
-
-**Le problème de l'effacement :**
-Quand le pole dance a commencé à être "mainstream" (cours en studio, compétitions, YouTube), il s'est souvent présenté comme né de nulle part — ou comme une invention récente du fitness.
-
-Cette narration efface les femmes — souvent travailleuses du sexe, souvent noires, racisées et/ou LGBTQ+, souvent marginalisées — qui ont développé pendant des décennies les techniques de grip, de figure et de floorwork que la communauté utilise aujourd'hui. Ce whitewashing fait du tort à des personnes réelles, et je refuse d'y participer dans mes carnets.
-
-**Pourquoi c'est important :**
-- Ces femmes méritent d'être reconnues dans l'histoire de leur discipline
-- Comprendre les origines aide à pratiquer avec plus d'honnêteté et d'intégrité
-- La dignification du pole passe par la dignification de celles qui l'ont créé
-
-**Des femmes à connaître :**
-
-**Fawnia Mondey :** Pionnière de l'enseignement du pole au-delà du contexte adulte.
-
-**Bobbi Douglas (Australie) :** Une des premières à ouvrir un studio de pole dance "fitness".
-
-**Anastasia Sokolova :** A révolutionné l'exotic pole contemporain — son influence est mondiale.
-
-**Les travailleuses du sexe anonymes :** Des milliers de femmes qui, dans les années 1980–1990, ont développé les techniques fondamentales sans jamais être nommées dans les livres d'histoire.
-
-**Le mouvement "Sex Worker Rights" dans la communauté pole :**
-Un mouvement croissant dans la communauté pole milite pour que les travailleuses du sexe — passées et présentes — soient reconnues, respectées et soutenues dans leur travail. J'y suis sensible, et j'espère que toi aussi.
-
-> Chaque fois que tu montes sur une barre, tu te tiens sur les épaules de celles qui ont appris avant toi — souvent dans des conditions bien moins glamour que ton studio de pole. Connaître leur histoire, c'est pratiquer avec gratitude.`,
+> Le public vient voir un spectacle. Donne-lui un spectacle. Ta technique est l'outil — ta présence est le cadeau. C'est cette phrase que je me répète avant de monter sur scène.`,
       },
     ],
   },

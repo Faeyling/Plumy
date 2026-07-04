@@ -2,246 +2,233 @@ import type { Cours } from '../schema'
 
 export const coursUnite4: Cours[] = [
   {
-    id: 'intro-moderne',
-    titre: 'La danse moderne — héritage, techniques et langage',
-    resume: "La danse moderne n'est pas un style unique mais une révolution — et j'ai mis du temps à comprendre ça. Le travail du buste (flat back, hinge, ondulation), les isolations et la segmentation corporelle, les trois grandes techniques pédagogiques (Horton, Cunningham, Limón), et les outils de composition que sont le canon et l'unisson : tout est dans mes carnets, annoté, raturé, complété au fil des années.",
-    disciplines: ['moderne'],
+    id: 'intro-contemporain',
+    titre: 'La danse contemporaine — corps, espace et liberté',
+    resume: "Comprendre la danse contemporaine de l'intérieur : rapport à la gravité, techniques de release, travail au sol, contact improvisation, pratiques somatiques et composition. Tout ce qui différencie un corps contemporain d'un corps classique — et j'ai beaucoup à te dire là-dessus. Dans mes carnets, j'ai des pages entières sur chacun de ces territoires.",
+    disciplines: ['contemporain'],
     termesAbordes: [
-      'isolation', 'succession-corporelle', 'opposition-corps',
-      'flat-back', 'hinge', 'undulation', 'table-moderne', 'lunge-moderne',
-      'travail-bassin', 'polycentrisme',
-      'technique-horton', 'technique-cunningham', 'technique-limon',
-      'canon', 'unisson', 'marche-moderne', 'elevation-moderne',
+      'release-technique', 'poids-abandon', 'gravite-contemporain',
+      'contraction-release', 'fall-recovery', 'suspension', 'rebond-swing',
+      'fluidite-mouvement', 'spirale', 'floorwork', 'roulade', 'chute-controlee',
+      'point-de-contact', 'partage-poids', 'score-improvisation', 'somatique',
     ],
     sections: [
       {
-        titre: "Qu'est-ce que la danse moderne ?",
-        contenuMarkdown: `La danse moderne est née au début du XXe siècle comme une **rupture** avec la danse académique — pas une évolution, une révolution. Ce que j'aime dans cette histoire, c'est que ce sont essentiellement des femmes qui ont tout cassé et tout reconstruit. Ça méritait que je leur consacre un chapitre entier dans mes carnets.
+        titre: "Qu'est-ce que la danse contemporaine ?",
+        contenuMarkdown: `Ce que j'adore dans la danse contemporaine, c'est qu'elle résiste à la définition — et c'est volontaire. Elle s'est construite précisément contre les cases fermées. Chaque fois que tu penses l'avoir cernée, elle glisse ailleurs. C'est toute sa beauté.
 
-**Ce qui a déclenché la rupture :**
-- Le rejet des pointes et du turn-out obligatoire
-- Le rejet du livret narratif comme fondement de tout spectacle
-- L'exploration du corps comme instrument expressif direct
-- La recherche d'un mouvement naturel, humain, ancré dans la réalité
+**Ce qu'elle n'est pas :**
+- Un style esthétique unique (il n'existe pas de "technique contemporaine" universelle comme la technique classique)
+- Synonyme de "danse moderne" (deux périodes et approches distinctes — je t'explique ça en Unité 4)
+- De la danse classique sans les pointes
 
-**Les pionnières qui ont tout changé :**
-- **Isadora Duncan** (1877–1927) : liberté du corps, pieds nus, inspiration grecque — elle a dansé comme si les corsets n'existaient pas
-- **Loïe Fuller** (1862–1928) : corps-instrument, jeux de lumière, abstraction pure
-- **Ruth St. Denis** (1879–1968) : influences orientales, spiritualité du mouvement
+**Ce qu'elle est :**
+- Un ensemble de pratiques artistiques qui questionnent en permanence ce qu'est la danse
+- Un champ ouvert, pluriel, en constant renouvellement
+- Un rapport différent au corps, à l'espace, au temps et au public
 
-**La génération fondatrice américaine :**
-- **Martha Graham** (1894–1991) : contraction/release, technique codifiée, expressionnisme
-- **Doris Humphrey** (1895–1958) : fall and recovery, poids et gravité
-- **Lester Horton** (1906–1953) : anatomie fonctionnelle, inclusivité
-- **José Limón** (1908–1972) : héritage Humphrey, poids, swing, dramaticité
+**Repères historiques que j'ai gribouillés dans mon carnet :**
+- **1960s** : Judson Dance Theater (New York) — rupture radicale avec la technique moderne
+- **1970s** : Contact improvisation, danse postmoderne
+- **1980s** : Tanztheater (Bausch), explosion de la danse-théâtre
+- **1990–2000s** : Dialogue avec les arts visuels, performance, numérique
+- **Aujourd'hui** : Corps pluriels, identités, technologies, site-specific
 
-**La rupture avec la danse moderne (Judson Church, années 1960) :**
-Merce Cunningham, puis les artistes du Judson Dance Theater (Yvonne Rainer, Steve Paxton, Trisha Brown) remettent en question *la danse moderne elle-même* — et ouvrent la voie à la danse contemporaine. L'histoire de la danse, c'est des révolutions qui font des révolutions.
+**La danse contemporaine se reconnaît à :**
+- La diversité des corps qui la pratiquent
+- La pluralité des techniques utilisées (souvent hybrides)
+- La dimension de questionnement (artistique, social, politique)
+- L'importance accordée au processus autant qu'au résultat
 
-**Danse moderne vs danse contemporaine — le tableau qui m'a aidé à y voir clair :**
-| | Moderne | Contemporaine |
-|---|---|---|
-| **Techniques** | Codifiées (Graham, Horton, Limón) | Plurielles, hybrides |
-| **Expression** | Souvent narratif/émotionnel | Questionnement du mouvement lui-même |
-| **Période** | 1900–1970 environ | 1960 à aujourd'hui |
-| **Rapport au passé** | Rupture avec le ballet | Rupture aussi avec la moderne |
-
-> La danse moderne *croit encore* qu'il y a quelque chose à exprimer. La contemporaine remet en question ce postulat. C'est une nuance qui change tout.`,
+> Ce qui m'a touché dans le contemporain, c'est ça : on te demande de penser, pas juste d'exécuter. Ça change tout — promis.`,
       },
       {
-        titre: 'Les isolations et la segmentation corporelle',
-        contenuMarkdown: `L'une des contributions les plus distinctives de la danse moderne est la **segmentation consciente** du corps — la capacité à activer et contrôler chaque partie indépendamment. C'est aussi l'une des choses les plus difficiles à maîtriser, et des plus satisfaisantes quand ça vient. Je me souviens encore de la première fois où ma cage thoracique a bougé toute seule.
+        titre: 'Le corps contemporain — un rapport différent à la gravité',
+        contenuMarkdown: `La différence fondamentale entre le corps classique et le corps contemporain tient à leur rapport à la **gravité** — et quand j'ai compris ça, tout le contemporain s'est mis à faire sens. Tu vas voir, c'est une de ces clés qui déverrouillent des pans entiers.
 
-**L'isolation corporelle :**
-Mouvement d'une seule partie du corps pendant que le reste reste immobile. Ce n'est pas une invention de la danse moderne — c'est un héritage des **traditions africaines et afro-américaines** que la danse moderne a intégré et codifié. Il faut le dire clairement.
+**Corps classique :**
+- Lutte contre la gravité (élévation, légèreté, pointes)
+- Axe vertical maintenu en permanence
+- Le sol est un point de départ / arrivée
+- Esthétique de la ligne tendue et contrôlée
 
-**Les cinq zones d'isolation principales :**
-1. **Tête** : droite/gauche, avant/arrière, rotations
-2. **Épaules** : haut/bas, avant/arrière, rotations indépendantes
-3. **Cage thoracique** : latérale, avant/arrière, rotation (la plus difficile à isoler — j'insiste, vraiment difficile)
-4. **Bassin** : toutes directions — source de la mobilité pelvienne
-5. **Genoux** : avant/arrière dans le plan sagittal
+**Corps contemporain :**
+- Dialogue avec la gravité (abandon, poids, ancrage)
+- L'axe vertical est une option parmi d'autres
+- Le sol est un espace de danse à part entière
+- Esthétique de la fluidité, de la rupture, de la diversité
 
-**Le polycentrisme :**
-Plusieurs parties du corps actives *simultanément* avec des énergies et des rythmes différents. C'est la base du groove en jazz et une caractéristique fondamentale des danses africaines. Quand tu vois quelqu'un dont le corps entier semble penser à plusieurs choses en même temps — c'est ça.
+**Les trois axes que j'utilise pour m'orienter — je les ai redessinés une dizaine de fois dans mes carnets avant de les avoir vraiment en tête :**
 
-**La succession corporelle :**
-L'impulsion voyage séquentiellement à travers les segments — comme une vague. S'oppose au mouvement en "bloc" (toutes les parties bougent ensemble). La succession donne de la fluidité ; le bloc donne de la puissance.
+**1. Axe vertical** (partagé avec le classique)
+Tu es debout, l'axe passe du sommet du crâne au milieu des pieds. Mais en contemporain, cet axe peut s'incliner, se courber, se tordre — et c'est là que ça devient intéressant.
 
-**La progression que je recommande dans mes carnets :**
-1. Isolations une par une (tête, puis épaules, puis cage, puis bassin)
-2. Successions simples (bras : épaule → coude → poignet → doigts)
-3. Body wave complète (de bas en haut)
-4. Deux centres simultanés (cage et bassin dans des directions différentes)
-5. Polycentrisme avec rythmes différents (bras sur un rythme, hanches sur un autre)
+**2. Axe horizontal** (sol)
+Le corps allongé, roulé, rampant — les niveaux proches du sol. Un espace que le classique n'habite presque jamais.
 
-> La segmentation n'est pas une décomposition mécanique — c'est une intelligence du corps. Chaque partie qui parle est une partie qui *pense*. Et ça, ça s'apprend. Avec du temps, et avec de la patience.`,
+**3. Axe diagonal**
+Le corps penché, en déséquilibre volontaire — entre verticale et horizontale. C'est là que vivent les chutes contrôlées.
+
+> La richesse du corps contemporain vient de sa capacité à habiter tous ces axes, à passer de l'un à l'autre, à trouver du sens dans chacun. Ne choisis pas : explore-les tous.`,
       },
       {
-        titre: 'Le travail du buste — flat back, hinge, ondulation',
-        contenuMarkdown: `La danse moderne a développé un vocabulaire spécifique pour le travail du buste qui n'a pas d'équivalent dans la technique classique. Ce sont trois des premières choses que j'ai notées soigneusement dans mon carnet quand j'ai découvert la technique Horton — et je les ai pratiquées des heures avant de les sentir vraiment.
+        titre: 'La release technique — moins tu forces, plus tu bouges',
+        contenuMarkdown: `La **release technique** est l'une des approches les plus répandues en danse contemporaine — et aussi l'une des moins bien comprises. Je vais mettre les choses au clair, parce que j'ai longtemps eu des idées floues là-dessus, et je ne veux pas que tu perdes le temps que j'ai perdu.
 
----
+**Ce que ce n'est pas :**
+- De la relaxation (tu restes pleinement actif·ve)
+- De l'absence de technique (c'est une technique très précise)
+- Un style esthétique
 
-## Le flat back (dos plat)
+**Ce que c'est :**
+- Une philosophie du mouvement basée sur l'**économie d'effort**
+- Une méthode d'identification et de libération des **tensions parasites**
+- Un outil pour **maximiser la fluidité** et l'**amplitude** sans forcer
 
-Le torse s'incline depuis les **hanches** (pas depuis la taille) en maintenant la colonne parfaitement droite.
+**Le scan corporel — ma pratique préférée pour démarrer :**
+1. Allonge-toi au sol (ou assieds-toi)
+2. Porte ton attention successivement sur chaque partie du corps
+3. Observe sans juger : est-ce que tu tiens quelque chose ? Est-ce que ça peut se relâcher ?
+4. Libère les zones de tension non nécessaires — juste elles
 
-**Points clés :**
-- La colonne reste droite et horizontale — pas de dos arrondi, même sous l'effort
-- La tête prolonge la ligne du dos (ne remonte pas !)
-- L'inclinaison vient du pliage de hanche (fold at the hip)
+**Les tensions que je retrouve chez presque tout le monde — et que j'ai moi-même dû apprendre à lâcher :**
+- Mâchoire serrée (classique)
+- Épaules soulevées (encore plus classique)
+- Ventre contracté en permanence
+- Orteils crispés dans les chaussures
 
-**Variantes :** flat back debout, flat back latéral, table (flat back à 90° — là tu es vraiment horizontal)
+**L'anatomie comme outil :**
+La release technique s'appuie sur une connaissance anatomique — comprendre comment les os s'articulent te permet de trouver des positions naturellement stables, sans effort musculaire excessif.
 
----
-
-## Le hinge (charnière)
-
-Inclinaison du corps entier en **arrière** depuis les genoux — le corps forme une ligne diagonale rigide.
-
-**Points clés :**
-- La source est dans les genoux, pas dans le dos
-- Le corps ne se casse pas à la taille : tout s'incline comme un seul bloc — c'est ça la difficulté
-- Exige des quadriceps forts et un gainage abdominal solide
-
-**Origine :** Technique Horton (Lester Horton, Los Angeles, années 1950)
-
----
-
-## L'ondulation (body wave)
-
-Une vague qui parcourt le corps verticalement — de bas en haut ou de haut en bas. C'est ce qui me donne le plus de plaisir à regarder quand c'est bien fait.
-
-**Ondulation ascendante :**
-1. Flexion des genoux → bassin en avant → bas du dos → cage thoracique → épaules → tête
-
-**Ce qui crée la beauté :**
-L'impression de continuité — chaque segment répond au précédent avec un léger retard. Si tu vois des "marches" au lieu d'une vague, c'est que les transitions entre segments sont trop nettes.
-
----
-
-**Comparaison des trois — je la recopie ici parce que je la consulte souvent :**
-| | Flat back | Hinge | Ondulation |
-|---|---|---|---|
-| **Direction** | En avant / latéral | En arrière | Verticale |
-| **Colonne** | Droite | Droite | Séquentielle |
-| **Source** | Hanches | Genoux | Pieds / tête |
-
----
-
-> Le buste en danse moderne n'est pas un bloc rigide qui se déplace dans l'espace. Il *parle* — chaque inclinaison, chaque vague, chaque torsion est une phrase du corps. Apprends sa grammaire.`,
+> Moins tu forces, plus tu bouges. C'est contre-intuitif, mais c'est vrai. Fais-moi confiance là-dessus.`,
       },
       {
-        titre: 'Les trois grandes techniques modernes — mes trois bibles',
-        contenuMarkdown: `Trois pédagogies ont structuré l'enseignement de la danse moderne et continuent d'être enseignées dans le monde entier. J'ai consacré un chapitre entier de mes carnets à chacune — voici ce que tu dois absolument retenir. Et si tu ne devais en étudier qu'une pour commencer, je te laisserais choisir : elles te diront chacune quelque chose de différent sur toi-même.
+        titre: 'La contraction-release — le souffle qui danse',
+        contenuMarkdown: `**Martha Graham** (1894–1991) — si tu ne connais qu'un nom dans l'histoire de la danse moderne, que ce soit le sien. Elle a créé une des techniques les plus complètes et les plus codifiées qui soit. Son principe central : **la contraction et le release**.
 
----
+J'ai une page entière dans mon carnet rien que pour ça, parce que ce principe va bien au-delà de la technique Graham — il est partout, dans presque tout ce qu'on danse.
 
-## Technique Horton
+**La contraction :**
+- Creusement actif du bas-ventre et du bas du dos
+- La colonne se courbe en C
+- Inspiration → expiration
+- Expression : intériorité, douleur, recueillement
 
-**Lester Horton** (1906–1953), Los Angeles.
+**Le release :**
+- Extension et ouverture du centre
+- La colonne s'allonge, le sternum monte
+- Expiration → inspiration
+- Expression : liberté, aspiration, extériorité
 
-**Principes :**
-- Anatomie d'abord — chaque exercice a une justification anatomique claire
-- Corps complet — toutes les parties, toutes les directions
-- Amplitude maximale
-- **Inclusivité** : Horton acceptait des danseurs de toutes origines à l'époque de la ségrégation. C'est un détail qui dit tout sur l'homme.
+**Exercices fondamentaux de la technique Graham :**
 
-**Vocabulaire signature :** Hinges, flat backs, T-positions, latéraux en extension
+**Contraction assise (sitting contraction) :**
+- En tailleur ou jambes tendues
+- Contracte depuis le bas-ventre, laisse la colonne s'arrondir
+- Reviens en release (colonne redressée)
+- Répète sur plusieurs respirations — laisse la respiration guider, pas l'inverse
 
-**Son élève le plus célèbre :** Alvin Ailey, qui a transmis la technique au monde entier via l'Alvin Ailey American Dance Theater — si tu ne connais qu'une compagnie de danse moderne, que ce soit celle-là.
+**Contraction latérale :**
+- Debout sur une jambe
+- Contraction + inclinaison latérale
+- Release et retour
 
----
+**Le spiral Graham :**
+- En contraction, la colonne se tord vers un côté
+- Le dénouement de la spirale relance le mouvement — tu ne l'arrêtes pas, tu le diriges
 
-## Technique Cunningham
-
-**Merce Cunningham** (1919–2009).
-
-**Principes radicaux — et je dis "radicaux" au sens littéral :**
-- **Dissociation** de la danse et de la musique (ils coexistent mais ne se synchronisent pas)
-- **Dissociation** de la danse et du sens (pas besoin d'exprimer une émotion)
-- Tous les points de l'espace ont la même valeur
-- Le **hasard** comme outil de composition
-
-**Caractéristiques techniques :**
-- Colonne mobile dans toutes directions
-- Jambes avec une virtuosité quasi-classique
-- Tête active et indépendante
-
-**Avec John Cage :** Cunningham et le compositeur Cage forment un des partenariats artistiques les plus féconds du XXe siècle. Leurs œuvres communes sont des œuvres d'art à part entière.
-
----
-
-## Technique Limón
-
-**José Limón** (1908–1972), dans l'héritage de Doris Humphrey.
-
-**Principes :**
-- **Poids** : le corps utilise réellement son poids, sans illusion de légèreté
-- **Swing** : les membres oscillent en pendule — gravité + élan + suspension
-- **Succession** : l'impulsion voyage dans tout le corps
-- **Chute et récupération** : le mouvement vit entre l'équilibre et la chute
-
-**Dimension dramatique :**
-Les œuvres de Limón traitent de la condition humaine, de la liberté, de la résistance. Son héritage mexicain-américain nourrit une vision profondément humaniste — et ça s'entend dans chaque pas.
-
----
-
-> Ces trois techniques ne sont pas des concurrentes — elles explorent trois visions du corps en mouvement. Un danseur moderne complet les connaît toutes les trois. Et honnêtement, chacune t'apprend quelque chose que les autres ne peuvent pas te donner.`,
+**Ce qui m'a le plus frappé dans la technique Graham :**
+La respiration *génère* le mouvement — elle n'est pas superposée à un mouvement déjà décidé. C'est une révolution pédagogique. Avant Graham, on respirait malgré la danse. Avec Graham, on danse parce qu'on respire.`,
       },
       {
-        titre: 'Canon et unisson — composer avec le temps',
-        contenuMarkdown: `La danse moderne a apporté une réflexion nouvelle sur la **composition chorégraphique** — comment organiser les corps dans l'espace et le temps. J'ai deux outils fondamentaux à te présenter : le canon et l'unisson. Des outils simples en apparence, redoutablement complexes à maîtriser — et terriblement beaux quand ils sont bien utilisés.
+        titre: 'Le travail au sol — floorwork, chutes et roulades',
+        contenuMarkdown: `Le travail au sol est l'une des compétences les plus distinctives de la danse contemporaine — et franchement, une des plus libératrices. Quand tu apprivoises le sol, tu gagnes un espace entier que beaucoup de danseurs ignorent. Moi, ça m'a pris du temps, et puis un jour j'ai arrêté de le craindre. Tu vas voir, ça vient.
 
----
+Voici la progression que j'ai dans mes carnets, et qui fonctionne vraiment bien :
 
-## L'unisson
+**Étape 1 — Apprivoiser le sol**
+Explorations libres : roule, retourne-toi, trouve les positions confortables. Pas d'objectif de forme — juste explorer. Le sol ne mord pas.
 
-Tous les danseurs réalisent exactement le même mouvement au même moment.
+**Étape 2 — Les surfaces sûres**
+Identifie les surfaces corporelles sur lesquelles tu peux rouler sans te faire mal :
+- ✓ Dos plat (abdominaux engagés pour protéger les vertèbres)
+- ✓ Côté de la cuisse, côté du torse
+- ✓ Ventre (sur les pectoraux et les abdominaux)
+- ✗ Genoux, coudes, os saillants (sans préparation spécifique)
 
-**Ce qui rend l'unisson difficile :**
-- Chaque corps a son propre timing naturel — il faut apprendre à l'ajuster
-- Les amplitudes diffèrent selon les corps
-- Il faut une **écoute musicale collective** — tous respirent ensemble, littéralement
+**Étape 3 — Les transitions debout/sol**
+La difficulté n'est pas le sol — c'est la transition. Apprends à :
+- Descendre sans impact (plie les articulations dans l'ordre, de la plus haute à la plus basse)
+- Monter sans effort brut (utilise l'élan de la dynamique au sol)
 
-**Unisson vs uniformité — une distinction que j'aime beaucoup :**
-- L'uniformité vise la ressemblance mécanique des formes
-- L'unisson aspire à une **respiration commune** — l'énergie circule au même instant dans tous les corps
+**Étape 4 — Les chutes dirigées**
+Back fall, side fall — toujours avec une direction, toujours avec un plan de sortie. Une chute incontrôlée n'est pas de la danse, c'est un accident.
 
-**L'effet visuel :**
-La puissance de plusieurs corps animés par la même impulsion simultanée. C'est l'un des effets les plus saisissants en danse de groupe.
+**Étape 5 — L'enchaînement floorwork**
+Combine roulades, transitions, chutes en des phrases fluides. C'est là que le sol devient vraiment ton partenaire de danse.
 
----
+> Le sol est ton allié, pas ton ennemi. Plus tu lui fais confiance, plus il t'aide. Et je dis "confiance" au sens littéral — ça commence dans ta tête.`,
+      },
+      {
+        titre: 'Le contact improvisation — écouter avec le corps',
+        contenuMarkdown: `Le **contact improvisation** — Steve Paxton, 1972 — est une des pratiques qui m'a le plus ouvert les yeux sur ce que peut être la danse. Elle a révolutionné le contemporain, et elle se pratique encore intensément aujourd'hui dans des jams du monde entier. J'en ai fait, et je peux te dire que rien ne prépare vraiment à la première fois — mais que tu vas adorer.
 
-## Le canon
+**Les principes fondamentaux :**
 
-Plusieurs danseurs réalisent la même phrase à des **moments différents** — avec un décalage précis.
+1. **Le point de contact** : une zone de toucher entre deux corps — mobile, changeante, jamais fixée
+2. **Le partage de poids** : donner réellement ton poids à l'autre, et recevoir le sien — pas "faire semblant"
+3. **L'écoute** : à travers le contact, communiquer intention, direction, résistance — sans parler
+4. **La réciprocité** : pas de rôle fixe porteur/porté — tout change en permanence
 
-**Types de canon :**
-- **Canon strict** : décalage fixe (ex : tous les 8 temps)
-- **Canon libre** : décalages variables
-- **Canon en miroir** : la phrase est aussi retournée (droite/gauche)
-- **Canon en augmentation** : la phrase est ralentie chez certains danseurs
+**Pourquoi c'est révolutionnaire :**
+- Il supprime la hiérarchie (l'idée que "l'homme porte, la femme est portée")
+- Il fonctionne avec des corps de toutes formes et toutes forces
+- Il est improvisé — pas de chorégraphie mémorisée
+- Il développe une intelligence corporelle qu'on ne trouve nulle part ailleurs
 
-**Ce que le canon crée visuellement :**
-- Une impression de **vague** qui traverse le groupe
-- La structure de la phrase mise en valeur (on la voit plusieurs fois, sous des angles différents)
-- La possibilité de remplir l'espace avec peu de matériel
-- Une **conversation** entre les danseurs
+**Les jams de contact improvisation :**
+Des sessions ouvertes, souvent hebdomadaires, dans la plupart des grandes villes. Accessibles aux débutants avec un minimum d'introduction — cherche près de chez toi, je parie qu'il y en a une.
 
-**Référence incontournable — je l'ai dans mes carnets avec trois étoiles :**
-*Fase* d'Anne Teresa De Keersmaeker et Steve Reich (1982) — un chef-d'œuvre de canon où deux danseuses exécutent la même phrase avec un léger décalage pendant toute la durée de la pièce. Regarde-la. Tu ne pourras plus jamais voir un canon de la même façon.
+**Commencer en douceur :**
+1. Tiens-toi dos à dos avec quelqu'un
+2. Sens son poids, sa chaleur
+3. Laisse le contact voyager légèrement
+4. Introduis progressivement le partage de poids
 
----
+**La sécurité en contact impro :**
+- Commence par peu de poids partagé
+- Communique (verbalement si besoin — aucune honte)
+- Tu as le droit de dire non avec le corps, à tout moment
 
-## L'opposition des membres
+> Ce que j'ai appris avec le contact impro, c'est que l'écoute est une compétence physique, pas juste mentale. Ton corps peut écouter. Donne-lui la chance de le faire.`,
+      },
+      {
+        titre: "L'improvisation et la composition — créer en mouvement",
+        contenuMarkdown: `La frontière entre improvisation et composition est l'un des terrains les plus fertiles de la danse contemporaine — et aussi l'un des plus mal compris. Laisse-moi clarifier ça, parce que j'ai entendu trop de gens se bloquer sur cette fausse opposition.
 
-En plus du canon et de l'unisson, l'opposition est un outil de composition *dans* un seul corps : deux parties qui s'étirent simultanément dans des directions opposées. Elle crée de l'espace, de la tension linéaire, et stabilise le mouvement.
+**Improvisation ≠ faire n'importe quoi**
+Une bonne improvisation en danse est informée par :
+- La connaissance du corps et des qualités de mouvement
+- La conscience de l'espace (où tu es, comment tu te déplaces)
+- L'écoute musicale ou sonore
+- Le rapport aux autres danseurs
+- Une intention ou un score
 
----
+**Le score comme outil de liberté organisée :**
+Le score (partition d'improvisation) donne un cadre sans fixer le contenu. Voici des exemples simples que j'utilise pour démarrer :
+- "Je me déplace toujours lentement"
+- "Quand je touche un mur, je change de direction"
+- "Je commence chaque phrase par une immobilité"
 
-> Canon et unisson sont les deux faces d'une même médaille : comment les corps communiquent à travers le temps — ensemble ou en décalé. Avec ces deux outils et une bonne phrase de mouvement, tu peux faire une pièce entière. C'est ça qui est beau dans la composition.`,
+Ces contraintes semblent limitantes — elles sont en réalité libératrices. Moins tu as de choix, plus ton mouvement est précis. Je l'ai vérifié des dizaines de fois.
+
+**La phrase de mouvement comme matériau :**
+Même en improvisation, tu peux utiliser des **phrases mémorisées** comme matériau — les modifier, les interrompre, les combiner avec du mouvement libre. C'est de la composition en temps réel.
+
+**Les pratiques somatiques comme préparation :**
+Avant d'improviser, des pratiques comme le Feldenkrais ou le BMC te permettent de te "recentrer" dans ton corps — de sortir des habitudes automatiques pour être vraiment disponible à l'instant présent.
+
+> L'improvisation n'est pas l'absence de technique — c'est la technique à son plus haut degré d'intériorisation. Tu ne l'appliques plus, tu l'habites. Et ça, ça prend du temps, et c'est magnifique.`,
       },
     ],
   },

@@ -1,4 +1,3 @@
-import { coursUnite0 } from './unite0'
 import { coursUnite1 } from './unite1'
 import { coursUnite2 } from './unite2'
 import { coursUnite3 } from './unite3'
@@ -11,10 +10,10 @@ import { coursUnite9 } from './unite9'
 import { coursUnite10 } from './unite10'
 import { coursUnite11 } from './unite11'
 import { coursUnite12 } from './unite12'
+import { coursUnite13 } from './unite13'
 import type { Cours } from '../schema'
 
 export const tousCesLeCours: Cours[] = [
-  ...coursUnite0,
   ...coursUnite1,
   ...coursUnite2,
   ...coursUnite3,
@@ -27,6 +26,7 @@ export const tousCesLeCours: Cours[] = [
   ...coursUnite10,
   ...coursUnite11,
   ...coursUnite12,
+  ...coursUnite13,
 ]
 
 export function getCours(id: string): Cours | undefined {
