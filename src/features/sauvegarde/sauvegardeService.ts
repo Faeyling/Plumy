@@ -100,7 +100,15 @@ export async function importerDonnees(
       if (data.termesPersonnels?.length) await db.termesPersonnels.bulkPut(data.termesPersonnels)
       if (data.historiqueQuiz?.length) await db.historiqueQuiz.bulkAdd(data.historiqueQuiz)
     })
-    // Restore localStorage course progress (only if backup includes it)
+    // Clear all existing course progress, then restore from backup
+    try {
+      const toRemove: string[] = []
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i)
+        if (key?.startsWith('plumy-cours-')) toRemove.push(key)
+      }
+      for (const key of toRemove) localStorage.removeItem(key)
+    } catch { /* ignore */ }
     if (data.coursProgression) {
       for (const [coursId, prog] of Object.entries(data.coursProgression)) {
         localStorage.setItem(`plumy-cours-${coursId}`, JSON.stringify(prog))
