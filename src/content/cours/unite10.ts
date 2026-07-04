@@ -15,8 +15,21 @@ export const coursUnite10: Cours[] = [
         titre: "Histoire du burlesque — des origines au néo-burlesque",
         contenuMarkdown: `Le burlesque a une histoire longue et complexe — et une résurgence contemporaine qui lui donne un sens entièrement nouveau. C'est une des disciplines dont j'ai le plus aimé retracer l'histoire dans mes carnets. Accroche-toi, on remonte loin.
 
-**Les origines du mot :**
+**Les origines du mot — une précision qui compte :**
 "Burlesque" vient de l'italien *burla* (plaisanterie, moquerie) via le français. À l'origine, c'est une forme littéraire et théâtrale qui parodie en exagérant. Pas de nudité — juste de l'humour.
+
+**Attention : le mot "burlesque" a deux sens selon les rives de l'Atlantique.** En français, il désigne un registre comique et absurde. Pour les Américains, il désigne les shows d'effeuillage inspirés des cabarets parisiens — l'ancêtre du striptease. Dans nos cours, on emploie le mot dans son sens américain.
+
+---
+
+**Les premières scènes — Paris, fin XIXe siècle :**
+C'est à Paris que tout commence, dans les cabarets de Montmartre et du boulevard. Les effeuillages ne portent pas encore le nom de "burlesque" — ils sont mêlés à des numéros de clowns, de saynètes, de music-hall, et c'est justement ce côté "burlesque" (absurde, comique) qui donnera son nom américain au genre.
+
+La première représentation documentée est **"Le Coucher d'Yvette"** en **1894** dans un cabaret de la rue des Martyrs — un déshabillage théâtralisé qui fait scandale et succès à la fois. Les grands lieux de cette époque : le **Divan Japonais**, les **Folies Bergère**, **Le Chat Noir**.
+
+Deux artistes françaises à nommer absolument :
+- **Colette (1873–1954)** — danseuse et artiste de scène, connue pour ses apparitions aux Folies Bergère (*La Belle Otéro*), avant de devenir l'une des plus grandes écrivaines de France ; elle incarne le passage de la scène de cabaret à la reconnaissance artistique
+- **Rita Renoir** — strip-teaseuse française devenue comédienne, même trajectoire
 
 **Le burlesque victorien (Angleterre, 1840s–1860s) :**
 Pièces comiques qui parodiaient les opéras et mythologies — souvent avec des femmes en rôles travestis. L'ancêtre de la comédie musicale.
@@ -25,9 +38,10 @@ Pièces comiques qui parodiaient les opéras et mythologies — souvent avec des
 Importé de Grande-Bretagne, il se développe dans une direction différente aux États-Unis — spectacles de variétés avec humour, comedy sketches... et des effeuillages progressifs.
 
 **L'âge d'or du burlesque américain (1920s–1940s) — des artistes extraordinaires :**
-- **Gypsy Rose Lee** (1911–1970) : l'intellectuelle du striptease — ses effeuillages avaient de l'esprit et de la sophistication
+- **Gypsy Rose Lee** (1911–1970) : "The smart stripper" — elle s'effeuillait tout en déclamant des poèmes, prouvant que le burlesque pouvait être aussi intellectuel que sensuel ; une des grandes figures de la sophistication burlesque
 - **Lili St. Cyr** (1918–1999) : glamour et mise en scène théâtrale
-- **Sally Rand** (1904–1979) : la fan dance — deux grands éventails de plumes comme seul costume
+- **Sally Rand** (1904–1979) : la fan dance — deux grands éventails de plumes vaporeuses, ou parfois des bouquets de ballons ; l'art de se cacher est une œuvre à part entière
+- **Bettie Page** : icône des années 1950, une des premières playmates de *Playboy*, image emblématique du pin-up rétro qui nourrira toute l'esthétique du néo-burlesque
 
 **Le déclin (1950s–1980s) :**
 L'arrivée du film X et les nouvelles lois sur la nudité font disparaître le burlesque traditionnel.
@@ -35,7 +49,7 @@ L'arrivée du film X et les nouvelles lois sur la nudité font disparaître le b
 **Le néo-burlesque (1990s–aujourd'hui) :**
 Né à New York et San Francisco, une nouvelle génération réinvente le burlesque — avec des valeurs féministes, une inclusion radicale des corps et des genres, et une totale liberté de style.
 
-**Dita Von Teese** popularise le néo-burlesque auprès du grand public dans les années 2000 — glamour, référence au burlesque classique, haute couture.`,
+**Dita Von Teese** popularise le néo-burlesque auprès du grand public à partir de 2004 — notamment avec ses shows dans un verre de Cointreau géant, son esthétique glamour rétro et sa haute couture. **Dirty Martini**, photographiée par Karl Lagerfeld, représente une autre facette : plus size, politiquement militante, radicalement inclusive.`,
       },
       {
         titre: "L'art du tease — la technique de la suggestion",
@@ -151,7 +165,26 @@ Joue avec son inertie — il suit le corps avec un délai à anticiper. C'est ce
 Pour les fan dances — art du voilage et de la révélation. Sally Rand en a fait une œuvre d'art à part entière.
 
 **La chaise :**
-Point fixe pour le jeu de scène, les poses, les moments de connivence avec le public.`,
+Point fixe pour le jeu de scène, les poses, les moments de connivence avec le public.
+
+---
+
+## Le corset et les pasties
+
+**Le corset :**
+Symbole paradoxal au cœur du burlesque — il représente à la fois la contrainte et la libération. J'insiste là-dessus parce que c'est toute la philosophie du genre : le retrait du corset est un acte d'émancipation inscrit dans la chorégraphie, pas une anecdote de costume.
+
+**Les pasties :**
+Ornements (strass, paillettes, velours) couvrant les pointes, portés comme vêtement de scène final. Le "reveal" des pasties — accompagné des sifflements et réactions du public — est souvent le climax du numéro. C'est la tradition du public qui participe, qui réagit à voix haute, qui fait partie du spectacle.
+
+**La panoplie complète — dans l'ordre classique du retrait :**
+1. Gants longs (presque toujours en premier — la cérémonie commence là)
+2. Boa de plumes
+3. Éventail
+4. Vêtements de dessus
+5. Corset
+6. Porte-jarretelles — symbole de sensualité et de provocation
+7. Pasties (finale)`,
       },
       {
         titre: "Le néo-burlesque — dimension politique et liberté",
