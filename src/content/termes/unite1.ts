@@ -185,13 +185,14 @@ export const termesUnite1: Terme[] = [
     disciplines: ['jazz'],
     categories: ['culture-histoire'],
     definition: "Le jazz dance naît au tournant du XXe siècle dans les communautés afro-américaines du Sud américain, à la confluence des traditions de danse africaines, des spirituals et du ragtime.",
-    description: "Le jazz dance est inséparable de la musique jazz — et les deux partagent les mêmes racines.\n\n**Les origines africaines :** Les danses d'Afrique de l'Ouest amenées par les esclaves conservent des éléments fondamentaux : polyrythmie, polycentrisme du corps (chaque partie bouge indépendamment), connexion à la terre, improvisation.\n\n**La diaspora créole :** À la **Place Congo** de La Nouvelle-Orléans, les esclaves libres conservent leurs pratiques de danse jusqu'aux années 1840. Ce carrefour culturel est l'un des berceaux du jazz.\n\n**Le minstrelsy et ses paradoxes :** Les spectacles de minstrelsy (1840–1920) diffusent des danses afro-américaines dans une forme dégradante et raciste (blackface). Mais ils propagent aussi — malgré eux — la popularité des tap dance et des formes de stepping.\n\n**Harlem Renaissance (1920s) :** La migration des Noirs américains vers le Nord, le Harlem de l'entre-deux-guerres, les grandes salles de danse (Savoy Ballroom) — tout cela forge le jazz social : Charleston, Black Bottom, Lindy Hop.\n\nLe jazz dance n'existe pas sans cette histoire. En ignorer les racines, c'est en perdre le sens.",
+    description: "Le jazz dance est inséparable de la musique jazz — et les deux partagent les mêmes racines.\n\n**Les origines africaines :** Les danses d'Afrique de l'Ouest amenées par les esclaves conservent des éléments fondamentaux : polyrythmie, polycentrisme du corps (chaque partie bouge indépendamment), connexion à la terre, improvisation. La danse est collective, rituelle, improvisée — expression de la vie à chaque instant.\n\n**La diaspora créole :** À la **Place Congo** de La Nouvelle-Orléans, les esclaves libres conservent leurs pratiques de danse jusqu'aux années 1840. Ce carrefour culturel est l'un des berceaux du jazz.\n\n**Le minstrelsy et ses paradoxes :** Les spectacles de minstrelsy (1840–1920) diffusent des danses afro-américaines dans une forme dégradante et raciste (blackface). **William Henry Lane** (c. 1825–1852), dit *Master Juba*, est le premier artiste noir à intégrer une troupe de minstrels 'blancs' — virtuose des claquettes, reconnu même par la presse londonienne lors de sa tournée en Angleterre. Il est l'un des ancêtres de la tap dance.\n\n**Harlem Renaissance (1920s) :** La migration des Noirs américains vers le Nord, le Harlem de l'entre-deux-guerres, les grandes salles de danse (Savoy Ballroom, Cotton Club) — tout cela forge le jazz social : Charleston, Black Bottom, Lindy Hop.\n\n**Les années swing (1930–40s) :** Avec les grands orchestres de Duke Ellington, Cab Calloway et Count Basie, le jazz devient musique de masse. Le swing fait danser l'Amérique entière. Des claquettistes comme les Nicholas Brothers, Bill 'Bojangles' Robinson et les Berry Brothers atteignent une notoriété internationale.\n\nLe jazz dance n'existe pas sans cette histoire. En ignorer les racines, c'est en perdre le sens.",
     erreursCourantes: [
       "Présenter le jazz dance comme une invention blanche ou européenne — ses racines sont afro-américaines.",
       "Séparer le jazz dance de la musique jazz, comme s'ils étaient des disciplines indépendantes.",
+      "Oublier Master Juba — le jazz dance a des précurseurs identifiés dès les années 1840.",
     ],
     difficulteInterne: 2,
-    termesLies: ['lindy-hop', 'jazz-theatrical'],
+    termesLies: ['lindy-hop', 'jazz-theatrical', 'cotton-club', 'nicholas-brothers', 'katherine-dunham'],
   },
 
   {
@@ -223,7 +224,99 @@ export const termesUnite1: Terme[] = [
       "Oublier que Fosse a subi une influence majeure de la danseuse afro-américaine Gwen Verdon.",
     ],
     difficulteInterne: 2,
-    termesLies: ['origines-jazz-dance', 'lindy-hop'],
+    termesLies: ['origines-jazz-dance', 'lindy-hop', 'katherine-dunham', 'alvin-ailey'],
+  },
+
+  {
+    id: 'cotton-club',
+    nom: 'Cotton Club',
+    alias: ['Club de Harlem', 'Cotton Club de Harlem'],
+    disciplines: ['jazz'],
+    categories: ['culture-histoire'],
+    definition: "Salle de spectacle mythique ouverte en 1923 au cœur de Harlem (142e rue, Lenox Avenue), qui a révélé au grand public américain les plus grands artistes noirs — Duke Ellington, Cab Calloway, Lena Horne — devant un public quasi exclusivement blanc.",
+    description: "Le Cotton Club, c'est l'un des lieux les plus importants — et les plus ambigus — de l'histoire du jazz. Un endroit où les plus grands artistes noirs américains ont fait leurs armes, devant des salles qui leur refusaient par ailleurs tous les droits civiques.\n\n**Les faits :**\n- Ouvert en 1923 à Harlem, repris en 1927 par Owney Madden (gangster irlando-américain)\n- Résidence de **Duke Ellington** de 1927 à 1931 — c'est là que son orchestre devient légendaire\n- Puis de **Cab Calloway** (1931–1940), dont le style exubérant définit une époque\n- Retransmis à la radio nationale : des millions d'Américains découvrent le jazz et le swing depuis leur salon\n- **Claquettistes légendaires** : les Nicholas Brothers, Bill 'Bojangles' Robinson, les Berry Brothers\n\n**L'ambiguïté historique :**\nLes artistes étaient Noirs. Le public était entièrement blanc. Les musiciens et danseurs ne pouvaient pas s'asseoir dans la salle où ils se produisaient. Le Cotton Club est à la fois le berceau de la gloire du jazz et le symbole de la ségrégation de l'Amérique des années 1920-30.\n\n**La fermeture :**\nAprès des émeutes raciales à Harlem en 1935, le Cotton Club déménage à Midtown Manhattan. Il ferme définitivement en 1940.",
+    erreursCourantes: [
+      "Imaginer le Cotton Club comme un endroit inclusif — le public était entièrement blanc, les artistes noirs ne pouvaient pas y être clients.",
+      "Croire que les artistes qui s'y produisaient n'avaient pas conscience de cette ambiguïté — beaucoup l'ont exprimée ouvertement.",
+    ],
+    difficulteInterne: 1,
+    termesLies: ['origines-jazz-dance', 'lindy-hop', 'nicholas-brothers'],
+  },
+
+  {
+    id: 'katherine-dunham',
+    nom: 'Katherine Dunham',
+    alias: ['Dunham', 'Dunham technique', 'technique Dunham'],
+    disciplines: ['jazz'],
+    categories: ['culture-histoire', 'concepts'],
+    definition: "Danseuse, chorégraphe et anthropologue américaine (1909–2006), considérée comme l'une des figures fondatrices du jazz dance moderne — elle a construit le premier pont documenté entre les danses afro-caribéennes et la scène américaine.",
+    description: "Katherine Dunham, c'est quelqu'un qui me fascine profondément. Elle n'était pas juste danseuse : elle était chercheuse, militante, pédagogue. Et elle a changé la danse jazz pour toujours.\n\n**Biographie clé :**\n- Née le 22 juin 1909 dans l'Illinois (banlieue de Chicago)\n- Étudie l'anthropologie à l'Université de Chicago\n- Dans les années 1930, part aux Caraïbes et en Afrique en expédition anthropologique pour étudier les danses tribales — elle ne regarde pas, elle apprend et danse\n- Fonde sa propre compagnie de danse afro-américaine dans les années 1930\n- Décède le 21 mai 2006 à New York, à 96 ans\n\n**La Dunham Technique :**\nElle crée une technique codifiée qui intègre :\n- Les isolations du torse et du bassin issues des danses caribéennes\n- Le polycentrisme africain\n- Des éléments de ballet classique pour la rigueur technique\n- L'expression émotionnelle et le sens du rythme du jazz\n\n**Son influence :**\nAlvin Ailey, Arthur Mitchell (fondateur du Dance Theater of Harlem), Talley Beatty — tous reconnaissent sa dette envers Katherine Dunham. Elle est la mère invisible de plusieurs générations du jazz et de la danse afro-américaine.\n\n**Son militantisme :**\nEn 1944, elle refuse de se produire à Louisville (Kentucky) devant un public ségrégé. À 89 ans, elle entame une grève de la faim pour protester contre le traitement des réfugiés haïtiens aux États-Unis.",
+    erreursCourantes: [
+      "Réduire Katherine Dunham à une 'danseuse de jazz' — elle était avant tout anthropologue et activiste.",
+      "Oublier qu'elle a codifié une technique complète, pas seulement un style.",
+    ],
+    conseils: [
+      "Cherche des archives vidéo de la Dunham Company. Son travail des années 1940-50 est d'une modernité saisissante.",
+    ],
+    difficulteInterne: 2,
+    termesLies: ['origines-jazz-dance', 'alvin-ailey', 'jazz-theatrical', 'sous-style-afro-jazz'],
+  },
+
+  {
+    id: 'alvin-ailey',
+    nom: 'Alvin Ailey',
+    alias: ['Alvin Ailey American Dance Theater', 'AAADT', 'Revelations'],
+    disciplines: ['jazz'],
+    categories: ['culture-histoire'],
+    definition: "Danseur et chorégraphe afro-américain (1931–1989), fondateur de l'Alvin Ailey American Dance Theater (1958) à New York — l'une des compagnies de danse les plus influentes du XXe siècle, et créateur de *Revelations*, l'œuvre chorégraphique la plus vue au monde.",
+    description: "Alvin Ailey, c'est l'homme qui a mis la danse afro-américaine sur toutes les scènes du monde. Et *Revelations*, c'est probablement la pièce de danse la plus vue de l'histoire.\n\n**Biographie clé :**\n- Né le 5 janvier 1931 à Rogers, Texas, dans le Sud ségrégationniste\n- Découvre la danse à Los Angeles, étudié notamment auprès de Lester Horton\n- Se forme aussi auprès de Martha Graham, Charles Weidman, Hanya Holm — il absorbe tout\n- Influence décisive de **Katherine Dunham**, dont il est un élève et admirateur\n- Fonde l'**Alvin Ailey American Dance Theater** à New York en 1958\n- Crée *Revelations* en **1960** — sa masterpiece, jamais retirée du répertoire depuis 65 ans\n- Décède le 1er décembre 1989, à 58 ans, de complications liées au SIDA\n\n**Revelations (1960) :**\nSur des spirituals et du gospel afro-américain, Ailey met en scène la foi, la douleur, la résilience et la joie de la communauté noire américaine. La pièce a été jouée devant plus de 23 millions de personnes dans 71 pays sur 6 continents.\n\n**Son héritage :**\nLa compagnie qu'il fonde continue sous la direction de Judith Jamison (puis Robert Battle). L'école Ailey, basée à New York, forme des danseurs du monde entier.\n\n**Sa vision :**\n'La danse vient du cœur', disait-il, 'et quand elle est faite avec sentiment, elle peut toucher d'autres cœurs.'",
+    erreursCourantes: [
+      "Classer Ailey comme 'danse moderne' seulement — son œuvre intègre jazz, gospel, blues, africain et contemporain.",
+      "Penser que *Revelations* est une pièce ancienne sans rapport avec aujourd'hui — elle est jouée intégralement à chaque saison depuis 1960.",
+    ],
+    conseils: [
+      "Regarde *Revelations* en entier — les 29 minutes. La section finale 'Rocka My Soul' est l'une des plus jubilatoires de tout le répertoire.",
+    ],
+    difficulteInterne: 1,
+    termesLies: ['katherine-dunham', 'jazz-theatrical', 'origines-jazz-dance'],
+  },
+
+  {
+    id: 'nicholas-brothers',
+    nom: 'Nicholas Brothers',
+    alias: ['Fayard Nicholas', 'Harold Nicholas', 'les frères Nicholas'],
+    disciplines: ['jazz'],
+    categories: ['culture-histoire'],
+    definition: "Duo de danseurs-acrobates afro-américains composé de Fayard (1914–2006) et Harold (1921–2000) Nicholas — considérés comme les plus grands claquettistes-acrobates de l'histoire, révélés au Cotton Club et immortalisés par le cinéma hollywoodien.",
+    description: "Les Nicholas Brothers, c'est deux frères qui ont fait des choses sur une scène que personne avant eux n'avait faites — et que très peu ont pu égaler depuis. Fred Astaire lui-même les a désignés comme 'le plus grand numéro de danse du monde.'\n\n**Biographie clé :**\n- **Fayard Nicholas** (20 octobre 1914 – 24 janvier 2006) : l'aîné, plus lyrique\n- **Harold Nicholas** (27 mars 1921 – 3 juillet 2000) : le cadet, plus acrobatique\n- Nés à Philadelphie de parents musiciens\n- Révélés au **Cotton Club** de Harlem dès les années 1930\n- Retransmis à la radio nationale depuis le Cotton Club — leur popularité explose\n\n**Ce qui les rend uniques :**\nLeur style fusionne la claquette avec une acrobatie extraordinaire (splits complets, sauts, culbutes) tout en maintenant une élégance de costume et de posture digne du ballet. Jambes toujours tendues dans les sauts, atterrissages silencieux — une précision technique hors norme.\n\n**La séquence culte :**\nDans *Stormy Weather* (film de 1943), leur numéro final descend un escalier monumental en glissant en split d'une marche à l'autre — sans coupure de montage. Fred Astaire et Gene Kelly la citaient comme la plus grande séquence de danse jamais filmée.\n\n**Ségrégation :**\nMalgré leur célébrité mondiale, ils ne pouvaient pas loger dans les hôtels des villes où ils se produisaient. Harold a fini par s'installer à Paris pour échapper à la ségrégation américaine.",
+    erreursCourantes: [
+      "Les oublier dans l'histoire du jazz au profit des seuls danseurs blancs d'Hollywood.",
+      "Confondre leur style avec de la simple acrobatie — c'est d'abord une technique de claquettes d'un niveau exceptionnel.",
+    ],
+    conseils: [
+      "Cherche 'Nicholas Brothers Stormy Weather' sur YouTube. Ces 3 minutes ont changé l'histoire de la danse.",
+    ],
+    difficulteInterne: 1,
+    termesLies: ['origines-jazz-dance', 'cotton-club', 'jazz-theatrical'],
+  },
+
+  {
+    id: 'matt-mattox',
+    nom: 'Matt Mattox',
+    alias: ['Mattox', 'technique Mattox', 'jazz lyrique Mattox'],
+    disciplines: ['jazz'],
+    categories: ['culture-histoire', 'concepts'],
+    definition: "Danseur et pédagogue américain (1921–2013), élève de Jack Cole, qui a codifié une technique de jazz lyrique angulaire et a eu une influence décisive sur l'enseignement du jazz en France et en Europe.",
+    description: "Matt Mattox, c'est un nom que tout élève de jazz en France devrait connaître — parce que la façon dont le jazz est enseigné dans les écoles françaises lui doit beaucoup.\n\n**Biographie clé :**\n- Né le 18 août 1921 à Tulsa, Oklahoma\n- Forme sa danse auprès de **Jack Cole** — son maître et modèle\n- Danseur à Broadway dans les années 1940-50 (notamment *Call Me Mister*, *Kiss Me Kate*)\n- Chorégraphe pour la télévision américaine : *The Ed Sullivan Show*, *The Bell Telephone Hour*\n- À partir des années 1970, s'installe en Europe — d'abord à Londres, puis en France\n- Donne des stages et masterclasses en France qui marquent profondément la pédagogie jazz française\n- Décède le 18 mars 2013 en France, à 91 ans\n\n**La technique Mattox :**\nElle se distingue par :\n- Une qualité **angulaire et précise** des bras et des mains\n- Un travail d'**isolations** très développé (héritage Cole)\n- Une dimension **lyrique** — la phrase musicale imprègne chaque mouvement\n- Un rapport particulier au **temps suspendu** entre les accents\n\n**Son impact en France :**\nSes cours au Studio Harmonic à Paris et ses tournées de stages ont formé des générations de profs de jazz français. Sa technique est encore largement enseignée aujourd'hui dans les cursus diplômants.",
+    erreursCourantes: [
+      "Le confondre avec Bob Fosse — leurs styles sont proches (tous deux élèves de Cole) mais distinctement différents.",
+      "Croire que la technique Mattox est une méthode figée — Mattox lui-même la faisait évoluer en permanence.",
+    ],
+    conseils: [
+      "Si tu as l'occasion de suivre un cours 'technique Mattox', saisis-le. C'est l'une des approches les plus formatives pour la musicalité en jazz.",
+    ],
+    difficulteInterne: 2,
+    termesLies: ['jazz-theatrical', 'katherine-dunham', 'origines-jazz-dance'],
   },
 
   // ─── Cabaret ──────────────────────────────────────────────────────────────
