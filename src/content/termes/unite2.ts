@@ -656,4 +656,207 @@ export const termesUnite2: Terme[] = [
     etymologie: "Du nom de la danse folklorique 'bourrée' (Auvergne, France) — danse en rythme ternaire à pas rapides. Le pas de bourrée de danse classique s'en inspire structurellement.",
     termesLies: ['glissade', 'pirouette', 'allegro'],
   },
+
+  {
+    id: 'grand-jete',
+    nom: 'Grand jeté',
+    alias: ['grand jeté en avant', 'jeté porté', 'saut de l\'ange'],
+    disciplines: ['classique'],
+    categories: ['sauts', 'allegro'],
+    definition: "Grand saut dans lequel le danseur élance une jambe tendue vers l'avant pendant que l'autre pousse à la verticale, créant un grand écart aérien. Le grand jeté est l'un des sauts les plus spectaculaires du vocabulaire classique.",
+    description: "Le grand jeté en avant, c'est le saut que tout le monde reconnaît même sans avoir jamais pris un cours de danse. Ces deux jambes tendues en plein vol, à l'horizontale — c'est lui.\n\n**Exécution :**\n1. Élan (souvent par une glissade ou un chassé)\n2. Impulsion sur la jambe d'appui (demi-plié + poussée)\n3. La jambe libre s'élance vers l'avant, tendue\n4. La jambe d'appui pousse et part vers l'arrière\n5. Au point culminant : grand écart aérien\n6. Réception sur la jambe avant, puis plié\n\n**Ce qui fait la qualité du grand jeté :**\n- La suspension au sommet (feeling de flottement)\n- Les deux jambes tendues au maximum\n- La ligne des bras qui s'ouvre en arabesque ou en attitude\n- Un regard vers l'avant, jamais vers le sol\n\n**Variantes :**\n- Grand jeté en attitude : jambe arrière fléchie en attitude\n- Grand jeté en tournant : avec rotation dans les airs (saut de biche)",
+    erreursCourantes: [
+      "Regarder ses jambes pendant le saut — si tu baisses la tête, tu perds l'élan.",
+      "Réception trop dure : le plié doit amortir progressivement, pas s'arrêter net.",
+      "Jambe arrière trop basse — les deux jambes doivent tendre vers l'horizontale.",
+    ],
+    conseils: [
+      "Avant de penser à la hauteur, pense à la longueur — le grand jeté voyage. Saute loin, pas seulement haut.",
+    ],
+    difficulteInterne: 4,
+    etymologie: "Du français 'grand' et 'jeté' (de 'jeter') — littéralement, un grand lancer de jambe.",
+    termesLies: ['jete', 'assemble', 'allegro', 'arabesque'],
+  },
+
+  {
+    id: 'pas-de-deux',
+    nom: 'Pas de deux',
+    alias: ['adage de deux', 'grand pas de deux'],
+    disciplines: ['classique'],
+    categories: ['concepts', 'ensemble'],
+    definition: "Danse pour deux partenaires — généralement structurée en entrée, adage, variations solos et coda. Dans le ballet classique, le pas de deux est le moment culminant où la ballerine atteint ses plus grandes lignes soutenue par son partenaire.",
+    description: "Le pas de deux, c'est l'un des moments les plus poétiques du ballet classique. Deux corps qui dialoguent, se soutiennent, se répondent.\n\n**Structure du grand pas de deux classique :**\n1. **Entrée** : les deux danseurs arrivent ensemble\n2. **Adage** : danse lente et soutenue, la ballerine est portée et équilibrée par le partenaire\n3. **Variation de la ballerine** : solo technique de la danseuse\n4. **Variation du danseur** : solo technique du danseur\n5. **Coda** : finale virtuose à deux\n\n**Le rôle du porteur :**\nSoutenir, porter, tourner — tout doit sembler sans effort. L'objectif du partenaire est de sublimer, pas de sauver.\n\n**Célèbres pas de deux :**\n- Le Lac des Cygnes — l'adage du lac\n- La Belle au Bois Dormant — le rose adagio\n- Le Corsaire — virtuosité explosive\n- Giselle — tension dramatique inoubliable\n\n**Évolution :**\nLa forme a évolué — les rôles de porteur/porté ne sont plus genrés dans de nombreuses compagnies contemporaines.",
+    erreursCourantes: [
+      "Le porteur qui compense les manques au lieu de sublimer — le but n'est pas de sauver, mais d'élever.",
+      "La danseuse qui s'accroche au lieu de confier son poids librement — ce n'est pas pareil du tout.",
+    ],
+    conseils: [
+      "En pas de deux, apprenez à vous faire confiance avant d'apprendre les figures. La connexion, ça se construit dans la durée.",
+    ],
+    difficulteInterne: 5,
+    etymologie: "Du français : 'pas' (danse, pas de danse) + 'de deux' (à deux). Il existe aussi le pas de trois et le pas de quatre.",
+    termesLies: ['adage', 'arabesque', 'attitude', 'pirouette'],
+  },
+
+  {
+    id: 'sissonne',
+    nom: 'Sissonne',
+    alias: ['sissonne ouverte', 'sissonne fermée', 'sissonne simple'],
+    disciplines: ['classique'],
+    categories: ['sauts', 'allegro'],
+    definition: "Saut prenant appui sur deux pieds et retombant sur un seul pied. La sissonne est l'un des sauts les plus fondamentaux du répertoire classique, déclinable à l'infini selon la position de la jambe libre et la direction.",
+    description: "La sissonne est partout dans le ballet — dans l'allegro du milieu, dans les variations, dans les diagonales. C'est un saut que tu vas rencontrer quotidiennement.\n\n**Exécution de base :**\n1. Demi-plié en 5ème position\n2. Saut sur deux pieds\n3. En l'air : ouverture de la jambe libre (devant, derrière ou côté)\n4. Réception sur une jambe\n5. Fermeture en 5ème (sissonne fermée) ou maintien de la jambe (sissonne ouverte)\n\n**Les principales sissonnes :**\n- **Sissonne fermée** : retour en 5ème position à la réception\n- **Sissonne ouverte** : la jambe libre reste levée à la réception\n- **En attitude ou en arabesque** : sissonne ouverte dans la position correspondante\n- **Petite sissonne** vs **grande sissonne** : hauteur et ouverture de jambe\n\n**Ce qui différencie une belle sissonne :**\nLa qualité de l'impulsion (les deux pieds doivent partir ensemble) et la tenue de la jambe libre à la réception.",
+    erreursCourantes: [
+      "Sauter d'un pied au lieu de deux — la sissonne part toujours des deux pieds.",
+      "Jambe libre qui s'affaisse à la réception — elle doit rester à la hauteur travaillée.",
+      "Plié d'impulsion trop court — compresse comme un ressort avant de sauter.",
+    ],
+    conseils: [
+      "Visualise la sissonne en deux temps : impulsion vers le haut, puis ouverture de la jambe libre. Si tu fais les deux en même temps, tu perds les deux.",
+    ],
+    difficulteInterne: 3,
+    etymologie: "Attribué à une M. de Sissonne, danseuse du XVIIe siècle. L'origine exacte reste incertaine.",
+    termesLies: ['assemble', 'allegro', 'batterie', 'arabesque'],
+  },
+
+  {
+    id: 'changement-de-pied',
+    nom: 'Changement de pied',
+    alias: ['changement', 'petit changement', 'grand changement'],
+    disciplines: ['classique'],
+    categories: ['sauts', 'allegro'],
+    definition: "Petit saut partant et arrivant en 5ème position, avec changement des pieds en l'air. Le pied qui était devant passe derrière, et vice-versa.",
+    description: "Le changement de pied est souvent l'un des premiers petits sauts qu'on apprend. Tout simple en apparence — mais maîtrisé à la perfection, c'est la base de toute la batterie.\n\n**Exécution :**\n1. 5ème position, demi-plié\n2. Saut — les deux pieds quittent le sol simultanément\n3. En l'air : le pied avant passe derrière\n4. Réception en demi-plié, 5ème position inversée\n\n**Points clés :**\n- Les deux pieds doivent quitter le sol **en même temps**\n- Pointes étirées en l'air\n- Passage par les demi-pointes à la réception avant le plié\n- Le changement se fait **en l'air** — pas avant de quitter le sol\n\n**Lien avec la batterie :**\nL'entrechat, la royale, le brisé — ce sont tous des changements de pied avec battements en plus. Maîtriser le changement simple, c'est poser les fondations de la batterie.",
+    erreursCourantes: [
+      "Les pieds ne se croisent pas assez en l'air — la 5ème doit être nette à la réception.",
+      "Plié d'impulsion trop court — prends le temps de plier pour sauter haut.",
+      "Réception sur les talons — toujours passer par les demi-pointes avant.",
+    ],
+    conseils: [
+      "Décompose : plié — poussée — suspension — changement — réception. Chaque phase mérite ton attention avant d'accélérer.",
+    ],
+    difficulteInterne: 1,
+    etymologie: "Du français : 'changer les pieds'. Terme entièrement descriptif.",
+    termesLies: ['batterie', 'assemble', 'cinq-positions', 'plie'],
+  },
+
+  {
+    id: 'temps-leve',
+    nom: 'Temps levé',
+    alias: ['temps levé sauté', 'temps levé en arabesque'],
+    disciplines: ['classique'],
+    categories: ['sauts', 'allegro'],
+    definition: "Petit saut sur une jambe, l'autre jambe maintenant une position (retiré, arabesque, dégagé…). Le temps levé est le saut le plus simple sur une jambe de la danse classique.",
+    description: "Le temps levé est à la fois un saut en soi et un outil de liaison permanent entre les pas. Tu l'utilises constamment sans forcément y prêter attention.\n\n**Exécution :**\n1. Demi-plié sur la jambe d'appui\n2. Saut — la jambe d'appui se tend complètement en l'air\n3. La jambe libre maintient sa position (retiré, arabesque, dégagé, etc.)\n4. Réception sur la même jambe, demi-plié\n\n**Positions de la jambe libre les plus fréquentes :**\n- **Retiré** : jambe pliée, pied à hauteur du genou\n- **Arabesque** : jambe tendue derrière\n- **Dégagé à la hauteur** : jambe tendue de côté ou devant\n\n**Usage dans les enchaînements :**\nLe temps levé apparaît souvent en répétitions (temps levés en arabesque enchaînés), comme préparation à un grand saut, ou comme conclusion d'une phrase.",
+    erreursCourantes: [
+      "Jambe libre qui change de position pendant le saut — elle doit rester exactement où elle était.",
+      "Saut trop bas : même petit, le temps levé doit avoir de la suspension.",
+      "Jambe d'appui qui ne se tend pas complètement en l'air.",
+    ],
+    conseils: [
+      "Dans les temps levés en arabesque enchaînés, pense à chaque saut individuellement — ne cours pas après le suivant avant d'avoir terminé celui-là.",
+    ],
+    difficulteInterne: 2,
+    etymologie: "Du français : 'temps' (ici, 'mouvement') + 'levé' (soulevé). Littéralement : un mouvement de levée.",
+    termesLies: ['arabesque', 'assemble', 'allegro'],
+  },
+
+  {
+    id: 'demi-pointes',
+    nom: 'Demi-pointes',
+    alias: ['demi-pointe', 'relevé sur demi-pointes', 'mi-pointes'],
+    disciplines: ['classique', 'contemporain', 'moderne', 'jazz'],
+    categories: ['technique-corps', 'fondamentaux'],
+    definition: "Position dans laquelle le danseur se tient sur la partie avant du pied — les métatarses — les talons décollés du sol. Les demi-pointes sont à mi-chemin entre le pied à plat et les pointes sur les orteils.",
+    description: "Les demi-pointes, c'est l'endroit où on passe une grande partie du temps en cours. Entre le pied à plat et les vraies pointes, il y a ce territoire intermédiaire — les métatarses — qui demande autant de travail qu'on ne le croit.\n\n**La position :**\n- Talons levés, pied en appui sur le tiers avant\n- Les orteils restent posés à plat (contrairement aux pointes)\n- Le genou s'aligne avec l'axe du pied\n\n**L'importance en classique :**\nQuasiment tous les pas de liaison se font sur demi-pointes (pas de bourrée, glissade, chassé). Les pirouettes se lancent et se terminent via les demi-pointes.\n\n**Demi-pointes vs pointes :**\nSur demi-pointes, les orteils sont posés — accessible sans chausson de pointe. Sur pointes, le poids repose sur le bout des orteils dans un chausson rigide — hauteur et contraintes totalement différentes.\n\n**Renforcement :**\nTravailler en demi-pointes renforce les chevilles, les mollets et les intrinsèques du pied. Un travail progressif évite les blessures.",
+    erreursCourantes: [
+      "Cheville qui s'effondre vers l'intérieur (pronation) en demi-pointe — garder l'alignement genou-cheville-pied.",
+      "Orteils qui s'agrippent — ils doivent rester détendus et posés à plat.",
+      "Monter sur demi-pointe sans passer progressivement par les phases du pied.",
+    ],
+    conseils: [
+      "Teste ta stabilité en demi-pointe sur une jambe, yeux fermés. C'est un excellent indicateur de la force de ta cheville.",
+    ],
+    difficulteInterne: 2,
+    etymologie: "Du français : 'demi' (à moitié) + 'pointe' (la pointe du pied). Intermédiaire entre pied plat et pointe.",
+    termesLies: ['pointes', 'releve', 'plie', 'pirouette'],
+  },
+
+  {
+    id: 'ballon',
+    nom: 'Ballon',
+    alias: ['qualité de ballon', 'légèreté en l\'air', 'suspension'],
+    disciplines: ['classique'],
+    categories: ['qualites-mouvement', 'concepts'],
+    definition: "Qualité de légèreté et de suspension dans les sauts — le danseur paraît flotter un instant au sommet de sa trajectoire. Le ballon n'est pas une hauteur brute, c'est une impression de flottement.",
+    description: "Le ballon est l'une des qualités les plus enviées et les plus difficiles à définir en danse classique. Ce n'est pas la hauteur du saut — c'est cette seconde de suspension qui fait croire que le danseur peut rester là-haut.\n\n**Ce qui crée le ballon :**\n- Une montée **progressive** et silencieuse vers le sommet\n- Un **sommet prolongé** — la vitesse ralentit au point culminant\n- Une **réception douce** qui amortit progressivement sans bruit\n- Une **ligne** impeccable pendant tout le vol\n\n**Ballon vs hauteur :**\nCertains danseurs très hauts en saut ont peu de ballon. D'autres, plus modestes en hauteur, donnent l'impression de flotter. Le public perçoit le ballon, pas les centimètres.\n\n**Développer le ballon :**\n- Travailler les pliés (l'impulsion douce vient du plié profond)\n- Soigner la réception (pied-demi-pointe-plié, progressif et silencieux)\n- Ne jamais précipiter la descente — laisser le corps 'tomber' lentement\n- Pointes tendues au maximum en l'air (ça étire visuellement la trajectoire)",
+    erreursCourantes: [
+      "Confondre ballon et hauteur : monter haut ne suffit pas, c'est la qualité du vol qui compte.",
+      "Réception dure qui 'coupe' l'impression de légèreté au dernier moment.",
+    ],
+    conseils: [
+      "Écoute tes réceptions — elles doivent être silencieuses. Si tu entends tes pieds, tu perds du ballon.",
+    ],
+    difficulteInterne: 4,
+    etymologie: "Du français 'ballon' (sphère). Par métaphore : le corps léger comme un ballon, qui rebondit et flotte.",
+    termesLies: ['allegro', 'assemble', 'jete', 'grand-jete'],
+  },
+
+  {
+    id: 'coupe',
+    nom: 'Coupé',
+    alias: ['coupé-jeté', 'coupé en tournant', 'temps coupé'],
+    disciplines: ['classique'],
+    categories: ['liaisons', 'deplacements'],
+    definition: "Petit pas de liaison dans lequel un pied vient se poser sous le centre de gravité, libérant ainsi l'autre pied pour le pas suivant. Le coupé 'vole' la place du pied porteur.",
+    description: "Le coupé est invisible pour le public mais essentiel pour le danseur. C'est lui qui prépare les pirouettes, lance les grands sauts, relie les pas entre eux.\n\n**Exécution :**\n1. Un pied en l'air (suite d'un pas précédent)\n2. Ce pied vient se poser sous le centre de gravité, en demi-plié\n3. L'autre pied se libère immédiatement\n4. Ce pied libre enchaîne le pas suivant (jeté, assemblé, pirouette…)\n\n**Coupé dessus / dessous :**\n- **Coupé dessus** : le pied actif passe devant\n- **Coupé dessous** : le pied actif passe derrière\n\n**Coupé en tournant :**\nVariante qui prépare les grandes pirouettes — le coupé se fait avec une rotation qui lance l'élan rotatif.\n\n**Importance dans les enchaînements :**\nLe coupé précède souvent l'assemblé, le jeté, ou sert de lancement à la pirouette. Sans coupé efficace, l'élan se perd.",
+    erreursCourantes: [
+      "Coupé qui fait du bruit — il doit se poser discrètement, pas claquer.",
+      "Plié insuffisant dans le coupé — sans plié, il n'y a pas d'élan pour le pas suivant.",
+      "Manque de précision sur dessus ou dessous — ça change tout pour la suite.",
+    ],
+    conseils: [
+      "Pense au coupé comme à un tremplin, pas comme à un pas en soi. Son seul but, c'est de lancer ce qui vient après.",
+    ],
+    difficulteInterne: 2,
+    etymologie: "Du français 'couper' — le pied coupe la place de l'autre, l'interrompt et la prend.",
+    termesLies: ['plie', 'assemble', 'jete', 'pirouette'],
+  },
+
+  {
+    id: 'enchainement',
+    nom: 'Enchaînement',
+    alias: ['combinaison', 'phrase de danse', 'séquence'],
+    disciplines: ['classique', 'jazz', 'contemporain', 'moderne'],
+    categories: ['concepts', 'fondamentaux'],
+    definition: "Série de mouvements liés les uns aux autres dans un ordre déterminé, formant une phrase de danse cohérente. L'enchaînement est l'unité de travail de base dans un cours de danse technique.",
+    description: "En cours, l'enchaînement, c'est la 'phrase' que le professeur te donne à apprendre et à refaire. C'est l'art de relier les pas entre eux sans rupture.\n\n**Pourquoi enchaîner est difficile :**\nChaque pas individuel peut être maîtrisé, mais les relier demande de :\n- Anticiper (penser toujours au pas suivant)\n- Trouver les pas de liaison (coupé, chassé, pas de bourrée)\n- Respecter le phrasé musical\n- Maintenir la qualité de chaque élément même en mouvement\n\n**Niveaux de complexité :**\n- **Simple** : deux à quatre pas de base liés\n- **Intermédiaire** : changements de direction, de niveau\n- **Avancé** : sauts, tours et liaisons enchaînés avec fluidité\n\n**Enchaînement vs chorégraphie :**\nL'enchaînement est une phrase technique répétée pour développer le corps. La chorégraphie est une composition artistique complète avec intention dramatique ou esthétique.",
+    erreursCourantes: [
+      "Faire des pauses entre les pas au lieu de les enchaîner — la continuité est l'essence même du mot.",
+      "Apprendre les pas séparément et ne jamais travailler leur liaison.",
+    ],
+    conseils: [
+      "Avant de faire un enchaînement en musique, dis-le d'abord à voix haute en marquant les temps : 'plié — arabesque — tombé — pas de bourrée — pirouette'. Ça aide vraiment.",
+    ],
+    difficulteInterne: 2,
+    etymologie: "Du français 'enchaîner' — relier par une chaîne. Les pas s'attachent les uns aux autres comme des maillons.",
+    termesLies: ['allegro', 'adage', 'pas-de-bourree', 'coupe'],
+  },
+
+  {
+    id: 'etoile',
+    nom: 'Étoile',
+    alias: ['danseuse étoile', 'danseur étoile', 'première danseuse', 'principal dancer'],
+    disciplines: ['classique'],
+    categories: ['culture-histoire', 'concepts'],
+    definition: "Grade le plus élevé dans la hiérarchie des danseurs de l'Opéra de Paris et de certains autres ballets. L'étoile est nommée directement par le directeur de la compagnie, souvent lors d'une représentation — c'est l'un des moments les plus émouvants de la vie d'un danseur.",
+    description: "La hiérarchie de l'Opéra de Paris est l'une des plus codifiées au monde, et le titre d'Étoile en est le sommet absolu.\n\n**La hiérarchie classique (Opéra de Paris) :**\n1. **Quadrille** (corps de ballet, entrée de carrière)\n2. **Coryphée** (commence à sortir du corps de ballet)\n3. **Sujet** (rôles plus importants)\n4. **Premier sujet** (rôles principaux réguliers)\n5. **Danseur étoile / Danseuse étoile** (le sommet)\n\n**Le sacre d'une Étoile :**\nÀ l'Opéra de Paris, la nomination se fait souvent sur scène, après une représentation brillante, par le directeur qui prononce les mots : 'Je vous nomme Étoile.' Un moment magique qui a marqué des générations.\n\n**Étoiles célèbres :**\nRudolf Noureev, Margot Fonteyn, Sylvie Guillem, Marie-Agnès Gillot, Benjamin Pech, Aurélie Dupont.\n\n**Autres compagnies :**\nLe titre varie : 'Principal Dancer' au Royal Ballet de Londres ou à l'ABT, 'Primaballerina' dans d'autres compagnies.",
+    erreursCourantes: [],
+    conseils: [
+      "Regarde les nominations d'Étoile en vidéo — ces moments captés sur scène sont parmi les plus émouvants que la danse classique offre.",
+    ],
+    difficulteInterne: 1,
+    etymologie: "Du français 'étoile' — littéralement l'astre qui brille plus que les autres.",
+    termesLies: ['corps-de-ballet', 'ballet'],
+  },
 ]
