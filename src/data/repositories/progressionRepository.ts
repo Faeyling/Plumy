@@ -82,27 +82,21 @@ export const progressionRepository = {
       const statut: ProgressionTerme['statut'] = nouvellesReussites >= 3 ? 'maitrise' : 'vu'
       // Leitner boxes: 1 correct → +1j, 2 corrects → +3j, 3+ corrects → +7j
       const delaiJours = nouvellesReussites >= 3 ? 7 : nouvellesReussites === 2 ? 3 : 1
-      const updates: Partial<ProgressionTerme> = {
-        reussitesQuiz: nouvellesReussites,
-        statut,
-        prochainRevision: now + delaiJours * JOUR_MS,
-      }
+      const prochainRevision = now + delaiJours * JOUR_MS
       if (existing) {
-        await db.progressions.update(termeId, updates)
+        await db.progressions.update(termeId, { reussitesQuiz: nouvellesReussites, statut, prochainRevision })
       } else {
-        await db.progressions.put({ termeId, echecsQuiz: 0, ...updates })
+        const prog: ProgressionTerme = { termeId, statut, reussitesQuiz: nouvellesReussites, echecsQuiz: 0, prochainRevision }
+        await db.progressions.put(prog)
       }
     } else {
-      const updates: Partial<ProgressionTerme> = {
-        echecsQuiz: (existing?.echecsQuiz ?? 0) + 1,
-        statut: 'a-revoir',
-        reussitesQuiz: 0,
-        prochainRevision: now + JOUR_MS,
-      }
+      const echecsQuiz = (existing?.echecsQuiz ?? 0) + 1
+      const prochainRevision = now + JOUR_MS
       if (existing) {
-        await db.progressions.update(termeId, updates)
+        await db.progressions.update(termeId, { echecsQuiz, statut: 'a-revoir', reussitesQuiz: 0, prochainRevision })
       } else {
-        await db.progressions.put({ termeId, ...updates })
+        const prog: ProgressionTerme = { termeId, statut: 'a-revoir', reussitesQuiz: 0, echecsQuiz, prochainRevision }
+        await db.progressions.put(prog)
       }
     }
   },
