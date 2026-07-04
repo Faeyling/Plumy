@@ -127,7 +127,9 @@ Marche, mouvements lents, diminution progressive de l'intensité.
 *Ici* les étirements sont appropriés — tenir chaque position 30–60 secondes. Cible les zones travaillées.
 
 **Phase 3 — Respiration (2 min) :**
-Respiration profonde pour activer le système nerveux parasympathique (récupération).
+Respiration profonde pour activer le système nerveux parasympathique (récupération). Technique : inspire par le nez, expire par la bouche en rentrant légèrement le ventre à l'expiration. Cette respiration abdominale accélère le retour au calme de façon mesurable.
+
+**Un rituel qui vaut aussi avant d'entrer en scène :** quelques respirations abdominales profondes avant une performance réduisent le cortisol et préparent le système nerveux à la concentration plutôt qu'à l'anxiété. Ce n'est pas une superstition — c'est de la physiologie, et je m'en sers à chaque fois.
 
 **Les zones prioritaires à étirer après une session de danse :**
 - Mollets et tibial postérieur (toujours sollicités)
@@ -175,7 +177,18 @@ Zone la plus blessée en danse — et la plus négligée dans l'entraînement. �
 
 **5. Chaîne postérieure :**
 Fessiers, ischio-jambiers — souvent faibles chez les danseurs hypermobiles.
-*Exercices :* Hip thrust, deadlift à une jambe, Nordic hamstring`,
+*Exercices :* Hip thrust, deadlift à une jambe, Nordic hamstring
+
+---
+
+**Un principe fondamental — muscler en étirant :**
+
+En danse, le renforcement ne cherche pas uniquement la puissance brute : il vise à *muscler en étirant* — gagner en force sans perdre en amplitude. C'est une distinction que j'ai mise du temps à intégrer, et qui change profondément la façon d'aborder le travail. Quatre règles pratiques en découlent :
+
+1. **Muscles profonds en premier** — ils stabilisent l'articulation avant que les muscles superficiels s'activent. La stabilité avant la puissance, toujours.
+2. **Latéraliser rigoureusement** — alterner côté droit et côté gauche sans jamais négliger le côté faible. Les déséquilibres latéraux sont l'une des principales sources de blessures chroniques en danse.
+3. **Varier les tempos** — un même exercice exécuté lentement puis rapidement ne cible pas les mêmes fibres musculaires. Les deux sont nécessaires pour une force complète.
+4. **Chercher l'allongement dans l'effort** — à la différence de beaucoup d'entraînements sportifs, la danse recherche l'extension, pas le raccourcissement musculaire. Chaque renforcement doit s'accompagner d'une sensation d'allongement.`,
       },
       {
         titre: "Hygiène de vie et santé mentale — le corps comme outil de travail",

@@ -168,6 +168,21 @@ La séquence se répète de l'autre côté. Ton côté faible mérite autant d'a
 **Les 5 positions des pieds :**
 La 1ère et la 2ème sont les plus utilisées pour commencer. La 5ème est la position "naturelle" du mouvement avancé — et elle demande des années de travail pour être vraiment propre.
 
+- **1ère :** Talons joints, pieds tournés vers l'extérieur. La position d'ancrage.
+- **2ème :** Pieds écartés d'une largeur de pied, talons au sol, turn-out maintenu. Base des pliés et du travail en seconde.
+- **3ème :** Le talon du pied avant se place au milieu du pied arrière. Position d'apprentissage — moins de turn-out requis que la 5ème, idéale pour travailler la coordination.
+- **4ème :** Un pied devant l'autre avec un espace entre eux, talon avant posé au sol. Position de préparation des pirouettes — peut partir de la 1ère ou de la 5ème.
+- **5ème :** Le talon du pied avant dépasse les orteils du pied arrière. La plus exigeante — turn-out profond requis, plusieurs années de pratique pour être vraiment propre.
+
+**Les 5 positions des bras :**
+Les bras ne sont pas un accessoire — ils font partie de l'architecture entière de la ligne classique. J'insiste là-dessus à chaque fois que j'en parle.
+
+- **1ère :** Les deux bras forment un ovale arrondi devant le ventre, coudes légèrement relevés, paumes orientées vers soi. Point de départ naturel pour presque tout.
+- **2ème :** Bras ouverts sur les côtés, légèrement en avant du plan du corps, coudes relevés, paumes vers le bas. "L'horizon" du corps.
+- **3ème :** Un bras en 5ème (en haut), l'autre en 2ème (sur le côté). Position asymétrique, souvent de transition.
+- **4ème :** Un bras en 1ère (devant), l'autre en 5ème (en haut). Utilisée fréquemment en préparation de pirouettes.
+- **5ème :** Les deux bras en haut, formant un ovale au-dessus de la tête. Le critère que j'utilise : si tu vois clairement tes mains en regardant droit devant toi, tes bras sont trop ouverts — ils doivent être juste à la limite de ton champ de vision.
+
 **⚠️ Point crucial que je ne peux pas assez répéter :** Le turn-out se fait depuis la hanche, jamais depuis le genou ou le pied. Forcer le turn-out depuis les extrémités peut causer :
 - Syndrome fémoro-patellaire (genou)
 - Tendinopathie de la cheville

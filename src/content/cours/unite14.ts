@@ -123,7 +123,33 @@ La contrainte la plus productive est celle qui empêche le confort habituel. Et 
 - Ne jamais regarder dans la direction du mouvement
 
 **L'exercice de la contrainte progressive :**
-Commence par une impro libre (5 minutes). Puis ajoute une contrainte. Puis une deuxième. Observe comment ton mouvement se transforme à chaque ajout.`,
+Commence par une impro libre (5 minutes). Puis ajoute une contrainte. Puis une deuxième. Observe comment ton mouvement se transforme à chaque ajout.
+
+---
+
+## La LMA (Laban Movement Analysis) — une carte pour le mouvement
+
+Si les scores donnent le cadre, la LMA donne le vocabulaire. C'est un système d'analyse du mouvement développé par **Rudolf Laban** — et c'est un des outils les plus précieux que je connaisse pour décrire, varier et composer du mouvement en improvisation. J'ai des pages entières là-dessus dans mes carnets.
+
+**Les quatre composantes de la LMA :**
+- **Corps** : quelle partie du corps s'engage, dans quelle séquence
+- **Effort** : la qualité de l'énergie mobilisée (le "comment" du mouvement)
+- **Forme** : comment le corps change de forme dans l'espace
+- **Espace** : les chemins et directions dans l'espace
+
+**Les quatre facteurs d'effort — c'est là que ça devient vraiment utile en improvisation :**
+
+| Facteur | Pôle 1 | Pôle 2 |
+|---------|---------|---------|
+| **Poids** | Fort (appuyé, pesant) | Léger (effleuré, aérien) |
+| **Temps** | Soudain (rapide, urgent) | Soutenu (lent, coulant) |
+| **Espace** | Direct (ligne droite, précis) | Indirect (serpentin, diffus) |
+| **Flux** | Contrôlé (arrêt possible à tout moment) | Libre (élan difficile à stopper) |
+
+**Comment utiliser la LMA comme contrainte d'improvisation :**
+Chaque combinaison de facteurs produit une qualité de mouvement — et une couleur émotionnelle — différente. Un mouvement fort + soudain + direct + contrôlé évoque l'affirmation ou la résistance. Un mouvement léger + soutenu + indirect + libre évoque le flottement ou la rêverie. Entre ces extrêmes, une infinité de nuances.
+
+*Exercice que j'adore donner :* traverse l'espace en changeant un seul facteur d'effort toutes les 8 secondes. Observe comment ton corps change — et comment ton état intérieur change avec lui. Le mouvement crée l'émotion autant qu'il l'exprime.`,
       },
       {
         titre: "L'écoute du partenaire — improviser à plusieurs",
