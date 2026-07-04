@@ -259,6 +259,14 @@ Je fais de la prévention depuis le début de cette unité — laisse-moi finir 
 
 La danse améliore aussi le tonus vasculaire : l'alternance rythmique de contraction et relâchement musculaire envoie des signaux au système nerveux autonome qui régule l'élasticité des artères. À long terme, c'est une protection contre l'hypertension.
 
+**Danses latines (salsa, bachata, samba) :** Une session énergique peut faire brûler entre **400 et 600 calories par heure** — comparable au jogging ou au cyclisme. Une étude de l'Université de Brighton a établi que la pratique régulière de danses latines pouvait réduire le risque de maladies cardiovasculaires de près de **50 %**. L'alternance entre phases d'intensité élevée et moments de récupération crée un effet d'entraînement par intervalles naturel.
+
+**Danse contemporaine et densité osseuse :** Une recherche publiée dans l'*International Journal of Sports Medicine* a montré que les danseurs contemporains présentaient une densité osseuse supérieure à la moyenne, notamment au niveau des hanches et de la colonne vertébrale. L'explication : les impacts répétés et les changements de direction fréquents stimulent la minéralisation osseuse — un bénéfice que beaucoup de disciplines douces n'offrent pas.
+
+**Tango argentin et fonctions exécutives :** Une étude longitudinale menée auprès de seniors pratiquant le tango a démontré des améliorations significatives de la planification, de la flexibilité cognitive et de la vitesse de traitement de l'information — plus marquées que chez un groupe pratiquant des exercices d'aérobic. La raison : dans le tango, il faut en permanence anticiper les mouvements de l'autre, adapter sa réponse, et maintenir une attention soutenue sur plusieurs éléments à la fois. C'est un entraînement cognitif autant que physique.
+
+**Neuroplasticité :** Une recherche publiée dans le *Journal of Cognitive Neuroscience* a révélé une augmentation de la matière grise dans l'hippocampe et le cortex préfrontal chez les danseurs expérimentés — zones cruciales pour la mémoire et la prise de décision. Même les amateurs qui pratiquent régulièrement bénéficient de cet effet : l'apprentissage de nouvelles chorégraphies, la synchronisation avec la musique et l'interaction avec les partenaires stimulent continuellement la création de nouvelles connexions neuronales.
+
 ---
 
 > Ton corps n'est pas ton ennemi — c'est ton instrument. Comme tout instrument, il demande entretien, soin et respect pour produire son meilleur son. Prends-en soin, et il te le rendra. Je le crois profondément.`,
