@@ -11,6 +11,7 @@ export const coursUnite5: Cours[] = [
       'contraction-release', 'fall-recovery', 'suspension', 'rebond-swing',
       'fluidite-mouvement', 'spirale', 'floorwork', 'roulade', 'chute-controlee',
       'point-de-contact', 'partage-poids', 'score-improvisation', 'somatique',
+      'body-mind-centering', 'feldenkrais', 'site-specific',
     ],
     sections: [
       {
@@ -41,6 +42,42 @@ export const coursUnite5: Cours[] = [
 - L'importance accordée au processus autant qu'au résultat
 
 > Ce qui m'a touché dans le contemporain, c'est ça : on te demande de penser, pas juste d'exécuter. Ça change tout — promis.`,
+      },
+      {
+        titre: 'Les grandes figures qui ont tout changé',
+        contenuMarkdown: `Comprendre la danse contemporaine, c'est aussi connaître les personnes qui l'ont inventée. Pas pour mémoriser des dates — mais parce que chaque nom représente une façon différente de penser le corps, le mouvement, la scène. J'ai passé des heures à étudier leurs travaux, et je vais te donner l'essentiel.
+
+**Merce Cunningham (1919–2009) — couper le lien avec la musique**
+La révolution de Cunningham : le mouvement n'a pas besoin de raconter une histoire, ni de s'accorder à la musique. Dans ses créations, danseurs et musiciens travaillaient *séparément* — et n'entendaient parfois la partition que le soir de la première. Choquant ? Oui. Révolutionnaire ? Absolument. Il a libéré la danse de la narration et du mimétisme musical. Sa technique est encore enseignée et pratiquée aujourd'hui.
+
+**Pina Bausch (1940–2009) — le Tanztheater**
+Pina Bausch a créé quelque chose qu'on n'avait jamais vu : le **Tanztheater** (danse-théâtre). Elle mélange mouvement, parole, répétition, humour, violence et tendresse. Ses pièces parlent des relations humaines — entre hommes et femmes, entre individu et société. *Café Müller*, *Kontakthof*, *Nelken* (un plateau couvert de 8 000 œillets) — si tu n'en as vu aucune, commence maintenant. Elle posait à ses danseurs des questions comme "Qu'est-ce qui vous fait peur ?" et construisait la chorégraphie à partir de leurs réponses. Ça m'a toujours bouleversé.
+
+**Trisha Brown (1936–2017) — le site-specific et la physique du mouvement**
+Trisha Brown a dansé sur des toits d'immeubles new-yorkais, sur des murs, dans des ruelles — longtemps avant que le terme "site-specific" n'existe. Elle s'intéressait à la physique pure du mouvement : accumulation, répétition, lois mécaniques du corps. *Roof Piece* (1971) : des danseurs transmettent des mouvements de toit en toit sur plusieurs blocs de Manhattan. J'aurais tellement voulu être là.
+
+**William Forsythe (né en 1949) — déconstruire le ballet**
+Ce qui me fascine chez Forsythe, c'est qu'il aime le ballet *tellement* qu'il l'a complètement démonté. Directeur du Ballet de Francfort (1984–2004), il prend les principes de la technique classique — lignes, alignements, spirales — et les pousse à l'extrême, les tord, les multiplie. Son travail montre qu'on peut maîtriser la technique classique sur le bout des doigts et en faire quelque chose d'absolument contemporain. *Artifact*, *Impressing the Czar*, *One Flat Thing, Reproduced* — des pièces qui te font revoir le corps.
+
+**Ohad Naharin et la méthode Gaga (né en 1952)**
+Ohad Naharin dirige la Batsheva Dance Company (Israël) et a développé le **Gaga** — pas un style : une méthode. Dans une session Gaga, on te donne des "instructions" abstraites ("sens le liquide dans ton corps", "laisse l'effort t'étonner") et tu explores en mouvement continu. Pas de miroir, pas de correction. L'objectif : reconnecter avec la sensation plutôt qu'avec la forme. Il existe deux pratiques : Gaga/people (accessible à tous) et Gaga/dancers (pour les professionnels).
+
+**La Nouvelle danse française — l'explosion créative**
+En France, à partir des années 1980, une génération de chorégraphes renouvelle complètement le paysage : **Maguy Marin**, **Angelin Preljocaj**, **Jean-Claude Gallotta**, **Régine Chopinot**. Ils fondent leurs compagnies en région, développent leur propre esthétique, et dialoguent avec les arts visuels, la musique contemporaine, la technologie.
+
+Le **CNDC** (Centre national de danse contemporaine) à Angers, fondé par Alwin Nikolais, devient un des centres de formation les plus importants d'Europe. La France investit dans la décentralisation culturelle — et ça change tout.
+
+**Comparatif danse moderne / danse contemporaine :**
+
+| | Danse moderne | Danse contemporaine |
+|---|---|---|
+| Période | Début XXe siècle | Post-1960 |
+| Technique | Codifiée (Graham, Horton, Limón) | Plurielle, hybride |
+| Rapport musique | Expressif, lié | Indépendant (Cunningham) ou libre |
+| Narration | Souvent présente | Questionnée, souvent absente |
+| Corps | Outil expressif | Outil de questionnement |
+
+> Ce qui me frappe dans ces biographies, c'est que chacun de ces artistes avait une question obsessionnelle — et a passé sa vie à y répondre par le mouvement. Quelle est la tienne ?`,
       },
       {
         titre: 'Le corps contemporain — un rapport différent à la gravité',

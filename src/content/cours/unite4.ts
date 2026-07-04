@@ -13,6 +13,45 @@ export const coursUnite4: Cours[] = [
     ],
     sections: [
       {
+        titre: 'Une discipline née à la cour du Roi-Soleil',
+        contenuMarkdown: `J'ai une vraie passion pour l'histoire de la danse classique — parce que comprendre d'où vient cette technique, c'est comprendre pourquoi elle est ce qu'elle est aujourd'hui. Et cette histoire commence avec un roi qui dansait lui-même.
+
+**Louis XIV — le fondateur**
+Louis XIV (1638–1715) n'était pas juste le commanditaire du ballet — il était danseur. Il a tenu les rôles principaux dans des ballets de cour pendant des années, notamment le Roi-Soleil dans *Ballet de la Nuit* (1653). En 1661, il fonde l'**Académie royale de danse** — la première institution dédiée à la danse dans le monde occidental. Le vocabulaire français qu'on utilise encore aujourd'hui vient directement de là : plié, arabesque, jeté, pirouette — partout dans le monde, les professeurs de ballet enseignent en français. C'est le legs de Louis XIV.
+
+**Le ballet romantique — Marie Taglioni et les pointes**
+En 1832, **Marie Taglioni** crée *La Sylphide* à Paris — et pour la première fois, une danseuse se tient sur la pointe des pieds. Les **chaussons de pointe** naissent de cette innovation, et avec eux toute une esthétique de légèreté : sylphides, créatures aériennes, wilis. J'ai du mal à m'imaginer ce que ça a dû être de voir ça pour la première fois. Une révolution esthétique totale.
+
+Le romantisme apporte aussi les grands tutus blancs, les décors de lune et de forêt, les thèmes de l'amour impossible entre le monde réel et l'au-delà. C'est l'époque de *Giselle* (1841) et des ballets "blancs".
+
+**L'âge d'or — Petipa et le répertoire classique**
+À la fin du XIXe siècle, **Marius Petipa** (1818–1910) à Saint-Pétersbourg codifie ce qu'on appelle maintenant le "grand ballet classique" : *Lac des cygnes*, *La Belle au bois dormant*, *Casse-Noisette* (avec Tchaïkovski). La structure en actes, les pas de deux, les variations solistes, les corps de ballet — tout ça sort de Petipa. Quand tu apprends la technique classique aujourd'hui, tu apprends ce que Petipa a codifié.
+
+**Anna Pavlova — la danseuse qui a fait le tour du monde**
+**Anna Pavlova** (1881–1931) est peut-être la danseuse qui a le plus contribué à populariser la danse classique au niveau mondial. Avec sa compagnie, elle a tourné dans des pays où le ballet n'existait pas encore — portant notamment *La mort du cygne* dans des salles qui n'avaient jamais vu un ballet. Une ambassadrice absolue.
+
+**Les Ballets Russes — la révolution du XXe siècle**
+En 1909, **Sergei Diaghilev** crée les **Ballets Russes** à Paris avec **Nijinsky**, **Fokine**, et des compositeurs comme Stravinsky. Ils cassent les codes esthétiques du XIXe siècle : *Le Sacre du printemps* (1913) déclenche un scandale au Théâtre des Champs-Élysées. Le ballet devient avant-garde.
+
+**Rudolf Noureev — le passage à l'Ouest**
+En 1961, **Rudolf Noureev** fait défection à Paris plutôt que de rentrer en URSS. Sa présence scénique, sa technique et sa collaboration avec Margot Fonteyn redéfinissent ce que peut être un danseur étoile. Plus tard, il prend la direction du Ballet de l'Opéra de Paris (1983–1989) et y renouvelle profondément le répertoire.
+
+**Les grandes maisons aujourd'hui**
+Les grandes compagnies de ballet sont souvent des institutions d'État :
+
+| Compagnie | Ville | Fondation |
+|-----------|-------|-----------|
+| Ballet de l'Opéra de Paris | Paris | 1669 (sous Louis XIV) |
+| Ballet du Bolchoï | Moscou | 1776 |
+| Ballet du Mariinsky | Saint-Pétersbourg | 1783 |
+| Royal Ballet | Londres | 1931 |
+| American Ballet Theatre | New York | 1937 |
+
+Le financement public est important : il permet à ces compagnies de maintenir un répertoire, de former des danseurs sur la durée, et de ne pas dépendre uniquement du marché.
+
+> Ce que j'aime dans cette histoire, c'est qu'elle montre que la danse classique n'a jamais été figée — elle s'est transformée à chaque siècle, en absorbant les révolutions de son temps. Elle continue.`,
+      },
+      {
         titre: 'La logique du cours classique',
         contenuMarkdown: `Ce que j'ai trouvé fascinant en découvrant le cours classique, c'est que rien n'est aléatoire. Chaque exercice prépare le suivant — c'est une architecture pensée sur des siècles de pratique pédagogique.
 
