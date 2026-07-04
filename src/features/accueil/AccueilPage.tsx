@@ -170,125 +170,133 @@ export function AccueilPage() {
         </div>
       </section>
 
-      {/* Reprends où tu en étais */}
-      {derniereUnite && (
-        <section className="px-4 pt-5" aria-label="Reprends où tu en étais">
-          <h2 className="font-[var(--font-titre)] font-bold text-sm text-[var(--color-encre)] uppercase tracking-wide mb-3">
-            Reprends où tu en étais
-          </h2>
-          <Link
-            to={`/unite/${derniereUnite.numero}`}
-            className="flex items-center gap-3 p-4 bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-shadow"
-          >
-            <span
-              className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-[var(--font-titre)] font-bold text-white text-sm"
-              style={{ backgroundColor: iconeCouleur[derniereUnite.iconeSvgId] ?? 'var(--color-candy-lavande)' }}
-              aria-hidden="true"
+      {/* === Zone "Aujourd'hui" — trois cartes groupées dans un bac commun === */}
+      {(derniereUnite || TERME_DU_JOUR || ENTREE_JOURNAL) && (
+        <div className="bg-[var(--color-plumy-bg)] px-4 py-4 space-y-2.5 mt-1">
+
+          {/* Reprends où tu en étais */}
+          {derniereUnite && (
+            <Link
+              to={`/unite/${derniereUnite.numero}`}
+              aria-label={`Reprends où tu en étais — ${derniereUnite.titre}`}
+              className="block bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-shadow overflow-hidden"
             >
-              {derniereUnite.numero}
-            </span>
-            <div className="flex-1 min-w-0">
-              <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm leading-snug">
-                {derniereUnite.titre}
-              </p>
-              <p className="text-xs text-[var(--color-gris-texte)] mt-0.5">
-                {progressParUnite[derniereUnite.numero]
-                  ? `${progressParUnite[derniereUnite.numero].vus} / ${progressParUnite[derniereUnite.numero].total} termes vus`
-                  : 'Continue ta progression'}
-              </p>
-            </div>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="flex-shrink-0 text-[var(--color-gris-texte)]">
-              <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </Link>
-        </section>
-      )}
+              <h2 className="px-4 pt-2.5 pb-1 text-[10px] font-[var(--font-titre)] font-bold uppercase tracking-widest text-[var(--color-gris-texte)]">
+                Reprends où tu en étais
+              </h2>
+              <div className="flex items-center gap-3 px-4 pb-3.5">
+                <span
+                  className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-[var(--font-titre)] font-bold text-white text-sm"
+                  style={{ backgroundColor: iconeCouleur[derniereUnite.iconeSvgId] ?? 'var(--color-candy-lavande)' }}
+                  aria-hidden="true"
+                >
+                  {derniereUnite.numero}
+                </span>
+                <div className="flex-1 min-w-0">
+                  <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm leading-snug">
+                    {derniereUnite.titre}
+                  </p>
+                  <p className="text-xs text-[var(--color-gris-texte)] mt-0.5">
+                    {progressParUnite[derniereUnite.numero]
+                      ? `${progressParUnite[derniereUnite.numero].vus} / ${progressParUnite[derniereUnite.numero].total} termes vus`
+                      : 'Continue ta progression'}
+                  </p>
+                </div>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="flex-shrink-0 text-[var(--color-gris-texte)]">
+                  <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </div>
+            </Link>
+          )}
 
-      {/* Terme du jour */}
-      {TERME_DU_JOUR && (
-        <section className="px-4 pt-5" aria-label="Terme du jour">
-          <h2 className="font-[var(--font-titre)] font-bold text-sm text-[var(--color-encre)] uppercase tracking-wide mb-3">
-            {fr.termeDuJour.titre}
-          </h2>
-          <motion.div
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.1 }}
-            className="bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] p-4 flex gap-3"
-          >
-            <img
-              src="/mascotte/plumy-encouragement.png"
-              alt=""
-              aria-hidden="true"
-              className="w-14 h-14 object-contain flex-shrink-0"
-              style={{ mixBlendMode: 'multiply' }}
-            />
-            <div className="flex-1 min-w-0">
-              <p className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-base leading-snug mb-1">
-                {TERME_DU_JOUR.nom}
-              </p>
-              <div className="flex items-start gap-1 mb-2">
-                <p className="text-xs text-[var(--color-gris-texte)] leading-snug line-clamp-2 flex-1">
-                  {TERME_DU_JOUR.definition}
+          {/* Terme du jour */}
+          {TERME_DU_JOUR && (
+            <motion.div
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.1 }}
+              className="bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] overflow-hidden"
+            >
+              <h2 className="px-4 pt-2.5 pb-1 text-[10px] font-[var(--font-titre)] font-bold uppercase tracking-widest text-[var(--color-gris-texte)]">
+                {fr.termeDuJour.titre}
+              </h2>
+              <div className="flex gap-3 px-4 pb-3.5">
+                <img
+                  src="/mascotte/plumy-encouragement.png"
+                  alt=""
+                  aria-hidden="true"
+                  className="w-14 h-14 object-contain flex-shrink-0"
+                  style={{ mixBlendMode: 'multiply' }}
+                />
+                <div className="flex-1 min-w-0">
+                  <p className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-base leading-snug mb-1">
+                    {TERME_DU_JOUR.nom}
+                  </p>
+                  <div className="flex items-start gap-1 mb-2">
+                    <p className="text-xs text-[var(--color-gris-texte)] leading-snug line-clamp-2 flex-1">
+                      {TERME_DU_JOUR.definition}
+                    </p>
+                    <SpeakButton text={TERME_DU_JOUR.definition} size={13} />
+                  </div>
+                  <p className="text-xs italic text-[var(--color-candy-rose)] mb-2">{MOT_PLUMY}</p>
+                  <Link
+                    to={`/terme/${TERME_DU_JOUR.id}`}
+                    className="text-xs font-semibold text-[var(--color-plumy-blue)] underline underline-offset-2"
+                  >
+                    {fr.termeDuJour.decouvrir}
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+          )}
+
+          {/* Journal de Plumy */}
+          {ENTREE_JOURNAL && (
+            <motion.div
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.15 }}
+              className="bg-[var(--color-candy-lavande-light,#f3f0ff)] rounded-[var(--radius-card)] shadow-[var(--shadow-card)] overflow-hidden"
+            >
+              <h2 className="px-4 pt-2.5 pb-1 text-[10px] font-[var(--font-titre)] font-bold uppercase tracking-widest text-[var(--color-gris-texte)]">
+                {fr.journalPlumy.titre}
+              </h2>
+              <div className="px-4 pb-3.5">
+                <p className="font-[var(--font-manuscrit)] font-bold text-[var(--color-encre)] text-base mb-2">
+                  {ENTREE_JOURNAL.titre}
                 </p>
-                <SpeakButton text={TERME_DU_JOUR.definition} size={13} />
+                <div className="flex items-start gap-1">
+                  <p className="text-sm italic text-[var(--color-encre)] leading-snug line-clamp-3 flex-1">
+                    {ENTREE_JOURNAL.contenu}
+                  </p>
+                  <SpeakButton text={ENTREE_JOURNAL.contenu} size={13} />
+                </div>
+                {ENTREE_JOURNAL.termeIds.length > 0 && (
+                  <div className="flex flex-wrap gap-1.5 mt-2">
+                    {ENTREE_JOURNAL.termeIds.map(id => {
+                      const t = tousLesTermes.find(x => x.id === id)
+                      if (!t) return null
+                      return (
+                        <Link
+                          key={id}
+                          to={`/terme/${id}`}
+                          className="text-xs px-2 py-0.5 rounded-full bg-white text-[var(--color-plumy-blue)] font-semibold"
+                        >
+                          {t.nom}
+                        </Link>
+                      )
+                    })}
+                  </div>
+                )}
               </div>
-              <p className="text-xs italic text-[var(--color-candy-rose)] mb-2">{MOT_PLUMY}</p>
-              <Link
-                to={`/terme/${TERME_DU_JOUR.id}`}
-                className="text-xs font-semibold text-[var(--color-plumy-blue)] underline underline-offset-2"
-              >
-                {fr.termeDuJour.decouvrir}
-              </Link>
-            </div>
-          </motion.div>
-        </section>
-      )}
+            </motion.div>
+          )}
 
-      {/* Journal de Plumy */}
-      {ENTREE_JOURNAL && (
-        <section className="px-4 pt-4" aria-label="Journal de Plumy">
-          <h2 className="font-[var(--font-titre)] font-bold text-sm text-[var(--color-encre)] uppercase tracking-wide mb-3">
-            {fr.journalPlumy.titre}
-          </h2>
-          <motion.div
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.15 }}
-            className="bg-[var(--color-candy-lavande-light,#f3f0ff)] rounded-[var(--radius-card)] shadow-[var(--shadow-card)] p-4"
-          >
-            <p className="font-[var(--font-manuscrit)] font-bold text-[var(--color-encre)] text-base mb-2">
-              {ENTREE_JOURNAL.titre}
-            </p>
-            <div className="flex items-start gap-1">
-              <p className="text-sm italic text-[var(--color-encre)] leading-snug line-clamp-3 flex-1">
-                {ENTREE_JOURNAL.contenu}
-              </p>
-              <SpeakButton text={ENTREE_JOURNAL.contenu} size={13} />
-            </div>
-            {ENTREE_JOURNAL.termeIds.length > 0 && (
-              <div className="flex flex-wrap gap-1.5 mt-2">
-                {ENTREE_JOURNAL.termeIds.map(id => {
-                  const t = tousLesTermes.find(x => x.id === id)
-                  if (!t) return null
-                  return (
-                    <Link
-                      key={id}
-                      to={`/terme/${id}`}
-                      className="text-xs px-2 py-0.5 rounded-full bg-white text-[var(--color-plumy-blue)] font-semibold"
-                    >
-                      {t.nom}
-                    </Link>
-                  )
-                })}
-              </div>
-            )}
-          </motion.div>
-        </section>
+        </div>
       )}
 
       {/* Parcours thématiques */}
-      <section className="px-4 pt-4" aria-label={fr.parcours.titre}>
+      <section className="px-4 pt-5" aria-label={fr.parcours.titre}>
         <h2 className="font-[var(--font-titre)] font-bold text-sm text-[var(--color-encre)] uppercase tracking-wide mb-3">
           {fr.parcours.titre}
         </h2>

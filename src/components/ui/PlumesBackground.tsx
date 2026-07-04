@@ -7,7 +7,7 @@ const PLUMES = [
       width: '55vw',
       maxWidth: 280,
       rotate: '12deg',
-      opacity: 0.11,
+      opacity: 0.05,
     },
   },
   {
@@ -18,7 +18,7 @@ const PLUMES = [
       width: '50vw',
       maxWidth: 260,
       rotate: '-20deg',
-      opacity: 0.09,
+      opacity: 0.04,
     },
   },
   {
@@ -29,7 +29,7 @@ const PLUMES = [
       width: '42vw',
       maxWidth: 200,
       rotate: '5deg',
-      opacity: 0.07,
+      opacity: 0.03,
     },
   },
 ]
