@@ -49,4 +49,14 @@ describe('validerSauvegarde', () => {
   it("rejette un tableau JSON brut (version et exporteLe absents)", () => {
     expect(() => validerSauvegarde([])).toThrow('invalide')
   })
+
+  it('rejette une version supérieure au schéma courant', () => {
+    const future = { ...sauvegardeValide, version: String(parseInt(SCHEMA_VERSION) + 1) }
+    expect(() => validerSauvegarde(future)).toThrow('non supportée')
+  })
+
+  it('accepte une version inférieure au schéma courant', () => {
+    const old = { ...sauvegardeValide, version: '1' }
+    expect(() => validerSauvegarde(old)).not.toThrow()
+  })
 })
