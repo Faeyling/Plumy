@@ -71,11 +71,13 @@ Les **Revues noires de Harlem** (Cotton Club, Apollo Theater) propulsent des art
 
 ---
 
-**L'ère des comédies musicales (années 1940) — le jazz entre dans la narration**
+**Hollywood et Broadway (années 1930–1950) — le jazz entre dans la narration**
 
-Quand le jazz rencontre Broadway et Hollywood, quelque chose de nouveau se passe : l'improvisation laisse la place à la composition chorégraphique, et le jazz acquiert une **fonction narrative** — il ne divertit plus seulement, il *raconte*. Trois figures centrales :
+Quand le jazz rencontre Hollywood et Broadway, quelque chose de nouveau se passe : l'improvisation laisse la place à la composition chorégraphique, et le jazz acquiert une **fonction narrative** — il ne divertit plus seulement, il *raconte*. Les figures qui ont construit cette époque :
 
-- **Jack Cole** — le "père du theatrical jazz" : il codifie les isolations, intègre les techniques afro-caribéennes, pose les bases d'un vocabulaire transmissible
+- **Fred Astaire (1899–1987)** — dès 1933, il devient la référence masculine du film-musical : il mêle la fluidité du ballet à la brusquerie du jazz, et est le premier à danser *chaque note de musique* pour que le motif rythmique se reflète exactement dans les pas. Trente films, une influence encore perceptible aujourd'hui
+- **Jack Cole (1911–1974)** — le "père du theatrical jazz" : formé à la Denishawn School, il codifie les isolations, intègre les techniques afro-caribéennes et africaines, pose les bases d'un vocabulaire transmissible ; il travaille avec Rita Hayworth, Marilyn Monroe, Gene Kelly
+- **Gene Kelly (1912–1996)** — athlétisme, narration complexe, qualités dramatiques : *Singin' in the Rain* (1952) reste une référence absolue pour l'alliance entre technique de danse et présence d'acteur
 - **Jerome Robbins** — *West Side Story*, *On the Town* : précision dramatique sans jamais sacrifier le jazz
 - **Bob Fosse** — ses racines sont dans cette période ; il prolongera l'héritage Cole tout en le transformant profondément
 
@@ -88,6 +90,7 @@ Après la guerre, le jazz cherche à se systématiser — à devenir une discipl
 - **Matt Mattox** ouvre ses studios à New York et pose les bases du modern jazz : énergie, rythmes syncopés, pauses, silences, dynamique, expression individuelle
 - **Alvin Ailey** fonde son American Dance Theater en 1958, réunissant jazz afro-américain et techniques modernes Graham/Horton — *Revelations* (1960) reste une œuvre fondatrice
 - La **Technique Luigi** ("Never Stop Moving") représente la première codification spécifique au modern jazz : souplesse, continuité, jamais d'arrêt du flux
+- **Rick Odums (1931–2010)** — né à la Nouvelle-Orléans, il est l'un des pionniers de l'enseignement du jazz aux États-Unis ; il enseigne à l'Alvin Ailey American Dance Theater et à la Joffrey Ballet School, et chorégraphie pour Broadway et le cinéma
 
 > Ce que je retiens de tout ça : le jazz a toujours su se réinventer tout en gardant le fil de ses origines. Et cette capacité de transformation, tu vas la retrouver dans ta propre pratique — c'est l'âme du jazz.`,
       },

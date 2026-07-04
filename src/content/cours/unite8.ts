@@ -36,8 +36,17 @@ Le jazz a toujours inclus des danses en talons — les danseuses de revue, les c
 **Le hip-hop et le R&B des années 1990–2000 :**
 Les clips vidéo de Janet Jackson, Beyoncé, Ciara — chorégraphiés en talons avec une qualité jazz/urban — ont popularisé le heels dance contemporain.
 
-**Aujourd'hui :**
-La danse heels est enseignée dans des studios du monde entier, avec des compétitions (World of Dance, etc.) et un corpus pédagogique croissant.
+**L'ère des clips (années 1990–2000) :**
+Beyoncé, Janet Jackson, Madonna, Britney Spears — des danseuses en talons, ultra puissantes, ultra présentes. Les chorégraphies deviennent iconiques : marches lentes, poses fortes, regards caméra. Les studios de danse commencent à créer des cours "en talons" inspirés des clips.
+
+**La naissance de la heels dance structurée :**
+C'est dans les studios de Los Angeles, à partir des années 2000-2010, que la heels dance prend sa forme actuelle. Des chorégraphes comme **Yanis Marshall**, **JoJo Gomez** et **Brian Friedman** posent les codes : technique structurée, bases pédagogiques claires, mélange de jazz, commercial, attitude et storytelling. La discipline voyage aujourd'hui dans le monde entier — Paris, Londres, Tokyo, Berlin — avec des compétitions (World of Dance, etc.) et un corpus pédagogique croissant.
+
+**Une distinction essentielle :**
+Danser en talons ne veut pas dire faire de la heels dance. Porter des talons pendant une chorégraphie ne suffit pas. En heels dance, *tout part du talon* — la posture, la marche, les transferts de poids, l'équilibre, l'axe du corps. Ce que j'explique à tous mes élèves dès le premier cours : ce n'est pas "je danse et j'ai des talons", c'est **"je danse parce que j'ai des talons"**.
+
+**Heels dance vs heels cabaret :**
+La heels dance regroupe plusieurs styles. Le heels cabaret met l'accent sur le théâtre, l'élégance, le jeu scénique — mouvements plus lents, plus posés, plus narratifs. La heels dance "classique" est plus proche des clips, du jazz ou du commercial. Beaucoup de studios mélangent les deux, et c'est tout à fait cohérent.
 
 > Porter des talons, c'est choisir une contrainte et en faire une qualité. La danse heels transforme la limitation en langage. Moi, je trouve ça magnifique — et j'espère que toi aussi tu vas l'apprécier.`,
       },
