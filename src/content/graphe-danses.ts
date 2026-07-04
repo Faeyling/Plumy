@@ -62,9 +62,30 @@ export const noeuds: Noeud[] = [
     label: 'Vogue & ballroom',
     periode: 'Années 1970',
     x: 10, y: 660,
-    type: 'mouvement',
+    type: 'origine',
     heritage: ['noir-lgbtq'],
     note: "Né dans les communautés noires et LGBTQ+ de New York.",
+  },
+  {
+    id: 'rio-de-la-plata',
+    label: 'Río de la Plata',
+    labelBis: '(Buenos Aires / Montevideo)',
+    periode: 'XIXe s.',
+    x: 10, y: 800,
+    type: 'origine',
+    heritage: ['afro-americain'],
+    note: "Fusion du candombe africain, de la habanera cubaine et de la milonga européenne dans les conventillos porteños.",
+  },
+
+  // === TANGO ARGENTIN (col 1 bas) ===
+  {
+    id: 'tango-argentin',
+    label: 'Tango argentin',
+    periode: 'XIXe s. →',
+    x: 220, y: 800,
+    type: 'discipline',
+    heritage: ['afro-americain'],
+    note: "Né à Buenos Aires et Montevideo fin XIXe s. Reconnu au Patrimoine immatériel de l'UNESCO (2009). Milonga, vals et tango sont ses trois formes.",
   },
 
   // === TRANSITIONNELLE (col 1, x=220) ===
@@ -209,4 +230,6 @@ export const liens: Lien[] = [
   { de: 'pole-dance', vers: 'exotic-pole' },
   { de: 'pole-dance', vers: 'pole-theatre' },
   { de: 'exotic-pole', vers: 'heels', type: 'influence' },
+  { de: 'rio-de-la-plata', vers: 'tango-argentin' },
+  { de: 'traditions-africaines', vers: 'rio-de-la-plata', type: 'influence' },
 ]
