@@ -81,6 +81,15 @@ La grande synthèse. **Agrippina Vaganova** (1879–1951), ancienne ballerine du
 
 C'est l'école du Bolchoï et du Mariinsky, et de nombreux danseurs considérés parmi les plus grands du XXe siècle.
 
+**L'école américaine — Balanchine et la vitesse**
+**George Balanchine** (1904–1983), lui-même formé à l'école russe, a développé aux États-Unis un style inimitable : vitesse, musicalité extrême, lignes allongées, et une façon de traiter le corps féminin comme un instrument précis. La **Méthode Balanchine** met en avant des chevilles très tendues, des lignes épurées, un rapport quasi-mathématique à la musique. C'est le style du New York City Ballet, qu'il a cofondé. Quand tu regardes du NYCB, tu comprends instantanément de quoi je parle.
+
+**L'école danoise — le style Bournonville**
+**August Bournonville** (1805–1879), danseur et chorégraphe danois formé à Paris par Auguste Vestris, a créé un style très personnel : ballon naturel (impression de légèreté et de suspension), petite batterie précise, pas enchantés et vivants. Son répertoire — *La Sylphide* (version danoise, 1836), *Napoli* — est encore interprété par le Royal Danish Ballet de la façon dont il l'a codifié. Une tradition ininterrompue depuis presque deux siècles.
+
+**La Royal Academy of Dance (RAD) — la méthode internationale**
+Créée en 1920 par un consortium de danseurs européens (anglais, français, italiens, russes, danois), la **méthode RAD** combine les grandes écoles pour former un standard international. Elle est aujourd'hui enseignée par **12 000 membres dans 70 pays** et propose des examens officiels de la base jusqu'au niveau professionnel. Si tu as grandi dans une école de danse en dehors des grandes traditions nationales, tu as probablement appris selon cette méthode.
+
 **La hiérarchie dans une grande compagnie**
 Dans les grandes compagnies à la française, les danseurs progressent selon une hiérarchie stricte — chaque échelon représente des années de travail. J'ai toujours trouvé ça fascinant : c'est une vie entière structurée par la progression artistique.
 
@@ -208,7 +217,9 @@ La jambe s'ouvre lentement depuis le retiré jusqu'à 90° ou plus. Devant, côt
 La position la plus longue du répertoire classique. La ligne va de la pointe des doigts à la pointe du pied arrière — tout le corps contribue à allonger cette diagonale. Et cette ligne vient du dos, pas de la jambe.
 
 **3. L'attitude**
-Jambe arrière fléchie, genou à hauteur de hanche. Plus sculpturale que l'arabesque, plus expressive. Inspirée de la statue de Mercure de Giambologna — un détail que j'adore.
+Jambe arrière fléchie, genou à hauteur de hanche. Plus sculpturale que l'arabesque, plus expressive. Inspirée de la statue de Mercure de Giambologna — un détail que j'adore. Il existe deux variantes :
+- **Attitude à la russe** : le talon de la jambe en l'air se trouve *plus haut* que le genou — ligne ascendante, grande amplitude
+- **Attitude à la française** : le talon est *aligné* sur le genou — ligne plus horizontale, plus classique dans sa retenue
 
 **4. Les équilibres**
 Tenir une position sur demi-pointe ou pointe. La durée d'un équilibre dépend :
@@ -234,6 +245,11 @@ Petits sauts vifs, souvent en séquences de 8 à 16 temps :
 - **Jetés** : transfert de poids d'une jambe à l'autre
 - **Pas de bourrée** : liaison de trois petits pas sur demi-pointe
 
+**Autres pas essentiels du petit allegro :**
+- **Sissonne** : 2 pieds propulsent le saut, 1 seul pied reçoit à l'atterrissage. Un des rares sauts qui "ouvre" à la réception.
+- **Entrechat** : soubresaut ou changement de pied *battu* — les jambes se croisent et se décroisent rapidement pendant la phase aérienne. L'entrechat-quatre est la référence : croisé → ouvert → croisé, tout en l'air.
+- **Cabriole** : une jambe part en l'air, la deuxième la rejoint et la *frappe* avant de redescendre. C'est la batterie au niveau supérieur — il faut une vraie élévation pour que la frappe soit propre.
+
 **La règle d'or du petit allegro :**
 Atterrir toujours en demi-plié, talon–voûte–métatarses–orteils. Un atterrissage silencieux = bonne technique. Si tu entends "clac" à chaque atterrissage, ton plié ne fait pas son travail.
 
@@ -250,6 +266,13 @@ L'élan est fondamental. Des pas de couru, des glissades ou des chassés te donn
       {
         titre: 'Les tours — pirouette, fouetté, chaînés',
         contenuMarkdown: `Les tours sont souvent la partie la plus intimidante de la technique classique — et la plus satisfaisante à maîtriser. Dans mon carnet, j'ai des pages entières de notes dessus.
+
+**En dehors / en dedans — la direction du tour**
+Deux directions fondamentales, et la confusion entre les deux est très courante :
+- **Tour en dehors** : on tourne du côté de la jambe de travail — la jambe qui travaille "chasse" vers l'extérieur, c'est la direction "naturelle" de la pirouette classique.
+- **Tour en dedans** : on tourne *vers* la jambe de terre — plus inhabituel, part d'une grande quatrième, la jambe de devant pliée, on tourne toujours du côté du public.
+
+**Déboulé :** enchaînement de tours rapides passant alternativement par la 1ère et la 5ème position sur demi-pointe. La vitesse vient de l'élan continu — c'est l'outil de déplacement le plus rapide en technique classique.
 
 **La pyramide de l'apprentissage des tours :**
 
