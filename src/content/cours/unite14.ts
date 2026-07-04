@@ -74,7 +74,15 @@ Marche dans l'espace sans destination, sans intention de faire quelque chose. Ob
 Fixe un point au centre du champ visuel tout en élargissant la conscience au maximum de la périphérie. Agrandis.
 
 **La respiration abdominale :**
-5 respirations lentes et profondes avant de commencer. Le système nerveux parasympathique s'active — la tension diminue.`,
+5 respirations lentes et profondes avant de commencer. Le système nerveux parasympathique s'active — la tension diminue.
+
+**Ce que les neurosciences ajoutent — et qui me passionne :**
+
+La recherche en neurosciences a mis en lumière deux mécanismes qui éclairent l'improvisation d'une façon que j'aurais voulu connaître bien plus tôt.
+
+**La cognition incarnée (embodied cognition) :** Nos processus cognitifs sont profondément influencés par les expériences corporelles — et la relation est bidirectionnelle. En improvisation, cela signifie que le mouvement que tu produis influence en retour ton état émotionnel. Le corps n'attend pas l'émotion pour bouger — il la crée aussi en bougeant. L'état de disponibilité n'est pas seulement une préparation mentale : c'est une préparation physique qui produit un état mental.
+
+**Les neurones miroirs :** Ces neurones s'activent non seulement quand tu effectues une action, mais aussi quand tu observes cette même action chez quelqu'un d'autre. En danse, cela signifie que le public peut ressentir les émotions que le danseur exprime — pas métaphoriquement, mais neurologiquement. Et en improvisation collective, cela signifie que ton partenaire ressent ton mouvement de l'intérieur. L'écoute est littéralement inscrite dans le corps.`,
       },
       {
         titre: "Scores, contraintes et tâches — les outils de l'improvisation",
@@ -149,7 +157,21 @@ Si les scores donnent le cadre, la LMA donne le vocabulaire. C'est un système d
 **Comment utiliser la LMA comme contrainte d'improvisation :**
 Chaque combinaison de facteurs produit une qualité de mouvement — et une couleur émotionnelle — différente. Un mouvement fort + soudain + direct + contrôlé évoque l'affirmation ou la résistance. Un mouvement léger + soutenu + indirect + libre évoque le flottement ou la rêverie. Entre ces extrêmes, une infinité de nuances.
 
-*Exercice que j'adore donner :* traverse l'espace en changeant un seul facteur d'effort toutes les 8 secondes. Observe comment ton corps change — et comment ton état intérieur change avec lui. Le mouvement crée l'émotion autant qu'il l'exprime.`,
+*Exercice que j'adore donner :* traverse l'espace en changeant un seul facteur d'effort toutes les 8 secondes. Observe comment ton corps change — et comment ton état intérieur change avec lui. Le mouvement crée l'émotion autant qu'il l'exprime.
+
+---
+
+## Les "improvisation technologies" de Forsythe
+
+**William Forsythe** a développé un système qu'il appelle *improvisation technologies* — des outils pour générer du mouvement de façon spontanée mais structurée. C'est une autre façon de travailler avec des contraintes, différente des scores : on part du corps et de l'espace, pas d'une règle externe.
+
+**Deux concepts clés :**
+
+**La décomposition :** Prendre un mouvement existant, le décomposer en éléments (direction, niveau, impulsion, point d'ancrage), puis le réassembler de manière nouvelle. Même matériau, nouvelle combinaison — un peu comme le procédé de fragmentation en composition, mais appliqué à l'improvisation en temps réel.
+
+**L'isométrie :** Explorer les relations géométriques dans l'espace — tracer des lignes, des plans, des points imaginaires dans l'espace environnant, et laisser le corps trouver ses trajets en réponse à ces formes. Forsythe parle de "remplir l'espace" comme une architecture invisible.
+
+Ces outils montrent que les contraintes les plus puissantes ne sont pas toujours des règles sociales ou temporelles — parfois c'est l'espace lui-même qui guide.`,
       },
       {
         titre: "L'écoute du partenaire — improviser à plusieurs",

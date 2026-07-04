@@ -448,6 +448,26 @@ Du jazz qui a fusionné avec les danses urbaines — hip-hop, dancehall, waackin
 **Ce qui le distingue du hip-hop pur :**
 Il garde une structure de formation et une chorégraphie apprise — le hip-hop est plus libre et cypher.
 
+**Les origines culturelles du hip-hop — pour danser en sachant d'où ça vient :**
+Le hip-hop n'est pas né dans un cours de danse. Il est né dans les rues du **Bronx à New York, à la fin des années 1970**, porté par **Afrika Bambaataa** (Kahyan Aasim) et le mouvement de la Universal Zulu Nation — un courant non violent qui prônait le respect et la fraternité en lieu et place de la violence des gangs.
+
+La culture hip-hop se structure autour de **quatre piliers** :
+- Le **DJ** — disc jockey, mixeur et scratcheur de vinyles
+- Le **MC** — master of ceremony, rappeur, animateur de foule
+- Le **B-boy / B-girl** — break-dancer (et pratiquant d'autres styles hip-hop)
+- Le **graffer** — artiste de graffiti et de lettrage mural
+
+**Les formes de danse :**
+- **Breaking** — acrobatique, alternant debout (uprock) et sol (downrock)
+- **Locking** — arrêts francs et mouvements saccadés liés au funk
+- **Popping** — contractions musculaires rapides créant l'effet "robot" ; l'**electric boogaloo** naît en Californie dans les années 1980 au contact de la funk
+
+Les **battles** — confrontations d'improvisation freestyle au centre d'un cercle — sont l'ADN de la culture hip-hop : compétition par le mouvement, pas par la violence.
+
+**En France :** L'émission **H.I.P. H.O.P.** animée par Sidney Duteil sur TF1 (1984) a popularisé la culture hip-hop avec des cours, des battles et des concerts en direct. La France a inventé le terme **"smurf"** pour désigner le hip-hop dansé debout — probablement à cause des gants blancs portés par certains danseurs, les schtroumpfs s'appelant "Smurfs" en anglais.
+
+**Le moonwalk :** ce pas est souvent attribué exclusivement à Michael Jackson, mais il circulait déjà dans la communauté hip-hop avant qu'il ne le popularise — tout comme le mime a influencé certains mouvements. L'idée vient de danseurs de rue.
+
 ---
 
 ## Modern'jazz
