@@ -239,6 +239,7 @@ export const fr = {
       francophone: "Publications francophones",
       physiologie: "Physiologie du danseur",
       'culture-histoire': "Culture & histoire",
+      'tango-argentin': "Tango argentin",
     },
   },
 
