@@ -90,7 +90,8 @@ export function useSpeech() {
             ctx.close()
             setIsPlaying(false)
           }
-        } catch {
+        } catch (err) {
+          console.error('[ElevenLabs] erreur TTS:', err)
           speakLocal(text)
         }
       })()
