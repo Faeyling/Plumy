@@ -69,6 +69,7 @@ export const fr = {
     recherche: "Rechercher un terme…",
     filtrerDiscipline: "Filtrer par discipline",
     filtrerCategorie: "Filtrer par catégorie",
+    filtrerUnite: "Filtrer par unité",
     tousLesFiltres: "Tous",
     termesCount: (n: number) => `${n} terme${n > 1 ? "s" : ""}`,
     aucunResultat: "Aucun terme ne correspond à ta recherche.",

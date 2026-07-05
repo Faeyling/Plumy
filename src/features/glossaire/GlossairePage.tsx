@@ -5,10 +5,18 @@ import { tousLesTermes } from '@/content/termes/index'
 import { termesPersoRepository } from '@/data/repositories/termesPersoRepository'
 import type { Terme, TermePersonnel, Discipline, Categorie } from '@/content/schema'
 import { fr } from '@/i18n/fr'
+import { unites } from '@/content/unites'
 
 import { matchTerme } from '@/lib/recherche'
 
 type TermeItem = Terme | TermePersonnel
+
+const TERME_UNITE: Record<string, number> = {}
+for (const u of unites) {
+  for (const id of u.termeIds) {
+    TERME_UNITE[id] = u.numero
+  }
+}
 
 const DISCIPLINES: Discipline[] = [
   'classique', 'contemporain', 'moderne', 'jazz', 'cabaret',
@@ -26,6 +34,7 @@ export function GlossairePage() {
   const [query, setQuery] = useState('')
   const [discipline, setDiscipline] = useState<Discipline | ''>('')
   const [categorie, setCategorie] = useState<Categorie | ''>('')
+  const [unite, setUnite] = useState<number | 0>(0)
   const [termesPerso, setTermesPerso] = useState<TermePersonnel[]>([])
 
   useEffect(() => {
@@ -37,6 +46,7 @@ export function GlossairePage() {
       .filter(t => {
         if (discipline && !t.disciplines.includes(discipline as Discipline)) return false
         if (categorie && !t.categories.includes(categorie as Categorie)) return false
+        if (unite && TERME_UNITE[t.id] !== unite) return false
         return matchTerme(t, query)
       })
       .sort((a, b) => a.nom.localeCompare(b.nom, 'fr'))
@@ -45,12 +55,13 @@ export function GlossairePage() {
       .filter(t => {
         if (discipline && discipline !== 'commun') return false
         if (categorie && (!t.categories || !t.categories.includes(categorie as Categorie))) return false
+        if (unite && t.uniteId !== unite) return false
         return matchTerme(t, query)
       })
       .sort((a, b) => (a.nom ?? '').localeCompare(b.nom ?? '', 'fr'))
 
     return [...termes, ...perso]
-  }, [query, discipline, categorie, termesPerso])
+  }, [query, discipline, categorie, unite, termesPerso])
 
   return (
     <div className="flex flex-col min-h-svh">
@@ -101,6 +112,20 @@ export function GlossairePage() {
             ))}
           </select>
         </div>
+
+        <select
+          value={unite}
+          onChange={e => setUnite(Number(e.target.value))}
+          className="w-full mt-2 py-2 px-2.5 rounded-lg bg-white border border-[var(--color-gris-doux)] text-xs text-[var(--color-encre)] focus:outline-none focus:border-[var(--color-candy-rose)]"
+          aria-label={fr.glossaire.filtrerUnite}
+        >
+          <option value={0}>{fr.glossaire.filtrerUnite}</option>
+          {unites.map(u => (
+            <option key={u.numero} value={u.numero}>
+              Unité {u.numero} — {u.titre}
+            </option>
+          ))}
+        </select>
 
         <p className="text-xs text-[var(--color-gris-texte)] mt-2">
           {fr.glossaire.termesCount(filtres.length)}
