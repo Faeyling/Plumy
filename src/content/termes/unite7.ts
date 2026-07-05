@@ -402,7 +402,7 @@ export const termesUnite7: Terme[] = [
     nom: 'Jazz Run',
     alias: ['course jazz', 'run jazz'],
     disciplines: ['jazz'],
-    categories: ['deplacements', 'fondamentaux'],
+    categories: ['deplacements'],
     definition: "Déplacement en course stylisé propre au jazz dance, caractérisé par un posé ball-heel (avant du pied d'abord), une légère inclinaison du buste en avant et une énergie projetée vers l'avant.",
     description: "Le jazz run, c'est la façon dont un danseur de jazz traverse la scène — ça n'a rien à voir avec courir pour attraper un bus. C'est une course qui a du style, de l'intention, de l'élan.\n\n**Caractéristiques :**\n- **Pose du pied** : ball-heel (avant du pied d'abord, puis talon)\n- **Genou plié** à chaque appui (jamais raides)\n- **Buste** légèrement incliné en avant\n- **Bras** libres, naturels ou stylisés selon la chorégraphie\n- **Regard** vers l'avant ou vers la destination\n\n**Différence avec la course ordinaire :**\nDans la vie quotidienne, on court talon-avant. En jazz, c'est ball-heel. Ce changement crée une qualité plus fluide, plus 'glissante', plus stylisée.\n\n**Usages :**\n- Traversée de scène\n- Préparation avant un grand saut (stag leap, grand saut)\n- Entrée ou sortie de plateau\n- Transition dans un enchaînement\n\n**Variations :**\n- Jazz run avec bras expressifs\n- Jazz run en flexion (niveau bas)\n- Jazz run avec pivot final",
     erreursCourantes: [
@@ -422,7 +422,7 @@ export const termesUnite7: Terme[] = [
     nom: 'Kick',
     alias: ['kick ball change', 'front kick', 'side kick', 'fan kick jazz'],
     disciplines: ['jazz', 'heels', 'cabaret'],
-    categories: ['techniques-jambes', 'fondamentaux'],
+    categories: ['pas'],
     definition: "Lancer de jambe tendue — la jambe s'envoie vers le haut (devant, côté ou derrière) avec force et précision, puis revient. Le kick est un fondamental du jazz et du cabaret.",
     description: "Le kick, c'est un grand classique du jazz — direct, énergique, visible. Il y en a pour tous les goûts : devant, côté, derrière, haut ou bas.\n\n**Types de kicks :**\n- **Front kick** : jambe lancée devant\n- **Side kick** : jambe lancée sur le côté\n- **Back kick** : jambe lancée derrière\n- **High kick** : front kick à hauteur maximale (cabaret, cancan)\n- **Fan kick** : arc de cercle de bas en haut en passant par le côté\n- **Hitch kick** : saut pendant lequel une ou deux jambes se lancent\n\n**Exécution (front kick) :**\n1. Poids sur la jambe d'appui\n2. La jambe libre s'envoie vers l'avant, genou tendu\n3. Au sommet : pointe ou flex selon le style\n4. Retour contrôlé — ne pas 'laisser tomber' la jambe\n5. Souvent suivi d'un ball change ou d'un step\n\n**Facteurs de qualité :**\n- Hauteur (flexibilité et force)\n- Précision de la direction\n- Contrôle du retour\n- Stabilité de la jambe d'appui",
     erreursCourantes: [
@@ -442,7 +442,7 @@ export const termesUnite7: Terme[] = [
     nom: 'Hip Roll',
     alias: ['roulement de bassin', 'rotation de hanches', 'hip circle'],
     disciplines: ['jazz', 'heels', 'burlesque'],
-    categories: ['isolations', 'techniques-corps'],
+    categories: ['qualites-de-mouvement'],
     definition: "Isolation du bassin décrivant un cercle complet dans un plan horizontal — les hanches tournent de l'avant vers le côté, vers l'arrière et retour, ou inversement.",
     description: "Le hip roll, c'est l'isolation qui fait tourner les hanches en cercle. Simple à décrire, plus subtil à bien exécuter.\n\n**Exécution :**\n1. Pieds à la largeur des hanches, genoux légèrement fléchis\n2. Pousser les hanches vers l'avant\n3. Faire pivoter vers le côté droit\n4. Pousser vers l'arrière\n5. Pivoter vers le côté gauche\n6. Revenir devant — cercle complet\n7. Répéter en continu ou inverser le sens\n\n**Points techniques :**\n- Le haut du corps reste **stable** (isolation = mouvement isolé du bassin)\n- Les genoux restent fléchis pour permettre la mobilité\n- La qualité est **fluide et continue**, pas saccadée\n\n**Hip roll vs figure 8 :**\nLe hip roll décrit un cercle horizontal. Le figure 8 décrit un huit en oscillant de côté à côté. Deux isolations, deux effets très différents.\n\n**Usages :**\nJazz show, heels, burlesque, danse orientale — le hip roll traverse de nombreuses disciplines.",
     erreursCourantes: [
@@ -461,8 +461,8 @@ export const termesUnite7: Terme[] = [
     id: 'freeze-jazz',
     nom: 'Freeze',
     alias: ['position freeze', 'arrêt net', 'pause sculptée'],
-    disciplines: ['jazz', 'heels', 'street-jazz'],
-    categories: ['techniques-corps', 'effets-sceniques'],
+    disciplines: ['jazz', 'heels'],
+    categories: ['jeu-de-scene'],
     definition: "Arrêt net et sculptural dans une position — le danseur s'immobilise instantanément, créant un contraste saisissant avec le mouvement précédent. Le freeze est un outil de dynamique et de théâtralité.",
     description: "Un bon freeze, c'est comme appuyer sur 'pause' — sauf que le corps continue de parler même immobile. L'arrêt est net, la position forte, le regard vivant.\n\n**Types de freezes :**\n- **Freeze debout** : arrêt dans une pose verticale (attitude, écarté, etc.)\n- **Freeze au sol** : arrêt dans une position de floorwork\n- **Freeze en équilibre** : arrêt sur une jambe ou en déséquilibre contrôlé\n- **Group freeze** : plusieurs danseurs qui s'arrêtent simultanément\n\n**Ce qui fait un bon freeze :**\n- L'**instantanéité** : zéro glissement, zéro décélération\n- La **tension** : le corps reste engagé, les muscles actifs\n- La **lisibilité** : la position doit être claire et forte\n- Le **regard** : il se pose quelque part avec intention\n\n**Freeze et musicalité :**\nLe freeze arrive généralement sur un accent fort (un beat, un accent orchestral, une rupture musicale). C'est là toute sa force dramatique.",
     erreursCourantes: [
@@ -522,7 +522,7 @@ export const termesUnite7: Terme[] = [
     nom: 'Tilt',
     alias: ['penché jazz', 'attitude tilt', 'arabesque tilt'],
     disciplines: ['jazz', 'heels'],
-    categories: ['techniques-corps', 'equilibres'],
+    categories: ['equilibres'],
     definition: "Position dans laquelle le danseur incline latéralement le corps tout en levant une jambe du côté opposé — le tilt crée une ligne oblique de la tête au pied levé.",
     description: "Le tilt est l'une des positions iconiques du jazz — cette inclinaison latérale avec une jambe haute crée une ligne visuelle forte et immédiatement reconnaissable.\n\n**La position :**\n- La jambe d'appui reste au sol, genou tendu ou légèrement fléchi\n- La jambe libre monte sur le côté, genou tendu\n- Le buste s'incline dans la direction opposée à la jambe\n- Tête dans le prolongement du corps ou regardant vers le haut\n- Bras : souvent un bras levé, l'autre tendu vers le bas\n\n**Ce qui crée la ligne :**\nLa beauté du tilt vient de la continuité : depuis le pied levé jusqu'au sommet du bras tendu — une diagonale ininterrompue.\n\n**Tilt vs arabesque :**\nL'arabesque s'incline vers l'avant, la jambe s'envole derrière. Le tilt s'incline sur le côté, la jambe monte latéralement. Deux diagonales, deux effets très différents.\n\n**Variantes :**\n- **Attitude tilt** : même inclinaison mais jambe arrière fléchie\n- **Penché** : tilt vers l'avant (proche de l'arabesque penché classique)",
     erreursCourantes: [
@@ -561,7 +561,7 @@ export const termesUnite7: Terme[] = [
     id: 'moonwalk',
     nom: 'Moonwalk',
     alias: ['back slide', 'glissement lunaire', 'backslide'],
-    disciplines: ['jazz', 'street-jazz'],
+    disciplines: ['jazz'],
     categories: ['deplacements', 'culture-histoire'],
     definition: "Pas de glissement vers l'arrière créant l'illusion optique d'une marche vers l'avant — la jambe semble avancer alors que le corps recule. Rendu iconique par Michael Jackson en 1983, mais utilisé dans le jazz bien avant lui.",
     description: "Le moonwalk, c'est l'un des pas de danse les plus reconnaissables de l'histoire de la pop culture. Et la bonne nouvelle : c'est faisable ! L'illusion repose entièrement sur la mécanique du pied.\n\n**Mécanisme :**\n1. Pied droit : talon posé, pointe levée\n2. Pied gauche : sur demi-pointe\n3. Le pied gauche glisse vers l'arrière en s'aplatissant\n4. En même temps, le pied droit monte sur demi-pointe\n5. Le pied gauche est à plat, le droit sur demi-pointe → échange des rôles\n6. Répéter en continuité\n\n**L'illusion :**\nL'alternance entre le pied plat (ancré) et le pied en glissement crée visuellement l'impression d'une marche vers l'avant. L'œil suit le pied 'fixe' et se fait tromper.\n\n**Histoire :**\nLe 'backslide' existait dès les années 1930 (Cab Calloway, Fred Astaire). Jeffrey Daniel le popularisa dans les années 1970. Michael Jackson en fit une œuvre d'art lors de Motown 25 (1983) avec 'Billie Jean'.",

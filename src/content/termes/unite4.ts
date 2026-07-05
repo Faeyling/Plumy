@@ -662,7 +662,7 @@ export const termesUnite4: Terme[] = [
     nom: 'Grand jeté',
     alias: ['grand jeté en avant', 'jeté porté', 'saut de l\'ange'],
     disciplines: ['classique'],
-    categories: ['sauts', 'allegro'],
+    categories: ['sauts'],
     definition: "Grand saut dans lequel le danseur élance une jambe tendue vers l'avant pendant que l'autre pousse à la verticale, créant un grand écart aérien. Le grand jeté est l'un des sauts les plus spectaculaires du vocabulaire classique.",
     description: "Le grand jeté en avant, c'est le saut que tout le monde reconnaît même sans avoir jamais pris un cours de danse. Ces deux jambes tendues en plein vol, à l'horizontale — c'est lui.\n\n**Exécution :**\n1. Élan (souvent par une glissade ou un chassé)\n2. Impulsion sur la jambe d'appui (demi-plié + poussée)\n3. La jambe libre s'élance vers l'avant, tendue\n4. La jambe d'appui pousse et part vers l'arrière\n5. Au point culminant : grand écart aérien\n6. Réception sur la jambe avant, puis plié\n\n**Ce qui fait la qualité du grand jeté :**\n- La suspension au sommet (feeling de flottement)\n- Les deux jambes tendues au maximum\n- La ligne des bras qui s'ouvre en arabesque ou en attitude\n- Un regard vers l'avant, jamais vers le sol\n\n**Variantes :**\n- Grand jeté en attitude : jambe arrière fléchie en attitude\n- Grand jeté en tournant : avec rotation dans les airs (saut de biche)",
     erreursCourantes: [
@@ -683,7 +683,7 @@ export const termesUnite4: Terme[] = [
     nom: 'Pas de deux',
     alias: ['adage de deux', 'grand pas de deux'],
     disciplines: ['classique'],
-    categories: ['concepts', 'ensemble'],
+    categories: ['concepts'],
     definition: "Danse pour deux partenaires — généralement structurée en entrée, adage, variations solos et coda. Dans le ballet classique, le pas de deux est le moment culminant où la ballerine atteint ses plus grandes lignes soutenue par son partenaire.",
     description: "Le pas de deux, c'est l'un des moments les plus poétiques du ballet classique. Deux corps qui dialoguent, se soutiennent, se répondent.\n\n**Structure du grand pas de deux classique :**\n1. **Entrée** : les deux danseurs arrivent ensemble\n2. **Adage** : danse lente et soutenue, la ballerine est portée et équilibrée par le partenaire\n3. **Variation de la ballerine** : solo technique de la danseuse\n4. **Variation du danseur** : solo technique du danseur\n5. **Coda** : finale virtuose à deux\n\n**Le rôle du porteur :**\nSoutenir, porter, tourner — tout doit sembler sans effort. L'objectif du partenaire est de sublimer, pas de sauver.\n\n**Célèbres pas de deux :**\n- Le Lac des Cygnes — l'adage du lac\n- La Belle au Bois Dormant — le rose adagio\n- Le Corsaire — virtuosité explosive\n- Giselle — tension dramatique inoubliable\n\n**Évolution :**\nLa forme a évolué — les rôles de porteur/porté ne sont plus genrés dans de nombreuses compagnies contemporaines.",
     erreursCourantes: [
@@ -703,7 +703,7 @@ export const termesUnite4: Terme[] = [
     nom: 'Sissonne',
     alias: ['sissonne ouverte', 'sissonne fermée', 'sissonne simple'],
     disciplines: ['classique'],
-    categories: ['sauts', 'allegro'],
+    categories: ['sauts'],
     definition: "Saut prenant appui sur deux pieds et retombant sur un seul pied. La sissonne est l'un des sauts les plus fondamentaux du répertoire classique, déclinable à l'infini selon la position de la jambe libre et la direction.",
     description: "La sissonne est partout dans le ballet — dans l'allegro du milieu, dans les variations, dans les diagonales. C'est un saut que tu vas rencontrer quotidiennement.\n\n**Exécution de base :**\n1. Demi-plié en 5ème position\n2. Saut sur deux pieds\n3. En l'air : ouverture de la jambe libre (devant, derrière ou côté)\n4. Réception sur une jambe\n5. Fermeture en 5ème (sissonne fermée) ou maintien de la jambe (sissonne ouverte)\n\n**Les principales sissonnes :**\n- **Sissonne fermée** : retour en 5ème position à la réception\n- **Sissonne ouverte** : la jambe libre reste levée à la réception\n- **En attitude ou en arabesque** : sissonne ouverte dans la position correspondante\n- **Petite sissonne** vs **grande sissonne** : hauteur et ouverture de jambe\n\n**Ce qui différencie une belle sissonne :**\nLa qualité de l'impulsion (les deux pieds doivent partir ensemble) et la tenue de la jambe libre à la réception.",
     erreursCourantes: [
@@ -724,7 +724,7 @@ export const termesUnite4: Terme[] = [
     nom: 'Changement de pied',
     alias: ['changement', 'petit changement', 'grand changement'],
     disciplines: ['classique'],
-    categories: ['sauts', 'allegro'],
+    categories: ['sauts'],
     definition: "Petit saut partant et arrivant en 5ème position, avec changement des pieds en l'air. Le pied qui était devant passe derrière, et vice-versa.",
     description: "Le changement de pied est souvent l'un des premiers petits sauts qu'on apprend. Tout simple en apparence — mais maîtrisé à la perfection, c'est la base de toute la batterie.\n\n**Exécution :**\n1. 5ème position, demi-plié\n2. Saut — les deux pieds quittent le sol simultanément\n3. En l'air : le pied avant passe derrière\n4. Réception en demi-plié, 5ème position inversée\n\n**Points clés :**\n- Les deux pieds doivent quitter le sol **en même temps**\n- Pointes étirées en l'air\n- Passage par les demi-pointes à la réception avant le plié\n- Le changement se fait **en l'air** — pas avant de quitter le sol\n\n**Lien avec la batterie :**\nL'entrechat, la royale, le brisé — ce sont tous des changements de pied avec battements en plus. Maîtriser le changement simple, c'est poser les fondations de la batterie.",
     erreursCourantes: [
@@ -745,7 +745,7 @@ export const termesUnite4: Terme[] = [
     nom: 'Temps levé',
     alias: ['temps levé sauté', 'temps levé en arabesque'],
     disciplines: ['classique'],
-    categories: ['sauts', 'allegro'],
+    categories: ['sauts'],
     definition: "Petit saut sur une jambe, l'autre jambe maintenant une position (retiré, arabesque, dégagé…). Le temps levé est le saut le plus simple sur une jambe de la danse classique.",
     description: "Le temps levé est à la fois un saut en soi et un outil de liaison permanent entre les pas. Tu l'utilises constamment sans forcément y prêter attention.\n\n**Exécution :**\n1. Demi-plié sur la jambe d'appui\n2. Saut — la jambe d'appui se tend complètement en l'air\n3. La jambe libre maintient sa position (retiré, arabesque, dégagé, etc.)\n4. Réception sur la même jambe, demi-plié\n\n**Positions de la jambe libre les plus fréquentes :**\n- **Retiré** : jambe pliée, pied à hauteur du genou\n- **Arabesque** : jambe tendue derrière\n- **Dégagé à la hauteur** : jambe tendue de côté ou devant\n\n**Usage dans les enchaînements :**\nLe temps levé apparaît souvent en répétitions (temps levés en arabesque enchaînés), comme préparation à un grand saut, ou comme conclusion d'une phrase.",
     erreursCourantes: [
@@ -766,7 +766,7 @@ export const termesUnite4: Terme[] = [
     nom: 'Demi-pointes',
     alias: ['demi-pointe', 'relevé sur demi-pointes', 'mi-pointes'],
     disciplines: ['classique', 'contemporain', 'moderne', 'jazz'],
-    categories: ['technique-corps', 'fondamentaux'],
+    categories: ['positions', 'concepts'],
     definition: "Position dans laquelle le danseur se tient sur la partie avant du pied — les métatarses — les talons décollés du sol. Les demi-pointes sont à mi-chemin entre le pied à plat et les pointes sur les orteils.",
     description: "Les demi-pointes, c'est l'endroit où on passe une grande partie du temps en cours. Entre le pied à plat et les vraies pointes, il y a ce territoire intermédiaire — les métatarses — qui demande autant de travail qu'on ne le croit.\n\n**La position :**\n- Talons levés, pied en appui sur le tiers avant\n- Les orteils restent posés à plat (contrairement aux pointes)\n- Le genou s'aligne avec l'axe du pied\n\n**L'importance en classique :**\nQuasiment tous les pas de liaison se font sur demi-pointes (pas de bourrée, glissade, chassé). Les pirouettes se lancent et se terminent via les demi-pointes.\n\n**Demi-pointes vs pointes :**\nSur demi-pointes, les orteils sont posés — accessible sans chausson de pointe. Sur pointes, le poids repose sur le bout des orteils dans un chausson rigide — hauteur et contraintes totalement différentes.\n\n**Renforcement :**\nTravailler en demi-pointes renforce les chevilles, les mollets et les intrinsèques du pied. Un travail progressif évite les blessures.",
     erreursCourantes: [
@@ -787,7 +787,7 @@ export const termesUnite4: Terme[] = [
     nom: 'Ballon',
     alias: ['qualité de ballon', 'légèreté en l\'air', 'suspension'],
     disciplines: ['classique'],
-    categories: ['qualites-mouvement', 'concepts'],
+    categories: ['qualites-de-mouvement', 'concepts'],
     definition: "Qualité de légèreté et de suspension dans les sauts — le danseur paraît flotter un instant au sommet de sa trajectoire. Le ballon n'est pas une hauteur brute, c'est une impression de flottement.",
     description: "Le ballon est l'une des qualités les plus enviées et les plus difficiles à définir en danse classique. Ce n'est pas la hauteur du saut — c'est cette seconde de suspension qui fait croire que le danseur peut rester là-haut.\n\n**Ce qui crée le ballon :**\n- Une montée **progressive** et silencieuse vers le sommet\n- Un **sommet prolongé** — la vitesse ralentit au point culminant\n- Une **réception douce** qui amortit progressivement sans bruit\n- Une **ligne** impeccable pendant tout le vol\n\n**Ballon vs hauteur :**\nCertains danseurs très hauts en saut ont peu de ballon. D'autres, plus modestes en hauteur, donnent l'impression de flotter. Le public perçoit le ballon, pas les centimètres.\n\n**Développer le ballon :**\n- Travailler les pliés (l'impulsion douce vient du plié profond)\n- Soigner la réception (pied-demi-pointe-plié, progressif et silencieux)\n- Ne jamais précipiter la descente — laisser le corps 'tomber' lentement\n- Pointes tendues au maximum en l'air (ça étire visuellement la trajectoire)",
     erreursCourantes: [
@@ -828,7 +828,7 @@ export const termesUnite4: Terme[] = [
     nom: 'Enchaînement',
     alias: ['combinaison', 'phrase de danse', 'séquence'],
     disciplines: ['classique', 'jazz', 'contemporain', 'moderne'],
-    categories: ['concepts', 'fondamentaux'],
+    categories: ['concepts'],
     definition: "Série de mouvements liés les uns aux autres dans un ordre déterminé, formant une phrase de danse cohérente. L'enchaînement est l'unité de travail de base dans un cours de danse technique.",
     description: "En cours, l'enchaînement, c'est la 'phrase' que le professeur te donne à apprendre et à refaire. C'est l'art de relier les pas entre eux sans rupture.\n\n**Pourquoi enchaîner est difficile :**\nChaque pas individuel peut être maîtrisé, mais les relier demande de :\n- Anticiper (penser toujours au pas suivant)\n- Trouver les pas de liaison (coupé, chassé, pas de bourrée)\n- Respecter le phrasé musical\n- Maintenir la qualité de chaque élément même en mouvement\n\n**Niveaux de complexité :**\n- **Simple** : deux à quatre pas de base liés\n- **Intermédiaire** : changements de direction, de niveau\n- **Avancé** : sauts, tours et liaisons enchaînés avec fluidité\n\n**Enchaînement vs chorégraphie :**\nL'enchaînement est une phrase technique répétée pour développer le corps. La chorégraphie est une composition artistique complète avec intention dramatique ou esthétique.",
     erreursCourantes: [
