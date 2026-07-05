@@ -274,30 +274,74 @@ function CoursMarkdown({ content }: { content: string }) {
     if (line.startsWith('### ')) {
       elements.push(
         <h3 key={i} className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-sm mt-4 mb-1">
-          {line.slice(4)}
+          <InlineMarkdown text={line.slice(4)} />
         </h3>
       )
     } else if (line.startsWith('## ')) {
       elements.push(
         <h2 key={i} className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-base mt-4 mb-2">
-          {line.slice(3)}
+          <InlineMarkdown text={line.slice(3)} />
         </h2>
       )
+    } else if (line.startsWith('# ')) {
+      elements.push(
+        <h1 key={i} className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-lg mt-5 mb-2">
+          <InlineMarkdown text={line.slice(2)} />
+        </h1>
+      )
     } else if (line.startsWith('> ')) {
+      // Collect consecutive blockquote lines into one element
+      const startI = i
+      const bqLines: string[] = []
+      while (i < lines.length && lines[i].startsWith('> ')) {
+        bqLines.push(lines[i].slice(2))
+        i++
+      }
       elements.push(
         <blockquote
-          key={i}
-          className="border-l-2 border-[var(--color-candy-lavande)] pl-3 italic text-sm text-[var(--color-gris-texte)] my-3"
+          key={startI}
+          className="border-l-2 border-[var(--color-candy-lavande)] pl-3 italic text-sm text-[var(--color-gris-texte)] my-3 space-y-1"
         >
-          <InlineMarkdown text={line.slice(2)} />
+          {bqLines.map((l, li) => <p key={li}><InlineMarkdown text={l} /></p>)}
         </blockquote>
       )
+      continue
     } else if (line.startsWith('- ')) {
+      // Collect consecutive list items into one <ul>
+      const startI = i
+      const items: string[] = []
+      while (i < lines.length && lines[i].startsWith('- ')) {
+        items.push(lines[i].slice(2))
+        i++
+      }
       elements.push(
-        <li key={i} className="text-sm text-[var(--color-encre)] leading-relaxed ml-4 list-disc">
-          <InlineMarkdown text={line.slice(2)} />
-        </li>
+        <ul key={startI} className="ml-4 my-1 space-y-0.5">
+          {items.map((item, ii) => (
+            <li key={ii} className="text-sm text-[var(--color-encre)] leading-relaxed list-disc">
+              <InlineMarkdown text={item} />
+            </li>
+          ))}
+        </ul>
       )
+      continue
+    } else if (/^\d+\. /.test(line)) {
+      // Collect consecutive ordered list items into one <ol>
+      const startI = i
+      const items: string[] = []
+      while (i < lines.length && /^\d+\. /.test(lines[i])) {
+        items.push(lines[i].replace(/^\d+\. /, ''))
+        i++
+      }
+      elements.push(
+        <ol key={startI} className="ml-4 my-1 space-y-0.5 list-decimal">
+          {items.map((item, ii) => (
+            <li key={ii} className="text-sm text-[var(--color-encre)] leading-relaxed">
+              <InlineMarkdown text={item} />
+            </li>
+          ))}
+        </ol>
+      )
+      continue
     } else if (line.startsWith('```')) {
       i++
       const codeLines: string[] = []
@@ -331,18 +375,33 @@ function CoursMarkdown({ content }: { content: string }) {
 }
 
 function InlineMarkdown({ text }: { text: string }) {
-  const parts = text.split(/\*\*(.*?)\*\*/g)
-  return (
-    <>
-      {parts.map((part, i) =>
-        i % 2 === 1 ? (
-          <strong key={i} className="font-semibold text-[var(--color-encre)]">
-            {part}
-          </strong>
-        ) : (
-          <span key={i}>{part}</span>
-        )
-      )}
-    </>
-  )
+  const inlineRe = /\*\*(.*?)\*\*|\*(.*?)\*|`(.*?)`|\[([^\]]+)\]\(([^)]+)\)/g
+  const nodes: React.ReactNode[] = []
+  let lastIndex = 0
+  let key = 0
+  let match: RegExpExecArray | null
+  while ((match = inlineRe.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      nodes.push(<span key={key++}>{text.slice(lastIndex, match.index)}</span>)
+    }
+    if (match[1] !== undefined) {
+      nodes.push(<strong key={key++} className="font-semibold text-[var(--color-encre)]">{match[1]}</strong>)
+    } else if (match[2] !== undefined) {
+      nodes.push(<em key={key++}>{match[2]}</em>)
+    } else if (match[3] !== undefined) {
+      nodes.push(<code key={key++} className="bg-[var(--color-papier-alt)] rounded px-1 py-0.5 text-xs font-mono">{match[3]}</code>)
+    } else if (match[4] !== undefined) {
+      nodes.push(
+        <a key={key++} href={match[5]} target="_blank" rel="noopener noreferrer"
+           className="text-[var(--color-plumy-blue)] underline underline-offset-2 hover:opacity-80">
+          {match[4]}
+        </a>
+      )
+    }
+    lastIndex = match.index + match[0].length
+  }
+  if (lastIndex < text.length) {
+    nodes.push(<span key={key++}>{text.slice(lastIndex)}</span>)
+  }
+  return <>{nodes}</>
 }

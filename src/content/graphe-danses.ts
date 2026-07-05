@@ -99,7 +99,7 @@ export const noeuds: Noeud[] = [
     heritage: ['afro-americain'],
   },
   {
-    id: 'danse-classique',
+    id: 'classique',
     label: 'Danse classique',
     periode: 'XVIIe s. →',
     x: 220, y: 200,
@@ -130,7 +130,7 @@ export const noeuds: Noeud[] = [
     heritage: ['afro-americain'],
   },
   {
-    id: 'danse-moderne',
+    id: 'moderne',
     label: 'Danse moderne',
     periode: '1900-1960',
     x: 430, y: 200,
@@ -155,7 +155,7 @@ export const noeuds: Noeud[] = [
 
   // === GEN 2 (col 3, x=640) ===
   {
-    id: 'danse-contemporaine',
+    id: 'contemporain',
     label: 'Danse',
     labelBis: 'contemporaine',
     periode: '1960 →',
@@ -204,10 +204,10 @@ export const noeuds: Noeud[] = [
 export const liens: Lien[] = [
   { de: 'traditions-africaines', vers: 'danses-afro-americaines' },
   { de: 'danses-afro-americaines', vers: 'jazz' },
-  { de: 'ballet-de-cour', vers: 'danse-classique' },
-  { de: 'danse-classique', vers: 'danse-moderne' },
-  { de: 'danse-classique', vers: 'jazz', type: 'influence' },
-  { de: 'danse-moderne', vers: 'danse-contemporaine' },
+  { de: 'ballet-de-cour', vers: 'classique' },
+  { de: 'classique', vers: 'moderne' },
+  { de: 'classique', vers: 'jazz', type: 'influence' },
+  { de: 'moderne', vers: 'contemporain' },
   { de: 'music-hall-vaudeville', vers: 'cabaret' },
   { de: 'music-hall-vaudeville', vers: 'burlesque' },
   { de: 'burlesque', vers: 'neo-burlesque' },
