@@ -228,4 +228,187 @@ export const termesUnite8: Terme[] = [
     difficulteInterne: 3,
     termesLies: ['pirouette', 'walk-heels', 'posture-heels'],
   },
+
+  {
+    id: 'attitude-heels',
+    nom: 'Attitude en heels',
+    alias: ['attitude hauts talons', 'arabesque fléchie heels'],
+    disciplines: ['heels'],
+    categories: ['positions', 'equilibres'],
+    definition: "Position d'équilibre sur une jambe avec la jambe libre levée et fléchie à 90°, exécutée en talons hauts — adaptation de l'attitude classique aux contraintes du talon haut et à l'esthétique heels.",
+    description: "L'attitude est une des positions d'équilibre les plus élégantes de la danse — et en heels, elle prend une dimension encore plus sculpturale.\n\n**Ce qui change avec le talon haut :**\n- Le centre de gravité est plus haut → l'équilibre demande plus de précision\n- L'appui se fait sur l'avant du talon haut, pas sur la demi-pointe\n- La jambe libre levée crée un contrepoids naturel\n\n**Attitude derrière (la plus courante en heels) :**\nLa jambe libre monte derrière, genou plié. La hanche de la jambe libre s'ouvre légèrement. Le buste s'incline vers l'avant en opposition.\n\n**Développer l'attitude en heels :**\n1. D'abord pratiquer l'attitude à la barre, chaussures plates\n2. Ajouter les chaussures heels à la barre\n3. Sans barre : chercher un point fixe (spot) et l'équilibre dans le centre\n4. Maintenir 2 secondes, puis augmenter progressivement",
+    erreursCourantes: [
+      "Jambe libre trop basse (juste au-dessus du sol) — l'attitude doit être à au moins 45°, idéalement 90°.",
+      "Buste qui s'effondre vers l'avant par manque de gainage — l'opposition buste/jambe doit être active.",
+    ],
+    conseils: [
+      "Trouve un point fixe au mur avant de lever la jambe. Le spot stabilise ton équilibre bien plus que tu ne le penses. En heels, le spot est encore plus crucial qu'en chaussures plates.",
+    ],
+    difficulteInterne: 3,
+    termesLies: ['posture-heels', 'heel-turn', 'walk-heels'],
+  },
+
+  {
+    id: 'developpe-heels',
+    nom: 'Développé en heels',
+    alias: ['extension en heels', 'extension jambe heels', 'développé hauts talons'],
+    disciplines: ['heels'],
+    categories: ['positions', 'pas'],
+    definition: "Extension progressive de la jambe libre depuis une position de passé (genou levé) jusqu'à l'extension complète, exécutée en talons hauts — geste qui allie force des hanches fléchisseurs et souplesse de la chaîne postérieure.",
+    description: "Le développé en heels est l'un des gestes les plus exigeants du vocabulaire heels — et l'un des plus beaux quand il est maîtrisé.\n\n**Le chemin du développé :**\n1. **Retiré/Passé** : le genou monte devant, pied en passé (talon contre genou)\n2. **Développement** : la jambe s'allonge progressivement\n3. **Extension** : jambe tendue, hauteur variable selon la souplesse et la force\n\n**Ce qui change avec le talon haut :**\n- La hauteur du talon soulève le bassin du côté d'appui → ajustement de l'alignement\n- Le pied de la jambe libre est déjà «pointé» naturellement par le talon\n- L'équilibre est plus fin → engagement du centre corps obligatoire\n\n**Hauteur réaliste :**\nEn heels, un développé à 90° (horizontal) est déjà remarquable. Cherche la qualité de l'extension plutôt que la hauteur brute.",
+    erreursCourantes: [
+      "Précipiter le développement — aller trop vite avant que la jambe soit prête. Le développé est lent et contrôlé par définition.",
+      "Laisser le bassin se déporter du côté de la jambe qui monte — l'alignement reste centré.",
+    ],
+    conseils: [
+      "Travaille d'abord le passé seul — le genou bien haut avant de dérouler. Si le passé est solide, le développé suivra naturellement. En heels, le contrôle du centre corps compense les déséquilibres du talon.",
+    ],
+    difficulteInterne: 3,
+    termesLies: ['posture-heels', 'attitude-heels', 'walk-heels'],
+  },
+
+  {
+    id: 'high-kick-heels',
+    nom: 'High kick en heels',
+    alias: ['battement en heels', 'kick hauts talons', 'coup de pied en heels'],
+    disciplines: ['heels'],
+    categories: ['batterie'],
+    definition: "Battement de jambe à haute amplitude exécuté en talons hauts — mouvement de type «coup de pied» qui projette la jambe libre vers la hauteur, issu de la tradition des chorus lines et du cancan américain.",
+    description: "Le high kick en heels, c'est l'un de ces mouvements qui impressionnent autant qu'ils demandent du travail.\n\n**Origine du high kick :**\nLes chorus girls des années 1920–1950 (Ziegfeld Follies, Radio City Music Hall) exécutaient des high kicks en chaussures à talons. L'esthétique heels contemporaine a hérité de cette tradition.\n\n**La technique :**\n1. **Départ** : poids sur la jambe d'appui, corps centré\n2. **L'élan** : la jambe libre repart du sol avec élan\n3. **Le kick** : projection rapide vers le haut, jambe tendue\n4. **Le retour** : contrôlé — pas de chute libre\n\n**Ce qui change avec le talon :**\n- L'appui sur le talon haut pendant le kick demande un ancrage parfait de la jambe d'appui\n- Le bassin tend à se déporter — le gainage le maintient en place\n- L'atterrissage est plus délicat (risque d'entorse si mal aligné)\n\n**Variantes :**\n- Kick devant (le plus courant)\n- Kick de côté (plus rare, demande plus d'ouverture)\n- Double kick (deux kicks rapides sur le même élan)",
+    erreursCourantes: [
+      "Jambe d'appui pliée pendant le kick — elle doit être tendue et ancrée.",
+      "Bassin qui bascule excessivement d'un côté lors du kick — le centre corps doit tenir.",
+    ],
+    securite: {
+      risques: ["Entorse de cheville à l'atterrissage", "Sollicitation excessive des ischio-jambiers si pas échauffé"],
+      precautions: ["Bien s'échauffer les ischio-jambiers et la chaîne postérieure avant", "Sol non-glissant obligatoire"],
+    },
+    conseils: [
+      "Commence par des kicks à 45° avant de viser la hauteur maximale. La sécurité et le contrôle d'abord, la hauteur ensuite. Un kick à 90° bien contrôlé est plus impressionnant qu'un kick à 120° désorganisé.",
+    ],
+    difficulteInterne: 3,
+    termesLies: ['walk-heels', 'posture-heels', 'heel-turn'],
+  },
+
+  {
+    id: 'hip-circle-heels',
+    nom: 'Hip circle en heels',
+    alias: ['rotation de bassin heels', 'cercle de hanches', 'rotation hanches'],
+    disciplines: ['heels'],
+    categories: ['qualites-de-mouvement'],
+    definition: "Rotation complète et continue du bassin dans un plan horizontal — cercle décrit par les hanches en séquençant une ondulation avant, latérale, arrière et latérale — mouvement fondamental du vocabulaire heels et des danses à accent de bassin.",
+    description: "Le hip circle est souvent l'un des premiers mouvements explorés en heels — et pourtant, bien fait, il demande une coordination et une conscience corporelle réelles.\n\n**Le chemin du hip circle :**\n- **Avant** : le bassin pousse vers l'avant (cambrure)\n- **Côté droit** : le bassin part vers la droite\n- **Arrière** : le bassin pousse vers l'arrière (fessiers vers l'arrière)\n- **Côté gauche** : le bassin revient à gauche\n- **Boucle continue** sans à-coups\n\n**Ce qui fait la qualité d'un hip circle :**\n- La fluidité : pas de blocage entre les 4 phases\n- L'amplitude : explorer la plage maximale de mouvement du bassin\n- L'indépendance : le buste reste relativement fixe pendant que le bassin tourne\n\n**En heels :**\nLa hauteur du talon accentue naturellement la cambrure — le hip circle vers l'avant est donc plus ample. Compenser en cherchant également l'amplitude vers l'arrière.",
+    erreursCourantes: [
+      "Bouger tout le corps ensemble au lieu d'isoler le bassin — le hip circle vient du bassin, pas des épaules.",
+      "Angles et à-coups entre les 4 phases — le cercle doit être continu et fluide.",
+    ],
+    conseils: [
+      "Mets les mains sur tes hanches et imagine un cerceau de hula hoop. Trace le cercle le plus grand possible avec tes hanches. Quand tu peux maintenir le cercle en continuant à respirer normalement, tu as trouvé le bon relâchement.",
+    ],
+    difficulteInterne: 2,
+    termesLies: ['body-roll-heels', 'floorwork-heels', 'posture-heels'],
+  },
+
+  {
+    id: 'shoulder-roll-heels',
+    nom: 'Shoulder roll en heels',
+    alias: ["roulement d'épaule", 'ondulation des épaules heels', 'shoulder wave'],
+    disciplines: ['heels'],
+    categories: ['qualites-de-mouvement', 'ports-de-bras'],
+    definition: "Ondulation séquentielle des épaules — l'une monte pendant que l'autre descend, ou les deux roulent vers l'avant ou l'arrière — geste signature du vocabulaire heels, influencé par les danses afro-américaines et le cabaret.",
+    description: "Le shoulder roll, c'est un de ces mouvements qui ont l'air simple mais qui révèlent immédiatement si quelqu'un est à l'aise dans son corps — ou non.\n\n**Variations de shoulder roll :**\n\n**Roll alterné (le plus courant) :**\nÉpaule droite monte et roule vers l'avant pendant que la gauche descend. Puis alternance. Crée une vague horizontale entre les deux épaules.\n\n**Roll simultané vers l'avant :**\nLes deux épaules roulent vers l'avant ensemble — souvent utilisé avec une inclinaison du buste.\n\n**Roll vers l'arrière :**\nMouvement d'ouverture de la poitrine — qualité très différente : plus libre, plus ouvert.\n\n**Ce qui connecte le shoulder roll au reste du corps :**\nUn bon shoulder roll voyage jusqu'à la poitrine, qui suit légèrement. Ce n'est pas juste les épaules qui bougent — c'est toute la ceinture scapulaire.\n\n**Dans le contexte heels :**\nLe shoulder roll est souvent utilisé dans les transitions de walk, dans les moments d'attente musicale, ou comme intro à un body roll complet.",
+    erreursCourantes: [
+      "Épaules tendues et crispées — le shoulder roll demande du relâchement dans les trapèzes.",
+      "Mouvement limité aux seules épaules sans connexion au sternum et à la poitrine.",
+    ],
+    conseils: [
+      "Détends d'abord les épaules en les montant aux oreilles, puis en les laissant tomber. Répète 3 fois. Maintenant essaie le roll avec cette détente comme point de départ. La tension est l'ennemi du shoulder roll.",
+    ],
+    difficulteInterne: 2,
+    termesLies: ['body-roll-heels', 'hip-circle-heels', 'walk-heels'],
+  },
+
+  {
+    id: 'chest-pop-heels',
+    nom: 'Chest pop en heels',
+    alias: ['pop de poitrine', 'accent pectoral', 'chest isolation heels'],
+    disciplines: ['heels'],
+    categories: ['qualites-de-mouvement'],
+    definition: "Accent musculaire bref et précis de la poitrine — projection soudaine et contrôlée du sternum vers l'avant — utilisé pour marquer les accents musicaux forts en heels et dans les danses urbaines.",
+    description: "Le chest pop est l'outil de ponctuation musicale du vocabulaire heels. Là où un accent musical demande un marquage physique fort, le chest pop est souvent la réponse.\n\n**Comment fonctionne le chest pop :**\nLe sternum projette vers l'avant brièvement et revient. C'est une action musculaire de la cage thoracique, pas juste des épaules. Les muscles intercostaux et les pectoraux participent.\n\n**Types de chest pop :**\n\n**Pop vers l'avant (le plus courant) :**\nLe sternum sort vers l'avant d'un coup — impression que la poitrine «part» en avant.\n\n**Pop vers le bas :**\nPression vers le bas de la cage thoracique — souvent utilisé sur les basses fortes.\n\n**Pop alterné :**\nCôté droit, puis côté gauche — alternance rapide qui crée une vague horizontale.\n\n**Dans la musique :**\nLe chest pop répond aux accents forts (downbeats, drops, bass hits). En heels commercial, il marque les temps forts des productions EDM ou trap.\n\n**Connection avec le reste du corps :**\nUn chest pop qui voyage dans le buste entier, puis dans les bras, puis dans les hanches — c'est de la chorégraphie.",
+    erreursCourantes: [
+      "Chest pop qui vient des épaules au lieu du sternum — vérifier en posant une main sur le sternum.",
+      "Pop sans retour (le sternum part et reste là) — le pop est une action brève avec un retour à la position neutre.",
+    ],
+    conseils: [
+      "Pose une main à plat sur ton sternum. Sens le sternum qui pousse ta main vers l'avant d'un coup bref et revient. C'est ça le chest pop. La main donne un feedback proprioceptif précieux pour isoler le bon mouvement.",
+    ],
+    difficulteInterne: 2,
+    termesLies: ['body-roll-heels', 'shoulder-roll-heels', 'hip-circle-heels'],
+  },
+
+  {
+    id: 'chair-work-heels',
+    nom: 'Chair work (travail avec chaise)',
+    alias: ['travail chaise heels', 'chair dance', 'danse avec chaise'],
+    disciplines: ['heels'],
+    categories: ['jeu-de-scene', 'accessoires'],
+    definition: "Vocabulaire chorégraphique développé autour d'une chaise comme accessoire scénique — utilisation du dossier, de l'assise et des pieds de la chaise pour créer des figures, des poses et des transitions propres au style heels.",
+    description: "La chaise en heels, c'est à la fois un accessoire iconique et un véritable partenaire de danse. Elle offre un appui, une structure, une relation physique — et elle définit un espace scénique.\n\n**Les grandes zones de la chaise :**\n\n**Le dossier :**\nAppui des mains pour des penchés vers l'avant ou l'arrière. Support pour des attitudes et développés. Outil de tension dans la relation corps/accessoire.\n\n**L'assise :**\nPosition assise avec jambes croisées, jambe levée ou cambré vers l'arrière. Point de départ pour des poses sculpturales.\n\n**Techniques de base :**\n- **Passe-devant la chaise** : contournement du dossier avec prise sur le côté\n- **Penché arrière assis** : assis sur l'assise, cambré vers l'arrière, tête qui tombe\n- **Extension jambe dossier** : main sur dossier, jambe tendue en arabesque ou attitude\n\n**L'esthétique du chair work :**\nLe chair work vient du burlesque, du cabaret et du strip-tease. Dans l'heels contemporain, il est réinterprété avec une intention artistique — la chaise n'est pas qu'un accessoire, elle est un partenaire chorégraphique.",
+    erreursCourantes: [
+      "Chaise instable — toujours vérifier que la chaise ne glisse pas avant de l'utiliser comme appui.",
+      "Ignorer la chaise entre les poses — la relation à la chaise doit être continue, pas seulement aux moments de figure.",
+    ],
+    securite: {
+      risques: ["Glissement de la chaise si le sol est lisse", "Déséquilibre dans les poses assises cambrées"],
+      precautions: ["Chaise avec embouts antidérapants ou sur tapis", "Apprendre chaque pose séparément avant de les enchaîner"],
+    },
+    conseils: [
+      "Apprends à tourner autour de ta chaise comme si elle était un partenaire — pas un meuble. Quel côté présentes-tu au public ? Comment entres-tu dans la relation avec elle ? La chaise a une présence : traite-la comme telle.",
+    ],
+    difficulteInterne: 3,
+    termesLies: ['floorwork-heels', 'sass', 'body-roll-heels'],
+  },
+
+  {
+    id: 'death-drop-heels',
+    nom: 'Death drop en heels',
+    alias: ['back fall heels', 'chute arrière heels', 'dip arrière vogueing'],
+    disciplines: ['heels'],
+    categories: ['travail-au-sol', 'figures-aeriennes'],
+    definition: "Figure spectaculaire de chute contrôlée vers l'arrière depuis la position debout — le corps tombe en arrière-splits ou en extension arrière et atterrit au sol en une fraction de seconde — originaire du vogueing et du ballroom.",
+    description: "Le death drop est l'une des figures les plus emblématiques du vogueing et du ballroom — et depuis les années 2010, il a migré vers l'heels commercial. Impressionnant, oui. Dangereux si mal appris, oui. Apprenable correctement, absolument.\n\n**Origine :**\nLe death drop naît dans les ballrooms de la communauté LGBTQ+ afro-américaine et latino-américaine à New York dans les années 1980–1990. C'est un geste de performance pure — l'abandon dramatique du corps au sol.\n\n**La technique :**\n1. **Départ** : debout, pieds légèrement écartés\n2. **L'arrière** : le bassin part vers l'arrière-bas, la jambe avant reste tendue\n3. **La chute** : contrôlée, rapide — atterrissage sur les fesses/hanche/cuisse, jambe avant en extension\n4. **La pose** : le corps au sol, une jambe étendue, l'autre fléchie\n\n**Ce qui rend le death drop sûr :**\nC'est une chute CONTRÔLÉE — pas un abandon total. Le bassin guide la descente, les bras amortissent. L'impact n'est pas sur le coccyx mais sur la cuisse/hanche.\n\n**En heels :**\nLe pied avant doit être placé précisément pour ne pas bloquer la jambe pendant la chute.",
+    erreursCourantes: [
+      "Tomber sur le coccyx au lieu de la hanche/cuisse — très douloureux et dangereux.",
+      "Chute trop lente sans engagement — le death drop perd tout son effet sans la rapidité de l'abandon.",
+    ],
+    securite: {
+      risques: ["Impact sur le coccyx si la technique est incorrecte", "Entorse si le pied avant est mal positionné"],
+      precautions: ["Apprendre d'abord sur un matelas épais ou crash mat", "Ne jamais pratiquer sur un sol dur sans maîtrise préalable"],
+    },
+    conseils: [
+      "Commence par apprendre la position finale au sol — assieds-toi par terre dans la pose du death drop. Puis apprends à y descendre progressivement depuis la position accroupie. L'approche progressive est la seule safe pour ce mouvement.",
+    ],
+    difficulteInterne: 4,
+    termesLies: ['floorwork-heels', 'vogue-ballroom-heels', 'cat-walk-heels'],
+  },
+
+  {
+    id: 'lunge-heels',
+    nom: 'Lunge en heels',
+    alias: ['fente en heels', 'lunge hauts talons', 'fente avant heels'],
+    disciplines: ['heels'],
+    categories: ['positions', 'equilibres'],
+    definition: "Fente avant ou latérale exécutée en talons hauts — une jambe avancée fléchie, l'autre en extension arrière — position sculpturale utilisée comme pose statique, transition ou préparation à d'autres mouvements.",
+    description: "La lunge en heels semble simple — et pourtant, en talons hauts, même une fente de base demande une technique précise pour rester stable et sans douleur.\n\n**La lunge avant :**\n- Pied avant devant, genou fléchi à 90° au-dessus du pied (ni dedans, ni dehors)\n- Pied arrière en extension, talon de la chaussure posé au sol\n- Buste droit ou légèrement incliné selon l'esthétique\n- Le poids est partagé entre les deux jambes\n\n**Ce qui change avec le talon haut :**\n- Le talon haut de la jambe arrière force la cheville en flexion plantaire permanente — la jambe arrière est naturellement en position pointe\n- L'atterrissage en lunge (depuis la marche) demande plus de contrôle\n\n**Variantes :**\n- **Lunge avec cambré** : buste incliné vers l'arrière dans la lunge\n- **Lunge avec extension de bras** : bras en opposition pour le geste théâtral\n\n**La lunge comme pose scénique :**\nDans le vocabulaire heels, la lunge est souvent une pose de conclusion — l'image finale d'une phrase. La façon dont elle est maintenue et «regardée» compte autant que la technique.",
+    erreursCourantes: [
+      "Genou avant qui dépasse le pied (en avant des orteils) — risque pour le genou, surtout en heels.",
+      "Talon avant levé du sol au lieu d'être posé — la stabilité repose sur le contact du talon avec le sol.",
+    ],
+    conseils: [
+      "En heels, le lunge est aussi une question de regard et d'intention. Une fois en position, choisis où tu regardes — vers le bas, c'est l'effacement. Vers le public, c'est la présence. Cette décision transforme le même geste technique en deux choses très différentes.",
+    ],
+    difficulteInterne: 2,
+    termesLies: ['walk-heels', 'posture-heels', 'floorwork-heels'],
+  },
 ]

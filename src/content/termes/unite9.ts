@@ -369,4 +369,23 @@ export const termesUnite9: Terme[] = [
     difficulteInterne: 2,
     termesLies: ['french-cancan', 'arabesque-cancan', 'port-costume'],
   },
+
+  {
+    id: 'tenue-de-ligne-cabaret',
+    nom: 'Tenue de ligne (chorus line)',
+    alias: ['line discipline', 'chorus line technique', 'ligne de danseurs', 'discipline de groupe'],
+    disciplines: ['cabaret'],
+    categories: ['concepts', 'pas'],
+    definition: "Discipline collective dans les formations de chorus line — maintien de l'alignement, synchronisation des hauteurs, des angles et des rythmes entre tous les membres de la ligne — exigence technique et esthétique fondamentale du cabaret de ligne.",
+    description: "La tenue de ligne, c'est l'exigence invisible qui rend une chorus line magique. Le public ne voit pas la technique — il voit juste une ligne parfaite qui bouge comme un seul être.\n\n**Ce qu'exige la tenue de ligne :**\n- **Hauteur des gestes** : les bras, les jambes, les têtes doivent être à la même hauteur pour tous\n- **Timing absolu** : pas de décalage, pas d'anticipation\n- **Espacement régulier** : la distance entre les danseurs reste constante\n- **Qualité homogène** : même amplitude, même énergie, même style\n\n**La difficulté de la ligne :**\nChaque corps est différent — les longueurs de membres, les flexibilités, les naturels stylistiques. Créer une ligne homogène à partir de corps différents, c'est un travail de précision et de conscience mutuelle.\n\n**Conscience du voisin :**\nUn danseur de chorus line ne regarde pas seulement devant lui — il perçoit à chaque instant le danseur à sa droite et à sa gauche. Ce n'est pas un regard — c'est une conscience périphérique permanente.\n\n**Dans les grandes maisons :**\nAu Moulin Rouge, aux Folies Bergère, la tenue de ligne est l'exigence absolue. Les corps sont entraînés spécifiquement à cette homogénéité.\n\n**Dimension collective :**\nLa tenue de ligne apprend quelque chose que peu de disciplines enseignent — être à la fois soi et partie d'un tout. Effacer son naturel individuel au service de la ligne collective. C'est un vrai choix artistique.",
+    erreursCourantes: [
+      "Regarder ses propres pieds au lieu de maintenir une conscience périphérique du groupe.",
+      "Anticiper les gestes du voisin au lieu de se fier à la musique commune comme référence partagée.",
+    ],
+    conseils: [
+      "En ligne, choisis un point fixe devant toi et maintiens-le. Développe ta conscience périphérique — sans regarder, tu dois savoir si ta voisine a levé le bras. Cette conscience à 180° est un muscle à développer progressivement.",
+    ],
+    difficulteInterne: 2,
+    termesLies: ['french-cancan', 'high-kick', 'arabesque-cancan', 'unisson'],
+  },
 ]

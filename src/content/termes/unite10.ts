@@ -340,4 +340,44 @@ export const termesUnite10: Terme[] = [
     difficulteInterne: 2,
     termesLies: ['neo-burlesque', 'character-burlesque', 'effeuillage', 'pasties'],
   },
+
+  {
+    id: 'cheesecake-burlesque',
+    nom: 'Cheesecake (pose de charme)',
+    alias: ['pose cheesecake', 'pin-up pose', 'glamour shot', 'pose de charme burlesque'],
+    disciplines: ['burlesque'],
+    categories: ['positions', 'jeu-de-scene'],
+    definition: "Pose photographique et scénique issue de la tradition pin-up et du burlesque classique des années 1940–1960 — combinant angles du corps flatteurs, regard suggestif et expression enjouée — outil de présence scénique et d'autodirection corporelle.",
+    description: "Le cheesecake, c'est l'art de la pose. Pas n'importe quelle pose — une pose qui parle, qui joue, qui invite le regard tout en gardant le contrôle de ce regard.\n\n**Origine du terme :**\nLe terme «cheesecake» pour désigner les poses glamour féminines vient des États-Unis, années 1910–1920. Dans les années 1940–1950, les photos cheesecake de pin-ups comme Betty Grable étaient omniprésentes — dans les magazines, les calendriers.\n\n**Les angles du cheesecake :**\n- **La hanche cassée** : un pied devant l'autre, la hanche qui «casse» d'un côté\n- **L'épaule tournée** : les épaules de trois-quarts, pas de face\n- **Le regard par-dessus l'épaule** : classique, joueur\n- **La main sur la hanche** : marque d'assurance\n- **Le pied en avant** : pointe en l'air ou talon levé\n\n**Le cheesecake en burlesque contemporain :**\nDans le néo-burlesque, le cheesecake est réinterprété de façon consciente et souvent ironique — on joue avec les codes de la féminité normée pour mieux les démonter ou les célébrer à ses propres conditions.\n\n**Sur scène :**\nLe cheesecake est l'outil des poses de transition — entre deux mouvements, pendant que la musique introduit un nouveau passage, en réponse à la réaction du public.",
+    erreursCourantes: [
+      "Poser «pour la photo» avec un sourire figé au lieu d'un regard vivant et en relation avec le public.",
+      "Corps de face (moins flatteur et moins engagé) quand les trois-quarts ou le profil créent bien plus de dynamisme.",
+    ],
+    conseils: [
+      "Entraîne-toi devant un miroir à des poses de transition — pas de grandes poses dramatiques, juste des petits ajustements de hanche, d'épaule, de regard. Le cheesecake est dans les détails. Ce qui transforme une position ordinaire en pose, c'est souvent un seul geste : la tête qui tourne, la hanche qui cède.",
+    ],
+    etymologie: "De l'anglais américain *cheesecake*, expression argotique des années 1910–1920 pour désigner des photographies glamour féminines.",
+    difficulteInterne: 1,
+    termesLies: ['glamour-burlesque', 'character-burlesque', 'effeuillage'],
+  },
+
+  {
+    id: 'tableau-vivant-burlesque',
+    nom: 'Tableau vivant',
+    alias: ['living picture', 'pose plastique', 'tableau plastique burlesque'],
+    disciplines: ['burlesque'],
+    categories: ['jeu-de-scene', 'concepts'],
+    definition: "Composition scénique où les artistes imitent une œuvre d'art ou une composition plastique — un tableau de peinture, une sculpture — en restant immobiles sur scène un moment, créant une image vivante. Tradition du burlesque du XIXe siècle, héritière des poses plastiques.",
+    description: "Le tableau vivant est l'une des formes les plus anciennes et les plus élégantes du spectacle burlesque — et l'une des plus directement liées à l'histoire de l'art.\n\n**Histoire :**\nLes tableaux vivants ont eu un immense succès au XIXe siècle en Europe et en Amérique du Nord. Des artistes et des non-artistes reproduisaient des tableaux célèbres ou des scènes mythologiques, immobiles ou en très lent mouvement. La légalité venait du statut «artistique» — les corps nus étaient tolérés s'ils imitaient de l'art.\n\n**Dans le burlesque :**\nLes shows de burlesque du début du XXe siècle reprenaient cette tradition — numéros statiques où les performers s'immobilisaient dans des poses imitant des tableaux, des sculptures (Vénus de Milo, Diana chasseresse) ou des allégories.\n\n**Le tableau vivant contemporain :**\nEn néo-burlesque, le tableau vivant est réinterprété de façon créative — parfois pour citer et démonter une œuvre (appropriation critique), parfois pour créer une image originale qui utilise les codes de la peinture.\n\n**La qualité de l'immobilité :**\nUn bon tableau vivant demande une immobilité vraie — et une présence intérieure totale. L'ennui d'un corps statique sans vie intérieure est immédiatement perceptible. Chaque tableau vivant doit «respirer» de l'intérieur.",
+    erreursCourantes: [
+      "Immobilité mécanique et vide — un tableau vivant doit être habité de l'intérieur, pas seulement figé de l'extérieur.",
+      "Pose trop complexe ou inconfortable qui rend impossible de tenir l'immobilité — la pose doit être tenable.",
+    ],
+    conseils: [
+      "Choisis un tableau que tu aimes vraiment. Reproduis sa composition à plusieurs — qui est qui, quel personnage, quelle émotion. Maintenant joue-le en immobilité complète pendant 30 secondes. C'est une éternité sur scène — et une leçon de présence.",
+    ],
+    etymologie: "Du français *tableau vivant* — «tableau vivant». Le terme est utilisé en anglais tel quel depuis le XIXe siècle.",
+    difficulteInterne: 2,
+    termesLies: ['glamour-burlesque', 'character-burlesque', 'cheesecake-burlesque'],
+  },
 ]

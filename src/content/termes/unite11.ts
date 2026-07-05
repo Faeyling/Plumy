@@ -267,4 +267,165 @@ export const termesUnite11: Terme[] = [
     difficulteInterne: 1,
     termesLies: ['pole-sport', 'pole-art', 'exotic-pole'],
   },
+
+  {
+    id: 'deadlift-pole',
+    nom: 'Deadlift (montée de force) au pole',
+    alias: ['press up pole', 'force statique pole', 'montée force'],
+    disciplines: ['pole-dance'],
+    categories: ['montees-climbs'],
+    definition: "Montée en force au pole sans élan ni momentum — depuis la position debout, le corps s'élève vers une figure haute uniquement par la contraction musculaire, sans l'aide d'une jambe qui prendrait appui ou d'un mouvement oscillatoire.",
+    description: "Le deadlift est la vraie mesure de la force au pole. Pas d'élan, pas de kick, pas de spin — juste la force pure des épaules, des bras et du centre corps qui soulèvent le poids du corps.\n\n**Ce que mobilise un deadlift :**\n- **Grand dorsal et trapèzes** : le pull-down initial (amener les coudes vers le bas contre résistance)\n- **Muscles fessiers et abdominaux** : le gainage qui maintient la forme pendant la montée\n- **Biceps et avant-bras** : la traction sur le pole\n\n**Comment progresser vers le deadlift :**\n1. Développer la force de pull-down (tractions, bandes élastiques)\n2. Pratiquer les V-sits et L-sits au sol pour le gainage abdominal\n3. Deadlift assisté (pied au sol pour amorcer, puis décollage progressif)\n4. Deadlift complet depuis le standing\n\n**Précision technique :**\nLe deadlift part des épaules engagées (pas montées) — l'erreur classique est de laisser les épaules remonter vers les oreilles. Elles descendent et s'éloignent des oreilles au moment du press.\n\n**À quoi sert le deadlift ?**\nC'est une entrée en force dans des figures hautes comme l'Ayesha, le Crucifix, les splits aériens — partout où l'élan du bas du corps n'est pas possible ou souhaité.",
+    erreursCourantes: [
+      "Épaules qui remontent vers les oreilles lors de l'effort — elles doivent s'abaisser et s'engager.",
+      "Chercher un deadlift avant d'avoir la force de base nécessaire — risque de blessure aux épaules.",
+    ],
+    securite: {
+      risques: ["Tendinites aux épaules ou aux poignets par progression trop rapide", "Déséquilibre musculaire si les antagonistes ne sont pas renforcés"],
+      precautions: ["Construire la force de base sur 3–6 mois avant d'aborder le deadlift", "Renforcer autant les antagonistes (rotation externe, deltoïde arrière)"],
+    },
+    conseils: [
+      "Commence par des holds — reste suspendue au pole les deux pieds décollés du sol, coudes légèrement fléchis, pendant 10 secondes. C'est la base de force isométrique qui précède le deadlift. Construis le temps de hold avant de chercher la montée.",
+    ],
+    difficulteInterne: 5,
+    termesLies: ['montee-pole', 'ayesha', 'grip-pole', 'conditioning-pole'],
+  },
+
+  {
+    id: 'flag-pole',
+    nom: 'Flag (drapeau) au pole',
+    alias: ['flag position', 'drapeau pole', 'human flag'],
+    disciplines: ['pole-dance'],
+    categories: ['figures-aeriennes', 'equilibres'],
+    definition: "Figure aérienne où le corps est horizontal, perpendiculaire au pole, maintenu par une prise à deux mains — une main au-dessus de l'autre — par la force latérale des épaules, des bras et des obliques. L'une des figures les plus difficiles en pole sport.",
+    description: "Le flag, c'est l'image qui fait arrêter les gens dans la rue. Un corps horizontal dans les airs, maintenu par deux mains sur une barre verticale — ça défie l'intuition physique. Et ça exige une force latérale exceptionnelle.\n\n**La physique du flag :**\nLe flag est maintenu contre la gravité par une pression latérale — la main du dessus tire, la main du dessous pousse. Le corps est un levier. Plus le corps est lourd ou éloigné du pole, plus le moment de force est important.\n\n**Prise du flag :**\n- Main haute : prise normale, tire vers le haut\n- Main basse : prise «push» (paume vers le bas), pousse vers le bas\n- Les deux bras sont en ligne\n\n**Progression vers le flag :**\n1. **Side hold** : position de flag avec pied au sol\n2. **Tuck flag** : jambes ramenées au corps\n3. **Straddle flag** : jambes en V horizontal\n4. **Flag complet** : jambes tendues et jointes\n\n**En compétition :**\nLe flag est un élément récurrent en pole sport — souvent compté dans les difficultés maximales.",
+    erreursCourantes: [
+      "Corps non-aligné (hanches qui tombent) — renforce les obliques avant d'aborder le flag.",
+      "Prise main basse incorrecte (prise de traction au lieu de prise push) — ça rend le flag impossible à maintenir.",
+    ],
+    securite: {
+      risques: ["Blessure à l'épaule haute par traction excessive", "Crampe ou déchirure des obliques si pas assez conditionné"],
+      precautions: ["Progresser par étapes (tuck → straddle → full flag)", "Renforcement ciblé des obliques et deltoïdes pendant plusieurs mois"],
+    },
+    conseils: [
+      "Commence par le side hold — mets-toi en position de flag avec un pied au sol. Sens la pression de la main basse qui pousse et de la main haute qui tire. Cette sensation musculaire, c'est ce que tu vas développer pour le flag complet.",
+    ],
+    difficulteInterne: 5,
+    termesLies: ['ayesha', 'deadlift-pole', 'conditioning-pole', 'grip-pole'],
+  },
+
+  {
+    id: 'outside-leg-hang-pole',
+    nom: 'Outside leg hang (jambe extérieure)',
+    alias: ['jambe extérieure pole', 'OLH pole', 'knee hang outside'],
+    disciplines: ['pole-dance'],
+    categories: ['figures-aeriennes', 'prises-grips'],
+    definition: "Figure aérienne où le corps est suspendu au pole par la face externe du genou — la jambe se croche autour du pole par l'extérieur, le genou plié autour de la barre — permettant les deux mains libres et une position inversée ou horizontale.",
+    description: "L'outside leg hang (OLH) est une des premières figures «mains-libres» que l'on apprend en pole — et c'est une étape clé vers les inversions et les figures plus complexes.\n\n**La prise :**\nLe genou croche autour du pole par l'extérieur — le pole passe entre les cuisses du côté de la jambe active. La prise se fait sur la face latérale externe du genou et de la cuisse. Le mollet doit croiser derrière le pole.\n\n**Le point d'ancrage :**\nLa pression se fait juste au-dessus du genou, sur l'arrière de la cuisse — pas sur l'articulation elle-même. L'os protège, le muscle tient.\n\n**Entrée dans l'OLH :**\n1. Depuis un climb ou une position haute\n2. La jambe active croche vers l'extérieur\n3. Les hanches descendent\n4. Test de la prise (lâcher progressivement les mains)\n5. Position maintenue mains libres\n\n**Depuis l'OLH :**\nL'outside leg hang est une base pour le jade split, le bird of paradise, diverses extensions de jambe libre.",
+    erreursCourantes: [
+      "Accroche sur l'articulation du genou (douloureux et dangereux) — le point de contact doit être sur la cuisse, au-dessus du genou.",
+      "Trop peu de pression → glissement. Trop de pression → le sang est coupé. Trouver l'équilibre.",
+    ],
+    securite: {
+      risques: ["Glissement si la prise est mal positionnée", "Ecchymoses au genou/cuisse pendant la période d'apprentissage (normal)"],
+      precautions: ["Toujours apprendre avec un spotting avant la version mains libres", "Pad de genou au début pour localiser la prise correcte"],
+    },
+    conseils: [
+      "Les ecchymoses à l'outside leg hang sont quasiment universelles au début — c'est le signe que ton corps conditionne la prise. Avec le temps, la peau et le muscle s'adaptent. Persiste, mais ne force pas si la douleur est articulaire.",
+    ],
+    difficulteInterne: 3,
+    termesLies: ['inside-leg-hang-pole', 'inversion-pole', 'figure-statique', 'grip-pole'],
+  },
+
+  {
+    id: 'inside-leg-hang-pole',
+    nom: 'Inside leg hang (jambe intérieure)',
+    alias: ['jambe intérieure pole', 'ILH pole', 'knee hook inside', 'crochet interne'],
+    disciplines: ['pole-dance'],
+    categories: ['figures-aeriennes', 'prises-grips'],
+    definition: "Figure aérienne où le corps est suspendu au pole par la face interne du genou — la jambe croche autour du pole par l'intérieur — permettant une position inversée ou de repos aérien avec les mains libres.",
+    description: "L'inside leg hang (ILH) est souvent appris avant l'outside leg hang car la prise est perçue comme plus intuitive — mais les deux ont leurs spécificités.\n\n**La prise :**\nLe genou croche autour du pole par l'intérieur — le pole passe du côté interne de la jambe. La pression se fait sur la face interne du genou et de la cuisse. L'autre jambe peut s'enrouler ou rester libre.\n\n**Différence avec l'OLH :**\n- L'ILH croche par l'intérieur → le corps est naturellement face au pole\n- L'OLH croche par l'extérieur → le corps peut s'ouvrir plus facilement\n- L'ILH est souvent utilisé comme position de repos (moins d'effort)\n\n**Depuis l'ILH :**\nFigures possibles : hip hold, diverses inversions, star position — l'ILH sert souvent de position de transition ou de repos entre deux figures difficiles.\n\n**Pole sport vs pole art :**\nEn pole art, l'ILH est utilisé comme pose lyrique ou comme base pour des extensions expressives. En pole sport, c'est une transition vers des difficultés supérieures.",
+    erreursCourantes: [
+      "Croiser les jambes pour «aider» — une seule jambe accroche, l'autre est libre ou en extension.",
+      "Ne pas tester la prise (lâcher les mains progressivement) avant de la confier totalement.",
+    ],
+    securite: {
+      risques: ["Ecchymoses face interne du genou en phase d'apprentissage", "Glissement si la prise est mal positionnée"],
+      precautions: ["Spotting par un·e professeur jusqu'à la maîtrise de la prise", "Descendre en douceur et ne pas lâcher soudainement"],
+    },
+    conseils: [
+      "Comparer l'ILH et l'OLH sur la même session peut t'aider à comprendre la différence musculaire entre les deux. Quelle jambe accroche mieux ? Quelle prise te semble plus sécurisante ? Chaque corps a ses préférences.",
+    ],
+    difficulteInterne: 3,
+    termesLies: ['outside-leg-hang-pole', 'inversion-pole', 'figure-statique', 'grip-pole'],
+  },
+
+  {
+    id: 'chopper-pole',
+    nom: 'Chopper au pole',
+    alias: ['hip mount chopper', 'jambe à 90° pole', 'chopper inversion'],
+    disciplines: ['pole-dance'],
+    categories: ['figures-aeriennes', 'inversions'],
+    definition: "Figure d'entrée en inversion depuis la position suspendue — une jambe monte à 90° ou davantage pour amorcer le bascule du bassin vers le haut et initier l'inversion, ou pose statique avec une jambe à la perpendiculaire du corps.",
+    description: "Le chopper est souvent la première vraie inversion apprise en pole — c'est le mouvement pivot qui fait basculer la relation au pole de «je monte» à «je m'inverse».\n\n**Ce qu'est un chopper :**\nDepuis une position suspendue (pieds décollés du sol, corps vertical), une jambe monte à l'horizontale ou au-delà, déclenchant une rotation du bassin vers le haut. Le résultat : le bassin monte au-dessus des mains, et l'inversion commence.\n\n**Le déclencheur :**\nC'est la jambe qui monte qui crée l'élan initial — mais c'est le bassin qui doit suivre et prendre le relais. Sans engagement du bassin, la jambe monte mais l'inversion n'a pas lieu.\n\n**Variation statique (chopper hold) :**\nUne jambe tendue à l'horizontale, l'autre en extension vers le bas. Corps semi-vertical ou à 45°. Exige une force core et de hanche importante.\n\n**Les muscles travaillés :**\nHanche fléchisseur de la jambe qui monte, abdominaux et dorsaux pour le basculement du bassin, bras et épaules pour le maintien de la prise.",
+    erreursCourantes: [
+      "Jambe qui monte mais bassin qui ne suit pas — le chopper est une action du bassin, pas juste d'une jambe.",
+      "Chercher le chopper sans avoir la force nécessaire en core et en hanche fléchisseur.",
+    ],
+    securite: {
+      risques: ["Chute si le bassin ne suit pas l'inversion et que les mains lâchent", "Effort lombaire si le gainage est insuffisant"],
+      precautions: ["Toujours avoir un spotter pour les premières tentatives", "Développer les hanches fléchisseurs et les abdominaux avant d'aborder l'inversion"],
+    },
+    conseils: [
+      "Avant de chercher à t'inverser, pratique le chopper statique — jambe à l'horizontale, maintenue 3 secondes. Quand tu peux tenir sans effort excessif, ton corps est prêt pour l'inversion. Ne brûle pas les étapes.",
+    ],
+    difficulteInterne: 3,
+    termesLies: ['inversion-pole', 'outside-leg-hang-pole', 'inside-leg-hang-pole', 'conditioning-pole'],
+  },
+
+  {
+    id: 'superman-pole',
+    nom: 'Superman au pole',
+    alias: ['superman position', 'superman figure pole'],
+    disciplines: ['pole-dance'],
+    categories: ['figures-aeriennes'],
+    definition: "Figure aérienne où le corps est horizontal face vers le bas, maintenu par une prise au niveau des hanches ou des cuisses — le corps est parallèle au sol, donnant l'impression de voler horizontalement.",
+    description: "Le superman est l'une de ces figures où le corps semble défier la physique — horizontal dans les airs, face au sol, comme un·e super-héros·ïne en vol.\n\n**La prise :**\nLe pole est coincé entre les hanches et les cuisses — une prise de friction (hip hold) qui maintient le corps. Les bras peuvent être étendus devant (Superman classique) ou le long du corps.\n\n**Ce qui maintient le superman :**\nLa friction au niveau des hanches — le pole pince les iliaques contre les muscles du bas du dos et des fessiers. C'est une prise qui fait toujours un peu peur au début mais qui est très fiable une fois maîtrisée.\n\n**Entrée dans le superman :**\n1. Depuis une position inversée (hanches au-dessus des mains)\n2. Les hanches descendent jusqu'au niveau des mains\n3. Le pole s'insère entre les hanches et les bras tendent vers le bas\n4. Le corps bascule progressivement à l'horizontale\n\n**La pose :**\nBras étendus devant comme Superman, tête levée, regard vers l'avant. Corps parfaitement aligné.",
+    erreursCourantes: [
+      "Prise de hanches trop basse (sur les cuisses) — la friction ne fonctionne pas aussi bien, risque de glissement.",
+      "Peur qui fait que le corps reste vertical — la confiance dans la prise est la clé.",
+    ],
+    securite: {
+      risques: ["Ecchymoses aux iliaques pendant la phase d'apprentissage (très courant)", "Glissement si la prise est mal positionnée"],
+      precautions: ["Apprendre avec un spotter positionné dessous", "Commencer par maintenir la position 1–2 secondes avant de lâcher complètement les mains"],
+    },
+    conseils: [
+      "Les ecchymoses aux os du bassin font partie de l'apprentissage du superman — presque tout le monde y passe. Avec le temps, la tolérance augmente et la prise devient plus précise. Un pad de hanche peut aider les premières semaines.",
+    ],
+    difficulteInterne: 4,
+    termesLies: ['inversion-pole', 'ayesha', 'flag-pole', 'conditioning-pole'],
+  },
+
+  {
+    id: 'split-grip-pole',
+    nom: 'Split grip (prise divisée) au pole',
+    alias: ['split grip', 'prise split', 'prise inversée pole'],
+    disciplines: ['pole-dance'],
+    categories: ['prises-grips'],
+    definition: "Prise au pole où les deux mains sont positionnées de manière inversée l'une par rapport à l'autre — une main en prise normale (pouce en bas) et l'autre en prise inversée (pouce en haut) — utilisée pour des figures d'équilibre latéral et des transitions acrobatiques.",
+    description: "Le split grip est l'une des prises les plus caractéristiques du pole avancé — elle permet des positions et transitions impossibles avec des prises standard.\n\n**La mécanique :**\n- **Main haute** : prise normale (pouce vers le bas, paume vers le corps)\n- **Main basse** : prise inversée (pouce vers le haut, paume vers l'extérieur)\n\nCes deux prises opposées créent un système de levier qui permet de maintenir le corps à l'horizontale du côté de la main basse.\n\n**Figures en split grip :**\n- **Flag en split grip** : version du flag avec cette prise spécifique\n- **Split grip ayesha** : Ayesha en prise divisée\n- **Handspring** : entrée dynamique utilisant le split grip\n\n**Pourquoi le split grip est difficile :**\nLa main basse en prise inversée demande une souplesse de poignet et une force très spécifique. Les tendons fléchisseurs du poignet travaillent dans un angle inhabituel — la progression doit être prudente.\n\n**Conditionnement spécifique :**\nRenforcement des fléchisseurs du poignet, flexibilité du poignet en extension dorsale, et force de pression en prise inversée.",
+    erreursCourantes: [
+      "Aller au split grip avant d'avoir la souplesse et la force de poignet nécessaires — risque de tendinite.",
+      "Confondre split grip et prise inversée simple — split grip implique les DEUX mains en orientations opposées.",
+    ],
+    securite: {
+      risques: ["Tendinite du poignet de la main en prise inversée", "Déchirure du biceps si progression trop rapide dans les charges"],
+      precautions: ["Progresser très progressivement en charge", "Échauffement spécifique des poignets avant chaque séance en split grip"],
+    },
+    conseils: [
+      "Commence par maintenir la position de split grip sans figure — juste les deux mains en prise, bras tendus. Sens la différence de tension entre les deux poignets. Ce conditionnement de base, 30 secondes par jour, développera la tolérance du poignet sur plusieurs semaines.",
+    ],
+    difficulteInterne: 4,
+    termesLies: ['grip-pole', 'flag-pole', 'ayesha', 'deadlift-pole'],
+  },
 ]

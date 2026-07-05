@@ -355,4 +355,62 @@ export const termesUnite6: Terme[] = [
     difficulteInterne: 2,
     termesLies: ['fall-recovery', 'rebond-swing', 'suspension'],
   },
+
+  {
+    id: 'contraction-moderne',
+    nom: 'Contraction (Graham)',
+    alias: ['contraction Graham', 'contraction abdominale moderne', 'contraction release Graham'],
+    disciplines: ['moderne'],
+    categories: ['qualites-de-mouvement', 'positions'],
+    definition: "Mouvement fondamental de la technique Graham — flexion de la colonne lombaire vers l'intérieur (creuser le ventre vers la colonne), accompagnée d'une rétroversion du bassin — qui exprime la contraction émotionnelle et physique intérieure.",
+    description: "La contraction est au cœur de toute la technique Graham. C'est plus qu'un exercice — c'est une philosophie du corps.\n\n**Ce qu'est la contraction :**\nLe ventre se creuse vers la colonne (contraction des abdominaux profonds). Le bassin bascule vers l'arrière (rétroversion). La colonne lombaire se courbe vers l'intérieur. Le sternum descend légèrement. Ce n'est pas un effondrement — c'est une action musculaire active.\n\n**Contraction vs effondrement :**\nL'erreur classique est de confondre la contraction avec un affaissement du buste. La contraction Graham est toujours active — le dos est fort même dans sa courbure.\n\n**La release :**\nLa contraction ne se comprend qu'avec sa release (extension) — le balancier entre la contraction (intérieur, douleur, terre) et la release (ouverture, ciel, liberté). C'est le dialogue fondamental de la technique Graham.\n\n**Où l'utiliser :**\n- Assise au sol (base de la technique au sol)\n- Debout (version différente, moins prononcée)\n- Dans les enchaînements et les grandes phrases\n\n**Origine symbolique chez Graham :**\nLa contraction représente l'intériorité — la matrice, la terre, la douleur mais aussi la source. La release est l'ouverture vers l'extérieur.",
+    erreursCourantes: [
+      "Effondrer les épaules vers l'avant au lieu de contracter les abdominaux — la différence est entre passivité et action.",
+      "Perdre la hauteur du buste — même en contraction, la colonne reste active verticalement.",
+    ],
+    conseils: [
+      "Assieds-toi jambes tendues devant toi. Expire à fond et imagine que ton nombril veut toucher ta colonne. Sens le bas du dos qui s'arrondit, le bassin qui bascule. C'est la contraction. Maintenant inspire et ouvre — c'est la release. Le dialogue entre les deux, c'est la technique Graham.",
+    ],
+    etymologie: "De l'anglais *contraction*, du latin *contractio* (resserrement). Martha Graham a codifié ce terme pour désigner ce mouvement spécifique dans sa technique dans les années 1920–1930.",
+    difficulteInterne: 2,
+    termesLies: ['contraction-release', 'technique-horton', 'flat-back'],
+  },
+
+  {
+    id: 'swing-moderne',
+    nom: 'Swing (pendule) en danse moderne',
+    alias: ['swing Humphrey', 'swing Limón', 'pendule en danse moderne', 'oscillation corporelle'],
+    disciplines: ['moderne'],
+    categories: ['qualites-de-mouvement'],
+    definition: "Mouvement oscillatoire d'un membre ou du corps entier qui utilise la gravité et l'élan — comme un pendule qui descend par gravité, est propulsé par l'élan et monte par inertie jusqu'à une suspension — principe central des techniques Humphrey et Limón.",
+    description: "Le swing est la réponse de Doris Humphrey et José Limón à la déconnexion du sol de la danse classique. Utiliser la gravité, pas la combattre — laisser le poids faire le travail.\n\n**La courbe du swing :**\n1. **La chute** (fall) : la gravité tire le membre vers le bas — le mouvement commence\n2. **L'élan** (momentum) : la vitesse augmente au passage bas du pendule\n3. **La montée** (recovery) : l'élan porte le membre vers le haut\n4. **La suspension** (suspension) : le moment de flottement avant la chute suivante\n\n**Types de swing :**\n- **Swing de bras** : le bras oscille devant-derrière ou latéralement\n- **Swing de jambe** : la jambe oscille depuis la hanche\n- **Swing du buste** : le buste entier oscille dans un plan sagittal ou latéral\n- **Grand swing** : le corps entier part en arc depuis les pieds\n\n**Ce qui fait la qualité du swing :**\nLaisse tomber vraiment — ne contrôle pas le mouvement descendant. Puis laisse l'élan faire le travail dans la montée. Un swing trop contrôlé perd son caractère physique essentiel.\n\n**Connection avec la Terre :**\nLe swing est une façon d'honorer la gravité — de reconnaître que le sol est là et que le corps y appartient.",
+    erreursCourantes: [
+      "Contrôler la descente (résister à la gravité) — laisser tomber est la partie la plus difficile pour les danseurs formés en classique.",
+      "Swing sans suspension — l'arrêt en haut du pendule est essentiel à l'architecture du mouvement.",
+    ],
+    conseils: [
+      "Laisse ton bras tomber depuis l'épaule — complètement, sans résistance. Sens le poids. Maintenant laisse-le se balancer d'avant en arrière de lui-même, avec juste assez d'élan pour que la suspension en haut soit naturelle. Ne l'aide pas. C'est ça, le swing.",
+    ],
+    difficulteInterne: 2,
+    termesLies: ['fall-recovery', 'suspension', 'rebond-swing', 'poids-abandon', 'technique-limon'],
+  },
+
+  {
+    id: 'respiration-moderne',
+    nom: 'Respiration et initiation du mouvement',
+    alias: ['breath-initiated movement', 'mouvement par la respiration', 'souffle et danse'],
+    disciplines: ['moderne'],
+    categories: ['qualites-de-mouvement', 'concepts'],
+    definition: "Utilisation de la respiration comme point d'initiation et moteur du mouvement — l'inspire et l'expire déclenchent, amplifient ou organisent la qualité du geste — pratique centrale dans de nombreuses techniques modernes et approches somatiques.",
+    description: "Utiliser la respiration comme organisateur du mouvement, c'est une idée simple — et révolutionnaire. Beaucoup de danseurs apprennent les formes d'abord, et la respiration vient après. En danse moderne, c'est souvent l'inverse.\n\n**Pourquoi la respiration change le mouvement :**\nL'inspire gonfle la cage thoracique, éloigne les côtes, lève le sternum — ce qui crée naturellement des possibilités d'expansion, d'ouverture, de montée. L'expire vide, rapproche les côtes, baisse le sternum — ce qui crée des possibilités de descente, de contraction, de repli.\n\n**Utilisation technique :**\n- **Inspire = expansion** : ouvrir les bras, se lever, s'allonger\n- **Expire = descente** : plier, descendre, contacter\n- **Rétention** = suspension dans le mouvement\n\n**La respiration comme outil d'interprétation :**\nDeux danseurs peuvent exécuter la même phrase avec les mêmes formes mais une respiration différente — le résultat est radicalement différent. La respiration qualifie le mouvement de l'intérieur.\n\n**Dans les pratiques somatiques :**\nBody-Mind Centering, Feldenkrais, Alexander Technique — toutes ces approches utilisent la respiration comme chemin d'accès à un mouvement plus organique et moins mécanique.",
+    erreursCourantes: [
+      "Retenir sa respiration lors des moments difficiles techniquement — ça crée de la tension et prive le mouvement de vie.",
+      "Respirer en rythme avec la musique au lieu de laisser la respiration avoir son propre timing.",
+    ],
+    conseils: [
+      "Choisis une phrase que tu connais bien. Exécute-la en inspirant sur la première moitié et en expirant sur la seconde. Puis fais l'inverse. Puis laisse ta respiration décider elle-même. Tu verras trois versions très différentes de la même phrase — et tu comprendras ce que la respiration fait au mouvement.",
+    ],
+    difficulteInterne: 2,
+    termesLies: ['contraction-release', 'swing-moderne', 'suspension', 'qualites-de-mouvement'],
+  },
 ]
