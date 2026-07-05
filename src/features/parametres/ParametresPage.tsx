@@ -3,8 +3,6 @@ import { useNavigate } from 'react-router-dom'
 import { fr } from '@/i18n/fr'
 import { VOIX_ELEVENLABS, getVoixId, setVoixId } from '@/lib/voix'
 
-const ELEVENLABS_ACTIF = !!import.meta.env.VITE_ELEVENLABS_API_KEY
-
 type TaillePolice = 'normale' | 'grande' | 'tres-grande'
 
 const TAILLE_SCALE: Record<TaillePolice, string> = {
@@ -86,8 +84,7 @@ export function ParametresPage() {
         </Section>
 
         {/* Voix de Plumy */}
-        {ELEVENLABS_ACTIF && (
-          <Section titre={fr.parametres.voixPlumy}>
+        <Section titre={fr.parametres.voixPlumy}>
             <div className="space-y-3">
               <p className="text-sm text-[var(--color-gris-texte)]">{fr.parametres.voixDescription}</p>
               <div className="flex gap-2">
@@ -108,7 +105,6 @@ export function ParametresPage() {
               </div>
             </div>
           </Section>
-        )}
 
         {/* Installer l'app */}
         <Section titre={fr.parametres.installer}>

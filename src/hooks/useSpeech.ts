@@ -1,7 +1,5 @@
 import { useState, useCallback, useRef } from 'react'
-import { getVoixId } from '@/lib/voix'
-
-const ELEVENLABS_KEY = import.meta.env.VITE_ELEVENLABS_API_KEY as string | undefined
+import { getVoixId, ELEVENLABS_KEY } from '@/lib/voix'
 
 function getFrenchVoice(): SpeechSynthesisVoice | null {
   const voices = window.speechSynthesis.getVoices()

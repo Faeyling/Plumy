@@ -1,3 +1,5 @@
+export const ELEVENLABS_KEY = 'sk_48608c6c95cc218c85cfc863f0c5b14b7c858522e9f69f83'
+
 export const VOIX_ELEVENLABS = [
   { id: 'jfEwztGDkpbpy89xeku6', nom: 'Voix 1' },
   { id: 'IbbR6Av0dWuQJS0b8JVT', nom: 'Voix 2' },
