@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { fr } from '@/i18n/fr'
+import { VOIX_ELEVENLABS, getVoixId, setVoixId } from '@/lib/voix'
+
+const ELEVENLABS_ACTIF = !!import.meta.env.VITE_ELEVENLABS_API_KEY
 
 type TaillePolice = 'normale' | 'grande' | 'tres-grande'
 
@@ -22,10 +25,16 @@ function appliquerTaillePolice(taille: TaillePolice) {
 export function ParametresPage() {
   const navigate = useNavigate()
   const [taille, setTaille] = useState<TaillePolice>(getTaillePolice)
+  const [voixId, setVoixIdState] = useState<string>(getVoixId)
 
   useEffect(() => {
     appliquerTaillePolice(taille)
   }, [taille])
+
+  function choisirVoix(id: string) {
+    setVoixId(id)
+    setVoixIdState(id)
+  }
 
   return (
     <div className="flex flex-col min-h-svh">
@@ -75,6 +84,31 @@ export function ParametresPage() {
             </div>
           </div>
         </Section>
+
+        {/* Voix de Plumy */}
+        {ELEVENLABS_ACTIF && (
+          <Section titre={fr.parametres.voixPlumy}>
+            <div className="space-y-3">
+              <p className="text-sm text-[var(--color-gris-texte)]">{fr.parametres.voixDescription}</p>
+              <div className="flex gap-2">
+                {VOIX_ELEVENLABS.map(v => (
+                  <button
+                    key={v.id}
+                    onClick={() => choisirVoix(v.id)}
+                    className={`flex-1 py-2.5 rounded-xl text-sm font-semibold border-2 transition-colors ${
+                      voixId === v.id
+                        ? 'border-[var(--color-candy-rose)] bg-[#fce4ec] text-[var(--color-candy-rose-dark)]'
+                        : 'border-[var(--color-gris-doux)] text-[var(--color-gris-texte)]'
+                    }`}
+                    aria-pressed={voixId === v.id}
+                  >
+                    {v.nom}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </Section>
+        )}
 
         {/* Installer l'app */}
         <Section titre={fr.parametres.installer}>

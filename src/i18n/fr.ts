@@ -326,6 +326,8 @@ export const fr = {
     rgpdTexte3: "Tu peux exporter l'intégralité de tes données à tout moment via le bouton \"Sauvegarder\". Le fichier JSON reste sur ton appareil.",
     rgpdTexte4: "Pour effacer toutes tes données, vide le stockage du navigateur (Paramètres du navigateur → Site web → Plumy → Vider les données).",
     version: "Plumy — vocabulaire de la danse",
+    voixPlumy: "Voix de Plumy",
+    voixDescription: "Choisis la voix utilisée pour lire les définitions.",
   },
 
   defiQuotidien: {

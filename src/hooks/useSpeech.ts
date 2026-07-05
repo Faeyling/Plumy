@@ -1,7 +1,7 @@
 import { useState, useCallback, useRef } from 'react'
+import { getVoixId } from '@/lib/voix'
 
 const ELEVENLABS_KEY = import.meta.env.VITE_ELEVENLABS_API_KEY as string | undefined
-const ELEVENLABS_VOICE = (import.meta.env.VITE_ELEVENLABS_VOICE_ID as string | undefined) ?? 'MF3mGyEYCl7XYWbV9V6O'
 
 function getFrenchVoice(): SpeechSynthesisVoice | null {
   const voices = window.speechSynthesis.getVoices()
@@ -58,7 +58,8 @@ export function useSpeech() {
     if (ELEVENLABS_KEY) {
       void (async () => {
         try {
-          const res = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${ELEVENLABS_VOICE}`, {
+          const voiceId = getVoixId()
+          const res = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`, {
             method: 'POST',
             headers: {
               'xi-api-key': ELEVENLABS_KEY,
