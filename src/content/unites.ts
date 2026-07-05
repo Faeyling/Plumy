@@ -220,6 +220,7 @@ export const unites: Unite[] = [
     termeIds: [
       'improvisation-structuree', 'contrainte-creative', 'donnee-de-depart',
       'etat-de-disponibilite', 'ecoute-partenaire', 'taches-choreographiques',
+      'partie-motrice', 'resonance-corporelle',
       'motif-choregraphique', 'phrase-choregraphique', 'procedes-composition',
       'structure-choregraphique', 'intention-artistique',
       'notation-mouvement', 'labanotation', 'benesh-notation', 'video-comme-notation',

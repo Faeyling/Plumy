@@ -178,6 +178,46 @@ export const termesUnite14: Terme[] = [
   },
 
   {
+    id: 'partie-motrice',
+    nom: 'Partie motrice',
+    alias: ['leading body part', 'moteur du mouvement', 'partie initiatrice', 'body part leading'],
+    disciplines: ['contemporain', 'moderne', 'jazz', 'classique', 'pole-dance'],
+    categories: ['concepts', 'qualites-de-mouvement'],
+    definition: "Partie du corps qui initie et mène un mouvement — le reste du corps lui répond par résonance naturelle, sans décision consciente. Outil fondamental d'improvisation et d'analyse du mouvement issu de la LMA (Laban Movement Analysis).",
+    description: "Le concept de partie motrice est une des clés les plus simples et les plus puissantes que j'aie jamais apprises. Une fois qu'on le comprend, on voit différemment tous les mouvements — les siens et ceux des autres.\n\n**Le principe :**\nTout mouvement a une origine dans le corps. Quand tu poses la question 'par où est-ce que ce geste commence ?' — tu cherches la partie motrice.\n\nUne partie motrice **mène**, **décide**, **trace** le chemin dans l'espace. Elle a une intention propre. Le reste du corps la suit avec intelligence, sans contrôle volontaire.\n\n**Quelques exemples concrets :**\n- Le *coude* mène un port de bras → le poignet, l'épaule et le buste suivent naturellement\n- Le *sternum* s'ouvre vers l'avant → les bras s'écartent, la tête se lève, le poids bascule\n- Le *genou* descend vers le sol → le bassin, la colonne, les bras accompagnent la descente\n- Le *regard* se tourne → la tête pivote, l'épaule suit, le buste s'oriente\n\n**En improvisation :**\nChoisir une partie motrice, c'est se donner un point de départ concret pour générer du mouvement — sans réfléchir à 'quoi faire'. La partie motrice décide pour toi. Tu observes.\n\n**En technique :**\nBeaucoup d'erreurs techniques viennent d'une mauvaise partie motrice — par exemple, mener un arabesque depuis l'épaule au lieu de depuis l'arrière de la cuisse change complètement l'alignement et l'énergie du mouvement.\n\n**Dans l'analyse du mouvement (LMA) :**\nRudolf Laban a développé des outils pour identifier les parties motrices et comprendre comment elles organisent le mouvement dans l'espace. C'est une des bases de la Laban Movement Analysis.",
+    erreursCourantes: [
+      "Confondre partie motrice et partie la plus visible — le moteur est souvent discret (omoplate, sternum) quand la partie visible (main, pied) n'est que la résonance.",
+      "Vouloir contrôler simultanément le moteur et la résonance — ça annule l'effet. Il faut lâcher le reste.",
+    ],
+    conseils: [
+      "Commence par des moteurs inhabituels — omoplate, talon, sternum, nez. Les moteurs 'évidents' (main, pied) sont plus difficiles à travailler parce qu'on a l'habitude de les contrôler consciemment.",
+    ],
+    etymologie: "Du latin *motor* (ce qui met en mouvement), de *movere* (bouger). En français, 'motrice' qualifie ce qui produit le mouvement — par opposition à ce qui le subit ou l'accompagne.",
+    difficulteInterne: 2,
+    termesLies: ['resonance-corporelle', 'improvisation-structuree', 'effort-laban', 'qualites-de-mouvement'],
+  },
+
+  {
+    id: 'resonance-corporelle',
+    nom: 'Résonance corporelle',
+    alias: ['résonance du mouvement', 'propagation du mouvement', 'body resonance', 'onde de mouvement'],
+    disciplines: ['contemporain', 'moderne', 'jazz', 'classique'],
+    categories: ['concepts', 'qualites-de-mouvement'],
+    definition: "Propagation naturelle d'un mouvement à travers le corps à partir de sa partie initiatrice — le reste du corps répond à l'impulsion du moteur sans décision consciente, comme une onde se propage dans l'eau.",
+    description: "La résonance corporelle, c'est ce qui se passe quand tu arrêtes de tout contrôler. Et c'est souvent là que le mouvement devient intéressant.\n\n**L'image de la corde de guitare :**\nQuand tu pinces une corde, elle vibre — et cette vibration se propage à la caisse de résonance qui l'amplifie. Tu ne décides pas de faire vibrer la caisse : ça arrive. Le corps fonctionne pareil. La partie motrice 'pince la corde', le reste du corps résonne.\n\n**Ce que la résonance n'est pas :**\n- **Passivité** : le corps qui résonne est actif, vivant, engagé — il ne s'affaisse pas\n- **Imitation** : la résonance n'est pas une copie du geste du moteur — c'est une réponse organique\n- **Contrôle secondaire** : si tu commences à décider conscient ce que fait chaque partie, tu quittes la résonance\n\n**Ce que la résonance produit :**\nDes formes inattendues. Des qualités de mouvement qu'on n'aurait pas pu imaginer. Une continuité entre les parties du corps qui rend le mouvement lisible et habité.\n\n**La résonance dans les techniques codifiées :**\nMême dans des techniques très précises comme le ballet classique, la résonance existe — le *port de bras* est plus beau quand il y a une partie motrice claire et une résonance des autres segments, plutôt qu'un contrôle séparé de chaque partie.\n\n**Exercice de sensibilisation :**\nAssieds-toi et laisse tomber un bras sans le contrôler. Observe comment le mouvement de chute se propage : épaule, omoplate, buste légèrement — puis s'arrête. C'est de la résonance. Maintenant imagine retrouver cette qualité debout, en mouvement.",
+    erreursCourantes: [
+      "Confondre résonance et mollesse — le corps qui résonne est tonus, présent, organisé. Pas avachi.",
+      "Arrêter la résonance trop tôt en reprenant le contrôle conscient de chaque segment.",
+    ],
+    conseils: [
+      "Pour sentir la résonance, commence par des gestes amples et lents avec un moteur très clair. Plus le moteur est décidé, plus la résonance est lisible.",
+    ],
+    etymologie: "Du latin *resonare* (retentir, résonner) — *re-* (à nouveau) + *sonare* (sonner). La métaphore acoustique est juste : comme un son qui se propage dans une caisse, le mouvement se propage dans un corps.",
+    difficulteInterne: 2,
+    termesLies: ['partie-motrice', 'qualites-de-mouvement', 'fluidite-mouvement', 'succession-corporelle'],
+  },
+
+  {
     id: 'labanotation',
     nom: 'Labanotation',
     alias: ['kinetographie Laban', 'Laban Movement Notation', 'notation Laban'],

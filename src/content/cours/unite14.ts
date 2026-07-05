@@ -87,6 +87,81 @@ La recherche en neurosciences a mis en lumière deux mécanismes qui éclairent 
 **Ce que l'IRMf révèle pendant l'improvisation :** Une étude utilisant l'imagerie par résonance magnétique fonctionnelle a mis en évidence une augmentation de l'activité dans le cortex préfrontal et le corps calleux pendant l'improvisation — deux zones impliquées respectivement dans la pensée créative et la coordination entre les hémisphères cérébraux. En d'autres termes : improviser *réorganise* le cerveau en temps réel. Je ne sais pas toi, mais ça me donne encore plus envie de pratiquer.`,
       },
       {
+        titre: "La partie motrice et la résonance — laisser le corps s'écouter",
+        contenuMarkdown: `J'ai appris ce concept dans un cours d'improvisation et ça a complètement changé ma façon de bouger. L'idée est simple, mais elle ouvre des possibilités infinies.
+
+---
+
+## Le principe
+
+Tout mouvement a une **origine** — une partie du corps qui l'initie, qui le mène, qui en est le moteur. C'est la **partie motrice**.
+
+Le reste du corps ne fait rien de volontaire : il *suit*, il *répond*, il *résonne*. Comme une corde de guitare dont la vibration se propage à toute la caisse de résonance.
+
+> La partie motrice décide. Le reste du corps écoute et amplifie.
+
+Ce n'est pas une métaphore — c'est littéralement ce qui se passe quand tu laisses, par exemple, ton coude mener un port de bras : le poignet, l'épaule, la clavicule, le buste vont suivre naturellement, avec une qualité de mouvement que tu n'aurais jamais pu planifier consciemment.
+
+---
+
+## Les parties motrices possibles
+
+N'importe quelle partie du corps peut devenir le moteur :
+
+| Partie motrice | Ce qu'elle génère souvent |
+|---------------|--------------------------|
+| Coude | Trajectoires angulaires, bras complexes |
+| Sternum | Mouvements d'ouverture/fermeture du buste |
+| Bassin | Ondulations, mouvements au sol, énergie basse |
+| Genou | Déplacements syncopés, niveaux bas |
+| Nez / regard | Direction de la tête, intention spatiale |
+| Omoplate | Rotations d'épaule, spirales dorsales |
+| Talon | Déplacements vers l'arrière, ancrage |
+| Bout des doigts | Finesse, délicatesse, traces dans l'espace |
+
+---
+
+## La résonance
+
+La résonance, c'est ce que fait le reste du corps quand il cesse de contrôler et commence à écouter.
+
+Elle n'est pas passive : elle est *active sans être volontaire*. La différence est énorme.
+
+- **Passif** : le reste du corps est inerte, sans vie
+- **Volontaire** : tu décides consciemment de chaque partie
+- **Résonance** : le reste du corps répond organiquement à l'impulsion du moteur — il a sa propre intelligence
+
+Ce que tu vas remarquer : la résonance crée des formes et des qualités que tu n'aurais jamais imaginées. Le corps sait des choses que l'esprit ne sait pas encore.
+
+---
+
+## Exercice pratique
+
+**Exercice de base (5–10 min) :**
+
+1. Debout, en état de disponibilité
+2. Choisis une partie motrice — par exemple, le **coude droit**
+3. Laisse le coude partir dans l'espace dans n'importe quelle direction
+4. *Ne décide rien d'autre* — observe ce que le reste du corps fait pour suivre
+5. Continue jusqu'à ce que le mouvement ait une vie propre
+6. Change de moteur sans t'arrêter : passe du coude au genou gauche, puis au sternum
+
+**Questions à explorer :**
+- Quelle qualité de mouvement chaque moteur génère-t-il naturellement ?
+- Où la résonance se propage-t-elle en premier ?
+- Est-ce que certains moteurs t'amènent vers le sol ? Vers la verticalité ? Vers les autres ?
+
+---
+
+## En improvisation collective
+
+La partie motrice devient un outil de composition instantanée :
+
+- **Même moteur, danseurs différents** : une contrainte partagée ("tout le monde mène avec le genou") génère de l'unisson sans synchronisation imposée
+- **Moteurs en dialogue** : un danseur mène avec l'épaule, l'autre répond avec le bassin — une conversation sans mots
+- **Changement de moteur au signal** : l'animateur nomme une nouvelle partie, le groupe bascule — transition instantanée de qualité`,
+      },
+      {
         titre: "Scores, contraintes et tâches — les outils de l'improvisation",
         contenuMarkdown: `L'improvisation sans structure est souvent moins intéressante que l'improvisation avec une bonne contrainte. Le paradoxe créatif : la limite libère. Je l'ai vécu des dizaines de fois — et ça ne cesse pas de me surprendre.
 
