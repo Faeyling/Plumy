@@ -20,7 +20,7 @@ for (const u of unites) {
 
 const DISCIPLINES: Discipline[] = [
   'classique', 'contemporain', 'moderne', 'jazz', 'cabaret',
-  'pole-dance', 'burlesque', 'heels', 'commun',
+  'pole-dance', 'burlesque', 'heels', 'tango-argentin', 'commun',
 ]
 
 const CATEGORIES: Categorie[] = [
@@ -119,7 +119,7 @@ export function GlossairePage() {
           className="w-full mt-2 py-2 px-2.5 rounded-lg bg-white border border-[var(--color-gris-doux)] text-xs text-[var(--color-encre)] focus:outline-none focus:border-[var(--color-candy-rose)]"
           aria-label={fr.glossaire.filtrerUnite}
         >
-          <option value={0}>{fr.glossaire.filtrerUnite}</option>
+          <option value={0}>{fr.glossaire.tousLesFiltres}</option>
           {unites.map(u => (
             <option key={u.numero} value={u.numero}>
               Unité {u.numero} — {u.titre}

@@ -16,6 +16,7 @@ const THEME_ORDER: ThemeReference[] = [
   'francophone',
   'physiologie',
   'culture-histoire',
+  'tango-argentin',
 ]
 
 const DISCIPLINES = [
@@ -27,6 +28,7 @@ const DISCIPLINES = [
   'pole-dance',
   'burlesque',
   'heels',
+  'tango-argentin',
 ] as const
 
 export function SourcesPage() {
