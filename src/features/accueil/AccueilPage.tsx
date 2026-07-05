@@ -251,7 +251,7 @@ export function AccueilPage() {
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.15 }}
-              className="bg-[var(--color-candy-rose-light,#fce7f3)] rounded-[var(--radius-card)] shadow-[var(--shadow-card)] overflow-hidden"
+              className="bg-[var(--color-candy-rose)]/[0.08] rounded-[var(--radius-card)] shadow-[var(--shadow-card)] overflow-hidden"
             >
               <h2 className="px-4 pt-2.5 pb-1 text-[10px] font-[var(--font-titre)] font-bold uppercase tracking-widest text-[var(--color-gris-texte)]">
                 {fr.journalPlumy.titre}
@@ -433,14 +433,14 @@ function UniteCard({ unite, index, progression }: { unite: Unite; index: number;
       <Link
         to={`/unite/${unite.numero}`}
         className="flex items-center gap-4 p-4 bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-shadow"
-        aria-label={`Unité ${index} — ${unite.titre}`}
+        aria-label={`Unité ${unite.numero} — ${unite.titre}`}
       >
         <span
           className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-[var(--font-titre)] font-bold text-white text-sm"
           style={{ backgroundColor: couleur }}
           aria-hidden="true"
         >
-          {termine ? '✓' : index}
+          {termine ? '✓' : unite.numero}
         </span>
         <div className="flex-1 min-w-0">
           <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm leading-snug">

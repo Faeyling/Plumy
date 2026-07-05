@@ -372,7 +372,7 @@ export const fr = {
   },
 
   journalPlumy: {
-    titre: "Journal de Plumy",
+    titre: "🪶 Journal de Plumy",
     termeCite: "Terme mentionné",
     termesCites: "Termes mentionnés",
   },
