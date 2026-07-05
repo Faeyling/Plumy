@@ -251,7 +251,7 @@ export function AccueilPage() {
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.15 }}
-              className="bg-[var(--color-candy-rose)]/[0.08] rounded-[var(--radius-card)] shadow-[var(--shadow-card)] overflow-hidden"
+              className="bg-[var(--color-candy-rose-light)] rounded-[var(--radius-card)] shadow-[var(--shadow-card)] overflow-hidden"
             >
               <h2 className="px-4 pt-2.5 pb-1 text-[10px] font-[var(--font-titre)] font-bold uppercase tracking-widest text-[var(--color-gris-texte)]">
                 {fr.journalPlumy.titre}
