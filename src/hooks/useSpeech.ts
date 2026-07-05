@@ -28,8 +28,8 @@ export function useSpeech() {
       if (activeText.current !== text) return
       const utterance = new SpeechSynthesisUtterance(text)
       utterance.lang = 'fr-FR'
-      utterance.rate = 0.88
-      utterance.pitch = 1.05
+      utterance.rate = 1.0
+      utterance.pitch = 1.35
       const voice = getFrenchVoice()
       if (voice) utterance.voice = voice
       utterance.onstart = () => setIsPlaying(true)
