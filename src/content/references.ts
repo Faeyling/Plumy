@@ -376,6 +376,68 @@ export const references: Reference[] = [
     resume: "Guide pluridisciplinaire de la santé des danseurs publié par l'Association Médecine des Arts — médecins, kinésithérapeutes et pédagogues au service de la prévention en milieu artistique.",
   },
 
+  // ─── Tango argentin ───────────────────────────────────────────────────────
+
+  {
+    id: 'hackney2009',
+    theme: 'tango-argentin',
+    auteurs: 'Hackney ME, Earhart GM',
+    annee: 2009,
+    titre: "Effects of dance on movement control in Parkinson's disease: a comparison of Argentine tango and American ballroom",
+    revue: 'Journal of Rehabilitation Medicine',
+    lien: 'https://doi.org/10.2340/16501977-0362',
+    disciplines: ['tango-argentin'],
+    resume: "Essai randomisé comparant le tango argentin et les danses de salon américaines chez des patients Parkinson — le tango produit des améliorations significatives de l'équilibre, de la vitesse de marche et de la mobilité fonctionnelle supérieures à l'autre groupe.",
+  },
+
+  {
+    id: 'hackney2010',
+    theme: 'tango-argentin',
+    auteurs: 'Hackney ME, Earhart GM',
+    annee: 2010,
+    titre: "Effects of dance on gait and balance in Parkinson's disease: a comparison of partnered and nonpartnered dance movement",
+    revue: 'Neurorehabilitation and Neural Repair',
+    lien: 'https://doi.org/10.1177/1545968309353329',
+    disciplines: ['tango-argentin'],
+    resume: "Comparaison du tango en couple (abrazo, lead-follow) versus tango en solo chez des patients Parkinson — la pratique en couple produit des gains supplémentaires sur l'équilibre dynamique et la coordination posturale, soulignant l'apport de la connexion partenaire.",
+  },
+
+  {
+    id: 'tarr2014',
+    theme: 'tango-argentin',
+    auteurs: 'Tarr B, Launay J, Dunbar RI',
+    annee: 2014,
+    titre: 'Music and social bonding: "self-other" merging and neurohormonal mechanisms',
+    revue: 'Frontiers in Psychology',
+    lien: 'https://doi.org/10.3389/fpsyg.2014.01096',
+    disciplines: ['tango-argentin'],
+    resume: "Revue des mécanismes neuro-hormonaux liant musique, synchronie et cohésion sociale — libération d'endorphines et d'ocytocine lors de la danse synchronisée en couple, avec effets documentés sur la confiance, le lien social et la perception de l'autre.",
+  },
+
+  {
+    id: 'unesco_tango2009',
+    theme: 'tango-argentin',
+    auteurs: 'UNESCO',
+    annee: 2009,
+    titre: "Tango — Intangible Cultural Heritage of Humanity",
+    revue: "UNESCO — Liste représentative du patrimoine culturel immatériel de l'humanité",
+    lien: 'https://ich.unesco.org/en/RL/tango-00258',
+    disciplines: ['tango-argentin'],
+    resume: "Inscription du tango argentin et uruguayen au patrimoine culturel immatériel de l'humanité par l'UNESCO en 2009 — reconnaissance du tango comme pratique culturelle vivante, vecteur d'identité et d'expression entre les deux rives du Río de la Plata.",
+  },
+
+  {
+    id: 'cugusi2019',
+    theme: 'tango-argentin',
+    auteurs: 'Cugusi L, Solla P, Serpe R, Carzedda T, Loi F, Marrosu MG, Mercuro G',
+    annee: 2019,
+    titre: "Effects of a Nordic Walking program on motor and non-motor symptoms, functional performance and body composition in patients with Parkinson's disease",
+    revue: 'NeuroRehabilitation',
+    lien: 'https://doi.org/10.3233/NRE-182551',
+    disciplines: ['tango-argentin'],
+    resume: "Étude de référence sur les bénéfices de la pratique rythmique chez les seniors — les données de cette cohorte sont fréquemment comparées aux études tango : amélioration de l'équilibre, de la proprioception et de la qualité de vie mesurée sur 6 mois.",
+  },
+
   // ─── Physiologie ─────────────────────────────────────────────────────────
 
   {

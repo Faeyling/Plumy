@@ -147,7 +147,8 @@ export type ThemeReference =
   | 'talons-heels'
   | 'francophone'
   | 'physiologie'
-  | 'culture-histoire';
+  | 'culture-histoire'
+  | 'tango-argentin';
 
 export interface Reference {
   id: string;

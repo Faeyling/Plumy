@@ -20,13 +20,23 @@ const ECRANS: Ecran[] = [
   },
   {
     etat: 'encouragement',
+    titre: fr.onboarding.ecranPagesTitre,
+    texte: fr.onboarding.ecranPagesTexte,
+  },
+  {
+    etat: 'encouragement',
+    titre: fr.onboarding.ecranPointsTitre,
+    texte: fr.onboarding.ecranPointsTexte,
+  },
+  {
+    etat: 'accueil',
     titre: fr.onboarding.ecran2Titre,
     texte: fr.onboarding.ecran2Texte,
   },
   {
     etat: 'repos',
-    titre: fr.onboarding.ecran3Titre,
-    texte: fr.onboarding.ecran3Texte,
+    titre: fr.onboarding.ecranRgpdTitre,
+    texte: fr.onboarding.ecranRgpdTexte,
   },
 ]
 

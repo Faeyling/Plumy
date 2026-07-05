@@ -27,20 +27,14 @@ const TERME_DU_JOUR = [..._candidats].sort(() => _rng() - 0.5)[0]
 const ENTREE_JOURNAL = getEntreeJournal(_seed)
 const MOT_PLUMY = fr.termeDuJour.motDePlumy[_seed % fr.termeDuJour.motDePlumy.length]
 
-const iconeCouleur: Record<string, string> = {
-  'corps-qui-danse': 'var(--color-candy-lavande)',
-  'histoire-danse': 'var(--color-candy-corail)',
-  classique: 'var(--color-plumy-blue)',
-  contemporain: 'var(--color-candy-menthe)',
-  moderne: 'var(--color-candy-corail)',
-  jazz: 'var(--color-candy-jaune)',
-  heels: 'var(--color-candy-rose)',
-  cabaret: 'var(--color-candy-corail)',
-  'pole-dance': 'var(--color-plumy-teal)',
-  burlesque: 'var(--color-candy-lavande)',
-  sante: 'var(--color-candy-menthe)',
-  improvisation: 'var(--color-candy-jaune)',
-}
+const COULEURS_ARC_EN_CIEL = [
+  'var(--color-candy-corail)',
+  'var(--color-candy-jaune)',
+  'var(--color-candy-menthe)',
+  'var(--color-candy-bleu)',
+  'var(--color-candy-lavande)',
+  'var(--color-candy-rose)',
+]
 
 const ILLUSTRATIONS = unites
   .map(u => iconeIllustration[u.iconeSvgId])
@@ -112,6 +106,7 @@ export function AccueilPage() {
 
   const serieJours = stats?.serieJours ?? 0
   const points = stats?.points ?? 0
+  const derniereUniteIdx = derniereUnite ? unites.findIndex(u => u.numero === derniereUnite.numero) : 0
 
   return (
     <div className="flex flex-col min-h-svh">
@@ -187,7 +182,7 @@ export function AccueilPage() {
               <div className="flex items-center gap-3 px-4 pb-3.5">
                 <span
                   className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-[var(--font-titre)] font-bold text-white text-sm"
-                  style={{ backgroundColor: iconeCouleur[derniereUnite.iconeSvgId] ?? 'var(--color-candy-lavande)' }}
+                  style={{ backgroundColor: COULEURS_ARC_EN_CIEL[derniereUniteIdx % 6] }}
                   aria-hidden="true"
                 >
                   {derniereUnite.numero}
@@ -256,7 +251,7 @@ export function AccueilPage() {
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.15 }}
-              className="bg-[var(--color-candy-lavande-light,#f3f0ff)] rounded-[var(--radius-card)] shadow-[var(--shadow-card)] overflow-hidden"
+              className="bg-[var(--color-candy-rose-light,#fce7f3)] rounded-[var(--radius-card)] shadow-[var(--shadow-card)] overflow-hidden"
             >
               <h2 className="px-4 pt-2.5 pb-1 text-[10px] font-[var(--font-titre)] font-bold uppercase tracking-widest text-[var(--color-gris-texte)]">
                 {fr.journalPlumy.titre}
@@ -425,7 +420,7 @@ function StatPill({
 }
 
 function UniteCard({ unite, index, progression }: { unite: Unite; index: number; progression?: { vus: number; total: number } }) {
-  const couleur = iconeCouleur[unite.iconeSvgId] ?? 'var(--color-candy-lavande)'
+  const couleur = COULEURS_ARC_EN_CIEL[index % 6]
   const pct = progression && progression.total > 0 ? Math.round((progression.vus / progression.total) * 100) : 0
   const termine = pct === 100
 
