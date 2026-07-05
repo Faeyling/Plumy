@@ -5,6 +5,7 @@ export interface Parcours {
   emoji: string
   couleur: string
   termeIds: string[]
+  coursIds?: string[]
 }
 
 export const parcours: Parcours[] = [
@@ -21,6 +22,7 @@ export const parcours: Parcours[] = [
       'isolations-jazz', 'jazz-walk', 'groove',
       'tempo', 'mesure-musicale', 'phrase-musicale',
     ],
+    coursIds: ['transversal-corps-fondamentaux', 'transversal-musique-danse'],
   },
   {
     id: 'au-sol',
@@ -34,6 +36,7 @@ export const parcours: Parcours[] = [
       'floorwork-heels', 'vogue-ballroom-heels',
       'floorwork-pole',
     ],
+    coursIds: ['transversal-floorwork-pourquoi', 'transversal-floorwork-technique'],
   },
   {
     id: 'poids-appuis-connexion',
@@ -49,6 +52,7 @@ export const parcours: Parcours[] = [
       'preparation-elan', 'niveau-bas',
       'grip-pole', 'conditioning-pole',
     ],
+    coursIds: ['transversal-gerer-son-poids', 'transversal-danser-a-deux'],
   },
   {
     id: 'isolations-polycentrisme',
@@ -62,6 +66,7 @@ export const parcours: Parcours[] = [
       'shimmy', 'bump-grind',
       'body-roll-heels',
     ],
+    coursIds: ['transversal-art-isolation', 'transversal-bassin-centre'],
   },
   {
     id: 'tours-rotations',
@@ -76,6 +81,7 @@ export const parcours: Parcours[] = [
       'spin-pole',
       'heel-turn',
     ],
+    coursIds: ['transversal-mecanique-rotation', 'transversal-tours-disciplines'],
   },
   {
     id: 'presence-identite-scenique',
@@ -90,5 +96,6 @@ export const parcours: Parcours[] = [
       'arm-styling', 'sous-style-broadway', 'freeze-jazz',
       'etat-de-disponibilite', 'intention-artistique',
     ],
+    coursIds: ['transversal-identite-scene', 'transversal-habiter-scene'],
   },
 ]

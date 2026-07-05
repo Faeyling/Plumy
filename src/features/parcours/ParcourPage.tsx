@@ -3,8 +3,9 @@ import { useParams, useNavigate, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { parcours } from '@/content/parcours'
 import { getTerme } from '@/content/termes/index'
+import { getCours } from '@/content/cours/index'
 import { progressionRepository } from '@/data/repositories/progressionRepository'
-import type { ProgressionTerme } from '@/content/schema'
+import type { ProgressionTerme, Cours } from '@/content/schema'
 import { fr } from '@/i18n/fr'
 
 const STATUT_COULEUR: Record<string, string> = {
@@ -46,6 +47,7 @@ export function ParcourPage() {
   }
 
   const termes = p.termeIds.map(id => getTerme(id)).filter(Boolean) as ReturnType<typeof getTerme>[]
+  const cours = (p.coursIds ?? []).map(id => getCours(id)).filter(Boolean) as Cours[]
   const vus = termes.filter(t => t && progressions[t.id]?.statut !== 'jamais-vu' && progressions[t.id] !== undefined).length
   const pct = termes.length > 0 ? Math.round((vus / termes.length) * 100) : 0
 
@@ -88,7 +90,52 @@ export function ParcourPage() {
         </div>
       </header>
 
-      <div className="flex-1 px-4 py-5 space-y-2 pb-24">
+      <div className="flex-1 px-4 py-5 pb-24 space-y-6">
+        {cours.length > 0 && (
+          <section>
+            <h2 className="font-[var(--font-titre)] font-bold text-sm text-[var(--color-gris-texte)] uppercase tracking-wide mb-3">
+              Cours
+            </h2>
+            <div className="space-y-2">
+              {cours.map((c, idx) => (
+                <motion.div
+                  key={c.id}
+                  initial={{ opacity: 0, x: -10 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: idx * 0.05, duration: 0.3 }}
+                >
+                  <Link
+                    to={`/cours/${c.id}`}
+                    className="flex items-start gap-3 p-3.5 bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-shadow"
+                  >
+                    <span
+                      className="flex-shrink-0 w-2 h-8 rounded-full mt-0.5"
+                      style={{ backgroundColor: p.couleur }}
+                      aria-hidden="true"
+                    />
+                    <div className="flex-1 min-w-0">
+                      <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm leading-snug">
+                        {c.titre}
+                      </p>
+                      <p className="text-xs text-[var(--color-gris-texte)] mt-0.5 line-clamp-2">
+                        {c.resume}
+                      </p>
+                    </div>
+                    <svg className="flex-shrink-0 mt-1 text-[var(--color-gris-texte)]" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </Link>
+                </motion.div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        <section>
+          <h2 className="font-[var(--font-titre)] font-bold text-sm text-[var(--color-gris-texte)] uppercase tracking-wide mb-3">
+            Termes
+          </h2>
+          <div className="space-y-2">
         {termes.map((terme, idx) => {
           if (!terme) return null
           const prog = progressions[terme.id]
@@ -124,6 +171,8 @@ export function ParcourPage() {
             </motion.div>
           )
         })}
+          </div>
+        </section>
       </div>
     </div>
   )
