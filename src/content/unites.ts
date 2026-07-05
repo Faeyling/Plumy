@@ -25,7 +25,7 @@ export const unites: Unite[] = [
       'origines-jazz-dance', 'lindy-hop', 'jazz-theatrical',
       'cotton-club', 'katherine-dunham', 'alvin-ailey', 'nicholas-brothers', 'matt-mattox',
       'cancan', 'kabarett',
-      'burlesque-origines', 'neo-burlesque',
+      'burlesque-origines',
       'vogue-ballroom', 'heels-dance',
       'mat-chinois', 'pole-contemporain',
     ],

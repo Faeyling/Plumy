@@ -372,22 +372,6 @@ export const termesUnite2: Terme[] = [
     termesLies: ['neo-burlesque', 'cancan'],
   },
 
-  {
-    id: 'neo-burlesque',
-    nom: 'Néo-burlesque',
-    alias: ['new burlesque', 'burlesque contemporain'],
-    disciplines: ['burlesque'],
-    categories: ['culture-histoire'],
-    definition: "Mouvement de revival et de réinvention du burlesque apparu dans les années 1990, intégrant les études de genre, le féminisme pro-sexe, la culture queer et l'humour comme outils d'émancipation.",
-    description: "Le néo-burlesque naît à **Seattle**, **San Francisco** et **New York** dans les années 1990, porté par une génération de femmes (et d'artistes non-binaires) qui redécouvrent le burlesque classique et l'enrichissent.\n\n**Ce qui change :**\n- **Diversité des corps** : toutes les morphologies sont célébrées, à l'opposé des canons esthétiques habituels\n- **Autodérision et humour** : le néo-burlesque garde la distance ironique du burlesque classique\n- **Dimension politique** : affirmation du contrôle de son corps, critique des normes de beauté\n- **Hybridation** : rock, punk, circus, drag, horror — le néo-burlesque absorbe tout\n\n**Figures clés :**\n- **Dita Von Teese** : popularise le néo-burlesque glamour dans le monde entier\n- **World Famous *BOB*** : pionner du burlesque masculin et queer\n- **Imogen Kelly** : néo-burlesque australien, champion mondiale\n\nEn France, le néo-burlesque se développe depuis les années 2000, avec des scènes actives à Paris, Lyon, Bordeaux.",
-    erreursCourantes: [
-      "Réduire le néo-burlesque à l'effeuillage — c'est un art du spectacle complet avec narration, costume, musique et intention.",
-      "Ignorer la dimension féministe et politique de ce mouvement.",
-    ],
-    difficulteInterne: 2,
-    termesLies: ['burlesque-origines', 'vogue-ballroom'],
-  },
-
   // ─── Heels ────────────────────────────────────────────────────────────────
 
   {
