@@ -47,6 +47,12 @@ Merce Cunningham, puis les artistes du Judson Dance Theater (Yvonne Rainer, Stev
 | **Rapport au passé** | Rupture avec le ballet | Rupture aussi avec la moderne |
 
 > La danse moderne *croit encore* qu'il y a quelque chose à exprimer. La contemporaine remet en question ce postulat. C'est une nuance qui change tout.`,
+        pointsCles: [
+          "La danse moderne est une révolution (début XXe s.) — rejet des pointes, du turn-out, du narratif imposé.",
+          "Pionnières : Duncan (liberté), Fuller (abstraction), St. Denis (spirituel), Graham, Humphrey, Horton, Limón.",
+          "Judson Church (1960s) rompt avec la danse moderne elle-même et ouvre la voie au contemporain.",
+          "La danse moderne croit encore qu'il y a quelque chose à exprimer — la contemporaine remet ça en question.",
+        ],
       },
       {
         titre: 'Les grandes pionnières — celles qui ont tout inventé',
@@ -79,6 +85,12 @@ Sa phrase la plus connue : *"Toute danse existe sur un arc entre deux morts — 
 Mexicain-américain né à Culiacán, Limón a étudié avec Humphrey et Weidman avant de créer sa propre compagnie. Il ajoute au fall and recovery une qualité de mouvement plus lyrique, une dimension dramatique profonde et une humanité qui lui est propre. *The Moor's Pavane* (1949) — une réécriture d'Othello en danse — est considérée comme l'un des chefs-d'œuvre de la danse moderne. Son héritage mexicain-américain nourrit une vision profondément humaniste de l'art : le corps porte l'histoire, la mémoire, la résistance.
 
 > Ce qui me touche dans ces parcours, c'est que ces artistes ont dansé dans un monde qui ne leur faisait souvent pas de place — et ils ont fait de ce manque de place leur matière première. C'est toujours comme ça que les grandes choses arrivent.`,
+        pointsCles: [
+          "Duncan : pieds nus, tunique grecque, mouvement du plexus solaire — la révolution par la liberté du corps.",
+          "Graham : contraction-release, psychanalyse en mouvement, mythes grecs comme matière chorégraphique.",
+          "Humphrey : la danse vit entre deux morts — l'immobilité parfaite et la chute totale.",
+          "Ces artistes ont dansé dans un monde qui ne leur faisait pas de place — et en ont fait leur matière première.",
+        ],
       },
       {
         titre: 'Les isolations et la segmentation corporelle',
@@ -108,6 +120,12 @@ L'impulsion voyage séquentiellement à travers les segments — comme une vague
 5. Polycentrisme avec rythmes différents (bras sur un rythme, hanches sur un autre)
 
 > La segmentation n'est pas une décomposition mécanique — c'est une intelligence du corps. Chaque partie qui parle est une partie qui *pense*. Et ça, ça s'apprend. Avec du temps, et avec de la patience.`,
+        pointsCles: [
+          "L'isolation = mouvement d'une seule partie du corps pendant que le reste reste immobile — héritage africain.",
+          "5 zones : tête, épaules, cage thoracique (la plus difficile !), bassin, genoux.",
+          "Polycentrisme = plusieurs centres actifs simultanément avec des énergies différentes — base du groove.",
+          "Succession = l'impulsion voyage comme une vague. S'oppose au mouvement en 'bloc'.",
+        ],
       },
       {
         titre: 'Le travail du buste — flat back, hinge, ondulation',
@@ -163,6 +181,12 @@ L'impression de continuité — chaque segment répond au précédent avec un l�
 ---
 
 > Le buste en danse moderne n'est pas un bloc rigide qui se déplace dans l'espace. Il *parle* — chaque inclinaison, chaque vague, chaque torsion est une phrase du corps. Apprends sa grammaire.`,
+        pointsCles: [
+          "Flat back : torse incliné depuis les hanches, colonne droite — pas depuis la taille, jamais le dos arrondi.",
+          "Hinge : tout le corps s'incline en arrière depuis les genoux, comme un seul bloc rigide.",
+          "Ondulation (body wave) : vague séquentielle de bas en haut — chaque segment répond au précédent avec un retard.",
+          "Le buste en danse moderne n'est pas un bloc rigide — il parle. Apprends sa grammaire.",
+        ],
       },
       {
         titre: 'Les trois grandes techniques modernes — mes trois bibles',
@@ -221,6 +245,12 @@ Les œuvres de Limón traitent de la condition humaine, de la liberté, de la r�
 ---
 
 > Ces trois techniques ne sont pas des concurrentes — elles explorent trois visions du corps en mouvement. Un danseur moderne complet les connaît toutes les trois. Et honnêtement, chacune t'apprend quelque chose que les autres ne peuvent pas te donner.`,
+        pointsCles: [
+          "Horton : anatomie d'abord, inclusivité (à l'époque de la ségrégation), hinges et flat backs — le maître d'Alvin Ailey.",
+          "Cunningham : dissociation danse/musique, dissociation danse/sens, le hasard comme outil de composition.",
+          "Limón : poids réel, swing en pendule, succession, chute et récupération — humanisme profond.",
+          "Ces trois techniques explorent trois visions du corps — un danseur complet les connaît toutes les trois.",
+        ],
       },
       {
         titre: 'Canon et unisson — composer avec le temps',
@@ -274,6 +304,12 @@ En plus du canon et de l'unisson, l'opposition est un outil de composition *dans
 ---
 
 > Canon et unisson sont les deux faces d'une même médaille : comment les corps communiquent à travers le temps — ensemble ou en décalé. Avec ces deux outils et une bonne phrase de mouvement, tu peux faire une pièce entière. C'est ça qui est beau dans la composition.`,
+        pointsCles: [
+          "Unisson ≠ uniformité : l'unisson aspire à une respiration commune, pas à une ressemblance mécanique.",
+          "Canon = même phrase à des moments différents — il crée une impression de vague, une conversation entre corps.",
+          "Fase de De Keersmaeker et Steve Reich (1982) — la référence absolue du canon en danse.",
+          "Avec canon, unisson et une bonne phrase, tu peux faire une pièce entière — c'est ça qui est beau.",
+        ],
       },
     ],
   },

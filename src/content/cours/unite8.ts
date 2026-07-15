@@ -54,6 +54,13 @@ La heels dance regroupe plusieurs styles. Le heels cabaret met l'accent sur le t
 Une formule que j'adore et qui résume tout : la heels dance est "résolument la forme la plus moderne des danses Cabaret." Elle porte des siècles d'héritage dans chaque pas — et elle les renouvelle entièrement.
 
 > Porter des talons, c'est choisir une contrainte et en faire une qualité. La danse heels transforme la limitation en langage. Moi, je trouve ça magnifique — et j'espère que toi aussi tu vas l'apprécier.`,
+        pointsCles: [
+          "La heels dance n'est pas 'du jazz en talons' — c'est une discipline à part entière avec son propre langage.",
+          "Ses origines : vogue/ballroom (Harlem, 1980s), drag queens, showgirl dance, danse orientale, clips R&B.",
+          "La showgirl dance est l'ancêtre direct de la heels dance — une filiation directe et souvent oubliée.",
+          "'Je danse parce que j'ai des talons' — tout part du talon : la posture, la marche, l'équilibre.",
+          "Discipline inclusive : tous les genres, tous les corps — l'expression, pas le genre.",
+        ],
       },
       {
         titre: "Biomécanique et posture — danser en sécurité",
@@ -99,6 +106,13 @@ Renforcer les chevilles (exercices de résistance, équilibre unipodal) est auss
 3. Augmenter la hauteur du talon progressivement
 
 > Il n'y a pas de raccourci : le corps a besoin de temps pour s'adapter aux talons. Et ce temps est bien investi — tu me remercieras plus tard, promis.`,
+        pointsCles: [
+          "Le talon haut modifie tout : avant-pied surchargé, bassin en antéversion, centre de gravité vers l'avant.",
+          "La 'posture de commandement' : genoux souples, gainage léger, cage thoracique haute, regard à l'horizon.",
+          "Progression : 5–7 cm (débutant), 8–10 cm (intermédiaire), 12–20 cm (avancé).",
+          "Renforcer les chevilles hors cours est aussi important que les cours eux-mêmes.",
+          "Toujours maîtriser la posture et la marche avant d'ajouter des mouvements.",
+        ],
       },
       {
         titre: "Walks fondamentales — marcher avant de danser",
@@ -133,6 +147,13 @@ Walk sur une ligne imaginaire, précis, inspiré du défilé de mode. Souvent ut
 3. Walk avec styling des bras
 4. Walk avec intention (une émotion, un personnage)
 5. Walk avec transitions (arrêt, pose, pivot)`,
+        pointsCles: [
+          "Le walk est la compétence première du heels — tout le reste en découle, sans exception.",
+          "5 types : walk de base, pointe-talon (editorial), cross-walk (hanches), strut (autorité), catwalk (ligne).",
+          "Composantes du bon walk : regard à l'horizon, épaules basses, bras avec styling, rythme musical.",
+          "Progression : sans musique (placement) → musique lente → styling bras → intention → transitions.",
+          "La walk impeccable libère tout le reste — investir du temps là-dessus, ça paie toujours.",
+        ],
       },
       {
         titre: "Body roll, hair toss et éléments de style",
@@ -169,6 +190,12 @@ Les isolations en heels sont moins percussives qu'en jazz mais très présentes 
 
 **Le frame :**
 Même dans le mouvement, le corps maintient une organisation spatiale lisible — les lignes du corps "forment" une image à chaque moment. C'est ce qui donne cette qualité de présence permanente dans la danse heels. Tu vas voir, quand tu commences à y penser, tu ne peux plus t'en passer.`,
+        pointsCles: [
+          "Le body roll en heels commence depuis les genoux (les chevilles sont contraintes) et monte jusqu'à la tête.",
+          "Le hair toss arrive sur un accent musical — la tête atterrit sur le beat, même sans cheveux longs.",
+          "Isolations en heels : épaule, cage thoracique, bassin — moins percussives qu'en jazz, très présentes.",
+          "Le frame : l'organisation spatiale permanente du corps qui crée la qualité de présence constante.",
+        ],
       },
       {
         titre: "Floorwork, sass et héritage culturel",
@@ -213,6 +240,13 @@ Honorer cet héritage, c'est :
 - Ne pas pratiquer sans comprendre d'où ça vient
 
 > Porte tes talons avec intention. Chaque pas a une histoire. Et cette histoire mérite d'être connue — moi, je l'ai écrite dans mon carnet pour qu'elle ne soit jamais oubliée.`,
+        pointsCles: [
+          "Floorwork : pieds nus d'abord, puis talons bas — jamais d'effondrement direct sur les genoux.",
+          "Descente : lunge → genou au sol → cuisse → hanche. Remontée par l'avant-pied.",
+          "Le sass se cultive : danser sans regard à satisfaire, exagérer jusqu'au ridicule puis calibrer.",
+          "La heels dance porte l'héritage du vogue et de la culture ballroom, née à Harlem par les communautés LGBTQ+.",
+          "Honorer cet héritage : connaître son histoire et reconnaître les artistes ballroom et voguing.",
+        ],
       },
     ],
   },

@@ -43,6 +43,13 @@ export const coursUnite11: Cours[] = [
 
 **La communauté pole :**
 La communauté pole est connue pour être particulièrement bienveillante et inclusive — un espace où les corps de toutes formes et tous genres pratiquent ensemble. C'est quelque chose que j'ai vraiment apprécié en la découvrant. Tu vas voir.`,
+        pointsCles: [
+          "4 familles : pole sport (athlétique), pole art (artistique), exotic (floorwork en talons), pole theatre (narratif).",
+          "Ce qui unit tous les styles : la barre, le grip, le conditioning, la progression comme seule voie sûre.",
+          "Barre statique vs rotative — la statique utilise uniquement l'élan du corps.",
+          "Matériaux : chrome (standard), laiton (meilleur grip naturel), silicone (pour grip difficile).",
+          "La communauté pole est particulièrement bienveillante — tous les corps et genres y pratiquent ensemble.",
+        ],
       },
       {
         titre: "Grip et prises — la fondation technique",
@@ -83,6 +90,13 @@ Le pole dance utilise la friction peau-acier. Pas de prises comme en escalade �
 
 **Les marques — quelque chose que personne ne t'a peut-être dit :**
 Les premières semaines de pole laissent des marques et rougeurs — c'est normal. La peau s'habitue. Ne pas forcer à travers de la douleur *vive*, mais les marques normales ne sont pas dangereuses. On est tous passés par là.`,
+        pointsCles: [
+          "Le grip utilise la friction peau-acier — pas de prises comme en escalade, juste la peau.",
+          "NE PAS mettre de crème hydratante avant la barre. Pour la transpiration : du magnésium.",
+          "7 prises principales : cup grip, baseball, split grip, hip grip, back balance, twisted grip, elbow grip.",
+          "Le corps entier sert de point d'ancrage : cuisses intérieures, creux du genou, avant-bras, chevilles.",
+          "Les marques des premières semaines sont normales — la peau s'habitue. On est tous passés par là.",
+        ],
       },
       {
         titre: "Montées, spins et figures statiques",
@@ -157,6 +171,13 @@ Figures de force tenues hors du sol :
 *Progression :* Caterpillar au sol → Avant-bras → Handstand (pencil bras) → Butterfly → Split aérien (Russian split) → Salto
 
 > Le nom des figures peut varier selon les écoles — c'est une réalité que j'ai vécue en passant d'un studio à l'autre. L'essentiel, c'est de comprendre la mécanique de la figure, pas son étiquette.`,
+        pointsCles: [
+          "La montée (climb) : toujours apprendre la descente avant la montée — c'est vraiment important.",
+          "Les spins utilisent un point de contact pour tourner : fireman, chair, attitude et bien d'autres.",
+          "Physique des spins : jambes proches = rotation rapide ; jambes éloignées = rotation lente.",
+          "Figures statiques : du pole hold (débutant) jusqu'à l'Iron X (expert) — une progression sur des années.",
+          "L'essentiel d'une bonne figure : forme claire, corps engagé, regard vivant, transition chorégraphiée.",
+        ],
       },
       {
         titre: "Inversions — progresser en sécurité",
@@ -194,6 +215,13 @@ Corps horizontal maintenu uniquement par la force des bras. Plusieurs années de
 
 **Test de gainage minimal avant l'inversion :**
 Tenir un hollow body (au sol) pendant 10 secondes sans que le bas du dos décolle. C'est le minimum. Vraiment le minimum — et ça vaut la peine d'y revenir autant de fois qu'il le faut.`,
+        pointsCles: [
+          "En inversion, les jambes deviennent le grip primaire — le gainage abdominal est non-négociable.",
+          "Règle absolue : jamais d'inversion sans supervision pour les débutants. Toujours avec tapis épais.",
+          "Progression obligatoire : gainage au sol → inversions au sol → assistées → autonomes bas → normales.",
+          "Inversions par ordre : tuck inversion → outside leg hang → Gemini → Ayesha (plusieurs années de conditioning).",
+          "Test minimal : tenir un hollow body au sol 10 secondes sans que le bas du dos décolle.",
+        ],
       },
       {
         titre: "Conditioning, floorwork et les quatre styles",
@@ -237,6 +265,13 @@ En exotic pole : c'est le cœur du style
 - **Pole theatre** : tu aimes le théâtre, les personnages, la narration
 
 > Il n'y a pas un "vrai" pole dance. Il y a ton pole dance. Et ça, c'est une liberté magnifique.`,
+        pointsCles: [
+          "Le conditioning est non-négociable : le sauter augmente significativement le risque de blessure à l'épaule.",
+          "Programme de base : hollow body, plank, pike compression, shoulder press, grip strength.",
+          "Zones prioritaires : épaules (coiffe des rotateurs), gainage, adducteurs, avant-bras et mains.",
+          "En exotic, le floorwork est le cœur du style — transitions barre ↔ sol toujours chorégraphiées.",
+          "4 styles, 4 voies : sport (technique), art (expression), exotic (sensualité/talons), theatre (narration).",
+        ],
       },
     ],
   },
@@ -267,6 +302,12 @@ Les "hoochy koochy dancers" utilisaient des structures (dont des barres) dans de
 Ces origines multiples montrent que l'acrobatie sur barre verticale a été inventée indépendamment dans plusieurs cultures — pour des raisons différentes (athlétisme, cirque, divertissement adulte).
 
 Ce qui rend le pole dance moderne unique, c'est la synthèse de ces héritages dans une pratique accessible, codifiée et mondialisée. Mais cette synthèse n'efface pas les origines — elle les porte. Et c'est à nous de les porter honnêtement.`,
+        pointsCles: [
+          "Le pole a plusieurs origines : mallakhamb indien (XIIe s.), barre chinoise de cirque, fêtes foraines américaines.",
+          "Le mallakhamb (malla = athlète, khamb = poteau) est un sport national en Inde, distinct du pole occidental.",
+          "Ces origines multiples montrent que l'acrobatie sur barre verticale a été inventée indépendamment dans plusieurs cultures.",
+          "La synthèse moderne ne les efface pas — elle les porte. À nous de les porter honnêtement.",
+        ],
       },
       {
         titre: "L'Amérique du Nord — naissance du pole dance moderne",
@@ -285,6 +326,12 @@ Cette "respectabilisation" est un mouvement complexe : elle a rendu le pole acce
 
 **Les pionnières souvent oubliées :**
 De nombreuses danseuses — souvent sans nom dans l'histoire écrite — ont développé dans les années 1980–1990 des techniques de montée, de figure et de floorwork que la communauté utilise aujourd'hui. Les honorer, c'est écrire une histoire plus juste.`,
+        pointsCles: [
+          "Dans les bars canadiens (années 1980), des danseuses ont développé des techniques sur barre — des innovatrices.",
+          "Fawnia Mondey (Canada) : pionnière de l'enseignement du pole hors du contexte adulte, dès les années 1990.",
+          "La 'respectabilisation' (années 1990–2000) a rendu le pole accessible, mais a parfois effacé ses origines.",
+          "Les pionnières anonymes des années 1980–90 ont inventé les techniques que la communauté utilise aujourd'hui.",
+        ],
       },
       {
         titre: "La révolution sportive et artistique",
@@ -312,6 +359,13 @@ Dans les années 2010, des danseuses — notamment russes — révolutionnent l'
 
 **Le débat politique dans la communauté :**
 La question "faut-il désexualiser le pole pour l'accepter socialement ?" divise la communauté depuis des années. Certains voient le mouvement sportif comme une légitimation nécessaire. D'autres critiquent l'effacement des origines et la stigmatisation de l'exotic. Je n'ai pas de réponse toute faite — mais la question mérite d'être posée, et tu mérites de l'avoir en main.`,
+        pointsCles: [
+          "2006 : création de l'IPSF ; 2016 : reconnaissance de la GAISF — un pas vers les Jeux Olympiques.",
+          "Les championnats de pole sport rassemblent plus de 80 pays, avec des niveaux qui rivalisent la gymnastique.",
+          "Le pole art dialogue avec la danse contemporaine, le théâtre, les installations artistiques.",
+          "Les années 2010 : des danseuses russes révolutionnent l'exotic pole, créant ses propres compétitions mondiales.",
+          "Débat : 'désexualiser le pole pour le légitimer' vs 'préserver et honorer ses origines' — toujours ouvert.",
+        ],
       },
       {
         titre: "Celles qui ont créé — honorer les pionnières",
@@ -344,6 +398,13 @@ Un mouvement croissant dans la communauté pole milite pour que les travailleuse
 En 2015, le hashtag **#NotAStripper** s'est répandu parmi des pratiquantes de pole sport qui publiaient leurs figures acrobatiques en précisant qu'elles étaient "des athlètes, pas des strip-teaseuses". La réponse ne s'est pas fait attendre : **#YesAStripper**, **#AllPoleDancers**, **#ProudStripper** ont inondé les réseaux. L'argument était simple et juste : l'art de la pole dance a été perfectionné par des strip-teaseuses. En niant ses racines pour se faire accepter, le mouvement #NotAStripper contribue à la stigmatisation des femmes qui ont popularisé cette discipline. Ce débat, je le trouve important — il touche directement à la question de l'honnêteté dans l'histoire de sa propre discipline.
 
 > Chaque fois que tu montes sur une barre, tu te tiens sur les épaules de celles qui ont appris avant toi — souvent dans des conditions bien moins glamour que ton studio de pole. Connaître leur histoire, c'est pratiquer avec gratitude.`,
+        pointsCles: [
+          "L'histoire mainstream du pole a effacé les femmes — souvent racisées et/ou LGBTQ+ — qui l'ont inventé.",
+          "Fawnia Mondey, Bobbi Douglas, Anastasia Sokolova, et des milliers de travailleuses anonymes des années 1980–90.",
+          "Le mouvement 'Sex Worker Rights' milite pour que ces pionnières soient reconnues et respectées.",
+          "#NotAStripper (2015) vs #YesAStripper : un débat sur l'honnêteté envers les origines de sa discipline.",
+          "Pratiquer avec gratitude, c'est connaître l'histoire de celles qui ont appris avant toi.",
+        ],
       },
     ],
   },

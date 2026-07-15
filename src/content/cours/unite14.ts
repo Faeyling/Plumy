@@ -39,6 +39,13 @@ Forme d'improvisation à deux basée sur le partage du poids et le dialogue tact
 
 **L'improvisation dans les autres disciplines :**
 Le jazz musical est fondamentalement improvisé — la danse jazz hérite de cette culture. La commedia dell'arte a influencé le burlesque. Le vogueing ballroom est à la fois codifié et improvisé.`,
+        pointsCles: [
+          "L'improvisation s'apprend — c'est une discipline, pas l'absence de technique.",
+          "C'est un dialogue entre le corps et le moment présent, et un outil de création chorégraphique.",
+          "Judson Dance Theater (1960s) : Rainer, Brown, Paxton ont radicalement redéfini ce que 'danse' signifie.",
+          "Contact Improvisation (Paxton, 1972) : partage du poids et dialogue tactile — pratique mondiale.",
+          "Le jazz et le vogueing ballroom sont fondamentalement improvisés — l'impro est dans leur ADN.",
+        ],
       },
       {
         titre: "L'état de disponibilité — se préparer à l'imprévisible",
@@ -85,6 +92,13 @@ La recherche en neurosciences a mis en lumière deux mécanismes qui éclairent 
 **Les neurones miroirs :** Ces neurones s'activent non seulement quand tu effectues une action, mais aussi quand tu observes cette même action chez quelqu'un d'autre. En danse, cela signifie que le public peut ressentir les émotions que le danseur exprime — pas métaphoriquement, mais neurologiquement. Et en improvisation collective, cela signifie que ton partenaire ressent ton mouvement de l'intérieur. L'écoute est littéralement inscrite dans le corps.
 
 **Ce que l'IRMf révèle pendant l'improvisation :** Une étude utilisant l'imagerie par résonance magnétique fonctionnelle a mis en évidence une augmentation de l'activité dans le cortex préfrontal et le corps calleux pendant l'improvisation — deux zones impliquées respectivement dans la pensée créative et la coordination entre les hémisphères cérébraux. En d'autres termes : improviser *réorganise* le cerveau en temps réel. Je ne sais pas toi, mais ça me donne encore plus envie de pratiquer.`,
+        pointsCles: [
+          "L'état de disponibilité : tonus équilibré, attention diffuse, jugement suspendu, présence au moment.",
+          "Ce n'est ni passif (j'attends) ni hyper-actif (j'anticipe) — c'est le terrain fertile de l'improvisation.",
+          "Exercices : scan corporel, marche neutre, regard périphérique, respiration abdominale.",
+          "La cognition incarnée : le mouvement crée l'émotion autant qu'il l'exprime — relation bidirectionnelle.",
+          "L'IRMf montre que improviser augmente l'activité du cortex préfrontal — le cerveau se réorganise en temps réel.",
+        ],
       },
       {
         titre: "La partie motrice et la résonance — laisser le corps s'écouter",
@@ -160,6 +174,13 @@ La partie motrice devient un outil de composition instantanée :
 - **Même moteur, danseurs différents** : une contrainte partagée ("tout le monde mène avec le genou") génère de l'unisson sans synchronisation imposée
 - **Moteurs en dialogue** : un danseur mène avec l'épaule, l'autre répond avec le bassin — une conversation sans mots
 - **Changement de moteur au signal** : l'animateur nomme une nouvelle partie, le groupe bascule — transition instantanée de qualité`,
+        pointsCles: [
+          "N'importe quelle partie du corps peut devenir le moteur : coude, sternum, bassin, genou, doigts…",
+          "La résonance est active sans être volontaire — le reste du corps répond organiquement au moteur.",
+          "La résonance crée des formes que l'esprit n'aurait jamais planifiées : le corps sait des choses.",
+          "Exercice : laisser le coude mener, observer la résonance, changer de moteur sans s'arrêter.",
+          "En collectif : un moteur partagé génère de l'unisson sans synchronisation imposée.",
+        ],
       },
       {
         titre: "Scores, contraintes et tâches — les outils de l'improvisation",
@@ -249,6 +270,13 @@ Chaque combinaison de facteurs produit une qualité de mouvement — et une coul
 **L'isométrie :** Explorer les relations géométriques dans l'espace — tracer des lignes, des plans, des points imaginaires dans l'espace environnant, et laisser le corps trouver ses trajets en réponse à ces formes. Forsythe parle de "remplir l'espace" comme une architecture invisible.
 
 Ces outils montrent que les contraintes les plus puissantes ne sont pas toujours des règles sociales ou temporelles — parfois c'est l'espace lui-même qui guide.`,
+        pointsCles: [
+          "Le paradoxe créatif : la contrainte libère — une bonne contrainte rend l'improvisation plus riche.",
+          "Score : cadre ouvert qui guide sans fixer le résultat (spatial, temporel, relationnel, d'état).",
+          "Tâches chorégraphiques : consignes précises qui génèrent du mouvement avec un objectif défini.",
+          "LMA — 4 facteurs d'effort (poids, temps, espace, flux) × 2 pôles = infinité de qualités de mouvement.",
+          "Forsythe : décomposition et isométrie — l'espace lui-même comme source de contrainte et de génération.",
+        ],
       },
       {
         titre: "L'écoute du partenaire — improviser à plusieurs",
@@ -282,6 +310,13 @@ Anticiper la réponse avant d'avoir vraiment reçu la proposition. Préparer sa 
 
 **L'improvisation de groupe :**
 À trois ou plus, les rôles peuvent circuler librement — leader, suiveur, témoin, perturbateur. Le groupe a une vie collective qui dépasse la somme de ses parties. Et quand ça fonctionne, c'est une des plus belles choses que je connaisse en danse.`,
+        pointsCles: [
+          "L'improvisation collective n'est pas des solos simultanés — c'est une conversation.",
+          "6 niveaux de réponse : miroir, écho, contraste, complétion, indépendance, ignorance active.",
+          "Ignorance active : choisir consciemment de ne pas répondre — c'est un choix fort, pas un manque.",
+          "Piège principal : préparer sa réponse pendant que l'autre parle — on n'écoute plus, on attend.",
+          "En groupe, les rôles circulent : leader, suiveur, témoin, perturbateur — le groupe a sa propre vie.",
+        ],
       },
       {
         titre: "De l'improvisation à la composition — le passage",
@@ -312,6 +347,13 @@ Certains chorégraphes laissent des espaces d'improvisation dans des pièces par
 Le corps se souvient de ce qu'il a fait. Revenir à une impro le lendemain — certains moments reviennent naturellement. Ce que le corps aime refaire, c'est souvent le bon matériau.
 
 > "L'improvisation n'est pas l'absence de préparation — c'est la préparation à l'absence de préparation." — Kirstie Simson`,
+        pointsCles: [
+          "La composition est souvent de l'improvisation sédimentée — trouvée, sélectionnée, fixée.",
+          "Processus : explorer (impro) → sélectionner les 'bons moments' → fixer → organiser → raffiner.",
+          "Signe d'un bon moment : le corps a fait quelque chose que l'esprit n'avait pas planifié.",
+          "Certains chorégraphes laissent des espaces d'improvisation dans des pièces par ailleurs fixées.",
+          "Le corps se souvient — ce qu'il aime refaire naturellement, c'est souvent le bon matériau.",
+        ],
       },
     ],
   },
@@ -358,6 +400,13 @@ Cette phrase peut changer pendant le processus — c'est normal. Mais l'avoir fo
 
 **Le carnet de création :**
 Tiens un journal du processus — croquis, mots, questions, impasses. La création n'est pas linéaire. Le carnet garde la trace de ce qui semblait sans intérêt au moment et révèle son importance plus tard. Je te donne ce conseil avec toute l'insistance dont je suis capable.`,
+        pointsCles: [
+          "Toute pièce commence par un point de départ — pas le sujet, ce qui la met en mouvement.",
+          "8 types : kinesthésique, conceptuel, formel, narratif, musical, textuel, contextuel.",
+          "Formuler l'intention avant de bouger : 'Je veux que le spectateur [ressente/éprouve] [quelque chose].'",
+          "Cette boussole peut changer en cours de route — l'avoir formulée guide quand même les choix.",
+          "Tenir un carnet de création : les impasses et les ratés révèlent leur sens plus tard.",
+        ],
       },
       {
         titre: "Motif, phrase et développement",
@@ -414,6 +463,12 @@ Une fois le motif et la phrase établis, les procédés de composition permetten
 | Fragmentation | Extraire une partie | Focus, distillation |
 | Augmentation | Plus lent | Poids, solennité |
 | Diminution | Plus rapide | Urgence, légèreté |`,
+        pointsCles: [
+          "Le motif est une courte séquence reconnaissable qui peut être développée — la cellule germe.",
+          "Un bon motif est mémorable, riche (pour être varié), concis (pour être répété), expressif.",
+          "La phrase : impulsion → développement → résolution (fermée), suspension (ouverte) ou interruption.",
+          "Procédés : répétition, variation, rétrograde, inversion, canon, fragmentation, augmentation, diminution.",
+        ],
       },
       {
         titre: "La structure — architecturer la pièce",
@@ -450,6 +505,13 @@ Symétrique autour d'un point central. La pièce se déploie puis revient en mir
 
 **L'outil de l'arc dramatique :**
 Même sans récit, toute pièce a une courbe d'intensité — elle monte, atteint un sommet, descend. Savoir où tu en es dans cette courbe à chaque instant.`,
+        pointsCles: [
+          "La structure est l'architecture globale — comment les sections s'articulent et où est le climax.",
+          "Formes : binaire (AB), ternaire (ABA), rondo, through-composed, arch (ABCBA).",
+          "Climax : souvent aux 2/3 de la pièce, pas à la fin. Toujours plus court qu'on ne pense.",
+          "Début : in medias res ou installation progressive ? Fin : résolution, suspension ou effacement ?",
+          "L'arc dramatique : toute pièce a une courbe d'intensité — savoir où tu en es à chaque instant.",
+        ],
       },
       {
         titre: "L'espace, le temps et la dynamique",
@@ -509,6 +571,13 @@ La dynamique est la qualité de mouvement — ce qui différencie deux phrases i
 
 **Les contrastes dynamiques :**
 Une pièce sans contrastes dynamiques est plate. La composition vivante alterne les qualités — le lourd appelle le léger, le soudain appelle le soutenu.`,
+        pointsCles: [
+          "Espace : niveaux (bas/moyen/haut), directions, trajets (ligne = vitesse, courbe = fluidité), formations.",
+          "La diagonale est le trajet le plus long et le plus fort sur scène.",
+          "Temps : tempo, rythme, durée. L'immobilité n'est pas l'absence de danse — c'est de la danse à zéro.",
+          "Relation à la musique : unisson, contrepoint, ou indépendance — trois couleurs très différentes.",
+          "Dynamique LMA : poids, temps, espace, flux — sans contrastes, une pièce est plate.",
+        ],
       },
       {
         titre: "Le regard extérieur et le processus créatif",
@@ -547,6 +616,13 @@ Tout créateur traverse des moments où la pièce semble sans intérêt, sans co
 La première version est toujours imparfaite — et c'est normal. Son rôle est d'exister pour qu'on puisse l'améliorer.
 
 > "La créativité, c'est permettre à ses erreurs de survivre." — Scott Adams`,
+        pointsCles: [
+          "Le regard extérieur pose des questions, pas des réponses — c'est un outil, pas un oracle.",
+          "La vidéo montre ce qui était vraiment dans la salle — pas ce que tu croyais faire.",
+          "Processus : recherche → structure → répétition → détail → distance → présentation.",
+          "Les doutes font partie du processus — ils ne signifient pas que la pièce est ratée.",
+          "La première version est toujours imparfaite — son rôle est d'exister pour qu'on l'améliore.",
+        ],
       },
     ],
   },
@@ -586,6 +662,13 @@ Le mouvement humain est :
 - **Relationnel** (rapport au sol, aux autres, à l'espace)
 
 Aucun système de notation n'a résolu tous ces problèmes. Chaque système fait des choix — et donc des sacrifices.`,
+        pointsCles: [
+          "La danse a longtemps été transmise uniquement de corps à corps — sans écriture possible.",
+          "Le paradoxe : la danse naît et disparaît à chaque performance. Comment la préserver ?",
+          "Le mouvement est continu, multidimensionnel, qualitatif et relationnel — très difficile à noter.",
+          "La transmission orale est fidèle aux qualités mais dépend de la continuité humaine.",
+          "Aucun système de notation n'a tout résolu — chaque système fait des choix, donc des sacrifices.",
+        ],
       },
       {
         titre: "Les principaux systèmes de notation",
@@ -635,6 +718,12 @@ Système mathématique basé sur les coordonnées sphériques — chaque segment
 ## Les systèmes numériques contemporains
 
 Mocap (motion capture), Laban/Kinetography Laban informatisée — des tentatives d'automatiser la notation via la capture de mouvement 3D.`,
+        pointsCles: [
+          "Labanotation (Laban, 1928) : partition verticale, colonnes par partie du corps, direction + niveau + durée.",
+          "Notation Benesh (1955) : portée horizontale à 5 lignes représentant le corps de dos — intuitive.",
+          "Eshkol-Wachman (1958) : système mathématique basé sur les coordonnées sphériques — utilisé en biomécanique.",
+          "Systèmes numériques : mocap et Labanotation informatisée tentent d'automatiser la capture du mouvement.",
+        ],
       },
       {
         titre: "La vidéo — une notation imparfaite mais universelle",
@@ -668,6 +757,13 @@ VHS, DV, DVD — les formats se succèdent. Les archives vidéo des années 1980
 
 **La vidéo et le passage humain :**
 Même une vidéo parfaite ne suffit pas pour recréer une pièce. Il faut toujours un passeur — quelqu'un qui connaît la pièce de l'intérieur. La vidéo est une aide-mémoire, pas un substitut au corps.`,
+        pointsCles: [
+          "La vidéo est accessible, rapide, fidèle visuellement — et capture les qualités de mouvement.",
+          "Limites : point de vue unique, transmission incomplète (le 'quoi' mais pas le 'comment').",
+          "Les formats s'obsolèsent (VHS, DV, DVD) — maintenir les fichiers sur plusieurs supports.",
+          "Bonnes pratiques : plusieurs angles, commentaires oraux du chorégraphe, métadonnées précises.",
+          "La vidéo est une aide-mémoire, pas un substitut au corps — il faut toujours un passeur humain.",
+        ],
       },
       {
         titre: "La transmission — entre fidélité et trahison",
@@ -692,6 +788,13 @@ Peut-être que la nature de la danse est précisément d'être éphémère — e
 Les tentatives de notation révèlent ce qui est central dans une discipline. La notation Benesh reflète l'importance des positions dans le ballet. La Labanotation reflète la conception du mouvement comme direction dans l'espace. Tout système de notation est aussi une théorie du mouvement.
 
 > "La danse est l'art des arts — parce qu'elle est le seul qui disparaît au moment même où il s'accomplit." — Paul Valéry`,
+        pointsCles: [
+          "Qu'est-ce que la 'vraie' version d'une pièce ? Une question sans réponse univoque.",
+          "Le Rite du printemps de Nijinski (1913) reconstitué en 1987 par Hodson et Archer — archéologie du mouvement.",
+          "Les œuvres survivent mieux par transmission directe corps à corps — Bausch, Brown, Cunningham.",
+          "Tout système de notation est aussi une théorie du mouvement — il révèle ce qui est central.",
+          "La nature de la danse est peut-être d'être éphémère — et vouloir la fixer trahit quelque chose.",
+        ],
       },
     ],
   },

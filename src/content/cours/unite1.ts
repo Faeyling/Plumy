@@ -19,6 +19,12 @@ En 1920, il publie *Die Welt des Tänzers* (Le Monde du Danseur) — son premier
 > *"Personne n'a jamais observé le mouvement en tant que tel."*
 
 C'est exactement ça, son génie : avoir fait du mouvement un objet d'étude à part entière, avec son propre vocabulaire, ses propres lois, sa propre poésie. Il fuit l'Allemagne nazie en 1938, s'installe en Angleterre, et y poursuit ses travaux jusqu'à sa mort. Son influence atteint Martha Graham, Mary Wigman, Pina Bausch — et des milliers d'enseignants et thérapeutes dans le monde entier.`,
+        pointsCles: [
+          "Rudolf Laban (1879–1958) a inventé le premier langage universel pour décrire le mouvement.",
+          "Formé à l'architecture et aux arts, il lie géométrie sacrée et anthroposophie à la danse.",
+          "Sa révolution : faire du mouvement un objet d'étude à part entière, avec ses propres lois.",
+          "Son influence s'étend à Martha Graham, Pina Bausch et des milliers de thérapeutes.",
+        ],
       },
       {
         titre: "Choreutique et Eukinétique : les deux piliers",
@@ -32,6 +38,12 @@ C'est exactement ça, son génie : avoir fait du mouvement un objet d'étude à 
 **L'Eukinétique** est l'étude de la **qualité dynamique** du mouvement : l'*Effort*, c'est-à-dire comment tu te déplaces — avec quelle énergie, quelle intention, quel rapport intérieur au geste. C'est la psychologie du mouvement.
 
 Ces deux branches forment le cœur de l'**Analyse du Mouvement Laban (AML)** — un outil que tu vas apprendre à utiliser dans les cours suivants, facteur par facteur.`,
+        pointsCles: [
+          "La Choreutique étudie l'espace : ta kinesphère, tes trajectoires, la géométrie du mouvement.",
+          "L'Eukinétique étudie la qualité dynamique : l'Effort — comment tu te déplaces, pas où tu vas.",
+          "Ta kinesphère est ta bulle personnelle ; Laban la visualisait comme un icosaèdre à 26 directions.",
+          "Ces deux branches forment l'AML, outil vivant en danse, thérapie et théâtre depuis un siècle.",
+        ],
       },
       {
         titre: "La notation du mouvement : Cinétographie et Labanotation",
@@ -48,6 +60,12 @@ La portée est lue **de bas en haut** (comme le temps qui s'écoule vers le haut
 En France, le **Conservatoire National Supérieur de Musique et de Danse de Paris (CNSMD)** a intégré la Cinétographie dans ses cursus professionnels à partir des années 1990. L'**Association Française des Cinétographes et Méthodes Dérivées (AFCMD)** perpétue et développe cette tradition, notamment sous l'impulsion de chercheurs comme **Hubert Godard** et **Odile Rouquet**.
 
 > *Dans mon carnet, j'ai une petite portée de Cinétographie — juste pour montrer que ça existe. Je ne suis pas cinétographe, mais savoir que le mouvement peut s'écrire, ça me fascine autant qu'une partition musicale.*`,
+        pointsCles: [
+          "Laban a inventé en 1928 un système pour écrire n'importe quel mouvement humain sur une portée.",
+          "La portée est verticale et se lit de bas en haut — comme le temps qui monte.",
+          "Cinétographie en Europe, Labanotation aux États-Unis : même système de base, légères variantes.",
+          "Le CNSMD de Paris l'intègre dans ses cursus professionnels depuis les années 1990.",
+        ],
       },
     ],
   },
@@ -73,6 +91,12 @@ Ses deux polarités :
 Ce qui m'a marqué quand j'ai étudié ça : il ne s'agit **pas** de la force physique réelle. Un danseur peut être musclé et produire un mouvement Léger ; un enfant peut produire un mouvement Fort. C'est une **qualité d'intention**.
 
 Laban décrivait le pôle Fort comme "lutter contre la gravité" et le pôle Léger comme "se soumettre à la gravité avec grâce". Les deux sont actifs — la légèreté est un choix, pas une absence de mouvement.`,
+        pointsCles: [
+          "Le facteur Poids décrit ton rapport à la gravité — non pas ton poids physique, mais ton intention.",
+          "Fort = résister, s'ancrer, peser ; Léger = effleurer, s'élever, se soumettre avec grâce.",
+          "Un enfant peut produire du Fort, un athlète du Léger : c'est une qualité d'intention, pas de force.",
+          "La légèreté est un choix actif — pas une absence de mouvement.",
+        ],
       },
       {
         titre: "Le Poids dans chaque discipline",
@@ -91,6 +115,12 @@ Le style Fosse, avec ses isolations piquées et ses accents, est souvent Fort. L
 Les prises de grip et les montées demandent une activation Fort pour tenir le corps. Les transitions lentes et les poses aériennes peuvent jouer la carte Légère, même si le travail physique sous-jacent est intense.
 
 > *Exercice de Plumy : pose ta main sur une table avec une qualité Forte — comme si tu voulais laisser une empreinte. Puis recommence avec une qualité Légère — comme si tu effleurais de la soie. Tu n'as pas changé la trajectoire. Tu as changé l'Effort. C'est tout Laban.*`,
+        pointsCles: [
+          "En classique, un grand battement est Fort ; un port de bras pianissimo est Léger — les deux coexistent.",
+          "Le floorwork contemporain alterne Fort (chute) et Léger (élévation) dans une même phrase.",
+          "En pole, les montées demandent du Fort ; les poses aériennes jouent la carte Légère.",
+          "Même trajectoire, Effort différent : deux gestes deviennent deux récits totalement différents.",
+        ],
       },
       {
         titre: "Travailler le Poids : pistes pratiques",
@@ -109,6 +139,12 @@ Les prises de grip et les montées demandent une activation Fort pour tenir le c
 **Exercice de contraste :** traverse la salle en Fort, puis reviens en Léger. Puis alterne : Fort sur 4 comptes, Léger sur 4 comptes. Observe où dans ton corps la qualité change en premier.
 
 Le Poids, c'est aussi ce qui donne de l'**intelligibilité** à un geste. Un geste sans intention de Poids est souvent un geste "vide" — techniquement correct, mais qu'on ne ressent pas. Et crois-moi, le public, lui, le ressent.`,
+        pointsCles: [
+          "Imagine du sable mouillé sous les pieds pour trouver le Fort ; un fil invisible au crâne pour le Léger.",
+          "Contraste Fort/Léger en alternant 4 comptes chacun — observe où dans le corps ça change en premier.",
+          "Un geste sans intention de Poids est souvent 'vide' — techniquement correct, mais non ressenti.",
+          "Le public ressent le Poids avant de le voir : c'est l'intelligibilité même du geste.",
+        ],
       },
     ],
   },
@@ -134,6 +170,12 @@ Ses deux polarités :
 Laban décrivait le Direct comme "une attention à un seul point" et l'Indirect comme "une attention à plusieurs points en même temps". Ce n'est pas que l'un est meilleur que l'autre — ce sont deux façons d'être présent à l'espace.
 
 **Une image que j'utilise souvent :** un coup de laser vs un projecteur à large faisceau. Les deux éclairent, mais ils ne font pas pareil sur le public — ni sur ton corps.`,
+        pointsCles: [
+          "Le facteur Espace ≠ où tu vas : il décrit comment ton attention s'adresse à l'espace autour de toi.",
+          "Direct = un seul point visé, trajectoire linéaire, intention tranchante.",
+          "Indirect = attention diffuse, trajectoire courbe, le geste enveloppe l'espace entier.",
+          "Laser vs projecteur : même lumière, impressions radicalement différentes — sur toi et le public.",
+        ],
       },
       {
         titre: "Le facteur Espace dans les disciplines",
@@ -152,6 +194,12 @@ Intéressant de voir coexister les deux dans une même chorégraphie. Un cat-wal
 Les isolations jazz sont souvent Directes (précision chirurgicale). Les arm stylings fluides sont Indirects. Ce contraste — direct sur le temps fort, indirect sur la liaison — crée la signature du jazz.
 
 > *Note de Plumy : quand j'observe une classe débutante, c'est souvent là que ça coince. Les mouvements sont techniquement corrects mais "sans direction" — ni vraiment Direct ni vraiment Indirect. Choisir, c'est déjà danser.*`,
+        pointsCles: [
+          "Le classique est Direct : regard fixe, lignes vers une destination précise, arabesque 'qui arrive'.",
+          "La danse de Pina Bausch est riche en Indirect : bras qui dessinent des sphères, enveloppement de l'espace.",
+          "En heels, le cat-walk est Direct ; le body roll avec bras déployés est Indirect — les deux coexistent.",
+          "Choisir entre Direct et Indirect, c'est déjà interpréter — ne pas choisir, c'est un geste sans direction.",
+        ],
       },
       {
         titre: "Travailler le facteur Espace",
@@ -170,6 +218,12 @@ Les isolations jazz sont souvent Directes (précision chirurgicale). Les arm sty
 **Exercice de contraste :** prends un simple geste de bras (lever le bras droit vers le plafond). Fais-le Direct : doigt pointé vers un point précis du plafond, trajectoire linéaire. Puis fais-le Indirect : la main dessine une grande spirale pour arriver au même endroit. Le résultat final est identique — le trajet et l'intention sont radicalement différents.
 
 C'est ça, la magie du facteur Espace : le "quoi" ne change pas, mais le "comment" change tout.`,
+        pointsCles: [
+          "Pour le Direct : fixe un point précis avant de commencer, imagine un fil tendu entre deux points.",
+          "Pour l'Indirect : trace une spirale, enveloppe l'espace, change de direction par des courbes.",
+          "Même destination, trajectoires différentes — le 'quoi' est identique, le 'comment' change tout.",
+          "Le facteur Espace agit directement sur la présence scénique et la lisibilité de l'intention.",
+        ],
       },
     ],
   },
@@ -197,6 +251,12 @@ Laban décrivait le Soudain comme "lutter contre le temps" — agir avant qu'il 
 **Une image utile :** Soudain, c'est comme attraper un objet qui tombe. Soutenu, c'est comme regarder un coucher de soleil — on voudrait que ça ne finisse jamais.
 
 Et un mouvement peut être Soudain et Lent, ou Soutenu et Rapide — le tempo ne détermine pas l'Effort. Un geste lent d'une fraction de seconde peut être Soudain dans son intention. Un geste rapide peut être Soutenu dans sa qualité.`,
+        pointsCles: [
+          "Le facteur Temps ≠ tempo musical : c'est l'attitude intérieure du mouvement par rapport à la durée.",
+          "Soudain = lutter contre le temps, agir avant qu'il soit trop tard — la décision est prise maintenant.",
+          "Soutenu = s'abandonner au temps, laisser le geste habiter pleinement la durée.",
+          "Un geste lent peut être Soudain, un geste rapide peut être Soutenu — l'intention prime sur la vitesse.",
+        ],
       },
       {
         titre: "Le Temps dans chaque style",
@@ -215,6 +275,12 @@ Le timing du burlesque est une science du Soudain. Le tease crée de l'attente (
 La syncope, c'est du Soudain sur un temps faible. Le legato jazz, c'est du Soutenu entre les accents. Le swing naît de l'alternance des deux.
 
 > *Mon astuce pour les élèves : je leur demande de penser à une décision importante — "maintenant ou jamais" — pour trouver le Soudain. Et de penser à regarder la mer à l'horizon pour trouver le Soutenu.*`,
+        pointsCles: [
+          "En classique, l'allegro est Soudain ; l'adage est Soutenu — un grand danseur maîtrise les deux.",
+          "Le contact improvisation valorise le Soutenu ; Forsythe joue la Soudaineté pour créer l'urgence.",
+          "Le burlesque : l'attente crée le Soutenu, la révélation est Soudaine — c'est toute la science du tease.",
+          "En jazz, la syncope = Soudain sur temps faible ; le legato = Soutenu entre les accents.",
+        ],
       },
       {
         titre: "Travailler le facteur Temps",
@@ -233,6 +299,12 @@ La syncope, c'est du Soudain sur un temps faible. Le legato jazz, c'est du Soute
 **Exercice de dialogue :** en duo, l'un fait un geste Soudain, l'autre répond en Soutenu. Puis inversez. Observez comment ces deux qualités créent un dialogue, presque une conversation.
 
 Le Temps, c'est peut-être le facteur le plus lié à la **présence** — un geste qui "habite son temps" capte l'œil, même sans virtuosité technique.`,
+        pointsCles: [
+          "Le Temps est le premier facteur à s'effacer quand on se concentre sur la technique — vigilance !",
+          "Soudain : pense à ta tête qui se tourne par surprise, ou à saisir un objet qui tombe.",
+          "Soutenu : imagine de l'air épais à traverser, ou une traversée entière sur une seule inspiration.",
+          "Un geste qui habite son temps capte l'œil même sans virtuosité — c'est l'essence de la présence.",
+        ],
       },
     ],
   },
@@ -260,6 +332,12 @@ Laban a inventé le mot **"fluctuelle"** pour désigner cette qualité — une n
 **La question à te poser** quand tu danses : si quelqu'un te disait "stop" maintenant, est-ce que tu pourrais t'arrêter instantanément (Flux Lié) ? Ou est-ce que ton mouvement a été lancé et doit aller jusqu'à sa résolution (Flux Libre) ?
 
 Un geste en équilibre sur la pointe d'un pied est Lié — un micro-ajustement permanent. Un fouetté lancé en pirouette multiple est Libre — une fois parti, on ne peut pas le retenir.`,
+        pointsCles: [
+          "Le facteur Flux décrit le rapport au contrôle : ton mouvement pourrait-il s'arrêter maintenant ?",
+          "Flux Lié = contrôlé, retenu, stoppable à tout instant — micro-ajustements permanents.",
+          "Flux Libre = fluide, irrépressible, lancé — une fois parti, le mouvement va jusqu'à sa résolution.",
+          "Laban a inventé 'fluctuelle' pour cette qualité : mouvante, ondulante, difficile à définir.",
+        ],
       },
       {
         titre: "Flux Libre, Flux Lié : les émotions du mouvement",
@@ -280,6 +358,12 @@ Un geste en équilibre sur la pointe d'un pied est Lié — un micro-ajustement 
 **En danse-thérapie**, ce facteur est fondamental : un individu qui produit exclusivement du Flux Lié révèle souvent une tension psychique ou une difficulté à lâcher le contrôle. L'exploration du Flux Libre peut être un outil de libération. Les Laban Movement Analysts travaillant avec des personnes en difficulté psychologique s'appuient beaucoup sur ce facteur.
 
 > *Note personnelle : c'est le facteur qui m'a le plus appris sur moi-même. En situation de stress, je deviens entièrement Lié — je retiens tout. Travailler le Flux Libre en improvisation a été une des expériences les plus libératrices de ma pratique.*`,
+        pointsCles: [
+          "Flux Lié : précision, maîtrise, vigilance — souvent associé à la tension ou à l'autocontrôle.",
+          "Flux Libre : abandon, confiance, générosité — lié à la joie, au lâcher-prise, à l'envol.",
+          "En danse-thérapie, le Flux est fondamental : l'excès de Lié révèle souvent une tension psychique.",
+          "C'est le facteur le plus intérieur — celui qui en dit le plus sur ce que tu vis en dansant.",
+        ],
       },
       {
         titre: "Le Flux dans les disciplines et comment le travailler",
@@ -300,6 +384,12 @@ Le body roll fluide est du Flux Libre. Le strut piqué et maîtrisé est du Flux
 **Pour travailler le Flux Libre :** improvise en laissant chaque geste aller jusqu'à sa "résolution naturelle" — ne retiens pas. Lance un bras et laisse-le emmener ton épaule, ton buste, tes jambes si nécessaire.
 
 **Pour travailler le Flux Lié :** pratique des freezes progressifs — commence un geste et stoppe-le à différents moments de sa trajectoire. Sens la retenue dans le corps.`,
+        pointsCles: [
+          "Le classique demande du Flux Lié élevé ; les grands interprètes injectent du Libre dans les liaisons.",
+          "Le contact improvisation et la chute release cultivent le Flux Libre pur.",
+          "En pole, figures statiques = Lié intense ; spins fluides = Libre — c'est l'esthétique du pole art.",
+          "Pour le Libre : laisse chaque geste aller à sa résolution naturelle. Pour le Lié : pratique les freezes.",
+        ],
       },
     ],
   },
@@ -327,6 +417,12 @@ Le body roll fluide est du Flux Libre. Le strut piqué et maîtrisé est du Flux
 | **Flotter** *(Float)* | Léger | Soutenu | Indirect | Légèreté ample et prolongée |
 
 Ces 8 actions ne sont pas des figures chorégraphiques — ce sont des **qualités d'intention** qui peuvent colorer n'importe quel geste. Un port de bras peut être un Glisser ou un Presser selon l'Effort qu'on y met. C'est en ça que le système de Laban est universel.`,
+        pointsCles: [
+          "En combinant Poids × Temps × Espace, on obtient 8 Actions d'Effort : les 'couleurs primaires' du mouvement.",
+          "Frapper, Presser, Trancher, Tordre (Fort) ; Tapoter, Glisser, Secouer, Flotter (Léger).",
+          "Ces 8 actions colorent n'importe quel geste : un même port de bras peut être un Glisser ou un Presser.",
+          "C'est l'universalité de Laban : les mêmes qualités traversent toutes les disciplines.",
+        ],
       },
       {
         titre: "Les États et les Drives",
@@ -357,6 +453,12 @@ Un **Drive** combine trois facteurs — l'un des quatre est toujours absent, ce 
 | **Spell Drive** | Espace + Temps + Flux | Poids | Hypnotique, magique, incorporel |
 
 > *Ce que j'aime avec les Drives, c'est qu'ils correspondent à des états d'être reconnaissables. Le Spell Drive — sans Poids — c'est ce sentiment d'être "hors du temps" dans une improvisation profonde. Le Passion Drive — sans Espace — c'est la danse qui vient des tripes, sans souci de la "belle forme".*`,
+        pointsCles: [
+          "Les 6 États combinent 2 facteurs : Rêve, Rythme, Éveillé, Lointain, Mobile, Stable.",
+          "Les 4 Drives combinent 3 facteurs incluant le Flux : Action, Passion, Vision, Spell Drive.",
+          "Spell Drive (sans Poids) = l'état 'hors du temps' d'une improvisation profonde.",
+          "Passion Drive (sans Espace) = la danse qui vient des tripes, sans souci de la belle forme.",
+        ],
       },
       {
         titre: "L'AML comme outil vivant",
@@ -376,6 +478,12 @@ Dans mon carnet, j'ai une dernière citation de Laban que je relis souvent :
 > *"Ce n'est pas le mouvement en lui-même qui importe, mais la vie qui se révèle à travers lui."*
 
 Et ça, aucun prof, aucun diplôme, aucun manuel ne peut te l'apprendre à ta place — seulement la pratique, et un peu de curiosité.`,
+        pointsCles: [
+          "L'AML est un vocabulaire d'observation — pas de jugement : aucune qualité n'est meilleure qu'une autre.",
+          "Il permet d'observer, analyser, composer et enseigner avec une précision inédite.",
+          "Le vrai apport de Laban : le mouvement a une grammaire, pas seulement des positions.",
+          "\"Ce n'est pas le mouvement qui importe, mais la vie qui se révèle à travers lui.\" — Laban",
+        ],
       },
     ],
   },
@@ -402,6 +510,12 @@ La colonne vertébrale n'est pas droite — elle présente trois courbures natur
 6. Pieds : plante entière en contact avec le sol
 
 L'alignement est dynamique — il s'adapte à chaque mouvement sans jamais être figé. Pense à lui comme une conversation entre les différentes parties de ton corps, pas comme une statue.`,
+        pointsCles: [
+          "La colonne a 3 courbures naturelles : l'alignement dansé les respecte et les optimise.",
+          "6 repères : tête horizontale, épaules basses, cage ouverte, bassin neutre, genoux libres, plante entière.",
+          "L'alignement est dynamique — il s'adapte à chaque mouvement, il n'est jamais figé.",
+          "Pense à l'alignement comme une conversation entre les parties du corps, pas comme une statue.",
+        ],
       },
       {
         titre: "Le turn-out : anatomie et limites",
@@ -421,6 +535,12 @@ Tout ça, c'est génétique. Tu ne peux pas y changer grand-chose structurelleme
 - La proprioception du turn-out (tenir ton turn-out *en mouvement*, pas seulement debout immobile)
 
 **Ce qu'on ne peut pas changer :** la structure osseuse. Forcer au-delà blesse — les hanches, les genoux, les chevilles paient pour les pieds forcés. Ton turn-out vient de ta hanche, pas de tes pieds. C'est une des premières choses que j'ai notée en gros caractères.`,
+        pointsCles: [
+          "Le turn-out est déterminé par la structure osseuse (fémur, acétabule) — génétique, non forceable.",
+          "Ce qu'on peut améliorer : rotateurs externes, souplesse des rotateurs internes, proprioception du turn-out.",
+          "Forcer au-delà de ta structure blesse les hanches, genoux et chevilles.",
+          "Ton turn-out vient de la hanche, pas des pieds — règle numéro un à écrire en gros caractères.",
+        ],
       },
       {
         titre: "Centre de gravité, tonicité et proprioception",
@@ -433,6 +553,12 @@ Tout ça, c'est génétique. Tu ne peux pas y changer grand-chose structurelleme
 **Proprioception** : le sens du corps dans l'espace. C'est ce qui te permet de corriger ta posture sans miroir, de mémoriser un mouvement dans la mémoire musculaire, de protéger instinctivement une articulation fragile.
 
 > *Exercice de Plumy : Ferme les yeux, lève un bras dans une direction précise, puis essaie de sentir exactement où il est avant de vérifier. C'est la proprioception au travail — et on peut l'entraîner. Plus tu danses, plus elle s'affine.*`,
+        pointsCles: [
+          "Le CDG est sous le nombril : un danseur efficace joue avec la gravité plutôt que de la combattre.",
+          "La tonicité sélective = engager ce qui est nécessaire, relâcher le reste — tout tenir se voit.",
+          "La proprioception = le sens du corps dans l'espace, la mémoire musculaire, la protection instinctive.",
+          "Plus tu danses, plus ta proprioception s'affine — c'est un sens qui se cultive.",
+        ],
       },
     ],
   },
@@ -468,6 +594,12 @@ Cour-Face      |  Centre-Face      |  Jardin-Face
 
 > *Mémo de Plumy : "Cour" = Court = le mot le plus court → côté gauche. "Jardin" = le mot plus fleuri, plus long → côté droit. Ça m'a sauvé la mise des dizaines de fois.*`,
         schemaId: 'espace-scenique-grille',
+        pointsCles: [
+          "Cour = à ta gauche face au public ; Jardin = à ta droite — mémo : Cour est le mot le plus court.",
+          "Face/Avant-scène = côté public ; Lointain/Fond de scène = côté mur du fond.",
+          "La grille 3×3 donne 9 zones nommées : Cour/Centre/Jardin × Face/Milieu/Lointain.",
+          "Vocabulaire universel depuis le XVIIe siècle — tous les pros l'utilisent partout en France.",
+        ],
       },
       {
         titre: "Trajectoires et directions",
@@ -482,6 +614,12 @@ Cour-Face      |  Centre-Face      |  Jardin-Face
 **Le manège** est une trajectoire circulaire le long des bords de la scène — très utilisé en classique pour les grandes combinaisons de tours et de sauts. Voir un manège de pirouettes bien lancé, c'est l'une des choses les plus belles de la danse classique. Dans mon carnet, j'ai une petite flèche circulaire pour le rappeler.
 
 **Les coulisses** sont les zones cachées de chaque côté (cour et jardin), depuis lesquelles tu attends ton entrée. C'est là aussi que se passent les chuchotements, les derniers encouragements, les sourires nerveux avant d'entrer en scène.`,
+        pointsCles: [
+          "La diagonale est la trajectoire la plus longue sur scène — de coin à coin, deux sens possibles.",
+          "'En croix' = travailler un exercice dans 4 directions successives : devant, côté, derrière, côté.",
+          "Le manège = trajectoire circulaire le long des bords — très utilisé en classique pour tours et sauts.",
+          "Les coulisses sont les zones de chaque côté où tu attends, chuchotes et souris avant d'entrer.",
+        ],
       },
       {
         titre: "Orientation du corps sur scène",
@@ -499,6 +637,12 @@ Cour-Face      |  Centre-Face      |  Jardin-Face
 Ces orientations se combinent avec les zones de scène pour créer des positions précises — du genre "arabesque croisée côté jardin, face au lointain". Ça peut sembler compliqué dit comme ça, mais une fois que tu as le vocabulaire, c'est d'une clarté absolue.
 
 > *Le savoir scénique, c'est comme avoir un GPS dans le corps. Une fois intégré, tu ne te perds plus jamais sur scène — et tu peux recevoir n'importe quelle indication chorégraphique au millimètre, même en pleine répétition à la volée.*`,
+        pointsCles: [
+          "En face, de profil, de dos, épaulé, croisé, ouvert — 6 orientations à connaître par cœur.",
+          "Ces orientations se combinent avec les zones de scène pour des positions ultra-précises.",
+          "Exemple : 'arabesque croisée côté jardin, face au lointain' — clair comme de l'eau de roche.",
+          "Ce vocabulaire est ton GPS scénique : une fois intégré, tu ne te perds plus jamais sur scène.",
+        ],
       },
     ],
   },

@@ -42,6 +42,12 @@ export const coursUnite5: Cours[] = [
 - L'importance accordée au processus autant qu'au résultat
 
 > Ce qui m'a touché dans le contemporain, c'est ça : on te demande de penser, pas juste d'exécuter. Ça change tout — promis.`,
+        pointsCles: [
+          "La danse contemporaine résiste à la définition — c'est volontaire, et c'est toute sa beauté.",
+          "Ce n'est pas un style unique, ni synonyme de 'danse moderne' — c'est un champ ouvert et pluriel.",
+          "Elle questionne en permanence ce qu'est la danse : corps pluriels, processus, dialogue avec d'autres arts.",
+          "En contemporain, on te demande de penser, pas juste d'exécuter — ça change tout.",
+        ],
       },
       {
         titre: 'Les grandes figures qui ont tout changé',
@@ -87,6 +93,12 @@ Le **CNDC** (Centre national de danse contemporaine) à Angers, fondé en 1978, 
 | Corps | Outil expressif | Outil de questionnement |
 
 > Ce qui me frappe dans ces biographies, c'est que chacun de ces artistes avait une question obsessionnelle — et a passé sa vie à y répondre par le mouvement. Quelle est la tienne ?`,
+        pointsCles: [
+          "Cunningham libère la danse de la narration et de la musique ; Bausch invente le Tanztheater.",
+          "Forsythe déconstruit le ballet par amour ; Naharin développe le Gaga — explorer la sensation, pas la forme.",
+          "Germaine Acogny fusionne ballet classique et danses africaines dans la technique Acogny.",
+          "Chaque grand artiste avait une question obsessionnelle — et a passé sa vie à y répondre par le mouvement.",
+        ],
       },
       {
         titre: 'Le corps contemporain — un rapport différent à la gravité',
@@ -116,6 +128,12 @@ Le corps allongé, roulé, rampant — les niveaux proches du sol. Un espace que
 Le corps penché, en déséquilibre volontaire — entre verticale et horizontale. C'est là que vivent les chutes contrôlées.
 
 > La richesse du corps contemporain vient de sa capacité à habiter tous ces axes, à passer de l'un à l'autre, à trouver du sens dans chacun. Ne choisis pas : explore-les tous.`,
+        pointsCles: [
+          "Corps classique = lutte contre la gravité ; corps contemporain = dialogue avec la gravité.",
+          "Le sol est un espace de danse à part entière — pas juste un point de départ ou d'arrivée.",
+          "Trois axes : vertical (debout), horizontal (au sol), diagonal (déséquilibre volontaire).",
+          "La richesse du contemporain : habiter tous ces axes, passer de l'un à l'autre, trouver du sens dans chacun.",
+        ],
       },
       {
         titre: 'La release technique — moins tu forces, plus tu bouges',
@@ -147,6 +165,12 @@ Le corps penché, en déséquilibre volontaire — entre verticale et horizontal
 La release technique s'appuie sur une connaissance anatomique — comprendre comment les os s'articulent te permet de trouver des positions naturellement stables, sans effort musculaire excessif.
 
 > Moins tu forces, plus tu bouges. C'est contre-intuitif, mais c'est vrai. Fais-moi confiance là-dessus.`,
+        pointsCles: [
+          "La release technique n'est pas de la relaxation — c'est une philosophie basée sur l'économie d'effort.",
+          "Elle identifie et libère les tensions parasites pour maximiser la fluidité sans forcer.",
+          "Le scan corporel : porter l'attention sur chaque partie du corps et relâcher ce qui n'est pas nécessaire.",
+          "Moins tu forces, plus tu bouges — contre-intuitif, mais vrai.",
+        ],
       },
       {
         titre: 'La contraction-release — le souffle qui danse',
@@ -185,6 +209,12 @@ J'ai une page entière dans mon carnet rien que pour ça, parce que ce principe 
 
 **Ce qui m'a le plus frappé dans la technique Graham :**
 La respiration *génère* le mouvement — elle n'est pas superposée à un mouvement déjà décidé. C'est une révolution pédagogique. Avant Graham, on respirait malgré la danse. Avec Graham, on danse parce qu'on respire.`,
+        pointsCles: [
+          "Martha Graham crée une technique complète basée sur contraction (intériorité) et release (liberté).",
+          "La contraction : bas-ventre creusé, colonne en C. Le release : extension et ouverture du centre.",
+          "Le spiral Graham : la contraction se tord, le dénouement relance le mouvement — on le dirige.",
+          "La révolution Graham : la respiration génère le mouvement — on danse parce qu'on respire.",
+        ],
       },
       {
         titre: 'Le travail au sol — floorwork, chutes et roulades',
@@ -214,6 +244,12 @@ Back fall, side fall — toujours avec une direction, toujours avec un plan de s
 Combine roulades, transitions, chutes en des phrases fluides. C'est là que le sol devient vraiment ton partenaire de danse.
 
 > Le sol est ton allié, pas ton ennemi. Plus tu lui fais confiance, plus il t'aide. Et je dis "confiance" au sens littéral — ça commence dans ta tête.`,
+        pointsCles: [
+          "Progression : apprivoiser le sol → surfaces sûres → transitions debout/sol → chutes dirigées → enchaînement.",
+          "Surfaces sûres : dos plat, côté cuisse, côté torse, ventre. À éviter sans préparation : genoux et coudes.",
+          "La difficulté n'est pas le sol — c'est la transition. Descendre sans impact, monter sans effort brut.",
+          "Le sol est ton allié : plus tu lui fais confiance, plus il t'aide.",
+        ],
       },
       {
         titre: 'Le contact improvisation — écouter avec le corps',
@@ -247,6 +283,12 @@ Des sessions ouvertes, souvent hebdomadaires, dans la plupart des grandes villes
 - Tu as le droit de dire non avec le corps, à tout moment
 
 > Ce que j'ai appris avec le contact impro, c'est que l'écoute est une compétence physique, pas juste mentale. Ton corps peut écouter. Donne-lui la chance de le faire.`,
+        pointsCles: [
+          "Le contact impro (Steve Paxton, 1972) : point de contact mobile, partage de poids réel, écoute sans paroles.",
+          "Il supprime la hiérarchie porteur/porté — tout change en permanence, pour tous les corps et toutes les forces.",
+          "Les jams de contact impro : sessions ouvertes hebdomadaires dans la plupart des grandes villes.",
+          "L'écoute est une compétence physique, pas juste mentale — ton corps peut écouter.",
+        ],
       },
       {
         titre: "L'improvisation et la composition — créer en mouvement",
@@ -275,6 +317,12 @@ Même en improvisation, tu peux utiliser des **phrases mémorisées** comme mat�
 Avant d'improviser, des pratiques comme le Feldenkrais ou le BMC te permettent de te "recentrer" dans ton corps — de sortir des habitudes automatiques pour être vraiment disponible à l'instant présent.
 
 > L'improvisation n'est pas l'absence de technique — c'est la technique à son plus haut degré d'intériorisation. Tu ne l'appliques plus, tu l'habites. Et ça, ça prend du temps, et c'est magnifique.`,
+        pointsCles: [
+          "Improvisation ≠ faire n'importe quoi : elle est informée par la connaissance du corps, l'espace, l'écoute.",
+          "Le score (partition d'improvisation) donne un cadre sans fixer le contenu — les contraintes libèrent.",
+          "Moins tu as de choix, plus ton mouvement est précis — vérifié des dizaines de fois.",
+          "L'improvisation n'est pas l'absence de technique — c'est la technique à son plus haut degré d'intériorisation.",
+        ],
       },
     ],
   },

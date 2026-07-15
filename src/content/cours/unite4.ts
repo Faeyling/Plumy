@@ -50,6 +50,12 @@ Les grandes compagnies de ballet sont souvent des institutions d'État :
 Le financement public est important : il permet à ces compagnies de maintenir un répertoire, de former des danseurs sur la durée, et de ne pas dépendre uniquement du marché.
 
 > Ce que j'aime dans cette histoire, c'est qu'elle montre que la danse classique n'a jamais été figée — elle s'est transformée à chaque siècle, en absorbant les révolutions de son temps. Elle continue.`,
+        pointsCles: [
+          "Louis XIV (1661) fonde l'Académie royale de danse — d'où vient le vocabulaire français encore universel.",
+          "Marie Taglioni (1832) invente les pointes dans La Sylphide — révolution esthétique totale.",
+          "Petipa à Saint-Pétersbourg codifie le grand ballet classique avec Tchaïkovski.",
+          "La danse classique s'est transformée à chaque siècle — elle n'a jamais été figée.",
+        ],
       },
       {
         titre: 'Les trois écoles de ballet et la hiérarchie dans la compagnie',
@@ -114,6 +120,12 @@ Dans le répertoire classique, le grand pas de deux suit une structure quasi-imm
 Cette structure est celle du *Lac des cygnes*, de *La Belle au bois dormant*, de *Giselle*, de *Don Quichotte* — pratiquement tous les grands ballets du répertoire.
 
 > Ce que j'aime dans les trois écoles, c'est qu'elles prouvent qu'il n'y a pas une seule façon d'être "classique" — qu'à l'intérieur du même vocabulaire codifié, des cultures et des philosophies différentes ont laissé leur empreinte. La technique classique est universelle dans ses fondements, diverse dans ses expressions.`,
+        pointsCles: [
+          "École française = élégance et épaulement ; italienne (Cecchetti) = virtuosité ; russe (Vaganova) = amplitude.",
+          "Balanchine crée un style américain : vitesse, musicalité extrême, rapport quasi-mathématique à la musique.",
+          "À l'Opéra de Paris, on progresse de Quadrille à Étoile — chaque échelon représente des années de travail.",
+          "Le grand pas de deux suit une structure quasi-immuable : entrée, adage, variations, coda.",
+        ],
       },
       {
         titre: 'La logique du cours classique',
@@ -136,6 +148,12 @@ Chaque section prépare la suivante :
 - Le grand allegro libère la puissance
 
 > La barre n'est pas juste de l'échauffement. C'est là que se construisent les fondations de toute la technique — et les professionnels y passent toute leur vie. Ça m'a mis du temps à comprendre ça.`,
+        pointsCles: [
+          "L'ordre du cours n'est pas arbitraire : barre → milieu → adage → allegro → pointes → révérence.",
+          "La barre chauffe et aligne ; le milieu transfère sans appui ; l'allegro libère la puissance.",
+          "La barre n'est pas juste de l'échauffement — c'est là que se construisent les fondations.",
+          "Les professionnels passent toute leur vie à la barre : comprendre ça change tout.",
+        ],
       },
       {
         titre: 'La barre — exercices fondamentaux',
@@ -163,6 +181,12 @@ Chaque section prépare la suivante :
 
 **En retournant :**
 La séquence se répète de l'autre côté. Ton côté faible mérite autant d'attention que ton côté fort — j'insiste là-dessus.`,
+        pointsCles: [
+          "L'ordre des exercices suit une logique irréprochable : pliés → tendus → dégagés → ... → grands battements.",
+          "La main intérieure posée légèrement — la barre est ton appui, pas ta béquille.",
+          "Les grands battements (dernier exercice) libèrent la puissance maximale après un échauffement complet.",
+          "Ton côté faible mérite autant d'attention que ton côté fort — j'insiste là-dessus.",
+        ],
       },
       {
         titre: 'Les cinq positions et le turn-out',
@@ -203,6 +227,12 @@ Les bras ne sont pas un accessoire — ils font partie de l'architecture entièr
 - Conscience proprioceptive en position neutre avant d'exiger l'ouverture
 
 > Le turn-out parfait vient du travail régulier, pas de la force brute. Prends les années qu'il faut — ton corps te remerciera.`,
+        pointsCles: [
+          "5 positions des pieds (1ère → 5ème) et 5 positions des bras — architecture entière de la ligne classique.",
+          "La 5ème est la plus exigeante : turn-out profond, plusieurs années pour être vraiment propre.",
+          "Le turn-out se fait DEPUIS LA HANCHE — jamais depuis le genou ou le pied. Forcer depuis l'extrémité blesse.",
+          "Le turn-out parfait vient du travail régulier, pas de la force brute.",
+        ],
       },
       {
         titre: "L'adage — lenteur, amplitude et expression",
@@ -232,6 +262,12 @@ Tenir une position sur demi-pointe ou pointe. La durée d'un équilibre dépend 
 Tour lent autour d'un axe, tenu par le partenaire — le partenaire fait pivoter en arabesque ou attitude.
 
 > L'adage n'est pas "lent et ennuyeux". C'est l'espace de la musicalité — là où chaque note peut se voir dans le corps. C'est là que le classique devient de l'art.`,
+        pointsCles: [
+          "L'adage (développés, arabesque, attitude, équilibres, promenades) est l'espace de la musicalité.",
+          "L'arabesque : la ligne va des doigts à la pointe du pied — et elle vient du dos, pas de la jambe.",
+          "Attitude à la russe (talon plus haut) vs française (talon aligné) — deux philosophies du même geste.",
+          "L'adage n'est pas 'lent et ennuyeux' — c'est là que chaque note peut se voir dans le corps.",
+        ],
       },
       {
         titre: "L'allegro — de la légèreté à la puissance",
@@ -262,6 +298,12 @@ Combinaisons longues avec déplacement, souvent en diagonale :
 
 **La préparation au grand allegro :**
 L'élan est fondamental. Des pas de couru, des glissades ou des chassés te donnent la vitesse avant les grands sauts. Ne jamais sauter "à sec" — prépare ton élan.`,
+        pointsCles: [
+          "Petit allegro : changements, échappés, assemblés, jetés, pas de bourrée — vivacité et articulation.",
+          "La règle d'or : atterrir en demi-plié, talon–voûte–métatarses–orteils. Un atterrissage silencieux = bonne technique.",
+          "Grand allegro : combinaisons longues avec déplacement en diagonale — glissade + grand jeté, chaînés.",
+          "Ne jamais sauter 'à sec' — prépare ton élan avec des pas de couru, des glissades ou des chassés.",
+        ],
       },
       {
         titre: 'Les tours — pirouette, fouetté, chaînés',
@@ -299,6 +341,12 @@ Le corps tourne autour d'un axe imaginaire vertical, de la couronne de la tête 
 - L'élan vient du plié, pas d'un effort brut
 
 > Un bon tour ne se force pas — il se laisse aller. La tension est l'ennemi de la rotation. C'est une des choses les plus contre-intuitives du classique.`,
+        pointsCles: [
+          "Tour en dehors = côté de la jambe de travail ; tour en dedans = vers la jambe de terre.",
+          "Le spotting (fouetté de tête) : fixer un point, laisser le corps tourner, la tête part en dernier.",
+          "L'axe de rotation : de la couronne de la tête au pied d'appui — tout écart fait 'partir' la pirouette.",
+          "Un bon tour ne se force pas — la tension est l'ennemi de la rotation.",
+        ],
       },
       {
         titre: 'Danse classique — questions de santé et de longévité',
@@ -325,6 +373,12 @@ Le corps tourne autour d'un axe imaginaire vertical, de la couronne de la tête 
 L'âge minimum recommandé est 10–12 ans, selon la maturité osseuse. Avant cet âge, les os des pieds ne sont pas soudés et les déformations peuvent être permanentes. Un bilan podologique est recommandé avant toute mise en pointe.
 
 > La longévité en danse classique se construit dans la sagesse, pas dans la souffrance. Les danseurs qui durent sont ceux qui ont appris à prendre soin d'eux. C'est une leçon que j'aurais voulu apprendre plus tôt.`,
+        pointsCles: [
+          "Blessures les plus fréquentes : cheville, pied, genou, hanche, dos — souvent par compensation ou force brute.",
+          "5 principes de prévention : progressivité, renforcement, récupération, écoute du corps, chaussures adaptées.",
+          "L'âge minimum pour les pointes est 10–12 ans — avant, les os ne sont pas soudés et peuvent se déformer.",
+          "La longévité en classique se construit dans la sagesse, pas dans la souffrance.",
+        ],
       },
     ],
   },

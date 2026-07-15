@@ -24,6 +24,12 @@ export const coursUnite3: Cours[] = [
 | 6/8 | Oscillant, balancé | Certains jazz, musiques folkloriques |
 
 **Compter en danse :** on compte généralement en 8 (deux mesures de 4/4), en 6 (pour la valse), ou en combinaison. Si ton prof dit "5, 6, 7, 8", il te donne une anacrouse sur le dernier temps — patience, on y vient.`,
+        pointsCles: [
+          "Le tempo (BPM) est la pulsation — l'intérioriser jusqu'à le sentir sans musique est fondamental.",
+          "La mesure organise les temps : 4/4 (universel), 3/4 (valse), 2/4 (cancan), 6/8 (balancé).",
+          "En danse, on compte en 8 (deux mesures de 4/4) ou en 6 — le '5, 6, 7, 8' est une anacrouse.",
+          "Comprendre la structure musicale, c'est débloquer un niveau entier de la danse.",
+        ],
       },
       {
         titre: "Le phrasé musical : la grammaire du temps",
@@ -37,6 +43,12 @@ En tant que danseur, tu dois apprendre à entendre :
 **Phrasé dansé vs phrasé musical :** un chorégraphe peut aligner ses phrases avec la musique (*avec-la-musique*) ou créer délibérément des décalages (*contre la musique*). Ce jeu de tension/résolution est l'un des outils les plus puissants de la composition.
 
 > *Note de Plumy : J'adore les chorégraphes qui arrivent une mesure avant ou après la musique. Ça crée une surprise que même moi je n'arrive pas toujours à anticiper — et c'est cette imprévisibilité maîtrisée qui me coupe le souffle à chaque fois.*`,
+        pointsCles: [
+          "Une phrase musicale (4 ou 8 mesures) a un début, une montée et une cadence — comme une phrase écrite.",
+          "Le chorégraphe peut aligner ses phrases avec la musique ou créer des décalages délibérés.",
+          "Jouer contre la musique est un outil puissant — la surprise maîtrisée coupe le souffle.",
+          "Entendre les phrases musicales permet de construire une chorégraphie qui 'respire'.",
+        ],
       },
       {
         titre: "Anacrouse et syncope : le jeu sur le temps",
@@ -52,6 +64,12 @@ En tant que danseur, tu dois apprendre à entendre :
 - Un danseur qui anticipe systématiquement le tempo "met en avance"
 
 Expérimenter avec ces déplacements temporels, c'est apprendre à *parler* en musique, pas seulement à l'*écouter*. Et franchement, une fois qu'on entend la syncope dans les muscles — on ne peut plus s'en passer.`,
+        pointsCles: [
+          "L'anacrouse = la préparation qui précède le temps fort — le souffle avant la parole.",
+          "La syncope déplace l'accent vers les temps faibles : c'est l'ADN du jazz et du funk, le groove.",
+          "Un geste projeté dans la musique vs arraché à elle : l'anacrouse fait toute la différence.",
+          "Une fois qu'on entend la syncope dans les muscles, on ne peut plus s'en passer.",
+        ],
       },
     ],
   },
@@ -83,6 +101,12 @@ Voici la gamme des marquages, du plus lent au plus rapide :
 | **Prestissimo** | > 200 | Extrêmement rapide |
 
 En danse, tu entendras surtout **adagio**, **andante**, **allegro** et **presto** — ce sont les quatre bornes du vocabulaire quotidien d'un prof. "On fait l'adage en adagio" veut dire : lent, expressif, avec tout le temps pour développer chaque position.`,
+        pointsCles: [
+          "Les marquages italiens décrivent un caractère, pas juste une vitesse : Grave (solennel) → Prestissimo (fulgurant).",
+          "En danse, adagio, andante, allegro et presto sont les quatre bornes du vocabulaire quotidien.",
+          "Adagio ≈ 44–68 BPM (lent, expressif) ; Allegro ≈ 120–168 BPM (vif, joyeux).",
+          "'L'adage en adagio' = lent, expressif, avec tout le temps pour développer chaque position.",
+        ],
       },
       {
         titre: "Accelerando, ritardando : changer le tempo en cours de route",
@@ -99,6 +123,12 @@ En danse, tu entendras surtout **adagio**, **andante**, **allegro** et **presto*
 **À-temps-sus** ou **Poco a poco** signifient "peu à peu" — la transition est graduelle, imperceptible au début. C'est l'art du changement sans rupture.
 
 > *Ce qui m'a le plus surprise en apprenant ça : ce n'est pas la destination (le nouveau tempo) qui compte dans un accelerando, c'est le voyage. Comment le corps gère-t-il la montée d'énergie ? Où dans le corps ressens-tu l'accélération en premier ?*`,
+        pointsCles: [
+          "Accelerando = accélération progressive, montée en urgence — vers Flux Libre et Temps Soudain.",
+          "Ritardando = ralentissement progressif — invite le Flux Lié et le Temps Soutenu.",
+          "Ce n'est pas la destination qui compte dans un accelerando, c'est le voyage — comment le corps gère la montée.",
+          "'Poco a poco' = peu à peu : le changement est graduel, imperceptible au début.",
+        ],
       },
       {
         titre: "Le rubato : quand le temps se plie",
@@ -121,6 +151,12 @@ Le rubato est omniprésent dans le ballet romantique et le lyrical jazz. Il exig
 | **Rubato** | Liberté expressive — mais reviens |
 | **A piacere** | "À volonté" — liberté totale |
 | **Senza misura** | Sans mesure — improvisation temporelle |`,
+        pointsCles: [
+          "Rubato = 'temps volé' : étirer certains moments, compresser d'autres pour l'expression.",
+          "Le corps 'respire' avec la musique plutôt que de la suivre métronomiquement.",
+          "Ce qui distingue le rubato du hors-tempo : la conscience — le rubato revient toujours au tempo de base.",
+          "Omniprésent dans le ballet romantique et le lyrical jazz — exige une grande maturité d'interprétation.",
+        ],
       },
     ],
   },
@@ -150,6 +186,12 @@ Le rubato est omniprésent dans le ballet romantique et le lyrical jazz. Il exig
 Ces nuances ne sont pas absolues — elles sont relatives au contexte musical. Un *piano* dans un orchestre romantique peut être plus fort qu'un *forte* dans un duo de chambre.
 
 Ce qui est fascinant pour le danseur : la même trajectoire de bras peut exprimer toute cette gamme dynamique. La dynamique, c'est **l'intention qui habille le geste**.`,
+        pointsCles: [
+          "Les dynamiques vont de ppp (presque invisible) à fff (climax fracassant) — elles sont relatives au contexte.",
+          "La même trajectoire de bras peut exprimer toute la gamme dynamique : l'intention habille le geste.",
+          "Piano = doux, intérieur ; pianissimo = effleur extrême — chaque nuance a sa qualité de mouvement.",
+          "Les dynamiques ne sont pas absolues — elles dépendent toujours du contexte musical.",
+        ],
       },
       {
         titre: "Crescendo et decrescendo : l'énergie en mouvement",
@@ -162,6 +204,12 @@ Ce qui est fascinant pour le danseur : la même trajectoire de bras peut exprime
 **Fortepiano** (*fp*) : on démarre fort, puis on passe immédiatement à doux. C'est un effet de choc expressif — très présent dans la musique de Beethoven et dans les mouvements dramatiques.
 
 > *En improvisation, j'aime proposer cet exercice : commence un geste très petit (pp) et laisse-le grandir jusqu'à remplir toute ta kinesphère (ff). Puis fais-le rétrécirassez (decrescendo) jusqu'à disparaître presque. Observer comment l'espace interne change tout au long du crescendo — c'est une révélation.*`,
+        pointsCles: [
+          "Crescendo = le corps grandit : l'espace s'ouvre, le geste s'amplifie, l'énergie s'accumule.",
+          "Decrescendo = le corps se concentre : retenue, l'espace se referme — la retenue a sa propre force.",
+          "Fortepiano (fp) : départ fort, puis immédiatement doux — effet de choc expressif très dramatique.",
+          "Commence pp et laisse grandir jusqu'au ff, puis réduis — l'espace interne révèle tout.",
+        ],
       },
       {
         titre: "Legato, staccato : l'articulation dans le corps",
@@ -181,6 +229,12 @@ Ce qui est fascinant pour le danseur : la même trajectoire de bras peut exprime
 | Staccato | Notes brèves et séparées | Gestes piqués, isolations nettes |
 | Tenuto | Notes tenues pleinement | Gestes posés, affirmés |
 | Accent | Note marquée | Temps fort, hit, impact |`,
+        pointsCles: [
+          "Legato = mouvement coulé, transitions fluides — ports de bras classiques, release, ondulations heels.",
+          "Staccato = gestes piqués, isolations nettes — les hits en hip-hop, les frappes en contemporain.",
+          "Tenuto = geste posé, affirmé — ni fluide ni bref, mais une présence pleinement habitée.",
+          "L'articulation, c'est la façon dont les gestes sont produits — aussi importante que leur trajectoire.",
+        ],
       },
     ],
   },
@@ -218,6 +272,12 @@ Ce qui est fascinant pour le danseur : la même trajectoire de bras peut exprime
 - Exemple : quasiment toute la musique pop/rock/jazz contemporaine
 
 > *Quand je travaille une chorégraphie, je commence toujours par écouter le morceau trois fois sans bouger — juste pour "cartographier" sa forme. Ça me donne une architecture où placer les moments forts.*`,
+        pointsCles: [
+          "Connaître la forme musicale permet d'anticiper les changements et de 'respirer' avec le morceau.",
+          "AB (deux sections) ; ABA (ternaire) ; Rondo (refrain récurrent) ; Couplet-Refrain (structure pop).",
+          "La forme ABA : idée principale, section contrastante, retour transformé — très présente en classique.",
+          "Écouter trois fois sans bouger pour 'cartographier' la forme avant de chorégraphier — conseil d'or.",
+        ],
       },
       {
         titre: "Motif, leitmotiv, ostinato : les briques de base",
@@ -233,6 +293,12 @@ Ce qui est fascinant pour le danseur : la même trajectoire de bras peut exprime
 - Repère le motif principal d'un morceau → c'est souvent là qu'un geste signature peut prendre racine
 - Entends les leitmotivs → utilise-les comme balises chorégraphiques
 - Danse sur un ostinato → explore ce que la répétition révèle dans ton corps`,
+        pointsCles: [
+          "Le motif = la plus petite idée musicale reconnaissable — la cellule depuis laquelle tout se développe.",
+          "Le leitmotiv associe un motif récurrent à un personnage ou une émotion tout au long d'une œuvre.",
+          "L'ostinato = motif répété exactement, encore et encore — le Boléro de Ravel en est l'exemple parfait.",
+          "Repère le motif d'un morceau → c'est souvent là qu'un geste signature prend racine.",
+        ],
       },
       {
         titre: "La cadence : comment la musique respire",
@@ -255,6 +321,12 @@ La **dissonance** est la tension créée par des notes qui ne s'accordent pas en
 | Cadence imparfaite | Ouverture | Transition, nouveau départ |
 
 > *Moi, je pense à la dissonance/résolution musicale comme à une question et sa réponse. Et j'essaie de rendre cette question-réponse visible dans mon corps. Ça transforme n'importe quelle variation en dialogue.*`,
+        pointsCles: [
+          "La cadence est la résolution harmonique qui termine une phrase — comme la ponctuation d'une phrase écrite.",
+          "Cadence parfaite (V→I) = conclusion fermée — le moment de poser un équilibre ou une pause.",
+          "Cadence imparfaite (I→V) = ouverture, attente — c'est souvent là que naît une transition.",
+          "Dissonance = tension dans le corps (suspension) ; résolution = soupir, atterrissage, relâchement.",
+        ],
       },
     ],
   },

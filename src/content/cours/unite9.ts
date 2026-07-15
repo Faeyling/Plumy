@@ -51,6 +51,13 @@ Les cabarets ont été des espaces de liberté pour les minorités bien avant le
 - Le public au centre : la scène existe pour lui
 - Le costume, le décor, la lumière : tout est dans l'image
 - Et toujours, depuis Le Chat Noir : la liberté de dire ce qu'on ne peut pas dire ailleurs`,
+        pointsCles: [
+          "Le cabaret naît en 1881 au Chat Noir (Montmartre) avec l'invention du Maître de Cérémonie.",
+          "L'âge d'or (1900–1940) : Mistinguett, Joséphine Baker, Ziegfeld Follies, Kabarett européen.",
+          "Le Kabarett européen est un laboratoire politique : Cabaret Voltaire (1916), Hollaender, Brecht.",
+          "Paris d'après-guerre : le Lido (1946), le Crazy Horse (1951), plus de 200 cabarets entre 1945 et 1974.",
+          "Les cabarets ont été des espaces de liberté LGBTQ+ bien avant les mouvements de libération.",
+        ],
       },
       {
         titre: "Le french cancan — technique et histoire",
@@ -88,6 +95,12 @@ Au Moulin Rouge (ouvert en 1889), La Goulue et Valentin-le-Désossé codifient e
 
 **En ligne de chorus :**
 Tout le vocabulaire du cancan se danse en formation — la synchronisation est centrale. Ce qu'une seule danseuse fait est beau ; ce que douze font ensemble est époustouflant. Tu vas voir.`,
+        pointsCles: [
+          "Le cancan naît dans les bals populaires (1820s) et est spectacularisé au Moulin Rouge en 1889.",
+          "Éléments techniques : grand battement (high kick), fan kick, porte-jupon, accroche-pied, grand écart.",
+          "Le fan kick est plus complexe que le high kick : la jambe décrit un arc dans plusieurs plans.",
+          "Tout se danse en formation — la synchronisation est centrale : ce que douze font ensemble est époustouflant.",
+        ],
       },
       {
         titre: "La chorus line — art de la synchronisation",
@@ -118,6 +131,13 @@ Pas seulement la forme — l'énergie, le regard, le sourire doivent être unifi
 
 **La répétition comme construction :**
 La synchronisation se construit en répétant ensemble — un seul cours ne suffit pas. C'est un travail de groupe dans la durée. Et c'est ça qui est beau — vraiment beau.`,
+        pointsCles: [
+          "La chorus line est une discipline sociale à part entière — il faut changer d'état d'esprit pour y entrer.",
+          "La synchronisation commence dans les oreilles, pas dans les yeux — écoute le pulse, pas tes voisines.",
+          "La vision périphérique est un outil actif : voir ses voisines sans tourner la tête.",
+          "L'amplitude s'accorde souvent sur la moins flexible — la ligne vaut plus que la performance individuelle.",
+          "La synchronisation se construit dans la durée, en répétant ensemble — un seul cours ne suffit pas.",
+        ],
       },
       {
         titre: "Le port du costume et des accessoires",
@@ -164,6 +184,12 @@ Le boa a une physique propre — il suit le corps avec un délai qu'il faut anti
 
 **Règle d'or — je te la donne gratuitement :**
 Répéter en costume complet dès que possible. Le costume modifie la danse — il faut s'y habituer physiquement. Ce n'est vraiment pas anodin, crois-moi.`,
+        pointsCles: [
+          "En cabaret, le costume n'est pas un ajout à la danse — il est la danse.",
+          "La canne : positions (appui, épaule, coude), manipulations (pirouette dans les doigts, balancer, tap).",
+          "Le boa suit le corps avec un délai — anticiper ce délai et l'utiliser, c'est créer quelque chose de beau.",
+          "Répéter en costume complet dès que possible : le costume modifie la danse, il faut s'y habituer physiquement.",
+        ],
       },
       {
         titre: "Présentation scénique et rapport au public",
@@ -201,6 +227,13 @@ En cabaret, le public n'est pas passif — il est participant. La relation est d
 Dans une revue, la meneuse est celle qui "mène" — pas seulement physiquement, mais en énergie et en présence. La troupe se cale sur elle, pas l'inverse. C'est un rôle de responsabilité totale.
 
 > Le public vient voir un spectacle. Donne-lui un spectacle. Ta technique est l'outil — ta présence est le cadeau. C'est cette phrase que je me répète avant de monter sur scène.`,
+        pointsCles: [
+          "La technique est nécessaire ; la présentation scénique est ce qui fait le spectacle.",
+          "Regard actif (jamais perdu) ; sourire habité vs sourire figé — le public voit la différence, toujours.",
+          "La projection : l'énergie qui sort du corps vers la salle. Technique sans projection = mécanique.",
+          "En cabaret, le public est participant — regard direct, winks, timing qui laisse réagir.",
+          "La meneuse mène en énergie et présence — la troupe se cale sur elle, pas l'inverse.",
+        ],
       },
     ],
   },

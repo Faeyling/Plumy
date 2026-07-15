@@ -43,6 +43,13 @@ export const coursUnite13: Cours[] = [
 | Pas de gonflement | Gonflement, chaleur, ecchymose |
 
 **La règle d'or que je te donne gratuitement :** Si la douleur a une localisation précise, persiste plus de 72h, ou modifie ta façon de danser — consulte un professionnel de santé spécialisé en danse. Ne fais pas le/la brave.`,
+        pointsCles: [
+          "80 % des blessures en danse sont des blessures de surmenage — pas des accidents.",
+          "Zones les plus touchées : chevilles et pieds (40%), genoux (20%), dos et hanches (15%).",
+          "La culture du 'push through' est normalisée en danse — et c'est un vrai problème.",
+          "Douleur normale vs signal d'alarme : localisée, asymétrique, persistante plus de 72h = consulter.",
+          "Si la douleur modifie ta façon de danser : consulte un professionnel spécialisé. Ne fais pas le/la brave.",
+        ],
       },
       {
         titre: "Comprendre la douleur — ne pas la fuir, la décoder",
@@ -76,6 +83,13 @@ RICE en phase aiguë :
 - **E**levation — surélever le membre blessé
 
 **Anti-douleurs et danse — un point qui me tient à cœur :** Les AINS (ibuprofène, etc.) masquent la douleur sans traiter la cause. Danser sous anti-douleurs = risque d'aggraver la blessure sans s'en rendre compte. Ne fais pas ça.`,
+        pointsCles: [
+          "Les blessures de surmenage progressent en 4 stades — consulter au stade 2 réduit la guérison de 60–80%.",
+          "Stade 1 : surveiller. Stade 2 : consulter. Stade 3 : arrêt. Stade 4 : traitement long — trop tard.",
+          "Professionnels à connaître : médecin du sport, kinésithérapeute, ostéopathe, podologue.",
+          "RICE en phase aiguë : Repos, Glace (15–20 min), Compression, Élévation.",
+          "Les AINS masquent la douleur sans traiter la cause — danser dessus aggrave la blessure.",
+        ],
       },
       {
         titre: "Échauffement et retour au calme — les deux rituels incontournables",
@@ -137,6 +151,13 @@ Respiration profonde pour activer le système nerveux parasympathique (récupér
 - Ischio-jambiers
 - Psoas
 - Thoracique et épaules`,
+        pointsCles: [
+          "Un bon échauffement réduit le risque de blessure de 50 % — c'est prouvé.",
+          "Structure (20–30 min) : cardiovasculaire → mobilisation articulaire → activation musculaire → spécifique.",
+          "Étirements statiques AVANT l'effort = contre-productif (réduisent la force, augmentent le risque).",
+          "Retour au calme (10–15 min) : décélération → étirements statiques → respiration abdominale.",
+          "Quelques respirations abdominales profondes avant une performance réduit le cortisol — c'est de la physiologie.",
+        ],
       },
       {
         titre: "Renforcement neuromusculaire — construire un corps résilient",
@@ -189,6 +210,13 @@ En danse, le renforcement ne cherche pas uniquement la puissance brute : il vise
 2. **Latéraliser rigoureusement** — alterner côté droit et côté gauche sans jamais négliger le côté faible. Les déséquilibres latéraux sont l'une des principales sources de blessures chroniques en danse.
 3. **Varier les tempos** — un même exercice exécuté lentement puis rapidement ne cible pas les mêmes fibres musculaires. Les deux sont nécessaires pour une force complète.
 4. **Chercher l'allongement dans l'effort** — à la différence de beaucoup d'entraînements sportifs, la danse recherche l'extension, pas le raccourcissement musculaire. Chaque renforcement doit s'accompagner d'une sensation d'allongement.`,
+        pointsCles: [
+          "Hypermobilité sans force de stabilisation = risque élevé d'entorses et de luxations.",
+          "5 piliers : gainage fonctionnel, travail excentrique, proprioception, pieds/chevilles, chaîne postérieure.",
+          "Exercices clés : planche, dead bug, bird dog, doming, équilibre monopodal yeux fermés.",
+          "Travail excentrique (contrôler la descente) protège les tendons mieux que la montée seule.",
+          "Muscler en étirant : chercher l'allongement dans l'effort, jamais le raccourcissement musculaire.",
+        ],
       },
       {
         titre: "Hygiène de vie et santé mentale — le corps comme outil de travail",
@@ -270,6 +298,13 @@ La danse améliore aussi le tonus vasculaire : l'alternance rythmique de contrac
 ---
 
 > Ton corps n'est pas ton ennemi — c'est ton instrument. Comme tout instrument, il demande entretien, soin et respect pour produire son meilleur son. Prends-en soin, et il te le rendra. Je le crois profondément.`,
+        pointsCles: [
+          "8–9h de sommeil pour les danseurs : réparation tissulaire, mémorisation motrice, régulation hormonale.",
+          "Le déficit énergétique (RED-S) provoque blessures de stress, troubles hormonaux et apprentissage dégradé.",
+          "Le stress psychologique augmente le risque de blessure physique — tension, distraction, cortisol élevé.",
+          "La danse améliore la santé cardiovasculaire, la densité osseuse et la neuroplasticité cérébrale.",
+          "Ton corps n'est pas ton ennemi — c'est ton instrument. Prends-en soin, il te le rendra.",
+        ],
       },
     ],
   },
@@ -317,6 +352,13 @@ Le turn-out idéal vient de la rotation externe de hanche. Quand la mobilité ar
 
 **Pour les danseuses sur pointes :**
 Règle des 3 ans de classique minimum avant les pointes, technique de relevé solide, force des pieds et des chevilles validée par un professionnel.`,
+        pointsCles: [
+          "La danse classique a l'un des taux de blessures les plus élevés — l'exigence technique extrême l'explique.",
+          "Zones touchées : pieds/chevilles (40%), genoux (20%), dos et hanches (15%).",
+          "Le turn-out compensé (genoux/pieds forcés) est la source principale de blessures au genou.",
+          "Prévention : évaluer le turn-out réel, renforcer les rotateurs externes, travail excentrique des mollets.",
+          "Règle des 3 ans minimum avant les pointes — force des pieds validée par un professionnel.",
+        ],
       },
       {
         titre: "Contemporain et moderne — les risques du sol et des chutes",
@@ -358,6 +400,12 @@ Règle des 3 ans de classique minimum avant les pointes, technique de relevé so
 
 **La notion de release technique — et un malentendu à corriger :**
 La release ne signifie pas "absence de tonus" — elle signifie tonus approprié, ni trop, ni pas assez. Un corps sans tonus est plus fragile qu'un corps engagé.`,
+        pointsCles: [
+          "Zones touchées : poignets/mains (chutes), genoux (sol), colonne lombaire/cervicales, épaules (contact impro).",
+          "Floorwork : apprendre les roulades avant les chutes directes — surface adaptée, protection en apprentissage.",
+          "Contact improvisation : communication claire, renforcement des épaules et de la coiffe des rotateurs.",
+          "La release ne signifie pas 'absence de tonus' — tonus approprié. Un corps sans tonus est fragile.",
+        ],
       },
       {
         titre: "Jazz, heels et cabaret — les risques de l'intensité et des talons",
@@ -412,6 +460,13 @@ La release ne signifie pas "absence de tonus" — elle signifie tonus approprié
 - Dos lombaire (extension extrême)
 
 **Prévention :** Amplitude maximale toujours en douceur, jamais à froid. Renforcement des ischio-jambiers en excentrique avant de travailler les kicks à pleine amplitude.`,
+        pointsCles: [
+          "Jazz : atterrissages mal alignés et ischio-jambiers insuffisants → principal facteur de blessure.",
+          "Atterrissage correct : cheville → genou → hanche en séquence, genou aligné sur le pied.",
+          "Heels : pression accrue sur l'avant-pied, instabilité de cheville, raccourcissement du mollet.",
+          "Prévention heels : étirements mollet systématiques après session, proprioception des chevilles.",
+          "Cabaret (high kicks) : jamais à froid, renforcement excentrique des ischio-jambiers en amont.",
+        ],
       },
       {
         titre: "Pole dance — les risques du travail aérien",
@@ -463,6 +518,13 @@ Les données scientifiques montrent que l'épaule est la zone la plus touchée (
 Exercices de force spécifiques à la barre (pull-ups, shoulder mounts à vide, tuck inversions sans barre) — obligatoires avant de progresser en figures avancées.
 
 **La règle du pole que je répète à chaque élève :** Si tu ne peux pas sortir de la figure toi-même (en sécurité), tu n'es pas prêt·e à l'apprendre.`,
+        pointsCles: [
+          "Zone la plus blessée : épaule (54,5%), puis poignet (34,2%), puis dos.",
+          "Toujours activer les épaules dans les figures — jamais de hang passif.",
+          "Règle d'or : maîtrise complète du climber avant le premier renversement. Spotter systématique.",
+          "Les 'pole kisses' sont normaux en apprentissage — laisser guérir avant de retravailler la même zone.",
+          "Si tu ne peux pas sortir de la figure seul·e en sécurité, tu n'es pas prêt·e à l'apprendre.",
+        ],
       },
       {
         titre: "Blessures les plus fréquentes — reconnaissance et premiers soins",
@@ -520,6 +582,13 @@ Repos → Glace (15–20 min toutes les 2h) → Compression → Élévation
 ---
 
 > La meilleure prévention est la connaissance. Un danseur qui comprend son corps prend de meilleures décisions — sur le moment, sous la pression du cours, et sur le long terme. Et toi, maintenant, tu as les outils. C'est pour ça que j'ai rempli ces carnets.`,
+        pointsCles: [
+          "Entorse de cheville : RICE immédiat. Règle d'Ottawa : radio si douleur aux malléoles ou incapacité à marcher 4 pas.",
+          "Tendinopathie : travail excentrique progressif = traitement le plus efficace. Éviter la cortisone dans le tendon.",
+          "Syndrome fémoro-patellaire : renforcer les fessiers et corriger l'alignement du membre inférieur.",
+          "Shin splints : repos relatif, glace, correction des facteurs de risque (surface, chaussures, volume).",
+          "La meilleure prévention, c'est la connaissance — un danseur qui comprend son corps prend de meilleures décisions.",
+        ],
       },
     ],
   },

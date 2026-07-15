@@ -43,6 +43,13 @@ export const coursUnite7: Cours[] = [
 Contrairement à la danse classique (une technique) ou au contemporain (un champ), le jazz est un *continuum* — de l'héritage africain aux clips de pop d'aujourd'hui, en passant par Broadway et Fosse. Il n'existe pas de "technique jazz universelle". C'est une liberté, pas un défaut. Et perso, c'est cette liberté qui me fait l'aimer autant.
 
 > Cette fluidité fait du jazz une danse vivante — elle change avec son époque. Moi, je trouve ça magnifique. Et toi, tu trouveras ta place à l'intérieur.`,
+        pointsCles: [
+          "Le jazz est né des cultures africaines et afro-américaines — ses racines sont là, et elles comptent.",
+          "Cinq piliers le définissent : musicalité, syncopation, polycentrisme, individualité, groove.",
+          "Il n'y a pas de 'technique jazz universelle' — c'est une liberté, pas un défaut.",
+          "Le jazz s'est réinventé à chaque décennie depuis les années 1920 : chaque époque y a laissé son empreinte.",
+          "Dans le jazz, chaque danseur est son propre style — et toi aussi, tu le seras.",
+        ],
       },
       {
         titre: "De l'Afrique à Broadway — les racines historiques du jazz",
@@ -93,6 +100,13 @@ Après la guerre, le jazz cherche à se systématiser — à devenir une discipl
 - **Rick Odums (1931–2010)** — né à la Nouvelle-Orléans, il est l'un des pionniers de l'enseignement du jazz aux États-Unis ; il enseigne à l'Alvin Ailey American Dance Theater et à la Joffrey Ballet School, et chorégraphie pour Broadway et le cinéma
 
 > Ce que je retiens de tout ça : le jazz a toujours su se réinventer tout en gardant le fil de ses origines. Et cette capacité de transformation, tu vas la retrouver dans ta propre pratique — c'est l'âme du jazz.`,
+        pointsCles: [
+          "Le jazz naît d'un brassage de 300 ans entre cultures africaines, européennes et amérindiennes aux Amériques.",
+          "Il naît dans un contexte de ségrégation raciale — son énergie vitale vient en partie de là.",
+          "Jazz Roots (1920–40) : Charleston, Shimmy, Lindy Hop, grandes revues de Harlem (Bojangles Robinson, etc.).",
+          "Hollywood et Broadway (1930–50) : Fred Astaire, Jack Cole, Gene Kelly, Robbins — le jazz devient narratif.",
+          "Les années 1950–60 codifient un jazz transmissible : Matt Mattox, Alvin Ailey, la Technique Luigi.",
+        ],
       },
       {
         titre: 'Le groove et la musicalité jazz',
@@ -132,6 +146,13 @@ Laisse la cage thoracique ou les épaules rejoindre la conversation.
 Quand tu dois *réfléchir* pour groover, tu n'es pas encore dans le groove. C'est quand tu *oublies* que tu commences vraiment.
 
 > Le groove ne s'enseigne pas — il se *découvre*. Mais on peut créer les conditions pour qu'il apparaisse. Et toi, tu peux y arriver, j'en suis certain.`,
+        pointsCles: [
+          "Le groove, c'est s'installer dans le rythme — le sentir dans le corps, pas seulement l'entendre.",
+          "Le 'pocket' : les grands danseurs jazz tombent légèrement dans le temps, ils ne le frappent pas.",
+          "Le jazz compte en 8 ; les contretemps ('et 1', 'et 2') sont aussi importants que les temps.",
+          "Progression : écouter sans bouger → tête → genoux → centre → ne plus penser.",
+          "Quand tu dois réfléchir pour groover, tu n'es pas encore dans le groove — c'est là la vraie mesure.",
+        ],
       },
       {
         titre: 'Les pas de base — ball change, jazz square, chassé',
@@ -191,6 +212,13 @@ Ces trois pas se combinent naturellement. Une phrase simple que j'utilise souven
 
 **Clé pédagogique :**
 Ces pas doivent devenir *automatiques* — ton corps les connaît sans que ton cerveau les commande. Alors ta tête peut penser à l'expression, à la musicalité, au style. C'est là que la vraie danse commence. Et tu vas voir, ça change tout.`,
+        pointsCles: [
+          "Ball change : transfert rapide de poids en 'et 1' — lien rythmique et pivot entre deux phrases.",
+          "Jazz square : 4 pas en carré — simple à comprendre, difficile à styler selon le sous-style.",
+          "Chassé : déplacement en 3 temps (pas-joint-pas), compte 1-et-2, dans n'importe quelle direction.",
+          "Combinés, ces trois pas forment une phrase complète de 8 temps : jazz walk + square + ball change + chassé.",
+          "L'objectif : les rendre automatiques pour que ta tête soit libre pour l'expression et la musicalité.",
+        ],
       },
       {
         titre: 'Les isolations et le travail par niveaux',
@@ -225,6 +253,13 @@ Beaucoup de styles jazz maintiennent les genoux légèrement fléchis en permane
 
 **Alternance de niveaux comme dynamique :**
 Passer rapidement d'un niveau haut à un niveau bas (ou vice versa) est l'un des outils les plus puissants du jazz pour créer du dynamisme et de l'impact. À voir, c'est spectaculaire quand c'est maîtrisé — et à ressentir dans le corps, c'est encore mieux.`,
+        pointsCles: [
+          "Les isolations jazz sont percussives : chaque pop est une note de musique devenue mouvement.",
+          "Sharp = net et précis (jazz, funk, street) ; smooth = fluide et continu (lyrical, modern jazz).",
+          "La polyrythmie corporelle : épaules, hanches, pieds sur des rythmes différents — difficile, mais jouissif.",
+          "Genoux légèrement fléchis en permanence : pas de la fatigue, une qualité esthétique — le ressort jazz.",
+          "Alterner rapidement entre niveaux haut et bas est l'un des outils dynamiques les plus puissants du jazz.",
+        ],
       },
       {
         titre: "Tours et sauts — l'air en jazz",
@@ -269,6 +304,13 @@ Le saut nécessite de la force et de la souplesse. Je ne peux pas assez insister
 3. Saut bas avec bonne forme avant d'aller haut
 
 > Un saut bien exécuté à faible hauteur vaut plus qu'un saut haut mal contrôlé. Toujours. Je te promets que les professeurs préfèrent le premier — et ton corps aussi.`,
+        pointsCles: [
+          "Les tours jazz partagent le spot et le relevé avec le classique, mais la qualité est plus habitée et expressive.",
+          "Position souvent parallèle ; la fin du tour peut être un pop fort — pas une pose neutre.",
+          "Progresser : pirouette simple bien spotée → 2 tours → multiples avec arm styling varié selon le style.",
+          "Sauts jazz : préparer l'élan visible, styler les bras en l'air, amortir l'atterrissage (pointe → talon).",
+          "Un saut bien contrôlé à faible hauteur vaut toujours plus qu'un saut haut mal maîtrisé.",
+        ],
       },
     ],
   },
@@ -306,6 +348,12 @@ Parler de sous-styles permet de :
 - Le contexte d'origine (théâtre / clips / académique / communautaire)
 
 > Chaque sous-style est un monde cohérent — avec ses codes, ses maîtres, ses œuvres de référence. Et il n'y en a pas un meilleur que les autres. Aucun. Tu vas voir.`,
+        pointsCles: [
+          "Parler de sous-styles permet de décrire précisément ce qu'on danse et d'orienter le travail technique.",
+          "Tous les sous-styles jazz partagent : héritage afro-américain, musicalité, syncopation, individualité.",
+          "Ce qui les différencie : esthétique, musique, technique prioritaire et contexte d'origine.",
+          "Il n'y a pas de sous-style supérieur à un autre — chacun est un monde cohérent avec ses maîtres.",
+        ],
       },
       {
         titre: 'Jazz classique et Broadway',
@@ -352,6 +400,13 @@ Parler de sous-styles permet de :
 **Différence clé que je retiens — et que tu peux noter dans ton propre carnet :**
 - Jazz classique : la musique commande
 - Broadway jazz : l'histoire (le livret) commande`,
+        pointsCles: [
+          "Jazz classique (1930–60) : musicalité au centre, polycentrisme visible, lignes élégantes, syncopation lisible.",
+          "Figures fondatrices : Jack Cole (isolations), Katharine Dunham (héritages caribéens), Matt Mattox.",
+          "Broadway jazz : projection extrême, bras forts, sens du spectacle au service du récit.",
+          "Chorégraphes Broadway : Robbins (West Side Story), Bennett (A Chorus Line), Gower Champion (42nd Street).",
+          "Clé : le jazz classique obéit à la musique ; Broadway obéit à l'histoire — le livret commande.",
+        ],
       },
       {
         titre: 'Style Fosse et Modern jazz',
@@ -402,6 +457,13 @@ Bob Fosse cachait sa propre gêne physique (il était profondément auto-conscie
 **Différence clé :**
 - Fosse : le style *sur* le corps
 - Modern jazz : la technique *dans* le corps`,
+        pointsCles: [
+          "Fosse : coudes relevés, dos voûté, regard oblique — il a transformé ses complexes en grammaire visuelle unique.",
+          "Œuvres incontournables : Cabaret (1972), Chicago (2002), All That Jazz (1979).",
+          "Modern jazz : technique moderne intégrée (Graham, Limón), mouvement continu, exploration avant showmanship.",
+          "Pédagogues modern jazz : Luigi ('Never Stop Moving'), Gus Giordano, Lynn Simonson.",
+          "Fosse met le style SUR le corps ; modern jazz met la technique DANS le corps — une distinction qui compte.",
+        ],
       },
       {
         titre: 'Lyrical, Street jazz et Afro-jazz',
@@ -512,6 +574,13 @@ L'afro-jazz nomme et célèbre ce qui a longtemps été effacé ou approprié �
 | Lyrical | Pop/R&B | Émotionnelle | Expression, fluidité |
 | Street jazz | Hip-hop/trap | Brute | Attitude, isolation |
 | Afro-jazz | Percussions | Ancrée | Polycentrisme, sol |`,
+        pointsCles: [
+          "Lyrical jazz : fusion jazz + contemporain + ballet — danser les mots et l'émotion dans un flux continu.",
+          "Street jazz : hip-hop rencontre le jazz — niveau bas permanent, isolations sharps, attitude affirmée.",
+          "Le hip-hop naît dans le Bronx (1970s), fondé sur 4 piliers : DJ, MC, B-boy/B-girl, graffer.",
+          "Modern'jazz (né en France) : grande mobilité du haut du corps, dissociation haut/bas revendiquée.",
+          "Afro-jazz : polycentrisme, pieds ancrés, percussions — acte culturel autant qu'artistique.",
+        ],
       },
       {
         titre: "Comment t'orienter dans ta pratique jazz",
@@ -549,6 +618,13 @@ Chaque sous-style a ses œuvres de référence. Les regarder est aussi important
 Chaque sous-style vient de quelque part. Comprendre son histoire, c'est l'honorer. Et c'est aussi se comprendre soi-même en tant que danseur.
 
 > Il n'y a pas de hiérarchie entre les sous-styles de jazz. Chacun est une façon d'être au monde à travers la danse. Et toi, tu trouveras le tien — j'en suis sûr.`,
+        pointsCles: [
+          "Construis le tronc commun jazz d'abord : groove, ball change/square/chassé, isolations, tours/sauts.",
+          "Suis tes goûts musicaux : hip-hop → street jazz, comédies → Broadway, soul → lyrical, percussions → afro-jazz.",
+          "Explorer plusieurs sous-styles enrichit ta danse : le lyrical apporte la fluidité, l'afro-jazz le polycentrisme.",
+          "Regarde les œuvres de référence : West Side Story, Chicago (film), Alvin Ailey, Germaine Acogny.",
+          "Il n'y a pas de hiérarchie entre les sous-styles — chacun est une façon d'être au monde.",
+        ],
       },
     ],
   },

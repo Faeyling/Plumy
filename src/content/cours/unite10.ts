@@ -50,6 +50,13 @@ L'arrivée du film X et les nouvelles lois sur la nudité font disparaître le b
 Né à New York et San Francisco, une nouvelle génération réinvente le burlesque — avec des valeurs féministes, une inclusion radicale des corps et des genres, et une totale liberté de style.
 
 **Dita Von Teese** popularise le néo-burlesque auprès du grand public à partir de 2004 — notamment avec ses shows dans un verre de Cointreau géant, son esthétique glamour rétro et sa haute couture. **Dirty Martini**, photographiée par Karl Lagerfeld, représente une autre facette : plus size, politiquement militante, radicalement inclusive.`,
+        pointsCles: [
+          "'Burlesque' vient de l'italien burla (plaisanterie) — en français comique, en américain effeuillage.",
+          "Né à Paris en 1894 ('Le Coucher d'Yvette'), âge d'or américain dans les années 1920–1940.",
+          "Figures de l'âge d'or : Gypsy Rose Lee (poèmes et tease), Sally Rand (fan dance), Lili St. Cyr.",
+          "Déclin dans les années 1950–80, puis résurgence néo-burlesque à New York et San Francisco dans les 1990s.",
+          "Dita Von Teese popularise le néo-burlesque dès 2004 ; Dirty Martini le porte vers l'inclusion radicale.",
+        ],
       },
       {
         titre: "L'art du tease — la technique de la suggestion",
@@ -83,6 +90,13 @@ Les moments de tease efficaces se répètent souvent 3 fois :
 
 **Un exercice que j'adore donner :**
 Prends un gant. Essaie de prendre 2 minutes pour le retirer en utilisant hold, misdirection et slow reveal. 2 minutes, c'est un bon tease. Et tu verras, c'est plus difficile que ça en a l'air — mais tellement jouissif quand ça marche.`,
+        pointsCles: [
+          "Le tease, c'est l'art de promettre et de retarder la livraison — du théâtre pur.",
+          "4 techniques : hold (s'arrêter au moment crucial), misdirection (tromper), slow reveal, cover-reveal-cover.",
+          "Le timing comique est emprunté au vaudeville : la longue pause avant la surprise crée le rire.",
+          "Règle du 3 : introduction → confirmation → subversion. Le public anticipe, puis est surpris.",
+          "Exercice : 2 minutes pour retirer un gant — difficile, jouissif, révélateur de ton sens du tease.",
+        ],
       },
       {
         titre: "Le personnage — construire son alter-ego",
@@ -119,6 +133,13 @@ Qui est ce personnage ? Quel est son passé ? Qu'est-ce qu'il veut ce soir ? Ces
 
 **Le nom de scène :**
 Presque tous les artistes burlesque ont un nom de scène — c'est l'identité publique du personnage. Et parfois, choisir ce nom est le moment où le personnage devient vraiment réel. J'aime beaucoup ce moment-là.`,
+        pointsCles: [
+          "Sans personnage, c'est du déshabillage. Avec un personnage, c'est de l'art.",
+          "Le personnage protège, donne de la cohérence et un intérêt narratif au numéro.",
+          "5 étapes : inspiration → registre → costume → geste signature → biographie imaginaire.",
+          "'Une femme fatale' est trop vague ; 'une espionne soviétique au sec humour' est un personnage.",
+          "Le nom de scène est l'identité publique du personnage — souvent le moment où il devient réel.",
+        ],
       },
       {
         titre: "Shimmy, bump and grind et accessoires",
@@ -189,6 +210,13 @@ Ornements (strass, paillettes, velours) couvrant les pointes, portés comme vêt
 5. Corset
 6. Porte-jarretelles — symbole de sensualité et de provocation
 7. Pasties (finale)`,
+        pointsCles: [
+          "Shimmy : vibration rapide des épaules, poitrine ou hanches — sur les accents forts de la musique.",
+          "Bump : impulsion nette du bassin sur un accent. Grind : mouvement circulaire lent du bassin.",
+          "Chaque accessoire a sa technique : glove peel (doigt par doigt), boa (anticiper le délai), fan dance.",
+          "Le retrait du corset est un acte d'émancipation chorégraphié — pas une anecdote de costume.",
+          "Ordre classique du retrait : gants → boa → vêtements → corset → porte-jarretelles → pasties.",
+        ],
       },
       {
         titre: "Le néo-burlesque — dimension politique et liberté",
@@ -233,6 +261,13 @@ Le burlesque est-il féministe ? Le débat est ouvert — et c'est normal qu'il 
 Le burlesque joue avec les codes du genre — les hommes en burlesque, les artistes non-binaires, les drag performers — remettant en question ce que "séduire" et "se révéler" signifient selon les corps et les identités.
 
 > Le burlesque à son meilleur est une déclaration d'indépendance — celle de quelqu'un qui décide de ses propres termes d'existence dans le regard des autres. Je ne connais pas de définition plus belle. Et je l'ai notée dans mes carnets en gros caractères.`,
+        pointsCles: [
+          "Le néo-burlesque affirme la souveraineté corporelle, l'inclusion radicale et la pluralité esthétique.",
+          "Il célèbre activement tous les corps et genres — ce n'est pas de la tolérance, c'est de la célébration.",
+          "Figures clés : Dita Von Teese (glamour rétro), Dirty Martini (militante plus size), Harvest Moon (queerpunk).",
+          "Le burlesque joue avec les codes du genre — remettant en question ce que 'séduire' signifie.",
+          "Le burlesque peut être féministe quand il est exercé avec conscience, intention et consentement.",
+        ],
       },
     ],
   },

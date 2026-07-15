@@ -56,6 +56,13 @@ Les années 1960–1970 voient le déclin du tango sous les dictatures militaire
 
 **Le tango à l'UNESCO (2009) :**
 Le tango argentin et uruguayen est inscrit au patrimoine culturel immatériel de l'UNESCO — reconnu comme expression culturelle vivante des deux rives du Río de la Plata.`,
+        pointsCles: [
+          "Le tango naît dans les quartiers pauvres de Buenos Aires (1880–90) d'un brassage de cultures immigrées.",
+          "Il mêle milonga, habanera, candombe, mazurka et polka — une musique de faubourg, pas de salon.",
+          "'Le tango, c'est une pensée triste qui se danse.' — formule emblématique portée par Carlos Gardel.",
+          "L'âge d'or (1930–50) : D'Arienzo, Troilo, Pugliese. Piazzolla révolutionne avec le Nuevo Tango.",
+          "En 2009, le tango argentin et uruguayen est inscrit au patrimoine culturel immatériel de l'UNESCO.",
+        ],
       },
       {
         titre: "L'abrazo et l'eje — la connexion entre deux corps",
@@ -86,6 +93,13 @@ Un bon abrazo est ferme et détendu à la fois. Pas crispé — pas flottant. Co
 
 **L'abrazo comme dialogue :**
 C'est peut-être la métaphore la plus juste. L'abrazo n'est pas un commandement — c'est une proposition. Et le bon suiveur répond avant même que les pieds aient bougé.`,
+        pointsCles: [
+          "L'eje est l'axe vertical de chaque danseur — chacun maintient son propre équilibre, sans s'appuyer sur l'autre.",
+          "Abrazo ouvert (abierto) : espace entre les torses. Abrazo fermé (cerrado) : torses qui se touchent.",
+          "Dans l'abrazo fermé, le meneur peut guider par le souffle et le poids sans même bouger les bras.",
+          "Un bon abrazo est ferme et détendu à la fois — ni crispé, ni flottant.",
+          "L'abrazo est un dialogue, pas un commandement — une proposition à laquelle le suiveur répond.",
+        ],
       },
       {
         titre: "La caminada et les figures fondamentales",
@@ -135,6 +149,13 @@ Le meneur place son pied contre celui du suiveur pour interrompre doucement son 
 ## Le molinete — le tour autour
 
 Le suiveur tourne autour du meneur en exécutant : pas croisé avant → pas latéral → pas croisé arrière → pas latéral. Pendant ce temps, le meneur peut orner son pivot avec un **enrosque** — sa jambe libre s'enroule autour de sa jambe de support.`,
+        pointsCles: [
+          "'Le tango, c'est une marche habillée' — la caminada est la fondation de toutes les figures.",
+          "Caminada : transfert de poids complet, buste stable, genoux proches au passage.",
+          "Ocho : le bassin pivote, le buste reste face au partenaire — la dissociation crée l'élégance.",
+          "Parada : le meneur pose son pied contre celui du suiveur, invitation à la pasada (enjambement).",
+          "Molinete : le suiveur tourne autour du meneur ; le meneur peut orner d'un enrosque.",
+        ],
       },
       {
         titre: "Figures avancées — ganchos, boleos, barridas et sacadas",
@@ -177,6 +198,13 @@ Quand le suiveur déplace une jambe d'un point A à un point B, le meneur entre 
 La figure la plus avancée : le meneur invite le suiveur à pencher son axe vers l'avant. L'abrazo soutient cette inclinaison. C'est une question de confiance absolue — et un moment d'une beauté rare quand c'est bien exécuté.
 
 > Ces figures ne s'apprennent pas dans l'ordre d'une liste — elles arrivent dans la conversation de la danse, quand la connexion est assez solide pour les accueillir.`,
+        pointsCles: [
+          "Ces figures sont des phrases dans une conversation — elles ne tiennent que sur une connexion solide.",
+          "Gancho : le meneur ouvre un espace, le suiveur y envoie librement sa jambe — jamais forcé.",
+          "Boleo : naît d'un changement de direction soudain créant une énergie centrifuge dans la jambe libre.",
+          "Barrida : un pied glisse contre le pied du partenaire et l'accompagne — un dialogue entre deux pieds.",
+          "Volcada : le suiveur penche son axe vers l'avant, soutenu par l'abrazo — figure de confiance absolue.",
+        ],
       },
       {
         titre: "Milonga, cabeceo et musicalidad — vivre le tango social",
@@ -228,6 +256,13 @@ Le tango argentin ne se chorégraphie pas. Le meneur propose, le suiveur répond
 C'est peut-être la plus belle définition que j'ai trouvée du tango : une danse qui vit dans l'instant présent, et nulle part ailleurs.
 
 > Ce qui m'a le plus frappée dans le tango, c'est qu'on peut danser toute une tanda avec quelqu'un sans prononcer un seul mot — et en dire plus que dans n'importe quelle conversation. Je ne connais pas d'autre danse qui fasse ça.`,
+        pointsCles: [
+          "La milonga est le bal du tango : soirée en tandas (3–4 morceaux) séparées par des cortinas.",
+          "Accepter une tanda, c'est s'engager pour toute la tanda — on ne quitte pas son partenaire en cours.",
+          "Le cabeceo : invitation par le regard et un hochement de tête — préserve la dignité de tous.",
+          "La musicalidad : entendre mélodie, phrases musicales, silences et l'émotion propre à chaque orchestre.",
+          "Le tango ne se chorégraphie pas — chaque tanda crée quelque chose qui n'existera qu'une fois.",
+        ],
       },
     ],
   },

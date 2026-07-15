@@ -18,6 +18,12 @@ export const coursUnite2: Cours[] = [
 - Son maître à danser, **Pierre Beauchamp**, codifie les **cinq positions** des pieds, encore enseignées aujourd'hui.
 
 À cette époque, les danseurs portent des costumes lourds, des perruques et des talons — la virtuosité est limitée, et les femmes ne participent pas encore au spectacle public. Le ballet qu'on connaît aujourd'hui, avec ses tutus et ses pointes, n'est pas encore imaginable.`,
+        pointsCles: [
+          "Le ballet naît en Italie à la Renaissance comme outil politique : danser, c'était célébrer le pouvoir.",
+          "Louis XIV fonde l'Académie Royale de Danse en 1661 — première institution chorégraphique au monde.",
+          "Pierre Beauchamp codifie les cinq positions des pieds, encore enseignées aujourd'hui.",
+          "À cette époque : costumes lourds, talons, pas de femmes sur scène — les tutus et pointes n'existent pas.",
+        ],
       },
       {
         titre: "La naissance du ballet d'action (XVIIIe siècle)",
@@ -32,6 +38,12 @@ export const coursUnite2: Cours[] = [
 Ces deux femmes ont pris des risques pour leur art. J'ai beaucoup de respect pour ça.
 
 La chaussure de danse évolue aussi : le talon disparaît progressivement, permettant plus d'agilité. Petite révolution technique qui prépare tout ce qui va suivre.`,
+        pointsCles: [
+          "Noverre (1760) défend le ballet d'action : la danse doit raconter par le geste expressif, pas exhiber.",
+          "Camargo raccourcit sa jupe pour montrer ses pieds ; Salle danse en tunique légère — scandales !",
+          "Ces deux femmes ont pris des risques pour l'art, des décennies avant que ça soit accepté.",
+          "Le talon disparaît des chaussures de danse — petite révolution technique qui prépare les pointes.",
+        ],
       },
       {
         titre: "L'âge romantique (1820–1870)",
@@ -46,6 +58,12 @@ Les pointes apparaissent dans ce contexte : **Marie Taglioni** est la première 
 > Le ballet romantique est un ballet de l'au-delà : l'homme désire une femme qui n'existe pas, et cette femme l'entraîne vers la mort. Fascinant et un brin inquiétant — mais quelle beauté formelle.
 
 Le tutu romantique (long, en mousseline blanche) est le costume emblématique. Les hommes reculent au second plan ; la ballerine devient la star absolue.`,
+        pointsCles: [
+          "La Sylphide (1832) inaugure les pointes et le tutu romantique long — symboles d'évanescence.",
+          "Marie Taglioni première à utiliser les pointes artistiquement : s'arracher à la terre, pas faire de prouesse.",
+          "Giselle (1841) : folie, mort et rédemption — sommet absolu du ballet romantique.",
+          "Le ballet romantique est un ballet de l'au-delà : la femme surnaturelle y est star absolue.",
+        ],
       },
       {
         titre: "L'âge classique : Petipa et la Russie impériale (1870–1910)",
@@ -64,6 +82,12 @@ Le tutu romantique (long, en mousseline blanche) est le costume emblématique. L
 Petipa codifie la structure du **grand ballet classique** : pas de deux académique (adage, variations, coda), corps de ballet en formations géométriques, hiérarchie des rôles (étoile, premiers danseurs, corps de ballet).
 
 Le tutu raccourcit : le **tutu classique** (en plateau rigide) apparaît, exhibant les jambes et les pointes. La virtuosité technique explose — et les exigences avec elle.`,
+        pointsCles: [
+          "Le ballet décline en France, s'épanouit en Russie : le Mariinsky devient le temple du ballet académique.",
+          "Petipa crée les grands classiques : La Belle au bois dormant, Le Lac des cygnes, Casse-Noisette.",
+          "Il codifie la structure du grand ballet : pas de deux, corps de ballet en formations, hiérarchie des rôles.",
+          "Le tutu raccourcit en plateau rigide — la virtuosité technique explose avec lui.",
+        ],
       },
       {
         titre: 'Révolutions du XXe siècle',
@@ -79,6 +103,12 @@ Le tutu raccourcit : le **tutu classique** (en plateau rigide) apparaît, exhiba
 **Rudolf Noureev (1938–1993)** réhabilite le danseur masculin : virtuosité, charisme, tours en l'air spectaculaires. Il redonne au ballet classique son prestige populaire dans les années 1970–1980.
 
 Aujourd'hui, le ballet académique coexiste avec le ballet contemporain, le néoclassique et la danse-théâtre. L'histoire continue — et elle est loin d'être terminée.`,
+        pointsCles: [
+          "Les Ballets Russes de Diaghilev (1909–1929) font exploser le ballet : Nijinski, Stravinski, peintres modernes.",
+          "Le Sacre du printemps (1913) provoque une émeute à la première — littéralement.",
+          "Balanchine invente le néoclassicisme : ballet sans histoire, corps idéalisé, musique pure.",
+          "Noureev réhabilite le danseur masculin et redonne au ballet classique son prestige populaire.",
+        ],
       },
     ],
   },
@@ -104,6 +134,12 @@ Aujourd'hui, le ballet académique coexiste avec le ballet contemporain, le néo
 > "Je n'ai jamais pu comprendre pourquoi l'on devrait apprendre à danser à partir des orteils." — Isadora Duncan
 
 **Ruth Saint Denis (1879–1968)** et **Ted Shawn (1891–1972)** fondent la **Denishawn School** à Los Angeles (1915) : mélange d'orientalisme, de mysticisme et de pragmatisme américain. Martha Graham, Doris Humphrey et Charles Weidman en sortent. Denishawn est en quelque sorte la pépinière de la danse moderne américaine.`,
+        pointsCles: [
+          "La danse moderne naît d'un refus : corset, pointes, hiérarchie — des femmes ont dit non.",
+          "Isadora Duncan : pieds nus, tunique grecque, mouvement né du plexus solaire — la liberté du corps.",
+          "Loïe Fuller invente la danse lumineuse avec voiles et éclairages — sans technique académique.",
+          "La Denishawn School est la pépinière de la danse moderne : Graham, Humphrey, Weidman en sortent.",
+        ],
       },
       {
         titre: "L'Ausdruckstanz allemand (1910–1940)",
@@ -119,6 +155,12 @@ L'**Ausdruckstanz** ("danse d'expression") est née dans une époque de crise : 
 **Kurt Jooss (1901–1979)** crée *La Table Verte* (1932), chef-d'œuvre anti-guerre : la Mort conduit une danse macabre pendant que des diplomates négocient. C'est l'une des premières œuvres chorégraphiques à message politique explicite. Une œuvre qui, hélas, reste terriblement actuelle.
 
 L'arrivée du nazisme disperse ces artistes — Wigman survit difficilement, Jooss s'exile en Angleterre. La danse aussi paie le prix de l'histoire.`,
+        pointsCles: [
+          "L'Ausdruckstanz ('danse d'expression') naît dans l'Allemagne en crise — guerres, révolutions, extrémismes.",
+          "Mary Wigman : seule, en masque, percussion minimale — langage sombre, tellurique, archaïque.",
+          "La Table Verte (1932) de Jooss est la première œuvre chorégraphique à message politique explicite.",
+          "L'arrivée du nazisme disperse ces artistes — la danse aussi paie le prix de l'histoire.",
+        ],
       },
       {
         titre: "L'âge d'or américain (1930–1960)",
@@ -133,6 +175,12 @@ Elle développe une technique complète basée sur la **contraction et le releas
 **José Limón (1908–1972)**, élève de Humphrey, apporte une dimension dramatique et culturelle (identité mexicaine-américaine) dans des œuvres comme *There is a Time* et *Missa Brevis*.
 
 Ces trois techniques — Graham, Humphrey-Limón, et plus tard Cunningham — forment le tronc commun de la **danse moderne** enseignée dans les conservatoires. Si tu étudies la danse sérieusement, tu en croiseras forcément une.`,
+        pointsCles: [
+          "Martha Graham crée une technique sur contraction/release — ancrée dans la psychologie et la mythologie.",
+          "Doris Humphrey explore la chute et la récupération : la vie comme tension entre équilibre et déséquilibre.",
+          "José Limón apporte une dimension culturelle (identité mexicaine-américaine) à la danse moderne.",
+          "Graham, Humphrey-Limón, Cunningham : trois techniques qui forment le tronc commun de la danse moderne.",
+        ],
       },
       {
         titre: 'La révolution postmoderne : Judson Church (1960–1975)',
@@ -148,6 +196,12 @@ En 1962, un groupe de danseurs, compositeurs et artistes visuels commence à se 
 > Cette génération refuse le "beau" au sens conventionnel. Tout peut être danse : marcher, manger, parler.
 
 L'héritage Judson est immense : il autorise la danse contemporaine à inclure le théâtre, l'installation, la performance, et à questionner en permanence ses propres limites. En gros, si tu danses aujourd'hui de façon libre et expérimentale, tu dois quelque chose à ces artistes.`,
+        pointsCles: [
+          "Judson Dance Theater (1962) pose la question radicale : qu'est-ce que la danse ?",
+          "Yvonne Rainer : No Manifesto — non à la virtuosité, au spectaculaire. Le quotidien est de la danse.",
+          "Steve Paxton invente le contact improvisation (1972) : deux corps qui partagent leur poids, sans hiérarchie.",
+          "Si tu danses librement et expérimentalement aujourd'hui, tu dois quelque chose à ces artistes.",
+        ],
       },
       {
         titre: "La danse contemporaine mondiale (1980 à aujourd'hui)",
@@ -165,6 +219,12 @@ Aujourd'hui, la danse contemporaine :
 - Questionne les notions d'auteur, d'interprète et de spectateur.
 
 Et c'est précisément pour ça qu'elle me tient éveillé la nuit à remplir des carnets.`,
+        pointsCles: [
+          "Pina Bausch invente le Tanztheater : les interprètes parlent, pleurent, répètent des gestes obsessionnels.",
+          "Forsythe déconstruit le ballet classique depuis les années 1980 avec des géométries tordues.",
+          "La décentralisation culturelle française des années 1980–90 crée les Centres Chorégraphiques Nationaux.",
+          "La danse contemporaine dialogue avec les arts visuels, le numérique et questionne ses propres limites.",
+        ],
       },
     ],
   },
@@ -187,6 +247,12 @@ Ces traditions survivent malgré l'oppression :
 - Dans les danses de plantation, parfois ridiculisées dans les **minstrel shows** — spectacles de Blancs maquillés en Noir, qui diffusent des stéréotypes racistes tout en popularisant les rythmes afro-américains
 
 > La jazz dance est une création afro-américaine. Son histoire ne peut se raconter sans reconnaître à la fois sa source et l'appropriation culturelle qui l'a suivie. J'y tiens.`,
+        pointsCles: [
+          "La jazz dance ne se comprend pas sans l'histoire de l'Amérique et de l'esclavage.",
+          "Polycentrisme, polyrythmie, groove, improvisation : les traditions africaines déportées survivent.",
+          "Le Congo Square de La Nouvelle-Orléans est l'un des rares espaces où les esclaves peuvent danser.",
+          "La jazz dance est une création afro-américaine — reconnaître sa source, c'est une obligation.",
+        ],
       },
       {
         titre: 'Le Ragtime et les premières danses sociales (1890–1920)',
@@ -197,6 +263,12 @@ Ces traditions survivent malgré l'oppression :
 **Le Turkey Trot, le Grizzly Bear, le Bunny Hug** (années 1910) : danses de couple proches, corps collés, scandaleuses pour l'époque. **Vernon et Irene Castle** les popularisent dans les salons en les "civilisant" — corps légèrement séparés, gestes épurés — pour un public blanc bourgeois.
 
 C'est dans ce contexte que naît le jazz : musique syncopée, improvisée, née à La Nouvelle-Orléans, portée par des musiciens noirs américains.`,
+        pointsCles: [
+          "Le Cake Walk : parodie née dans les plantations, récupérée et 'blanchie' sans que son ironie soit reconnue.",
+          "Vernon et Irene Castle popularisent les danses 'sauvages' en les civilisant pour un public bourgeois blanc.",
+          "Turkey Trot, Grizzly Bear, Bunny Hug — corps proches, scandaleux pour l'époque.",
+          "Le jazz naît à La Nouvelle-Orléans : musique syncopée, improvisée, portée par des Noirs américains.",
+        ],
       },
       {
         titre: "Harlem et l'âge du swing (1920–1940)",
@@ -211,6 +283,12 @@ Le **Savoy Ballroom** (1926–1958) est la grande salle de danse de Harlem — l
 Le Lindy Hop est la première danse de couple où la femme est projetée, sautée, envoyée dans les airs — une révolution dans les rapports de genre dans la danse sociale. Frankie Manning, il faut le savoir, a continué à enseigner le Lindy Hop jusqu'à presque 95 ans. Ça, j'appelle ça de la passion.
 
 **Louis Armstrong, Duke Ellington, Ella Fitzgerald** — la musique jazz accompagne ces danses et crée un dialogue permanent entre musiciens et danseurs.`,
+        pointsCles: [
+          "La Renaissance de Harlem (années 1920–30) est une explosion culturelle afro-américaine à New York.",
+          "Le Savoy Ballroom, une des premières salles non ségréguées, est le berceau du Lindy Hop.",
+          "Le Lindy Hop : airsteps, swing continu, improvisation — première danse de couple où la femme est projetée.",
+          "Frankie Manning a enseigné le Lindy Hop jusqu'à presque 95 ans — ça, c'est de la passion.",
+        ],
       },
       {
         titre: "Broadway et l'âge d'or (1940–1970)",
@@ -226,6 +304,12 @@ Il synthétise la danse classique indienne (Bharatanatyam), les isolations afro-
 **Jerome Robbins (1918–1998)** apporte la légèreté et la précision — *West Side Story* (1957) reste une leçon de dramaturgie chorégraphique.
 
 **Gus Giordano (1923–2008)** systématise la technique jazz dans l'enseignement américain. Grâce à lui, des milliers de professeurs ont une base commune.`,
+        pointsCles: [
+          "Jack Cole synthétise Bharatanatyam, isolations afro-caribéennes et jazz — père du jazz theatrical.",
+          "Bob Fosse : style immédiatement reconnaissable — chapeaux, gants, corps obliques, ironie maîtrisée.",
+          "Jerome Robbins : West Side Story (1957) reste une leçon absolue de dramaturgie chorégraphique.",
+          "Gus Giordano systématise la technique jazz dans l'enseignement — base commune pour des milliers de profs.",
+        ],
       },
       {
         titre: "La jazz dance aujourd'hui",
@@ -244,6 +328,12 @@ Il synthétise la danse classique indienne (Bharatanatyam), les isolations afro-
 **Beyoncé, Janet Jackson, Michael Jackson** popularisent à l'échelle mondiale un vocabulaire issu du jazz theatrical et du hip-hop. Chaque fois que tu regardes un clip ultra-chorégraphié, tu vois des décennies d'histoire de la jazz dance condensées en trois minutes.
 
 Aujourd'hui, la jazz dance est la discipline la plus enseignée en France après le classique et le contemporain. Elle est aussi l'une des plus pratiquées dans les concours internationaux.`,
+        pointsCles: [
+          "La jazz dance éclate en sous-styles : broadway, fosse, lyrical, street jazz, afro-jazz — et bien d'autres.",
+          "Beyoncé, Janet Jackson, Michael Jackson popularisent mondialement un vocabulaire issu du jazz theatrical.",
+          "Chaque clip ultra-chorégraphié condense des décennies d'histoire de la jazz dance en 3 minutes.",
+          "La jazz dance est la discipline la plus enseignée en France après le classique et le contemporain.",
+        ],
       },
     ],
   },
@@ -265,6 +355,12 @@ De là émerge le **french cancan** (vers 1840–1860) :
 - Le cancan est d'abord subversif : corps de femme du peuple exposé, excès et insolence, refus de la bienséance bourgeoise
 
 **La Belle Époque** (1890–1914) voit l'explosion du music-hall et du cabaret artistique. Le **Moulin Rouge**, le **Folies Bergère** et le **Bataclan** créent le modèle de la **revue** : spectacle total avec des numéros variés, des décors somptueux et des **girls** en costume élaboré. Un modèle qui influence encore les shows de Las Vegas aujourd'hui.`,
+        pointsCles: [
+          "Le café-concert parisien (années 1840) est populaire, festif, non élitiste — là où tout commence.",
+          "Le cancan est d'abord subversif : corps du peuple exposé, insolence, refus de la bienséance bourgeoise.",
+          "La Belle Époque invente la revue : spectacle total avec girls, décors somptueux et numéros variés.",
+          "Le Moulin Rouge, les Folies Bergère — un modèle qui influence encore les shows de Las Vegas.",
+        ],
       },
       {
         titre: "Le Kabarett allemand et l'entre-deux-guerres (1900–1940)",
@@ -279,6 +375,12 @@ De là émerge le **french cancan** (vers 1840–1860) :
 Ce modèle inspire directement la comédie musicale **Cabaret** de Kander et Ebb (Broadway, 1966), qui reconstruit cette époque avec le Kit Kat Club comme miroir de la montée du nazisme.
 
 En France, la tradition du **music-hall** continue avec **Joséphine Baker** (1906–1975) : première grande star noire internationale, elle chante et danse aux Folies Bergère dès 1925. Elle subvertit par son ironie et son intelligence un numéro que le regard blanc tentait d'exotiser. Une artiste complexe, que je trouve fascinante.`,
+        pointsCles: [
+          "Le Kabarett allemand est politique et satirique — mordant, critique, dangereux, né à Munich et Berlin.",
+          "Berlin années 1920 : liberté sexuelle, travestissement, Brecht/Weill — résistance culturelle avant la censure nazie.",
+          "Marlene Dietrich incarne l'ambiguïté de genre dans L'Ange bleu (1930) — une icône mondiale.",
+          "Joséphine Baker : première grande star noire internationale, ironie et intelligence face à l'exotisation.",
+        ],
       },
       {
         titre: 'Le burlesque américain et son histoire (1860–1960)',
@@ -295,6 +397,12 @@ Grandes personnalités :
 - **Sally Rand (1904–1979)** : fan dance avec des plumes d'autruche, image iconique du burlesque
 
 **Troisième époque (1950–1960)** : déclin avec l'arrivée de la télévision et du cinéma. Le burlesque disparaît presque complètement — avant de renaître sous une autre forme.`,
+        pointsCles: [
+          "Le burlesque américain naît comme parodie féministe : femmes qui imitent et moquent les codes masculins.",
+          "Gypsy Rose Lee : l'effeuillage comme art intellectuel et ironique — elle récitait de la poésie en se déshabillant.",
+          "Sally Rand : fan dance avec plumes d'autruche — une image devenue iconique du burlesque.",
+          "Le burlesque décline dans les années 1950–60 avec la télévision — avant de renaître sous une autre forme.",
+        ],
       },
       {
         titre: "Le néo-burlesque et la culture heels (1990–aujourd'hui)",
@@ -312,6 +420,12 @@ Dans les **balls**, les personnes LGBTQ+ marginalisées — souvent noires et la
 Le film **Paris Is Burning** (Jennie Livingston, 1990) documente cette scène. **Madonna** popularise le vogue en 1990 avec la chanson *Vogue* et la chorégraphie de Jose Gutierez Xtravaganza.
 
 Aujourd'hui, le **heels dance** est une discipline à part entière, enseignée en studios, avec ses propres compétitions. Et ses racines dans les communautés noires et LGBTQ+ méritent d'être connues et honorées.`,
+        pointsCles: [
+          "Le néo-burlesque (années 1990) réinvente l'effeuillage sur des bases féministes : le corps selon ses propres termes.",
+          "Dita Von Teese : glamour vintage, maîtrise totale de l'image — figure emblématique internationale.",
+          "Le heels dance naît dans la culture vogue et ballroom afro-américaine et latino de Harlem (années 1970–80).",
+          "Ses racines dans les communautés noires et LGBTQ+ méritent d'être connues et honorées.",
+        ],
       },
     ],
   },
@@ -331,6 +445,12 @@ Aujourd'hui, le **heels dance** est une discipline à part entière, enseignée 
 **Le Mallakhamb** est une discipline de lutte traditionnelle indienne datant du XIIe siècle, pratiquée sur un poteau de bois ou une corde. Le mot signifie "homme athlète" en marathi. Des compétitions Mallakhamb existent encore aujourd'hui en Inde.
 
 Ces deux traditions montrent que l'exercice de force sur un poteau vertical existe dans des cultures très différentes, sans lien direct entre elles. Je les mentionne parce qu'elles méritent d'être connues — et parce qu'elles ne doivent pas servir à blanchir l'histoire du pole dance moderne, qui a une autre source.`,
+        pointsCles: [
+          "Le mat chinois (cirque traditionnel) et le Mallakhamb (Inde, XIIe s.) sont distincts du pole dance moderne.",
+          "Ces deux traditions montrent que l'exercice sur mât vertical existe dans des cultures très différentes.",
+          "Elles ne doivent pas servir à blanchir l'histoire du pole dance moderne — celui-ci a une autre source.",
+          "Connaître ces pratiques, c'est enrichir la culture — pas falsifier l'histoire.",
+        ],
       },
       {
         titre: 'La scène américaine des années 1920–1980',
@@ -341,6 +461,12 @@ Ces deux traditions montrent que l'exercice de force sur un poteau vertical exis
 Dans les années **1950–1980**, le pole s'installe dans les **gentlemen's clubs** (bars de strip clubs) aux États-Unis et au Canada. Ce sont les **travailleuses du sexe** — majoritairement des femmes noires, racisées et LGBTQ+ — qui développent le vocabulaire technique et artistique du pole tel qu'on le connaît aujourd'hui. Ce sont elles les créatrices de cette discipline. Ce point est souvent effacé de l'histoire officielle, et je tiens à ce qu'il soit dit clairement.
 
 Cette association avec le strip-club a longtemps stigmatisé le pole et ses pratiquantes — une **whorephobie** systématique qui a nié à ces femmes la reconnaissance de leur travail artistique. Des pionnières comme **Fawnia Mondey** (première à enseigner le pole en dehors des clubs, dès les années 1990) ont travaillé à faire reconnaître la discipline. Le chemin a été long, et il n'est pas fini.`,
+        pointsCles: [
+          "Le pole moderne émerge dans les foires itinérantes américaines des années 1920, puis s'installe en clubs.",
+          "Ce sont des travailleuses du sexe — majoritairement noires, racisées, LGBTQ+ — qui créent le vocabulaire du pole.",
+          "La whorephobie systématique leur a longtemps nié toute reconnaissance artistique.",
+          "Fawnia Mondey, première enseignante hors clubs dans les années 1990, a commencé à faire reconnaître la discipline.",
+        ],
       },
       {
         titre: 'La révolution sportive et artistique (1990–2010)',
@@ -360,6 +486,12 @@ En **2017**, la **Fédération Internationale de Pole Sports (IPSF)** obtient la
 - Le **pole contemporain** fusionne avec la danse contemporaine et le cirque.
 
 C'est une période passionnante — mais elle pose aussi des questions importantes sur la légitimation culturelle. À qui profite la reconnaissance sportive ? Les origines restent-elles honorées ?`,
+        pointsCles: [
+          "Fawnia Mondey crée en 1994 la première vidéo pédagogique de pole pour le grand public.",
+          "En 2005, les premières compétitions internationales apparaissent ; en 2017, l'IPSF est reconnue mondialement.",
+          "Pole sport (technique, force) vs pole art (expression) vs pole contemporain (fusion cirque/danse).",
+          "La reconnaissance sportive pose une question : les origines marginalisées sont-elles encore honorées ?",
+        ],
       },
       {
         titre: "Le pole dance en France et le débat sur le regard",
@@ -374,6 +506,12 @@ Pour certains, l'origine dans le strip-club perpétue une forme d'objectificatio
 **Les hommes et le pole** : longtemps marginalisés dans une pratique très féminisée, les pratiquants masculins et non-binaires sont de plus en plus présents dans les compétitions et les studios. La communauté pole est connue pour être particulièrement inclusive.
 
 Aujourd'hui, le pole dance est enseigné en studios indépendants, dans certains conservatoires, en clubs de fitness et en ligne. Et son vocabulaire — grip, montées, spins, inversions — est devenu une langue commune à des millions de pratiquant·e·s dans le monde.`,
+        pointsCles: [
+          "Le pole se développe en France à partir des années 2000–2005 avec les premiers studios parisiens.",
+          "La misogynoir — racisme + sexisme visant les femmes noires — a joué un rôle majeur dans la stigmatisation du pole.",
+          "La communauté pole est particulièrement inclusive : hommes, femmes, personnes non-binaires y ont leur place.",
+          "Reconnaître les créatrices noires et racisées de cette discipline, c'est une forme de justice.",
+        ],
       },
     ],
   },
