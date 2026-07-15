@@ -8,6 +8,7 @@ import { useSpeech } from '@/hooks/useSpeech'
 import { stripMarkdown } from '@/lib/stripMarkdown'
 import { getCoursProgression, marquerSectionVue } from '@/lib/coursProgression'
 import { resetStreakSansCours } from '@/lib/streakSansCours'
+import { getQuestionsCoursPourCours } from '@/content/questionsCours/index'
 
 export function CoursPage() {
   const { id } = useParams<{ id: string }>()
@@ -46,6 +47,9 @@ export function CoursPage() {
   }, [])
   const { isPlaying, isSupported, speak, stop } = useSpeech()
   const [playingSection, setPlayingSection] = useState<number | null>(null)
+  const [modeFiche, setModeFiche] = useState(false)
+
+  const aDesPointsCles = cours?.sections.some(s => s.pointsCles && s.pointsCles.length > 0) ?? false
 
   function ouvrirSection(i: number) {
     const isOpening = sectionOuverte !== i
@@ -112,6 +116,31 @@ export function CoursPage() {
             </p>
           </div>
         </div>
+
+        {aDesPointsCles && (
+          <div className="mt-4 flex gap-2">
+            <button
+              onClick={() => setModeFiche(false)}
+              className={`flex-1 py-2 rounded-xl text-sm font-semibold border-2 transition-colors ${
+                !modeFiche
+                  ? 'border-[var(--color-candy-lavande)] bg-[var(--color-candy-lavande-light)] text-[var(--color-encre)]'
+                  : 'border-[var(--color-gris-doux)] text-[var(--color-gris-texte)]'
+              }`}
+            >
+              📖 Lecture complète
+            </button>
+            <button
+              onClick={() => setModeFiche(true)}
+              className={`flex-1 py-2 rounded-xl text-sm font-semibold border-2 transition-colors ${
+                modeFiche
+                  ? 'border-[var(--color-candy-menthe)] bg-[var(--color-candy-menthe-light,#d1fae5)] text-[var(--color-encre)]'
+                  : 'border-[var(--color-gris-doux)] text-[var(--color-gris-texte)]'
+              }`}
+            >
+              ⚡ Points clés
+            </button>
+          </div>
+        )}
       </header>
 
       {/* Sections accordéon */}
@@ -183,7 +212,20 @@ export function CoursPage() {
                 transition={{ duration: 0.25 }}
                 className="px-4 pb-4"
               >
-                <CoursMarkdown content={section.contenuMarkdown} />
+                {modeFiche && section.pointsCles && section.pointsCles.length > 0 ? (
+                  <ul className="space-y-2">
+                    {section.pointsCles.map((point, pi) => (
+                      <li key={pi} className="flex gap-2 text-sm text-[var(--color-encre)] leading-relaxed">
+                        <span className="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-white text-xs font-bold mt-0.5" style={{ backgroundColor: 'var(--color-candy-menthe)' }}>
+                          {pi + 1}
+                        </span>
+                        <span>{point}</span>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <CoursMarkdown content={section.contenuMarkdown} />
+                )}
               </motion.div>
             )}
           </motion.div>
@@ -210,6 +252,33 @@ export function CoursPage() {
               })}
             </div>
           </div>
+        )}
+
+        {/* Quiz sur ce cours */}
+        {getQuestionsCoursPourCours(id ?? '').length > 0 && (
+          <Link
+            to={`/quiz/cours/${id}`}
+            className="mt-4 flex items-center gap-3 p-4 bg-[var(--color-candy-menthe-light,#d1fae5)] border border-[var(--color-candy-menthe)] rounded-[var(--radius-card)] hover:shadow-md transition-shadow"
+          >
+            <span
+              className="flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center text-white font-bold text-base"
+              style={{ backgroundColor: 'var(--color-candy-menthe)' }}
+              aria-hidden="true"
+            >
+              📝
+            </span>
+            <div className="flex-1 min-w-0">
+              <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm">
+                Me tester sur ce cours
+              </p>
+              <p className="text-xs text-[var(--color-gris-texte)] mt-0.5">
+                {getQuestionsCoursPourCours(id ?? '').length} questions · QCM
+              </p>
+            </div>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="flex-shrink-0 text-[var(--color-candy-menthe)]">
+              <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </Link>
         )}
       </div>
     </div>

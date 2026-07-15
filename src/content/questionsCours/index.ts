@@ -36,3 +36,7 @@ export function getQuestionsCoursPourUnite(uniteNumero: number): QuestionQCMCour
   const coursIds = new Set(unite.coursIds)
   return toutesLesQuestionsCours.filter(q => coursIds.has(q.coursId))
 }
+
+export function getQuestionsCoursPourCours(coursId: string): QuestionQCMCours[] {
+  return toutesLesQuestionsCours.filter(q => q.coursId === coursId)
+}

@@ -75,7 +75,7 @@ export interface Cours {
   id: string;
   titre: string;
   resume: string;
-  sections: { titre: string; contenuMarkdown: string; schemaId?: string }[];
+  sections: { titre: string; contenuMarkdown: string; schemaId?: string; pointsCles?: string[] }[];
   disciplines: Discipline[];
   termesAbordes?: string[];
   videosExternes?: { titre: string; url: string; source: string }[];

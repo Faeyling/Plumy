@@ -13,6 +13,7 @@ import { fr } from '@/i18n/fr'
 import { SpeakButton } from '@/components/ui/SpeakButton'
 import { getCoursProgression, aLuRecemment } from '@/lib/coursProgression'
 import { getStreakSansCours } from '@/lib/streakSansCours'
+import { getQuestionsCoursPourCours } from '@/content/questionsCours/index'
 
 export function UnitePage() {
   const { numero } = useParams<{ numero: string }>()
@@ -247,7 +248,22 @@ export function UnitePage() {
                         <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
                     </Link>
-                    <SpeakButton text={c.resume} size={13} className="mr-2" />
+                    <SpeakButton text={c.resume} size={13} />
+                    {getQuestionsCoursPourCours(c.id).length > 0 && (
+                      <Link
+                        to={`/quiz/cours/${c.id}`}
+                        className="flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center mr-2 transition-colors"
+                        style={{ backgroundColor: 'var(--color-candy-menthe-light,#d1fae5)' }}
+                        aria-label={`Quiz sur ${c.titre}`}
+                        title="Me tester sur ce cours"
+                      >
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true" style={{ color: 'var(--color-candy-menthe)' }}>
+                          <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                          <rect x="9" y="3" width="6" height="4" rx="1" stroke="currentColor" strokeWidth="2" />
+                          <path d="M9 12h6M9 16h4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                        </svg>
+                      </Link>
+                    )}
                   </div>
                 )
               })}
