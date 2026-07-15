@@ -13,7 +13,7 @@ import { fr } from '@/i18n/fr'
 import { SpeakButton } from '@/components/ui/SpeakButton'
 import { getCoursProgression, aLuRecemment } from '@/lib/coursProgression'
 import { getStreakSansCours } from '@/lib/streakSansCours'
-import { getQuestionsCoursPourCours } from '@/content/questionsCours/index'
+import { getQuestionsCoursPourCours, getQuestionsCoursPourUnite } from '@/content/questionsCours/index'
 
 export function UnitePage() {
   const { numero } = useParams<{ numero: string }>()
@@ -379,6 +379,21 @@ export function UnitePage() {
                 >
                   <span className="w-10 h-10 rounded-xl flex items-center justify-center font-bold text-white text-lg" style={{ backgroundColor: '#059669' }} aria-hidden="true">R</span>
                   <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm">Reconnaître</p>
+                </Link>
+              )}
+              {getQuestionsCoursPourUnite(numUnite).length > 0 && (
+                <Link
+                  to={`/quiz/cours-unite/${numUnite}`}
+                  className="flex flex-col items-center gap-2 p-4 bg-[#e8f5e9] border border-[var(--color-candy-menthe)] rounded-[var(--radius-card)] hover:shadow-md transition-shadow"
+                >
+                  <span className="w-10 h-10 rounded-xl bg-[var(--color-candy-menthe)] flex items-center justify-center" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                      <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <rect x="9" y="3" width="6" height="4" rx="1" stroke="white" strokeWidth="2" />
+                      <path d="M9 12h6M9 16h4" stroke="white" strokeWidth="2" strokeLinecap="round" />
+                    </svg>
+                  </span>
+                  <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm">Quiz cours</p>
                 </Link>
               )}
             </div>
