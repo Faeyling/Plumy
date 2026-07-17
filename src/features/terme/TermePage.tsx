@@ -400,9 +400,57 @@ function MarkdownSimple({ content }: { content: string }) {
   const lines = content.split('\n')
   const elements: React.ReactNode[] = []
   let i = 0
+  let inTable = false
+  let tableRows: string[][] = []
+
+  const flushTable = (key: string) => {
+    if (tableRows.length < 2) { tableRows = []; return }
+    const headers = tableRows[0]
+    const body = tableRows.slice(2)
+    elements.push(
+      <div key={key} className="overflow-x-auto my-3 rounded-lg border border-[var(--color-gris-doux)]">
+        <table className="w-full text-xs">
+          <thead className="bg-[var(--color-papier-alt)]">
+            <tr>
+              {headers.map((h, hi) => (
+                <th key={hi} className="px-3 py-2 text-left font-semibold text-[var(--color-encre)]">
+                  <InlineMarkdown text={h.trim()} />
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {body.map((row, ri) => (
+              <tr key={ri} className="border-t border-[var(--color-gris-doux)]">
+                {row.map((cell, ci) => (
+                  <td key={ci} className="px-3 py-2 text-[var(--color-encre)]">
+                    <InlineMarkdown text={cell.trim()} />
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    )
+    tableRows = []
+  }
 
   while (i < lines.length) {
     const line = lines[i]
+
+    if (line.startsWith('|')) {
+      inTable = true
+      tableRows.push(line.split('|').filter(Boolean).map(c => c.trim()))
+      i++
+      continue
+    }
+
+    if (inTable) {
+      flushTable(`table-${i}`)
+      inTable = false
+    }
+
     if (line.startsWith('**') && line.endsWith('**') && line.length > 4) {
       elements.push(
         <p key={i} className="font-bold text-[var(--color-encre)] mt-3 mb-1 text-sm">
@@ -424,7 +472,7 @@ function MarkdownSimple({ content }: { content: string }) {
           {line.slice(2)}
         </blockquote>
       )
-    } else if (line.trim() === '') {
+    } else if (line.trim() === '' || line.trim() === '---') {
       elements.push(<div key={i} className="h-2" />)
     } else {
       elements.push(
@@ -435,6 +483,8 @@ function MarkdownSimple({ content }: { content: string }) {
     }
     i++
   }
+
+  if (inTable) flushTable('table-end')
 
   return <div className="space-y-1">{elements}</div>
 }
