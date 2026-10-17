@@ -168,7 +168,7 @@ export function EnSceneSession() {
       <div className="flex flex-col min-h-svh">
         <div className="flex-1 flex flex-col items-center justify-center p-8 gap-5 text-center">
           <img
-            src={pct >= 60 ? '/mascotte/plumy-reussite.png' : '/mascotte/plumy-encouragement.png'}
+            src={pct >= 60 ? '/mascotte/plumy-reussite.webp' : '/mascotte/plumy-encouragement.webp'}
             alt={pct >= 60 ? 'Plumy célèbre' : 'Plumy encourage'}
             className="w-28 h-28 object-contain"
           />
@@ -315,7 +315,7 @@ export function EnSceneSession() {
                 className="bg-[var(--color-candy-rose-light)] rounded-[var(--radius-card)] p-4 flex gap-3"
               >
                 <img
-                  src="/mascotte/plumy-encouragement.png"
+                  src="/mascotte/plumy-encouragement.webp"
                   alt="Plumy encourage"
                   className="w-12 h-12 object-contain flex-shrink-0"
                 />

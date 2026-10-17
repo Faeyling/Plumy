@@ -217,7 +217,7 @@ export function AccueilPage() {
               </h2>
               <div className="flex gap-3 px-4 pb-3.5">
                 <img
-                  src="/mascotte/plumy-encouragement.png"
+                  src="/mascotte/plumy-encouragement.webp"
                   alt=""
                   aria-hidden="true"
                   className="w-14 h-14 object-contain flex-shrink-0"

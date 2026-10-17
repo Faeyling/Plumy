@@ -69,7 +69,7 @@ export function UnitePage() {
       <header className="relative bg-[var(--color-plumy-bg)] px-5 pt-12 pb-6 overflow-hidden">
         {/* Plume watermark décorative */}
         <img
-          src={['/plumes/plume-duo-croisees.png', '/plumes/plume-solo-reve.png', '/plumes/plume-duo-arc.png'][numUnite % 3]}
+          src={['/plumes/plume-duo-croisees.webp', '/plumes/plume-solo-reve.webp', '/plumes/plume-duo-arc.webp'][numUnite % 3]}
           alt=""
           aria-hidden="true"
           draggable={false}
@@ -170,7 +170,7 @@ export function UnitePage() {
                 className="mb-3 bg-[var(--color-candy-lavande-light)] border border-[var(--color-candy-lavande)] rounded-[var(--radius-card)] p-3 flex gap-3"
               >
                 <img
-                  src="/mascotte/plumy-encouragement.png"
+                  src="/mascotte/plumy-encouragement.webp"
                   alt="Plumy suggère"
                   className="w-12 h-12 object-contain flex-shrink-0"
                 />

@@ -1,6 +1,6 @@
 const PLUMES = [
   {
-    src: '/plumes/plume-duo-croisees.png',
+    src: '/plumes/plume-duo-croisees.webp',
     style: {
       top: '-5%',
       right: '-8%',
@@ -11,7 +11,7 @@ const PLUMES = [
     },
   },
   {
-    src: '/plumes/plume-duo-arc.png',
+    src: '/plumes/plume-duo-arc.webp',
     style: {
       bottom: '8%',
       left: '-10%',
@@ -22,7 +22,7 @@ const PLUMES = [
     },
   },
   {
-    src: '/plumes/plume-solo-reve.png',
+    src: '/plumes/plume-solo-reve.webp',
     style: {
       top: '38%',
       right: '-14%',

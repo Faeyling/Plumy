@@ -24,12 +24,12 @@ const messageParEtat: Record<PluмyEtat, string> = {
 }
 
 const PNG_ETATS: Partial<Record<PluмyEtat, string>> = {
-  accueil: '/mascotte/plumy-accueil.png',
-  encouragement: '/mascotte/plumy-encouragement.png',
-  reussite: '/mascotte/plumy-reussite.png',
-  echec: '/mascotte/plumy-echec.png',
-  repos: '/mascotte/plumy-repos.png',
-  retour: '/mascotte/plumy-retour.png',
+  accueil: '/mascotte/plumy-accueil.webp',
+  encouragement: '/mascotte/plumy-encouragement.webp',
+  reussite: '/mascotte/plumy-reussite.webp',
+  echec: '/mascotte/plumy-echec.webp',
+  repos: '/mascotte/plumy-repos.webp',
+  retour: '/mascotte/plumy-retour.webp',
 }
 
 // Pivot de la crête (sommet de la tête)

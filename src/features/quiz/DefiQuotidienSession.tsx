@@ -294,7 +294,7 @@ export function DefiQuotidienSession() {
                 className="bg-[var(--color-candy-rose-light)] rounded-[var(--radius-card)] p-4 flex gap-3"
               >
                 <img
-                  src="/mascotte/plumy-encouragement.png"
+                  src="/mascotte/plumy-encouragement.webp"
                   alt="Plumy encourage"
                   className="w-12 h-12 object-contain flex-shrink-0"
                 />
