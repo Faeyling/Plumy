@@ -38,21 +38,25 @@ PWA React + Vite + TypeScript strict, 100 % offline. Tout le stockage est local 
 ```
 src/content/
   schema.ts          # Types TypeScript — source de vérité absolue
-  unites.ts          # 12 unités (0–11)
-  termes/            # unite0.ts … unite11.ts  — ~220 termes
-  cours/             # unite0.ts … unite11.ts  — cours en Markdown
-  references.ts      # 30+ références scientifiques
+  unites.ts          # 14 unités (1–14)
+  termes/            # unite1.ts … unite14.ts — ~320 termes
+  cours/             # unite1.ts … unite14.ts + parcours.ts (cours transversaux) — Markdown
+  questionsCours/    # QCM sur les cours, reliés par coursId (numérotation des fichiers ≠ numéros d'unité)
+  references.ts      # 40+ références scientifiques
   graphe-danses.ts   # Nœuds + liens pour le schéma SVG D3
-  illustrations.ts   # Map iconeSvgId → chemin PNG
+  illustrations.ts   # Map iconeSvgId → chemin WebP
   journal.ts         # Entrées quotidiennes de Plumy
   parcours.ts        # Parcours thématiques transversaux
-  badges.ts          # 20 badges (hors contenu, dans src/data/)
+  enScene.ts         # Situations du quiz « En scène »
+  content.test.ts    # Test d'intégrité : ids, termesLies, unités, questions → sections
 ```
+
+`src/data/badges.ts` contient les 20 badges (hors contenu).
 
 ### Couche données (`src/data/`)
 
 - **`db.ts`** — Définit `PlumyDatabase extends Dexie` avec 4 tables : `progressions`, `stats`, `termesPersonnels`, `historiqueQuiz`. Ajouter une version avant toute migration de schéma.
-- **`repositories/`** — `progressionRepository`, `statsRepository`, `termesPersoRepository`. Toute lecture/écriture IndexedDB passe par ces repositories, jamais directement par `db`.
+- **`repositories/`** — `progressionRepository`, `statsRepository`, `termesPersoRepository`, `historiqueRepository`. Toute lecture/écriture IndexedDB passe par ces repositories, jamais directement par `db` (seule exception : `sauvegardeService`, export/import complet).
 
 ### État global
 
@@ -71,7 +75,7 @@ Pas de store global (Redux/Zustand). L'état est local aux composants ou chargé
 
 ### TTS (Text-to-Speech)
 
-`src/hooks/useSpeech.ts` — Web Speech API, voix française préférée, `onvoiceschanged` pour le chargement asynchrone. `src/components/ui/SpeakButton.tsx` est un composant autonome (intègre `useSpeech` lui-même). `src/lib/stripMarkdown.ts` nettoie le Markdown avant envoi au TTS.
+`src/hooks/useSpeech.ts` — Web Speech API, voix française préférée, `onvoiceschanged` pour le chargement asynchrone. ElevenLabs uniquement si l'utilisateur a saisi sa propre clé dans Paramètres (`src/lib/voix.ts`, localStorage) **et** est en ligne. **Ne jamais committer de clé API.** `src/components/ui/SpeakButton.tsx` est un composant autonome (intègre `useSpeech` lui-même). `src/lib/stripMarkdown.ts` nettoie le Markdown avant envoi au TTS.
 
 ### Routing
 
@@ -81,7 +85,12 @@ Pas de store global (Redux/Zustand). L'état est local aux composants ou chargé
 
 Tous les textes d'interface sont centralisés dans `src/i18n/fr.ts`. Ne jamais mettre de chaîne française en dur dans un composant.
 
-Design system « pop candy » : tokens CSS dans `src/styles/`, Tailwind CSS v4.
+Design system « pop candy » : tokens CSS dans `src/styles/tokens.css` (bloc `@theme`), Tailwind CSS v4.
+Polices : utiliser `font-titre`, `font-corps`, `font-manuscrit` — **pas** `font-[var(--font-…)]`, que Tailwind v4 interprète comme une graisse.
+
+### Hors ligne (PWA)
+
+`vite-plugin-pwa` en mode `prompt` : tout le build (JS, CSS, images WebP, polices `@fontsource` sous-ensemble latin) est précaché. `src/components/ui/BandeauReseau.tsx` affiche l'état hors ligne et propose la mise à jour. Aucune ressource ne doit venir d'un CDN tiers au chargement ; les nouvelles images vont dans `public/` en WebP (≤ 800 px de large).
 
 ---
 
