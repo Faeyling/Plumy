@@ -90,7 +90,7 @@ Polices : utiliser `font-titre`, `font-corps`, `font-manuscrit` — **pas** `fon
 
 ### Hors ligne (PWA)
 
-`vite-plugin-pwa` en mode `prompt` : tout le build (JS, CSS, images WebP, polices `@fontsource` sous-ensemble latin) est précaché. `src/components/ui/BandeauReseau.tsx` affiche l'état hors ligne et propose la mise à jour. Aucune ressource ne doit venir d'un CDN tiers au chargement ; les nouvelles images vont dans `public/` en WebP (≤ 800 px de large).
+`vite-plugin-pwa` en mode `autoUpdate` (ne pas passer en `prompt` : les installations existantes resteraient bloquées sur l'ancienne version) : tout le build (JS, CSS, images WebP, polices `@fontsource` sous-ensemble latin) est précaché. `src/components/ui/BandeauReseau.tsx` affiche l'état hors ligne et « prête hors ligne ». Aucune ressource ne doit venir d'un CDN tiers au chargement ; les nouvelles images vont dans `public/` en WebP (≤ 800 px de large).
 
 ---
 

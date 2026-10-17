@@ -492,9 +492,6 @@ export const fr = {
   reseau: {
     horsLigne: "Tu es hors ligne — pas de panique, mes carnets marchent sans réseau !",
     pretHorsLigne: "C'est bon, je suis installée : tu peux réviser même sans réseau ✓",
-    miseAJour: "J'ai une nouvelle version pour toi !",
-    recharger: "Mettre à jour",
-    plusTard: "Plus tard",
     fermer: "Fermer",
   },
 } as const

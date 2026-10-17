@@ -2,13 +2,13 @@ import { useEffect, useState } from 'react'
 import { useRegisterSW } from 'virtual:pwa-register/react'
 import { fr } from '@/i18n/fr'
 
-// Bandeau d'état réseau : hors ligne, prêt hors ligne, nouvelle version disponible
+// Bandeau d'état réseau : hors ligne, prêt hors ligne.
+// Les mises à jour s'appliquent seules (registerType 'autoUpdate') : un mode « prompt »
+// laisserait bloqués sur l'ancienne version les utilisateurs déjà installés.
 export function BandeauReseau() {
   const [enLigne, setEnLigne] = useState(() => navigator.onLine)
   const {
     offlineReady: [pretHorsLigne, setPretHorsLigne],
-    needRefresh: [miseAJour, setMiseAJour],
-    updateServiceWorker,
   } = useRegisterSW()
 
   useEffect(() => {
@@ -27,23 +27,6 @@ export function BandeauReseau() {
     const t = setTimeout(() => setPretHorsLigne(false), 5000)
     return () => clearTimeout(t)
   }, [pretHorsLigne, setPretHorsLigne])
-
-  if (miseAJour) {
-    return (
-      <div role="status" className="fixed bottom-20 left-3 right-3 z-50 max-w-lg mx-auto flex items-center gap-2 px-4 py-3 rounded-2xl bg-white shadow-lg border-2 border-[var(--color-candy-lavande)] text-sm">
-        <span className="flex-1 text-[var(--color-encre)] font-semibold">{fr.reseau.miseAJour}</span>
-        <button onClick={() => setMiseAJour(false)} className="px-2 py-1 text-[var(--color-gris-texte)]">
-          {fr.reseau.plusTard}
-        </button>
-        <button
-          onClick={() => updateServiceWorker(true)}
-          className="px-3 py-1.5 rounded-xl font-bold text-white bg-[var(--color-candy-rose)]"
-        >
-          {fr.reseau.recharger}
-        </button>
-      </div>
-    )
-  }
 
   if (!enLigne) {
     return (

@@ -15,6 +15,13 @@ import '@fontsource/caveat/latin-400.css'
 import '@fontsource/caveat/latin-600.css'
 import './styles/tokens.css'
 
+// Après une mise à jour, un ancien onglet peut réclamer un fichier JS qui n'existe plus :
+// on recharge pour récupérer la nouvelle version au lieu de planter.
+window.addEventListener('vite:preloadError', (event) => {
+  event.preventDefault()
+  window.location.reload()
+})
+
 // Applique la taille de police sauvegardée
 const tailleSaved = localStorage.getItem('plumy-taille-police')
 if (tailleSaved === 'grande') document.documentElement.style.fontSize = '18px'
