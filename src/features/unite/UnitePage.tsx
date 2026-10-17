@@ -7,7 +7,7 @@ import { getCoursParUnite } from '@/content/cours/index'
 import { progressionRepository } from '@/data/repositories/progressionRepository'
 import { termesPersoRepository } from '@/data/repositories/termesPersoRepository'
 import type { ProgressionTerme, TermePersonnel } from '@/content/schema'
-import { PluмyMascot } from '@/components/mascotte/PluмyMascot'
+import { PlumyMascot } from '@/components/mascotte/PlumyMascot'
 import { iconeIllustration } from '@/content/illustrations'
 import { fr } from '@/i18n/fr'
 import { SpeakButton } from '@/components/ui/SpeakButton'
@@ -41,7 +41,7 @@ export function UnitePage() {
   if (!unite) {
     return (
       <div className="flex flex-col items-center justify-center min-h-[60vh] gap-4 p-8 text-center">
-        <PluмyMascot etat="echec" taille={80} />
+        <PlumyMascot etat="echec" taille={80} />
         <p className="text-[var(--color-gris-texte)]">Unité introuvable.</p>
         <button onClick={() => navigate('/')} className="text-[var(--color-plumy-blue)] underline text-sm">
           Retour à l'accueil

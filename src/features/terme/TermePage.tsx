@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { getTerme } from '@/content/termes/index'
 import { progressionRepository } from '@/data/repositories/progressionRepository'
 import { statsRepository } from '@/data/repositories/statsRepository'
-import { PluмyMascot } from '@/components/mascotte/PluмyMascot'
+import { PlumyMascot } from '@/components/mascotte/PlumyMascot'
 import type { ProgressionTerme } from '@/content/schema'
 import { fr } from '@/i18n/fr'
 import { useSpeech } from '@/hooks/useSpeech'
@@ -70,7 +70,7 @@ export function TermePage() {
   if (!terme) {
     return (
       <div className="flex flex-col items-center justify-center min-h-[60vh] gap-4 p-8 text-center">
-        <PluмyMascot etat="echec" taille={80} />
+        <PlumyMascot etat="echec" taille={80} />
         <p className="text-[var(--color-gris-texte)]">Terme introuvable.</p>
         <button onClick={() => navigate(-1)} className="text-[var(--color-plumy-blue)] underline text-sm">
           Retour
@@ -228,7 +228,7 @@ export function TermePage() {
             isSpeaking={isPlaying && playingSection === 'conseils'}
           >
             <div className="flex gap-3">
-              <PluмyMascot etat="encouragement" taille={48} className="flex-shrink-0 mt-1" />
+              <PlumyMascot etat="encouragement" taille={48} className="flex-shrink-0 mt-1" />
               <ul className="space-y-2">
                 {terme.conseils.map((c, i) => (
                   <li key={i} className="text-sm text-[var(--color-encre)] leading-relaxed italic">

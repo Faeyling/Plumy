@@ -8,9 +8,9 @@ import { statsRepository } from '@/data/repositories/statsRepository'
 import { progressionRepository } from '@/data/repositories/progressionRepository'
 import { useBadgeCheck } from '@/hooks/useBadgeCheck'
 import { getBadge } from '@/data/badges'
-import { PluмyMascot } from '@/components/mascotte/PluмyMascot'
+import { PlumyMascot } from '@/components/mascotte/PlumyMascot'
 import { fr } from '@/i18n/fr'
-import { db } from '@/data/db'
+import { historiqueRepository } from '@/data/repositories/historiqueRepository'
 import { seededRandom, todaySeed } from '@/lib/seededRandom'
 
 const NB_QUESTIONS = 10
@@ -139,8 +139,7 @@ export function DefiQuotidienSession() {
     const stats = await statsRepository.get()
     await statsRepository.update({ quizJoues: stats.quizJoues + 1 })
     await statsRepository.ajouterQuizReussiAujourdhui()
-    await db.historiqueQuiz.add({
-      date: new Date().toISOString().slice(0, 10),
+    await historiqueRepository.ajouter({
       type: 'defi-quotidien',
       correct: corrects,
       total,
@@ -156,7 +155,7 @@ export function DefiQuotidienSession() {
     return (
       <div className="flex flex-col min-h-svh">
         <div className="flex-1 flex flex-col items-center justify-center p-8 gap-5 text-center">
-          <PluмyMascot etat={pct >= 60 ? 'reussite' : 'encouragement'} taille={100} />
+          <PlumyMascot etat={pct >= 60 ? 'reussite' : 'encouragement'} taille={100} />
           <div>
             <h1 className="font-titre font-bold text-2xl text-[var(--color-encre)] mb-1">
               Défi du jour terminé !

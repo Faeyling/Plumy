@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { exporterDonnees } from './sauvegardeService'
 import { statsRepository } from '@/data/repositories/statsRepository'
-import { PluмyMascot } from '@/components/mascotte/PluмyMascot'
+import { PlumyMascot } from '@/components/mascotte/PlumyMascot'
 import { fr } from '@/i18n/fr'
 
 const SEUIL_JOURS = 5
@@ -43,7 +43,7 @@ export function RappelSauvegarde() {
         >
           <div className="bg-white rounded-[var(--radius-card)] shadow-xl border border-[var(--color-candy-lavande)] p-4 flex gap-3 items-start">
             <div className="shrink-0">
-              <PluмyMascot etat="repos" taille={44} />
+              <PlumyMascot etat="repos" taille={44} />
             </div>
             <div className="flex-1 min-w-0">
               <p className="text-sm text-[var(--color-encre)] font-medium leading-snug">

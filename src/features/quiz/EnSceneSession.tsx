@@ -7,7 +7,7 @@ import { statsRepository } from '@/data/repositories/statsRepository'
 import { useBadgeCheck } from '@/hooks/useBadgeCheck'
 import { getBadge } from '@/data/badges'
 import { fr } from '@/i18n/fr'
-import { db } from '@/data/db'
+import { historiqueRepository } from '@/data/repositories/historiqueRepository'
 import { incrementerStreakSansCours } from '@/lib/streakSansCours'
 import { shuffle } from './quiz.utils'
 
@@ -138,8 +138,7 @@ export function EnSceneSession() {
     const stats = await statsRepository.get()
     await statsRepository.update({ quizJoues: stats.quizJoues + 1 })
     await statsRepository.ajouterQuizReussiAujourdhui()
-    await db.historiqueQuiz.add({
-      date: new Date().toISOString().slice(0, 10),
+    await historiqueRepository.ajouter({
       type: 'en-scene',
       correct: corrects,
       total,

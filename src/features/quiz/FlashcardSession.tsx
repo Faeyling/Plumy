@@ -5,7 +5,7 @@ import { fr } from '@/i18n/fr'
 import { unites } from '@/content/unites'
 import { getTermesParUnite } from '@/content/termes/index'
 import { progressionRepository } from '@/data/repositories/progressionRepository'
-import { db } from '@/data/db'
+import { historiqueRepository } from '@/data/repositories/historiqueRepository'
 import type { Terme, ProgressionTerme } from '@/content/schema'
 import { SpeakButton } from '@/components/ui/SpeakButton'
 
@@ -68,8 +68,7 @@ export function FlashcardSession() {
         }))
         await progressionRepository.mettreAJourStatutBatch(mises)
         const nbSu = Array.from(newJugements.values()).filter(j => j === 'su').length
-        await db.historiqueQuiz.add({
-          date: new Date().toISOString().slice(0, 10),
+        await historiqueRepository.ajouter({
           type: 'flashcards',
           uniteNumero: numUnite,
           correct: nbSu,
@@ -81,7 +80,7 @@ export function FlashcardSession() {
         setIndex((i) => i + 1)
       }
     },
-    [carteActuelle, index, deck.length, jugements],
+    [carteActuelle, index, deck.length, jugements, numUnite],
   )
 
   const recommencer = () => {
@@ -330,13 +329,14 @@ function StatutPill({ statut }: { statut: Statut }) {
 }
 
 function ConfettiBurst() {
-  const confetti = Array.from({ length: 18 }, (_, i) => ({
+  // Positions tirées une seule fois au montage : stables entre les rendus
+  const [confetti] = useState(() => Array.from({ length: 18 }, (_, i) => ({
     id: i,
     x: (Math.random() - 0.5) * 300,
     y: -(Math.random() * 200 + 80),
     rotate: Math.random() * 720 - 360,
     color: ['var(--color-candy-rose)', 'var(--color-candy-lavande)', 'var(--color-candy-jaune)', 'var(--color-candy-menthe)', 'var(--color-candy-corail)'][i % 5],
-  }))
+  })))
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
       {confetti.map(c => (

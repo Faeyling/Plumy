@@ -4,7 +4,7 @@ import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Cell } from 'recharts
 import { useStats } from '@/hooks/useStats'
 import { progressionRepository } from '@/data/repositories/progressionRepository'
 import { BADGES } from '@/data/badges'
-import { PluмyMascot } from '@/components/mascotte/PluмyMascot'
+import { PlumyMascot } from '@/components/mascotte/PlumyMascot'
 import { fr } from '@/i18n/fr'
 
 export function ProgresPage() {
@@ -44,7 +44,7 @@ export function ProgresPage() {
     <div className="flex flex-col min-h-svh">
       <header className="px-5 pt-10 pb-6 bg-[var(--color-plumy-bg)]">
         <div className="flex items-center gap-4">
-          <PluмyMascot etat={stats && stats.points > 0 ? 'reussite' : 'accueil'} taille={72} />
+          <PlumyMascot etat={stats && stats.points > 0 ? 'reussite' : 'accueil'} taille={72} />
           <div>
             <h1 className="font-titre font-bold text-2xl text-[var(--color-encre)]">
               {fr.progres.titre}

@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { PluмyMascot } from '@/components/mascotte/PluмyMascot'
+import { PlumyMascot } from '@/components/mascotte/PlumyMascot'
 import { useStats } from '@/hooks/useStats'
 import { fr } from '@/i18n/fr'
-import { db, type EntreeHistoriqueQuiz } from '@/data/db'
+import type { EntreeHistoriqueQuiz } from '@/data/db'
+import { historiqueRepository } from '@/data/repositories/historiqueRepository'
 
 export function QuizPage() {
   const { stats } = useStats()
@@ -13,12 +14,7 @@ export function QuizPage() {
   const dejaFaitAujourdhui = historique.some(h => h.date === today && h.type === 'defi-quotidien')
 
   useEffect(() => {
-    db.historiqueQuiz
-      .orderBy('id')
-      .reverse()
-      .limit(20)
-      .toArray()
-      .then(setHistorique)
+    historiqueRepository.recents(20).then(setHistorique)
   }, [])
 
   return (
@@ -26,7 +22,7 @@ export function QuizPage() {
       {/* En-tête */}
       <header className="bg-[var(--color-plumy-bg)] px-5 pt-10 pb-6">
         <div className="flex items-center gap-4">
-          <PluмyMascot etat={stats && stats.points > 0 ? 'reussite' : 'accueil'} taille={72} />
+          <PlumyMascot etat={stats && stats.points > 0 ? 'reussite' : 'accueil'} taille={72} />
           <div>
             <h1 className="font-titre font-bold text-2xl text-[var(--color-encre)]">
               {fr.nav.quiz}

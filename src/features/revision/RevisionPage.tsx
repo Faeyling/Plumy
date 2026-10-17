@@ -5,7 +5,7 @@ import { progressionRepository } from '@/data/repositories/progressionRepository
 import { getTerme, termesParUnite } from '@/content/termes/index'
 import { unites } from '@/content/unites'
 import type { Terme } from '@/content/schema'
-import { PluмyMascot } from '@/components/mascotte/PluмyMascot'
+import { PlumyMascot } from '@/components/mascotte/PlumyMascot'
 import { fr } from '@/i18n/fr'
 
 interface GroupeUnite {
@@ -75,7 +75,7 @@ export function RevisionPage() {
       <div className="flex-1 px-4 py-5 space-y-6">
         {total === 0 ? (
           <div className="flex flex-col items-center justify-center py-16 gap-4 text-center">
-            <PluмyMascot etat="reussite" taille={100} />
+            <PlumyMascot etat="reussite" taille={100} />
             <p className="font-titre font-semibold text-[var(--color-encre)] text-lg">
               {fr.revision.aucun}
             </p>

@@ -10,9 +10,9 @@ import { incrementerStreakSansCours } from '@/lib/streakSansCours'
 import { statsRepository } from '@/data/repositories/statsRepository'
 import { useBadgeCheck } from '@/hooks/useBadgeCheck'
 import { getBadge } from '@/data/badges'
-import { PluмyMascot } from '@/components/mascotte/PluмyMascot'
+import { PlumyMascot } from '@/components/mascotte/PlumyMascot'
 import { fr } from '@/i18n/fr'
-import { db } from '@/data/db'
+import { historiqueRepository } from '@/data/repositories/historiqueRepository'
 import { SpeakButton } from '@/components/ui/SpeakButton'
 
 const PTS_CORRECT_BASE = 10
@@ -106,7 +106,7 @@ export function QCMSession() {
   if (questions.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center min-h-[60vh] p-8 text-center gap-4">
-        <PluмyMascot etat="repos" taille={80} />
+        <PlumyMascot etat="repos" taille={80} />
         <p className="text-[var(--color-gris-texte)]">Pas assez de termes pour ce quiz (minimum 4).</p>
         <button
           onClick={() => navigate(`/unite/${numUnite}`)}
@@ -154,8 +154,7 @@ export function QCMSession() {
     const stats = await statsRepository.get()
     await statsRepository.update({ quizJoues: stats.quizJoues + 1 })
     await statsRepository.ajouterQuizReussiAujourdhui()
-    await db.historiqueQuiz.add({
-      date: new Date().toISOString().slice(0, 10),
+    await historiqueRepository.ajouter({
       type: 'qcm',
       uniteNumero: numUnite,
       correct: corrects,
@@ -173,7 +172,7 @@ export function QCMSession() {
     return (
       <div className="flex flex-col min-h-svh">
         <div className="flex-1 flex flex-col items-center justify-center p-8 gap-5 text-center">
-          <PluмyMascot etat={pct >= 50 ? 'reussite' : 'echec'} taille={100} />
+          <PlumyMascot etat={pct >= 50 ? 'reussite' : 'echec'} taille={100} />
           <div>
             <h1 className="font-titre font-bold text-2xl text-[var(--color-encre)] mb-1">
               {fr.quiz.finTitre}

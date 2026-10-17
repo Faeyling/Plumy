@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { statsRepository } from '@/data/repositories/statsRepository'
-import { PluмyMascot } from '@/components/mascotte/PluмyMascot'
+import { PlumyMascot } from '@/components/mascotte/PlumyMascot'
 import { fr } from '@/i18n/fr'
 
 type EtatMascotte = 'accueil' | 'encouragement' | 'repos'
@@ -98,7 +98,7 @@ export function OnboardingModal({ onTermine }: Props) {
               transition={{ duration: 0.22 }}
               className="flex flex-col items-center gap-5 text-center"
             >
-              <PluмyMascot etat="encouragement" taille={96} />
+              <PlumyMascot etat="encouragement" taille={96} />
               <div className="space-y-2">
                 <h2 className="font-titre font-bold text-xl text-[var(--color-encre)]">
                   {ecran.titre}

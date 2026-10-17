@@ -84,7 +84,7 @@ Tous les libellés de l'interface en français, dans la voix de Plumy. Ne jamais
 
 ### `src/components/`
 
-- `mascotte/` — Plumy SVG animé (`PluмyMascot` avec états : accueil, encouragement, reussite, echec, repos, retour)
+- `mascotte/` — Plumy SVG animé (`PlumyMascot` avec états : accueil, encouragement, reussite, echec, repos, retour)
 - `ui/` — Composants génériques (boutons, modales, champs)
 
 ## Flux de données

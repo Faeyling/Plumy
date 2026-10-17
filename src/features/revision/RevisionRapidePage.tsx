@@ -4,9 +4,9 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { progressionRepository } from '@/data/repositories/progressionRepository'
 import { tousLesTermes } from '@/content/termes/index'
 import { statsRepository } from '@/data/repositories/statsRepository'
-import { PluмyMascot } from '@/components/mascotte/PluмyMascot'
+import { PlumyMascot } from '@/components/mascotte/PlumyMascot'
 import { fr } from '@/i18n/fr'
-import { db } from '@/data/db'
+import { historiqueRepository } from '@/data/repositories/historiqueRepository'
 import type { Terme } from '@/content/schema'
 
 const NB_TERMES = 10
@@ -63,8 +63,7 @@ export function RevisionRapidePage() {
     }))
     if (mises.length > 0) await progressionRepository.mettreAJourStatutBatch(mises)
     await statsRepository.ajouterQuizReussiAujourdhui()
-    await db.historiqueQuiz.add({
-      date: new Date().toISOString().slice(0, 10),
+    await historiqueRepository.ajouter({
       type: 'revision-rapide',
       correct: Array.from(jugMap.values()).filter(j => j === 'su').length,
       total: jugMap.size,
@@ -102,7 +101,7 @@ export function RevisionRapidePage() {
   if (deck.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center min-h-svh gap-5 p-8 text-center">
-        <PluмyMascot etat="encouragement" taille={80} />
+        <PlumyMascot etat="encouragement" taille={80} />
         <p className="text-[var(--color-gris-texte)] text-sm">{fr.revisionRapide.aucunTerme}</p>
         <button onClick={() => navigate('/')} className="text-[var(--color-plumy-blue)] underline text-sm">
           Retour à l'accueil
@@ -114,7 +113,7 @@ export function RevisionRapidePage() {
   if (termine) {
     return (
       <div className="flex flex-col items-center justify-center min-h-svh bg-[var(--color-plumy-bg)] p-8 gap-6 text-center">
-        <PluмyMascot etat={nbSu >= jugements.size / 2 ? 'reussite' : 'encouragement'} taille={100} />
+        <PlumyMascot etat={nbSu >= jugements.size / 2 ? 'reussite' : 'encouragement'} taille={100} />
         <div>
           <h1 className="font-titre font-bold text-2xl text-[var(--color-encre)] mb-1">
             {raison === 'temps' ? fr.revisionRapide.tempsEcoule : 'Session terminée !'}

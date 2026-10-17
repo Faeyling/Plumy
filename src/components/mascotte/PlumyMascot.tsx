@@ -1,6 +1,6 @@
 import { motion, useReducedMotion } from 'framer-motion'
 
-export type PluмyEtat =
+export type PlumyEtat =
   | 'accueil'
   | 'encouragement'
   | 'reussite'
@@ -9,12 +9,12 @@ export type PluмyEtat =
   | 'retour'
 
 interface Props {
-  etat?: PluмyEtat
+  etat?: PlumyEtat
   taille?: number
   className?: string
 }
 
-const messageParEtat: Record<PluмyEtat, string> = {
+const messageParEtat: Record<PlumyEtat, string> = {
   accueil: "Plumy te souhaite la bienvenue",
   encouragement: "Plumy t'encourage",
   reussite: "Plumy déploie sa crête en célébration",
@@ -23,7 +23,7 @@ const messageParEtat: Record<PluмyEtat, string> = {
   retour: "Plumy content de te revoir",
 }
 
-const PNG_ETATS: Partial<Record<PluмyEtat, string>> = {
+const PNG_ETATS: Partial<Record<PlumyEtat, string>> = {
   accueil: '/mascotte/plumy-accueil.webp',
   encouragement: '/mascotte/plumy-encouragement.webp',
   reussite: '/mascotte/plumy-reussite.webp',
@@ -41,7 +41,7 @@ const CREST_OPEN  = [68, 80, 92, 104, 116, 128, 140]
 const CREST_CLOSE = 172
 const CREST_LEN   = [30, 34, 37, 38, 36, 32, 27]
 
-export function PluмyMascot({ etat = 'accueil', taille = 120, className }: Props) {
+export function PlumyMascot({ etat = 'accueil', taille = 120, className }: Props) {
   const reduceMotion = useReducedMotion()
   const pngSrc = PNG_ETATS[etat]
 
@@ -136,7 +136,7 @@ function CouTete({
   crestFactor,
   reduceMotion,
 }: {
-  etat: PluмyEtat
+  etat: PlumyEtat
   crestFactor: number
   reduceMotion: boolean
 }) {

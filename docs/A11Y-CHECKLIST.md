@@ -34,7 +34,7 @@ Basée sur WCAG 2.1 AA. Vérifier après chaque déploiement majeur.
 ## Images et médias
 
 - [x] Toutes les animations SVG ont une alternative textuelle (`aria-label` sur le rôle parent)
-- [x] PluмyMascot : `aria-label` décrivant l'état de Plumy
+- [x] PlumyMascot : `aria-label` décrivant l'état de Plumy
 - [x] Schéma graphe-danses : `role="img" aria-label` + liste textuelle alternative complète
 - [x] Pas d'audio requis (champ `audioUrl` présent mais inactif)
 - [x] Vidéos externes uniquement (iframes avec titre, nouvel onglet disponible)
@@ -57,7 +57,7 @@ Basée sur WCAG 2.1 AA. Vérifier après chaque déploiement majeur.
 ## Animations
 
 - [x] `prefers-reduced-motion: reduce` dans tokens.css : désactive toutes les transitions/animations CSS
-- [x] `useReducedMotion()` dans PluмyMascot : versions statiques de chaque état Framer Motion
+- [x] `useReducedMotion()` dans PlumyMascot : versions statiques de chaque état Framer Motion
 - [x] Aucune animation qui clignote plus de 3 fois par seconde
 
 ## Formulaires

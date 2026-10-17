@@ -3,7 +3,7 @@ import { useParams, Link, useNavigate, useSearchParams } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { getCours } from '@/content/cours/index'
 import { getTerme } from '@/content/termes/index'
-import { PluмyMascot } from '@/components/mascotte/PluмyMascot'
+import { PlumyMascot } from '@/components/mascotte/PlumyMascot'
 import { useSpeech } from '@/hooks/useSpeech'
 import { stripMarkdown } from '@/lib/stripMarkdown'
 import { getCoursProgression, marquerSectionVue } from '@/lib/coursProgression'
@@ -74,7 +74,7 @@ export function CoursPage() {
   if (!cours) {
     return (
       <div className="flex flex-col items-center justify-center min-h-[60vh] gap-4 p-8 text-center">
-        <PluмyMascot etat="echec" taille={80} />
+        <PlumyMascot etat="echec" taille={80} />
         <p className="text-[var(--color-gris-texte)]">Cours introuvable.</p>
         <button onClick={() => navigate(-1)} className="text-[var(--color-plumy-blue)] underline text-sm">
           Retour
@@ -470,7 +470,7 @@ function InlineMarkdown({ text }: { text: string }) {
     lastIndex = match.index + match[0].length
   }
   if (lastIndex < text.length) {
-    nodes.push(<span key={key++}>{text.slice(lastIndex)}</span>)
+    nodes.push(<span key={key}>{text.slice(lastIndex)}</span>)
   }
   return <>{nodes}</>
 }
