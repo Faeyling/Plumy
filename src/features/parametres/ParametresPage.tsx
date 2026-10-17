@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { fr } from '@/i18n/fr'
-import { VOIX_ELEVENLABS, getVoixId, setVoixId, getCleElevenLabs, setCleElevenLabs } from '@/lib/voix'
-import { synthetiser, jouerAudio, deverrouillerAudio, ErreurVoix } from '@/lib/elevenlabs'
 
 type TaillePolice = 'normale' | 'grande' | 'tres-grande'
 
@@ -24,40 +22,10 @@ function appliquerTaillePolice(taille: TaillePolice) {
 export function ParametresPage() {
   const navigate = useNavigate()
   const [taille, setTaille] = useState<TaillePolice>(getTaillePolice)
-  const [voixId, setVoixIdState] = useState<string>(getVoixId)
-  const [cleSaisie, setCleSaisie] = useState<string>(getCleElevenLabs)
-  const [cleActive, setCleActive] = useState<boolean>(() => getCleElevenLabs() !== '')
-  const [test, setTest] = useState<{ etat: 'idle' | 'encours' | 'ok' | 'erreur'; message?: string; detail?: string }>({ etat: 'idle' })
 
   useEffect(() => {
     appliquerTaillePolice(taille)
   }, [taille])
-
-  function choisirVoix(id: string) {
-    setVoixId(id)
-    setVoixIdState(id)
-    setTest({ etat: 'idle' })
-  }
-
-  function enregistrerCle(cle: string) {
-    setCleElevenLabs(cle)
-    setCleSaisie(cle.trim())
-    setCleActive(cle.trim() !== '')
-    setTest({ etat: 'idle' })
-  }
-
-  async function testerVoix() {
-    deverrouillerAudio() // pendant le clic, sinon iOS reste muet
-    setTest({ etat: 'encours' })
-    try {
-      const buffer = await synthetiser(fr.parametres.phraseTest, getCleElevenLabs(), voixId)
-      await jouerAudio(buffer, () => {})
-      setTest({ etat: 'ok', message: fr.parametres.testReussi })
-    } catch (e) {
-      const code = e instanceof ErreurVoix ? e.code : 'inconnue'
-      setTest({ etat: 'erreur', message: fr.parametres.erreursVoix[code], detail: e instanceof Error ? e.message : String(e) })
-    }
-  }
 
   return (
     <div className="flex flex-col min-h-svh">
@@ -107,76 +75,6 @@ export function ParametresPage() {
             </div>
           </div>
         </Section>
-
-        {/* Voix de Plumy */}
-        <Section titre={fr.parametres.voixPlumy}>
-            <div className="space-y-3">
-              <label htmlFor="cle-elevenlabs" className="block text-sm font-semibold text-[var(--color-encre)]">
-                {fr.parametres.cleElevenLabs}
-              </label>
-              <p className="text-xs text-[var(--color-gris-texte)]">{fr.parametres.cleElevenLabsAide}</p>
-              <div className="flex gap-2">
-                <input
-                  id="cle-elevenlabs"
-                  type="password"
-                  autoComplete="off"
-                  value={cleSaisie}
-                  onChange={e => setCleSaisie(e.target.value)}
-                  placeholder={fr.parametres.cleElevenLabsPlaceholder}
-                  className="flex-1 min-w-0 px-3 py-2.5 rounded-xl text-sm border-2 border-[var(--color-gris-doux)] bg-white"
-                />
-                <button
-                  onClick={() => enregistrerCle(cleSaisie)}
-                  className="px-3 py-2.5 rounded-xl text-sm font-semibold border-2 border-[var(--color-candy-rose)] text-[var(--color-candy-rose-dark)]"
-                >
-                  {fr.parametres.enregistrer}
-                </button>
-                {cleActive && (
-                  <button
-                    onClick={() => enregistrerCle('')}
-                    className="px-3 py-2.5 rounded-xl text-sm font-semibold border-2 border-[var(--color-gris-doux)] text-[var(--color-gris-texte)]"
-                  >
-                    {fr.parametres.effacer}
-                  </button>
-                )}
-              </div>
-              {!cleActive && <p className="text-sm text-[var(--color-gris-texte)]">{fr.parametres.voixLocale}</p>}
-              {cleActive && <p className="text-xs font-semibold text-[var(--color-candy-menthe)]">{fr.parametres.cleEnregistree}</p>}
-              {cleActive && <p className="text-sm text-[var(--color-gris-texte)]">{fr.parametres.voixDescription}</p>}
-              {cleActive && <div className="flex gap-2">
-                {VOIX_ELEVENLABS.map(v => (
-                  <button
-                    key={v.id}
-                    onClick={() => choisirVoix(v.id)}
-                    className={`flex-1 py-2.5 rounded-xl text-sm font-semibold border-2 transition-colors ${
-                      voixId === v.id
-                        ? 'border-[var(--color-candy-rose)] bg-[#fce4ec] text-[var(--color-candy-rose-dark)]'
-                        : 'border-[var(--color-gris-doux)] text-[var(--color-gris-texte)]'
-                    }`}
-                    aria-pressed={voixId === v.id}
-                  >
-                    {v.nom}
-                  </button>
-                ))}
-              </div>}
-              {cleActive && (
-                <button
-                  onClick={testerVoix}
-                  disabled={test.etat === 'encours'}
-                  className="w-full py-2.5 rounded-xl text-sm font-semibold border-2 border-[var(--color-candy-lavande)] text-[var(--color-encre)] disabled:opacity-60"
-                >
-                  {test.etat === 'encours' ? fr.parametres.testEnCours : fr.parametres.testerVoix}
-                </button>
-              )}
-              {test.etat === 'ok' && <p role="status" className="text-xs font-semibold text-[var(--color-candy-menthe)]">{test.message}</p>}
-              {test.etat === 'erreur' && (
-                <div role="alert" className="text-xs text-[var(--color-candy-rose-dark)] space-y-1">
-                  <p className="font-semibold">{test.message}</p>
-                  <p className="font-mono break-all opacity-70">{test.detail}</p>
-                </div>
-              )}
-            </div>
-          </Section>
 
         {/* Installer l'app */}
         <Section titre={fr.parametres.installer}>

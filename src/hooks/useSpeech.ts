@@ -1,6 +1,4 @@
-import { useState, useCallback, useRef } from 'react'
-import { getVoixId, getCleElevenLabs } from '@/lib/voix'
-import { synthetiser, jouerAudio, arreterAudio, deverrouillerAudio } from '@/lib/elevenlabs'
+import { useState, useCallback } from 'react'
 
 function getFrenchVoice(): SpeechSynthesisVoice | null {
   const voices = window.speechSynthesis.getVoices()
@@ -19,10 +17,12 @@ let lectureActive = 0
 export function useSpeech() {
   const [isPlaying, setIsPlaying] = useState(false)
   const [isSupported] = useState(() => typeof window !== 'undefined' && 'speechSynthesis' in window)
-  const maLecture = useRef(0)
 
-  const speakLocal = useCallback((text: string, jeton: number) => {
-    if (!isSupported) { setIsPlaying(false); return }
+  const speak = useCallback((text: string) => {
+    if (!isSupported) return
+    window.speechSynthesis.cancel()
+    const jeton = ++lectureActive
+
     const fire = () => {
       if (lectureActive !== jeton) return
       const utterance = new SpeechSynthesisUtterance(text)
@@ -46,42 +46,8 @@ export function useSpeech() {
     }
   }, [isSupported])
 
-  const speak = useCallback((text: string) => {
-    // Hors ligne ou sans clé : voix locale du navigateur
-    const cle = navigator.onLine ? getCleElevenLabs() : ''
-    if (!isSupported && !cle) return
-
-    arreterAudio()
-    window.speechSynthesis?.cancel()
-    const jeton = ++lectureActive
-    maLecture.current = jeton
-
-    if (!cle) {
-      speakLocal(text, jeton)
-      return
-    }
-
-    // Doit rester synchrone dans le clic (iOS)
-    deverrouillerAudio()
-    setIsPlaying(true)
-    void (async () => {
-      try {
-        const buffer = await synthetiser(text, cle, getVoixId())
-        if (lectureActive !== jeton) { setIsPlaying(false); return }
-        await jouerAudio(buffer, () => {
-          if (maLecture.current === jeton) setIsPlaying(false)
-        })
-      } catch (err) {
-        console.warn('[ElevenLabs] repli sur la voix du navigateur :', err)
-        if (lectureActive === jeton) speakLocal(text, jeton)
-        else setIsPlaying(false)
-      }
-    })()
-  }, [isSupported, speakLocal])
-
   const stop = useCallback(() => {
     lectureActive++
-    arreterAudio()
     window.speechSynthesis?.cancel()
     setIsPlaying(false)
   }, [])
@@ -91,5 +57,5 @@ export function useSpeech() {
     else speak(text)
   }, [isPlaying, speak, stop])
 
-  return { isPlaying, isSupported: isSupported || !!getCleElevenLabs(), speak, stop, toggle }
+  return { isPlaying, isSupported, speak, stop, toggle }
 }

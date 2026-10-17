@@ -75,7 +75,7 @@ Pas de store global (Redux/Zustand). L'état est local aux composants ou chargé
 
 ### TTS (Text-to-Speech)
 
-`src/hooks/useSpeech.ts` — Web Speech API, voix française préférée, `onvoiceschanged` pour le chargement asynchrone. ElevenLabs uniquement si l'utilisateur a saisi sa propre clé dans Paramètres (`src/lib/voix.ts`, localStorage) **et** est en ligne. **Ne jamais committer de clé API.** `src/components/ui/SpeakButton.tsx` est un composant autonome (intègre `useSpeech` lui-même). `src/lib/stripMarkdown.ts` nettoie le Markdown avant envoi au TTS.
+`src/hooks/useSpeech.ts` — Web Speech API, voix française préférée, `onvoiceschanged` pour le chargement asynchrone. 100 % local (voix du navigateur), aucun service de synthèse externe. Une seule lecture à la fois dans toute l'app. `src/components/ui/SpeakButton.tsx` est un composant autonome (intègre `useSpeech` lui-même). `src/lib/stripMarkdown.ts` nettoie le Markdown avant envoi au TTS.
 
 ### Routing
 
