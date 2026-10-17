@@ -414,7 +414,7 @@ export const termesUnite7: Terme[] = [
       "Commence par marcher en jazz walk stylisé, puis accélère progressivement. La qualité du pied doit rester la même, quelle que soit la vitesse.",
     ],
     difficulteInterne: 1,
-    termesLies: ['jazz-walk', 'ball-change', 'chasse-jazz', 'sauts-jazz'],
+    termesLies: ['jazz-walk', 'ball-change', 'chasse-jazz', 'leaps-jazz'],
   },
 
   {
@@ -434,7 +434,7 @@ export const termesUnite7: Terme[] = [
       "La hauteur vient de la flexibilité ET de la force. Travailler uniquement l'étirement ne suffit pas — renforce aussi le fléchisseur de hanche qui envoie la jambe.",
     ],
     difficulteInterne: 2,
-    termesLies: ['fan-kick', 'ball-change', 'sauts-jazz', 'chasse-jazz'],
+    termesLies: ['fan-kick', 'ball-change', 'leaps-jazz', 'chasse-jazz'],
   },
 
   {
@@ -474,7 +474,7 @@ export const termesUnite7: Terme[] = [
       "Entraîne-toi avec de la musique et des signaux sonores : danse librement, et au signal, arrête-toi net. Plus tu pratiques, plus le freeze devient instinctif.",
     ],
     difficulteInterne: 2,
-    termesLies: ['isolations-jazz', 'groove', 'accent-rythmique'],
+    termesLies: ['isolations-jazz', 'groove', 'accent-jazz'],
   },
 
   {
@@ -494,7 +494,7 @@ export const termesUnite7: Terme[] = [
       "Commence par un barrel turn simple sans saut pour intégrer l'inclinaison de l'axe. Une fois l'axe acquis, ajoute l'impulsion verticale.",
     ],
     difficulteInterne: 4,
-    termesLies: ['pirouette-jazz', 'sauts-jazz', 'jazz-run'],
+    termesLies: ['pirouette-jazz', 'leaps-jazz', 'jazz-run'],
   },
 
   {
@@ -514,7 +514,7 @@ export const termesUnite7: Terme[] = [
       "Exagère la forme en dehors du saut : étire la jambe avant, plie la jambe arrière au maximum. En l'air, ton corps reproduira ce que tes muscles ont mémorisé.",
     ],
     difficulteInterne: 3,
-    termesLies: ['sauts-jazz', 'grand-jete', 'jazz-run', 'chasse-jazz'],
+    termesLies: ['leaps-jazz', 'grand-jete', 'jazz-run', 'chasse-jazz'],
   },
 
   {

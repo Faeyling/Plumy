@@ -4,8 +4,8 @@ export const questionsUnite0: QuestionQCMCours[] = [
   // ─── laban-mouvement · section 0 ─────────────────────────────────────────
   {
     type: 'cours',
-    coursId: 'laban-mouvement',
-    sectionIndex: 0,
+    coursId: 'laban-introduction',
+    sectionIndex: 2,
     question: "La Labanotation, développée par Rudolf Laban, est un système qui permet de…",
     bonneReponse: "Écrire n'importe quel mouvement humain sur une portée verticale",
     choix: [
@@ -17,7 +17,7 @@ export const questionsUnite0: QuestionQCMCours[] = [
   },
   {
     type: 'cours',
-    coursId: 'laban-mouvement',
+    coursId: 'laban-introduction',
     sectionIndex: 0,
     question: "Parmi ces chorégraphes, laquelle est mentionnée comme ayant été marquée par le travail de Rudolf Laban ?",
     bonneReponse: "Pina Bausch",
@@ -32,8 +32,8 @@ export const questionsUnite0: QuestionQCMCours[] = [
   // ─── laban-mouvement · section 1 ─────────────────────────────────────────
   {
     type: 'cours',
-    coursId: 'laban-mouvement',
-    sectionIndex: 1,
+    coursId: 'laban-effort-flux',
+    sectionIndex: 0,
     question: "Parmi ces éléments, lequel est un des quatre facteurs d'Effort définis par Laban ?",
     bonneReponse: "Le Flux",
     choix: [
@@ -45,8 +45,8 @@ export const questionsUnite0: QuestionQCMCours[] = [
   },
   {
     type: 'cours',
-    coursId: 'laban-mouvement',
-    sectionIndex: 1,
+    coursId: 'laban-effort-temps',
+    sectionIndex: 0,
     question: "La polarité 'Soudain / Urgent' correspond à quel facteur d'Effort de Laban ?",
     bonneReponse: "Le Temps",
     choix: [
@@ -60,8 +60,8 @@ export const questionsUnite0: QuestionQCMCours[] = [
   // ─── laban-mouvement · section 2 ─────────────────────────────────────────
   {
     type: 'cours',
-    coursId: 'laban-mouvement',
-    sectionIndex: 2,
+    coursId: 'laban-introduction',
+    sectionIndex: 1,
     question: "Qu'est-ce que la kinesphère, selon Laban ?",
     bonneReponse: "L'espace qu'on peut atteindre sans déplacer ses pieds",
     choix: [
@@ -73,8 +73,8 @@ export const questionsUnite0: QuestionQCMCours[] = [
   },
   {
     type: 'cours',
-    coursId: 'laban-mouvement',
-    sectionIndex: 2,
+    coursId: 'laban-introduction',
+    sectionIndex: 1,
     question: "Quelle figure géométrique Laban utilisait-il pour visualiser la kinesphère ?",
     bonneReponse: "Un icosaèdre",
     choix: [

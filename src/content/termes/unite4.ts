@@ -737,7 +737,7 @@ export const termesUnite4: Terme[] = [
     ],
     difficulteInterne: 1,
     etymologie: "Du français : 'changer les pieds'. Terme entièrement descriptif.",
-    termesLies: ['batterie', 'assemble', 'cinq-positions', 'plie'],
+    termesLies: ['batterie', 'assemble', 'cinq-positions-pieds', 'plie'],
   },
 
   {
@@ -779,7 +779,7 @@ export const termesUnite4: Terme[] = [
     ],
     difficulteInterne: 2,
     etymologie: "Du français : 'demi' (à moitié) + 'pointe' (la pointe du pied). Intermédiaire entre pied plat et pointe.",
-    termesLies: ['pointes', 'releve', 'plie', 'pirouette'],
+    termesLies: ['sur-les-pointes', 'releve', 'plie', 'pirouette'],
   },
 
   {
@@ -857,6 +857,6 @@ export const termesUnite4: Terme[] = [
     ],
     difficulteInterne: 1,
     etymologie: "Du français 'étoile' — littéralement l'astre qui brille plus que les autres.",
-    termesLies: ['corps-de-ballet', 'ballet'],
+    termesLies: ['corps-de-ballet'],
   },
 ]
