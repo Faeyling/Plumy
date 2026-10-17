@@ -116,7 +116,7 @@ export function RevisionRapidePage() {
       <div className="flex flex-col items-center justify-center min-h-svh bg-[var(--color-plumy-bg)] p-8 gap-6 text-center">
         <PluмyMascot etat={nbSu >= jugements.size / 2 ? 'reussite' : 'encouragement'} taille={100} />
         <div>
-          <h1 className="font-[var(--font-titre)] font-bold text-2xl text-[var(--color-encre)] mb-1">
+          <h1 className="font-titre font-bold text-2xl text-[var(--color-encre)] mb-1">
             {raison === 'temps' ? fr.revisionRapide.tempsEcoule : 'Session terminée !'}
           </h1>
           <p className="text-sm text-[var(--color-gris-texte)]">
@@ -158,7 +158,7 @@ export function RevisionRapidePage() {
           {fr.revisionRapide.titre}
         </button>
         <div className="flex items-center gap-2">
-          <span className={`font-[var(--font-titre)] font-bold text-sm ${tempsRestant <= 30 ? 'text-[var(--color-candy-corail)]' : 'text-[var(--color-gris-texte)]'}`}>
+          <span className={`font-titre font-bold text-sm ${tempsRestant <= 30 ? 'text-[var(--color-candy-corail)]' : 'text-[var(--color-gris-texte)]'}`}>
             {formatTemps(tempsRestant)}
           </span>
           <span className="text-xs text-[var(--color-gris-texte)]">{index + 1}/{deck.length}</span>

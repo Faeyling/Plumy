@@ -158,7 +158,7 @@ export function DefiQuotidienSession() {
         <div className="flex-1 flex flex-col items-center justify-center p-8 gap-5 text-center">
           <PluмyMascot etat={pct >= 60 ? 'reussite' : 'encouragement'} taille={100} />
           <div>
-            <h1 className="font-[var(--font-titre)] font-bold text-2xl text-[var(--color-encre)] mb-1">
+            <h1 className="font-titre font-bold text-2xl text-[var(--color-encre)] mb-1">
               Défi du jour terminé !
             </h1>
             <p className="text-[var(--color-gris-texte)] text-sm">
@@ -167,7 +167,7 @@ export function DefiQuotidienSession() {
           </div>
           {ptsGagnes > 0 && (
             <div className="bg-[#fffde7] border border-[var(--color-candy-jaune)] rounded-[var(--radius-card)] px-5 py-3">
-              <p className="font-[var(--font-titre)] font-bold text-[var(--color-encre)]">
+              <p className="font-titre font-bold text-[var(--color-encre)]">
                 {fr.quiz.pointsGagnes(ptsGagnes)}
               </p>
             </div>
@@ -184,7 +184,7 @@ export function DefiQuotidienSession() {
                   <div key={id} className="flex items-center gap-3 p-3 bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)]">
                     <span className="text-2xl" style={{ color: badge.couleur }}>{badge.symbole}</span>
                     <div className="text-left">
-                      <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm">{badge.nom}</p>
+                      <p className="font-titre font-semibold text-[var(--color-encre)] text-sm">{badge.nom}</p>
                       <p className="text-xs text-[var(--color-gris-texte)]">{badge.description}</p>
                     </div>
                   </div>
@@ -194,7 +194,7 @@ export function DefiQuotidienSession() {
           )}
           <button
             onClick={() => navigate('/quiz')}
-            className="w-full max-w-xs py-3 bg-[var(--color-candy-rose)] text-white font-[var(--font-titre)] font-bold rounded-[var(--radius-card)] shadow-[var(--shadow-card)]"
+            className="w-full max-w-xs py-3 bg-[var(--color-candy-rose)] text-white font-titre font-bold rounded-[var(--radius-card)] shadow-[var(--shadow-card)]"
           >
             Retour aux quiz
           </button>
@@ -217,7 +217,7 @@ export function DefiQuotidienSession() {
           Quiz
         </button>
         <div className="flex items-center justify-between mb-2">
-          <span className="font-[var(--font-titre)] font-bold text-[var(--color-encre)]">
+          <span className="font-titre font-bold text-[var(--color-encre)]">
             {fr.defiQuotidien.titre}
           </span>
           <div className="flex items-center gap-2">
@@ -254,7 +254,7 @@ export function DefiQuotidienSession() {
               <p className="text-xs text-[var(--color-gris-texte)] uppercase tracking-wide mb-2">
                 {question.kind === 'cours' ? fr.quiz.questionDeCours : 'Quel terme correspond à cette définition ?'}
               </p>
-              <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-base leading-snug">
+              <p className="font-titre font-semibold text-[var(--color-encre)] text-base leading-snug">
                 {question.kind === 'cours' ? question.q.question : question.terme.definition}
               </p>
             </div>
@@ -263,7 +263,7 @@ export function DefiQuotidienSession() {
               {question.choix.map(choix => {
                 const isBonne = choix === question.bonneReponse
                 const isSelected = choix === selected
-                let cls = 'w-full text-left p-4 rounded-[var(--radius-card)] border-2 font-[var(--font-titre)] font-medium text-sm transition-all shadow-[var(--shadow-card)]'
+                let cls = 'w-full text-left p-4 rounded-[var(--radius-card)] border-2 font-titre font-medium text-sm transition-all shadow-[var(--shadow-card)]'
                 if (!isAnswered) {
                   cls += ' bg-white border-transparent text-[var(--color-encre)] active:scale-[0.98]'
                 } else if (isBonne) {
@@ -299,7 +299,7 @@ export function DefiQuotidienSession() {
                   className="w-12 h-12 object-contain flex-shrink-0"
                 />
                 <div className="flex-1 min-w-0">
-                  <p className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-sm mb-1">
+                  <p className="font-titre font-bold text-[var(--color-encre)] text-sm mb-1">
                     {fr.miniLecon.titre}
                   </p>
                   <p className="text-xs font-semibold text-[var(--color-encre)] mb-1">{question.bonneReponse}</p>
@@ -348,7 +348,7 @@ export function DefiQuotidienSession() {
                 )}
                 <button
                   onClick={handleNext}
-                  className="w-full py-3 bg-[var(--color-candy-rose)] text-white font-[var(--font-titre)] font-bold rounded-[var(--radius-card)] shadow-[var(--shadow-card)]"
+                  className="w-full py-3 bg-[var(--color-candy-rose)] text-white font-titre font-bold rounded-[var(--radius-card)] shadow-[var(--shadow-card)]"
                 >
                   {!isCorrect ? fr.miniLecon.compris : isLast ? fr.quiz.terminer : fr.quiz.suivant}
                 </button>

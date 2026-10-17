@@ -104,7 +104,7 @@ export function TexteATrousSession() {
         <div className="flex-1 flex flex-col items-center justify-center p-8 gap-5 text-center">
           <PluмyMascot etat={pct >= 50 ? 'reussite' : 'echec'} taille={100} />
           <div>
-            <h1 className="font-[var(--font-titre)] font-bold text-2xl text-[var(--color-encre)] mb-1">
+            <h1 className="font-titre font-bold text-2xl text-[var(--color-encre)] mb-1">
               {fr.quiz.finTitre}
             </h1>
             <p className="text-[var(--color-gris-texte)] text-sm">
@@ -113,7 +113,7 @@ export function TexteATrousSession() {
           </div>
           {ptsGagnes > 0 && (
             <div className="bg-[#fce4ec] border border-[var(--color-candy-corail)] rounded-[var(--radius-card)] px-5 py-3">
-              <p className="font-[var(--font-titre)] font-bold text-[var(--color-encre)]">
+              <p className="font-titre font-bold text-[var(--color-encre)]">
                 {fr.quiz.pointsGagnes(ptsGagnes)}
               </p>
             </div>
@@ -130,7 +130,7 @@ export function TexteATrousSession() {
                   <div key={id} className="flex items-center gap-3 p-3 bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)]">
                     <span className="text-2xl" style={{ color: badge.couleur }}>{badge.symbole}</span>
                     <div className="text-left">
-                      <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm">{badge.nom}</p>
+                      <p className="font-titre font-semibold text-[var(--color-encre)] text-sm">{badge.nom}</p>
                       <p className="text-xs text-[var(--color-gris-texte)]">{badge.description}</p>
                     </div>
                   </div>
@@ -141,13 +141,13 @@ export function TexteATrousSession() {
           <div className="flex flex-col gap-2 w-full">
             <button
               onClick={handleRecommencer}
-              className="w-full py-3 bg-[var(--color-candy-corail)] text-white font-[var(--font-titre)] font-bold rounded-[var(--radius-card)] shadow-[var(--shadow-card)]"
+              className="w-full py-3 bg-[var(--color-candy-corail)] text-white font-titre font-bold rounded-[var(--radius-card)] shadow-[var(--shadow-card)]"
             >
               {fr.quiz.recommencer}
             </button>
             <button
               onClick={() => navigate(`/unite/${numUnite}`)}
-              className="w-full py-3 bg-white text-[var(--color-encre)] font-[var(--font-titre)] font-semibold rounded-[var(--radius-card)] shadow-[var(--shadow-card)]"
+              className="w-full py-3 bg-white text-[var(--color-encre)] font-titre font-semibold rounded-[var(--radius-card)] shadow-[var(--shadow-card)]"
             >
               {fr.quiz.retourUnite}
             </button>
@@ -173,7 +173,7 @@ export function TexteATrousSession() {
           {unite?.titre ?? `Unité ${numUnite}`}
         </button>
         <div className="flex items-center justify-between mb-2">
-          <span className="font-[var(--font-titre)] font-bold text-[var(--color-encre)]">
+          <span className="font-titre font-bold text-[var(--color-encre)]">
             {fr.quiz.typesLabels["texte-a-trous"]}
           </span>
           <div className="flex items-center gap-2">
@@ -213,7 +213,7 @@ export function TexteATrousSession() {
                 </p>
                 <SpeakButton text={question.texteAvecTrous.replace('___', question.motManquant)} size={14} />
               </div>
-              <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-base leading-snug">
+              <p className="font-titre font-semibold text-[var(--color-encre)] text-base leading-snug">
                 {partsAvecTrous.length > 1 ? (
                   <>
                     {partsAvecTrous[0]}
@@ -232,7 +232,7 @@ export function TexteATrousSession() {
               {question.propositions.map((prop) => {
                 const isBonne = prop === question.motManquant
                 const isSelected = prop === selected
-                let cls = 'w-full text-left p-4 rounded-[var(--radius-card)] border-2 font-[var(--font-titre)] font-medium text-sm transition-all shadow-[var(--shadow-card)]'
+                let cls = 'w-full text-left p-4 rounded-[var(--radius-card)] border-2 font-titre font-medium text-sm transition-all shadow-[var(--shadow-card)]'
                 if (!isAnswered) {
                   cls += ' bg-white border-transparent text-[var(--color-encre)] active:scale-[0.98]'
                 } else if (isBonne) {
@@ -266,7 +266,7 @@ export function TexteATrousSession() {
                 )}
                 <button
                   onClick={handleNext}
-                  className="w-full py-3 bg-[var(--color-candy-corail)] text-white font-[var(--font-titre)] font-bold rounded-[var(--radius-card)] shadow-[var(--shadow-card)]"
+                  className="w-full py-3 bg-[var(--color-candy-corail)] text-white font-titre font-bold rounded-[var(--radius-card)] shadow-[var(--shadow-card)]"
                 >
                   {isLast ? fr.quiz.terminer : fr.quiz.suivant}
                 </button>

@@ -128,7 +128,7 @@ export function AccueilPage() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.45, ease: 'easeOut' }}
           />
-          <p className="font-[var(--font-manuscrit)] text-[var(--color-encre)] text-lg leading-snug max-w-xs px-2">
+          <p className="font-manuscrit text-[var(--color-encre)] text-lg leading-snug max-w-xs px-2">
             {message}
           </p>
         </motion.div>
@@ -176,19 +176,19 @@ export function AccueilPage() {
               aria-label={`Reprends où tu en étais — ${derniereUnite.titre}`}
               className="block bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-shadow overflow-hidden"
             >
-              <h2 className="px-4 pt-2.5 pb-1 text-[10px] font-[var(--font-titre)] font-bold uppercase tracking-widest text-[var(--color-gris-texte)]">
+              <h2 className="px-4 pt-2.5 pb-1 text-[10px] font-titre font-bold uppercase tracking-widest text-[var(--color-gris-texte)]">
                 Reprends où tu en étais
               </h2>
               <div className="flex items-center gap-3 px-4 pb-3.5">
                 <span
-                  className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-[var(--font-titre)] font-bold text-white text-sm"
+                  className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-titre font-bold text-white text-sm"
                   style={{ backgroundColor: COULEURS_ARC_EN_CIEL[derniereUniteIdx % 6] }}
                   aria-hidden="true"
                 >
                   {derniereUnite.numero}
                 </span>
                 <div className="flex-1 min-w-0">
-                  <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm leading-snug">
+                  <p className="font-titre font-semibold text-[var(--color-encre)] text-sm leading-snug">
                     {derniereUnite.titre}
                   </p>
                   <p className="text-xs text-[var(--color-gris-texte)] mt-0.5">
@@ -212,7 +212,7 @@ export function AccueilPage() {
               transition={{ duration: 0.4, delay: 0.1 }}
               className="bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] overflow-hidden"
             >
-              <h2 className="px-4 pt-2.5 pb-1 text-[10px] font-[var(--font-titre)] font-bold uppercase tracking-widest text-[var(--color-gris-texte)]">
+              <h2 className="px-4 pt-2.5 pb-1 text-[10px] font-titre font-bold uppercase tracking-widest text-[var(--color-gris-texte)]">
                 {fr.termeDuJour.titre}
               </h2>
               <div className="flex gap-3 px-4 pb-3.5">
@@ -224,7 +224,7 @@ export function AccueilPage() {
                   style={{ mixBlendMode: 'multiply' }}
                 />
                 <div className="flex-1 min-w-0">
-                  <p className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-base leading-snug mb-1">
+                  <p className="font-titre font-bold text-[var(--color-encre)] text-base leading-snug mb-1">
                     {TERME_DU_JOUR.nom}
                   </p>
                   <div className="flex items-start gap-1 mb-2">
@@ -253,11 +253,11 @@ export function AccueilPage() {
               transition={{ duration: 0.4, delay: 0.15 }}
               className="bg-[var(--color-candy-rose-light)] rounded-[var(--radius-card)] shadow-[var(--shadow-card)] overflow-hidden"
             >
-              <h2 className="px-4 pt-2.5 pb-1 text-[10px] font-[var(--font-titre)] font-bold uppercase tracking-widest text-[var(--color-gris-texte)]">
+              <h2 className="px-4 pt-2.5 pb-1 text-[10px] font-titre font-bold uppercase tracking-widest text-[var(--color-gris-texte)]">
                 {fr.journalPlumy.titre}
               </h2>
               <div className="px-4 pb-3.5">
-                <p className="font-[var(--font-manuscrit)] font-bold text-[var(--color-encre)] text-base mb-2">
+                <p className="font-manuscrit font-bold text-[var(--color-encre)] text-base mb-2">
                   {ENTREE_JOURNAL.titre}
                 </p>
                 <div className="flex items-start gap-1">
@@ -292,7 +292,7 @@ export function AccueilPage() {
 
       {/* Parcours thématiques */}
       <section className="px-4 pt-5" aria-label={fr.parcours.titre}>
-        <h2 className="font-[var(--font-titre)] font-bold text-sm text-[var(--color-encre)] uppercase tracking-wide mb-3">
+        <h2 className="font-titre font-bold text-sm text-[var(--color-encre)] uppercase tracking-wide mb-3">
           {fr.parcours.titre}
         </h2>
         <div className="grid grid-cols-2 gap-2">
@@ -310,7 +310,7 @@ export function AccueilPage() {
                   className="flex flex-col p-3 bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-shadow h-full"
                 >
                   <span className="text-2xl mb-1" aria-hidden="true">{p.emoji}</span>
-                  <p className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-xs leading-snug mb-1">
+                  <p className="font-titre font-bold text-[var(--color-encre)] text-xs leading-snug mb-1">
                     {p.titre}
                   </p>
                   <p className="text-[10px] text-[var(--color-gris-texte)] leading-snug mb-2 flex-1">
@@ -334,7 +334,7 @@ export function AccueilPage() {
 
       {/* Liste des unités */}
       <section className="flex-1 px-4 py-6 space-y-3" aria-label="Unités de cours">
-        <h2 className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-lg mb-4">
+        <h2 className="font-titre font-bold text-[var(--color-encre)] text-lg mb-4">
           {fr.accueil.toutesLesUnites}
         </h2>
         {unites.map((unite, idx) => (
@@ -370,12 +370,12 @@ function PalierPoints({ points }: { points: number }) {
     <div className="px-5 pt-4 pb-3">
       <div className="flex items-baseline justify-between mb-1">
         <div className="flex items-baseline gap-2">
-          <span className="font-[var(--font-titre)] font-extrabold text-2xl" style={{ color: courant.couleur }}>
+          <span className="font-titre font-extrabold text-2xl" style={{ color: courant.couleur }}>
             {points}
           </span>
           <span className="text-xs text-[var(--color-gris-texte)]">{fr.accueil.pointsLabel}</span>
         </div>
-        <span className="text-sm font-[var(--font-titre)] font-semibold text-[var(--color-encre)]">
+        <span className="text-sm font-titre font-semibold text-[var(--color-encre)]">
           {courant.symbole} {courant.nom}
         </span>
       </div>
@@ -410,7 +410,7 @@ function StatPill({
 }) {
   return (
     <div className="flex flex-col items-center gap-0.5">
-      <span className="font-[var(--font-titre)] font-extrabold text-2xl" style={{ color }}>
+      <span className="font-titre font-extrabold text-2xl" style={{ color }}>
         {icon && <span className="mr-1">{icon}</span>}
         {value}
       </span>
@@ -436,14 +436,14 @@ function UniteCard({ unite, index, progression }: { unite: Unite; index: number;
         aria-label={`Unité ${unite.numero} — ${unite.titre}`}
       >
         <span
-          className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-[var(--font-titre)] font-bold text-white text-sm"
+          className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-titre font-bold text-white text-sm"
           style={{ backgroundColor: couleur }}
           aria-hidden="true"
         >
           {termine ? '✓' : unite.numero}
         </span>
         <div className="flex-1 min-w-0">
-          <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm leading-snug">
+          <p className="font-titre font-semibold text-[var(--color-encre)] text-sm leading-snug">
             {unite.titre}
           </p>
           {progression && progression.total > 0 && (

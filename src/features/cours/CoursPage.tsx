@@ -101,7 +101,7 @@ export function CoursPage() {
         <div className="flex items-start gap-3">
           <span className="text-2xl" aria-hidden="true">📖</span>
           <div>
-            <h1 className="font-[var(--font-titre)] font-extrabold text-xl text-[var(--color-encre)] leading-tight">
+            <h1 className="font-titre font-extrabold text-xl text-[var(--color-encre)] leading-tight">
               {cours.titre}
             </h1>
             <p className="text-sm text-[var(--color-gris-texte)] mt-1 leading-snug">
@@ -169,7 +169,7 @@ export function CoursPage() {
                 >
                   {sectionsVues.includes(i) ? '✓' : '○'}
                 </span>
-                <h2 className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-sm pr-2 leading-snug flex-1">
+                <h2 className="font-titre font-bold text-[var(--color-encre)] text-sm pr-2 leading-snug flex-1">
                   {section.titre}
                 </h2>
               </div>
@@ -234,7 +234,7 @@ export function CoursPage() {
         {/* Termes abordés */}
         {cours.termesAbordes && cours.termesAbordes.length > 0 && (
           <div className="mt-4">
-            <h3 className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-sm mb-2">
+            <h3 className="font-titre font-bold text-[var(--color-encre)] text-sm mb-2">
               Termes abordés dans ce cours
             </h3>
             <div className="flex flex-wrap gap-2">
@@ -268,7 +268,7 @@ export function CoursPage() {
               📝
             </span>
             <div className="flex-1 min-w-0">
-              <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm">
+              <p className="font-titre font-semibold text-[var(--color-encre)] text-sm">
                 Me tester sur ce cours
               </p>
               <p className="text-xs text-[var(--color-gris-texte)] mt-0.5">
@@ -342,19 +342,19 @@ function CoursMarkdown({ content }: { content: string }) {
 
     if (line.startsWith('### ')) {
       elements.push(
-        <h3 key={i} className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-sm mt-4 mb-1">
+        <h3 key={i} className="font-titre font-bold text-[var(--color-encre)] text-sm mt-4 mb-1">
           <InlineMarkdown text={line.slice(4)} />
         </h3>
       )
     } else if (line.startsWith('## ')) {
       elements.push(
-        <h2 key={i} className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-base mt-4 mb-2">
+        <h2 key={i} className="font-titre font-bold text-[var(--color-encre)] text-base mt-4 mb-2">
           <InlineMarkdown text={line.slice(3)} />
         </h2>
       )
     } else if (line.startsWith('# ')) {
       elements.push(
-        <h1 key={i} className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-lg mt-5 mb-2">
+        <h1 key={i} className="font-titre font-bold text-[var(--color-encre)] text-lg mt-5 mb-2">
           <InlineMarkdown text={line.slice(2)} />
         </h1>
       )

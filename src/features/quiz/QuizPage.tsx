@@ -28,7 +28,7 @@ export function QuizPage() {
         <div className="flex items-center gap-4">
           <PluмyMascot etat={stats && stats.points > 0 ? 'reussite' : 'accueil'} taille={72} />
           <div>
-            <h1 className="font-[var(--font-titre)] font-bold text-2xl text-[var(--color-encre)]">
+            <h1 className="font-titre font-bold text-2xl text-[var(--color-encre)]">
               {fr.nav.quiz}
             </h1>
             <p className="text-sm text-[var(--color-gris-texte)] mt-0.5">
@@ -41,14 +41,14 @@ export function QuizPage() {
       <div className="flex-1 px-4 py-5 space-y-6 pb-24">
         {/* Défi du jour */}
         <section>
-          <h2 className="font-[var(--font-titre)] font-bold text-sm text-[var(--color-encre)] uppercase tracking-wide mb-3">
+          <h2 className="font-titre font-bold text-sm text-[var(--color-encre)] uppercase tracking-wide mb-3">
             {fr.defiQuotidien.titre}
           </h2>
           {dejaFaitAujourdhui ? (
             <div className="bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] p-4 flex items-center gap-3">
               <span className="text-2xl">✓</span>
               <div>
-                <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm">
+                <p className="font-titre font-semibold text-[var(--color-encre)] text-sm">
                   Défi du jour relevé !
                 </p>
                 <p className="text-xs text-[var(--color-gris-texte)] mt-0.5">
@@ -65,7 +65,7 @@ export function QuizPage() {
                 ⚡
               </span>
               <div className="flex-1">
-                <p className="font-[var(--font-titre)] font-bold text-white text-base">
+                <p className="font-titre font-bold text-white text-base">
                   {fr.defiQuotidien.titre}
                 </p>
                 <p className="text-sm text-white/80">
@@ -81,7 +81,7 @@ export function QuizPage() {
 
         {/* Mode En scène */}
         <section>
-          <h2 className="font-[var(--font-titre)] font-bold text-sm text-[var(--color-encre)] uppercase tracking-wide mb-3">
+          <h2 className="font-titre font-bold text-sm text-[var(--color-encre)] uppercase tracking-wide mb-3">
             {fr.enScene.titre}
           </h2>
           <Link
@@ -92,7 +92,7 @@ export function QuizPage() {
               🎭
             </span>
             <div className="flex-1">
-              <p className="font-[var(--font-titre)] font-bold text-white text-base">
+              <p className="font-titre font-bold text-white text-base">
                 {fr.enScene.titre}
               </p>
               <p className="text-sm text-white/80">
@@ -107,7 +107,7 @@ export function QuizPage() {
 
         {/* Révision rapide */}
         <section>
-          <h2 className="font-[var(--font-titre)] font-bold text-sm text-[var(--color-encre)] uppercase tracking-wide mb-3">
+          <h2 className="font-titre font-bold text-sm text-[var(--color-encre)] uppercase tracking-wide mb-3">
             {fr.revisionRapide.titre}
           </h2>
           <Link
@@ -118,7 +118,7 @@ export function QuizPage() {
               ⏱
             </span>
             <div className="flex-1">
-              <p className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-base">
+              <p className="font-titre font-bold text-[var(--color-encre)] text-base">
                 {fr.revisionRapide.titre}
               </p>
               <p className="text-sm text-[var(--color-gris-texte)]">
@@ -133,7 +133,7 @@ export function QuizPage() {
 
         {/* Historique */}
         <section>
-          <h2 className="font-[var(--font-titre)] font-bold text-sm text-[var(--color-encre)] uppercase tracking-wide mb-3">
+          <h2 className="font-titre font-bold text-sm text-[var(--color-encre)] uppercase tracking-wide mb-3">
             {fr.historiqueQuiz.titre}
           </h2>
           {historique.length === 0 ? (
@@ -160,7 +160,7 @@ export function QuizPage() {
                       {pct}%
                     </span>
                     <div className="flex-1 min-w-0">
-                      <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm">
+                      <p className="font-titre font-semibold text-[var(--color-encre)] text-sm">
                         {typeLabel}
                         {h.uniteNumero !== undefined && ` — Unité ${h.uniteNumero}`}
                       </p>

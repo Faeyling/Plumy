@@ -94,14 +94,14 @@ export function UnitePage() {
         )}
         <div className="flex items-start gap-4">
           <span
-            className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-[var(--font-titre)] font-bold text-white text-base"
+            className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-titre font-bold text-white text-base"
             style={{ backgroundColor: 'var(--color-candy-lavande)' }}
             aria-hidden="true"
           >
             {numUnite}
           </span>
           <div className="flex-1 min-w-0">
-            <h1 className="font-[var(--font-titre)] font-extrabold text-xl text-[var(--color-encre)] leading-tight">
+            <h1 className="font-titre font-extrabold text-xl text-[var(--color-encre)] leading-tight">
               {unite.titre}
             </h1>
             <div className="flex items-start gap-1 mt-1">
@@ -158,7 +158,7 @@ export function UnitePage() {
         {/* Cours (sections) */}
         {cours.length > 0 && (
           <section aria-label="Cours">
-            <h2 className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-base mb-3">
+            <h2 className="font-titre font-bold text-[var(--color-encre)] text-base mb-3">
               Les carnets de Plumy
             </h2>
 
@@ -175,7 +175,7 @@ export function UnitePage() {
                   className="w-12 h-12 object-contain flex-shrink-0"
                 />
                 <div className="flex-1 min-w-0">
-                  <p className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-sm mb-1">
+                  <p className="font-titre font-bold text-[var(--color-encre)] text-sm mb-1">
                     Tu joues super bien !
                   </p>
                   <p className="text-xs text-[var(--color-encre)] leading-snug mb-2">
@@ -222,7 +222,7 @@ export function UnitePage() {
                         {termine ? '✓' : '📖'}
                       </span>
                       <div className="flex-1 min-w-0">
-                        <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm leading-snug">
+                        <p className="font-titre font-semibold text-[var(--color-encre)] text-sm leading-snug">
                           {c.titre}
                         </p>
                         <p className="text-xs text-[var(--color-gris-texte)] line-clamp-1 mt-0.5">
@@ -274,7 +274,7 @@ export function UnitePage() {
         {/* Flashcards */}
         {unite.quizDisponibles.includes('flashcards') && (
           <section aria-label="Révision par flashcards">
-            <h2 className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-base mb-3">
+            <h2 className="font-titre font-bold text-[var(--color-encre)] text-base mb-3">
               Révision
             </h2>
             <Link
@@ -288,7 +288,7 @@ export function UnitePage() {
                 </svg>
               </span>
               <div className="flex-1 min-w-0">
-                <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm">
+                <p className="font-titre font-semibold text-[var(--color-encre)] text-sm">
                   {fr.flashcards.titre}
                 </p>
                 <p className="text-xs text-[var(--color-gris-texte)] mt-0.5">
@@ -305,7 +305,7 @@ export function UnitePage() {
         {/* Schéma origines/interactions — unité 1 uniquement */}
         {numUnite === 1 && (
           <section aria-label="Schéma interactif">
-            <h2 className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-base mb-3">
+            <h2 className="font-titre font-bold text-[var(--color-encre)] text-base mb-3">
               Schéma des origines
             </h2>
             <Link
@@ -324,7 +324,7 @@ export function UnitePage() {
                 </svg>
               </span>
               <div className="flex-1 min-w-0">
-                <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm">
+                <p className="font-titre font-semibold text-[var(--color-encre)] text-sm">
                   Origines et interactions des danses
                 </p>
                 <p className="text-xs text-[var(--color-gris-texte)] mt-0.5">
@@ -341,7 +341,7 @@ export function UnitePage() {
         {/* Quiz d'entraînement */}
         {(['qcm', 'association', 'texte-a-trous', 'reconnaissance-visuelle'] as const).some(t => unite.quizDisponibles.includes(t)) && (
           <section aria-label="Quiz d'entraînement">
-            <h2 className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-base mb-3">
+            <h2 className="font-titre font-bold text-[var(--color-encre)] text-base mb-3">
               Entraînement
             </h2>
             <div className="grid grid-cols-2 gap-2">
@@ -351,7 +351,7 @@ export function UnitePage() {
                   className="flex flex-col items-center gap-2 p-4 bg-[#fffde7] border border-[var(--color-candy-jaune)] rounded-[var(--radius-card)] hover:shadow-md transition-shadow"
                 >
                   <span className="w-10 h-10 rounded-xl bg-[var(--color-candy-jaune)] flex items-center justify-center font-bold text-white text-lg" aria-hidden="true">Q</span>
-                  <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm">QCM</p>
+                  <p className="font-titre font-semibold text-[var(--color-encre)] text-sm">QCM</p>
                 </Link>
               )}
               {unite.quizDisponibles.includes('association') && (
@@ -360,7 +360,7 @@ export function UnitePage() {
                   className="flex flex-col items-center gap-2 p-4 bg-[#e3f2fd] border border-[var(--color-candy-bleu)] rounded-[var(--radius-card)] hover:shadow-md transition-shadow"
                 >
                   <span className="w-10 h-10 rounded-xl bg-[var(--color-candy-bleu)] flex items-center justify-center font-bold text-white text-lg" aria-hidden="true">A</span>
-                  <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm">Association</p>
+                  <p className="font-titre font-semibold text-[var(--color-encre)] text-sm">Association</p>
                 </Link>
               )}
               {unite.quizDisponibles.includes('texte-a-trous') && (
@@ -369,7 +369,7 @@ export function UnitePage() {
                   className="flex flex-col items-center gap-2 p-4 bg-[#fce4ec] border border-[var(--color-candy-corail)] rounded-[var(--radius-card)] hover:shadow-md transition-shadow"
                 >
                   <span className="w-10 h-10 rounded-xl bg-[var(--color-candy-corail)] flex items-center justify-center font-bold text-white text-lg" aria-hidden="true">T</span>
-                  <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm">Texte à trous</p>
+                  <p className="font-titre font-semibold text-[var(--color-encre)] text-sm">Texte à trous</p>
                 </Link>
               )}
               {unite.quizDisponibles.includes('reconnaissance-visuelle') && (
@@ -378,7 +378,7 @@ export function UnitePage() {
                   className="flex flex-col items-center gap-2 p-4 bg-[#d1fae5] border border-[#059669] rounded-[var(--radius-card)] hover:shadow-md transition-shadow"
                 >
                   <span className="w-10 h-10 rounded-xl flex items-center justify-center font-bold text-white text-lg" style={{ backgroundColor: '#059669' }} aria-hidden="true">R</span>
-                  <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm">Reconnaître</p>
+                  <p className="font-titre font-semibold text-[var(--color-encre)] text-sm">Reconnaître</p>
                 </Link>
               )}
               {getQuestionsCoursPourUnite(numUnite).length > 0 && (
@@ -393,7 +393,7 @@ export function UnitePage() {
                       <path d="M9 12h6M9 16h4" stroke="white" strokeWidth="2" strokeLinecap="round" />
                     </svg>
                   </span>
-                  <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm">Quiz cours</p>
+                  <p className="font-titre font-semibold text-[var(--color-encre)] text-sm">Quiz cours</p>
                 </Link>
               )}
             </div>
@@ -403,7 +403,7 @@ export function UnitePage() {
         {/* Termes */}
         {(termes.length > 0 || termesPerso.length > 0) && (
           <section aria-label="Termes de l'unité">
-            <h2 className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-base mb-3">
+            <h2 className="font-titre font-bold text-[var(--color-encre)] text-base mb-3">
               Vocabulaire — {total + termesPerso.length} termes
             </h2>
             <div className="space-y-2">
@@ -425,11 +425,11 @@ export function UnitePage() {
                     >
                       <StatutBadge statut={statut} />
                       <div className="flex-1 min-w-0">
-                        <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm">
+                        <p className="font-titre font-semibold text-[var(--color-encre)] text-sm">
                           {terme.nom}
                         </p>
                         {terme.prononciation && (
-                          <p className="text-xs text-[var(--color-gris-texte)] font-[var(--font-manuscrit)]">
+                          <p className="text-xs text-[var(--color-gris-texte)] font-manuscrit">
                             /{terme.prononciation}/
                           </p>
                         )}
@@ -461,7 +461,7 @@ export function UnitePage() {
                       ✎
                     </span>
                     <div className="flex-1 min-w-0">
-                      <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm">
+                      <p className="font-titre font-semibold text-[var(--color-encre)] text-sm">
                         {terme.nom}
                       </p>
                       {terme.definition && (

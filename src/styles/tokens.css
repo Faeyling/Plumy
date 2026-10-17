@@ -45,7 +45,7 @@
   --shadow-hover: 0 8px 32px 0 rgb(244 114 182 / 0.18);
 }
 
-/* Importation des polices Google via @font-face simulé — fallbacks système */
+/* Polices auto-hébergées via @fontsource (importées dans main.tsx) */
 html {
   background-color: var(--color-plumy-bg);
   color: var(--color-encre);

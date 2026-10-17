@@ -60,7 +60,7 @@ export function BoutonSauvegarde() {
     <>
       <button
         onClick={() => setOuvert(true)}
-        className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[var(--color-candy-lavande)] text-[var(--color-encre)] text-xs font-[var(--font-titre)] font-semibold shadow-sm shrink-0"
+        className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[var(--color-candy-lavande)] text-[var(--color-encre)] text-xs font-titre font-semibold shadow-sm shrink-0"
         aria-label={fr.plumy.sauvegarder}
       >
         <SaveIcon />
@@ -97,7 +97,7 @@ export function BoutonSauvegarde() {
             >
               {phase === 'menu' && (
                 <div className="space-y-4">
-                  <h2 className="font-[var(--font-titre)] font-bold text-lg text-[var(--color-encre)]">
+                  <h2 className="font-titre font-bold text-lg text-[var(--color-encre)]">
                     {fr.plumy.sauvegarder}
                   </h2>
                   <p className="text-sm text-[var(--color-gris-texte)]">
@@ -105,7 +105,7 @@ export function BoutonSauvegarde() {
                   </p>
                   <button
                     onClick={handleExport}
-                    className="w-full py-3 bg-[var(--color-candy-rose)] text-white font-[var(--font-titre)] font-bold rounded-xl text-sm"
+                    className="w-full py-3 bg-[var(--color-candy-rose)] text-white font-titre font-bold rounded-xl text-sm"
                   >
                     ↓ {fr.plumy.exporter}
                   </button>
@@ -115,7 +115,7 @@ export function BoutonSauvegarde() {
                     </p>
                     <button
                       onClick={() => inputRef.current?.click()}
-                      className="w-full py-2.5 border-2 border-[var(--color-gris-doux)] text-[var(--color-encre)] font-[var(--font-titre)] font-semibold rounded-xl text-sm"
+                      className="w-full py-2.5 border-2 border-[var(--color-gris-doux)] text-[var(--color-encre)] font-titre font-semibold rounded-xl text-sm"
                     >
                       ↑ {fr.plumy.importer}
                     </button>
@@ -134,7 +134,7 @@ export function BoutonSauvegarde() {
 
               {phase === 'preview' && donnees && (
                 <div className="space-y-4">
-                  <h2 className="font-[var(--font-titre)] font-bold text-lg text-[var(--color-encre)]">
+                  <h2 className="font-titre font-bold text-lg text-[var(--color-encre)]">
                     {fr.sauvegarde.apercu}
                   </h2>
                   <div className="bg-[var(--color-plumy-bg)] rounded-xl p-3 space-y-1.5 text-sm">
@@ -149,13 +149,13 @@ export function BoutonSauvegarde() {
                   <div className="space-y-2">
                     <button
                       onClick={() => handleImport('fusionner')}
-                      className="w-full py-2.5 bg-[var(--color-candy-menthe)] text-[var(--color-encre)] font-[var(--font-titre)] font-bold rounded-xl text-sm"
+                      className="w-full py-2.5 bg-[var(--color-candy-menthe)] text-[var(--color-encre)] font-titre font-bold rounded-xl text-sm"
                     >
                       {fr.sauvegarde.fusionner} — <span className="font-normal">{fr.sauvegarde.fusionnerDetail}</span>
                     </button>
                     <button
                       onClick={() => handleImport('remplacer')}
-                      className="w-full py-2.5 bg-[var(--color-candy-corail)] text-white font-[var(--font-titre)] font-bold rounded-xl text-sm"
+                      className="w-full py-2.5 bg-[var(--color-candy-corail)] text-white font-titre font-bold rounded-xl text-sm"
                     >
                       {fr.sauvegarde.remplacer} — <span className="font-normal">{fr.sauvegarde.remplacerDetail}</span>
                     </button>
@@ -172,7 +172,7 @@ export function BoutonSauvegarde() {
               {phase === 'succes' && (
                 <div className="flex flex-col items-center gap-4 py-6 text-center">
                   <span className="text-5xl">✓</span>
-                  <p className="font-[var(--font-titre)] font-bold text-lg text-[var(--color-encre)]">
+                  <p className="font-titre font-bold text-lg text-[var(--color-encre)]">
                     {fr.sauvegarde.importSucces}
                   </p>
                 </div>

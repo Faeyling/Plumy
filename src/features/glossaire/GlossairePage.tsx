@@ -66,7 +66,7 @@ export function GlossairePage() {
   return (
     <div className="flex flex-col min-h-svh">
       <header className="px-5 pt-10 pb-4 bg-[var(--color-plumy-bg)]">
-        <h1 className="font-[var(--font-titre)] font-bold text-2xl text-[var(--color-encre)] mb-3">
+        <h1 className="font-titre font-bold text-2xl text-[var(--color-encre)] mb-3">
           {fr.glossaire.titre}
         </h1>
 
@@ -156,7 +156,7 @@ export function GlossairePage() {
                       <div className="flex items-center gap-3 p-3 bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] border-l-2 border-[var(--color-candy-jaune)]">
                         <div className="flex-1 min-w-0">
                           <div className="flex items-center gap-2 flex-wrap">
-                            <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm">
+                            <p className="font-titre font-semibold text-[var(--color-encre)] text-sm">
                               {terme.nom}
                             </p>
                             <span className="px-1.5 py-0.5 rounded-full bg-[var(--color-candy-jaune)] text-[var(--color-encre)] text-[10px] font-bold shrink-0">
@@ -174,7 +174,7 @@ export function GlossairePage() {
                         className="flex items-center gap-3 p-3 bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-shadow"
                       >
                         <div className="flex-1 min-w-0">
-                          <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm">
+                          <p className="font-titre font-semibold text-[var(--color-encre)] text-sm">
                             {(terme as Terme).nom}
                           </p>
                           <p className="text-xs text-[var(--color-gris-texte)] line-clamp-1 mt-0.5">

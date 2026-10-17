@@ -96,10 +96,10 @@ export function ReconnaissanceVisuelleSession() {
         <div className="flex-1 flex flex-col items-center justify-center px-6 py-10 gap-6 text-center">
           <PluмyMascot etat={pct >= 50 ? 'reussite' : 'echec'} taille={100} />
           <div>
-            <h1 className="font-[var(--font-titre)] font-bold text-2xl text-[var(--color-encre)]">
+            <h1 className="font-titre font-bold text-2xl text-[var(--color-encre)]">
               {fr.quiz.finTitre}
             </h1>
-            <p className="text-4xl font-[var(--font-titre)] font-extrabold mt-2" style={{ color: 'var(--color-candy-menthe)' }}>
+            <p className="text-4xl font-titre font-extrabold mt-2" style={{ color: 'var(--color-candy-menthe)' }}>
               {fr.quiz.score(totalCorrects, total)}
             </p>
             {ptsGagnes > 0 && (
@@ -108,7 +108,7 @@ export function ReconnaissanceVisuelleSession() {
           </div>
           {newBadges.length > 0 && (
             <div className="bg-[var(--color-candy-lavande-light)] rounded-[var(--radius-card)] p-4 w-full max-w-xs space-y-1">
-              <p className="text-xs font-[var(--font-titre)] font-bold text-[var(--color-candy-lavande)] uppercase tracking-wide">
+              <p className="text-xs font-titre font-bold text-[var(--color-candy-lavande)] uppercase tracking-wide">
                 {fr.badges.nouveauBadge}
               </p>
               {newBadges.map(id => {
@@ -124,13 +124,13 @@ export function ReconnaissanceVisuelleSession() {
           <div className="flex gap-3 w-full max-w-xs">
             <button
               onClick={handleRecommencer}
-              className="flex-1 py-3 bg-[var(--color-candy-menthe)] text-white font-[var(--font-titre)] font-bold rounded-xl text-sm"
+              className="flex-1 py-3 bg-[var(--color-candy-menthe)] text-white font-titre font-bold rounded-xl text-sm"
             >
               {fr.quiz.recommencer}
             </button>
             <button
               onClick={() => navigate(`/unite/${numUnite}`)}
-              className="flex-1 py-3 bg-white border border-[var(--color-gris-doux)] text-[var(--color-encre)] font-[var(--font-titre)] font-semibold rounded-xl text-sm"
+              className="flex-1 py-3 bg-white border border-[var(--color-gris-doux)] text-[var(--color-encre)] font-titre font-semibold rounded-xl text-sm"
             >
               {fr.quiz.retourUnite}
             </button>
@@ -165,7 +165,7 @@ export function ReconnaissanceVisuelleSession() {
           />
         </div>
         <div className="flex items-center justify-between mt-2">
-          <span className="text-xs font-[var(--font-titre)] font-bold" style={{ color: '#059669' }}>
+          <span className="text-xs font-titre font-bold" style={{ color: '#059669' }}>
             {unite?.titre ?? `Unité ${numUnite}`}
           </span>
           <span className="text-xs text-[var(--color-gris-texte)]">
@@ -187,7 +187,7 @@ export function ReconnaissanceVisuelleSession() {
           >
             {/* Indices visuels */}
             <div className="bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] p-5 space-y-3">
-              <p className="text-xs font-[var(--font-titre)] font-bold text-[#059669] uppercase tracking-wide">
+              <p className="text-xs font-titre font-bold text-[#059669] uppercase tracking-wide">
                 Quel terme est décrit ici ?
               </p>
               {/* Tags discipline */}
@@ -195,12 +195,12 @@ export function ReconnaissanceVisuelleSession() {
                 {question.disciplines.map(d => (
                   <span
                     key={d}
-                    className="px-2 py-0.5 rounded-full text-xs font-[var(--font-titre)] font-semibold bg-[#d1fae5] text-[#065f46]"
+                    className="px-2 py-0.5 rounded-full text-xs font-titre font-semibold bg-[#d1fae5] text-[#065f46]"
                   >
                     {fr.disciplines[d as keyof typeof fr.disciplines] ?? d}
                   </span>
                 ))}
-                <span className="px-2 py-0.5 rounded-full text-xs bg-[var(--color-gris-doux)] text-[var(--color-gris-texte)] font-[var(--font-titre)]">
+                <span className="px-2 py-0.5 rounded-full text-xs bg-[var(--color-gris-doux)] text-[var(--color-gris-texte)] font-titre">
                   {question.categorie.replace(/-/g, ' ')}
                 </span>
               </div>
@@ -229,7 +229,7 @@ export function ReconnaissanceVisuelleSession() {
                     key={choix}
                     onClick={() => handleSelect(choix)}
                     disabled={isAnswered}
-                    className={`p-3 border-2 rounded-[var(--radius-card)] text-sm font-[var(--font-titre)] font-semibold text-left transition-all ${bg} ${textColor}`}
+                    className={`p-3 border-2 rounded-[var(--radius-card)] text-sm font-titre font-semibold text-left transition-all ${bg} ${textColor}`}
                   >
                     {choix}
                   </button>
@@ -247,7 +247,7 @@ export function ReconnaissanceVisuelleSession() {
                 <p
                   role="status"
                   aria-live="polite"
-                  className={`font-[var(--font-titre)] font-bold text-sm ${isCorrect ? 'text-[#065f46]' : 'text-[var(--color-candy-corail)]'}`}
+                  className={`font-titre font-bold text-sm ${isCorrect ? 'text-[#065f46]' : 'text-[var(--color-candy-corail)]'}`}
                 >
                   {isCorrect ? fr.quiz.bonne : fr.quiz.mauvaise}
                 </p>
@@ -269,7 +269,7 @@ export function ReconnaissanceVisuelleSession() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             onClick={handleNext}
-            className="w-full py-4 rounded-xl font-[var(--font-titre)] font-bold text-white text-base"
+            className="w-full py-4 rounded-xl font-titre font-bold text-white text-base"
             style={{ backgroundColor: '#059669' }}
           >
             {isLast ? fr.quiz.terminer : fr.quiz.suivant}

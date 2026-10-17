@@ -37,7 +37,7 @@ export function QuizCoursSession() {
     return (
       <div className="flex flex-col items-center justify-center min-h-[60vh] p-8 text-center gap-4">
         <PluмyMascot etat="repos" taille={80} />
-        <p className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] mb-1">
+        <p className="font-titre font-bold text-[var(--color-encre)] mb-1">
           Pas encore de questions ici !
         </p>
         <p className="text-sm text-[var(--color-gris-texte)]">
@@ -107,7 +107,7 @@ export function QuizCoursSession() {
         <div className="flex-1 flex flex-col items-center justify-center p-8 gap-5 text-center">
           <PluмyMascot etat={pct >= 50 ? 'reussite' : 'echec'} taille={100} />
           <div>
-            <h1 className="font-[var(--font-titre)] font-bold text-2xl text-[var(--color-encre)] mb-1">
+            <h1 className="font-titre font-bold text-2xl text-[var(--color-encre)] mb-1">
               {fr.quiz.finTitre}
             </h1>
             <p className="text-[var(--color-gris-texte)] text-sm">
@@ -116,7 +116,7 @@ export function QuizCoursSession() {
           </div>
           {ptsGagnes > 0 && (
             <div className="bg-[#fffde7] border border-[var(--color-candy-jaune)] rounded-[var(--radius-card)] px-5 py-3">
-              <p className="font-[var(--font-titre)] font-bold text-[var(--color-encre)]">
+              <p className="font-titre font-bold text-[var(--color-encre)]">
                 {fr.quiz.pointsGagnes(ptsGagnes)}
               </p>
             </div>
@@ -133,7 +133,7 @@ export function QuizCoursSession() {
                   <div key={id} className="flex items-center gap-3 p-3 bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)]">
                     <span className="text-2xl" style={{ color: badge.couleur }}>{badge.symbole}</span>
                     <div className="text-left">
-                      <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm">{badge.nom}</p>
+                      <p className="font-titre font-semibold text-[var(--color-encre)] text-sm">{badge.nom}</p>
                       <p className="text-xs text-[var(--color-gris-texte)]">{badge.description}</p>
                     </div>
                   </div>
@@ -144,20 +144,20 @@ export function QuizCoursSession() {
           <div className="flex flex-col gap-2 w-full">
             <button
               onClick={handleRecommencer}
-              className="w-full py-3 bg-[var(--color-candy-jaune)] text-[var(--color-encre)] font-[var(--font-titre)] font-bold rounded-[var(--radius-card)] shadow-[var(--shadow-card)]"
+              className="w-full py-3 bg-[var(--color-candy-jaune)] text-[var(--color-encre)] font-titre font-bold rounded-[var(--radius-card)] shadow-[var(--shadow-card)]"
             >
               {fr.quiz.recommencer}
             </button>
             <button
               onClick={() => navigate(`/cours/${coursId}`)}
-              className="w-full py-3 bg-white text-[var(--color-encre)] font-[var(--font-titre)] font-semibold rounded-[var(--radius-card)] shadow-[var(--shadow-card)]"
+              className="w-full py-3 bg-white text-[var(--color-encre)] font-titre font-semibold rounded-[var(--radius-card)] shadow-[var(--shadow-card)]"
             >
               Retour au cours
             </button>
             {unite && (
               <button
                 onClick={() => navigate(`/unite/${unite.numero}`)}
-                className="w-full py-3 text-center bg-[var(--color-candy-lavande-light)] text-[var(--color-encre)] font-[var(--font-titre)] font-semibold rounded-[var(--radius-card)] text-sm"
+                className="w-full py-3 text-center bg-[var(--color-candy-lavande-light)] text-[var(--color-encre)] font-titre font-semibold rounded-[var(--radius-card)] text-sm"
               >
                 {fr.quiz.retourUnite}
               </button>
@@ -182,7 +182,7 @@ export function QuizCoursSession() {
           {cours.titre}
         </button>
         <div className="flex items-center justify-between mb-2">
-          <span className="font-[var(--font-titre)] font-bold text-[var(--color-encre)]">
+          <span className="font-titre font-bold text-[var(--color-encre)]">
             Quiz sur le cours
           </span>
           <span className="text-xs text-[var(--color-gris-texte)]">
@@ -213,7 +213,7 @@ export function QuizCoursSession() {
               <p className="text-xs text-[var(--color-gris-texte)] uppercase tracking-wide mb-2">
                 {fr.quiz.questionDeCours}
               </p>
-              <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-base leading-snug">
+              <p className="font-titre font-semibold text-[var(--color-encre)] text-base leading-snug">
                 {question.question}
               </p>
             </div>
@@ -222,7 +222,7 @@ export function QuizCoursSession() {
               {question.choix.map((choix) => {
                 const isBonne = choix === question.bonneReponse
                 const isSelected = choix === selected
-                let cls = 'w-full text-left p-4 rounded-[var(--radius-card)] border-2 font-[var(--font-titre)] font-medium text-sm transition-all shadow-[var(--shadow-card)]'
+                let cls = 'w-full text-left p-4 rounded-[var(--radius-card)] border-2 font-titre font-medium text-sm transition-all shadow-[var(--shadow-card)]'
                 if (!isAnswered) {
                   cls += ' bg-white border-transparent text-[var(--color-encre)] active:scale-[0.98]'
                 } else if (isBonne) {
@@ -273,7 +273,7 @@ export function QuizCoursSession() {
                 )}
                 <button
                   onClick={handleNext}
-                  className="w-full py-3 bg-[var(--color-candy-menthe)] text-white font-[var(--font-titre)] font-bold rounded-[var(--radius-card)] shadow-[var(--shadow-card)]"
+                  className="w-full py-3 bg-[var(--color-candy-menthe)] text-white font-titre font-bold rounded-[var(--radius-card)] shadow-[var(--shadow-card)]"
                 >
                   {isLast ? fr.quiz.terminer : fr.quiz.suivant}
                 </button>

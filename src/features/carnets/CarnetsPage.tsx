@@ -66,7 +66,7 @@ export function CarnetsPage() {
   return (
     <div className="flex flex-col min-h-svh">
       <header className="px-5 pt-10 pb-4 bg-[var(--color-plumy-bg)]">
-        <h1 className="font-[var(--font-titre)] font-bold text-2xl text-[var(--color-encre)] mb-4">
+        <h1 className="font-titre font-bold text-2xl text-[var(--color-encre)] mb-4">
           {fr.carnets.titre}
         </h1>
         <div className="flex gap-2">
@@ -74,7 +74,7 @@ export function CarnetsPage() {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`px-4 py-1.5 rounded-full text-sm font-[var(--font-titre)] font-semibold transition-all ${
+              className={`px-4 py-1.5 rounded-full text-sm font-titre font-semibold transition-all ${
                 activeTab === tab
                   ? 'bg-[var(--color-candy-rose)] text-white'
                   : 'bg-white text-[var(--color-gris-texte)] border border-[var(--color-gris-doux)]'
@@ -113,7 +113,7 @@ export function CarnetsPage() {
                     >
                       <span className="text-[var(--color-candy-rose)] flex-shrink-0">♥</span>
                       <div className="flex-1 min-w-0">
-                        <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm">
+                        <p className="font-titre font-semibold text-[var(--color-encre)] text-sm">
                           {terme.nom}
                         </p>
                         <p className="text-xs text-[var(--color-gris-texte)] line-clamp-1 mt-0.5">
@@ -141,7 +141,7 @@ export function CarnetsPage() {
               {termesPerso.length > 0 && form === null && (
                 <button
                   onClick={() => navigate('/flashcards/perso')}
-                  className="w-full flex items-center justify-center gap-2 py-2.5 bg-[var(--color-candy-lavande)] text-white rounded-[var(--radius-card)] font-[var(--font-titre)] font-semibold text-sm"
+                  className="w-full flex items-center justify-center gap-2 py-2.5 bg-[var(--color-candy-lavande)] text-white rounded-[var(--radius-card)] font-titre font-semibold text-sm"
                 >
                   <span>✦</span>
                   {fr.flashcards.titre}
@@ -151,7 +151,7 @@ export function CarnetsPage() {
               {/* Formulaire d'ajout/édition */}
               {form !== null ? (
                 <div className="bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] p-4 space-y-3">
-                  <h2 className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-base">
+                  <h2 className="font-titre font-bold text-[var(--color-encre)] text-base">
                     {form?.id ? fr.carnets.modifierTerme : fr.carnets.nouveauTerme}
                   </h2>
                   <div className="space-y-2">
@@ -205,13 +205,13 @@ export function CarnetsPage() {
                     <button
                       onClick={sauvegarderTerme}
                       disabled={!form.nom.trim() || !form.definition.trim()}
-                      className="flex-1 py-2.5 bg-[var(--color-candy-rose)] text-white font-[var(--font-titre)] font-bold rounded-lg text-sm disabled:opacity-40"
+                      className="flex-1 py-2.5 bg-[var(--color-candy-rose)] text-white font-titre font-bold rounded-lg text-sm disabled:opacity-40"
                     >
                       {fr.carnets.sauvegarder}
                     </button>
                     <button
                       onClick={() => setForm(null)}
-                      className="flex-1 py-2.5 bg-[var(--color-gris-doux)] text-[var(--color-encre)] font-[var(--font-titre)] font-semibold rounded-lg text-sm"
+                      className="flex-1 py-2.5 bg-[var(--color-gris-doux)] text-[var(--color-encre)] font-titre font-semibold rounded-lg text-sm"
                     >
                       {fr.carnets.annuler}
                     </button>
@@ -220,7 +220,7 @@ export function CarnetsPage() {
               ) : (
                 <button
                   onClick={() => setForm({ nom: '', definition: '', noteLibre: '' })}
-                  className="w-full flex items-center justify-center gap-2 py-3 border-2 border-dashed border-[var(--color-candy-rose)] text-[var(--color-candy-rose)] rounded-[var(--radius-card)] font-[var(--font-titre)] font-semibold text-sm"
+                  className="w-full flex items-center justify-center gap-2 py-3 border-2 border-dashed border-[var(--color-candy-rose)] text-[var(--color-candy-rose)] rounded-[var(--radius-card)] font-titre font-semibold text-sm"
                 >
                   <span>+</span>
                   {fr.carnets.nouveauTerme}
@@ -242,21 +242,21 @@ export function CarnetsPage() {
                       aria-modal="true"
                       aria-label={fr.carnets.confirmerSuppression}
                     >
-                      <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)]">
+                      <p className="font-titre font-semibold text-[var(--color-encre)]">
                         {fr.carnets.confirmerSuppression}
                       </p>
                       <div className="flex gap-2">
                         <button
                           type="button"
                           onClick={() => confirmerSuppression(suppression)}
-                          className="flex-1 py-2.5 bg-[var(--color-candy-corail)] text-white font-[var(--font-titre)] font-bold rounded-lg text-sm"
+                          className="flex-1 py-2.5 bg-[var(--color-candy-corail)] text-white font-titre font-bold rounded-lg text-sm"
                         >
                           {fr.carnets.supprimerTerme}
                         </button>
                         <button
                           type="button"
                           onClick={() => setSuppression(null)}
-                          className="flex-1 py-2.5 bg-[var(--color-gris-doux)] text-[var(--color-encre)] font-[var(--font-titre)] font-semibold rounded-lg text-sm"
+                          className="flex-1 py-2.5 bg-[var(--color-gris-doux)] text-[var(--color-encre)] font-titre font-semibold rounded-lg text-sm"
                         >
                           {fr.carnets.annuler}
                         </button>
@@ -283,7 +283,7 @@ export function CarnetsPage() {
                     >
                       <div className="flex items-start justify-between gap-2">
                         <div className="flex-1 min-w-0">
-                          <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm">
+                          <p className="font-titre font-semibold text-[var(--color-encre)] text-sm">
                             {terme.nom}
                           </p>
                           <p className="text-xs text-[var(--color-gris-texte)] mt-1 leading-relaxed">

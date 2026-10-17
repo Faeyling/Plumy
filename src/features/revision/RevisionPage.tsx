@@ -62,7 +62,7 @@ export function RevisionPage() {
           </svg>
           Retour
         </button>
-        <h1 className="font-[var(--font-titre)] font-bold text-2xl text-[var(--color-encre)]">
+        <h1 className="font-titre font-bold text-2xl text-[var(--color-encre)]">
           {fr.revision.titre}
         </h1>
         {total > 0 && (
@@ -76,7 +76,7 @@ export function RevisionPage() {
         {total === 0 ? (
           <div className="flex flex-col items-center justify-center py-16 gap-4 text-center">
             <PluмyMascot etat="reussite" taille={100} />
-            <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-lg">
+            <p className="font-titre font-semibold text-[var(--color-encre)] text-lg">
               {fr.revision.aucun}
             </p>
           </div>
@@ -90,13 +90,13 @@ export function RevisionPage() {
               aria-label={groupe.titre}
             >
               <div className="flex items-center justify-between mb-2">
-                <h2 className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-base">
+                <h2 className="font-titre font-bold text-[var(--color-encre)] text-base">
                   {groupe.titre}
                 </h2>
                 {unites.find(u => u.numero === groupe.numero)?.quizDisponibles.includes('flashcards') && (
                   <Link
                     to={`/flashcards/${groupe.numero}`}
-                    className="text-xs text-[var(--color-candy-corail)] font-[var(--font-titre)] font-semibold underline"
+                    className="text-xs text-[var(--color-candy-corail)] font-titre font-semibold underline"
                   >
                     {fr.revision.flashcardsUnite}
                   </Link>
@@ -117,7 +117,7 @@ export function RevisionPage() {
                       ↩
                     </span>
                     <div className="flex-1 min-w-0">
-                      <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm">
+                      <p className="font-titre font-semibold text-[var(--color-encre)] text-sm">
                         {terme.nom}
                       </p>
                       <p className="text-xs text-[var(--color-gris-texte)] line-clamp-1 mt-0.5">

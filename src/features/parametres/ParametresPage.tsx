@@ -55,7 +55,7 @@ export function ParametresPage() {
           </svg>
           Retour
         </button>
-        <h1 className="font-[var(--font-titre)] font-extrabold text-2xl text-[var(--color-encre)]">
+        <h1 className="font-titre font-extrabold text-2xl text-[var(--color-encre)]">
           {fr.parametres.titre}
         </h1>
       </header>
@@ -213,7 +213,7 @@ export function ParametresPage() {
 function Section({ titre, children }: { titre: string; children: React.ReactNode }) {
   return (
     <section>
-      <h2 className="font-[var(--font-titre)] font-bold text-sm text-[var(--color-encre)] uppercase tracking-wide mb-3">
+      <h2 className="font-titre font-bold text-sm text-[var(--color-encre)] uppercase tracking-wide mb-3">
         {titre}
       </h2>
       <div className="bg-white rounded-[var(--radius-card)] p-4 shadow-[var(--shadow-card)]">

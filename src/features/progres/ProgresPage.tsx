@@ -46,7 +46,7 @@ export function ProgresPage() {
         <div className="flex items-center gap-4">
           <PluмyMascot etat={stats && stats.points > 0 ? 'reussite' : 'accueil'} taille={72} />
           <div>
-            <h1 className="font-[var(--font-titre)] font-bold text-2xl text-[var(--color-encre)]">
+            <h1 className="font-titre font-bold text-2xl text-[var(--color-encre)]">
               {fr.progres.titre}
             </h1>
             <p className="text-sm text-[var(--color-gris-texte)] mt-0.5">
@@ -72,7 +72,7 @@ export function ProgresPage() {
             className="flex items-center justify-between p-4 bg-[#fce4ec] border border-[var(--color-candy-corail)] rounded-[var(--radius-card)] shadow-[var(--shadow-card)]"
           >
             <div>
-              <p className="font-[var(--font-titre)] font-bold text-[var(--color-candy-corail)] text-base">
+              <p className="font-titre font-bold text-[var(--color-candy-corail)] text-base">
                 {fr.revision.compte(aRevoir)}
               </p>
               <p className="text-xs text-[var(--color-gris-texte)] mt-0.5">
@@ -85,7 +85,7 @@ export function ProgresPage() {
 
         {/* Activité — bar chart */}
         <section>
-          <h2 className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-base mb-3">
+          <h2 className="font-titre font-bold text-[var(--color-encre)] text-base mb-3">
             {fr.progres.activiteRecente}
           </h2>
           <div className="bg-white rounded-[var(--radius-card)] shadow-[var(--shadow-card)] p-4">
@@ -116,7 +116,7 @@ export function ProgresPage() {
         {/* Badges */}
         <section>
           <div className="flex items-center justify-between mb-3">
-            <h2 className="font-[var(--font-titre)] font-bold text-[var(--color-encre)] text-base">
+            <h2 className="font-titre font-bold text-[var(--color-encre)] text-base">
               {fr.progres.badges}
             </h2>
             <span className="text-xs text-[var(--color-gris-texte)]">
@@ -137,7 +137,7 @@ export function ProgresPage() {
                   <span className="text-xl" style={{ color: earned ? badge.couleur : '#bbb' }}>
                     {badge.symbole}
                   </span>
-                  <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-[10px] leading-tight">
+                  <p className="font-titre font-semibold text-[var(--color-encre)] text-[10px] leading-tight">
                     {badge.nom}
                   </p>
                   {!earned && (
@@ -168,7 +168,7 @@ function StatCard({ label, value, color, suffix = '' }: {
 }) {
   return (
     <div className="bg-white rounded-[var(--radius-card)] p-4 shadow-[var(--shadow-card)] text-center">
-      <p className="font-[var(--font-titre)] font-extrabold text-3xl" style={{ color }}>
+      <p className="font-titre font-extrabold text-3xl" style={{ color }}>
         {value}{suffix}
       </p>
       <p className="text-xs text-[var(--color-gris-texte)] mt-1">{label}</p>

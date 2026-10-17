@@ -100,7 +100,7 @@ export function OnboardingModal({ onTermine }: Props) {
             >
               <PluмyMascot etat="encouragement" taille={96} />
               <div className="space-y-2">
-                <h2 className="font-[var(--font-titre)] font-bold text-xl text-[var(--color-encre)]">
+                <h2 className="font-titre font-bold text-xl text-[var(--color-encre)]">
                   {ecran.titre}
                 </h2>
                 <p className="text-sm text-[var(--color-gris-texte)] leading-relaxed max-w-xs mx-auto">
@@ -115,7 +115,7 @@ export function OnboardingModal({ onTermine }: Props) {
         <div className="px-6 pb-6 flex flex-col gap-2">
           <button
             onClick={suivant}
-            className="w-full py-3 bg-[var(--color-candy-rose)] text-white font-[var(--font-titre)] font-bold rounded-xl text-sm"
+            className="w-full py-3 bg-[var(--color-candy-rose)] text-white font-titre font-bold rounded-xl text-sm"
           >
             {isLast ? fr.onboarding.commencer : fr.onboarding.suivant}
           </button>

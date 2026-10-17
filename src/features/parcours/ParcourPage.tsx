@@ -67,7 +67,7 @@ export function ParcourPage() {
         <div className="flex items-center gap-3 mb-2">
           <span className="text-3xl" aria-hidden="true">{p.emoji}</span>
           <div>
-            <h1 className="font-[var(--font-titre)] font-extrabold text-xl text-[var(--color-encre)] leading-tight">
+            <h1 className="font-titre font-extrabold text-xl text-[var(--color-encre)] leading-tight">
               {p.titre}
             </h1>
             <p className="text-sm text-[var(--color-gris-texte)] mt-0.5">{p.description}</p>
@@ -93,7 +93,7 @@ export function ParcourPage() {
       <div className="flex-1 px-4 py-5 pb-24 space-y-6">
         {cours.length > 0 && (
           <section>
-            <h2 className="font-[var(--font-titre)] font-bold text-sm text-[var(--color-gris-texte)] uppercase tracking-wide mb-3">
+            <h2 className="font-titre font-bold text-sm text-[var(--color-gris-texte)] uppercase tracking-wide mb-3">
               Cours
             </h2>
             <div className="space-y-2">
@@ -114,7 +114,7 @@ export function ParcourPage() {
                       aria-hidden="true"
                     />
                     <div className="flex-1 min-w-0">
-                      <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm leading-snug">
+                      <p className="font-titre font-semibold text-[var(--color-encre)] text-sm leading-snug">
                         {c.titre}
                       </p>
                       <p className="text-xs text-[var(--color-gris-texte)] mt-0.5 line-clamp-2">
@@ -132,7 +132,7 @@ export function ParcourPage() {
         )}
 
         <section>
-          <h2 className="font-[var(--font-titre)] font-bold text-sm text-[var(--color-gris-texte)] uppercase tracking-wide mb-3">
+          <h2 className="font-titre font-bold text-sm text-[var(--color-gris-texte)] uppercase tracking-wide mb-3">
             Termes
           </h2>
           <div className="space-y-2">
@@ -157,7 +157,7 @@ export function ParcourPage() {
                   aria-hidden="true"
                 />
                 <div className="flex-1 min-w-0">
-                  <p className="font-[var(--font-titre)] font-semibold text-[var(--color-encre)] text-sm leading-snug">
+                  <p className="font-titre font-semibold text-[var(--color-encre)] text-sm leading-snug">
                     {terme.nom}
                   </p>
                   <p className="text-xs text-[var(--color-gris-texte)] mt-0.5 line-clamp-1">

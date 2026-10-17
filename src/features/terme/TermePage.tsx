@@ -135,7 +135,7 @@ export function TermePage() {
           </div>
         </div>
 
-        <h1 className="font-[var(--font-titre)] font-extrabold text-3xl text-[var(--color-encre)] leading-tight">
+        <h1 className="font-titre font-extrabold text-3xl text-[var(--color-encre)] leading-tight">
           {terme.nom}
         </h1>
 
@@ -147,7 +147,7 @@ export function TermePage() {
 
         <div className="flex flex-wrap gap-2 mt-3">
           {terme.prononciation && (
-            <span className="font-[var(--font-manuscrit)] text-[var(--color-encre)] text-sm bg-[var(--color-candy-jaune-light)] px-2 py-0.5 rounded-full">
+            <span className="font-manuscrit text-[var(--color-encre)] text-sm bg-[var(--color-candy-jaune-light)] px-2 py-0.5 rounded-full">
               /{terme.prononciation}/
             </span>
           )}
@@ -332,7 +332,7 @@ export function TermePage() {
         {!estVu ? (
           <button
             onClick={marquerVu}
-            className="flex-1 bg-[var(--color-plumy-blue)] text-white font-[var(--font-titre)] font-bold py-3 rounded-[var(--radius-btn)] text-sm hover:opacity-90 transition-opacity"
+            className="flex-1 bg-[var(--color-plumy-blue)] text-white font-titre font-bold py-3 rounded-[var(--radius-btn)] text-sm hover:opacity-90 transition-opacity"
           >
             {fr.terme.marquerVu} (+5 pts)
           </button>
@@ -369,7 +369,7 @@ function Section({
           style={{ backgroundColor: couleur }}
           aria-hidden="true"
         />
-        <h2 className="font-[var(--font-titre)] font-bold text-sm text-[var(--color-encre)] uppercase tracking-wide flex-1">
+        <h2 className="font-titre font-bold text-sm text-[var(--color-encre)] uppercase tracking-wide flex-1">
           {titre}
         </h2>
         {onSpeak && (

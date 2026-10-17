@@ -52,7 +52,7 @@ export function RappelSauvegarde() {
               <div className="flex gap-2 mt-2.5 flex-wrap">
                 <button
                   onClick={handleExporter}
-                  className="px-3 py-1.5 bg-[var(--color-candy-rose)] text-white text-xs font-[var(--font-titre)] font-bold rounded-lg shrink-0"
+                  className="px-3 py-1.5 bg-[var(--color-candy-rose)] text-white text-xs font-titre font-bold rounded-lg shrink-0"
                 >
                   {fr.sauvegarde.exporterMaintenant}
                 </button>

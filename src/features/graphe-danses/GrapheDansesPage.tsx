@@ -54,7 +54,7 @@ export function GrapheDansesPage() {
           </svg>
           Retour
         </button>
-        <h1 className="font-[var(--font-titre)] font-bold text-2xl text-[var(--color-encre)] leading-tight">
+        <h1 className="font-titre font-bold text-2xl text-[var(--color-encre)] leading-tight">
           Origines et interactions des danses
         </h1>
         <p className="text-sm text-[var(--color-gris-texte)] mt-1">
@@ -91,7 +91,7 @@ export function GrapheDansesPage() {
       >
         {hoveredNode ? (
           <>
-            <span className="font-[var(--font-titre)] font-bold">{hoveredNode.label}{hoveredNode.labelBis ? ' ' + hoveredNode.labelBis : ''}</span>
+            <span className="font-titre font-bold">{hoveredNode.label}{hoveredNode.labelBis ? ' ' + hoveredNode.labelBis : ''}</span>
             {hoveredNode.periode && <span className="text-[var(--color-gris-texte)] ml-2">· {hoveredNode.periode}</span>}
             {hoveredNode.note && <p className="text-xs text-[var(--color-gris-texte)] mt-0.5">{hoveredNode.note}</p>}
           </>
@@ -245,7 +245,7 @@ export function GrapheDansesPage() {
 
       {/* Alternative textuelle */}
       <details className="px-5 py-4 border-t border-[var(--color-gris-doux)] bg-[var(--color-plumy-bg)]">
-        <summary id="graphe-description" className="text-sm font-[var(--font-titre)] font-semibold text-[var(--color-encre)] cursor-pointer">
+        <summary id="graphe-description" className="text-sm font-titre font-semibold text-[var(--color-encre)] cursor-pointer">
           Version texte du schéma
         </summary>
         <div className="mt-3 space-y-4 text-sm">
