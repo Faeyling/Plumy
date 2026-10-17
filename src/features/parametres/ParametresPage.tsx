@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { fr } from '@/i18n/fr'
 import { VOIX_ELEVENLABS, getVoixId, setVoixId, getCleElevenLabs, setCleElevenLabs } from '@/lib/voix'
+import { synthetiser, jouerAudio, deverrouillerAudio, ErreurVoix } from '@/lib/elevenlabs'
 
 type TaillePolice = 'normale' | 'grande' | 'tres-grande'
 
@@ -26,6 +27,7 @@ export function ParametresPage() {
   const [voixId, setVoixIdState] = useState<string>(getVoixId)
   const [cleSaisie, setCleSaisie] = useState<string>(getCleElevenLabs)
   const [cleActive, setCleActive] = useState<boolean>(() => getCleElevenLabs() !== '')
+  const [test, setTest] = useState<{ etat: 'idle' | 'encours' | 'ok' | 'erreur'; message?: string; detail?: string }>({ etat: 'idle' })
 
   useEffect(() => {
     appliquerTaillePolice(taille)
@@ -34,12 +36,27 @@ export function ParametresPage() {
   function choisirVoix(id: string) {
     setVoixId(id)
     setVoixIdState(id)
+    setTest({ etat: 'idle' })
   }
 
   function enregistrerCle(cle: string) {
     setCleElevenLabs(cle)
     setCleSaisie(cle.trim())
     setCleActive(cle.trim() !== '')
+    setTest({ etat: 'idle' })
+  }
+
+  async function testerVoix() {
+    deverrouillerAudio() // pendant le clic, sinon iOS reste muet
+    setTest({ etat: 'encours' })
+    try {
+      const buffer = await synthetiser(fr.parametres.phraseTest, getCleElevenLabs(), voixId)
+      await jouerAudio(buffer, () => {})
+      setTest({ etat: 'ok', message: fr.parametres.testReussi })
+    } catch (e) {
+      const code = e instanceof ErreurVoix ? e.code : 'inconnue'
+      setTest({ etat: 'erreur', message: fr.parametres.erreursVoix[code], detail: e instanceof Error ? e.message : String(e) })
+    }
   }
 
   return (
@@ -142,6 +159,22 @@ export function ParametresPage() {
                   </button>
                 ))}
               </div>}
+              {cleActive && (
+                <button
+                  onClick={testerVoix}
+                  disabled={test.etat === 'encours'}
+                  className="w-full py-2.5 rounded-xl text-sm font-semibold border-2 border-[var(--color-candy-lavande)] text-[var(--color-encre)] disabled:opacity-60"
+                >
+                  {test.etat === 'encours' ? fr.parametres.testEnCours : fr.parametres.testerVoix}
+                </button>
+              )}
+              {test.etat === 'ok' && <p role="status" className="text-xs font-semibold text-[var(--color-candy-menthe)]">{test.message}</p>}
+              {test.etat === 'erreur' && (
+                <div role="alert" className="text-xs text-[var(--color-candy-rose-dark)] space-y-1">
+                  <p className="font-semibold">{test.message}</p>
+                  <p className="font-mono break-all opacity-70">{test.detail}</p>
+                </div>
+              )}
             </div>
           </Section>
 

@@ -1,5 +1,6 @@
 import { useState, useCallback, useRef } from 'react'
 import { getVoixId, getCleElevenLabs } from '@/lib/voix'
+import { synthetiser, jouerAudio, arreterAudio, deverrouillerAudio } from '@/lib/elevenlabs'
 
 function getFrenchVoice(): SpeechSynthesisVoice | null {
   const voices = window.speechSynthesis.getVoices()
@@ -11,16 +12,19 @@ function getFrenchVoice(): SpeechSynthesisVoice | null {
   )
 }
 
+// Jeton de la lecture en cours, partagé par toutes les instances du hook :
+// lancer une lecture ailleurs invalide celle-ci.
+let lectureActive = 0
+
 export function useSpeech() {
   const [isPlaying, setIsPlaying] = useState(false)
   const [isSupported] = useState(() => typeof window !== 'undefined' && 'speechSynthesis' in window)
-  const activeText = useRef<string>('')
-  const audioRef = useRef<{ source: AudioBufferSourceNode; ctx: AudioContext } | null>(null)
+  const maLecture = useRef(0)
 
-  const speakLocal = useCallback((text: string) => {
-    if (!isSupported) return
+  const speakLocal = useCallback((text: string, jeton: number) => {
+    if (!isSupported) { setIsPlaying(false); return }
     const fire = () => {
-      if (activeText.current !== text) return
+      if (lectureActive !== jeton) return
       const utterance = new SpeechSynthesisUtterance(text)
       utterance.lang = 'fr-FR'
       utterance.rate = 1.0
@@ -47,68 +51,37 @@ export function useSpeech() {
     const cle = navigator.onLine ? getCleElevenLabs() : ''
     if (!isSupported && !cle) return
 
-    if (audioRef.current) {
-      try { audioRef.current.source.stop() } catch { /* already stopped */ }
-      audioRef.current.ctx.close()
-      audioRef.current = null
-    }
+    arreterAudio()
     window.speechSynthesis?.cancel()
-    activeText.current = text
+    const jeton = ++lectureActive
+    maLecture.current = jeton
 
-    if (cle) {
-      void (async () => {
-        try {
-          const voiceId = getVoixId()
-          const res = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`, {
-            method: 'POST',
-            headers: {
-              'xi-api-key': cle,
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-              text,
-              model_id: 'eleven_multilingual_v2',
-              voice_settings: { stability: 0.4, similarity_boost: 0.8, style: 0.6, use_speaker_boost: true },
-            }),
-          })
-          if (!res.ok) throw new Error(`ElevenLabs ${res.status}`)
-          if (activeText.current !== text) return
-
-          const buffer = await res.arrayBuffer()
-          if (activeText.current !== text) return
-
-          const ctx = new AudioContext()
-          const decoded = await ctx.decodeAudioData(buffer)
-          if (activeText.current !== text) { ctx.close(); return }
-
-          const source = ctx.createBufferSource()
-          source.buffer = decoded
-          source.connect(ctx.destination)
-          audioRef.current = { source, ctx }
-          setIsPlaying(true)
-          source.start()
-          source.onended = () => {
-            audioRef.current = null
-            ctx.close()
-            setIsPlaying(false)
-          }
-        } catch (err) {
-          console.error('[ElevenLabs] erreur TTS:', err)
-          speakLocal(text)
-        }
-      })()
-    } else {
-      speakLocal(text)
+    if (!cle) {
+      speakLocal(text, jeton)
+      return
     }
+
+    // Doit rester synchrone dans le clic (iOS)
+    deverrouillerAudio()
+    setIsPlaying(true)
+    void (async () => {
+      try {
+        const buffer = await synthetiser(text, cle, getVoixId())
+        if (lectureActive !== jeton) { setIsPlaying(false); return }
+        await jouerAudio(buffer, () => {
+          if (maLecture.current === jeton) setIsPlaying(false)
+        })
+      } catch (err) {
+        console.warn('[ElevenLabs] repli sur la voix du navigateur :', err)
+        if (lectureActive === jeton) speakLocal(text, jeton)
+        else setIsPlaying(false)
+      }
+    })()
   }, [isSupported, speakLocal])
 
   const stop = useCallback(() => {
-    activeText.current = ''
-    if (audioRef.current) {
-      try { audioRef.current.source.stop() } catch { /* already stopped */ }
-      audioRef.current.ctx.close()
-      audioRef.current = null
-    }
+    lectureActive++
+    arreterAudio()
     window.speechSynthesis?.cancel()
     setIsPlaying(false)
   }, [])

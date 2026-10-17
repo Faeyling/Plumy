@@ -358,6 +358,20 @@ export const fr = {
     enregistrer: "Enregistrer",
     effacer: "Effacer",
     cleEnregistree: "Clé enregistrée ✓",
+    testerVoix: "Tester la voix",
+    testEnCours: "J'essaie…",
+    phraseTest: "Coucou, c'est Plumy ! Si tu m'entends, ma voix fonctionne parfaitement.",
+    testReussi: "Ça marche ! Tu entends ma vraie voix ✓",
+    erreursVoix: {
+      "cle-invalide": "ElevenLabs refuse la clé : elle est invalide ou a été révoquée. Génère-en une nouvelle sur elevenlabs.io (Profile → API keys).",
+      "voix-payante": "Cette voix vient de la Voice Library : avec un compte gratuit, ElevenLabs ne la donne pas via l'API. Il faut un abonnement payant, ou une voix « Default ».",
+      "voix-introuvable": "ElevenLabs ne trouve pas cette voix sur ton compte. Ajoute-la à « My Voices » depuis la Voice Library.",
+      quota: "Le quota de caractères ElevenLabs est épuisé pour ce mois-ci.",
+      "activite-inhabituelle": "ElevenLabs a bloqué le compte gratuit pour « activité inhabituelle » (VPN, ou clé utilisée depuis trop d'appareils). Un abonnement payant lève ce blocage.",
+      reseau: "Impossible de joindre ElevenLabs. Vérifie ta connexion internet.",
+      audio: "L'audio a bien été reçu, mais ton navigateur n'a pas réussi à le lire.",
+      inconnue: "ElevenLabs a renvoyé une erreur inattendue.",
+    },
   },
 
   defiQuotidien: {
