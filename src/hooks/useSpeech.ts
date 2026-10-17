@@ -1,5 +1,5 @@
 import { useState, useCallback, useRef } from 'react'
-import { getVoixId, ELEVENLABS_KEY } from '@/lib/voix'
+import { getVoixId, getCleElevenLabs } from '@/lib/voix'
 
 function getFrenchVoice(): SpeechSynthesisVoice | null {
   const voices = window.speechSynthesis.getVoices()
@@ -43,7 +43,9 @@ export function useSpeech() {
   }, [isSupported])
 
   const speak = useCallback((text: string) => {
-    if (!isSupported && !ELEVENLABS_KEY) return
+    // Hors ligne ou sans clé : voix locale du navigateur
+    const cle = navigator.onLine ? getCleElevenLabs() : ''
+    if (!isSupported && !cle) return
 
     if (audioRef.current) {
       try { audioRef.current.source.stop() } catch { /* already stopped */ }
@@ -53,14 +55,14 @@ export function useSpeech() {
     window.speechSynthesis?.cancel()
     activeText.current = text
 
-    if (ELEVENLABS_KEY) {
+    if (cle) {
       void (async () => {
         try {
           const voiceId = getVoixId()
           const res = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`, {
             method: 'POST',
             headers: {
-              'xi-api-key': ELEVENLABS_KEY,
+              'xi-api-key': cle,
               'Content-Type': 'application/json',
             },
             body: JSON.stringify({
@@ -116,5 +118,5 @@ export function useSpeech() {
     else speak(text)
   }, [isPlaying, speak, stop])
 
-  return { isPlaying, isSupported: isSupported || !!ELEVENLABS_KEY, speak, stop, toggle }
+  return { isPlaying, isSupported: isSupported || !!getCleElevenLabs(), speak, stop, toggle }
 }

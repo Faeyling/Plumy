@@ -1,5 +1,3 @@
-export const ELEVENLABS_KEY = 'sk_48608c6c95cc218c85cfc863f0c5b14b7c858522e9f69f83'
-
 export const VOIX_ELEVENLABS = [
   { id: 'jfEwztGDkpbpy89xeku6', nom: 'Voix 1' },
   { id: 'IbbR6Av0dWuQJS0b8JVT', nom: 'Voix 2' },
@@ -8,6 +6,7 @@ export const VOIX_ELEVENLABS = [
 export type VoixId = (typeof VOIX_ELEVENLABS)[number]['id']
 
 const CLE_STORAGE = 'plumy-voix-id'
+const CLE_API_STORAGE = 'plumy-elevenlabs-cle'
 const VOIX_DEFAUT = VOIX_ELEVENLABS[0].id
 
 export function getVoixId(): string {
@@ -16,4 +15,15 @@ export function getVoixId(): string {
 
 export function setVoixId(id: string): void {
   localStorage.setItem(CLE_STORAGE, id)
+}
+
+// Clé ElevenLabs saisie par l'utilisateur dans les Paramètres, stockée uniquement sur l'appareil
+export function getCleElevenLabs(): string {
+  return localStorage.getItem(CLE_API_STORAGE) ?? ''
+}
+
+export function setCleElevenLabs(cle: string): void {
+  const nettoyee = cle.trim()
+  if (nettoyee) localStorage.setItem(CLE_API_STORAGE, nettoyee)
+  else localStorage.removeItem(CLE_API_STORAGE)
 }

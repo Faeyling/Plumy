@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { fr } from '@/i18n/fr'
-import { VOIX_ELEVENLABS, getVoixId, setVoixId } from '@/lib/voix'
+import { VOIX_ELEVENLABS, getVoixId, setVoixId, getCleElevenLabs, setCleElevenLabs } from '@/lib/voix'
 
 type TaillePolice = 'normale' | 'grande' | 'tres-grande'
 
@@ -24,6 +24,8 @@ export function ParametresPage() {
   const navigate = useNavigate()
   const [taille, setTaille] = useState<TaillePolice>(getTaillePolice)
   const [voixId, setVoixIdState] = useState<string>(getVoixId)
+  const [cleSaisie, setCleSaisie] = useState<string>(getCleElevenLabs)
+  const [cleActive, setCleActive] = useState<boolean>(() => getCleElevenLabs() !== '')
 
   useEffect(() => {
     appliquerTaillePolice(taille)
@@ -32,6 +34,12 @@ export function ParametresPage() {
   function choisirVoix(id: string) {
     setVoixId(id)
     setVoixIdState(id)
+  }
+
+  function enregistrerCle(cle: string) {
+    setCleElevenLabs(cle)
+    setCleSaisie(cle.trim())
+    setCleActive(cle.trim() !== '')
   }
 
   return (
@@ -86,8 +94,39 @@ export function ParametresPage() {
         {/* Voix de Plumy */}
         <Section titre={fr.parametres.voixPlumy}>
             <div className="space-y-3">
-              <p className="text-sm text-[var(--color-gris-texte)]">{fr.parametres.voixDescription}</p>
+              <label htmlFor="cle-elevenlabs" className="block text-sm font-semibold text-[var(--color-encre)]">
+                {fr.parametres.cleElevenLabs}
+              </label>
+              <p className="text-xs text-[var(--color-gris-texte)]">{fr.parametres.cleElevenLabsAide}</p>
               <div className="flex gap-2">
+                <input
+                  id="cle-elevenlabs"
+                  type="password"
+                  autoComplete="off"
+                  value={cleSaisie}
+                  onChange={e => setCleSaisie(e.target.value)}
+                  placeholder={fr.parametres.cleElevenLabsPlaceholder}
+                  className="flex-1 min-w-0 px-3 py-2.5 rounded-xl text-sm border-2 border-[var(--color-gris-doux)] bg-white"
+                />
+                <button
+                  onClick={() => enregistrerCle(cleSaisie)}
+                  className="px-3 py-2.5 rounded-xl text-sm font-semibold border-2 border-[var(--color-candy-rose)] text-[var(--color-candy-rose-dark)]"
+                >
+                  {fr.parametres.enregistrer}
+                </button>
+                {cleActive && (
+                  <button
+                    onClick={() => enregistrerCle('')}
+                    className="px-3 py-2.5 rounded-xl text-sm font-semibold border-2 border-[var(--color-gris-doux)] text-[var(--color-gris-texte)]"
+                  >
+                    {fr.parametres.effacer}
+                  </button>
+                )}
+              </div>
+              {!cleActive && <p className="text-sm text-[var(--color-gris-texte)]">{fr.parametres.voixLocale}</p>}
+              {cleActive && <p className="text-xs font-semibold text-[var(--color-candy-menthe)]">{fr.parametres.cleEnregistree}</p>}
+              {cleActive && <p className="text-sm text-[var(--color-gris-texte)]">{fr.parametres.voixDescription}</p>}
+              {cleActive && <div className="flex gap-2">
                 {VOIX_ELEVENLABS.map(v => (
                   <button
                     key={v.id}
@@ -102,7 +141,7 @@ export function ParametresPage() {
                     {v.nom}
                   </button>
                 ))}
-              </div>
+              </div>}
             </div>
           </Section>
 
