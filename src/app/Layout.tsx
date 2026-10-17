@@ -7,6 +7,7 @@ import { BoutonSauvegarde } from '@/features/sauvegarde/BoutonSauvegarde'
 import { RappelSauvegarde } from '@/features/sauvegarde/RappelSauvegarde'
 import { OnboardingModal } from '@/features/onboarding/OnboardingModal'
 import { PlumesBackground } from '@/components/ui/PlumesBackground'
+import { BandeauReseau } from '@/components/ui/BandeauReseau'
 type TaillePolice = 'normale' | 'grande' | 'tres-grande'
 const TAILLE_SCALE: Record<TaillePolice, string> = { normale: '16px', grande: '18px', 'tres-grande': '20px' }
 function appliquerTaillePolice(t: TaillePolice) { document.documentElement.style.fontSize = TAILLE_SCALE[t] }
@@ -71,6 +72,7 @@ export function Layout() {
       </main>
 
       <RappelSauvegarde />
+      <BandeauReseau />
 
       {showOnboarding && (
         <OnboardingModal onTermine={() => setShowOnboarding(false)} />
