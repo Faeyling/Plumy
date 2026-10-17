@@ -104,7 +104,7 @@ export function FlashcardSession() {
   if (!unite) {
     return (
       <div className="flex items-center justify-center min-h-svh p-8 text-center">
-        <p className="text-[var(--color-gris-texte)]">Unité introuvable.</p>
+        <p className="text-[var(--color-gris-texte)]">{fr.etats.uniteIntrouvable}</p>
       </div>
     )
   }
@@ -128,7 +128,7 @@ export function FlashcardSession() {
         <button
           onClick={() => navigate(`/unite/${numUnite}`)}
           className="flex items-center gap-1 text-[var(--color-gris-texte)] text-sm"
-          aria-label="Retour"
+          aria-label={fr.actions.retour}
         >
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -190,7 +190,7 @@ export function FlashcardSession() {
         {/* Légende statut initial */}
         <div className="mt-3 flex items-center gap-1.5">
           <StatutPill statut={carteActuelle.statutInitial} />
-          <span className="text-xs text-[var(--color-gris-texte)]">statut actuel</span>
+          <span className="text-xs text-[var(--color-gris-texte)]">{fr.flashcards.statutActuel}</span>
         </div>
         {retourne && (
           <p className="text-[10px] text-[var(--color-gris-texte)] mt-2 opacity-60">

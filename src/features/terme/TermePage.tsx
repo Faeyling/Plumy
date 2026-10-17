@@ -71,9 +71,9 @@ export function TermePage() {
     return (
       <div className="flex flex-col items-center justify-center min-h-[60vh] gap-4 p-8 text-center">
         <PlumyMascot etat="echec" taille={80} />
-        <p className="text-[var(--color-gris-texte)]">Terme introuvable.</p>
+        <p className="text-[var(--color-gris-texte)]">{fr.etats.termeIntrouvable}</p>
         <button onClick={() => navigate(-1)} className="text-[var(--color-plumy-blue)] underline text-sm">
-          Retour
+          {fr.actions.retour}
         </button>
       </div>
     )
@@ -106,12 +106,12 @@ export function TermePage() {
           <button
             onClick={() => navigate(-1)}
             className="flex items-center gap-1 text-[var(--color-gris-texte)] text-sm"
-            aria-label="Retour"
+            aria-label={fr.actions.retour}
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-            Retour
+            {fr.actions.retour}
           </button>
 
           <div className="flex items-center gap-1">
@@ -340,7 +340,7 @@ export function TermePage() {
           <div className="flex-1 flex items-center justify-center gap-2 text-sm text-[var(--color-candy-menthe)] font-semibold">
             <span>✓</span>
             <span>Vu</span>
-            {prog?.statut === 'maitrise' && <span>· Maîtrisé !</span>}
+            {prog?.statut === 'maitrise' && <span>· {fr.terme.maitrise}</span>}
           </div>
         )}
       </div>

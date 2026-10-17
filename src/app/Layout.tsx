@@ -42,7 +42,7 @@ export function Layout() {
         href="#main-content"
         className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:px-4 focus:py-2 focus:bg-[var(--color-candy-rose)] focus:text-white focus:rounded-lg focus:text-sm focus:font-bold"
       >
-        Aller au contenu principal
+        {fr.a11y.allerAuContenu}
       </a>
 
       {/* Bouton sauvegarde permanent + paramètres */}
@@ -80,7 +80,7 @@ export function Layout() {
 
       <nav
         className="fixed bottom-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-t border-[var(--color-gris-doux)] safe-area-pb"
-        aria-label="Navigation principale"
+        aria-label={fr.a11y.navigationPrincipale}
       >
         <ul className="flex items-center justify-around h-16 max-w-lg mx-auto px-2">
           {navItems.map(({ to, label, icon: Icon, end }) => (

@@ -48,12 +48,12 @@ export function ParametresPage() {
         <button
           onClick={() => navigate(-1)}
           className="flex items-center gap-1 text-[var(--color-gris-texte)] text-sm mb-4"
-          aria-label="Retour"
+          aria-label={fr.actions.retour}
         >
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
-          Retour
+          {fr.actions.retour}
         </button>
         <h1 className="font-titre font-extrabold text-2xl text-[var(--color-encre)]">
           {fr.parametres.titre}
@@ -187,16 +187,16 @@ export function ParametresPage() {
         <Section titre={fr.parametres.confidentialite}>
           <div className="space-y-3 text-sm text-[var(--color-gris-texte)] leading-relaxed">
             <p>
-              <strong className="text-[var(--color-encre)]">Aucune donnée envoyée en ligne.</strong>{' '}
+              <strong className="text-[var(--color-encre)]">{fr.parametres.rgpdTitre1}</strong>{' '}
               {fr.parametres.rgpdTexte1}
             </p>
             <p>{fr.parametres.rgpdTexte2}</p>
             <p>
-              <strong className="text-[var(--color-encre)]">Export de tes données.</strong>{' '}
+              <strong className="text-[var(--color-encre)]">{fr.parametres.rgpdTitre3}</strong>{' '}
               {fr.parametres.rgpdTexte3}
             </p>
             <p>
-              <strong className="text-[var(--color-encre)]">Suppression.</strong>{' '}
+              <strong className="text-[var(--color-encre)]">{fr.parametres.rgpdTitre4}</strong>{' '}
               {fr.parametres.rgpdTexte4}
             </p>
           </div>

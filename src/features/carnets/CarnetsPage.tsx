@@ -161,7 +161,7 @@ export function CarnetsPage() {
                         type="text"
                         value={form.nom}
                         onChange={e => setForm(f => f ? { ...f, nom: e.target.value } : null)}
-                        placeholder="Ex : Pas de bourrée"
+                        placeholder={fr.carnets.placeholderNom}
                         className="w-full border border-[var(--color-gris-doux)] rounded-lg px-3 py-2 text-sm text-[var(--color-encre)] focus:outline-none focus:border-[var(--color-candy-rose)]"
                       />
                     </label>
@@ -170,7 +170,7 @@ export function CarnetsPage() {
                       <textarea
                         value={form.definition}
                         onChange={e => setForm(f => f ? { ...f, definition: e.target.value } : null)}
-                        placeholder="Ma définition personnelle…"
+                        placeholder={fr.carnets.placeholderDefinition}
                         rows={3}
                         className="w-full border border-[var(--color-gris-doux)] rounded-lg px-3 py-2 text-sm text-[var(--color-encre)] focus:outline-none focus:border-[var(--color-candy-rose)] resize-none"
                       />
@@ -181,18 +181,18 @@ export function CarnetsPage() {
                         type="text"
                         value={form.noteLibre}
                         onChange={e => setForm(f => f ? { ...f, noteLibre: e.target.value } : null)}
-                        placeholder="Note, contexte, prof…"
+                        placeholder={fr.carnets.placeholderNote}
                         className="w-full border border-[var(--color-gris-doux)] rounded-lg px-3 py-2 text-sm text-[var(--color-encre)] focus:outline-none focus:border-[var(--color-candy-rose)]"
                       />
                     </label>
                     <label className="block">
-                      <span className="text-xs text-[var(--color-gris-texte)] mb-1 block">Unité (optionnel)</span>
+                      <span className="text-xs text-[var(--color-gris-texte)] mb-1 block">{fr.carnets.uniteOptionnelle}</span>
                       <select
                         value={form.uniteId ?? ''}
                         onChange={e => setForm(f => f ? { ...f, uniteId: e.target.value === '' ? undefined : Number(e.target.value) } : null)}
                         className="w-full border border-[var(--color-gris-doux)] rounded-lg px-3 py-2 text-sm text-[var(--color-encre)] focus:outline-none focus:border-[var(--color-candy-rose)] bg-white"
                       >
-                        <option value="">— Aucune unité —</option>
+                        <option value="">{fr.carnets.aucuneUnite}</option>
                         {unites.map(u => (
                           <option key={u.numero} value={u.numero}>
                             Unité {u.numero} — {u.titre}

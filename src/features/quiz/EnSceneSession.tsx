@@ -153,7 +153,7 @@ export function EnSceneSession() {
   if (questions.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center min-h-[60vh] p-8 text-center gap-4">
-        <p className="text-[var(--color-gris-texte)]">Pas assez de termes avec des descriptions détaillées.</p>
+        <p className="text-[var(--color-gris-texte)]">{fr.etats.pasAssezDeDescriptions}</p>
         <button onClick={() => navigate('/quiz')} className="text-[var(--color-plumy-blue)] underline text-sm">
           Retour aux quiz
         </button>
@@ -223,7 +223,7 @@ export function EnSceneSession() {
         <button
           onClick={() => navigate('/quiz')}
           className="flex items-center gap-1 text-[var(--color-gris-texte)] text-sm mb-4"
-          aria-label="Retour"
+          aria-label={fr.actions.retour}
         >
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -315,7 +315,7 @@ export function EnSceneSession() {
               >
                 <img
                   src="/mascotte/plumy-encouragement.webp"
-                  alt="Plumy encourage"
+                  alt={fr.a11y.plumyEncourage}
                   className="w-12 h-12 object-contain flex-shrink-0"
                 />
                 <div className="flex-1 min-w-0">

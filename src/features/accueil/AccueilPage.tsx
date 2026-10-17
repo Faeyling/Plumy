@@ -118,7 +118,7 @@ export function AccueilPage() {
           transition={{ duration: 0.5, ease: 'easeOut' }}
           className="flex flex-col items-center gap-3"
         >
-          <h1 className="sr-only">Plumy — Vocabulaire de la danse</h1>
+          <h1 className="sr-only">{fr.app.titreComplet}</h1>
           <motion.img
             src={ILLUSTRATIONS[illustrationIdx]}
             alt=""
@@ -137,7 +137,7 @@ export function AccueilPage() {
       </header>
 
       {/* Bande de stats */}
-      <section aria-label="Tes statistiques" className="bg-white/60 border-b border-[var(--color-gris-doux)]">
+      <section aria-label={fr.a11y.statistiques} className="bg-white/60 border-b border-[var(--color-gris-doux)]">
         {/* Palier de points */}
         <PalierPoints points={points} />
 
@@ -333,7 +333,7 @@ export function AccueilPage() {
       </section>
 
       {/* Liste des unités */}
-      <section className="flex-1 px-4 py-6 space-y-3" aria-label="Unités de cours">
+      <section className="flex-1 px-4 py-6 space-y-3" aria-label={fr.a11y.unitesCours}>
         <h2 className="font-titre font-bold text-[var(--color-encre)] text-lg mb-4">
           {fr.accueil.toutesLesUnites}
         </h2>

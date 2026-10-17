@@ -39,7 +39,7 @@ export function RappelSauvegarde() {
           transition={{ type: 'spring', stiffness: 300, damping: 28 }}
           className="fixed bottom-20 left-3 right-3 z-40 max-w-sm mx-auto"
           role="alertdialog"
-          aria-label="Rappel de sauvegarde"
+          aria-label={fr.a11y.rappelSauvegarde}
         >
           <div className="bg-white rounded-[var(--radius-card)] shadow-xl border border-[var(--color-candy-lavande)] p-4 flex gap-3 items-start">
             <div className="shrink-0">

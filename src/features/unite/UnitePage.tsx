@@ -42,7 +42,7 @@ export function UnitePage() {
     return (
       <div className="flex flex-col items-center justify-center min-h-[60vh] gap-4 p-8 text-center">
         <PlumyMascot etat="echec" taille={80} />
-        <p className="text-[var(--color-gris-texte)]">Unité introuvable.</p>
+        <p className="text-[var(--color-gris-texte)]">{fr.etats.uniteIntrouvable}</p>
         <button onClick={() => navigate('/')} className="text-[var(--color-plumy-blue)] underline text-sm">
           Retour à l'accueil
         </button>
@@ -79,12 +79,12 @@ export function UnitePage() {
         <button
           onClick={() => navigate(-1)}
           className="flex items-center gap-1 text-[var(--color-gris-texte)] text-sm mb-4"
-          aria-label="Retour"
+          aria-label={fr.actions.retour}
         >
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
-          Retour
+          {fr.actions.retour}
         </button>
 
         {illustration && (
@@ -157,7 +157,7 @@ export function UnitePage() {
       <div className="flex-1 px-4 py-5 space-y-6">
         {/* Cours (sections) */}
         {cours.length > 0 && (
-          <section aria-label="Cours">
+          <section aria-label={fr.a11y.sectionCours}>
             <h2 className="font-titre font-bold text-[var(--color-encre)] text-base mb-3">
               Les carnets de Plumy
             </h2>
@@ -171,15 +171,15 @@ export function UnitePage() {
               >
                 <img
                   src="/mascotte/plumy-encouragement.webp"
-                  alt="Plumy suggère"
+                  alt={fr.a11y.plumySuggere}
                   className="w-12 h-12 object-contain flex-shrink-0"
                 />
                 <div className="flex-1 min-w-0">
                   <p className="font-titre font-bold text-[var(--color-encre)] text-sm mb-1">
-                    Tu joues super bien !
+                    {fr.unites.suggestionTitre}
                   </p>
                   <p className="text-xs text-[var(--color-encre)] leading-snug mb-2">
-                    Mais j'ai des pages dans mes carnets qui vont tout éclairer — 3 minutes et tu comprends <em>pourquoi</em> ça marche, pas juste <em>quoi</em> répondre.
+                    {fr.unites.suggestionTexte}
                   </p>
                   <Link
                     to={`/cours/${coursSuggere.id}`}
@@ -191,7 +191,7 @@ export function UnitePage() {
                 <button
                   onClick={() => setSuggestionFermee(true)}
                   className="flex-shrink-0 text-[var(--color-gris-texte)] text-lg leading-none"
-                  aria-label="Fermer la suggestion"
+                  aria-label={fr.a11y.fermerSuggestion}
                 >
                   ×
                 </button>
@@ -254,8 +254,8 @@ export function UnitePage() {
                         to={`/quiz/cours/${c.id}`}
                         className="flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center mr-2 transition-colors"
                         style={{ backgroundColor: 'var(--color-candy-menthe-light,#d1fae5)' }}
-                        aria-label={`Quiz sur ${c.titre}`}
-                        title="Me tester sur ce cours"
+                        aria-label={fr.unites.quizSurCours(c.titre)}
+                        title={fr.unites.meTesterCours}
                       >
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true" style={{ color: 'var(--color-candy-menthe)' }}>
                           <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -273,7 +273,7 @@ export function UnitePage() {
 
         {/* Flashcards */}
         {unite.quizDisponibles.includes('flashcards') && (
-          <section aria-label="Révision par flashcards">
+          <section aria-label={fr.a11y.sectionFlashcards}>
             <h2 className="font-titre font-bold text-[var(--color-encre)] text-base mb-3">
               Révision
             </h2>
@@ -304,7 +304,7 @@ export function UnitePage() {
 
         {/* Schéma origines/interactions — unité 1 uniquement */}
         {numUnite === 1 && (
-          <section aria-label="Schéma interactif">
+          <section aria-label={fr.a11y.sectionSchema}>
             <h2 className="font-titre font-bold text-[var(--color-encre)] text-base mb-3">
               Schéma des origines
             </h2>
@@ -340,7 +340,7 @@ export function UnitePage() {
 
         {/* Quiz d'entraînement */}
         {(['qcm', 'association', 'texte-a-trous', 'reconnaissance-visuelle'] as const).some(t => unite.quizDisponibles.includes(t)) && (
-          <section aria-label="Quiz d'entraînement">
+          <section aria-label={fr.a11y.sectionQuiz}>
             <h2 className="font-titre font-bold text-[var(--color-encre)] text-base mb-3">
               Entraînement
             </h2>
@@ -351,7 +351,7 @@ export function UnitePage() {
                   className="flex flex-col items-center gap-2 p-4 bg-[#fffde7] border border-[var(--color-candy-jaune)] rounded-[var(--radius-card)] hover:shadow-md transition-shadow"
                 >
                   <span className="w-10 h-10 rounded-xl bg-[var(--color-candy-jaune)] flex items-center justify-center font-bold text-white text-lg" aria-hidden="true">Q</span>
-                  <p className="font-titre font-semibold text-[var(--color-encre)] text-sm">QCM</p>
+                  <p className="font-titre font-semibold text-[var(--color-encre)] text-sm">{fr.unites.tuileQcm}</p>
                 </Link>
               )}
               {unite.quizDisponibles.includes('association') && (
@@ -360,7 +360,7 @@ export function UnitePage() {
                   className="flex flex-col items-center gap-2 p-4 bg-[#e3f2fd] border border-[var(--color-candy-bleu)] rounded-[var(--radius-card)] hover:shadow-md transition-shadow"
                 >
                   <span className="w-10 h-10 rounded-xl bg-[var(--color-candy-bleu)] flex items-center justify-center font-bold text-white text-lg" aria-hidden="true">A</span>
-                  <p className="font-titre font-semibold text-[var(--color-encre)] text-sm">Association</p>
+                  <p className="font-titre font-semibold text-[var(--color-encre)] text-sm">{fr.unites.tuileAssociation}</p>
                 </Link>
               )}
               {unite.quizDisponibles.includes('texte-a-trous') && (
@@ -369,7 +369,7 @@ export function UnitePage() {
                   className="flex flex-col items-center gap-2 p-4 bg-[#fce4ec] border border-[var(--color-candy-corail)] rounded-[var(--radius-card)] hover:shadow-md transition-shadow"
                 >
                   <span className="w-10 h-10 rounded-xl bg-[var(--color-candy-corail)] flex items-center justify-center font-bold text-white text-lg" aria-hidden="true">T</span>
-                  <p className="font-titre font-semibold text-[var(--color-encre)] text-sm">Texte à trous</p>
+                  <p className="font-titre font-semibold text-[var(--color-encre)] text-sm">{fr.unites.tuileTexteATrous}</p>
                 </Link>
               )}
               {unite.quizDisponibles.includes('reconnaissance-visuelle') && (
@@ -378,7 +378,7 @@ export function UnitePage() {
                   className="flex flex-col items-center gap-2 p-4 bg-[#d1fae5] border border-[#059669] rounded-[var(--radius-card)] hover:shadow-md transition-shadow"
                 >
                   <span className="w-10 h-10 rounded-xl flex items-center justify-center font-bold text-white text-lg" style={{ backgroundColor: '#059669' }} aria-hidden="true">R</span>
-                  <p className="font-titre font-semibold text-[var(--color-encre)] text-sm">Reconnaître</p>
+                  <p className="font-titre font-semibold text-[var(--color-encre)] text-sm">{fr.unites.tuileReconnaitre}</p>
                 </Link>
               )}
               {getQuestionsCoursPourUnite(numUnite).length > 0 && (
@@ -393,7 +393,7 @@ export function UnitePage() {
                       <path d="M9 12h6M9 16h4" stroke="white" strokeWidth="2" strokeLinecap="round" />
                     </svg>
                   </span>
-                  <p className="font-titre font-semibold text-[var(--color-encre)] text-sm">Quiz cours</p>
+                  <p className="font-titre font-semibold text-[var(--color-encre)] text-sm">{fr.unites.tuileQuizCours}</p>
                 </Link>
               )}
             </div>
@@ -402,7 +402,7 @@ export function UnitePage() {
 
         {/* Termes */}
         {(termes.length > 0 || termesPerso.length > 0) && (
-          <section aria-label="Termes de l'unité">
+          <section aria-label={fr.a11y.sectionTermes}>
             <h2 className="font-titre font-bold text-[var(--color-encre)] text-base mb-3">
               Vocabulaire — {total + termesPerso.length} termes
             </h2>
@@ -435,7 +435,7 @@ export function UnitePage() {
                         )}
                       </div>
                       {favori && (
-                        <span aria-label="Favori" className="text-[var(--color-candy-rose)]">♥</span>
+                        <span aria-label={fr.a11y.favori} className="text-[var(--color-candy-rose)]">♥</span>
                       )}
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="flex-shrink-0 text-[var(--color-gris-texte)]">
                         <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -455,8 +455,8 @@ export function UnitePage() {
                     <span
                       className="flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-white text-xs font-bold"
                       style={{ backgroundColor: 'var(--color-candy-rose)' }}
-                      aria-label="Terme personnel"
-                      title="Ton terme"
+                      aria-label={fr.a11y.termePersonnel}
+                      title={fr.unites.tonTerme}
                     >
                       ✎
                     </span>
@@ -473,7 +473,7 @@ export function UnitePage() {
                     <Link
                       to="/carnets"
                       className="text-xs text-[var(--color-candy-rose)] underline flex-shrink-0"
-                      aria-label="Modifier dans mes carnets"
+                      aria-label={fr.a11y.modifierCarnets}
                     >
                       ✏
                     </Link>

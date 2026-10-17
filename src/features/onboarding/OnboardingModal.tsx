@@ -72,7 +72,7 @@ export function OnboardingModal({ onTermine }: Props) {
         className="bg-white rounded-[var(--radius-card)] w-full max-w-sm shadow-2xl overflow-hidden"
         role="dialog"
         aria-modal="true"
-        aria-label="Bienvenue dans Plumy"
+        aria-label={fr.a11y.bienvenue}
       >
         {/* Barre de progression */}
         <div className="flex gap-1.5 p-4 pb-0">

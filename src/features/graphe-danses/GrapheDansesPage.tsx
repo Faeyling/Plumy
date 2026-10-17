@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { noeuds, liens, NW, NH, type Noeud } from '@/content/graphe-danses'
+import { fr } from '@/i18n/fr'
 
 const CANVAS_W = 1040
 const CANVAS_H = 800
@@ -47,12 +48,12 @@ export function GrapheDansesPage() {
         <button
           onClick={() => navigate(-1)}
           className="flex items-center gap-1 text-[var(--color-gris-texte)] text-sm mb-4"
-          aria-label="Retour"
+          aria-label={fr.actions.retour}
         >
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
-          Retour
+          {fr.actions.retour}
         </button>
         <h1 className="font-titre font-bold text-2xl text-[var(--color-encre)] leading-tight">
           Origines et interactions des danses
@@ -72,15 +73,15 @@ export function GrapheDansesPage() {
         ))}
         <span className="flex items-center gap-1.5 ml-2">
           <span className="w-3 h-3 rounded-full" style={{ backgroundColor: '#f97316' }} />
-          <span className="text-[var(--color-gris-texte)]">Héritage afro-américain</span>
+          <span className="text-[var(--color-gris-texte)]">{fr.graphe.legendeAfro}</span>
         </span>
         <span className="flex items-center gap-1.5">
           <span className="w-3 h-3 rounded-full" style={{ backgroundColor: '#a855f7' }} />
-          <span className="text-[var(--color-gris-texte)]">Communautés noires & LGBTQ+</span>
+          <span className="text-[var(--color-gris-texte)]">{fr.graphe.legendeLgbt}</span>
         </span>
         <span className="flex items-center gap-1.5">
           <span className="w-3 h-3 rounded-full" style={{ backgroundColor: '#ec4899' }} />
-          <span className="text-[var(--color-gris-texte)]">Travailleuses du sexe</span>
+          <span className="text-[var(--color-gris-texte)]">{fr.graphe.legendeTds}</span>
         </span>
       </div>
 
@@ -96,7 +97,7 @@ export function GrapheDansesPage() {
             {hoveredNode.note && <p className="text-xs text-[var(--color-gris-texte)] mt-0.5">{hoveredNode.note}</p>}
           </>
         ) : (
-          <span className="text-[var(--color-gris-texte)]">Survole un nœud pour voir ses informations.</span>
+          <span className="text-[var(--color-gris-texte)]">{fr.graphe.survole}</span>
         )}
       </div>
 
@@ -104,7 +105,7 @@ export function GrapheDansesPage() {
       <div className="flex-1 overflow-x-auto overflow-y-auto bg-white">
         <svg
           role="img"
-          aria-label="Schéma interactif des origines et interactions des disciplines de danse : de gauche à droite, des origines aux disciplines contemporaines."
+          aria-label={fr.graphe.ariaSchema}
           aria-describedby="graphe-description"
           width={CANVAS_W}
           height={CANVAS_H}
@@ -249,8 +250,8 @@ export function GrapheDansesPage() {
           Version texte du schéma
         </summary>
         <div className="mt-3 space-y-4 text-sm">
-          <section aria-label="Nœuds du graphe">
-            <h3 className="font-semibold text-[var(--color-encre)] mb-2">Disciplines et origines :</h3>
+          <section aria-label={fr.graphe.ariaNoeuds}>
+            <h3 className="font-semibold text-[var(--color-encre)] mb-2">{fr.graphe.disciplinesOrigines}</h3>
             <ul className="space-y-1 text-[var(--color-gris-texte)]">
               {noeuds.map(n => (
                 <li key={n.id}>
@@ -264,8 +265,8 @@ export function GrapheDansesPage() {
               ))}
             </ul>
           </section>
-          <section aria-label="Relations entre disciplines">
-            <h3 className="font-semibold text-[var(--color-encre)] mb-2">Relations :</h3>
+          <section aria-label={fr.graphe.ariaRelations}>
+            <h3 className="font-semibold text-[var(--color-encre)] mb-2">{fr.graphe.relations}</h3>
             <ul className="space-y-0.5 text-[var(--color-gris-texte)]">
               {liens.map(l => {
                 const src = noeudMap[l.de]

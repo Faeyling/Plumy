@@ -3,6 +3,7 @@ export const fr = {
     nom: "Plumy",
     slogan: "Vocabulaire de la danse",
     description: "Apprends le vocabulaire de la danse avec Plumy",
+    titreComplet: "Plumy — Vocabulaire de la danse",
   },
 
   nav: {
@@ -79,6 +80,7 @@ export const fr = {
 
   terme: {
     definition: "Définition",
+    maitrise: "Maîtrisé !",
     description: "En détail",
     erreursCourantes: "Erreurs courantes",
     conseils: "Conseils de Plumy",
@@ -99,6 +101,8 @@ export const fr = {
 
   quiz: {
     titre: "Quiz",
+    colonneTerme: "Terme",
+    colonneDefinition: "Définition",
     question: "Question",
     sur: "sur",
     bonne: "Bonne réponse !",
@@ -158,6 +162,11 @@ export const fr = {
     confirmerSuppression: "Supprimer ce terme ?",
     aucunTermePerso: "Tu n'as pas encore ajouté de termes personnels.",
     aucunFavori: "Aucun favori pour l'instant. Appuie sur ♡ sur n'importe quel terme pour l'ajouter ici.",
+    placeholderNom: "Ex : Pas de bourrée",
+    placeholderDefinition: "Ma définition personnelle…",
+    placeholderNote: "Note, contexte, prof…",
+    uniteOptionnelle: "Unité (optionnel)",
+    aucuneUnite: "— Aucune unité —",
   },
 
   revision: {
@@ -174,6 +183,16 @@ export const fr = {
     commencer: "Commencer l'unité",
     continuer: "Continuer",
     terminer: "Quiz de l'unité",
+    suggestionTitre: "Tu joues super bien !",
+    suggestionTexte: "Mais j'ai des pages dans mes carnets qui vont tout éclairer — 3 minutes et tu comprends « pourquoi » ça marche, pas juste « quoi » répondre.",
+    quizSurCours: (titre: string) => `Quiz sur ${titre}`,
+    meTesterCours: "Me tester sur ce cours",
+    tuileQcm: "QCM",
+    tuileAssociation: "Association",
+    tuileTexteATrous: "Texte à trous",
+    tuileReconnaitre: "Reconnaître",
+    tuileQuizCours: "Quiz cours",
+    tonTerme: "Ton terme",
   },
 
   disciplines: {
@@ -208,6 +227,7 @@ export const fr = {
     titre: "Flashcards",
     deDeCartes: (n: number) => `${n} carte${n > 1 ? 's' : ''}`,
     retourner: "Retourner",
+    statutActuel: "statut actuel",
     jeSais: "Je sais",
     aRevoir: "À revoir",
     suivant: "Carte suivante",
@@ -321,6 +341,9 @@ export const fr = {
     contact: "Contact",
     contactTexte: "Une question, une suggestion, un bug à signaler ?",
     confidentialite: "Confidentialité & données (RGPD)",
+    rgpdTitre1: "Aucune donnée personnelle envoyée en ligne.",
+    rgpdTitre3: "Export de tes données.",
+    rgpdTitre4: "Suppression.",
     rgpdTexte1: "Aucune donnée envoyée en ligne. Toutes tes données (progression, favoris, points) sont stockées uniquement sur cet appareil, dans la mémoire du navigateur (IndexedDB).",
     rgpdTexte2: "Plumy ne crée aucun compte, ne te demande aucune adresse email, et n'envoie aucune information personnelle à un serveur. Seule exception : si tu ajoutes une clé ElevenLabs, le texte lu à voix haute est envoyé à ElevenLabs pour générer l'audio.",
     rgpdTexte3: "Tu peux exporter l'intégralité de tes données à tout moment via le bouton \"Sauvegarder\". Le fichier JSON reste sur ton appareil.",
@@ -344,6 +367,7 @@ export const fr = {
     dejaFait: "Reviens demain pour un nouveau défi !",
     score: (correct: number, total: number) => `${correct} / ${total}`,
     partage: (score: number) => `J'ai fait ${score}/5 au défi Plumy aujourd'hui !`,
+    preparation: "Je prépare ton défi…",
   },
 
   historiqueQuiz: {
@@ -366,6 +390,8 @@ export const fr = {
     commencer: "C'est parti !",
     tempsEcoule: "Temps écoulé !",
     aucunTerme: "Pas encore de termes à revoir. Explore des unités d'abord !",
+    appuiePourVoir: "Appuie pour voir la définition →",
+    voirDefinition: "Voir la définition",
   },
 
   termeDuJour: {
@@ -427,6 +453,49 @@ export const fr = {
     generique: "Oups ! Quelque chose s'est mal passé.",
     chargement: "Impossible de charger les données.",
     horsLigne: "Tu es hors ligne. Tes données locales restent disponibles.",
+  },
+
+  etats: {
+    pasAssezDeTermes: (min: number) => `Pas assez de termes pour ce quiz (il en faut au moins ${min}).`,
+    pasAssezDeDescriptions: "Pas assez de termes avec des descriptions détaillées pour ce quiz.",
+    uniteIntrouvable: "Oups, je ne trouve pas cette unité dans mes carnets.",
+    termeIntrouvable: "Oups, je ne trouve pas ce terme dans mes carnets.",
+    coursIntrouvable: "Oups, je ne trouve pas ce cours dans mes carnets.",
+    parcoursIntrouvable: "Oups, je ne trouve pas ce parcours dans mes carnets.",
+  },
+
+  graphe: {
+    legendeAfro: "Héritage afro-américain",
+    legendeLgbt: "Communautés noires & LGBTQ+",
+    legendeTds: "Travailleuses du sexe",
+    survole: "Survole un nœud pour voir ses informations.",
+    ariaSchema: "Schéma interactif des origines et interactions des disciplines de danse : de gauche à droite, des origines aux disciplines contemporaines.",
+    ariaNoeuds: "Nœuds du graphe",
+    disciplinesOrigines: "Disciplines et origines :",
+    ariaRelations: "Relations entre disciplines",
+    relations: "Relations :",
+  },
+
+  a11y: {
+    allerAuContenu: "Aller au contenu principal",
+    navigationPrincipale: "Navigation principale",
+    chargement: "Chargement en cours",
+    statistiques: "Tes statistiques",
+    unitesCours: "Unités de cours",
+    rappelSauvegarde: "Rappel de sauvegarde",
+    termesGlossaire: "Termes du glossaire",
+    bienvenue: "Bienvenue dans Plumy",
+    plumyEncourage: "Plumy t'encourage",
+    plumySuggere: "Plumy te fait une suggestion",
+    fermerSuggestion: "Fermer la suggestion",
+    sectionCours: "Cours",
+    sectionFlashcards: "Révision par flashcards",
+    sectionSchema: "Schéma interactif",
+    sectionQuiz: "Quiz d'entraînement",
+    sectionTermes: "Termes de l'unité",
+    favori: "Favori",
+    termePersonnel: "Terme personnel",
+    modifierCarnets: "Modifier dans mes carnets",
   },
 
   reseau: {

@@ -136,7 +136,7 @@ export function AssociationSession() {
     return (
       <div className="flex flex-col items-center justify-center min-h-[60vh] p-8 text-center gap-4">
         <PlumyMascot etat="repos" taille={80} />
-        <p className="text-[var(--color-gris-texte)]">Pas assez de termes pour ce quiz (minimum 3).</p>
+        <p className="text-[var(--color-gris-texte)]">{fr.etats.pasAssezDeTermes(3)}</p>
         <button
           onClick={() => navigate(`/unite/${numUnite}`)}
           className="text-[var(--color-plumy-blue)] underline text-sm"
@@ -215,7 +215,7 @@ export function AssociationSession() {
         <button
           onClick={() => navigate(`/unite/${numUnite}`)}
           className="flex items-center gap-1 text-[var(--color-gris-texte)] text-sm mb-4"
-          aria-label="Retour"
+          aria-label={fr.actions.retour}
         >
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -254,7 +254,7 @@ export function AssociationSession() {
         <div className="grid grid-cols-2 gap-2">
           {/* Noms column */}
           <div className="space-y-2">
-            <p className="text-[10px] font-semibold text-[var(--color-gris-texte)] uppercase tracking-wide text-center mb-1">Terme</p>
+            <p className="text-[10px] font-semibold text-[var(--color-gris-texte)] uppercase tracking-wide text-center mb-1">{fr.quiz.colonneTerme}</p>
             {nomItems.map((item) => {
               const isMatched = matchedIds.has(item.termeId)
               const isSelected = selectedNomId === item.termeId
@@ -279,7 +279,7 @@ export function AssociationSession() {
 
           {/* Defs column */}
           <div className="space-y-2">
-            <p className="text-[10px] font-semibold text-[var(--color-gris-texte)] uppercase tracking-wide text-center mb-1">Définition</p>
+            <p className="text-[10px] font-semibold text-[var(--color-gris-texte)] uppercase tracking-wide text-center mb-1">{fr.quiz.colonneDefinition}</p>
             {defItems.map((item) => {
               const isMatched = matchedIds.has(item.termeId)
               const isSelected = selectedDefId === item.termeId

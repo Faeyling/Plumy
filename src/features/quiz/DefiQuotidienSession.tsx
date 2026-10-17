@@ -99,7 +99,7 @@ export function DefiQuotidienSession() {
   if (questions === null) {
     return (
       <div className="flex items-center justify-center min-h-svh">
-        <span className="text-[var(--color-gris-texte)] text-sm">Préparation du défi…</span>
+        <span className="text-[var(--color-gris-texte)] text-sm">{fr.defiQuotidien.preparation}</span>
       </div>
     )
   }
@@ -208,7 +208,7 @@ export function DefiQuotidienSession() {
         <button
           onClick={() => navigate('/quiz')}
           className="flex items-center gap-1 text-[var(--color-gris-texte)] text-sm mb-4"
-          aria-label="Retour"
+          aria-label={fr.actions.retour}
         >
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -294,7 +294,7 @@ export function DefiQuotidienSession() {
               >
                 <img
                   src="/mascotte/plumy-encouragement.webp"
-                  alt="Plumy encourage"
+                  alt={fr.a11y.plumyEncourage}
                   className="w-12 h-12 object-contain flex-shrink-0"
                 />
                 <div className="flex-1 min-w-0">

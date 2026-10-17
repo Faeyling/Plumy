@@ -132,7 +132,7 @@ export function GlossairePage() {
         </p>
       </header>
 
-      <div className="flex-1 px-4 py-3" role="list" aria-label="Termes du glossaire">
+      <div className="flex-1 px-4 py-3" role="list" aria-label={fr.a11y.termesGlossaire}>
         {filtres.length === 0 ? (
           <div className="flex flex-col items-center justify-center py-16 gap-3 text-center">
             <span className="text-4xl opacity-30">🔍</span>

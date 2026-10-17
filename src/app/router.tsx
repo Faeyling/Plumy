@@ -3,6 +3,7 @@ import { lazy, Suspense } from 'react'
 import { createBrowserRouter } from 'react-router-dom'
 import { Layout } from './Layout'
 import { AccueilPage } from '@/features/accueil/AccueilPage'
+import { fr } from '@/i18n/fr'
 
 const GlossairePage = lazy(() => import('@/features/glossaire/GlossairePage').then(m => ({ default: m.GlossairePage })))
 const QuizPage = lazy(() => import('@/features/quiz/QuizPage').then(m => ({ default: m.QuizPage })))
@@ -30,7 +31,7 @@ const QuizCoursSession = lazy(() => import('@/features/quiz/QuizCoursSession').t
 
 function PageLoader() {
   return (
-    <div className="flex items-center justify-center min-h-[60vh]" aria-label="Chargement en cours" role="status">
+    <div className="flex items-center justify-center min-h-[60vh]" aria-label={fr.a11y.chargement} role="status">
       <div className="w-8 h-8 rounded-full border-4 border-[var(--color-candy-rose)] border-t-transparent animate-spin" />
     </div>
   )
