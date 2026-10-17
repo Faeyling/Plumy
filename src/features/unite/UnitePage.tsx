@@ -429,7 +429,7 @@ export function UnitePage() {
                           {terme.nom}
                         </p>
                         {terme.prononciation && (
-                          <p className="text-xs text-[var(--color-gris-texte)] font-manuscrit">
+                          <p className="text-xs text-[var(--color-gris-texte)]">
                             /{terme.prononciation}/
                           </p>
                         )}

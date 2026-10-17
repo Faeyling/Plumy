@@ -147,7 +147,7 @@ export function TermePage() {
 
         <div className="flex flex-wrap gap-2 mt-3">
           {terme.prononciation && (
-            <span className="font-manuscrit text-[var(--color-encre)] text-sm bg-[var(--color-candy-jaune-light)] px-2 py-0.5 rounded-full">
+            <span className="text-[var(--color-encre)] text-sm bg-[var(--color-candy-jaune-light)] px-2 py-0.5 rounded-full">
               /{terme.prononciation}/
             </span>
           )}

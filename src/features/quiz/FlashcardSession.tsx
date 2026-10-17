@@ -275,7 +275,7 @@ function Carte({ carte, retourne, onRetourner }: { carte: CarteDeck; retourne: b
             {terme.nom}
           </p>
           {terme.alias && terme.alias.length > 0 && (
-            <p className="text-sm text-[var(--color-gris-texte)] font-manuscrit">
+            <p className="text-sm text-[var(--color-gris-texte)]">
               {terme.alias.slice(0, 3).join(' · ')}
             </p>
           )}

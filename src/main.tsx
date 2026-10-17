@@ -11,8 +11,6 @@ import '@fontsource/nunito/latin-900.css'
 import '@fontsource/inter/latin-400.css'
 import '@fontsource/inter/latin-500.css'
 import '@fontsource/inter/latin-600.css'
-import '@fontsource/caveat/latin-400.css'
-import '@fontsource/caveat/latin-600.css'
 import './styles/tokens.css'
 
 // Après une mise à jour, un ancien onglet peut réclamer un fichier JS qui n'existe plus :

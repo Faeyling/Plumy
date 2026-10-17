@@ -86,11 +86,11 @@ Pas de store global (Redux/Zustand). L'état est local aux composants ou chargé
 Tous les textes d'interface sont centralisés dans `src/i18n/fr.ts`. Ne jamais mettre de chaîne française en dur dans un composant.
 
 Design system « pop candy » : tokens CSS dans `src/styles/tokens.css` (bloc `@theme`), Tailwind CSS v4.
-Polices : utiliser `font-titre`, `font-corps`, `font-manuscrit` — **pas** `font-[var(--font-…)]`, que Tailwind v4 interprète comme une graisse.
+Polices : utiliser `font-titre`, `font-corps` — **pas** `font-[var(--font-…)]`, que Tailwind v4 interprète comme une graisse.
 
 ### Hors ligne (PWA)
 
-`vite-plugin-pwa` en mode `autoUpdate` (ne pas passer en `prompt` : les installations existantes resteraient bloquées sur l'ancienne version) : tout le build (JS, CSS, images WebP, polices `@fontsource` sous-ensemble latin) est précaché. `src/components/ui/BandeauReseau.tsx` affiche l'état hors ligne et « prête hors ligne ». Aucune ressource ne doit venir d'un CDN tiers au chargement ; les nouvelles images vont dans `public/` en WebP (≤ 800 px de large).
+`vite-plugin-pwa` en mode `autoUpdate` (ne pas passer en `prompt` : les installations existantes resteraient bloquées sur l'ancienne version) : tout le build (JS, CSS, images WebP, polices `@fontsource` Nunito + Inter, sous-ensemble latin) est précaché. `src/components/ui/BandeauReseau.tsx` affiche l'état hors ligne et « prête hors ligne ». Aucune ressource ne doit venir d'un CDN tiers au chargement ; les nouvelles images vont dans `public/` en WebP (≤ 800 px de large).
 
 ---
 

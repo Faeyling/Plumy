@@ -128,7 +128,7 @@ export function AccueilPage() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.45, ease: 'easeOut' }}
           />
-          <p className="font-manuscrit text-[var(--color-encre)] text-lg leading-snug max-w-xs px-2">
+          <p className="text-[var(--color-encre)] text-lg leading-snug max-w-xs px-2">
             {message}
           </p>
         </motion.div>
@@ -257,7 +257,7 @@ export function AccueilPage() {
                 {fr.journalPlumy.titre}
               </h2>
               <div className="px-4 pb-3.5">
-                <p className="font-manuscrit font-bold text-[var(--color-encre)] text-base mb-2">
+                <p className="font-bold text-[var(--color-encre)] text-base mb-2">
                   {ENTREE_JOURNAL.titre}
                 </p>
                 <div className="flex items-start gap-1">
